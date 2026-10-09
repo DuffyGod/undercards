@@ -1,0 +1,4 @@
+interface:
+  display_name: "Undercards 玩法与牌组分析"
+  short_description: "快速掌握 Undercards 对战规则、金币、卡牌语义与牌组打法"
+  default_prompt: "使用 $undercards 理解对战规则，查询卡牌并分析牌组与行动顺序。"

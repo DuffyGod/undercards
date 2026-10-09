@@ -29,4 +29,3 @@ API调用另需云端网络配置和 `TENCENT_API_KEY`。接口脚本为 `tools/
 ```sh
 python analysis/monster-value-heuristic/deepseek_research_queue.py merge --queue analysis/monster-value-heuristic/research-runs/round01
 ```
-

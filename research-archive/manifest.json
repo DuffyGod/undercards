@@ -1,0 +1,1087 @@
+{
+  "entries": [
+    {
+      "path": "analysis/4-8G快速初评-2026-10-07.md",
+      "bytes": 5693,
+      "sha256": "4558d2a7513c0c14878928408a67165a5be74f2c21b18c6474bfb8364e021f27"
+    },
+    {
+      "path": "analysis/hub-readonly/chat-judgments-2026-10-05.md",
+      "bytes": 6575,
+      "sha256": "91ff0a02040903511c1625e5fc7e814497424e97a355058f6fd3a4fbfe29c7e4"
+    },
+    {
+      "path": "analysis/hub-readonly/README.md",
+      "bytes": 4414,
+      "sha256": "6a5cec6bde741d66a7848eac322b824e8fb1389f72f658e52c47b3cf00927083"
+    },
+    {
+      "path": "analysis/mechanics.json",
+      "bytes": 90785,
+      "sha256": "7f0fcbf4396964cc8041030415e0a59500e0f2bf29afdb74a65932aa9f5127d7"
+    },
+    {
+      "path": "analysis/meta-research/现行构筑与质量修正.md",
+      "bytes": 15109,
+      "sha256": "af01642434f09c9ce8f4dda90b7b7b3962dc3f3abe343af8621fabeccc10943e"
+    },
+    {
+      "path": "analysis/monster-frontier/凸包强卡分析.md",
+      "bytes": 25850,
+      "sha256": "8c791bb955600ed8d268d04d998709a129a3e0f57589a105988d482184bdee80"
+    },
+    {
+      "path": "analysis/monster-quality/怪物质量评估.md",
+      "bytes": 25656,
+      "sha256": "032eb2e705701fbfa8e978d42bfcca98dc5660177aa47e94290bb31ef64fc734"
+    },
+    {
+      "path": "analysis/monster-value/通用Value评估.md",
+      "bytes": 16197,
+      "sha256": "a47b5fe7588779f49a3c1187fe1dc8486756173cb4941de2a80ee318b2cde0ed"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/figures/sensitivity-h4-hand0/finite-value-table.md",
+      "bytes": 723,
+      "sha256": "76b9f374f247bcf926b0d88b23c53e027e5ee73836d5bed5ac485ae29ac83e25"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/figures/v2-primary24/finite-value-table.md",
+      "bytes": 1943,
+      "sha256": "75e13e74425aaf6e9dd2066279188774aeb237ee268a516d83a68837979def2d"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/figures/v3-primary24/finite-value-table.md",
+      "bytes": 1937,
+      "sha256": "7835fe15ec52f08779de080badffc3d0ada585eddb16f24d7f0f098bc65bdebd"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/final-model-report-readiness.md",
+      "bytes": 5115,
+      "sha256": "2a1c59b480e27a3b76aecb9677c60d9b0da2bb3b02c15611843d4fbc08819626"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/independent-continuation-and-preparation-review.md",
+      "bytes": 4927,
+      "sha256": "bb7b2291cc5ac40a4683a00eff06e7285b7a387cdb2f290d6251f9e102557673"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/independent-report-review.md",
+      "bytes": 6382,
+      "sha256": "69c6d5cccf4cbea13fbf1e216156f45cbcbd42eab6c11964a9aa44c7baa22530"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/model-versions/v2/README.md",
+      "bytes": 1086,
+      "sha256": "5dc519db0a46ad9ae91c5824316222e88a59a09bb6d797b7fe54bcf42500476a"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/model-versions/v3/analysis/monster-value-dynamic/figures/v3-h4-h0-four-s20261007/finite-value-table.md",
+      "bytes": 718,
+      "sha256": "ce2026179c626804a46c42996dd5f820ad4b2fbfaf08f519caa01b94d38c487c"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/model-versions/v3/analysis/monster-value-dynamic/figures/v3-h4-h06-four-s20261007/finite-value-table.md",
+      "bytes": 716,
+      "sha256": "098bc482df083d75abc8c2ef8ceba2a1a48878f80221b4a22b7ff7b7e02bdc11"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/model-versions/v3/README.md",
+      "bytes": 3336,
+      "sha256": "8b39a147979265aa3e252bcb53dac013afc460ae8c75c15a453185c30cbe9f8f"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/model-versions/v4/README.md",
+      "bytes": 3717,
+      "sha256": "7a9cf8f54e94307af8fca62513b359ecde2943f4ec188f971d70baf22334211b"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/SOUL条件数值独立分析.md",
+      "bytes": 4577,
+      "sha256": "ca4df5bc4c60a76f68899679c3771e952a65aa6991682cbcb17e110f156cb797"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/V3手牌端点敏感性独立审查.md",
+      "bytes": 8339,
+      "sha256": "5e30b8a794cf2715f23f6465876a5dc83b77416f545498b027e273b85c344e09"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/V4控制行为数值独立审查.md",
+      "bytes": 8555,
+      "sha256": "e296dc80b3cc5b603083a91d41e7c32af2368eae2b17b8999107c3c6dbf57000"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/公开三步准备策略原型验证.md",
+      "bytes": 5319,
+      "sha256": "82329e6a25dbf8824838228357a0afe5e95b9e939e2e05c99d8bcd0c76b994b5"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/内核独立审计.md",
+      "bytes": 25177,
+      "sha256": "9c18b876c99456203b365b4f21fa303aa272b7854716c0db5c13e2489372cde5"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/冻结FINAL共同续局截断诊断.md",
+      "bytes": 5031,
+      "sha256": "a5e40be56f2308378a8c1c28d54252586e4335eca6e524e4859139381873a998"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/动态Value模型报告.md",
+      "bytes": 35858,
+      "sha256": "e3d7662eabd0c011a147753be2b8e7969fe02e84e3518588d37119521ba03701"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/动态搜索独立审查.md",
+      "bytes": 7048,
+      "sha256": "85bc24f492f1b9ee8da38babb7eb582d05d4fcc6eb6c247dfd645baf2d5c93cb"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/基准与可靠性独立审查.md",
+      "bytes": 14861,
+      "sha256": "745325232b9c614fa2c33477432b057c916e07a8a6114fbb8ade2934a3739908"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/对手假设与规则审计.md",
+      "bytes": 17689,
+      "sha256": "591481f7bd9688fbeb55c0b669abeb18adddb54bfea262abeca076de20ad7883"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/效用中心化与可靠性门槛审查.md",
+      "bytes": 8289,
+      "sha256": "894401e8b340dc13117027fdeeab81d40bf13d7b3ca3dcc2b91b294ee18eb8d5"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/本轮交付验收.md",
+      "bytes": 4085,
+      "sha256": "b6ab068dd5fe864a552bf7bc46b4643ddeb98df2afc872715641fe3e3ee79b59"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/独立Archer时机与策略覆盖审查.md",
+      "bytes": 7021,
+      "sha256": "73be0a918706924ab1b7fd018b42c97607762831edc46cf5d1c813029c4d20c8"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/独立方法审查.md",
+      "bytes": 12415,
+      "sha256": "552c0cc111cdfec853b7a9434239d557f1d9cdb44ee71bbbda749dde3fafea58"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/独立校准与机制轨迹审查.md",
+      "bytes": 9413,
+      "sha256": "259db8dea9ebded3f2ea5c33c81ad672da6b68c7d56f707894aad0933d30469d"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/策略集合独立审查.md",
+      "bytes": 10005,
+      "sha256": "de0cdf6bb246b84ab88ebda2ab8cf681994e80e6a60bafe830097a4eade5e914"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/结果审计脚本独立边界复查.md",
+      "bytes": 6175,
+      "sha256": "f86b5dcf96a3cb7b71f67d28ef07cca4cc0fc5d18ef8ec8f54e7e48e12f04934"
+    },
+    {
+      "path": "analysis/monster-value-dynamic/通用评分程序开发规划.md",
+      "bytes": 11819,
+      "sha256": "6bc6e5964c8618c5f973188290fc8a998af86aed0624de5e8d71ce2f3e3446d6"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v1/annotations.json",
+      "bytes": 278,
+      "sha256": "da8121e912a5bcd76a13ed70e12cf367c5740ca3437137c24af07bfc9e99aa97"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v1/batch_000.json",
+      "bytes": 301,
+      "sha256": "d540959238e80bf70b6316297a57cce051b67478e0def7c077f356654fc6bc27"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v1/batch_001.json",
+      "bytes": 301,
+      "sha256": "43dbad141570a8f776375726cfd1f8e1cea926427c78f8074f92be324839bd2f"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v1/batch_002.json",
+      "bytes": 301,
+      "sha256": "8ea36d6f1dd1f0d6d8024aa6d3d1fa463aa0eb40bd5ff937e3af005f321dd927"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v1/batch_003.json",
+      "bytes": 301,
+      "sha256": "cbf28729880804248b8cca6ec6b5e034d9ed2321ddddb907318840710d7e7c16"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v1/consistency.json",
+      "bytes": 1515,
+      "sha256": "a157bed9d98bb5c356c07c9e872183ca75b846ab6457fe2e4b746693d4f52c1b"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v1/manifest.json",
+      "bytes": 47913,
+      "sha256": "a4a86adfd08826d98e349db35b3602e7f4326b9b01fb6253826b0d6e3d39c1d3"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v1-online/annotations.json",
+      "bytes": 7264,
+      "sha256": "e58d079c7b76ee42cf1de5e5194b3ea6ecf7e0388890bea1a64fda7f3de2bb0e"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v1-online/batch_000.json",
+      "bytes": 7293,
+      "sha256": "57ca07b2f05538fa9d51e1f01087bc52359942d39bf4c27c1011e2e442f06537"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v1-online/batch_001.json",
+      "bytes": 7379,
+      "sha256": "25cf400fce2744b6ce04112e4c8bac85352b939002c035aa5e958065944ee399"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v1-online/batch_002.json",
+      "bytes": 9329,
+      "sha256": "4d58bcee2eab1d9f04e1793864f720f63d1fb7c2113538fded9a303a05fef7a8"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v1-online/batch_003.json",
+      "bytes": 13122,
+      "sha256": "c5e9081df2f11a353d1069b5aa452fd5cf1d99bb8492d94c3de139f433480361"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v1-online/consistency.json",
+      "bytes": 927,
+      "sha256": "7952eb46e8b4c500fe7c96d26efb92725bf55fc9dec78081ad4ab83362da4865"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v1-online/manifest.json",
+      "bytes": 47913,
+      "sha256": "a4a86adfd08826d98e349db35b3602e7f4326b9b01fb6253826b0d6e3d39c1d3"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v2/annotations.json",
+      "bytes": 11450,
+      "sha256": "82217d353cbd6bec8186b675a03b0c459e74969eff582cd1843968e82c5e27fb"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v2/batch_000.json",
+      "bytes": 7661,
+      "sha256": "65d625e22190e870a0c5122b432023ffb5f15dcc083e87580c455dbf21c468ca"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v2/batch_001.json",
+      "bytes": 7955,
+      "sha256": "c1c6b31706e090a4603379b7777e0149a09970605ba2870471179586be499214"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v2/batch_002.json",
+      "bytes": 10084,
+      "sha256": "69e279413857722a49b54aa913c190f836c8c8bf24d163bef4b89695b384c0e3"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v2/batch_003.json",
+      "bytes": 14362,
+      "sha256": "e5ac0302aabb6c463009b7cf1f6bb3ec94bbd756fcd80e2634e4a5a1fb7dcff1"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v2/consistency.json",
+      "bytes": 4218,
+      "sha256": "fb648b931b29f418880967504a6024ba5538216c53b122f033f5e3b3f597cbe5"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v2/manifest.json",
+      "bytes": 51186,
+      "sha256": "638b00309b90982af5afbd9c1b749cf36a1060e7cb643d92d9fbb6343370f49c"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v3-central/annotations.json",
+      "bytes": 16027,
+      "sha256": "2221a13c04f50a5980f04dc9885f01740b79c9c932ea9475fac8157970862cec"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v3-central/annotator_source.py",
+      "bytes": 23499,
+      "sha256": "02338fce6992365846848b8d27083e71dffec71edb24119c57d0307d27c74f99"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v3-central/batch_000.json",
+      "bytes": 68345,
+      "sha256": "cc9e931da721822524eb27b7fb4612505f08e7661e601444acb86d3d3a443d0e"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v3-central/consistency.json",
+      "bytes": 880,
+      "sha256": "65a208f95ef007ba370b323a5143650bd44ab96d9ab92323b9e8383c3d1ec2d7"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v3-central/manifest.json",
+      "bytes": 50194,
+      "sha256": "47f3e3516900d919f9303c8944ba840c38b800f9eb08bd9d4d99ba956d51e8ce"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pilot-v3-central/reviewed-subset.json",
+      "bytes": 5235,
+      "sha256": "c3aed5fce34654306d77b95c092451b4fdd6e9155b16db99e809623aa1e681e9"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v4-dialogue-32/annotations.json",
+      "bytes": 51474,
+      "sha256": "829a6bd60c6555ab6dfeac024dfb7c3cc2b217846dd8556cfe0e6c460a7955dc"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v4-dialogue-32/annotator_source.py",
+      "bytes": 26723,
+      "sha256": "ec8dd2f2ef43fa2ea11462a0a77bb764ea682b8e8b977d969c2c5e87f417d590"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v4-dialogue-32/batch_000.attempt000.json",
+      "bytes": 26388,
+      "sha256": "b7d9f7cd65651a83b71e9acf122b7afca9c75194086f1887f400379be6e2d8e4"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v4-dialogue-32/batch_000.json",
+      "bytes": 50897,
+      "sha256": "5dc7b4a6e0ebff61fdadbf475a0961b2d9f1306959cf0b45e22a08d18cba3327"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v4-dialogue-32/batch_001.json",
+      "bytes": 55708,
+      "sha256": "b9f98f4b495052416b2eab88d1a8d0e16aa7b1e334c87284640fd18b2dd36d7e"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v4-dialogue-32/batch_002.json",
+      "bytes": 54878,
+      "sha256": "c1785f0dc4af1783c2c2b296f8f8de6eec1edca55076be62dff2c1c467506ca5"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v4-dialogue-32/batch_003.json",
+      "bytes": 49715,
+      "sha256": "f12d23e3227c359170ebd47bd23390e7616e32296f1fe60ed3ca90825e6c98f6"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v4-dialogue-32/cached_dialogue.py",
+      "bytes": 2083,
+      "sha256": "f1fa9ca6aee13548d92306694555d8c2badb18d8d75916a80a99698390414a1c"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v4-dialogue-32/consistency.json",
+      "bytes": 740,
+      "sha256": "828048258c81622c01c3be8c4d65130a4048b6d7b97d896c2570901a4f9712b9"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v4-dialogue-32/few_shots.py",
+      "bytes": 4001,
+      "sha256": "41f44157c3034737922e737c2c5518b695e3e325b9df0506a281692769dcdb02"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v4-dialogue-32/manifest.json",
+      "bytes": 120978,
+      "sha256": "d699ebf74a7e04e02ebd2a66d9c705944bc8cfaacd9c9f59ceb28d64ed1c7039"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/annotations.json",
+      "bytes": 175419,
+      "sha256": "efb067bd96dae285c56033a871f64208707d1c9b32f0615ad8064f558346c89e"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/annotator_source.py",
+      "bytes": 29673,
+      "sha256": "2bd9230ef5c70f69098c0eade2d71486f7fc68e0174c7356f014c31e4d9decc1"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/batch_000.json",
+      "bytes": 72968,
+      "sha256": "edcf0553c0c8a74a396bf935e7dbcc9c96719bac4315641f229e7ba0a5e08285"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/batch_001.json",
+      "bytes": 76205,
+      "sha256": "17cba929f9bf3d627d6260630ee5004dd242b989bd0b4a7cf927ba47eb8fdb50"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/batch_002.json",
+      "bytes": 71541,
+      "sha256": "86150e0d9595a90adcd407e1b49578655a497f5f9d2a65fd398ea37f6e58a641"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/batch_003.json",
+      "bytes": 69936,
+      "sha256": "de0b5cbeac44efa89ef456cb8e2391a0cc7628e6d0fee01fec992462bdfc4aed"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/batch_004.json",
+      "bytes": 68768,
+      "sha256": "650ceb70a43dba65e32a65dbbd109c08bba70de2718664053f78855ae67c9c3d"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/batch_005.json",
+      "bytes": 75870,
+      "sha256": "ec2622694d95bd5b8b4c50da02057ef9acedd48441fdff10a7485091682454b2"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/batch_006.json",
+      "bytes": 71181,
+      "sha256": "d23024bed4d8137132067087c42a90e18bdcb31708929ecbe6c34de7afcb8ec5"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/batch_007.json",
+      "bytes": 70776,
+      "sha256": "569cb2d87e2cdf8fd4757c74f0952556d1728402b075de918bdbfeb8976d1471"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/batch_008.json",
+      "bytes": 81544,
+      "sha256": "9d736a6ceeb05cc16f5fa3f1889995d096fe64661a40de76982506b285028cec"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/batch_009.json",
+      "bytes": 72034,
+      "sha256": "ca58a56b651ee7dd11220345ba378982fdd1e48de0b5bc3123e92308f4100c8e"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/batch_010.json",
+      "bytes": 73986,
+      "sha256": "510d7d2fdb7b0d859c836b8fe84edf6445233ddf7bd1b1aad283892425eee77c"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/batch_011.json",
+      "bytes": 69404,
+      "sha256": "4caccb3f3a294de54d46a78712f346756518818fc58873735ced98f07b93e0c2"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/batch_012.json",
+      "bytes": 74600,
+      "sha256": "80796da336ddcdfe62db4942277a351bf14939ddf4840f4be6d333a04316c88d"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/batch_013.json",
+      "bytes": 77028,
+      "sha256": "58e52ab5e07ff053f1e7fd96a5fb9c6356ccf18d1607486b83ec94beb33924d0"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/batch_014.json",
+      "bytes": 71063,
+      "sha256": "d1278c1712a2e9f69e1d05eb1f0dc8cf104fe6a3e0462a081b88884b4e3d0088"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/batch_015.json",
+      "bytes": 76026,
+      "sha256": "d0d063fa8bd87d022d481301e1d26171480e728d01f3e8818346e3cf8f8787e9"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/cached_dialogue.py",
+      "bytes": 2083,
+      "sha256": "f1fa9ca6aee13548d92306694555d8c2badb18d8d75916a80a99698390414a1c"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/consistency.json",
+      "bytes": 6313,
+      "sha256": "be69b8aee166500af234e7ae732e851c1d831d5aa5292531582100b265780b8b"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/few_shots.py",
+      "bytes": 4001,
+      "sha256": "41f44157c3034737922e737c2c5518b695e3e325b9df0506a281692769dcdb02"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-complete404/manifest.json",
+      "bytes": 2648239,
+      "sha256": "7f343c29003d539ca3acd87d668a9f627e373fca9acfc5d9616b93695b96fa61"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-knowledge-32/annotations.json",
+      "bytes": 47152,
+      "sha256": "fbda4a8fe1c912e7ea39d8b97b54e84d2ebafa2e3542a88ad06ed11a8b886e4b"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-knowledge-32/annotator_source.py",
+      "bytes": 29426,
+      "sha256": "5b3437c0d3155e2ee3d678e9e7e27b8c352a3b4e45dbdb5acc699840dc665065"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-knowledge-32/batch_000.json",
+      "bytes": 73023,
+      "sha256": "3c58eb669074394072adca9f1cd5c96e34dc8d1829a590e6b57e0d04625c39bb"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-knowledge-32/batch_001.json",
+      "bytes": 76671,
+      "sha256": "843d5182b3af0be5a14cd105ad39675e0be5e3b4eb2fcc304ed68ac98da214db"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-knowledge-32/batch_002.json",
+      "bytes": 71565,
+      "sha256": "b05e79e1d468161c29af3eee70f5f262226208ab23b19d17481bcc70fe8f1e67"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-knowledge-32/batch_003.json",
+      "bytes": 69604,
+      "sha256": "8aaa91b04c16760e2b98a95099336bb479dc0a39051712277a9e9bfc9a0caa13"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-knowledge-32/cached_dialogue.py",
+      "bytes": 2083,
+      "sha256": "f1fa9ca6aee13548d92306694555d8c2badb18d8d75916a80a99698390414a1c"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-knowledge-32/consistency.json",
+      "bytes": 1256,
+      "sha256": "1b1f1d2f5d5ba97865fe506cc347fd0bf642839d416612a3d579d3d24c2d083d"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-knowledge-32/few_shots.py",
+      "bytes": 4001,
+      "sha256": "41f44157c3034737922e737c2c5518b695e3e325b9df0506a281692769dcdb02"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/pool-v5-knowledge-32/manifest.json",
+      "bytes": 208424,
+      "sha256": "83176940ecbe6f257d3e0c5562674a1e50321d73b7d0f8ec006ef4a962b862fb"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-holdout16/annotations.json",
+      "bytes": 42079,
+      "sha256": "ff2e7958d69c3d1e66315a9635a0e5ad1d72f392917fe60926e9d23af658c9cc"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-holdout16/annotator_source.py",
+      "bytes": 31825,
+      "sha256": "0471aba3a2180f1d65953f1a04e2b4c522810ee574e93827a22b465c5b316a84"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-holdout16/batch_000.json",
+      "bytes": 101001,
+      "sha256": "b48eae78dde77f261a1491b8c8e824e823a6912aad5b66c1b6c2ba768e9f70c7"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-holdout16/batch_001.json",
+      "bytes": 90346,
+      "sha256": "8f6e3b81021bd49c08dc40b7840f0d601c26d7d163dc6f5d6987700eb1ae9833"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-holdout16/batch_002.json",
+      "bytes": 88056,
+      "sha256": "67f3b5fa42515bc0929afd2a7741864be68fd05f956a0636f2e0e2c0f33fab29"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-holdout16/batch_003.json",
+      "bytes": 88392,
+      "sha256": "8e6a7378d1a2078f4e01d52ac95f1d1ed14f9f1565ffbbeaa767bfa7e6df6e2c"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-holdout16/cached_dialogue.py",
+      "bytes": 2282,
+      "sha256": "e6312052d30a568ce70f476b1c743e6256bef0ba2c7fa0c4a9dda8227605c35d"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-holdout16/consistency.json",
+      "bytes": 7123,
+      "sha256": "b79ce5e5b206385a07adedb0c01b44422be087063bb952f0b07518ded9513579"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-holdout16/few_shots.py",
+      "bytes": 4001,
+      "sha256": "41f44157c3034737922e737c2c5518b695e3e325b9df0506a281692769dcdb02"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-holdout16/knowledge_resolution.py",
+      "bytes": 1997,
+      "sha256": "2ee9a7c9eb447a0c5b7c15a9499db92612093c222d8ed12933862405f8171ec7"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-holdout16/manifest.json",
+      "bytes": 336031,
+      "sha256": "8059a2a8c294aca994f53f99618e809640ccdb702d7ccfd01b910b137d24bc34"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-holdout16/semantic_v6.py",
+      "bytes": 33097,
+      "sha256": "b2a77d058e1bcbee154ea804e2cf56401a261d21f2b1aeefe7de1bfb404ee122"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-regression8/annotations.json",
+      "bytes": 30794,
+      "sha256": "f2f7e9a111f13ed6b2dccf3e2f3abb66484496011ff1ba9793f2429c9a2fdb35"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-regression8/annotator_source.py",
+      "bytes": 31825,
+      "sha256": "0471aba3a2180f1d65953f1a04e2b4c522810ee574e93827a22b465c5b316a84"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-regression8/batch_000.json",
+      "bytes": 97112,
+      "sha256": "9f80492e31727f525030b218c391df84d5a681b88544d0fd83947d406a8311d7"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-regression8/batch_001.json",
+      "bytes": 103186,
+      "sha256": "06e1ead56ff82aa96de3e32e3bfd1fcbdd1e8fa99668f8cee2591bae3d939758"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-regression8/cached_dialogue.py",
+      "bytes": 2282,
+      "sha256": "e6312052d30a568ce70f476b1c743e6256bef0ba2c7fa0c4a9dda8227605c35d"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-regression8/consistency.json",
+      "bytes": 1224,
+      "sha256": "a71c07c055fe44cc464ade78a70fe95a6b899c051c8bfc56fdfd0df9ac1ab11c"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-regression8/few_shots.py",
+      "bytes": 4001,
+      "sha256": "41f44157c3034737922e737c2c5518b695e3e325b9df0506a281692769dcdb02"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-regression8/knowledge_resolution.py",
+      "bytes": 1898,
+      "sha256": "7fbae6b47b2fb88d6ebf40c136f47f557a59b8fbebc3769b91d2fdcf9b2b646b"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-regression8/manifest.json",
+      "bytes": 168485,
+      "sha256": "210830db81c929c164d1c58101fa704b47e39e0a2687cd401d41031eb26b6155"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/annotation-runs/semantic-v6-regression8/semantic_v6.py",
+      "bytes": 32763,
+      "sha256": "0ed2f838820fdee9345c4280ff29933e976fc2695d62ed94d712c85169381caa"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/candidate-resource-demo/input.json",
+      "bytes": 398,
+      "sha256": "4e2889164085421f8f699bb6d427f2b960c56e4c618084f4aed8f17fe8bb5114"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/candidate-resource-demo/observations.json",
+      "bytes": 66152,
+      "sha256": "99afb3263f31aa7b1d541e133bdbc16f6e39b9d8c251bef547f0665eaa70bb31"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/context-pool-v02.json",
+      "bytes": 8560806,
+      "sha256": "2511fca104c335d81a2820f54df157d5daf50584f255ce2ef86af476e392bef7"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/context-pool-v022.json",
+      "bytes": 10533262,
+      "sha256": "b4c7d69b394fccc89c54d75bc0339f86cea161429fbab067536c4c064cb3a8f3"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/context-pool-v03.json",
+      "bytes": 11349275,
+      "sha256": "751d4c654e0f4e1c2fe808ea1dc20f48f33c3d148415512333b399b0eeeafb47"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/iteration-diagnostics-2026-10-08.json",
+      "bytes": 25440,
+      "sha256": "893b5ea597cb1dacd35ef05ee942fcd990c9d393da6a58b7e57f82ac95a60afe"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/pilot-engineering-diagnostics.csv",
+      "bytes": 2718,
+      "sha256": "9e90308b8ea6e25adc0baff130d8cde9d8cd5d6d5122fb31fd0cb430057d65f9"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/pilot-engineering-diagnostics.json",
+      "bytes": 152717,
+      "sha256": "8648f13092719ee7f37f4772c9eaa166c0da7e76c72dc88fa0144b827013f09c"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/pilot-reviewed-scores.csv",
+      "bytes": 906,
+      "sha256": "8f9d7cd4893ea5b3e7529a5b08a34e99ed851bb94cad381e0bc83be5737a4d76"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/pilot-reviewed-scores.json",
+      "bytes": 69789,
+      "sha256": "12b9f223f9462c08b7dd1fc43b093bf94c06ee8494724c5f3a7b406b7110fb0f"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/pool-v4-semantic-issues.json",
+      "bytes": 271,
+      "sha256": "5ecbf49f4c23c141594238d9a8c919b4976be0edd4f625ae1d9b478bd23d1bdc"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/pool-v5-semantic-issues.json",
+      "bytes": 2208,
+      "sha256": "3f120748d2906935f4a7807afa136701d51fc352a848825b78f061b189a12211"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/counterexample_000.json",
+      "bytes": 261096,
+      "sha256": "c9cc071fb4281fd4feb578622d645b1c006ec581dc3f947fcf25a5afa7cd0b6e"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/counterexample_001.json",
+      "bytes": 237779,
+      "sha256": "ba2f8993c775a6af4d7b02438a8b460a17e9265c3b61e030fa1e00d2cb7c193e"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/inventory_000.json",
+      "bytes": 218797,
+      "sha256": "d0352fb994c43f6049f411a1cd4e9781b4945147a6e73e74a93da1b2039c7e59"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/inventory_001.json",
+      "bytes": 218910,
+      "sha256": "8e95cfe16f2c77e5e2ef450be45c3749c248628f455503305591df084c3e58d1"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/inventory_002.json",
+      "bytes": 214384,
+      "sha256": "5e156805ffb2624184b2ad72e275dcd55a6584b6fc65b786a3f7c48cb08d0116"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/inventory_003.json",
+      "bytes": 220789,
+      "sha256": "ad002429e99b7201a284436a581ccab30277ecafde697f906ea29f82a937a152"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/inventory_004.json",
+      "bytes": 222553,
+      "sha256": "b52d8edae0a78b0be39e966f2a36d77ba5f8565667d8f5a8d5b92c8c6767be63"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/inventory_005.json",
+      "bytes": 222712,
+      "sha256": "d38adcd034fb56f8157380f040668eea7f80458c2a6496aa2d84d37b5c4593d8"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/inventory_006.json",
+      "bytes": 220726,
+      "sha256": "9fdc9eeb975fcc67c66af95e5a6740ef94d909dac5b5ced21ad5618430cf6491"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/inventory_007.json",
+      "bytes": 243084,
+      "sha256": "4ce423cf641ab2528f861c37662c7555dc8643b234a8dfe7b62105d44eaa3c8a"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/manifest.json",
+      "bytes": 4173409,
+      "sha256": "082428952d2e2f7b1af198a126a6f41a1d4ed5ea26d4107fe5b34200d0839b56"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/model_review_000.json",
+      "bytes": 274349,
+      "sha256": "b8d4832c0bbbc111d6eab6f51ac63cf8ae813e379cef3ddc28226644b21fb8c9"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/model_review_001.json",
+      "bytes": 253915,
+      "sha256": "72f57937e7982afee2a1d0f6e48e08893a5d01494e92e6f68c306114f96cf64a"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/sources/api_helper.py",
+      "bytes": 26467,
+      "sha256": "95075e49654613caf8ff82358d264b85658b09cdf65ac97ac7f3346435e9c8b0"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/sources/cached_dialogue.py",
+      "bytes": 2282,
+      "sha256": "e6312052d30a568ce70f476b1c743e6256bef0ba2c7fa0c4a9dda8227605c35d"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/sources/candidate_resource_observations.py",
+      "bytes": 15841,
+      "sha256": "4ad94d0174a6c2b9898eaa95765ca97b3313d82c03117e181f4eb26f10f24f13"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/sources/combat_increment.py",
+      "bytes": 9303,
+      "sha256": "e9b565a7efe3c92b6f559b1c7fac3058ec767ee70a0135fa4ef3227f72680623"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/sources/context_value.py",
+      "bytes": 24411,
+      "sha256": "3976f01752af039eed99af49fa7f4be67e4dc445ab07c51c7c11d1a7f3cbf325"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/sources/coupled_magic.py",
+      "bytes": 16045,
+      "sha256": "ec16ac44dc2a9b309625184a60c6223cc0db0ac48b2ea2c56f4929eac094f0f1"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/sources/heuristic_contexts.py",
+      "bytes": 13285,
+      "sha256": "d97e2af5f49de2b758d03dd8880b8d585c3dbd09de6f5a9e31e44e550eb4c85c"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/sources/mechanics.json",
+      "bytes": 90785,
+      "sha256": "7f0fcbf4396964cc8041030415e0a59500e0f2bf29afdb74a65932aa9f5127d7"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/sources/payment_frontier.py",
+      "bytes": 9079,
+      "sha256": "4f01afc90727688f7b644161f80f2f2172f0e633461d47873be76b651af5f961"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/sources/queue_source.py",
+      "bytes": 35141,
+      "sha256": "912fef81600c9c86af83bdd267e4336fad2ee5ce9a96197a044b6f9aa754e105"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/sources/resource_curve.py",
+      "bytes": 11558,
+      "sha256": "6aafdbb1fb2f577104af7a6270e4523dda455cdbddae78a52a56e3e63f4c671e"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/sources/resource_profile_bridge.py",
+      "bytes": 11081,
+      "sha256": "ed37dabf9ae0d37d5670a1fcf58e41e749043855e86ee0923387ee82ab7b5c01"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/sources/rules.md",
+      "bytes": 7195,
+      "sha256": "76554b57c81978bd8c2cd44e22877f439dc5b9c60cb42b02daa885b9456613ee"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/sources/score_cards.py",
+      "bytes": 23644,
+      "sha256": "ba38abe34bac9b8f4c442c17e7b0e4cded8b5551efff533b9fdec12739693084"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/sources/semantic_v6.py",
+      "bytes": 33097,
+      "sha256": "b2a77d058e1bcbee154ea804e2cf56401a261d21f2b1aeefe7de1bfb404ee122"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/sources/SKILL.md",
+      "bytes": 7544,
+      "sha256": "9c33ea4557b6ff8d8c6668484627b89ee839fd82cd6829011f0b76cff6abb105"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/sources/snapshot.json",
+      "bytes": 936911,
+      "sha256": "7f19bef22de440abf1c2273806acecd0447e8341ad12f10eb63b418dfad45b85"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/sources/unified_value.py",
+      "bytes": 24566,
+      "sha256": "c1bd4f5462e803c780187fadc5d0e56a345248b3512096ea9bd6ab22d7b5c4ef"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/research-runs/round01/summary.json",
+      "bytes": 11512,
+      "sha256": "372f140529b22faf56119c2450838cbdc5372457b784139d764e5fe32a7386fb"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v03/comparison.json",
+      "bytes": 9333,
+      "sha256": "dc599c218d5e48f53398419936ab8939412905be91da689af963290bf06c0892"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v03/higher_cost-input.json",
+      "bytes": 495,
+      "sha256": "64beaf5afd71c2c94525827e65a8f2226d5f537b9c0c5353c4fd7a66dcb53b55"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v03/higher_cost-profile.json",
+      "bytes": 2998,
+      "sha256": "93a1203e1739503d992b6a990f85e571eb4bfbd75a36ef9d72b6632e1d7cb620"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v03/higher_cost-resources.json",
+      "bytes": 16765,
+      "sha256": "968a76df60e1390b3d627debe0b2f99c83f03b88a9e8007c814c8abe821479e8"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v03/higher_cost-values.json",
+      "bytes": 46488,
+      "sha256": "ba056343117def1913e14c52a6e0ca73d9c8644874b235854d143311fd3880c2"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v03/lower_cost-input.json",
+      "bytes": 494,
+      "sha256": "00dc22611d30ed9e69fc42765753476614e6567d2bea7c9371a29425ecabffe3"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v03/lower_cost-profile.json",
+      "bytes": 3815,
+      "sha256": "bf53856bcb1a5bb62f08005383ef652a977fa78151b35287fc686014d59d4df3"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v03/lower_cost-resources.json",
+      "bytes": 20904,
+      "sha256": "2172c55a17c208a55bf60fcea061374766e51cac3e6e48eaa3fd5d01a62ab185"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v03/lower_cost-values.json",
+      "bytes": 46880,
+      "sha256": "255ca512d61fbbbc1cd4322c349b1ed9e23644e86d6753caf2755118ed969ade"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v03/middle_cost-input.json",
+      "bytes": 495,
+      "sha256": "966f270149f81b8f747a01232bddab87ef771ef443e216849e1694b6e5d06eaa"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v03/middle_cost-profile.json",
+      "bytes": 3816,
+      "sha256": "8b98c79fb2ddedc3f65246b4c6949e32533cc550ca16895dc30e93687cb98b30"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v03/middle_cost-resources.json",
+      "bytes": 20656,
+      "sha256": "ed79a7bb9040acd22226d8b527aa29a685fed2eeb66c7f233315430cb78c2269"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v03/middle_cost-values.json",
+      "bytes": 46573,
+      "sha256": "1f899ba1e789939701d8b15060879bfd356658871991520857681156c254754a"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v04/comparison.json",
+      "bytes": 10586,
+      "sha256": "4261c8c7bbe90e16780bc9e85265ce5d825918b6bb1a1095bbb8095ebbfc83b2"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v04/higher_cost-input.json",
+      "bytes": 495,
+      "sha256": "64beaf5afd71c2c94525827e65a8f2226d5f537b9c0c5353c4fd7a66dcb53b55"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v04/higher_cost-profile.json",
+      "bytes": 5315,
+      "sha256": "0a223ba2caa22555d253d19834846f10c4df0a9dc2a266bf110e67f9ee68c270"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v04/higher_cost-resources.json",
+      "bytes": 19318,
+      "sha256": "e8fa5f35d1f52b169bfcc7ca2c94d1a1b6ece76ac19ac08d83c68d2992f70091"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v04/higher_cost-values.json",
+      "bytes": 53665,
+      "sha256": "5f951e1d9633f9b4bca72b1a2be8ccf66f6bdc9a8624906a459247450d0ddf45"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v04/lower_cost-input.json",
+      "bytes": 494,
+      "sha256": "00dc22611d30ed9e69fc42765753476614e6567d2bea7c9371a29425ecabffe3"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v04/lower_cost-profile.json",
+      "bytes": 6682,
+      "sha256": "ccdf7247bf0f866e4120d2476021211f6028ba18d154dc31461def18e379ad7c"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v04/lower_cost-resources.json",
+      "bytes": 24063,
+      "sha256": "817f6d42764f7d40477a83ddcdb04258251157dcae88a68cac9f4768af5de06f"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v04/lower_cost-values.json",
+      "bytes": 53678,
+      "sha256": "f719b0561e81c77b588e63d3a67c7054b73e3d9f2b9efa76f5b2a52440268324"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v04/middle_cost-input.json",
+      "bytes": 495,
+      "sha256": "966f270149f81b8f747a01232bddab87ef771ef443e216849e1694b6e5d06eaa"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v04/middle_cost-profile.json",
+      "bytes": 6564,
+      "sha256": "1986c3cef33ccb0c772046479fa5bd9d9bee2224334bc189d3b954187a93ba2d"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v04/middle_cost-resources.json",
+      "bytes": 23686,
+      "sha256": "b5a112b9865abb43879bc8035db060aea601eaa0f019b007d6f8ee3004e59714"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v04/middle_cost-values.json",
+      "bytes": 53691,
+      "sha256": "af68e0738242a0a62fa89cfe58a3a309d97910fc69e893cd890b3ac18787e930"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-comparison-v04/run-provenance.json",
+      "bytes": 1040,
+      "sha256": "c4914c3b6d7bb49f8153bedff660dfe2fe9f732b1ef39aa905adaaeb2a53fd4b"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-curve-demo.json",
+      "bytes": 76348,
+      "sha256": "f297795ee9542022322f62ff5843bbe65c34bf4b299feab72283a59295bfe9ef"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/resource-probes.json",
+      "bytes": 3085,
+      "sha256": "cf158797f0de10e48e456f66707d745cdbd2e687369afec8708dd4eef05e4c4a"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/unified-pool-v01.json",
+      "bytes": 972363,
+      "sha256": "daff7f1740ed6c5e4e9382d851e3d4555e3b71a42ea325f50a8c4fc6a3a6746f"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/unified-pool-v02.json",
+      "bytes": 1089127,
+      "sha256": "a695e53af1a5a463aa413a426eff94fd8440ea987575e5a12c23282fd5040af3"
+    },
+    {
+      "path": "analysis/monster-value-heuristic/unified-pool-v03.json",
+      "bytes": 1257907,
+      "sha256": "5d984e27aba5f46dae73b72ff94a900d8797d2501d562370ff3d4dd0bb51e43e"
+    },
+    {
+      "path": "analysis/monster-value-methods/建模方法调研与修订.md",
+      "bytes": 16836,
+      "sha256": "4a823400f501c2ec9cef2f20fb9dd1c95ef236af48b24c72dee9653e62a9eb40"
+    },
+    {
+      "path": "analysis/互联网核对与打法.md",
+      "bytes": 20164,
+      "sha256": "dad2d59c3d66b40a4e217a1164063a31983988aadd47c71519907653b4827e6e"
+    },
+    {
+      "path": "analysis/卡池统计.md",
+      "bytes": 18490,
+      "sha256": "a9ebf1d3774fb811b4286babcf9170ad91519bc80e1adc41fa44efbffadbbd19"
+    },
+    {
+      "path": "analysis/卡牌池索引.md",
+      "bytes": 150107,
+      "sha256": "b93e1ca101b228a80ab93294c098961becb772f3b637c70ef9f6c21bd342c3dd"
+    },
+    {
+      "path": "analysis/机制文本索引.md",
+      "bytes": 28290,
+      "sha256": "9e8286d5dc7c47475651d8cf1aeac30d5ef8981926dc1b187e46aae5fc1cca0c"
+    },
+    {
+      "path": "analysis/牌组样本核对.md",
+      "bytes": 22187,
+      "sha256": "6f8bd3f94bc056e70cb5269c9e82d90f8d5014426489439649287dc8515dc05f"
+    },
+    {
+      "path": "analysis/玩法还原.md",
+      "bytes": 39143,
+      "sha256": "159d6960c1ec490b3a3c2c3069ddf62a09f75269cd918b1e8a94fbec925ca373"
+    },
+    {
+      "path": "collection.json",
+      "bytes": 977903,
+      "sha256": "e8a681bd901b387f538727a51e5e8e05b2edb29a868508b360dc4ac309d7730f"
+    },
+    {
+      "path": "data.json",
+      "bytes": 282852,
+      "sha256": "e738930b0654ca4e64d5f38186e4b5465d7271ec919f3da04d8d231505cfca46"
+    },
+    {
+      "path": "deck_sample.json",
+      "bytes": 114091,
+      "sha256": "e01a9deeaf1bc105c876bdaedad472ae0df5e7e805eacc0f8b6b9d66ad875288"
+    },
+    {
+      "path": "survey.md",
+      "bytes": 29116,
+      "sha256": "e57ff08d213f1666c52e243f463a366115fa78ea38801f5221b09aa917ea8606"
+    }
+  ],
+  "archive_sha256": "313904044bd42c68c8c9aa254daa8fb74f766f39d4df6df99991007d45166cd9",
+  "archive_bytes": 4545271,
+  "scope": "Current heuristic evidence, API records, and older Markdown conclusions; excludes superseded massive simulation traces and credentials."
+}
