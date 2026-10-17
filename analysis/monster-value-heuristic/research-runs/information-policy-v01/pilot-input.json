@@ -1,0 +1,61 @@
+{
+  "scenario": {
+    "hand_ids": [
+      14,
+      15
+    ],
+    "hand_generated": [
+      false,
+      false
+    ],
+    "gold_before_play": 5,
+    "opponent_gold_before_response": 2,
+    "own_player_hp": 15,
+    "own_player_max_hp": 30,
+    "enemy_player_hp": 30,
+    "enemy_player_max_hp": 30,
+    "ally_bodies_before_play": [],
+    "enemy_bodies": [
+      {
+        "card_id": 246,
+        "attack": 3,
+        "health": 6,
+        "max_health": 6,
+        "printed_cost": 4,
+        "base_cost": 4,
+        "current_cost": 4,
+        "ready": true
+      }
+    ],
+    "own_deck_ids": [],
+    "opponent_deck_ids": [],
+    "next_own_gold_income": 0,
+    "next_opponent_gold_income": 0,
+    "next_natural_draw_count": 0,
+    "next_opponent_natural_draw_count": 0
+  },
+  "worlds": [
+    {
+      "id": "generated_penetration",
+      "opponent_hand_ids": [
+        79
+      ],
+      "opponent_hand_generated": [
+        true
+      ]
+    },
+    {
+      "id": "generated_worsening",
+      "opponent_hand_ids": [
+        86
+      ],
+      "opponent_hand_generated": [
+        true
+      ]
+    }
+  ],
+  "task": {
+    "kind": "hp"
+  },
+  "node_limit": 50000
+}

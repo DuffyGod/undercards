@@ -1,0 +1,323 @@
+{
+  "method": "Independent exhaustive small-kernel action histories plus explicit common-policy witness.",
+  "source_hashes": {
+    "independent_hidden_menu.py": "4d2f6e6de1bd75d58e0ff519334611e75d5bcc477155692a64bbecd8bafd60f1",
+    "independent_standing.py": "ea846d243c68b14514837992cc38d0ac794ea484d3e4c5cf850288cf3ebfae95"
+  },
+  "policy": "Root end/hold. At second own window play Jerry and end; do not attack.",
+  "standing_constraint": {
+    "min_own_living_count": 1
+  },
+  "world_policy_results": {
+    "79": {
+      "enemy_terminal_action_histories": 24,
+      "all_terminal_histories_retain_jerry": true,
+      "minimum_player_hp": 9,
+      "minimum_jerry_health": 2,
+      "worst_hp_witness": {
+        "enemy_first": [
+          "attack_face",
+          "end"
+        ],
+        "enemy_second": [
+          "cast_79_ally",
+          "attack_face",
+          "end"
+        ],
+        "terminal": {
+          "hp": 9,
+          "enemy_hp": 30,
+          "ally": {
+            "card": 14,
+            "attack": 4,
+            "health": 5,
+            "taunt": false,
+            "reduction": false,
+            "attacked": true
+          },
+          "foe": {
+            "card": 246,
+            "attack": 3,
+            "health": 6,
+            "taunt": false,
+            "reduction": false,
+            "attacked": false
+          },
+          "hand": [
+            15
+          ],
+          "own_gold": 0,
+          "enemy_gold": 1,
+          "spell": 0,
+          "spell_generated": true,
+          "enemy_acted": true,
+          "delayed_target": "",
+          "generated": []
+        }
+      }
+    },
+    "86": {
+      "enemy_terminal_action_histories": 22,
+      "all_terminal_histories_retain_jerry": true,
+      "minimum_player_hp": 12,
+      "minimum_jerry_health": 1,
+      "worst_hp_witness": {
+        "enemy_first": [
+          "attack_face",
+          "end"
+        ],
+        "enemy_second": [
+          "end"
+        ],
+        "terminal": {
+          "hp": 12,
+          "enemy_hp": 30,
+          "ally": {
+            "card": 14,
+            "attack": 4,
+            "health": 5,
+            "taunt": true,
+            "reduction": true,
+            "attacked": true
+          },
+          "foe": {
+            "card": 246,
+            "attack": 3,
+            "health": 6,
+            "taunt": false,
+            "reduction": false,
+            "attacked": false
+          },
+          "hand": [
+            15
+          ],
+          "own_gold": 0,
+          "enemy_gold": 2,
+          "spell": 86,
+          "spell_generated": true,
+          "enemy_acted": false,
+          "delayed_target": "",
+          "generated": []
+        }
+      }
+    }
+  },
+  "common_policy_lower_bound": 9,
+  "upper_bound": 9,
+  "upper_reason": "Standing-feasible policies are a subset of pureHP policies; independently certified pureHP common maximum is9.",
+  "only_aaron_negative_control": {
+    "world": 86,
+    "generated": true,
+    "own_hand": [
+      15
+    ],
+    "all_root_choices_infeasible_even_with_world_revealed": true,
+    "upper_value": [
+      0,
+      12
+    ],
+    "root_rows": [
+      {
+        "root_trace": [
+          "end"
+        ],
+        "worldwise_purpose_upper_value": [
+          0,
+          12
+        ],
+        "enemy_first_witness": [
+          "attack_face",
+          "end"
+        ],
+        "best_own_continuation_against_witness": [
+          "play_15",
+          "end"
+        ],
+        "enemy_final_witness": [
+          "cast_86_ally",
+          "attack_monster",
+          "end"
+        ],
+        "terminal": {
+          "hp": 12,
+          "enemy_hp": 30,
+          "ally": null,
+          "foe": {
+            "card": 246,
+            "attack": 3,
+            "health": 1,
+            "taunt": false,
+            "reduction": false,
+            "attacked": false
+          },
+          "hand": [],
+          "own_gold": 0,
+          "enemy_gold": 0,
+          "spell": 0,
+          "spell_generated": true,
+          "enemy_acted": true,
+          "delayed_target": "",
+          "generated": []
+        },
+        "all_own_continuations_at_first_witness_have_enemy_kill_reply": true
+      },
+      {
+        "root_trace": [
+          "play_15",
+          "end"
+        ],
+        "worldwise_purpose_upper_value": [
+          0,
+          12
+        ],
+        "enemy_first_witness": [
+          "cast_86_ally",
+          "attack_face",
+          "end"
+        ],
+        "best_own_continuation_against_witness": [
+          "end"
+        ],
+        "enemy_final_witness": [
+          "attack_monster",
+          "end"
+        ],
+        "terminal": {
+          "hp": 12,
+          "enemy_hp": 30,
+          "ally": null,
+          "foe": {
+            "card": 246,
+            "attack": 3,
+            "health": 1,
+            "taunt": false,
+            "reduction": false,
+            "attacked": false
+          },
+          "hand": [],
+          "own_gold": 0,
+          "enemy_gold": 0,
+          "spell": 0,
+          "spell_generated": true,
+          "enemy_acted": true,
+          "delayed_target": "",
+          "generated": []
+        },
+        "all_own_continuations_at_first_witness_have_enemy_kill_reply": true
+      }
+    ]
+  },
+  "independent_bound_source_sha256": "a3b3211192f04ad47a3556ea5953e3442d2bb1c1e25c78be8ea273b2c96aae20",
+  "actual_main_artifact_review": {
+    "passed": true,
+    "artifact_rows": [
+      {
+        "path": "main/card14-single-2G-hp.json.gz",
+        "gzip_sha256": "3e745e329b78ea0d5841dddf9ed739a35baae478242a01af649ea12dac553267",
+        "version": "finite-information-policy-0.1.0",
+        "reported_source_hashes": {
+          "__init__.py": "91c62e2a29ddc11385ea446b56a2680f8682c16b2530af881c97b6cfb118f63a",
+          "belief.py": "e13517d7d211bbfb5dc12c23dd51a3b9a6af8a33ae6759e7024acb63743ebc95",
+          "engine.py": "28267de5460ebec92bc241f2d39c00010fc987a2ab4bce306c256e848dafc4be",
+          "root_mix.py": "4b888e1ebbb6c07e88c0095e5ed8794fbf3dbd2937406319c302f59dd61e42f5",
+          "rules.py": "d846c651be2a6167d8b39d107674e1c5f90c5461629edabdc9e094fb0da9794a"
+        },
+        "common_policy": {
+          "value": [
+            9
+          ],
+          "feasible": true,
+          "guaranteed_player_hp": 9
+        },
+        "root_action": {
+          "kind": "end",
+          "arguments": []
+        },
+        "information_gap_hp": 3
+      },
+      {
+        "path": "main/baseline-5G-single-2G-hp.json.gz",
+        "gzip_sha256": "9c600cbcc292296b8be39e2351c9bb108896fcf4cc742dfd7bcd7995e2d38c9f",
+        "version": "finite-information-policy-0.1.0",
+        "reported_source_hashes": {
+          "__init__.py": "91c62e2a29ddc11385ea446b56a2680f8682c16b2530af881c97b6cfb118f63a",
+          "belief.py": "e13517d7d211bbfb5dc12c23dd51a3b9a6af8a33ae6759e7024acb63743ebc95",
+          "engine.py": "28267de5460ebec92bc241f2d39c00010fc987a2ab4bce306c256e848dafc4be",
+          "root_mix.py": "4b888e1ebbb6c07e88c0095e5ed8794fbf3dbd2937406319c302f59dd61e42f5",
+          "rules.py": "d846c651be2a6167d8b39d107674e1c5f90c5461629edabdc9e094fb0da9794a"
+        },
+        "common_policy": {
+          "value": [
+            9
+          ],
+          "feasible": true,
+          "guaranteed_player_hp": 9
+        },
+        "root_action": {
+          "kind": "end",
+          "arguments": []
+        },
+        "information_gap_hp": 0
+      },
+      {
+        "path": "main/card14-single-2G-standing.json.gz",
+        "gzip_sha256": "2efaae9c0183133763b20738ff143429076dfab1442d0c55a91ae276e90ad959",
+        "version": "finite-information-policy-0.1.0",
+        "reported_source_hashes": {
+          "__init__.py": "91c62e2a29ddc11385ea446b56a2680f8682c16b2530af881c97b6cfb118f63a",
+          "belief.py": "e13517d7d211bbfb5dc12c23dd51a3b9a6af8a33ae6759e7024acb63743ebc95",
+          "engine.py": "28267de5460ebec92bc241f2d39c00010fc987a2ab4bce306c256e848dafc4be",
+          "root_mix.py": "4b888e1ebbb6c07e88c0095e5ed8794fbf3dbd2937406319c302f59dd61e42f5",
+          "rules.py": "d846c651be2a6167d8b39d107674e1c5f90c5461629edabdc9e094fb0da9794a"
+        },
+        "common_policy": {
+          "value": [
+            1,
+            9
+          ],
+          "feasible": true,
+          "guaranteed_player_hp": 9
+        },
+        "root_action": {
+          "kind": "end",
+          "arguments": []
+        },
+        "information_gap_hp": 3
+      },
+      {
+        "path": "main/baseline-5G-single-2G-standing.json.gz",
+        "gzip_sha256": "a4bf4ab0c9fb9917e5604a0080a97eabb5068125b50179e9fb2a89f095c88094",
+        "version": "finite-information-policy-0.1.0",
+        "reported_source_hashes": {
+          "__init__.py": "91c62e2a29ddc11385ea446b56a2680f8682c16b2530af881c97b6cfb118f63a",
+          "belief.py": "e13517d7d211bbfb5dc12c23dd51a3b9a6af8a33ae6759e7024acb63743ebc95",
+          "engine.py": "28267de5460ebec92bc241f2d39c00010fc987a2ab4bce306c256e848dafc4be",
+          "root_mix.py": "4b888e1ebbb6c07e88c0095e5ed8794fbf3dbd2937406319c302f59dd61e42f5",
+          "rules.py": "d846c651be2a6167d8b39d107674e1c5f90c5461629edabdc9e094fb0da9794a"
+        },
+        "common_policy": {
+          "value": [
+            0,
+            12
+          ],
+          "feasible": false,
+          "guaranteed_player_hp": null
+        },
+        "root_action": {
+          "kind": "end",
+          "arguments": []
+        },
+        "information_gap_hp": null
+      }
+    ],
+    "method": "Read actual configs/results and verify scalar/tuple semantics against independent small-case proofs; did not import production model.",
+    "corrections_and_limits": [
+      "Root end/hold can be optimal. Aaron-at-root is an independent witness, not a forced or unique optimal action.",
+      "PureHP marginal is zero in this specific background; standing-purpose feasibility improves. Do not call Jerry generally worthless.",
+      "Joint [0,12] is infeasible for standing. Its physical HP12 is a diagnostic fallback, not a valid standing guarantee and not zero HP.",
+      "Main Generated=true facts remove cross-SOUL main-deck illegality and suppress native Worsening Add.",
+      "Enemy sourceGenerated must not itself enter public observation unless the input publicly reveals origin.",
+      "BoneBox choice privacy remains an explicit unverified information-rule hypothesis."
+    ]
+  }
+}

@@ -1,0 +1,645 @@
+{
+  "method": "independent exact small-game action enumeration; no production imports",
+  "source_sha256": "4d2f6e6de1bd75d58e0ff519334611e75d5bcc477155692a64bbecd8bafd60f1",
+  "snapshot_sha256": "7f19bef22de440abf1c2273806acecd0447e8341ad12f10eb63b418dfad45b85",
+  "cards": [
+    {
+      "id": 2,
+      "name": "Froggit",
+      "metadata_name": "Froggit",
+      "cost": 2,
+      "attack": 2,
+      "health": 3,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "FROGGIT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": " ",
+      "effect_readable": "",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-2",
+      "source_line": 284
+    },
+    {
+      "id": 4,
+      "name": "Moldsmal",
+      "metadata_name": "Moldsmal",
+      "cost": 2,
+      "attack": 3,
+      "health": 2,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "MOLD"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": " ",
+      "effect_readable": "",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-4",
+      "source_line": 286
+    },
+    {
+      "id": 9,
+      "name": "Ice Cap",
+      "metadata_name": "Ice Cap",
+      "cost": 3,
+      "attack": 3,
+      "health": 1,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Charge",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:CHARGE}}.",
+      "effect_readable": "Charge.",
+      "keyword_mentions": [
+        "CHARGE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-9",
+      "source_line": 291
+    },
+    {
+      "id": 11,
+      "name": "Snowdrake",
+      "metadata_name": "Snowdrake",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give an ally monster +2 {{ATK}}.",
+      "effect_readable": "Magic: Give an ally monster +2 ATK.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-11",
+      "source_line": 293
+    },
+    {
+      "id": 14,
+      "name": "Jerry",
+      "metadata_name": "Jerry",
+      "cost": 5,
+      "attack": 4,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. This takes 1 less {{DMG}} from monsters costing 4 or less {{GOLD}}.",
+      "effect_readable": "Taunt. This takes 1 less DMG from monsters costing 4 or less GOLD.",
+      "keyword_mentions": [
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-14",
+      "source_line": 296
+    },
+    {
+      "id": 15,
+      "name": "Aaron",
+      "metadata_name": "Aaron",
+      "cost": 5,
+      "attack": 6,
+      "health": 5,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": " ",
+      "effect_readable": "",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-15",
+      "source_line": 297
+    },
+    {
+      "id": 79,
+      "name": "Penetration",
+      "metadata_name": "Penetration",
+      "cost": 1,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "BRAVERY",
+      "set": "BASE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SILENCE}} a monster.",
+      "effect_readable": "Silence a monster.",
+      "keyword_mentions": [
+        "SILENCE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-79",
+      "source_line": 361
+    },
+    {
+      "id": 86,
+      "name": "Worsening",
+      "metadata_name": "Worsening",
+      "cost": 2,
+      "attack": null,
+      "health": null,
+      "rarity": "BASE",
+      "card_type": "spell",
+      "soul": "PERSEVERANCE",
+      "set": "BASE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Give a monster {{STATS:-1|-2}}. {{KW:DELAY}}: If it's dead and this is non-{{KW:GENERATED}}, add a {{CARD:86|1}} to your hand.",
+      "effect_readable": "Give a monster ATK -1/HP -2. Delay: If it's dead and this is non-Generated, add a Worsening [#86] to your hand.",
+      "keyword_mentions": [
+        "DELAY",
+        "GENERATED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        86
+      ],
+      "source_key": "card-86",
+      "source_line": 368
+    },
+    {
+      "id": 96,
+      "name": "Punishment",
+      "metadata_name": "Punishment",
+      "cost": 3,
+      "attack": null,
+      "health": null,
+      "rarity": "BASE",
+      "card_type": "spell",
+      "soul": "JUSTICE",
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Deal 4 {{DMG}} to an enemy monster.",
+      "effect_readable": "Deal 4 DMG to an enemy monster.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-96",
+      "source_line": 378
+    },
+    {
+      "id": 246,
+      "name": "Lady Garf",
+      "metadata_name": "Lady Garf",
+      "cost": 4,
+      "attack": 3,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at 5 random monsters and choose one. Add it to your hand.",
+      "effect_readable": "Magic: Look at 5 random monsters and choose one. Add it to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-246",
+      "source_line": 506
+    },
+    {
+      "id": 351,
+      "name": "Gaster Blaster",
+      "metadata_name": "Gaster Blaster",
+      "cost": 4,
+      "attack": null,
+      "health": null,
+      "rarity": "TOKEN",
+      "card_type": "spell",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALL",
+      "base_statuses": [],
+      "pool_category": "token",
+      "effect_raw": "Deal 8 {{DMG}} to a monster or you.",
+      "effect_readable": "Deal 8 DMG to a monster or you.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-351",
+      "source_line": 575
+    },
+    {
+      "id": 402,
+      "name": "Bone Box",
+      "metadata_name": "Bone Box",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at 3 random spells costing 3 or less {{GOLD}} and choose one. Add it to your hand.",
+      "effect_readable": "Magic: Look at 3 random spells costing 3 or less GOLD and choose one. Add it to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-402",
+      "source_line": 1439
+    }
+  ],
+  "matrix_own_hp": {
+    "Jerry": {
+      "79": 9,
+      "86": 15
+    },
+    "Aaron": {
+      "79": 12,
+      "86": 9
+    },
+    "hold": {
+      "79": 9,
+      "86": 12
+    }
+  },
+  "worldwise_best_then_min": 12,
+  "root_locked_upper_bound": 9,
+  "common_policy_lower_bound": 9,
+  "common_policy": "Play Aaron at root; on next own turn attack live enemy if possible.",
+  "common_policy_world_values": {
+    "79": 12,
+    "86": 9
+  },
+  "second_common_policy": "Play Jerry at root; on next own turn attack live enemy if possible.",
+  "second_common_policy_world_values": {
+    "79": 9,
+    "86": 15
+  },
+  "separate_randomized_expected_utility": {
+    "assumptions": "Hidden world fixed before private root randomization; enemy sees deployed root card and adapts its response. Objective is expected HP, not physical HP floor.",
+    "own_policy_weights": {
+      "Aaron": "2/3",
+      "Jerry": "1/3"
+    },
+    "world_expected_hp": {
+      "79": "11",
+      "86": "11"
+    },
+    "min_world_expected_hp": "11",
+    "dual_upper_certificate_weights_not_empirical_probabilities": {
+      "79": "2/3",
+      "86": "1/3"
+    },
+    "weighted_upper_values": {
+      "Jerry": "11",
+      "Aaron": "11",
+      "hold": "10"
+    }
+  },
+  "clairvoyance_overstatement_hp": 3,
+  "generated_worsening_histories_seen": 0,
+  "formal_hidden_menu_both_generated": true,
+  "common_legal_generated_source": 402,
+  "separate_native_worsening_rule_probe": {
+    "values": {
+      "14": 15,
+      "15": 9,
+      "0": 12
+    },
+    "generated_histories_seen": 5
+  },
+  "worst_reply_witnesses": {
+    "Jerry/79": {
+      "enemy_first": [
+        "cast_79_ally",
+        "attack_face",
+        "end"
+      ],
+      "own_second": [
+        "end"
+      ],
+      "enemy_second": [
+        "attack_face",
+        "end"
+      ],
+      "terminal": {
+        "hp": 9,
+        "enemy_hp": 30,
+        "ally": {
+          "card": 14,
+          "attack": 4,
+          "health": 5,
+          "taunt": false,
+          "reduction": false,
+          "attacked": false
+        },
+        "foe": {
+          "card": 246,
+          "attack": 3,
+          "health": 6,
+          "taunt": false,
+          "reduction": false,
+          "attacked": false
+        },
+        "hand": [
+          15
+        ],
+        "own_gold": 0,
+        "enemy_gold": 1,
+        "spell": 0,
+        "spell_generated": true,
+        "enemy_acted": true,
+        "delayed_target": "",
+        "generated": []
+      },
+      "enemy_first_terminal_histories": 9
+    },
+    "Jerry/86": {
+      "enemy_first": [
+        "end"
+      ],
+      "own_second": [
+        "end"
+      ],
+      "enemy_second": [
+        "end"
+      ],
+      "terminal": {
+        "hp": 15,
+        "enemy_hp": 30,
+        "ally": {
+          "card": 14,
+          "attack": 4,
+          "health": 5,
+          "taunt": true,
+          "reduction": true,
+          "attacked": false
+        },
+        "foe": {
+          "card": 246,
+          "attack": 3,
+          "health": 6,
+          "taunt": false,
+          "reduction": false,
+          "attacked": false
+        },
+        "hand": [
+          15
+        ],
+        "own_gold": 0,
+        "enemy_gold": 2,
+        "spell": 86,
+        "spell_generated": true,
+        "enemy_acted": false,
+        "delayed_target": "",
+        "generated": []
+      },
+      "enemy_first_terminal_histories": 8
+    },
+    "Aaron/79": {
+      "enemy_first": [
+        "cast_79_ally",
+        "attack_face",
+        "end"
+      ],
+      "own_second": [
+        "attack_monster",
+        "end"
+      ],
+      "enemy_second": [
+        "end"
+      ],
+      "terminal": {
+        "hp": 12,
+        "enemy_hp": 30,
+        "ally": {
+          "card": 15,
+          "attack": 6,
+          "health": 2,
+          "taunt": false,
+          "reduction": false,
+          "attacked": true
+        },
+        "foe": null,
+        "hand": [
+          14
+        ],
+        "own_gold": 0,
+        "enemy_gold": 1,
+        "spell": 0,
+        "spell_generated": true,
+        "enemy_acted": false,
+        "delayed_target": "",
+        "generated": []
+      },
+      "enemy_first_terminal_histories": 12
+    },
+    "Aaron/86": {
+      "enemy_first": [
+        "cast_86_ally",
+        "attack_face",
+        "end"
+      ],
+      "own_second": [
+        "end"
+      ],
+      "enemy_second": [
+        "attack_face",
+        "end"
+      ],
+      "terminal": {
+        "hp": 9,
+        "enemy_hp": 30,
+        "ally": {
+          "card": 15,
+          "attack": 5,
+          "health": 3,
+          "taunt": false,
+          "reduction": false,
+          "attacked": false
+        },
+        "foe": {
+          "card": 246,
+          "attack": 3,
+          "health": 6,
+          "taunt": false,
+          "reduction": false,
+          "attacked": false
+        },
+        "hand": [
+          14
+        ],
+        "own_gold": 0,
+        "enemy_gold": 0,
+        "spell": 0,
+        "spell_generated": true,
+        "enemy_acted": true,
+        "delayed_target": "",
+        "generated": []
+      },
+      "enemy_first_terminal_histories": 12
+    },
+    "hold/79": {
+      "enemy_first": [
+        "attack_face",
+        "end"
+      ],
+      "own_second": [
+        "end"
+      ],
+      "enemy_second": [
+        "cast_79_foe",
+        "attack_face",
+        "end"
+      ],
+      "terminal": {
+        "hp": 9,
+        "enemy_hp": 30,
+        "ally": null,
+        "foe": {
+          "card": 246,
+          "attack": 3,
+          "health": 6,
+          "taunt": false,
+          "reduction": false,
+          "attacked": false
+        },
+        "hand": [
+          14,
+          15
+        ],
+        "own_gold": 5,
+        "enemy_gold": 1,
+        "spell": 0,
+        "spell_generated": true,
+        "enemy_acted": true,
+        "delayed_target": "",
+        "generated": []
+      },
+      "enemy_first_terminal_histories": 5
+    },
+    "hold/86": {
+      "enemy_first": [
+        "attack_face",
+        "end"
+      ],
+      "own_second": [
+        "play_14",
+        "end"
+      ],
+      "enemy_second": [
+        "end"
+      ],
+      "terminal": {
+        "hp": 12,
+        "enemy_hp": 30,
+        "ally": {
+          "card": 14,
+          "attack": 4,
+          "health": 5,
+          "taunt": true,
+          "reduction": true,
+          "attacked": true
+        },
+        "foe": {
+          "card": 246,
+          "attack": 3,
+          "health": 6,
+          "taunt": false,
+          "reduction": false,
+          "attacked": false
+        },
+        "hand": [
+          15
+        ],
+        "own_gold": 0,
+        "enemy_gold": 2,
+        "spell": 86,
+        "spell_generated": true,
+        "enemy_acted": false,
+        "delayed_target": "",
+        "generated": []
+      },
+      "enemy_first_terminal_histories": 5
+    }
+  },
+  "limits": [
+    "No income/draw. Existing Lady Garf Magic already resolved.",
+    "Costs printed/base/current all 4 for the observed Lady Garf.",
+    "Formal hidden menus are generated by Bone Box402; their different SOUL identities do not violate main-deck construction.",
+    "Information hypothesis: Bone Box choice/result remains hidden to the opponent; not verified against server UI.",
+    "Formal Generated Worsening does not add a copy. Separate native-Worsening probe records actual Delay generation, unpayable at enemy GOLD0.",
+    "Original/death identity is unambiguous: no summon/copy/revival of units in this position.",
+    "This finite-window exact result is not a universal native card score.",
+    "maxmin is a deterministic/physical-HP guarantee; randomized expected utility is a different objective."
+  ]
+}

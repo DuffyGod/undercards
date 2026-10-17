@@ -1,0 +1,269 @@
+{
+  "version": "finite-information-policy-0.1.0",
+  "source_hashes": {
+    "__init__.py": "91c62e2a29ddc11385ea446b56a2680f8682c16b2530af881c97b6cfb118f63a",
+    "belief.py": "e13517d7d211bbfb5dc12c23dd51a3b9a6af8a33ae6759e7024acb63743ebc95",
+    "engine.py": "1e07e0f44219b38863f6b0873b213ccd060db614d0d6ba4a56d509891ea02564",
+    "root_mix.py": "4b888e1ebbb6c07e88c0095e5ed8794fbf3dbd2937406319c302f59dd61e42f5",
+    "rules.py": "d39e6726d15f4b7973551e414f91a2f1f410db9f55126eb64b845aaf712d9f76"
+  },
+  "cards_sha256": "945819d4a836403fafbebe8590eb5cfe961cc1a7a46d416921e5d0dcd3dc6330",
+  "input_sha256": "9e18df1689b52ff60b3dbef70c0d67a2f44cbf79f87c67f8787d7fe271c0858b",
+  "task": {
+    "kind": "hp"
+  },
+  "information_protocol": "Own sees only public actions/outcomes and own known state. Enemy knows its actual hidden world.",
+  "world_ids": [
+    "generated_penetration",
+    "generated_worsening"
+  ],
+  "declared_world_envelope_complete_for_server": false,
+  "probabilities_inferred": false,
+  "calibrated_win_probability": null,
+  "scope": "Exact only for this finite declared world set, rules and horizon. No claim that these are all real hidden cards.",
+  "known": true,
+  "status": "known",
+  "common_policy": {
+    "value": [
+      9
+    ],
+    "feasible": true,
+    "guaranteed_player_hp": 9
+  },
+  "root_action": {
+    "kind": "end",
+    "arguments": []
+  },
+  "policy_audit": {
+    "passed": true,
+    "attained_value": [
+      9
+    ],
+    "replayed_beliefs": 68,
+    "semantics": "Actual shared policy, all enemy choices and all compatible visible branches; not independent engine verification."
+  },
+  "visited_information_sets": 684,
+  "expanded_physical_states": 503,
+  "oracle_worlds": [
+    {
+      "world_id": "generated_penetration",
+      "known": true,
+      "value": [
+        12
+      ],
+      "feasible": true,
+      "guaranteed_player_hp": 12,
+      "root_action": {
+        "kind": "play",
+        "arguments": [
+          "own:hand:1",
+          null
+        ]
+      },
+      "nodes": 355
+    },
+    {
+      "world_id": "generated_worsening",
+      "known": true,
+      "value": [
+        15
+      ],
+      "feasible": true,
+      "guaranteed_player_hp": 15,
+      "root_action": {
+        "kind": "play",
+        "arguments": [
+          "own:hand:0",
+          null
+        ]
+      },
+      "nodes": 435
+    }
+  ],
+  "informed_world_upper_bound": {
+    "value": [
+      12
+    ],
+    "feasible": true,
+    "guaranteed_player_hp": 12
+  },
+  "information_gap_hp": 3,
+  "oracle_is_playable_under_hidden_information": false,
+  "policy": [
+    {
+      "node_id": "050dae127185cf588cdf811d0b7be0ee342e50952c33f6ddca81a18b64b7e853",
+      "possible_worlds": [
+        "generated_penetration",
+        "generated_worsening"
+      ],
+      "indistinguishable_physical_states": 2,
+      "observation": "(2, 12, 30, 5, 2, (HandCard(key='own:hand:0', card_id=14, cost=5, generated=False), HandCard(key='own:hand:1', card_id=15, cost=5, generated=False)), 1, (), (Body(key='enemy:observed:0', card_id=246, attack=3, health=6, max_health=6, statuses=(), ready=False, fresh=False, silenced=False, paralyzed_until=-1, attacked=True, printed_cost=4, base_cost=4, current_cost=4, max_health_known=True),), (), 0, 0, 0, 0, 0, 0, 0, 0, 0, (), 0, 0)",
+      "action": {
+        "kind": "end",
+        "arguments": []
+      }
+    },
+    {
+      "node_id": "6e6fffd61d8a027a6b511f10ba88a4935d1d7a96315738b739eece56135116e5",
+      "possible_worlds": [
+        "generated_penetration"
+      ],
+      "indistinguishable_physical_states": 1,
+      "observation": "(2, 12, 30, 0, 1, (HandCard(key='own:hand:1', card_id=15, cost=5, generated=False),), 0, (Body(key='own:deployed:0', card_id=14, attack=4, health=5, max_health=5, statuses=(('Taunt', 1),), ready=True, fresh=True, silenced=False, paralyzed_until=-1, attacked=False, printed_cost=5, base_cost=5, current_cost=5, max_health_known=True),), (Body(key='enemy:observed:0', card_id=246, attack=3, health=6, max_health=6, statuses=(), ready=False, fresh=False, silenced=True, paralyzed_until=-1, attacked=True, printed_cost=4, base_cost=4, current_cost=4, max_health_known=True),), (), 0, 1, 0, 0, 0, 0, 0, 0, 0, (), 0, 0)",
+      "action": {
+        "kind": "end",
+        "arguments": []
+      }
+    },
+    {
+      "node_id": "5ef84b736d763fdf62d1c3bef6c1100e674ceff6c2ed72a6325d5fe2290f610d",
+      "possible_worlds": [
+        "generated_penetration"
+      ],
+      "indistinguishable_physical_states": 1,
+      "observation": "(2, 12, 30, 5, 1, (HandCard(key='own:hand:0', card_id=14, cost=5, generated=False), HandCard(key='own:hand:1', card_id=15, cost=5, generated=False)), 0, (), (Body(key='enemy:observed:0', card_id=246, attack=3, health=6, max_health=6, statuses=(), ready=False, fresh=False, silenced=True, paralyzed_until=-1, attacked=True, printed_cost=4, base_cost=4, current_cost=4, max_health_known=True),), (), 0, 0, 0, 0, 0, 0, 0, 0, 0, (), 0, 0)",
+      "action": {
+        "kind": "play",
+        "arguments": [
+          "own:hand:0",
+          null
+        ]
+      }
+    },
+    {
+      "node_id": "a03eeea19181a0509650e72ef8c079e6ba07c3161046a8ebd42f58d590722f19",
+      "possible_worlds": [
+        "generated_worsening"
+      ],
+      "indistinguishable_physical_states": 1,
+      "observation": "(2, 12, 30, 0, 0, (HandCard(key='own:hand:1', card_id=15, cost=5, generated=False),), 0, (Body(key='own:deployed:0', card_id=14, attack=4, health=5, max_health=5, statuses=(('Taunt', 1),), ready=True, fresh=True, silenced=False, paralyzed_until=-1, attacked=False, printed_cost=5, base_cost=5, current_cost=5, max_health_known=True),), (Body(key='enemy:observed:0', card_id=246, attack=2, health=4, max_health=4, statuses=(), ready=False, fresh=False, silenced=False, paralyzed_until=-1, attacked=True, printed_cost=4, base_cost=4, current_cost=4, max_health_known=True),), (), 0, 1, 0, 0, 0, 0, 0, 0, 0, (), 0, 0)",
+      "action": {
+        "kind": "end",
+        "arguments": []
+      }
+    },
+    {
+      "node_id": "bddd15289c005c21efac906f2ba666663a906a4bcf8dbe015fdc35ff922c736e",
+      "possible_worlds": [
+        "generated_worsening"
+      ],
+      "indistinguishable_physical_states": 1,
+      "observation": "(2, 12, 30, 5, 0, (HandCard(key='own:hand:0', card_id=14, cost=5, generated=False), HandCard(key='own:hand:1', card_id=15, cost=5, generated=False)), 0, (), (Body(key='enemy:observed:0', card_id=246, attack=2, health=4, max_health=4, statuses=(), ready=False, fresh=False, silenced=False, paralyzed_until=-1, attacked=True, printed_cost=4, base_cost=4, current_cost=4, max_health_known=True),), (), 0, 0, 0, 0, 0, 0, 0, 0, 0, (), 0, 0)",
+      "action": {
+        "kind": "play",
+        "arguments": [
+          "own:hand:0",
+          null
+        ]
+      }
+    },
+    {
+      "node_id": "e43a98cced07a6e30e9f1a5120964831a523f39b4256edcf6bb08ba45ae8b72c",
+      "possible_worlds": [
+        "generated_penetration",
+        "generated_worsening"
+      ],
+      "indistinguishable_physical_states": 2,
+      "observation": "(2, 15, 30, 5, 2, (HandCard(key='own:hand:0', card_id=14, cost=5, generated=False), HandCard(key='own:hand:1', card_id=15, cost=5, generated=False)), 1, (), (Body(key='enemy:observed:0', card_id=246, attack=3, health=6, max_health=6, statuses=(), ready=True, fresh=False, silenced=False, paralyzed_until=-1, attacked=False, printed_cost=4, base_cost=4, current_cost=4, max_health_known=True),), (), 0, 0, 0, 0, 0, 0, 0, 0, 0, (), 0, 0)",
+      "action": {
+        "kind": "end",
+        "arguments": []
+      }
+    },
+    {
+      "node_id": "db34c36dc45e89ba8dda2cdf233a9d11f0d554fb7e3f4707b81be8ade1d9f859",
+      "possible_worlds": [
+        "generated_penetration"
+      ],
+      "indistinguishable_physical_states": 1,
+      "observation": "(2, 15, 30, 0, 1, (HandCard(key='own:hand:1', card_id=15, cost=5, generated=False),), 0, (Body(key='own:deployed:0', card_id=14, attack=4, health=5, max_health=5, statuses=(('Taunt', 1),), ready=True, fresh=True, silenced=False, paralyzed_until=-1, attacked=False, printed_cost=5, base_cost=5, current_cost=5, max_health_known=True),), (Body(key='enemy:observed:0', card_id=246, attack=3, health=6, max_health=6, statuses=(), ready=True, fresh=False, silenced=True, paralyzed_until=-1, attacked=False, printed_cost=4, base_cost=4, current_cost=4, max_health_known=True),), (), 0, 1, 0, 0, 0, 0, 0, 0, 0, (), 0, 0)",
+      "action": {
+        "kind": "end",
+        "arguments": []
+      }
+    },
+    {
+      "node_id": "3089367b0b7fac38af6944b453bd16df321736f9616c30e9c263488c93512c91",
+      "possible_worlds": [
+        "generated_penetration"
+      ],
+      "indistinguishable_physical_states": 1,
+      "observation": "(2, 15, 30, 5, 1, (HandCard(key='own:hand:0', card_id=14, cost=5, generated=False), HandCard(key='own:hand:1', card_id=15, cost=5, generated=False)), 0, (), (Body(key='enemy:observed:0', card_id=246, attack=3, health=6, max_health=6, statuses=(), ready=True, fresh=False, silenced=True, paralyzed_until=-1, attacked=False, printed_cost=4, base_cost=4, current_cost=4, max_health_known=True),), (), 0, 0, 0, 0, 0, 0, 0, 0, 0, (), 0, 0)",
+      "action": {
+        "kind": "play",
+        "arguments": [
+          "own:hand:0",
+          null
+        ]
+      }
+    },
+    {
+      "node_id": "8ef82ba44f2b396e3d13a9a89f6aa92a14de5e1fab070266db2d5f44bb90a001",
+      "possible_worlds": [
+        "generated_worsening"
+      ],
+      "indistinguishable_physical_states": 1,
+      "observation": "(2, 13, 30, 0, 0, (HandCard(key='own:hand:1', card_id=15, cost=5, generated=False),), 0, (Body(key='own:deployed:0', card_id=14, attack=4, health=5, max_health=5, statuses=(('Taunt', 1),), ready=True, fresh=True, silenced=False, paralyzed_until=-1, attacked=False, printed_cost=5, base_cost=5, current_cost=5, max_health_known=True),), (Body(key='enemy:observed:0', card_id=246, attack=2, health=4, max_health=4, statuses=(), ready=False, fresh=False, silenced=False, paralyzed_until=-1, attacked=True, printed_cost=4, base_cost=4, current_cost=4, max_health_known=True),), (), 0, 1, 0, 0, 0, 0, 0, 0, 0, (), 0, 0)",
+      "action": {
+        "kind": "end",
+        "arguments": []
+      }
+    },
+    {
+      "node_id": "57a4f50fe7c8757f7fb85472e913b879755bb9f679d5e9f69fdd993a3a98ffb5",
+      "possible_worlds": [
+        "generated_worsening"
+      ],
+      "indistinguishable_physical_states": 1,
+      "observation": "(2, 13, 30, 5, 0, (HandCard(key='own:hand:0', card_id=14, cost=5, generated=False), HandCard(key='own:hand:1', card_id=15, cost=5, generated=False)), 0, (), (Body(key='enemy:observed:0', card_id=246, attack=2, health=4, max_health=4, statuses=(), ready=False, fresh=False, silenced=False, paralyzed_until=-1, attacked=True, printed_cost=4, base_cost=4, current_cost=4, max_health_known=True),), (), 0, 0, 0, 0, 0, 0, 0, 0, 0, (), 0, 0)",
+      "action": {
+        "kind": "play",
+        "arguments": [
+          "own:hand:0",
+          null
+        ]
+      }
+    },
+    {
+      "node_id": "c987b6ac581ca4110ecd16b4e956f49ea8eda01f44d175378357f27aa0cf68b6",
+      "possible_worlds": [
+        "generated_worsening"
+      ],
+      "indistinguishable_physical_states": 1,
+      "observation": "(2, 15, 30, 0, 0, (HandCard(key='own:hand:1', card_id=15, cost=5, generated=False),), 0, (Body(key='own:deployed:0', card_id=14, attack=4, health=5, max_health=5, statuses=(('Taunt', 1),), ready=True, fresh=True, silenced=False, paralyzed_until=-1, attacked=False, printed_cost=5, base_cost=5, current_cost=5, max_health_known=True),), (Body(key='enemy:observed:0', card_id=246, attack=2, health=4, max_health=4, statuses=(), ready=True, fresh=False, silenced=False, paralyzed_until=-1, attacked=False, printed_cost=4, base_cost=4, current_cost=4, max_health_known=True),), (), 0, 1, 0, 0, 0, 0, 0, 0, 0, (), 0, 0)",
+      "action": {
+        "kind": "end",
+        "arguments": []
+      }
+    },
+    {
+      "node_id": "a38612c1ad8fcbaf4445434c202339eda2def241b8ed61a5a928475ae38e8310",
+      "possible_worlds": [
+        "generated_worsening"
+      ],
+      "indistinguishable_physical_states": 1,
+      "observation": "(2, 15, 30, 5, 0, (HandCard(key='own:hand:0', card_id=14, cost=5, generated=False), HandCard(key='own:hand:1', card_id=15, cost=5, generated=False)), 0, (), (Body(key='enemy:observed:0', card_id=246, attack=2, health=4, max_health=4, statuses=(), ready=True, fresh=False, silenced=False, paralyzed_until=-1, attacked=False, printed_cost=4, base_cost=4, current_cost=4, max_health_known=True),), (), 0, 0, 0, 0, 0, 0, 0, 0, 0, (), 0, 0)",
+      "action": {
+        "kind": "play",
+        "arguments": [
+          "own:hand:0",
+          null
+        ]
+      }
+    },
+    {
+      "node_id": "46edc195594e2c690327ea53f39a088b29166f4401f4d7e427cbc486bfde29d4",
+      "possible_worlds": [
+        "generated_penetration",
+        "generated_worsening"
+      ],
+      "indistinguishable_physical_states": 2,
+      "observation": "(0, 15, 30, 5, 2, (HandCard(key='own:hand:0', card_id=14, cost=5, generated=False), HandCard(key='own:hand:1', card_id=15, cost=5, generated=False)), 1, (), (Body(key='enemy:observed:0', card_id=246, attack=3, health=6, max_health=6, statuses=(), ready=True, fresh=False, silenced=False, paralyzed_until=-1, attacked=False, printed_cost=4, base_cost=4, current_cost=4, max_health_known=True),), (), 0, 0, 0, 0, 0, 0, 0, 0, 0, (), 0, 0)",
+      "action": {
+        "kind": "end",
+        "arguments": []
+      }
+    }
+  ],
+  "unknown": []
+}

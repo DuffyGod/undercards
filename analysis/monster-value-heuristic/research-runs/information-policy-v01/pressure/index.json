@@ -1,0 +1,379 @@
+{
+  "source_hashes": {
+    "information_pressure.py": "21e239524042a5edf3c1dcd72c78811b84f911a265979adc527f7ebd518a7c5a",
+    "finite_game/__init__.py": "91c62e2a29ddc11385ea446b56a2680f8682c16b2530af881c97b6cfb118f63a",
+    "finite_game/belief.py": "e13517d7d211bbfb5dc12c23dd51a3b9a6af8a33ae6759e7024acb63743ebc95",
+    "finite_game/engine.py": "28267de5460ebec92bc241f2d39c00010fc987a2ab4bce306c256e848dafc4be",
+    "finite_game/root_mix.py": "4b888e1ebbb6c07e88c0095e5ed8794fbf3dbd2937406319c302f59dd61e42f5",
+    "finite_game/rules.py": "d846c651be2a6167d8b39d107674e1c5f90c5461629edabdc9e094fb0da9794a"
+  },
+  "rows": [
+    {
+      "card_id": 6,
+      "name": "Vegetoid",
+      "cost": 3,
+      "context": "single",
+      "purpose": "hp",
+      "frontier": [
+        {
+          "own_hp": 9,
+          "enemy_hp_cap": 30
+        }
+      ],
+      "complete_sampled_floors": true,
+      "artifact": "card6-single-hp.json.gz",
+      "actual_information_evaluations": 15
+    },
+    {
+      "card_id": 6,
+      "name": "Vegetoid",
+      "cost": 3,
+      "context": "single",
+      "purpose": "standing",
+      "frontier": [],
+      "complete_sampled_floors": true,
+      "artifact": "card6-single-standing.json.gz",
+      "actual_information_evaluations": 5
+    },
+    {
+      "card_id": 6,
+      "name": "Vegetoid",
+      "cost": 3,
+      "context": "wide",
+      "purpose": "hp",
+      "frontier": [
+        {
+          "own_hp": 9,
+          "enemy_hp_cap": 30
+        }
+      ],
+      "complete_sampled_floors": true,
+      "artifact": "card6-wide-hp.json.gz",
+      "actual_information_evaluations": 15
+    },
+    {
+      "card_id": 6,
+      "name": "Vegetoid",
+      "cost": 3,
+      "context": "wide",
+      "purpose": "standing",
+      "frontier": [],
+      "complete_sampled_floors": true,
+      "artifact": "card6-wide-standing.json.gz",
+      "actual_information_evaluations": 5
+    },
+    {
+      "card_id": 9,
+      "name": "Ice Cap",
+      "cost": 3,
+      "context": "single",
+      "purpose": "hp",
+      "frontier": [
+        {
+          "own_hp": 9,
+          "enemy_hp_cap": 27
+        }
+      ],
+      "complete_sampled_floors": true,
+      "artifact": "card9-single-hp.json.gz",
+      "actual_information_evaluations": 15
+    },
+    {
+      "card_id": 9,
+      "name": "Ice Cap",
+      "cost": 3,
+      "context": "single",
+      "purpose": "standing",
+      "frontier": [],
+      "complete_sampled_floors": true,
+      "artifact": "card9-single-standing.json.gz",
+      "actual_information_evaluations": 5
+    },
+    {
+      "card_id": 9,
+      "name": "Ice Cap",
+      "cost": 3,
+      "context": "wide",
+      "purpose": "hp",
+      "frontier": [
+        {
+          "own_hp": 11,
+          "enemy_hp_cap": 30
+        },
+        {
+          "own_hp": 7,
+          "enemy_hp_cap": 27
+        }
+      ],
+      "complete_sampled_floors": true,
+      "artifact": "card9-wide-hp.json.gz",
+      "actual_information_evaluations": 21
+    },
+    {
+      "card_id": 9,
+      "name": "Ice Cap",
+      "cost": 3,
+      "context": "wide",
+      "purpose": "standing",
+      "frontier": [],
+      "complete_sampled_floors": true,
+      "artifact": "card9-wide-standing.json.gz",
+      "actual_information_evaluations": 5
+    },
+    {
+      "card_id": 22,
+      "name": "Shyren",
+      "cost": 3,
+      "context": "single",
+      "purpose": "hp",
+      "frontier": [
+        {
+          "own_hp": 13,
+          "enemy_hp_cap": 30
+        }
+      ],
+      "complete_sampled_floors": true,
+      "artifact": "card22-single-hp.json.gz",
+      "actual_information_evaluations": 26
+    },
+    {
+      "card_id": 22,
+      "name": "Shyren",
+      "cost": 3,
+      "context": "single",
+      "purpose": "standing",
+      "frontier": [],
+      "complete_sampled_floors": true,
+      "artifact": "card22-single-standing.json.gz",
+      "actual_information_evaluations": 5
+    },
+    {
+      "card_id": 22,
+      "name": "Shyren",
+      "cost": 3,
+      "context": "wide",
+      "purpose": "hp",
+      "frontier": [
+        {
+          "own_hp": 11,
+          "enemy_hp_cap": 30
+        }
+      ],
+      "complete_sampled_floors": true,
+      "artifact": "card22-wide-hp.json.gz",
+      "actual_information_evaluations": 21
+    },
+    {
+      "card_id": 22,
+      "name": "Shyren",
+      "cost": 3,
+      "context": "wide",
+      "purpose": "standing",
+      "frontier": [],
+      "complete_sampled_floors": true,
+      "artifact": "card22-wide-standing.json.gz",
+      "actual_information_evaluations": 5
+    },
+    {
+      "card_id": 14,
+      "name": "Jerry",
+      "cost": 5,
+      "context": "single",
+      "purpose": "hp",
+      "frontier": [
+        {
+          "own_hp": 9,
+          "enemy_hp_cap": 27
+        }
+      ],
+      "complete_sampled_floors": true,
+      "artifact": "card14-single-hp.json.gz",
+      "actual_information_evaluations": 15
+    },
+    {
+      "card_id": 14,
+      "name": "Jerry",
+      "cost": 5,
+      "context": "single",
+      "purpose": "standing",
+      "frontier": [
+        {
+          "own_hp": 9,
+          "enemy_hp_cap": 30
+        }
+      ],
+      "complete_sampled_floors": true,
+      "artifact": "card14-single-standing.json.gz",
+      "actual_information_evaluations": 15
+    },
+    {
+      "card_id": 14,
+      "name": "Jerry",
+      "cost": 5,
+      "context": "wide",
+      "purpose": "hp",
+      "frontier": [
+        {
+          "own_hp": 9,
+          "enemy_hp_cap": 30
+        },
+        {
+          "own_hp": 7,
+          "enemy_hp_cap": 27
+        }
+      ],
+      "complete_sampled_floors": true,
+      "artifact": "card14-wide-hp.json.gz",
+      "actual_information_evaluations": 15
+    },
+    {
+      "card_id": 14,
+      "name": "Jerry",
+      "cost": 5,
+      "context": "wide",
+      "purpose": "standing",
+      "frontier": [
+        {
+          "own_hp": 9,
+          "enemy_hp_cap": 30
+        },
+        {
+          "own_hp": 7,
+          "enemy_hp_cap": 27
+        }
+      ],
+      "complete_sampled_floors": true,
+      "artifact": "card14-wide-standing.json.gz",
+      "actual_information_evaluations": 15
+    },
+    {
+      "card_id": 15,
+      "name": "Aaron",
+      "cost": 5,
+      "context": "single",
+      "purpose": "hp",
+      "frontier": [
+        {
+          "own_hp": 9,
+          "enemy_hp_cap": 30
+        }
+      ],
+      "complete_sampled_floors": true,
+      "artifact": "card15-single-hp.json.gz",
+      "actual_information_evaluations": 15
+    },
+    {
+      "card_id": 15,
+      "name": "Aaron",
+      "cost": 5,
+      "context": "single",
+      "purpose": "standing",
+      "frontier": [],
+      "complete_sampled_floors": true,
+      "artifact": "card15-single-standing.json.gz",
+      "actual_information_evaluations": 5
+    },
+    {
+      "card_id": 15,
+      "name": "Aaron",
+      "cost": 5,
+      "context": "wide",
+      "purpose": "hp",
+      "frontier": [
+        {
+          "own_hp": 9,
+          "enemy_hp_cap": 30
+        }
+      ],
+      "complete_sampled_floors": true,
+      "artifact": "card15-wide-hp.json.gz",
+      "actual_information_evaluations": 15
+    },
+    {
+      "card_id": 15,
+      "name": "Aaron",
+      "cost": 5,
+      "context": "wide",
+      "purpose": "standing",
+      "frontier": [],
+      "complete_sampled_floors": true,
+      "artifact": "card15-wide-standing.json.gz",
+      "actual_information_evaluations": 5
+    },
+    {
+      "card_id": 168,
+      "name": "Sad Dragon",
+      "cost": 6,
+      "context": "single",
+      "purpose": "hp",
+      "frontier": [
+        {
+          "own_hp": 9,
+          "enemy_hp_cap": 26
+        }
+      ],
+      "complete_sampled_floors": true,
+      "artifact": "card168-single-hp.json.gz",
+      "actual_information_evaluations": 15
+    },
+    {
+      "card_id": 168,
+      "name": "Sad Dragon",
+      "cost": 6,
+      "context": "single",
+      "purpose": "standing",
+      "frontier": [
+        {
+          "own_hp": 9,
+          "enemy_hp_cap": 30
+        }
+      ],
+      "complete_sampled_floors": true,
+      "artifact": "card168-single-standing.json.gz",
+      "actual_information_evaluations": 15
+    },
+    {
+      "card_id": 168,
+      "name": "Sad Dragon",
+      "cost": 6,
+      "context": "wide",
+      "purpose": "hp",
+      "frontier": [
+        {
+          "own_hp": 9,
+          "enemy_hp_cap": 30
+        },
+        {
+          "own_hp": 7,
+          "enemy_hp_cap": 26
+        }
+      ],
+      "complete_sampled_floors": true,
+      "artifact": "card168-wide-hp.json.gz",
+      "actual_information_evaluations": 15
+    },
+    {
+      "card_id": 168,
+      "name": "Sad Dragon",
+      "cost": 6,
+      "context": "wide",
+      "purpose": "standing",
+      "frontier": [
+        {
+          "own_hp": 9,
+          "enemy_hp_cap": 30
+        },
+        {
+          "own_hp": 7,
+          "enemy_hp_cap": 26
+        }
+      ],
+      "complete_sampled_floors": true,
+      "artifact": "card168-wide-standing.json.gz",
+      "actual_information_evaluations": 15
+    }
+  ],
+  "actual_information_evaluations": 303,
+  "seconds": 96.31054520606995,
+  "scope": "Same declared hidden world envelope and cash as main; each HP/E-cap point uses one common information policy. Samples do not certify a continuous frontier."
+}

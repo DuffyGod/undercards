@@ -1,0 +1,192 @@
+1 1 single 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+2 1 single 1 standing True {'value': [1, 9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+3 1 single 2 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+4 1 single 2 standing True {'value': [0, 12], 'feasible': False, 'guaranteed_player_hp': None} None
+5 1 wide 1 hp True {'value': [7], 'feasible': True, 'guaranteed_player_hp': 7} 0
+6 1 wide 1 standing True {'value': [0, 11], 'feasible': False, 'guaranteed_player_hp': None} None
+7 1 wide 2 hp True {'value': [7], 'feasible': True, 'guaranteed_player_hp': 7} 0
+8 1 wide 2 standing True {'value': [0, 9], 'feasible': False, 'guaranteed_player_hp': None} None
+9 2 single 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+10 2 single 1 standing True {'value': [0, 12], 'feasible': False, 'guaranteed_player_hp': None} None
+11 2 single 2 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+12 2 single 2 standing True {'value': [0, 12], 'feasible': False, 'guaranteed_player_hp': None} None
+13 2 wide 1 hp True {'value': [7], 'feasible': True, 'guaranteed_player_hp': 7} 0
+14 2 wide 1 standing True {'value': [0, 11], 'feasible': False, 'guaranteed_player_hp': None} None
+15 2 wide 2 hp True {'value': [7], 'feasible': True, 'guaranteed_player_hp': 7} 0
+16 2 wide 2 standing True {'value': [0, 9], 'feasible': False, 'guaranteed_player_hp': None} None
+17 4 single 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+18 4 single 1 standing True {'value': [0, 12], 'feasible': False, 'guaranteed_player_hp': None} None
+19 4 single 2 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+20 4 single 2 standing True {'value': [0, 9], 'feasible': False, 'guaranteed_player_hp': None} None
+21 4 wide 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+22 4 wide 1 standing True {'value': [0, 9], 'feasible': False, 'guaranteed_player_hp': None} None
+23 4 wide 2 hp True {'value': [7], 'feasible': True, 'guaranteed_player_hp': 7} 0
+24 4 wide 2 standing True {'value': [0, 7], 'feasible': False, 'guaranteed_player_hp': None} None
+25 6 single 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+26 6 single 1 standing True {'value': [0, 12], 'feasible': False, 'guaranteed_player_hp': None} None
+27 6 single 2 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+28 6 single 2 standing True {'value': [0, 12], 'feasible': False, 'guaranteed_player_hp': None} None
+29 6 wide 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+30 6 wide 1 standing True {'value': [0, 11], 'feasible': False, 'guaranteed_player_hp': None} None
+31 6 wide 2 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+32 6 wide 2 standing True {'value': [0, 9], 'feasible': False, 'guaranteed_player_hp': None} None
+33 9 single 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+34 9 single 1 standing True {'value': [0, 12], 'feasible': False, 'guaranteed_player_hp': None} None
+35 9 single 2 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+36 9 single 2 standing True {'value': [0, 9], 'feasible': False, 'guaranteed_player_hp': None} None
+37 9 wide 1 hp True {'value': [11], 'feasible': True, 'guaranteed_player_hp': 11} 0
+38 9 wide 1 standing True {'value': [0, 11], 'feasible': False, 'guaranteed_player_hp': None} None
+39 9 wide 2 hp True {'value': [11], 'feasible': True, 'guaranteed_player_hp': 11} 0
+40 9 wide 2 standing True {'value': [0, 11], 'feasible': False, 'guaranteed_player_hp': None} None
+41 11 single 1 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+42 11 single 1 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+43 11 single 2 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+44 11 single 2 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+45 11 wide 1 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+46 11 wide 1 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+47 11 wide 2 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+48 11 wide 2 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+49 14 single 1 hp True {'value': [12], 'feasible': True, 'guaranteed_player_hp': 12} 0
+50 14 single 1 standing True {'value': [1, 12], 'feasible': True, 'guaranteed_player_hp': 12} 0
+51 14 single 2 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 3
+52 14 single 2 standing True {'value': [1, 9], 'feasible': True, 'guaranteed_player_hp': 9} 3
+53 14 wide 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+54 14 wide 1 standing True {'value': [1, 9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+55 14 wide 2 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+56 14 wide 2 standing True {'value': [1, 9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+57 15 single 1 hp True {'value': [12], 'feasible': True, 'guaranteed_player_hp': 12} 0
+58 15 single 1 standing True {'value': [1, 12], 'feasible': True, 'guaranteed_player_hp': 12} 0
+59 15 single 2 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+60 15 single 2 standing True {'value': [0, 12], 'feasible': False, 'guaranteed_player_hp': None} None
+61 15 wide 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+62 15 wide 1 standing True {'value': [1, 9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+63 15 wide 2 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+64 15 wide 2 standing True {'value': [0, 11], 'feasible': False, 'guaranteed_player_hp': None} None
+65 20 single 1 hp True {'value': [12], 'feasible': True, 'guaranteed_player_hp': 12} 0
+66 20 single 1 standing True {'value': [1, 12], 'feasible': True, 'guaranteed_player_hp': 12} 0
+67 20 single 2 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+68 20 single 2 standing True {'value': [0, 12], 'feasible': False, 'guaranteed_player_hp': None} None
+69 20 wide 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+70 20 wide 1 standing True {'value': [0, 11], 'feasible': False, 'guaranteed_player_hp': None} None
+71 20 wide 2 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+72 20 wide 2 standing True {'value': [0, 9], 'feasible': False, 'guaranteed_player_hp': None} None
+73 22 single 1 hp True {'value': [13], 'feasible': True, 'guaranteed_player_hp': 13} 0
+74 22 single 1 standing True {'value': [1, 13], 'feasible': True, 'guaranteed_player_hp': 13} 0
+75 22 single 2 hp True {'value': [13], 'feasible': True, 'guaranteed_player_hp': 13} 0
+76 22 single 2 standing True {'value': [0, 16], 'feasible': False, 'guaranteed_player_hp': None} None
+77 22 wide 1 hp True {'value': [11], 'feasible': True, 'guaranteed_player_hp': 11} 0
+78 22 wide 1 standing True {'value': [0, 15], 'feasible': False, 'guaranteed_player_hp': None} None
+79 22 wide 2 hp True {'value': [11], 'feasible': True, 'guaranteed_player_hp': 11} 0
+80 22 wide 2 standing True {'value': [0, 13], 'feasible': False, 'guaranteed_player_hp': None} None
+81 23 single 1 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+82 23 single 1 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+83 23 single 2 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+84 23 single 2 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+85 23 wide 1 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+86 23 wide 1 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+87 23 wide 2 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+88 23 wide 2 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+89 101 single 1 hp True {'value': [12], 'feasible': True, 'guaranteed_player_hp': 12} 0
+90 101 single 1 standing True {'value': [1, 12], 'feasible': True, 'guaranteed_player_hp': 12} 0
+91 101 single 2 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+92 101 single 2 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+93 101 wide 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+94 101 wide 1 standing True {'value': [1, 9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+95 101 wide 2 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+96 101 wide 2 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+97 115 single 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+98 115 single 1 standing True {'value': [0, 12], 'feasible': False, 'guaranteed_player_hp': None} None
+99 115 single 2 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+100 115 single 2 standing True {'value': [0, 9], 'feasible': False, 'guaranteed_player_hp': None} None
+101 115 wide 1 hp True {'value': [7], 'feasible': True, 'guaranteed_player_hp': 7} 0
+102 115 wide 1 standing True {'value': [0, 9], 'feasible': False, 'guaranteed_player_hp': None} None
+103 115 wide 2 hp True {'value': [7], 'feasible': True, 'guaranteed_player_hp': 7} 0
+104 115 wide 2 standing True {'value': [0, 7], 'feasible': False, 'guaranteed_player_hp': None} None
+105 144 single 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+106 144 single 1 standing True {'value': [0, 12], 'feasible': False, 'guaranteed_player_hp': None} None
+107 144 single 2 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+108 144 single 2 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+109 144 wide 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+110 144 wide 1 standing True {'value': [0, 9], 'feasible': False, 'guaranteed_player_hp': None} None
+111 144 wide 2 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+112 144 wide 2 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+113 166 single 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+114 166 single 1 standing True {'value': [0, 12], 'feasible': False, 'guaranteed_player_hp': None} None
+115 166 single 2 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+116 166 single 2 standing True {'value': [0, 9], 'feasible': False, 'guaranteed_player_hp': None} None
+117 166 wide 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+118 166 wide 1 standing True {'value': [0, 9], 'feasible': False, 'guaranteed_player_hp': None} None
+119 166 wide 2 hp True {'value': [7], 'feasible': True, 'guaranteed_player_hp': 7} 0
+120 166 wide 2 standing True {'value': [0, 7], 'feasible': False, 'guaranteed_player_hp': None} None
+121 168 single 1 hp True {'value': [12], 'feasible': True, 'guaranteed_player_hp': 12} 0
+122 168 single 1 standing True {'value': [1, 12], 'feasible': True, 'guaranteed_player_hp': 12} 0
+123 168 single 2 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+124 168 single 2 standing True {'value': [1, 9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+125 168 wide 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+126 168 wide 1 standing True {'value': [1, 9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+127 168 wide 2 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+128 168 wide 2 standing True {'value': [1, 9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+129 175 single 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+130 175 single 1 standing True {'value': [0, 12], 'feasible': False, 'guaranteed_player_hp': None} None
+131 175 single 2 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+132 175 single 2 standing True {'value': [0, 9], 'feasible': False, 'guaranteed_player_hp': None} None
+133 175 wide 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+134 175 wide 1 standing True {'value': [0, 9], 'feasible': False, 'guaranteed_player_hp': None} None
+135 175 wide 2 hp True {'value': [7], 'feasible': True, 'guaranteed_player_hp': 7} 0
+136 175 wide 2 standing True {'value': [0, 7], 'feasible': False, 'guaranteed_player_hp': None} None
+137 187 single 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+138 187 single 1 standing True {'value': [1, 9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+139 187 single 2 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+140 187 single 2 standing True {'value': [1, 9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+141 187 wide 1 hp True {'value': [7], 'feasible': True, 'guaranteed_player_hp': 7} 0
+142 187 wide 1 standing True {'value': [1, 7], 'feasible': True, 'guaranteed_player_hp': 7} 0
+143 187 wide 2 hp True {'value': [7], 'feasible': True, 'guaranteed_player_hp': 7} 0
+144 187 wide 2 standing True {'value': [0, 11], 'feasible': False, 'guaranteed_player_hp': None} None
+145 227 single 1 hp True {'value': [12], 'feasible': True, 'guaranteed_player_hp': 12} 0
+146 227 single 1 standing True {'value': [1, 12], 'feasible': True, 'guaranteed_player_hp': 12} 0
+147 227 single 2 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+148 227 single 2 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+149 227 wide 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+150 227 wide 1 standing True {'value': [1, 9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+151 227 wide 2 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+152 227 wide 2 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+153 307 single 1 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+154 307 single 1 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+155 307 single 2 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+156 307 single 2 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+157 307 wide 1 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+158 307 wide 1 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+159 307 wide 2 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+160 307 wide 2 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+161 314 single 1 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+162 314 single 1 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+163 314 single 2 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+164 314 single 2 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+165 314 wide 1 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+166 314 wide 1 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+167 314 wide 2 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+168 314 wide 2 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+169 377 single 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+170 377 single 1 standing True {'value': [0, 12], 'feasible': False, 'guaranteed_player_hp': None} None
+171 377 single 2 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+172 377 single 2 standing True {'value': [0, 9], 'feasible': False, 'guaranteed_player_hp': None} None
+173 377 wide 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+174 377 wide 1 standing True {'value': [0, 9], 'feasible': False, 'guaranteed_player_hp': None} None
+175 377 wide 2 hp True {'value': [7], 'feasible': True, 'guaranteed_player_hp': 7} 0
+176 377 wide 2 standing True {'value': [0, 7], 'feasible': False, 'guaranteed_player_hp': None} None
+177 602 single 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+178 602 single 1 standing True {'value': [0, 12], 'feasible': False, 'guaranteed_player_hp': None} None
+179 602 single 2 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+180 602 single 2 standing True {'value': [0, 12], 'feasible': False, 'guaranteed_player_hp': None} None
+181 602 wide 1 hp True {'value': [9], 'feasible': True, 'guaranteed_player_hp': 9} 0
+182 602 wide 1 standing True {'value': [0, 11], 'feasible': False, 'guaranteed_player_hp': None} None
+183 602 wide 2 hp True {'value': [7], 'feasible': True, 'guaranteed_player_hp': 7} 0
+184 602 wide 2 standing True {'value': [0, 9], 'feasible': False, 'guaranteed_player_hp': None} None
+185 932 single 1 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+186 932 single 1 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+187 932 single 2 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+188 932 single 2 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+189 932 wide 1 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+190 932 wide 1 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+191 932 wide 2 hp False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None
+192 932 wide 2 standing False {'value': None, 'feasible': None, 'guaranteed_player_hp': None} None

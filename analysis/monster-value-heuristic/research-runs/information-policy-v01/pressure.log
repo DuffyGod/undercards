@@ -1,0 +1,24 @@
+6 single hp [{'own_hp': 9, 'enemy_hp_cap': 30}] True
+6 single standing [] True
+6 wide hp [{'own_hp': 9, 'enemy_hp_cap': 30}] True
+6 wide standing [] True
+9 single hp [{'own_hp': 9, 'enemy_hp_cap': 27}] True
+9 single standing [] True
+9 wide hp [{'own_hp': 11, 'enemy_hp_cap': 30}, {'own_hp': 7, 'enemy_hp_cap': 27}] True
+9 wide standing [] True
+22 single hp [{'own_hp': 13, 'enemy_hp_cap': 30}] True
+22 single standing [] True
+22 wide hp [{'own_hp': 11, 'enemy_hp_cap': 30}] True
+22 wide standing [] True
+14 single hp [{'own_hp': 9, 'enemy_hp_cap': 27}] True
+14 single standing [{'own_hp': 9, 'enemy_hp_cap': 30}] True
+14 wide hp [{'own_hp': 9, 'enemy_hp_cap': 30}, {'own_hp': 7, 'enemy_hp_cap': 27}] True
+14 wide standing [{'own_hp': 9, 'enemy_hp_cap': 30}, {'own_hp': 7, 'enemy_hp_cap': 27}] True
+15 single hp [{'own_hp': 9, 'enemy_hp_cap': 30}] True
+15 single standing [] True
+15 wide hp [{'own_hp': 9, 'enemy_hp_cap': 30}] True
+15 wide standing [] True
+168 single hp [{'own_hp': 9, 'enemy_hp_cap': 26}] True
+168 single standing [{'own_hp': 9, 'enemy_hp_cap': 30}] True
+168 wide hp [{'own_hp': 9, 'enemy_hp_cap': 30}, {'own_hp': 7, 'enemy_hp_cap': 26}] True
+168 wide standing [{'own_hp': 9, 'enemy_hp_cap': 30}, {'own_hp': 7, 'enemy_hp_cap': 26}] True

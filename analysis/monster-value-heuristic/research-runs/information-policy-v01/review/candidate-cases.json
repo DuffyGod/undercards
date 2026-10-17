@@ -1,0 +1,133 @@
+{
+  "schema": "independent declarative scenarios, not a production engine input schema",
+  "physical_hp_case": {
+    "root_phase": "own",
+    "turn_order": [
+      "own",
+      "enemy",
+      "own",
+      "enemy"
+    ],
+    "income_each_window": 0,
+    "draw_each_window": 0,
+    "own": {
+      "hp": 15,
+      "gold": 5,
+      "hand": [
+        14,
+        15
+      ],
+      "board": []
+    },
+    "enemy": {
+      "hp": 30,
+      "gold": 2,
+      "soul": "PERSEVERANCE",
+      "board": [
+        {
+          "id": 246,
+          "key": "old",
+          "attack": 3,
+          "health": 6,
+          "printed_cost": 4,
+          "base_cost": 4,
+          "current_cost": 4,
+          "ready": true,
+          "magic_resolved_previously": true
+        }
+      ]
+    },
+    "public_provenance": "Earlier BoneBox402 generated one hidden spell; BoneBox no longer present",
+    "worlds": [
+      {
+        "enemy_hand": [
+          {
+            "id": 79,
+            "generated": true
+          }
+        ]
+      },
+      {
+        "enemy_hand": [
+          {
+            "id": 86,
+            "generated": true
+          }
+        ]
+      }
+    ],
+    "expected_pure_common_guarantee": 9,
+    "expected_worldwise_oracle": 12,
+    "note": "Enemy and own may hold. World-specific continuation gives only an upper bound until common-policy witness is checked."
+  },
+  "visible_adaptation_case": {
+    "root_phase": "enemy_mid_turn_after_old_monster_attack",
+    "turn_order": [
+      "enemy_remainder",
+      "own",
+      "enemy"
+    ],
+    "own": {
+      "hp": 15,
+      "gold": 4,
+      "hand": [
+        {
+          "id": 351,
+          "generated": true
+        }
+      ],
+      "board": []
+    },
+    "enemy": {
+      "hp": 30,
+      "gold": 5,
+      "board": [
+        {
+          "id": 4,
+          "key": "old",
+          "attack": 3,
+          "health": 2,
+          "attacked": true
+        }
+      ]
+    },
+    "worlds": [
+      {
+        "enemy_hand": [
+          {
+            "id": 11,
+            "generated": false
+          }
+        ]
+      },
+      {
+        "enemy_hand": [
+          {
+            "id": 15,
+            "generated": false
+          }
+        ]
+      }
+    ],
+    "new_monsters_can_attack_in_current_enemy_remainder": false,
+    "expected_observation_adaptive_guarantee": 11,
+    "expected_overrestricted_target_value": 10
+  },
+  "same_public_action_case": {
+    "base": "physical_hp_case",
+    "common_public_prefix": [
+      {
+        "own_hp_before": 18,
+        "actor": "enemy",
+        "action": "LadyGarf_attack_face",
+        "damage": 3
+      },
+      {
+        "actor": "enemy",
+        "action": "end_turn"
+      }
+    ],
+    "expected_public_observation_equal": true,
+    "expected_required_root_action_shared": true
+  }
+}

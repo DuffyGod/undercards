@@ -16,8 +16,9 @@ def main():
     folder=ROOT/'analysis/monster-value-heuristic'
     suite=unittest.defaultTestLoader.discover(str(folder),pattern='test_*.py')
     result=unittest.TextTestRunner(verbosity=1).run(suite)
+    files=sorted(folder.glob('*.py'))+sorted((folder/'finite_game').glob('*.py'))
     source={str(path.relative_to(ROOT)).replace('\\','/'):hashlib.sha256(path.read_bytes()).hexdigest()
-            for path in sorted(folder.glob('*.py'))}
+            for path in files}
     artifact={'tests_run':result.testsRun,'failures':len(result.failures),'errors':len(result.errors),
               'skipped':len(result.skipped),'successful':result.wasSuccessful(),'source_sha256':source,
               'scope':'Offline local invariants; not card win-rate or complete numerical coverage validation.'}

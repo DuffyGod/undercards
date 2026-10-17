@@ -1,0 +1,4623 @@
+{
+  "schema": "finite_core_static_coverage0.1.0",
+  "snapshot_sha256": "7f19bef22de440abf1c2273806acecd0447e8341ad12f10eb63b418dfad45b85",
+  "sources_sha256": {
+    "finite_game/root_mix.py": "4b888e1ebbb6c07e88c0095e5ed8794fbf3dbd2937406319c302f59dd61e42f5",
+    "finite_game/test_belief.py": "fe802424f188b6dbc427bc39c75fe1d5bb29fa10fa203956c7b206f1731065f4",
+    "finite_game/engine.py": "1e07e0f44219b38863f6b0873b213ccd060db614d0d6ba4a56d509891ea02564",
+    "finite_game/test_root_mix.py": "47878f94711e2bff3ddaec710b538e1a8a7a5b638b05ca2c29566ab64092d02b",
+    "finite_game/test_engine.py": "48f5a07e6c5d5d151d2015e30d940c033b746a837f845455d0b47d57eef0c309",
+    "finite_game/rules.py": "d39e6726d15f4b7973551e414f91a2f1f410db9f55126eb64b845aaf712d9f76",
+    "finite_game/__init__.py": "91c62e2a29ddc11385ea446b56a2680f8682c16b2530af881c97b6cfb118f63a",
+    "finite_game/belief.py": "e13517d7d211bbfb5dc12c23dd51a3b9a6af8a33ae6759e7024acb63743ebc95"
+  },
+  "all_snapshot_entries": 938,
+  "card_typed_entries": 928,
+  "supported_entries": 48,
+  "unknown_entries": 890,
+  "standard_monster_denominator": 644,
+  "standard_monster_compiled": 24,
+  "supported_by_card_type": {
+    "monster": 44,
+    "spell": 4
+  },
+  "standard_monsters": [
+    {
+      "id": 1,
+      "name": "Dummy",
+      "cost": 1,
+      "effect": "Taunt."
+    },
+    {
+      "id": 2,
+      "name": "Froggit",
+      "cost": 2,
+      "effect": ""
+    },
+    {
+      "id": 4,
+      "name": "Moldsmal",
+      "cost": 2,
+      "effect": ""
+    },
+    {
+      "id": 6,
+      "name": "Vegetoid",
+      "cost": 3,
+      "effect": "Turn start: Heal 5 HP to you."
+    },
+    {
+      "id": 9,
+      "name": "Ice Cap",
+      "cost": 3,
+      "effect": "Charge."
+    },
+    {
+      "id": 11,
+      "name": "Snowdrake",
+      "cost": 4,
+      "effect": "Magic: Give an ally monster +2 ATK."
+    },
+    {
+      "id": 14,
+      "name": "Jerry",
+      "cost": 5,
+      "effect": "Taunt. This takes 1 less DMG from monsters costing 4 or less GOLD."
+    },
+    {
+      "id": 15,
+      "name": "Aaron",
+      "cost": 5,
+      "effect": ""
+    },
+    {
+      "id": 20,
+      "name": "Vulkin",
+      "cost": 4,
+      "effect": "Magic: Deal DMG 2."
+    },
+    {
+      "id": 22,
+      "name": "Shyren",
+      "cost": 3,
+      "effect": "Magic: Heal 4 HP."
+    },
+    {
+      "id": 23,
+      "name": "Migospel",
+      "cost": 4,
+      "effect": "Magic: Give a monster +3 HP."
+    },
+    {
+      "id": 101,
+      "name": "Nacarat Jester",
+      "cost": 5,
+      "effect": "Magic: Silence a monster."
+    },
+    {
+      "id": 115,
+      "name": "Spider",
+      "cost": 1,
+      "effect": "Haste."
+    },
+    {
+      "id": 144,
+      "name": "Scarf Mouse",
+      "cost": 3,
+      "effect": "Magic: Silence an enemy monster."
+    },
+    {
+      "id": 166,
+      "name": "Crazy Bun",
+      "cost": 2,
+      "effect": "Magic: Deal 1 DMG to all other monsters."
+    },
+    {
+      "id": 168,
+      "name": "Sad Dragon",
+      "cost": 6,
+      "effect": "Dodge (1)."
+    },
+    {
+      "id": 175,
+      "name": "Charles",
+      "cost": 2,
+      "effect": "Armor."
+    },
+    {
+      "id": 187,
+      "name": "Candy Dish",
+      "cost": 3,
+      "effect": ""
+    },
+    {
+      "id": 227,
+      "name": "Coffee Man",
+      "cost": 7,
+      "effect": "Taunt. Magic: Silence a monster."
+    },
+    {
+      "id": 307,
+      "name": "Bloody Tree",
+      "cost": 4,
+      "effect": "Turn start: Gain +1 ATK."
+    },
+    {
+      "id": 314,
+      "name": "Fan Rudinn",
+      "cost": 3,
+      "effect": "Magic: Give an ally monster ATK +1/HP +2."
+    },
+    {
+      "id": 377,
+      "name": "Ranger Rudinn",
+      "cost": 3,
+      "effect": "Dodge (1)."
+    },
+    {
+      "id": 602,
+      "name": "Rock Pet",
+      "cost": 2,
+      "effect": ""
+    },
+    {
+      "id": 932,
+      "name": "Pixel Vase",
+      "cost": 2,
+      "effect": "Taunt. Magic: Give an enemy monster ATK -1/HP -1."
+    }
+  ],
+  "unknown": [
+    {
+      "id": 3,
+      "name": "Whimsun",
+      "reason": "unsupported effect: 'Gain +ATK 1 for each other ally monster.'"
+    },
+    {
+      "id": 5,
+      "name": "Migosp",
+      "reason": "unsupported effect: 'Give adjacent monsters +1 HP.'"
+    },
+    {
+      "id": 7,
+      "name": "Loox",
+      "reason": "unsupported effect: 'Deal 1 DMG. If it targeted an ally, gain +1 ATK.'"
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "reason": "unsupported effect: \"Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.\""
+    },
+    {
+      "id": 10,
+      "name": "Ice",
+      "reason": "card 10: unsupported full text 'Dust: Paralyze its killer.'"
+    },
+    {
+      "id": 12,
+      "name": "Chilldrake",
+      "reason": "unsupported effect: 'Switch: Draw [左侧] a monster or [右侧] a spell.'"
+    },
+    {
+      "id": 13,
+      "name": "Woshua",
+      "reason": "unsupported effect: 'Give all enemy monsters -1 ATK.'"
+    },
+    {
+      "id": 16,
+      "name": "Madjick",
+      "reason": "unsupported effect: \"Swap a monster's ATK and HP.\""
+    },
+    {
+      "id": 17,
+      "name": "Knight Knight",
+      "reason": "card 17: unsupported full text 'After this attacks and survives, heal HP to this equal to the DMG dealt.'"
+    },
+    {
+      "id": 18,
+      "name": "Pyrope",
+      "reason": "card 18: unsupported full text 'Before this attacks a monster, deal 3 DMG to the opponent.'"
+    },
+    {
+      "id": 19,
+      "name": "Moldbygg",
+      "reason": "unsupported effect: 'If you have an ally Mold, Catch a Moldsmal [#4]. Dust: Release it.'"
+    },
+    {
+      "id": 21,
+      "name": "Tsunderplane",
+      "reason": "unsupported effect: 'Deal 1 DMG to all enemy monsters and 3 DMG to the opponent.'"
+    },
+    {
+      "id": 24,
+      "name": "Final Froggit",
+      "reason": "unsupported effect: 'Give all ally Frog (except Final Froggit [#24]) ATK +1/HP +1 wherever they are.'"
+    },
+    {
+      "id": 25,
+      "name": "Astigmatism",
+      "reason": "card 25: unsupported full text 'After this kills a monster, add a Loox [#7] to your hand. Magic: Deal 2 DMG.'"
+    },
+    {
+      "id": 26,
+      "name": "Parsnik",
+      "reason": "unsupported effect: 'Paralyze a monster. If it was already Paralyzed, deal 2 DMG to it.'"
+    },
+    {
+      "id": 27,
+      "name": "Whimsalot",
+      "reason": "unsupported effect: 'Give all monsters in your hand COST -1/ATK -1/HP -1 (min. ATK 1/HP 1).'"
+    },
+    {
+      "id": 28,
+      "name": "Chara",
+      "reason": "unsupported effect: 'Erase a monster. Start the Genocide [#25] route.'"
+    },
+    {
+      "id": 29,
+      "name": "Bomb",
+      "reason": "unsupported effect: 'Erase the cheapest non-Generated card in your hand to deal 3 DMG.'"
+    },
+    {
+      "id": 30,
+      "name": "Burgerpants",
+      "reason": "unsupported effect: 'Both players earn 5 GOLD.'"
+    },
+    {
+      "id": 31,
+      "name": "Snowman",
+      "reason": "card 31: unsupported full text 'Dust: Add a copy of this to your hand with -1 base COST and HP.'"
+    },
+    {
+      "id": 32,
+      "name": "Memoryhead",
+      "reason": "card 32: status text/metadata mismatch"
+    },
+    {
+      "id": 33,
+      "name": "Endogeny",
+      "reason": "unsupported effect: 'Give a Dog in your hand +1 ATK and Haste or an Amalgamate in your hand +1 HP and Taunt.'"
+    },
+    {
+      "id": 34,
+      "name": "Reaper Bird",
+      "reason": "unsupported effect: 'Draw the most expensive Amalgamate or Frog in your deck. Synergy: Give it ATK +2/HP +1.'"
+    },
+    {
+      "id": 35,
+      "name": "Lemon Bread",
+      "reason": "unsupported effect: 'Give all enemy monsters +1 Mold Spore for every Mold or Amalgamate you played this turn.'"
+    },
+    {
+      "id": 36,
+      "name": "Snowdrake's Mom",
+      "reason": "card 36: unsupported full text 'Delay: Summon a Vegetoid [#6]. Give it ATK +1/HP +1 and Transparency if this has any ATK buffs.'"
+    },
+    {
+      "id": 37,
+      "name": "Moldessa",
+      "reason": "card 37: unsupported full text 'Magic and Dust: Draw a Mold (except Moldessa [#37]) and give it +1 ATK.'"
+    },
+    {
+      "id": 38,
+      "name": "Royal Guard 1",
+      "reason": "card 38: unsupported full text 'Dust: Give all ally Royal Guard Armor.'"
+    },
+    {
+      "id": 39,
+      "name": "Royal Guard 2",
+      "reason": "card 39: unsupported full text 'Dust: Give Haste to 4 random Royal Guard in your hand.'"
+    },
+    {
+      "id": 40,
+      "name": "Annoying Dog",
+      "reason": "unsupported effect: 'Add a Dog Residue [#349] to your hand. Delay: If this has ATK buffs, add another.'"
+    },
+    {
+      "id": 41,
+      "name": "Mad Dummy",
+      "reason": "card 41: unsupported full text 'Can only be damaged by 4+ DMG. Magic: Deal 3 DMG to all monsters and the opponent. Excess DMG is healed as HP to you.'"
+    },
+    {
+      "id": 42,
+      "name": "So Sorry",
+      "reason": "unsupported effect: 'Add a Doodlebog [#350] to your hand.'"
+    },
+    {
+      "id": 43,
+      "name": "Lesser Dog",
+      "reason": "card 43: unsupported full text 'Dust: Give all cards in your hand -1 COST.'"
+    },
+    {
+      "id": 44,
+      "name": "Gyftrot",
+      "reason": "unsupported effect: 'Draw up to 2 cards.'"
+    },
+    {
+      "id": 45,
+      "name": "Doggo",
+      "reason": "card 45: unsupported full text 'Delay: If this has ATK buffs, Paralyze the monster in front of this.'"
+    },
+    {
+      "id": 46,
+      "name": "Dogamy",
+      "reason": "unsupported effect: 'If you have an ally Dogaressa [#47], give all Dog in your hand ATK +2/HP +2.'"
+    },
+    {
+      "id": 47,
+      "name": "Dogaressa",
+      "reason": "unsupported effect: 'If you have an ally Dogamy [#46], gain ATK +2/HP +3, Taunt, and +1 Dodge.'"
+    },
+    {
+      "id": 48,
+      "name": "Greater Dog",
+      "reason": "unsupported effect: 'If you have a Dog in your hand, gain +3 HP.'"
+    },
+    {
+      "id": 49,
+      "name": "Glyde",
+      "reason": "unsupported effect: 'Gain ATK +1/HP +1 for each card in your hand.'"
+    },
+    {
+      "id": 50,
+      "name": "Temmie",
+      "reason": "card 50: unsupported full text 'Delay: Add a Temmie 2 [#356] to your hand.'"
+    },
+    {
+      "id": 51,
+      "name": "Monster Kid",
+      "reason": "card 51: unsupported full text 'Dust: Give all other ally monsters ATK +1/HP +1.'"
+    },
+    {
+      "id": 52,
+      "name": "Alphys",
+      "reason": "unsupported effect: 'Add the Royal Invention of your SOUL to your hand.'"
+    },
+    {
+      "id": 53,
+      "name": "Napstablook",
+      "reason": "unsupported effect: 'Lose 1 ATK. If this has 0 ATK, kill this.'"
+    },
+    {
+      "id": 54,
+      "name": "Flowey",
+      "reason": "card 54: unsupported full text 'Dust: Add a copy of this to your hand with COST -1/ATK -1/HP -1 base stats. At base 1 ATK or less, turn it into Demon Flowey [#550].'"
+    },
+    {
+      "id": 55,
+      "name": "Muffet",
+      "reason": "card 55: unsupported full text 'Delay: Add a Spider Donut [#475] to your hand and a Spider Croissant [#476] to your deck. Turn end: Add another Spider Donut [#475].'"
+    },
+    {
+      "id": 56,
+      "name": "Mettaton",
+      "reason": "card 56: unsupported full text 'Can only take up to 3 DMG at a time.'"
+    },
+    {
+      "id": 57,
+      "name": "Gaster",
+      "reason": "unsupported effect: 'Repeat all Synergy effects you triggered this game (max 2 per unique effect).'"
+    },
+    {
+      "id": 58,
+      "name": "Asriel",
+      "reason": "unsupported effect: 'Remove negative effects from all other ally monsters and fully heal them.'"
+    },
+    {
+      "id": 59,
+      "name": "Sans",
+      "reason": "card 59: unsupported full text 'Magic and Turn start: Add a Gaster Blaster [#351] to your hand.'"
+    },
+    {
+      "id": 60,
+      "name": "Papyrus",
+      "reason": "card 60: status text/metadata mismatch"
+    },
+    {
+      "id": 61,
+      "name": "Asgore",
+      "reason": "unsupported effect: 'Kill all damaged monsters.'"
+    },
+    {
+      "id": 62,
+      "name": "Undyne",
+      "reason": "unsupported effect: 'Deal 1 DMG to the lowest HP enemy monster 10 times. Summon a Spear [#574] with base stats equal to DMG not dealt.'"
+    },
+    {
+      "id": 64,
+      "name": "Mettaton EX",
+      "reason": "unsupported effect: \"If either player has 10+ GOLD (after spending GOLD on this), set both players' GOLD to 0.\""
+    },
+    {
+      "id": 65,
+      "name": "Frisk",
+      "reason": "unsupported effect: 'Gain an upgraded version of the enemy SOUL. Add an ACT Button [#771] to your hand.'"
+    },
+    {
+      "id": 66,
+      "name": "Will to Fight",
+      "reason": "unsupported effect: 'Trigger the Dust effect of the next Lost Soul. Delay: Repeat.'"
+    },
+    {
+      "id": 67,
+      "name": "Resurrection",
+      "reason": "unsupported effect: 'Look at 3 non-Generated monsters in your dustpile and choose one. Erase it and add a copy of it to your hand.'"
+    },
+    {
+      "id": 68,
+      "name": "Another Chance",
+      "reason": "unsupported effect: 'Kill a non-DT ally monster. Delay: Summon it again with ATK -2/HP -2 (min. 1 HP).'"
+    },
+    {
+      "id": 69,
+      "name": "Star Blazing",
+      "reason": "unsupported effect: 'Erase up to 15 random monsters not Generated by Star Blazing [#69] in your dustpile. Summon a Star [#706] for every 3 Erased. Give them ATK +1/HP +1 for each not summoned.'"
+    },
+    {
+      "id": 70,
+      "name": "Hyper Goner",
+      "reason": "unsupported effect: 'Choose an enemy monster to kill all other monsters.'"
+    },
+    {
+      "id": 71,
+      "name": "Frozen Energy",
+      "reason": "unsupported effect: 'Give a monster ATK +2/HP +2 and Haste. Delay: Paralyze it.'"
+    },
+    {
+      "id": 72,
+      "name": "Melt",
+      "reason": "unsupported effect: \"Deal an ally monster's HP as DMG to the monster in front of it.\""
+    },
+    {
+      "id": 73,
+      "name": "Cold Winter",
+      "reason": "unsupported effect: 'Deal 5 DMG randomly split among all enemy monsters. Add a Change of Winds [#552] to your hand for each one that died.'"
+    },
+    {
+      "id": 74,
+      "name": "Defrosting",
+      "reason": "card 74: status text/metadata mismatch"
+    },
+    {
+      "id": 75,
+      "name": "Self Reflection",
+      "reason": "unsupported effect: 'Paralyze a monster. Delay: If it was an ally, give it Candy and ATK +1/HP +1. If it was an enemy, add a True Self [#551] to your hand.'"
+    },
+    {
+      "id": 76,
+      "name": "Strength",
+      "reason": "unsupported effect: 'Give all ally monsters ATK +1/HP +1.'"
+    },
+    {
+      "id": 77,
+      "name": "Assault",
+      "reason": "unsupported effect: 'Give an ally monster Haste.'"
+    },
+    {
+      "id": 78,
+      "name": "Rage",
+      "reason": "unsupported effect: \"Deal an ally monster's ATK as DMG to the monster in front of it. Give the ally monster ATK +1/HP +1.\""
+    },
+    {
+      "id": 80,
+      "name": "Royal Signup",
+      "reason": "unsupported effect: 'Choose a card in your hand. Turn the other cards in your hand into Draft [#577].'"
+    },
+    {
+      "id": 81,
+      "name": "Fortune",
+      "reason": "unsupported effect: 'Both players earn 1 GOLD.'"
+    },
+    {
+      "id": 82,
+      "name": "Mercenary Hire",
+      "reason": "unsupported effect: 'Summon all 9-COST Royal Guard with ATK -4/HP -4 base stats.'"
+    },
+    {
+      "id": 83,
+      "name": "Shopping",
+      "reason": "unsupported effect: 'Draw 3 cards costing 5 GOLD or less.'"
+    },
+    {
+      "id": 84,
+      "name": "Expulsion",
+      "reason": "unsupported effect: 'Send an enemy monster to the top of the enemy deck.'"
+    },
+    {
+      "id": 85,
+      "name": "Cloning",
+      "reason": "unsupported effect: 'Summon a base ATK 3/HP 3 copy of a non-DT monster. Give it Haste.'"
+    },
+    {
+      "id": 87,
+      "name": "Poison",
+      "reason": "card 87: status text/metadata mismatch"
+    },
+    {
+      "id": 88,
+      "name": "Buttercup Treat",
+      "reason": "unsupported effect: \"Set a non-DT monster's ATK to 1. Delay: Silence it and give it KR and Candy.\""
+    },
+    {
+      "id": 89,
+      "name": "Pollutant Gas",
+      "reason": "unsupported effect: 'Summon 2 Toxic Cloud [#615].'"
+    },
+    {
+      "id": 90,
+      "name": "Contamination",
+      "reason": "unsupported effect: 'Give 2 random damaged enemy monsters KR and kill them.'"
+    },
+    {
+      "id": 91,
+      "name": "Heal",
+      "reason": "unsupported effect: 'Heal 3 HP. If this targeted a player, draw a card. If this targeted a monster, remove negative effects from it.'"
+    },
+    {
+      "id": 92,
+      "name": "Force of Nature",
+      "reason": "unsupported effect: 'Deal 3 DMG. Give excess DMG as HP to all allies.'"
+    },
+    {
+      "id": 93,
+      "name": "Longevity",
+      "reason": "unsupported effect: 'Give all ally monsters +1 HP and draw a card.'"
+    },
+    {
+      "id": 94,
+      "name": "Feast",
+      "reason": "unsupported effect: 'Give all ally monsters with 4 or less HP +2 HP. Delay: Give all ally monsters with 4 or less ATK +2 ATK.'"
+    },
+    {
+      "id": 95,
+      "name": "Test of Will",
+      "reason": "unsupported effect: 'Deal DMG to all monsters equal to their ATK.'"
+    },
+    {
+      "id": 96,
+      "name": "Punishment",
+      "reason": "unsupported effect: 'Deal 4 DMG to an enemy monster.'"
+    },
+    {
+      "id": 97,
+      "name": "Strafe",
+      "reason": "unsupported effect: 'Deal 7 DMG to an enemy monster. Excess DMG is dealt to its adjacent monsters.'"
+    },
+    {
+      "id": 98,
+      "name": "Undyne's Spears",
+      "reason": "card 98: status text/metadata mismatch"
+    },
+    {
+      "id": 99,
+      "name": "Reload",
+      "reason": "unsupported effect: 'Give all non-TOKEN spells in your hand (except Reload [#99]) +1 Loop.'"
+    },
+    {
+      "id": 100,
+      "name": "Headshot",
+      "reason": "unsupported effect: 'Silence and kill a monster.'"
+    },
+    {
+      "id": 102,
+      "name": "Sad Customer",
+      "reason": "unsupported effect: 'Look at the 2 most expensive monsters in your dustpile costing 5 or less GOLD (except Sad Customer [#102]) and Catch one. Dust: Release it.'"
+    },
+    {
+      "id": 103,
+      "name": "Muffet's Pet",
+      "reason": "unsupported effect: 'Give an enemy monster -2 ATK. If it has 0 ATK, kill it.'"
+    },
+    {
+      "id": 104,
+      "name": "Grillby",
+      "reason": "unsupported effect: 'Give all other ally monsters ATK +1/HP +1.'"
+    },
+    {
+      "id": 105,
+      "name": "Echo Flower",
+      "reason": "unsupported effect: 'Add an exact copy of a random card in the enemy hand to your hand. Give it -1 COST.'"
+    },
+    {
+      "id": 106,
+      "name": "The Heroine",
+      "reason": "card 106: unsupported full text 'Instead of dying, Erase 5 monsters in your dustpile to return with ATK -1/HP -2 base stats. Magic: Gain Taunt.'"
+    },
+    {
+      "id": 107,
+      "name": "Water Cooler",
+      "reason": "unsupported effect: 'Heal 2 HP to all allies.'"
+    },
+    {
+      "id": 108,
+      "name": "Rock",
+      "reason": "card 108: unsupported full text 'Dust: Summon a Pebble [#352].'"
+    },
+    {
+      "id": 109,
+      "name": "Everyman",
+      "reason": "unsupported effect: 'Give an ally Amalgamate (except Everyman [#109]) ATK +1/HP +1 and add a copy of it to your hand. Synergy: Give both ATK +1/HP +1.'"
+    },
+    {
+      "id": 110,
+      "name": "Mettaton NEO",
+      "reason": "card 110: unsupported full text 'Dust: Deal its ATK as DMG to all enemy monsters.'"
+    },
+    {
+      "id": 111,
+      "name": "Memorial Statue",
+      "reason": "card 111: unsupported full text 'Before this attacks a monster, Silence it. Magic: If you have equal or less monsters than the opponent, gain Haste.'"
+    },
+    {
+      "id": 112,
+      "name": "Ice Wolf",
+      "reason": "card 112: unsupported full text 'Dust: Summon an Ice [#10] for the opponent.'"
+    },
+    {
+      "id": 113,
+      "name": "Igloo",
+      "reason": "unsupported effect: 'Return an ally monster to your hand.'"
+    },
+    {
+      "id": 114,
+      "name": "Glad Dummy",
+      "reason": "unsupported effect: 'Give adjacent monsters Taunt.'"
+    },
+    {
+      "id": 116,
+      "name": "Small Bird",
+      "reason": "unsupported effect: 'If there is a Taunt monster, gain Charge.'"
+    },
+    {
+      "id": 117,
+      "name": "Omega Flowey",
+      "reason": "unsupported effect: 'Save the board and add a Load [#358] to your hand.'"
+    },
+    {
+      "id": 118,
+      "name": "G Follower 1",
+      "reason": "unsupported effect: 'Draw a Synergy card.'"
+    },
+    {
+      "id": 119,
+      "name": "G Follower 2",
+      "reason": "card 119: unsupported full text 'Synergy: Summon a G Follower 2 [#119].'"
+    },
+    {
+      "id": 120,
+      "name": "G Follower 3",
+      "reason": "unsupported effect: 'Look at all other G Follower and add one to your hand. Synergy: Add it to your hand with -1 COST instead.'"
+    },
+    {
+      "id": 121,
+      "name": "Goner Kid",
+      "reason": "unsupported effect: 'Kill a random other monster. Synergy: Kill a random enemy monster instead.'"
+    },
+    {
+      "id": 122,
+      "name": "Janitor",
+      "reason": "unsupported effect: 'Give +1 HP to monsters left of this and +1 ATK to monsters right of this.'"
+    },
+    {
+      "id": 123,
+      "name": "Onionsan",
+      "reason": "unsupported effect: 'Summon a Left Tentacle [#353] and a Right Tentacle [#354] with ATK +2/HP +2 adjacent to this.'"
+    },
+    {
+      "id": 124,
+      "name": "Golden Flowers",
+      "reason": "unsupported effect: \"Look at 3 random non-TOKEN spells you've cast this game. Choose one to add to your hand.\""
+    },
+    {
+      "id": 125,
+      "name": "Heats Flamesman",
+      "reason": "unsupported effect: 'Deal 1 DMG to everything other than this.'"
+    },
+    {
+      "id": 126,
+      "name": "Papyrus Statue",
+      "reason": "unsupported effect: 'If you have 5+ cards in your hand, gain Taunt.'"
+    },
+    {
+      "id": 127,
+      "name": "Garbage",
+      "reason": "card 127: unsupported full text 'Magic and Dust: Add the BASE spell of your SOUL to your hand.'"
+    },
+    {
+      "id": 128,
+      "name": "Froggit Trio",
+      "reason": "unsupported effect: 'Summon 2 Froggit [#2] with Haste. Delay: If both are dead, add a 0-COST Froggit [#2] with Haste to your hand.'"
+    },
+    {
+      "id": 129,
+      "name": "Knife",
+      "reason": "unsupported effect: 'Kill an enemy monster. Deal its COST as DMG to you.'"
+    },
+    {
+      "id": 130,
+      "name": "Investment",
+      "reason": "unsupported effect: 'Look at 3 random cards in your deck. Give them -1 COST and choose one to draw.'"
+    },
+    {
+      "id": 131,
+      "name": "Energizer",
+      "reason": "unsupported effect: 'Give all ally monsters +1 ATK. Deal 1 DMG to all enemy monsters.'"
+    },
+    {
+      "id": 132,
+      "name": "Pie",
+      "reason": "card 132: status text/metadata mismatch"
+    },
+    {
+      "id": 133,
+      "name": "Fridge",
+      "reason": "unsupported effect: 'Give a monster +1 HP and Taunt. Draw a card.'"
+    },
+    {
+      "id": 134,
+      "name": "Spider Web",
+      "reason": "unsupported effect: \"Give an enemy monster KR and ATK -1/HP -1. Delay: If it's dead, summon 3 Spider [#115].\""
+    },
+    {
+      "id": 135,
+      "name": "Big Mouth",
+      "reason": "card 135: unsupported full text 'Magic and Turn start: Kill a random enemy monster costing 2 or less GOLD to heal 2 HP to you.'"
+    },
+    {
+      "id": 136,
+      "name": "Cactus",
+      "reason": "card 136: unsupported full text 'After this deals DMG to a monster, kill it.'"
+    },
+    {
+      "id": 137,
+      "name": "Big Bob",
+      "reason": "card 137: unsupported full text 'After this survives DMG during your turn, summon a 0-COST Big Bob [#137].'"
+    },
+    {
+      "id": 138,
+      "name": "Ferry",
+      "reason": "card 138: unsupported full text 'Dust: Earn GOLD 2.'"
+    },
+    {
+      "id": 139,
+      "name": "Trader Temmie",
+      "reason": "card 139: status text/metadata mismatch"
+    },
+    {
+      "id": 140,
+      "name": "Politics Bear",
+      "reason": "card 140: unsupported full text 'After the opponent summons a monster, gain +1 ATK. After you summon a monster, gain +1 HP.'"
+    },
+    {
+      "id": 141,
+      "name": "Gift Bear",
+      "reason": "unsupported effect: 'Summon a Gift [#355].'"
+    },
+    {
+      "id": 142,
+      "name": "Blue Laser",
+      "reason": "card 142: unsupported full text 'Before an enemy monster attacks, deal 1 DMG to it.'"
+    },
+    {
+      "id": 143,
+      "name": "Orange Laser",
+      "reason": "card 143: status text/metadata mismatch"
+    },
+    {
+      "id": 145,
+      "name": "Diamond Boy 1",
+      "reason": "card 145: unsupported full text \"All other non-Armor ally monsters take 1 less DMG (can't stack).\""
+    },
+    {
+      "id": 146,
+      "name": "Diamond Boy 2",
+      "reason": "card 146: unsupported full text 'The opponent takes 2 less DMG.'"
+    },
+    {
+      "id": 147,
+      "name": "Fuku Fire",
+      "reason": "unsupported effect: 'Deal 3 DMG to the monster in front of this.'"
+    },
+    {
+      "id": 148,
+      "name": "Faun",
+      "reason": "unsupported effect: \"Give an enemy monster -2 ATK. Add a random non-DT card of a COST equal to the monster's new ATK to your hand.\""
+    },
+    {
+      "id": 149,
+      "name": "Dog House",
+      "reason": "unsupported effect: 'Choose a Dog in your hand. Add an exact copy of it to the top of your deck.'"
+    },
+    {
+      "id": 150,
+      "name": "Nice Cream Guy",
+      "reason": "card 150: unsupported full text 'After you summon a monster, give it ATK +1/HP +1.'"
+    },
+    {
+      "id": 151,
+      "name": "Echo Fish",
+      "reason": "unsupported effect: \"Copy an enemy monster's current ATK, HP, Taunt, Candy, Charge, Haste, Darkspawn, Dodge, and Transparency.\""
+    },
+    {
+      "id": 152,
+      "name": "Bratty",
+      "reason": "unsupported effect: 'Erase a random spell in your hand to look at all spells with equal COST. Add one to your hand and give all spells in your hand -1 COST.'"
+    },
+    {
+      "id": 153,
+      "name": "Catty",
+      "reason": "card 153: unsupported full text 'After you summon a monster while you have 5 or less cards in your hand, draw a card.'"
+    },
+    {
+      "id": 154,
+      "name": "River Person",
+      "reason": "unsupported effect: 'Both players draw cards until they have 6 in their hand.'"
+    },
+    {
+      "id": 160,
+      "name": "Snow Poff",
+      "reason": "card 160: unsupported full text 'Delay: Draw a Dog. Dust: Draw a card.'"
+    },
+    {
+      "id": 161,
+      "name": "Clam Girl",
+      "reason": "unsupported effect: 'Give 2 random spells in your hand -2 COST.'"
+    },
+    {
+      "id": 162,
+      "name": "Clam Boy",
+      "reason": "card 162: status text/metadata mismatch"
+    },
+    {
+      "id": 163,
+      "name": "MTT Fountain",
+      "reason": "card 163: unsupported full text 'After this takes DMG, heal the DMG taken as HP to you.'"
+    },
+    {
+      "id": 164,
+      "name": "Lamp",
+      "reason": "card 164: unsupported full text 'Dust: Summon a Snow Frisk [#554].'"
+    },
+    {
+      "id": 165,
+      "name": "Oni",
+      "reason": "card 165: unsupported full text 'Need: A non-TOKEN spell of another SOUL in your hand. Magic: Summon a Charles [#175].'"
+    },
+    {
+      "id": 167,
+      "name": "Fish Receptionist",
+      "reason": "card 167: unsupported full text 'After this takes DMG, give a random card in your hand -1 COST.'"
+    },
+    {
+      "id": 169,
+      "name": "Bunbun",
+      "reason": "unsupported effect: 'Summon a Bun [#357].'"
+    },
+    {
+      "id": 170,
+      "name": "Loren",
+      "reason": "unsupported effect: 'Summon 3 Star [#706].'"
+    },
+    {
+      "id": 171,
+      "name": "Dimensional Box",
+      "reason": "unsupported effect: 'Catch an enemy monster. Dust: Release it.'"
+    },
+    {
+      "id": 172,
+      "name": "Allergic Temmie",
+      "reason": "unsupported effect: 'Deal 1 DMG to this and all enemy monsters for each other ally Tem.'"
+    },
+    {
+      "id": 173,
+      "name": "Temmie Statue",
+      "reason": "card 173: unsupported full text 'After you summon a Tem, give it ATK +1/HP +1.'"
+    },
+    {
+      "id": 174,
+      "name": "Diamond Receptionist",
+      "reason": "unsupported effect: 'Gain +1 HP for each enemy monster.'"
+    },
+    {
+      "id": 176,
+      "name": "Ugly Fish",
+      "reason": "unsupported effect: \"Send an enemy monster to the enemy hand. If it's full, kill it instead.\""
+    },
+    {
+      "id": 177,
+      "name": "Redacted",
+      "reason": "unsupported effect: 'Give an enemy monster ATK -2/HP -2. Synergy: Gain Haste.'"
+    },
+    {
+      "id": 178,
+      "name": "Overheat",
+      "reason": "unsupported effect: 'Kill an ally monster. Deal its ATK as DMG to all enemy monsters.'"
+    },
+    {
+      "id": 179,
+      "name": "Last Dream",
+      "reason": "unsupported effect: 'Give all ally monsters ATK +1/HP +1. If you have exactly 1 HP, kill all enemy monsters and fully heal yourself.'"
+    },
+    {
+      "id": 180,
+      "name": "Inflation",
+      "reason": "unsupported effect: 'Equip the Economics [#38] artifact. Give it 6 counters.'"
+    },
+    {
+      "id": 181,
+      "name": "Multi Shot",
+      "reason": "unsupported effect: 'Delay: Equip the True Justice [#37] artifact and give it 6 counters. If you have it, trigger its Turn end until it has no counters, then give it 6.'"
+    },
+    {
+      "id": 182,
+      "name": "Ice Prison",
+      "reason": "unsupported effect: 'Silence a monster. Paralyze it.'"
+    },
+    {
+      "id": 183,
+      "name": "Aftermath",
+      "reason": "unsupported effect: 'Enchant 2 random occupied enemy slots with Scattering Dust.'"
+    },
+    {
+      "id": 184,
+      "name": "Soothing",
+      "reason": "unsupported effect: \"Set a monster's stats to ATK 3/HP 2.\""
+    },
+    {
+      "id": 185,
+      "name": "Librarian",
+      "reason": "card 185: unsupported full text 'Need: Your deck has no non-Generated duplicates. Magic: Draw 3 cards and add 3 random cards to your deck. They cost 1 less GOLD.'"
+    },
+    {
+      "id": 186,
+      "name": "Trash Tornado",
+      "reason": "card 186: status text/metadata mismatch"
+    },
+    {
+      "id": 188,
+      "name": "Bridge Seed",
+      "reason": "unsupported effect: 'Draw a card and gain +1 HP for each ally Bridge Seed [#188].'"
+    },
+    {
+      "id": 191,
+      "name": "Vulkin's Cloud",
+      "reason": "card 191: status text/metadata mismatch"
+    },
+    {
+      "id": 192,
+      "name": "Big Bomb",
+      "reason": "unsupported effect: 'Add 3 Explosion [#367] to the enemy deck.'"
+    },
+    {
+      "id": 193,
+      "name": "Disco Ball",
+      "reason": "unsupported effect: 'Turn all spells in your hand into other random spells. Give them -1 COST.'"
+    },
+    {
+      "id": 194,
+      "name": "Shambling Mass",
+      "reason": "card 194: unsupported full text 'Dust: Deal 5 DMG randomly split among all enemy monsters.'"
+    },
+    {
+      "id": 195,
+      "name": "Dog Food",
+      "reason": "unsupported effect: 'Give all Dog in your hand ATK +1/HP +1.'"
+    },
+    {
+      "id": 197,
+      "name": "Elder Puzzler",
+      "reason": "unsupported effect: \"If this didn't attack this turn, deal 4 DMG to a random enemy monster.\""
+    },
+    {
+      "id": 198,
+      "name": "Red Bird",
+      "reason": "unsupported effect: 'Turn a monster into a random other monster of the same COST.'"
+    },
+    {
+      "id": 199,
+      "name": "Manticore",
+      "reason": "unsupported effect: 'Both players draw 2 cards.'"
+    },
+    {
+      "id": 200,
+      "name": "Bob",
+      "reason": "unsupported effect: 'Add a copy of every different Tem in your dustpile (except Bob [#200]) to your hand (from cheapest to most expensive).'"
+    },
+    {
+      "id": 201,
+      "name": "Dancer Mettaton",
+      "reason": "card 201: unsupported full text 'After this attacks and kills a monster, heal 4 HP to you and summon a Mettabot [#359].'"
+    },
+    {
+      "id": 202,
+      "name": "Innkeeper",
+      "reason": "unsupported effect: 'Give yourself +5 HP.'"
+    },
+    {
+      "id": 203,
+      "name": "Angel of Death",
+      "reason": "unsupported effect: 'Summon an exact copy of a monster. Give it Haste. Dust: Fill your board with random Lost Soul.'"
+    },
+    {
+      "id": 214,
+      "name": "Casual Undyne",
+      "reason": "card 214: status text/metadata mismatch"
+    },
+    {
+      "id": 215,
+      "name": "Coffin",
+      "reason": "unsupported effect: 'Look at the 2 cheapest monsters in your dustpile (except Coffin [#215]) and choose one to Catch. Dust: Release it.'"
+    },
+    {
+      "id": 216,
+      "name": "Fire Trap",
+      "reason": "unsupported effect: 'Enchant a random empty enemy slot with The Flame.'"
+    },
+    {
+      "id": 217,
+      "name": "Mace",
+      "reason": "unsupported effect: 'Deal 3 DMG to an ally monster to deal 3 DMG to the opponent.'"
+    },
+    {
+      "id": 218,
+      "name": "Hand Receptionist",
+      "reason": "unsupported effect: 'Summon a random monster from the enemy hand for the opponent.'"
+    },
+    {
+      "id": 219,
+      "name": "Gerson",
+      "reason": "unsupported effect: 'Add a Junk for Sale [#772] to your hand.'"
+    },
+    {
+      "id": 220,
+      "name": "Timer",
+      "reason": "card 220: unsupported full text 'At the start of its every 3rd turn, the opponent skips their next turn.'"
+    },
+    {
+      "id": 221,
+      "name": "Skateboard Girl",
+      "reason": "card 221: unsupported full text 'Delay: If this attacked and survived, return to your hand.'"
+    },
+    {
+      "id": 222,
+      "name": "Blue Snail",
+      "reason": "unsupported effect: 'Give a random Snail in your deck -1 COST.'"
+    },
+    {
+      "id": 223,
+      "name": "Yellow Snail",
+      "reason": "unsupported effect: 'Give all other ally Snail +1 HP.'"
+    },
+    {
+      "id": 224,
+      "name": "Red Snail",
+      "reason": "unsupported effect: 'Give all other ally Snail +1 ATK.'"
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "reason": "unsupported effect: 'Draw a card.'"
+    },
+    {
+      "id": 226,
+      "name": "Microwave",
+      "reason": "unsupported effect: 'Choose a card in your hand to Erase.'"
+    },
+    {
+      "id": 228,
+      "name": "Tree",
+      "reason": "unsupported effect: 'Deal 2 DMG to this. Synergy: Heal 2 HP to all allies.'"
+    },
+    {
+      "id": 229,
+      "name": "Snail Trainer",
+      "reason": "card 229: unsupported full text 'Need: 10+ Snail in your dustpile. Magic: Add a Thundersnail [#369] to your hand.'"
+    },
+    {
+      "id": 235,
+      "name": "Dad Slime",
+      "reason": "card 235: unsupported full text 'Dust: Summon 2 Kid Slime [#370].'"
+    },
+    {
+      "id": 236,
+      "name": "Hot Dog Vulkin",
+      "reason": "unsupported effect: 'Deal 3 DMG to an enemy or give an ally monster +3 ATK.'"
+    },
+    {
+      "id": 237,
+      "name": "Punk Hamster",
+      "reason": "card 237: unsupported full text 'Turbo: If this is Generated, deal 4 DMG to you. Dust: Add a Punk Hamster [#237] to the enemy deck.'"
+    },
+    {
+      "id": 238,
+      "name": "Script Bomb",
+      "reason": "card 238: unsupported full text 'Dust: Draw a card and give it -2 COST. Turn start: Trigger its Dust effect and kill this.'"
+    },
+    {
+      "id": 239,
+      "name": "Snowdin Sign",
+      "reason": "card 239: unsupported full text 'Need: You spent GOLD on spells last turn. Magic: Look at 3 random RARE spells. Add one to your hand with -1 COST.'"
+    },
+    {
+      "id": 240,
+      "name": "TV",
+      "reason": "card 240: unsupported full text \"Turbo: Add the same random card to the top of both players' decks. Give yours -1 COST.\""
+    },
+    {
+      "id": 241,
+      "name": "Eye",
+      "reason": "unsupported effect: 'Look at the 3 top different Amalgamate in your deck (except Eye [#241]). Add a copy of one to the top of your deck with ATK +1/HP +1.'"
+    },
+    {
+      "id": 242,
+      "name": "Burger Bush",
+      "reason": "card 242: status text/metadata mismatch"
+    },
+    {
+      "id": 243,
+      "name": "Bench",
+      "reason": "unsupported effect: 'Draw a card.'"
+    },
+    {
+      "id": 244,
+      "name": "Fox Head",
+      "reason": "unsupported effect: 'Deal 1 DMG to the leftmost and rightmost living enemy monsters.'"
+    },
+    {
+      "id": 245,
+      "name": "Scarf Lady",
+      "reason": "unsupported effect: 'Look at all Turbo monsters in your deck and choose one. Add it to the top of your deck with -1 COST.'"
+    },
+    {
+      "id": 246,
+      "name": "Lady Garf",
+      "reason": "unsupported effect: 'Look at 5 random monsters and choose one. Add it to your hand.'"
+    },
+    {
+      "id": 247,
+      "name": "Suit Lion",
+      "reason": "card 247: unsupported full text 'Turbo: Gain +1 ATK. Magic: Silence an enemy monster with as much or less ATK than this.'"
+    },
+    {
+      "id": 248,
+      "name": "Business Dude",
+      "reason": "unsupported effect: 'Spend all your GOLD. Gain ATK +1/HP +1 for each GOLD spent.'"
+    },
+    {
+      "id": 249,
+      "name": "Robot 98",
+      "reason": "unsupported effect: 'Lose 97 Dodge.'"
+    },
+    {
+      "id": 250,
+      "name": "Hot Dog Harpy",
+      "reason": "unsupported effect: 'Silence an enemy monster. If it was already Silenced, kill it instead.'"
+    },
+    {
+      "id": 251,
+      "name": "Ragel",
+      "reason": "card 251: unsupported full text 'Synergy: Add a Mushroom Dance [#750] to your hand. Delay: Erase it from your hand.'"
+    },
+    {
+      "id": 252,
+      "name": "Throne",
+      "reason": "unsupported effect: 'Draw a non-DT highest rarity card (except Throne [#252]).'"
+    },
+    {
+      "id": 253,
+      "name": "Bone Painting",
+      "reason": "unsupported effect: 'Give a Dog in your hand ATK +1/HP +1 and Taunt.'"
+    },
+    {
+      "id": 254,
+      "name": "Cool Papyrus",
+      "reason": "card 254: unsupported full text 'After this attacks and kills a non-DT monster, add a base COST 3/ATK 4/HP 5 copy of it to your hand.'"
+    },
+    {
+      "id": 255,
+      "name": "Overgrowth",
+      "reason": "unsupported effect: 'Give all Generated ally monsters ATK +1/HP +1 wherever they are. Draw a card.'"
+    },
+    {
+      "id": 256,
+      "name": "Soul Drain",
+      "reason": "card 256: status text/metadata mismatch"
+    },
+    {
+      "id": 257,
+      "name": "Golden Hit",
+      "reason": "card 257: status text/metadata mismatch"
+    },
+    {
+      "id": 258,
+      "name": "Blitz Quiz",
+      "reason": "unsupported effect: 'Look at Trick Question [#463] and Zap Cannon [#464]. Choose one to add to your hand.'"
+    },
+    {
+      "id": 259,
+      "name": "Octofriend",
+      "reason": "unsupported effect: 'Give an ally monster ATK +1/HP +1. Add a 1-COST Left Tentacle [#353] and Right Tentacle [#354] to your hand.'"
+    },
+    {
+      "id": 260,
+      "name": "Ice Replica",
+      "reason": "unsupported effect: 'Paralyze a non-DT monster and add a copy of it to your hand. Delay: If it was an ally, give it -2 COST.'"
+    },
+    {
+      "id": 261,
+      "name": "Siphoning",
+      "reason": "unsupported effect: 'Give a monster -2 HP to give the monster in front of it +3 HP. If this killed, add a Draft [#577] to your deck.'"
+    },
+    {
+      "id": 262,
+      "name": "Mad Mew Mew",
+      "reason": "card 262: status text/metadata mismatch"
+    },
+    {
+      "id": 263,
+      "name": "Kris",
+      "reason": "card 263: unsupported full text \"Before this attacks a monster, Silence it. If the attack killed, gain ATK +1/HP +1. Turn end: Draw a monster. Give it this card's stat buffs.\""
+    },
+    {
+      "id": 264,
+      "name": "Ralsei",
+      "reason": "unsupported effect: 'Choose a non-DT monster in your hand. Summon a base ATK 3/HP 3 copy of it.'"
+    },
+    {
+      "id": 265,
+      "name": "Lancer",
+      "reason": "card 265: unsupported full text 'Enemy monsters take +2 DMG from spells. Magic: Add 2 Spade [#371] to your hand with -1 COST.'"
+    },
+    {
+      "id": 266,
+      "name": "Clover Hydra",
+      "reason": "unsupported effect: 'Deal 3 DMG, draw 3 cards, and heal 3 HP to you.'"
+    },
+    {
+      "id": 267,
+      "name": "Crystal Tombstone",
+      "reason": "unsupported effect: 'Summon 2 random non-Generated Dust monsters costing 7 or less GOLD from your dustpile.'"
+    },
+    {
+      "id": 271,
+      "name": "Chaos Duck",
+      "reason": "unsupported effect: 'Turn a monster into an Apoca Duck [#372] with Haste.'"
+    },
+    {
+      "id": 272,
+      "name": "Gardener Asgore",
+      "reason": "unsupported effect: 'Summon a Red Flower [#451] and give it ATK +1/HP +1 for each 4 Plant in your dustpile.'"
+    },
+    {
+      "id": 273,
+      "name": "Noelle",
+      "reason": "card 273: unsupported full text \"Need: You've spent GOLD on 4 different spells this game. Magic: Look at a random EPIC spell of each SOUL. Add one to your hand with -2 COST.\""
+    },
+    {
+      "id": 274,
+      "name": "Starwalker",
+      "reason": "card 274: unsupported full text 'Need: Your deck has no non-Generated RARE or EPIC cards. Magic: Send a card in your hand to your deck with -4 COST.'"
+    },
+    {
+      "id": 275,
+      "name": "Mister Society",
+      "reason": "unsupported effect: 'Switch: Choose a non-TOKEN Piece in your hand (except Mister Society [#275]) and [左侧] add a copy of it to your hand or [右侧] 2 to your deck.'"
+    },
+    {
+      "id": 276,
+      "name": "Catty's Dad",
+      "reason": "card 276: unsupported full text 'After you summon a monster costing 2+ GOLD, earn 1 GOLD.'"
+    },
+    {
+      "id": 277,
+      "name": "Snailmobile",
+      "reason": "unsupported effect: 'Draw 2 cards costing 1 or less GOLD.'"
+    },
+    {
+      "id": 278,
+      "name": "Dark Candy Tree",
+      "reason": "card 278: status text/metadata mismatch"
+    },
+    {
+      "id": 279,
+      "name": "Berdly",
+      "reason": "unsupported effect: 'Give 2 random spells in your hand -1 COST.'"
+    },
+    {
+      "id": 280,
+      "name": "Susie",
+      "reason": "unsupported effect: 'Set the stats of all other ally monsters and the monster in front of this to ATK 3/HP 3.'"
+    },
+    {
+      "id": 281,
+      "name": "School Tem",
+      "reason": "unsupported effect: \"Draw a Tem and give it ATK +1/HP +1. If you can't, gain ATK +1/HP +1 and Haste.\""
+    },
+    {
+      "id": 282,
+      "name": "Great Door",
+      "reason": "unsupported effect: 'Summon a Petrified Monster [#739] for the opponent.'"
+    },
+    {
+      "id": 285,
+      "name": "Tutorial Guy",
+      "reason": "unsupported effect: 'Look at 3 random BASE cards and choose one. Add it to your hand with -1 COST.'"
+    },
+    {
+      "id": 286,
+      "name": "Nurse Mouth",
+      "reason": "card 286: unsupported full text 'After an ally monster costing 2+ GOLD dies, heal 3 HP to you.'"
+    },
+    {
+      "id": 287,
+      "name": "Rouxls Kaard",
+      "reason": "card 287: status text/metadata mismatch"
+    },
+    {
+      "id": 288,
+      "name": "Pippins",
+      "reason": "card 288: unsupported full text 'Turbo: If you have 6 or less cards in your hand, draw a card.'"
+    },
+    {
+      "id": 289,
+      "name": "Red Wagon",
+      "reason": "unsupported effect: 'Catch an ally monster. Dust: Release it to your deck with ATK +3/HP +3.'"
+    },
+    {
+      "id": 290,
+      "name": "Snowy",
+      "reason": "unsupported effect: 'Deal 2 DMG. If the target dies, add a random spell of the same COST to your hand.'"
+    },
+    {
+      "id": 291,
+      "name": "Normal NPC",
+      "reason": "card 291: unsupported full text 'After this attacks, Paralyze it.'"
+    },
+    {
+      "id": 292,
+      "name": "The Warrior",
+      "reason": "unsupported effect: 'Deal 5 DMG to this.'"
+    },
+    {
+      "id": 293,
+      "name": "Forest Worm",
+      "reason": "unsupported effect: 'If there are 7+ monsters in the enemy dustpile, gain +2 ATK.'"
+    },
+    {
+      "id": 294,
+      "name": "Rudinn",
+      "reason": "unsupported effect: 'Look at 3 random Deltarune monsters costing 2-4 GOLD and choose one. Add it to your hand with +1 ATK.'"
+    },
+    {
+      "id": 295,
+      "name": "Jigsawry",
+      "reason": "unsupported effect: 'If you control 4 Jigsawry [#295], give them Dodge (1), Taunt, and Charge.'"
+    },
+    {
+      "id": 296,
+      "name": "Jar of Worms",
+      "reason": "unsupported effect: 'Summon a Worm [#373]. If you spent GOLD on spells last turn, summon another.'"
+    },
+    {
+      "id": 297,
+      "name": "Starwalker Bird",
+      "reason": "card 297: unsupported full text 'Need: Your deck has no non-Generated RARE or EPIC cards. Magic: Draw 3 cards.'"
+    },
+    {
+      "id": 298,
+      "name": "Rabbick",
+      "reason": "card 298: unsupported full text 'Turbo: Add a Clean Rabbick [#374]  to your hand. Dust: Summon a Clean Rabbick [#374].'"
+    },
+    {
+      "id": 299,
+      "name": "Politician Bear",
+      "reason": "unsupported effect: \"Deal an ally monster's ATK as DMG to the monster in front of it.\""
+    },
+    {
+      "id": 300,
+      "name": "Flower Jar",
+      "reason": "card 300: status text/metadata mismatch"
+    },
+    {
+      "id": 301,
+      "name": "Toy Block",
+      "reason": "card 301: unsupported full text 'Turn start and Turn end: Swap its ATK and HP.'"
+    },
+    {
+      "id": 302,
+      "name": "Big Hat Charles",
+      "reason": "card 302: status text/metadata mismatch"
+    },
+    {
+      "id": 303,
+      "name": "Red Bush",
+      "reason": "card 303: status text/metadata mismatch"
+    },
+    {
+      "id": 306,
+      "name": "Smolder Cake",
+      "reason": "card 306: status text/metadata mismatch"
+    },
+    {
+      "id": 308,
+      "name": "Donation Stump",
+      "reason": "unsupported effect: 'Deal 2 DMG to you. Synergy: Deal 2 DMG to the opponent.'"
+    },
+    {
+      "id": 309,
+      "name": "Lancer Painting",
+      "reason": "card 309: unsupported full text 'Dust: Add a Spade [#371] to your hand.'"
+    },
+    {
+      "id": 310,
+      "name": "Green Fire",
+      "reason": "unsupported effect: 'Deal 2 DMG to adjacent monsters and the monster in front of this.'"
+    },
+    {
+      "id": 311,
+      "name": "Chest",
+      "reason": "card 311: unsupported full text 'Dust: Draw 2 cards.'"
+    },
+    {
+      "id": 312,
+      "name": "Ponman",
+      "reason": "unsupported effect: 'Switch: [左侧] Gain +2 HP or [右侧] Heal 1 HP to you.'"
+    },
+    {
+      "id": 313,
+      "name": "Ponman Statue",
+      "reason": "card 313: unsupported full text 'Need: 18+ non-TOKEN Piece in your dustpile. Magic: Add a Ponqueen [#728] to your hand.'"
+    },
+    {
+      "id": 315,
+      "name": "Royal Guard 3",
+      "reason": "card 315: unsupported full text 'Dust: Give all ally Royal Guard Candy.'"
+    },
+    {
+      "id": 316,
+      "name": "Royal Guard 4",
+      "reason": "card 316: unsupported full text 'Dust: Give all ally Royal Guard +1 Dodge.'"
+    },
+    {
+      "id": 317,
+      "name": "Flower Can",
+      "reason": "card 317: unsupported full text 'Dust: Add 2 Green Clover [#375] with Haste to your hand. Synergy: Gain Haste.'"
+    },
+    {
+      "id": 318,
+      "name": "Father Alvin",
+      "reason": "unsupported effect: 'Look at 3 random non-DT monsters in your dustpile and choose one. Add it to your hand.'"
+    },
+    {
+      "id": 349,
+      "name": "Dog Residue",
+      "reason": "unsupported effect: 'If this card has ATK buffs, gain Taunt.'"
+    },
+    {
+      "id": 350,
+      "name": "Doodlebog",
+      "reason": "card 350: status text/metadata mismatch"
+    },
+    {
+      "id": 351,
+      "name": "Gaster Blaster",
+      "reason": "unsupported effect: 'Deal 8 DMG to a monster or you.'"
+    },
+    {
+      "id": 353,
+      "name": "Left Tentacle",
+      "reason": "card 353: unsupported full text 'Dust: Deal 2 DMG to the opponent.'"
+    },
+    {
+      "id": 354,
+      "name": "Right Tentacle",
+      "reason": "card 354: unsupported full text 'Dust: Heal 3 HP to you.'"
+    },
+    {
+      "id": 357,
+      "name": "Bun",
+      "reason": "card 357: unsupported full text 'Dust: Give all ally Bunbun [#169] +3 ATK.'"
+    },
+    {
+      "id": 358,
+      "name": "Load",
+      "reason": "unsupported effect: 'Load the saved board.'"
+    },
+    {
+      "id": 360,
+      "name": "Lost Toriel",
+      "reason": "card 360: unsupported full text 'Dust: Give a random living enemy monster -3 ATK.'"
+    },
+    {
+      "id": 361,
+      "name": "Lost Asgore",
+      "reason": "card 361: unsupported full text 'Dust: Deal 4 DMG to a random damaged living enemy monster.'"
+    },
+    {
+      "id": 362,
+      "name": "Lost Sans",
+      "reason": "card 362: unsupported full text 'Dust: Add a Gaster Blaster [#351] to your hand.'"
+    },
+    {
+      "id": 363,
+      "name": "Lost Papyrus",
+      "reason": "card 363: unsupported full text 'Dust: Heal 3 HP to a random damaged ally monster and you.'"
+    },
+    {
+      "id": 364,
+      "name": "Lost Undyne",
+      "reason": "card 364: unsupported full text 'Dust: Deal 2 DMG to the lowest HP living enemy monster.'"
+    },
+    {
+      "id": 365,
+      "name": "Lost Alphys",
+      "reason": "card 365: unsupported full text 'Dust: Give the highest COST card in your hand -2 COST.'"
+    },
+    {
+      "id": 366,
+      "name": "Little Mine",
+      "reason": "unsupported effect: 'Turbo: Deal DMG 3 to you and draw a card.'"
+    },
+    {
+      "id": 367,
+      "name": "Explosion",
+      "reason": "unsupported effect: 'Turbo: Erase this, deal 2 DMG to you, and draw a card.'"
+    },
+    {
+      "id": 368,
+      "name": "Big Mine",
+      "reason": "unsupported effect: 'Turbo: Deal 5 DMG to yourself. Draw a card.'"
+    },
+    {
+      "id": 369,
+      "name": "Thundersnail",
+      "reason": "unsupported effect: 'Summon 4 different 1-COST Snail from your dustpile. Trigger their Magic, give them Haste and Dodge (1).'"
+    },
+    {
+      "id": 371,
+      "name": "Spade",
+      "reason": "unsupported effect: 'Deal 3 DMG to an enemy monster. If it dies, deal 3 DMG to a random other enemy monster.'"
+    },
+    {
+      "id": 373,
+      "name": "Worm",
+      "reason": "card 373: unsupported full text 'After this deals DMG to a monster, heal HP to you equal to the DMG dealt.'"
+    },
+    {
+      "id": 376,
+      "name": "Puzzle Box",
+      "reason": "unsupported effect: 'Silence all enemy Rouxls Kaard [#287].'"
+    },
+    {
+      "id": 378,
+      "name": "C-Round",
+      "reason": "card 378: unsupported full text \"Dust: If this isn't Generated, add 2 Crown [#379] to your deck and a C-Round [#378] to your hand.\""
+    },
+    {
+      "id": 379,
+      "name": "Crown",
+      "reason": "unsupported effect: \"Give a monster ATK +1/HP +2. If it's a C-Round [#378], turn it into a K-Round [#380] instead. Draw a card.\""
+    },
+    {
+      "id": 380,
+      "name": "K-Round",
+      "reason": "card 380: status text/metadata mismatch"
+    },
+    {
+      "id": 381,
+      "name": "Catti",
+      "reason": "card 381: unsupported full text 'After you summon a monster, deal 1 DMG to a random enemy monster.'"
+    },
+    {
+      "id": 384,
+      "name": "Clover Head",
+      "reason": "unsupported effect: 'Add a copy of an ally Turbo monster to the top of your deck.'"
+    },
+    {
+      "id": 385,
+      "name": "Evil Eye",
+      "reason": "card 385: unsupported full text 'Magic and Turn start: Add a Spying [#488] to your hand.'"
+    },
+    {
+      "id": 386,
+      "name": "Pizzapants",
+      "reason": "unsupported effect: 'Gain ATK +1/HP +1 for each other ally Pizzapants [#386] you played this game.'"
+    },
+    {
+      "id": 389,
+      "name": "Mirror",
+      "reason": "card 389: unsupported full text 'After this attacks and kills a monster, Catch it. Dust: Release an ally copy of it with the same base stats as this.'"
+    },
+    {
+      "id": 390,
+      "name": "Ball Person",
+      "reason": "unsupported effect: 'Silence all other ally monsters.'"
+    },
+    {
+      "id": 391,
+      "name": "Sheary",
+      "reason": "unsupported effect: \"Deal 1 DMG to a monster. If it's damaged, deal 4 DMG instead.\""
+    },
+    {
+      "id": 392,
+      "name": "Ghost Tree",
+      "reason": "card 392: unsupported full text 'After you summon a Plant, gain +1 HP.'"
+    },
+    {
+      "id": 393,
+      "name": "Coat Rack",
+      "reason": "unsupported effect: 'Draw 2 monsters. Give them COST +1/ATK +1/HP +2.'"
+    },
+    {
+      "id": 394,
+      "name": "Mister Elegance",
+      "reason": "unsupported effect: 'Switch: [左侧] Gain ATK +1/HP +1 and Armor or [右侧] Summon a copy of this with Haste.'"
+    },
+    {
+      "id": 395,
+      "name": "Toriel's Car",
+      "reason": "card 395: unsupported full text 'After you summon a Turbo monster, add a copy to your deck. Turbo: Give 2 random Turbo monsters in your hand -1 COST.'"
+    },
+    {
+      "id": 396,
+      "name": "Hathy",
+      "reason": "card 396: status text/metadata mismatch"
+    },
+    {
+      "id": 397,
+      "name": "Useless Bird",
+      "reason": "card 397: status text/metadata mismatch"
+    },
+    {
+      "id": 398,
+      "name": "Scope",
+      "reason": "unsupported effect: 'Look at 2 random cards in your deck and choose one to draw.'"
+    },
+    {
+      "id": 400,
+      "name": "Cogwheel",
+      "reason": "unsupported effect: 'Send the most expensive card in your hand to your deck and draw a card.'"
+    },
+    {
+      "id": 401,
+      "name": "Certificate",
+      "reason": "unsupported effect: 'Look at 3 random non-DT Taunt monsters and choose one. Add it to your hand.'"
+    },
+    {
+      "id": 402,
+      "name": "Bone Box",
+      "reason": "unsupported effect: 'Look at 3 random spells costing 3 or less GOLD and choose one. Add it to your hand.'"
+    },
+    {
+      "id": 403,
+      "name": "Jukebox",
+      "reason": "unsupported effect: 'Look at 3 random monsters in your dustpile (except Jukebox [#403]) and add a copy of one to your deck with ATK +1/HP +1.'"
+    },
+    {
+      "id": 404,
+      "name": "Deflated Mascot",
+      "reason": "unsupported effect: 'Earn GOLD 1.'"
+    },
+    {
+      "id": 405,
+      "name": "Telescope",
+      "reason": "card 405: unsupported full text 'Magic and Turn start: Add a Scope [#398] to your hand. Turn end: Erase all Scope [#398] in your hand.'"
+    },
+    {
+      "id": 406,
+      "name": "Sugar Pot",
+      "reason": "unsupported effect: 'Give a monster in your hand ATK +2/HP +2.'"
+    },
+    {
+      "id": 407,
+      "name": "Cash Register",
+      "reason": "unsupported effect: 'Trigger the Turbo effect of a monster in your hand. If played on the left, [左侧] send it to your deck and draw a card.'"
+    },
+    {
+      "id": 408,
+      "name": "Space Cooler",
+      "reason": "card 408: unsupported full text 'Delay and Turn end: Give a random monster in your hand ATK +1/HP +1.'"
+    },
+    {
+      "id": 409,
+      "name": "Action Figures",
+      "reason": "unsupported effect: 'Silence a non-DT ally monster and add a Silenced copy of it to your hand.'"
+    },
+    {
+      "id": 410,
+      "name": "Bloxer",
+      "reason": "unsupported effect: 'Look at 3 random monsters costing 3 or less GOLD in your dustpile and choose one. Summon it.'"
+    },
+    {
+      "id": 411,
+      "name": "Animals",
+      "reason": "unsupported effect: 'Switch: [左侧] Gain Haste or [右侧] Give the top 3 monsters in your deck ATK +1/HP +1.'"
+    },
+    {
+      "id": 412,
+      "name": "Evil Blueprints",
+      "reason": "unsupported effect: 'Add a Thrashing Machine [#270] to your hand.'"
+    },
+    {
+      "id": 413,
+      "name": "Jumping Rabbit",
+      "reason": "card 413: unsupported full text \"Dust: If it's your turn, draw a card and add a Jumping Rabbit [#413] to your deck.\""
+    },
+    {
+      "id": 414,
+      "name": "Purple Mascot",
+      "reason": "card 414: status text/metadata mismatch"
+    },
+    {
+      "id": 415,
+      "name": "Goner Clam",
+      "reason": "unsupported effect: 'Heal 3 HP. Synergy: Give all other ally G Follower ATK +1/HP +1.'"
+    },
+    {
+      "id": 416,
+      "name": "Dad Dragon",
+      "reason": "card 416: unsupported full text 'After an ally monster dies (except Dragon Kid [#399]), summon a Dragon Kid [#399].'"
+    },
+    {
+      "id": 417,
+      "name": "Jockington",
+      "reason": "card 417: status text/metadata mismatch"
+    },
+    {
+      "id": 418,
+      "name": "Malius",
+      "reason": "unsupported effect: 'Choose a card in your hand to send to your deck.'"
+    },
+    {
+      "id": 419,
+      "name": "Spade King",
+      "reason": "unsupported effect: 'Switch: [左侧] Silence all enemy monsters or [右侧] Kill all enemy monsters with 2 HP or less.'"
+    },
+    {
+      "id": 420,
+      "name": "Spike Trap",
+      "reason": "card 420: unsupported full text 'After this takes DMG during the enemy turn, give a random other ally monster ATK +1/HP +1.'"
+    },
+    {
+      "id": 421,
+      "name": "Asgore's Truck",
+      "reason": "unsupported effect: 'Add 2 Red Flower [#451] to your hand.'"
+    },
+    {
+      "id": 422,
+      "name": "Flower Fingers",
+      "reason": "unsupported effect: 'Deal 1 DMG for each ally Plant.'"
+    },
+    {
+      "id": 423,
+      "name": "Ice Drink Wolf",
+      "reason": "unsupported effect: 'Look at Ice [#10], Ice Cap [#9], and Snowman [#31] and choose one. Add it to your hand.'"
+    },
+    {
+      "id": 424,
+      "name": "Christmas Tree",
+      "reason": "unsupported effect: 'Summon 2 Gift [#355]. Synergy: Summon 2 base ATK 2/HP 2 Gift [#355] instead.'"
+    },
+    {
+      "id": 425,
+      "name": "Dark Throne",
+      "reason": "unsupported effect: 'Draw a Generated card.'"
+    },
+    {
+      "id": 426,
+      "name": "Rabbick Hole",
+      "reason": "card 426: unsupported full text 'Dust: Summon a Rabbick [#298].'"
+    },
+    {
+      "id": 427,
+      "name": "Killer Cook",
+      "reason": "unsupported effect: 'Add Flour [#429], Eggs [#428], and Milk [#430] to your deck. Dust: Draw a TOKEN card.'"
+    },
+    {
+      "id": 428,
+      "name": "Eggs",
+      "reason": "unsupported effect: 'If you have Flour [#429] and Milk [#430] in your dustpile, Erase them and bake a Cake [#431]!'"
+    },
+    {
+      "id": 429,
+      "name": "Flour",
+      "reason": "unsupported effect: 'If you have Eggs [#428] and Milk [#430] in your dustpile, Erase them and bake a Cake [#431]!'"
+    },
+    {
+      "id": 430,
+      "name": "Milk",
+      "reason": "unsupported effect: 'If you have Eggs [#428] and Flour [#429] in your dustpile, Erase them and bake a Cake [#431]!'"
+    },
+    {
+      "id": 431,
+      "name": "Cake",
+      "reason": "card 431: status text/metadata mismatch"
+    },
+    {
+      "id": 432,
+      "name": "Popumeter",
+      "reason": "card 432: status text/metadata mismatch"
+    },
+    {
+      "id": 433,
+      "name": "Butterflies",
+      "reason": "card 433: unsupported full text 'Dust: Draw a spell.'"
+    },
+    {
+      "id": 434,
+      "name": "Dark Ponman",
+      "reason": "unsupported effect: 'Switch: [左侧] Add 3 Ponman [#312] to your hand or [右侧] Give all Ponman [#312] in your hand and board ATK +1/HP +1.'"
+    },
+    {
+      "id": 435,
+      "name": "Ficus Licker",
+      "reason": "unsupported effect: 'Draw a Plant (except Ficus Licker [#435]).'"
+    },
+    {
+      "id": 436,
+      "name": "Town Hall Guy",
+      "reason": "unsupported effect: 'Give a Haste monster in your hand +1 ATK.'"
+    },
+    {
+      "id": 437,
+      "name": "Shyren's Agent",
+      "reason": "unsupported effect: 'Heal 7 HP to a damaged ally monster. Excess healing is dealt as DMG to the monster in front of this.'"
+    },
+    {
+      "id": 438,
+      "name": "Battleflies",
+      "reason": "card 438: unsupported full text 'Need: You spent GOLD on spells last turn. Magic: Gain +2 ATK.'"
+    },
+    {
+      "id": 439,
+      "name": "Candle",
+      "reason": "card 439: unsupported full text 'Dust: Summon a Silenced copy of this with 1 base HP.'"
+    },
+    {
+      "id": 440,
+      "name": "Crystal Cheese",
+      "reason": "unsupported effect: 'Look at 2 random Lost Soul and choose one to Catch. Dust: Release it with ATK 1/HP 1 base stats.'"
+    },
+    {
+      "id": 441,
+      "name": "Sword Emblem",
+      "reason": "card 441: unsupported full text 'After this takes DMG, Switch: Gain [左侧] +1 Dodge or [右侧] Transparency.'"
+    },
+    {
+      "id": 442,
+      "name": "Sand Dog",
+      "reason": "unsupported effect: 'Summon an exact copy of this.'"
+    },
+    {
+      "id": 443,
+      "name": "Spade Chain",
+      "reason": "unsupported effect: 'Deal 4 DMG to a monster. Deal 1 extra DMG for every 3 GOLD it costs.'"
+    },
+    {
+      "id": 444,
+      "name": "Jevil",
+      "reason": "unsupported effect: 'Look at all Chaos Weapon and choose one to cast.'"
+    },
+    {
+      "id": 445,
+      "name": "Devilsknife",
+      "reason": "unsupported effect: 'Kill a random enemy monster.'"
+    },
+    {
+      "id": 446,
+      "name": "Diamond Chaos",
+      "reason": "unsupported effect: 'Draw up to 3 cards and give them -2 COST.'"
+    },
+    {
+      "id": 447,
+      "name": "Club Chaos",
+      "reason": "unsupported effect: 'Cast 7 random spells costing 4 or less GOLD on random targets.'"
+    },
+    {
+      "id": 448,
+      "name": "Heart Chaos",
+      "reason": "unsupported effect: 'Heal 7 HP to all allies.'"
+    },
+    {
+      "id": 449,
+      "name": "Spade Chaos",
+      "reason": "unsupported effect: 'Deal DMG to all enemies equal to the amount of empty slots on your side of the board.'"
+    },
+    {
+      "id": 450,
+      "name": "Desk Lamp",
+      "reason": "card 450: unsupported full text 'Dust: Add a Dream [#536] to your hand.'"
+    },
+    {
+      "id": 451,
+      "name": "Red Flower",
+      "reason": "card 451: status text/metadata mismatch"
+    },
+    {
+      "id": 452,
+      "name": "Recruitment",
+      "reason": "unsupported effect: 'Look at 5 random monsters (max. EPIC) costing 4-5 GOLD and choose one. Add it to your hand with +1 HP.'"
+    },
+    {
+      "id": 453,
+      "name": "Call of the Grave",
+      "reason": "card 453: status text/metadata mismatch"
+    },
+    {
+      "id": 454,
+      "name": "Acceleration",
+      "reason": "unsupported effect: 'Choose a card in your hand to Erase. Draw 3 cards.'"
+    },
+    {
+      "id": 455,
+      "name": "Powerhouse",
+      "reason": "unsupported effect: 'Draw up to 2 cards and give all cards in your hand -1 COST.'"
+    },
+    {
+      "id": 456,
+      "name": "Campfire",
+      "reason": "unsupported effect: 'Heal 4 HP randomly split among all ally monsters. Give 4 random monsters in your hand ATK +1/HP +1.'"
+    },
+    {
+      "id": 457,
+      "name": "Exploration",
+      "reason": "unsupported effect: 'Draw 2 cards from the bottom of your deck.'"
+    },
+    {
+      "id": 458,
+      "name": "Carousel",
+      "reason": "unsupported effect: 'Deal 1 DMG to all monsters. If any died, repeat.'"
+    },
+    {
+      "id": 460,
+      "name": "Worm Infusion",
+      "reason": "unsupported effect: 'Turn a non-DT ally monster into a Worm [#373] with its stats as base stats.'"
+    },
+    {
+      "id": 461,
+      "name": "Instant Noodles",
+      "reason": "unsupported effect: \"In your hand, this has -1 COST for each monster in both players' dustpiles. Give all monsters in your hand ATK +1/HP +1.\""
+    },
+    {
+      "id": 463,
+      "name": "Trick Question",
+      "reason": "unsupported effect: 'Deal 3 DMG to a monster. Draw a monster.'"
+    },
+    {
+      "id": 464,
+      "name": "Zap Cannon",
+      "reason": "unsupported effect: 'Deal 3 DMG to a monster. Draw a spell (except Blitz Quiz [#258]).'"
+    },
+    {
+      "id": 465,
+      "name": "MTT TV",
+      "reason": "card 465: unsupported full text 'After a card is played, give its opponent +1 GOLD.'"
+    },
+    {
+      "id": 466,
+      "name": "Bookshelf",
+      "reason": "card 466: unsupported full text 'Need: Your deck has no non-Generated spells. Magic: Choose a spell of your SOUL to add to your hand with -2 COST.'"
+    },
+    {
+      "id": 467,
+      "name": "Top Chef",
+      "reason": "unsupported effect: 'Summon a ATK 1/HP 2 Smolder Cake [#306]. Spend up to 2 GOLD and give it ATK +1/HP +1 for each GOLD spent.'"
+    },
+    {
+      "id": 468,
+      "name": "Rudolph",
+      "reason": "card 468: unsupported full text 'Need: Your deck has no non-Generated spells. Magic: Heal 5 HP to you.'"
+    },
+    {
+      "id": 469,
+      "name": "Blockler B",
+      "reason": "card 469: unsupported full text 'Dust: Summon Blockler O [#470].'"
+    },
+    {
+      "id": 471,
+      "name": "Chaos Blaster",
+      "reason": "unsupported effect: 'Deal 5 DMG to you. Look at 2 random Lost Soul. Choose one to add to your hand with COST +1/ATK +1/HP +1 and Haste.'"
+    },
+    {
+      "id": 472,
+      "name": "Seam",
+      "reason": "card 472: unsupported full text 'Need: No non-Generated LEGENDARY monsters in your deck or dustpile. Magic: Add 2 Shadow Crystal [#725] to your hand.'"
+    },
+    {
+      "id": 473,
+      "name": "Spider Reporter",
+      "reason": "card 473: unsupported full text 'Dust: Add a Spider Croissant [#476] to your deck.'"
+    },
+    {
+      "id": 474,
+      "name": "Spider Sign",
+      "reason": "card 474: unsupported full text 'After you summon an Arachnid, gain +1 ATK. Magic and Turn start: Summon a TOKEN Arachnid from your deck.'"
+    },
+    {
+      "id": 475,
+      "name": "Spider Donut",
+      "reason": "card 475: unsupported full text 'Delay: Heal 3 HP to this and you.'"
+    },
+    {
+      "id": 476,
+      "name": "Spider Croissant",
+      "reason": "card 476: unsupported full text 'Dust: Summon a Spider [#115].'"
+    },
+    {
+      "id": 477,
+      "name": "Spider Flower",
+      "reason": "unsupported effect: 'Switch: Catch [左侧] a Spider [#115] or [右侧] a Red Flower [#451]. Dust: Release it to your hand with -1 COST.'"
+    },
+    {
+      "id": 478,
+      "name": "Spider Bakery",
+      "reason": "unsupported effect: 'Add a Spider [#115] to your hand and deck. Synergy: Add a Spider Donut [#475] and a Spider Croissant [#476] instead.'"
+    },
+    {
+      "id": 479,
+      "name": "Fly",
+      "reason": "card 479: unsupported full text 'Delay: Attack the monster in front of this.'"
+    },
+    {
+      "id": 480,
+      "name": "Chessboard",
+      "reason": "unsupported effect: 'Summon a Ponman [#312] for every 3 Piece in your dustpile and trigger their Magic.'"
+    },
+    {
+      "id": 481,
+      "name": "Royal Kindness",
+      "reason": "unsupported effect: 'Give all ally monsters Haste and Invulnerable for this turn.'"
+    },
+    {
+      "id": 482,
+      "name": "Royal Bravery",
+      "reason": "unsupported effect: 'Send your hand to your deck. Draw 5 cards with -1 COST.'"
+    },
+    {
+      "id": 483,
+      "name": "Royal Determination",
+      "reason": "unsupported effect: 'Erase your dustpile. Summon the next Lost Soul with Haste and Taunt for every 7 monsters Erased.'"
+    },
+    {
+      "id": 484,
+      "name": "Royal Perseverance",
+      "reason": "unsupported effect: 'Kill all enemy monsters under KR. Give all enemy monsters KR.'"
+    },
+    {
+      "id": 485,
+      "name": "Royal Patience",
+      "reason": "unsupported effect: 'Look at all cards in your deck and choose one to draw.'"
+    },
+    {
+      "id": 486,
+      "name": "Royal Integrity",
+      "reason": "unsupported effect: 'Add an exact copy of a monster (except Alphys [#52]) to your hand. If it was LEGENDARY or DT, give it +2 COST.'"
+    },
+    {
+      "id": 487,
+      "name": "Royal Justice",
+      "reason": "unsupported effect: 'Add 1 of every non-TOKEN JUSTICE spell you cast this game to your hand. They COST 1 less.'"
+    },
+    {
+      "id": 488,
+      "name": "Spying",
+      "reason": "unsupported effect: 'Look at the enemy hand. Choose a card to give it +1 COST.'"
+    },
+    {
+      "id": 489,
+      "name": "Water Sausage",
+      "reason": "card 489: unsupported full text 'Turbo: Heal 3 HP to you.'"
+    },
+    {
+      "id": 490,
+      "name": "Pile of Dust",
+      "reason": "card 490: unsupported full text 'Dust: Give its killer ATK +2/HP +2. Turn end: Die.'"
+    },
+    {
+      "id": 491,
+      "name": "Moldstack",
+      "reason": "card 491: unsupported full text 'Delay: Add a copy of a random ally Mold (except Moldstack [#491]) to your hand.'"
+    },
+    {
+      "id": 492,
+      "name": "Burning Snail",
+      "reason": "unsupported effect: 'Gain +1 ATK for each adjacent ally Snail.'"
+    },
+    {
+      "id": 493,
+      "name": "Snail Bucket",
+      "reason": "card 493: unsupported full text 'Dust: Summon a Red Snail [#224] and a Yellow Snail [#223]. Randomly trigger one of their Magic.'"
+    },
+    {
+      "id": 494,
+      "name": "Jumping Frog",
+      "reason": "unsupported effect: 'Deal its ATK as DMG to an enemy monster.'"
+    },
+    {
+      "id": 495,
+      "name": "Cross Bomb",
+      "reason": "unsupported effect: 'If there is a monster in front of this, kill this to deal 5 DMG to it and excess to the opponent.'"
+    },
+    {
+      "id": 496,
+      "name": "Business Snail",
+      "reason": "card 496: unsupported full text 'After an ally Snail dies, draw a card.'"
+    },
+    {
+      "id": 497,
+      "name": "Fire Chimney",
+      "reason": "card 497: status text/metadata mismatch"
+    },
+    {
+      "id": 498,
+      "name": "Snail Pen",
+      "reason": "unsupported effect: 'Add an exact copy of each ally Snail to your hand.'"
+    },
+    {
+      "id": 499,
+      "name": "Anime Sword",
+      "reason": "card 499: unsupported full text 'Delay: Give its ATK and max HP as buffs to a random monster in your hand.'"
+    },
+    {
+      "id": 500,
+      "name": "Ice-E Mascot",
+      "reason": "card 500: status text/metadata mismatch"
+    },
+    {
+      "id": 501,
+      "name": "Cool Bone",
+      "reason": "unsupported effect: 'Give all ally Dog a random effect: Taunt, Dodge (1), Candy, or Armor.'"
+    },
+    {
+      "id": 502,
+      "name": "Mystery Machine",
+      "reason": "unsupported effect: 'Kill an ally monster to add a Gaster Blaster [#351] to your hand.'"
+    },
+    {
+      "id": 503,
+      "name": "Library Loox",
+      "reason": "card 503: unsupported full text 'Need: Your deck has no non-Generated duplicates. Magic: Deal DMG equal to the amount of empty spaces in your hand.'"
+    },
+    {
+      "id": 504,
+      "name": "Biker Lancer",
+      "reason": "card 504: unsupported full text 'Before this attacks the opponent, give 2 random monsters in your hand +1 ATK.'"
+    },
+    {
+      "id": 505,
+      "name": "Soulless Kris",
+      "reason": "unsupported effect: 'If you have none, open a Dark Fountain [#34] and give it a counter for every different non-TOKEN card you played this game.'"
+    },
+    {
+      "id": 506,
+      "name": "Soul Cage",
+      "reason": "card 506: unsupported full text \"Dust: Add a 1-COST Knife [#129] to the current turn player's hand.\""
+    },
+    {
+      "id": 507,
+      "name": "Fireplace",
+      "reason": "card 507: status text/metadata mismatch"
+    },
+    {
+      "id": 508,
+      "name": "Hooded Ralsei",
+      "reason": "card 508: unsupported full text 'After you cast a non-Generated spell, add a copy of it to your hand.'"
+    },
+    {
+      "id": 509,
+      "name": "Long Sink",
+      "reason": "unsupported effect: \"If this didn't attack this turn, heal 3 HP to you.\""
+    },
+    {
+      "id": 510,
+      "name": "Cracked Table",
+      "reason": "unsupported effect: 'Add a Tea Set [#511] to your hand. If you have less HP than the opponent, give it -1 COST.'"
+    },
+    {
+      "id": 511,
+      "name": "Tea Set",
+      "reason": "unsupported effect: 'Heal 4 HP. If this targeted a monster also give it ATK +1/HP +1.'"
+    },
+    {
+      "id": 512,
+      "name": "Game Bomb",
+      "reason": "card 512: unsupported full text 'After this takes DMG, summon a Dynamite Stick [#513].'"
+    },
+    {
+      "id": 513,
+      "name": "Dynamite Stick",
+      "reason": "card 513: unsupported full text 'Dust: Deal 1 DMG to a random enemy monster.'"
+    },
+    {
+      "id": 514,
+      "name": "Date Alphys",
+      "reason": "unsupported effect: 'Give an ally monster Haste. It can attack again.'"
+    },
+    {
+      "id": 515,
+      "name": "Head Hathy",
+      "reason": "card 515: unsupported full text 'Need: You spent GOLD on spells last turn. Magic: Add a Breaking Love [#516] to your hand and deck.'"
+    },
+    {
+      "id": 516,
+      "name": "Breaking Love",
+      "reason": "unsupported effect: 'Give a monster ATK -2/HP -1. Draw a card.'"
+    },
+    {
+      "id": 517,
+      "name": "Stuffed Doll",
+      "reason": "unsupported effect: 'Look at 5 random monsters and choose one. Add it to both players hands and give yours -1 COST.'"
+    },
+    {
+      "id": 518,
+      "name": "The Vessel",
+      "reason": "card 518: status text/metadata mismatch"
+    },
+    {
+      "id": 519,
+      "name": "Ficus",
+      "reason": "card 519: unsupported full text 'After an ally Plant dies, gain +1 ATK.'"
+    },
+    {
+      "id": 520,
+      "name": "Abstract Art",
+      "reason": "unsupported effect: 'Give all Generated ally monsters Haste.'"
+    },
+    {
+      "id": 521,
+      "name": "Pillar",
+      "reason": "unsupported effect: 'Give an ally monster ATK +2/HP +1. Dust: Add a Broken Pillar [#522] to your hand.'"
+    },
+    {
+      "id": 523,
+      "name": "Snoring Monsters",
+      "reason": "card 523: unsupported full text 'After this kills a monster, gain +3 ATK. Magic: Deal 4 DMG to a monster.'"
+    },
+    {
+      "id": 524,
+      "name": "Legendary Artifact",
+      "reason": "unsupported effect: 'Fill your hand with Too Many Dogs [#525].'"
+    },
+    {
+      "id": 525,
+      "name": "Too Many Dogs",
+      "reason": "unsupported effect: 'If you have no Too Many Dogs [#525] in your hand, fill your hand with Dog Residue [#349].'"
+    },
+    {
+      "id": 526,
+      "name": "Plated Pipe",
+      "reason": "card 526: unsupported full text 'After this takes DMG, deal 1 DMG to the opponent.'"
+    },
+    {
+      "id": 527,
+      "name": "Devil Doll",
+      "reason": "card 527: unsupported full text 'Turbo: Deal 1 DMG to a random enemy monster. Magic: Deal 2 DMG to all damaged enemy monsters.'"
+    },
+    {
+      "id": 528,
+      "name": "Rope Dog",
+      "reason": "card 528: unsupported full text 'The first time this attacks a monster each turn, this can attack a monster again. Synergy: Gain +2 ATK and Haste.'"
+    },
+    {
+      "id": 529,
+      "name": "Vine",
+      "reason": "card 529: unsupported full text \"In your hand, this has -1 COST for each Plant you've played this game (max. -9 COST).\""
+    },
+    {
+      "id": 530,
+      "name": "Piranhas",
+      "reason": "card 530: unsupported full text 'After this attacks and kills a monster, deal 1 DMG to a random enemy monster. If it died, repeat.'"
+    },
+    {
+      "id": 531,
+      "name": "Teacher Toriel",
+      "reason": "unsupported effect: 'Look at the enemy hand. Choose a card to send to the enemy deck.'"
+    },
+    {
+      "id": 532,
+      "name": "Easy to Draw Bed",
+      "reason": "card 532: unsupported full text 'After this attacks and survives, turn it into a random monster with ATK 4/HP 6 base stats.'"
+    },
+    {
+      "id": 533,
+      "name": "Gerson Tombstone",
+      "reason": "card 533: unsupported full text 'Need: Your deck has no non-Generated duplicates. Magic: Summon a copy of a random monster costing 5-7 GOLD from your dustpile (except Gerson Tombstone [#533]).'"
+    },
+    {
+      "id": 534,
+      "name": "Carbed",
+      "reason": "card 534: unsupported full text 'This has +3 ATK while damaged.'"
+    },
+    {
+      "id": 535,
+      "name": "Create a Machine",
+      "reason": "unsupported effect: 'Look at all Thrashing Part and choose one to add to your hand.'"
+    },
+    {
+      "id": 536,
+      "name": "Dream",
+      "reason": "unsupported effect: 'Choose a card in your hand to send to your deck with -1 COST. Draw 2 different cards.'"
+    },
+    {
+      "id": 537,
+      "name": "Real Knife",
+      "reason": "unsupported effect: 'Kill an enemy monster. Give a counter to Genocide [#25] and lose 1 max HP for each counter.'"
+    },
+    {
+      "id": 538,
+      "name": "Wobbly Thing",
+      "reason": "card 538: status text/metadata mismatch"
+    },
+    {
+      "id": 539,
+      "name": "Bone Drawer",
+      "reason": "card 539: unsupported full text 'Dust: Add a Pile of Bones [#540] to your hand.'"
+    },
+    {
+      "id": 540,
+      "name": "Pile of Bones",
+      "reason": "unsupported effect: 'Give a Dog in your hand ATK +3/HP +3.'"
+    },
+    {
+      "id": 541,
+      "name": "Painting",
+      "reason": "unsupported effect: 'Add a copy of an ally monster (except Painting [#541], max. EPIC) to your deck. Delay: Draw a card.'"
+    },
+    {
+      "id": 542,
+      "name": "Trash Ball",
+      "reason": "card 542: unsupported full text 'After you play a monster, deal 1 DMG to it.'"
+    },
+    {
+      "id": 543,
+      "name": "Vending Machine",
+      "reason": "unsupported effect: 'Add Popato Chisps [#544] to your hand. Give it -1 COST for each ally monster with a Tribe.'"
+    },
+    {
+      "id": 544,
+      "name": "Popato Chisps",
+      "reason": "unsupported effect: 'Add a copy of a non-DT monster with a tribe to your hand and give it ATK +1/HP +1.'"
+    },
+    {
+      "id": 545,
+      "name": "Totem",
+      "reason": "card 545: unsupported full text 'Need: 7+ 7-COST or 7-HP monsters in your dustpile. Magic: Erase up to 5 of them and add Totemic Carvings [#613] to your hand.'"
+    },
+    {
+      "id": 546,
+      "name": "Sadmobile",
+      "reason": "unsupported effect: 'Draw a card. If you spent 7+ GOLD last turn, give it -2 COST.'"
+    },
+    {
+      "id": 547,
+      "name": "Magic Lantern",
+      "reason": "unsupported effect: 'If you have 6+ monsters in your dustpile, Erase 6 of them to deal 4 DMG.'"
+    },
+    {
+      "id": 548,
+      "name": "Magic Crystal",
+      "reason": "unsupported effect: 'Cast 4 Gemstone [#598] on random alive enemy monsters. If you spent GOLD on spells last turn, add a Crystal Downpour [#713] to your hand.'"
+    },
+    {
+      "id": 549,
+      "name": "Cop Undyne",
+      "reason": "card 549: unsupported full text 'Before this attacks a monster, deal 2 DMG to its adjacent monsters.'"
+    },
+    {
+      "id": 550,
+      "name": "Demon Flowey",
+      "reason": "card 550: unsupported full text 'Dust: Add a Silenced Demon Flowey [#550] with COST +3/ATK +3/HP +3 base stats and Haste to your deck.'"
+    },
+    {
+      "id": 551,
+      "name": "True Self",
+      "reason": "unsupported effect: 'Kill a monster. Kill all Paralyzed enemy monsters.'"
+    },
+    {
+      "id": 552,
+      "name": "Change of Winds",
+      "reason": "unsupported effect: 'Look at the top 2 cards in your deck and choose one to draw. Send the other to the bottom of your deck and give both -1 COST.'"
+    },
+    {
+      "id": 553,
+      "name": "True Vessel",
+      "reason": "card 553: unsupported full text '\"A wonderful creation.\"'"
+    },
+    {
+      "id": 555,
+      "name": "Cool Vulkin",
+      "reason": "unsupported effect: 'Give an ally monster +2 HP and Taunt and deal 2 DMG to the monster in front of it.'"
+    },
+    {
+      "id": 556,
+      "name": "Baron",
+      "reason": "unsupported effect: 'Give all other ally monsters +2 ATK.'"
+    },
+    {
+      "id": 557,
+      "name": "Mad Dragon",
+      "reason": "card 557: unsupported full text 'After this takes DMG during your turn, it gains Dodge (1) and can attack a monster.'"
+    },
+    {
+      "id": 558,
+      "name": "Sushipants",
+      "reason": "card 558: unsupported full text 'Need: Your deck has no non-Generated Haste or Charge monsters. Magic: Paralyze the monster in front of this.'"
+    },
+    {
+      "id": 559,
+      "name": "Laggy TV",
+      "reason": "card 559: unsupported full text 'Monsters in your hand have +1 COST. After you play a monster, give it ATK +1/HP +2.'"
+    },
+    {
+      "id": 560,
+      "name": "Mom Slime",
+      "reason": "card 560: unsupported full text 'After you spend GOLD on spells, summon a Kid Slime [#370].'"
+    },
+    {
+      "id": 561,
+      "name": "Royal Loox",
+      "reason": "card 561: unsupported full text 'After you play a monster costing 6+ GOLD and Magic: Deal 1 DMG to all enemies.'"
+    },
+    {
+      "id": 562,
+      "name": "Overlord Migosp",
+      "reason": "card 562: unsupported full text \"Dust: If it's the enemy turn, summon a Migosp [#5].\""
+    },
+    {
+      "id": 563,
+      "name": "Iced Butterfly",
+      "reason": "unsupported effect: 'Summon an Iced Butterfly [#563].'"
+    },
+    {
+      "id": 564,
+      "name": "Grilling King",
+      "reason": "unsupported effect: 'Summon 2 base ATK 3/HP 3 Spincake [#459]. If you have 3 or less cards in your deck, turn them into base ATK 5/HP 5 Cake [#431].'"
+    },
+    {
+      "id": 565,
+      "name": "Lancer's Bike",
+      "reason": "unsupported effect: 'Give 2 random monsters in your hand +1 ATK.'"
+    },
+    {
+      "id": 566,
+      "name": "Fox Bodyguard",
+      "reason": "card 566: unsupported full text 'Dust: Summon a Fox Head [#244] and trigger its Magic.'"
+    },
+    {
+      "id": 567,
+      "name": "Blowing Rabbick",
+      "reason": "card 567: unsupported full text 'After you spend GOLD on spells, return to your hand with ATK +2/HP +1 (keeps ATK and HP buffs).'"
+    },
+    {
+      "id": 568,
+      "name": "Sans Dog",
+      "reason": "unsupported effect: 'Add a Bone [#569] to the enemy hand.'"
+    },
+    {
+      "id": 569,
+      "name": "Bone",
+      "reason": "card 569: status text/metadata mismatch"
+    },
+    {
+      "id": 570,
+      "name": "The Original",
+      "reason": "card 570: unsupported full text 'Starwalker. Need: Your deck has no non-Generated COMMON cards. Magic: Give all monsters in your hand ATK +1/HP +1.'"
+    },
+    {
+      "id": 571,
+      "name": "Sad Dummy",
+      "reason": "card 571: unsupported full text 'WAITING FOR A NEW EFFECT'"
+    },
+    {
+      "id": 572,
+      "name": "Pink Laser",
+      "reason": "unsupported effect: 'Gain +1 base ATK for every monster you played this game with a base HP of 7.'"
+    },
+    {
+      "id": 573,
+      "name": "Elimination Duck",
+      "reason": "unsupported effect: 'Turn all other monsters into random other monsters of the same COST if possible.'"
+    },
+    {
+      "id": 575,
+      "name": "Time Warp",
+      "reason": "unsupported effect: 'Give all Generated cards in your hand and deck -1 COST.'"
+    },
+    {
+      "id": 576,
+      "name": "Shield",
+      "reason": "unsupported effect: 'Give an ally monster ATK +1/HP +1 and draw a card.'"
+    },
+    {
+      "id": 577,
+      "name": "Draft",
+      "reason": "unsupported effect: 'Look at 5 random monsters (max. EPIC) costing 5-6 GOLD and choose one. Add it to your hand with -1 COST.'"
+    },
+    {
+      "id": 579,
+      "name": "Baking Queen",
+      "reason": "unsupported effect: 'Kill a damaged monster. Heal HP to you equal to its ATK.'"
+    },
+    {
+      "id": 580,
+      "name": "Totemic Guard",
+      "reason": "card 580: unsupported full text 'Delay: If you have 3+ 6-COST monsters in your hand or dustpile, heal 5 HP to you.'"
+    },
+    {
+      "id": 581,
+      "name": "Golden Mascot",
+      "reason": "card 581: unsupported full text 'Dust: Add a Super Pack [#876] to your hand.'"
+    },
+    {
+      "id": 582,
+      "name": "Tiny Bookshelf",
+      "reason": "card 582: unsupported full text 'Need: You spent GOLD on spells last turn. Magic: Gain +1 ATK and Taunt.'"
+    },
+    {
+      "id": 583,
+      "name": "Cracked Geode",
+      "reason": "card 583: unsupported full text 'Dust: Deal 2 DMG to all monsters.'"
+    },
+    {
+      "id": 584,
+      "name": "Caged Kings",
+      "reason": "card 584: unsupported full text 'Need: You spent GOLD on spells last turn. Magic: Add a Broken Key [#585] to your deck and draw a card.'"
+    },
+    {
+      "id": 585,
+      "name": "Broken Key",
+      "reason": "unsupported effect: 'Add a Cell Key [#586] to your deck. Draw a card.'"
+    },
+    {
+      "id": 586,
+      "name": "Cell Key",
+      "reason": "unsupported effect: 'Look at all Chaos Weapon and choose one to add to your hand with -2 COST.'"
+    },
+    {
+      "id": 587,
+      "name": "Glowing Shroom",
+      "reason": "card 587: unsupported full text 'After you spend GOLD on spells, gain +1 ATK. Magic: If played on the left, [左侧] swap its stats.'"
+    },
+    {
+      "id": 588,
+      "name": "Spaghetti",
+      "reason": "card 588: status text/metadata mismatch"
+    },
+    {
+      "id": 589,
+      "name": "Shrine Mascot",
+      "reason": "card 589: status text/metadata mismatch"
+    },
+    {
+      "id": 590,
+      "name": "Moldmega",
+      "reason": "card 590: unsupported full text 'Magic and Dust: Erase 5 Mold in your dustpile to summon a Moldbygg [#19] and trigger its Magic.'"
+    },
+    {
+      "id": 591,
+      "name": "Memorykeeper",
+      "reason": "card 591: status text/metadata mismatch"
+    },
+    {
+      "id": 592,
+      "name": "Mio Mio San",
+      "reason": "unsupported effect: 'Look at all non-DT monsters in the enemy hand and choose one. Halve its ATK and HP and add an exact copy to your hand.'"
+    },
+    {
+      "id": 593,
+      "name": "Rapstablook",
+      "reason": "unsupported effect: 'Die to deal 3 DMG to all enemies.'"
+    },
+    {
+      "id": 594,
+      "name": "Toy Bricks",
+      "reason": "card 594: unsupported full text 'Need: 4+ Toy Bricks [#594] in your dustpile. Magic: Erase them and add 10 Rescue Helicopter [#595] to your deck.'"
+    },
+    {
+      "id": 595,
+      "name": "Rescue Helicopter",
+      "reason": "card 595: status text/metadata mismatch"
+    },
+    {
+      "id": 596,
+      "name": "Vegetables",
+      "reason": "unsupported effect: 'Turbo: Erase this, heal 2 HP to you and draw a card.'"
+    },
+    {
+      "id": 597,
+      "name": "DT Extractor",
+      "reason": "unsupported effect: 'Look at 4 random DT cards. Choose one to add to your hand.'"
+    },
+    {
+      "id": 599,
+      "name": "Stalagmite",
+      "reason": "card 599: unsupported full text 'Enemy monsters take +2 DMG from Gemstone [#598]. Magic and Dust: Add a Gemstone [#598] to your hand.'"
+    },
+    {
+      "id": 600,
+      "name": "Bag o' Goodies",
+      "reason": "card 600: status text/metadata mismatch"
+    },
+    {
+      "id": 601,
+      "name": "Pickaxe",
+      "reason": "card 601: unsupported full text 'Before this attacks, add a Gemstone [#598] to your hand.'"
+    },
+    {
+      "id": 603,
+      "name": "Pink Crystals",
+      "reason": "card 603: unsupported full text 'After you cast a Gemstone [#598], give the monster in front of this ATK -1/HP -1. Magic: Add a Gemstone [#598] to your hand.'"
+    },
+    {
+      "id": 604,
+      "name": "Waterfall Sign",
+      "reason": "card 604: unsupported full text 'After you cast a Gemstone [#598] not Generated by Waterfall Sign [#604], add another to your hand. Dust: Add 2 Gemstone [#598] to your hand.'"
+    },
+    {
+      "id": 605,
+      "name": "River Boat",
+      "reason": "unsupported effect: 'Draw up to 3 cards. Delay: Send them from your hand to your deck.'"
+    },
+    {
+      "id": 606,
+      "name": "Librarby Sign",
+      "reason": "unsupported effect: 'Draw a COMMON, RARE, and EPIC card.'"
+    },
+    {
+      "id": 607,
+      "name": "Seat of Gods",
+      "reason": "unsupported effect: 'Switch: Give all monsters costing 9+ GOLD in your [左侧] hand or [右侧] deck -1 COST. Delay: Draw a card.'"
+    },
+    {
+      "id": 608,
+      "name": "Void Laser",
+      "reason": "unsupported effect: 'Add 2 Gaster Blaster [#351] to your deck. Turn end: Give 2 random Gaster Blaster [#351] in your deck -1 COST.'"
+    },
+    {
+      "id": 609,
+      "name": "G Machine",
+      "reason": "card 609: unsupported full text 'Delay: If this is dead, add a Gaster Blaster [#351] to your hand.'"
+    },
+    {
+      "id": 610,
+      "name": "Trophy",
+      "reason": "card 610: unsupported full text 'Dust: Equip the Economics [#38] artifact. Give it 3 counters.'"
+    },
+    {
+      "id": 611,
+      "name": "Dog Treats",
+      "reason": "card 611: unsupported full text 'Dust: Give all ally Dog ATK +1/HP +1.'"
+    },
+    {
+      "id": 612,
+      "name": "Angel Doll",
+      "reason": "card 612: unsupported full text 'Dust: Give all allies +2 HP.'"
+    },
+    {
+      "id": 613,
+      "name": "Totemic Carvings",
+      "reason": "unsupported effect: 'Look at 7 random non-DT 7-COST monsters (except Totem [#545]). Choose one to add to your hand with -7 COST.'"
+    },
+    {
+      "id": 614,
+      "name": "Arcane Codes",
+      "reason": "unsupported effect: 'Cast a random spell on a random target.'"
+    },
+    {
+      "id": 615,
+      "name": "Toxic Cloud",
+      "reason": "card 615: unsupported full text 'Dust: Give its killer KR and ATK -1/HP -1.'"
+    },
+    {
+      "id": 616,
+      "name": "Banana",
+      "reason": "card 616: unsupported full text 'POTASSIUM'"
+    },
+    {
+      "id": 617,
+      "name": "Maus",
+      "reason": "card 617: unsupported full text 'Dust: Add a Cursor [#623] to your hand.'"
+    },
+    {
+      "id": 618,
+      "name": "Cheese Block",
+      "reason": "card 618: unsupported full text 'Dust: Summon a ATK 1/HP 1 copy of a monster costing 1 or less GOLD from your deck (except Cheese Block [#618]).'"
+    },
+    {
+      "id": 619,
+      "name": "Maus Hole",
+      "reason": "unsupported effect: 'Look at 3 random non-DT 1-COST cards. Choose one to add to your hand.'"
+    },
+    {
+      "id": 620,
+      "name": "Rotablock",
+      "reason": "unsupported effect: 'Add 3 copies of random non-DT monsters costing 1 or less GOLD from your dustpile to your deck.'"
+    },
+    {
+      "id": 621,
+      "name": "Maus Cage",
+      "reason": "card 621: unsupported full text 'Need: 6+ non-Generated monsters costing 1 or less GOLD in your dustpile. Magic: Add a Mauswheel [#622] to your hand.'"
+    },
+    {
+      "id": 622,
+      "name": "Mauswheel",
+      "reason": "unsupported effect: 'Summon 3 Maus [#617] with Haste. Give them ATK +1/HP +1 for each other card you spent GOLD on this turn (max. ATK +3/HP +3).'"
+    },
+    {
+      "id": 623,
+      "name": "Cursor",
+      "reason": "unsupported effect: 'Draw a card.'"
+    },
+    {
+      "id": 624,
+      "name": "Tasque",
+      "reason": "unsupported effect: 'Gain ATK +1/HP +1 for each other card with a base COST of 1+ GOLD you played this turn.'"
+    },
+    {
+      "id": 625,
+      "name": "Stuck Tasque",
+      "reason": "card 625: status text/metadata mismatch"
+    },
+    {
+      "id": 626,
+      "name": "Tasque Manager",
+      "reason": "unsupported effect: 'Send the 3 cheapest non-TOKEN cards in your deck to the top of your deck with -1 COST.'"
+    },
+    {
+      "id": 627,
+      "name": "Cyber Cage",
+      "reason": "card 627: unsupported full text \"Dust: If it's the enemy turn, release the caught monster.\""
+    },
+    {
+      "id": 628,
+      "name": "Yarn Ball",
+      "reason": "unsupported effect: 'Send the 2 rightmost cards in your hand to your deck. Draw 3 cards.'"
+    },
+    {
+      "id": 629,
+      "name": "Tasque Painting",
+      "reason": "card 629: status text/metadata mismatch"
+    },
+    {
+      "id": 630,
+      "name": "Shovels x999",
+      "reason": "unsupported effect: 'Turn the cheapest non-Generated card in your hand into a Shovel [#631].'"
+    },
+    {
+      "id": 631,
+      "name": "Shovel",
+      "reason": "card 631: status text/metadata mismatch"
+    },
+    {
+      "id": 632,
+      "name": "Trashy",
+      "reason": "card 632: unsupported full text 'This has +2 ATK on the enemy turn and takes no DMG while attacking.'"
+    },
+    {
+      "id": 633,
+      "name": "Wig Person",
+      "reason": "unsupported effect: \"Swap an ally monster's ATK and HP. Silence it.\""
+    },
+    {
+      "id": 634,
+      "name": "Pizzasimp",
+      "reason": "card 634: status text/metadata mismatch"
+    },
+    {
+      "id": 635,
+      "name": "Susie Statue",
+      "reason": "unsupported effect: 'Attack a random enemy monster if there are any.'"
+    },
+    {
+      "id": 636,
+      "name": "Dumpster",
+      "reason": "unsupported effect: 'Draw a BASE card.'"
+    },
+    {
+      "id": 637,
+      "name": "Cafe Jukebox",
+      "reason": "unsupported effect: 'Look at 3 random non-DT monsters in the enemy dustpile. Add one to your deck with ATK +1/HP +1.'"
+    },
+    {
+      "id": 638,
+      "name": "Dog Cone",
+      "reason": "card 638: status text/metadata mismatch"
+    },
+    {
+      "id": 639,
+      "name": "Alterman",
+      "reason": "unsupported effect: 'Silence and kill an ally monster to gain +3 HP.'"
+    },
+    {
+      "id": 640,
+      "name": "Aesthetic Aaron",
+      "reason": "unsupported effect: 'Choose a card in your hand to send to the enemy hand to draw a card.'"
+    },
+    {
+      "id": 641,
+      "name": "Cafe Table",
+      "reason": "unsupported effect: \"Remove an ally monster's negative effects and give it Taunt.\""
+    },
+    {
+      "id": 642,
+      "name": "Policeblook",
+      "reason": "card 642: unsupported full text 'Dust: Add Prison Bars [#643] to your hand.'"
+    },
+    {
+      "id": 643,
+      "name": "Prison Bars",
+      "reason": "unsupported effect: 'Paralyze an enemy monster. Deal 1 DMG to all other enemies.'"
+    },
+    {
+      "id": 644,
+      "name": "Carnival Tent",
+      "reason": "unsupported effect: 'Cast all Generated spells from your hand on random targets.'"
+    },
+    {
+      "id": 645,
+      "name": "Arcade Machine",
+      "reason": "card 645: unsupported full text 'Need: Your hand has no cards of the same rarity. Magic: Give all cards in your hand -3 COST.'"
+    },
+    {
+      "id": 646,
+      "name": "Glitch",
+      "reason": "card 646: status text/metadata mismatch"
+    },
+    {
+      "id": 647,
+      "name": "Queen Painting",
+      "reason": "card 647: status text/metadata mismatch"
+    },
+    {
+      "id": 648,
+      "name": "Spamton Painting",
+      "reason": "card 648: status text/metadata mismatch"
+    },
+    {
+      "id": 649,
+      "name": "Broken Car",
+      "reason": "unsupported effect: 'Deal 1 DMG to a monster for each other monster. If this deals 3 or less DMG, gain Haste.'"
+    },
+    {
+      "id": 650,
+      "name": "Walk Sign",
+      "reason": "unsupported effect: 'Deal 3 DMG to a monster and you.'"
+    },
+    {
+      "id": 651,
+      "name": "Traffic Car",
+      "reason": "card 651: unsupported full text 'After this kills a monster, deal 1 DMG to all enemy monsters.'"
+    },
+    {
+      "id": 652,
+      "name": "Susie Plush",
+      "reason": "unsupported effect: 'Deal 2 DMG to you. If you have 10 or less HP, deal 2 DMG to all enemies instead.'"
+    },
+    {
+      "id": 653,
+      "name": "Virovirokun",
+      "reason": "card 653: status text/metadata mismatch"
+    },
+    {
+      "id": 654,
+      "name": "Ambyu-Lance",
+      "reason": "unsupported effect: 'If you have less than 15 HP, gain +1 ATK and Haste. If you have less than 10 HP, gain Candy and Taunt.'"
+    },
+    {
+      "id": 655,
+      "name": "Nubert",
+      "reason": "unsupported effect: 'Give a random monster in your hand ATK +1/HP +1 for each unique Tribe in your dustpile.'"
+    },
+    {
+      "id": 656,
+      "name": "Cybershelf",
+      "reason": "unsupported effect: 'Look at all spells of the enemy SOUL. Choose one to add to your hand.'"
+    },
+    {
+      "id": 657,
+      "name": "Iconman",
+      "reason": "unsupported effect: 'Choose a card in your hand. Erase it to add 2 Recruitment [#452] to your hand.'"
+    },
+    {
+      "id": 658,
+      "name": "Cyber Balloon",
+      "reason": "unsupported effect: 'Earn 1 GOLD for each Generated ally monster.'"
+    },
+    {
+      "id": 659,
+      "name": "Cyber Trash",
+      "reason": "card 659: status text/metadata mismatch"
+    },
+    {
+      "id": 660,
+      "name": "Cyber Tree",
+      "reason": "card 660: status text/metadata mismatch"
+    },
+    {
+      "id": 661,
+      "name": "Cyber World Sign",
+      "reason": "unsupported effect: 'Add 3 random Program monsters from your dustpile to your hand.'"
+    },
+    {
+      "id": 662,
+      "name": "Eggplant Trashbag",
+      "reason": "unsupported effect: 'Look at 4 BASE spells and choose one. Add it to your hand.'"
+    },
+    {
+      "id": 663,
+      "name": "Sad Bunbun",
+      "reason": "unsupported effect: 'Look at all 0-COST monsters in your dustpile. Choose one to summon to gain +2 ATK.'"
+    },
+    {
+      "id": 664,
+      "name": "Spamton",
+      "reason": "unsupported effect: 'Erase all Pipis [#753] in your dustpile. Add a Pipis [#753] with Haste to your hand for each one Erased. Give them ATK +1/HP +1 for each one not added.'"
+    },
+    {
+      "id": 665,
+      "name": "Hyperlink Blocked",
+      "reason": "unsupported effect: 'Take 1 DMG. Draw a card (except Hyperlink Blocked [#665]).'"
+    },
+    {
+      "id": 666,
+      "name": "Stoned Lancer",
+      "reason": "card 666: status text/metadata mismatch"
+    },
+    {
+      "id": 667,
+      "name": "Tiny Tornado",
+      "reason": "card 667: unsupported full text 'After this attacks and kills a monster, add a Zephyr [#668] to your hand.'"
+    },
+    {
+      "id": 668,
+      "name": "Zephyr",
+      "reason": "unsupported effect: 'Deal 5 DMG to an enemy monster. Deal the excess DMG to another random enemy one.'"
+    },
+    {
+      "id": 669,
+      "name": "Stickman",
+      "reason": "unsupported effect: \"Give an enemy monster -3 ATK. Delay: If it's dead, add a Dancing Stickman [#670] to your hand.\""
+    },
+    {
+      "id": 670,
+      "name": "Dancing Stickman",
+      "reason": "unsupported effect: 'Give a monster Taunt. Give yourself +3 HP.'"
+    },
+    {
+      "id": 671,
+      "name": "Berdlycoaster",
+      "reason": "card 671: unsupported full text 'Need: You have a TOKEN card with a base COST of 3+ GOLD in your hand. Magic: Add a Feather Storm [#672] to your hand.'"
+    },
+    {
+      "id": 672,
+      "name": "Feather Storm",
+      "reason": "unsupported effect: 'Deal 2 DMG. Deal 1 DMG to all enemies.'"
+    },
+    {
+      "id": 673,
+      "name": "Berdly Plush",
+      "reason": "card 673: unsupported full text 'Need: You have a TOKEN with a base COST of 3+ in your hand. Magic: Give 3 random non-TOKEN cards in your hand -1 COST.'"
+    },
+    {
+      "id": 674,
+      "name": "Halberd",
+      "reason": "card 674: unsupported full text 'Need: You played 3+ TOKEN cards with a base COST of 3+ GOLD this game. Magic: Summon a Halberd [#674].'"
+    },
+    {
+      "id": 675,
+      "name": "Cyberdly",
+      "reason": "card 675: unsupported full text 'After this attacks and survives, add 2 Feather Storm [#672] to your hand. Magic: Gain ATK +1/HP +1 for each unique Tribe in your dustpile.'"
+    },
+    {
+      "id": 676,
+      "name": "Milk Looker",
+      "reason": "card 676: unsupported full text 'After this loses a Dodge, add a Sans Milk [#677] to your hand.'"
+    },
+    {
+      "id": 677,
+      "name": "Sans Milk",
+      "reason": "unsupported effect: 'Give a monster ATK +1/HP +1 and +1 Dodge.'"
+    },
+    {
+      "id": 678,
+      "name": "Cauldron",
+      "reason": "card 678: status text/metadata mismatch"
+    },
+    {
+      "id": 679,
+      "name": "Small Plug",
+      "reason": "unsupported effect: 'Switch: Give a Plug in your hand [左侧] Haste or [右侧] Taunt.'"
+    },
+    {
+      "id": 680,
+      "name": "Pluggirl",
+      "reason": "unsupported effect: 'If this has ATK or HP buffs, gain Taunt.'"
+    },
+    {
+      "id": 681,
+      "name": "Plugboy",
+      "reason": "card 681: unsupported full text 'Magic and Dust: Give 2 random Plug in your hand ATK +1/HP +1.'"
+    },
+    {
+      "id": 682,
+      "name": "Revoltplug",
+      "reason": "unsupported effect: 'Deal its ATK as DMG randomly split among all enemy monsters.'"
+    },
+    {
+      "id": 683,
+      "name": "Hatplug",
+      "reason": "card 683: unsupported full text 'After this loses a Dodge, draw a Plug with ATK +2/HP +2.'"
+    },
+    {
+      "id": 684,
+      "name": "Werewire",
+      "reason": "unsupported effect: \"If this has no monster caught, Catch an ally Plug. Dust: Release it with this card's ATK and HP buffs.\""
+    },
+    {
+      "id": 685,
+      "name": "Businessplug",
+      "reason": "unsupported effect: 'Summon a base ATK 1/HP 1 exact copy of a Plug in your hand with its ATK and HP buffs.'"
+    },
+    {
+      "id": 686,
+      "name": "Hanging Plug",
+      "reason": "unsupported effect: 'Choose an ally monster costing 3 or less. Turn it into a ATK 2/HP 1 Werewire [#684] that Catches it.'"
+    },
+    {
+      "id": 687,
+      "name": "Werewerewire",
+      "reason": "unsupported effect: 'Turn all other ally Plug into Werewire [#684] that Catch the Plug and gain their ATK and HP buffs.'"
+    },
+    {
+      "id": 688,
+      "name": "Ultimathrash",
+      "reason": "card 688: status text/metadata mismatch"
+    },
+    {
+      "id": 689,
+      "name": "Laser Topper",
+      "reason": "unsupported effect: 'Die to heal 3 HP to you.'"
+    },
+    {
+      "id": 690,
+      "name": "Boxed Body",
+      "reason": "card 690: status text/metadata mismatch"
+    },
+    {
+      "id": 691,
+      "name": "Mobility Tracks",
+      "reason": "unsupported effect: 'Draw a card. Send your hand to your deck and draw the same number of cards.'"
+    },
+    {
+      "id": 692,
+      "name": "Failed Design",
+      "reason": "card 692: unsupported full text 'Before an enemy monster attacks, lose 1 HP. Dust: Summon an Apoca Duck [#372].'"
+    },
+    {
+      "id": 693,
+      "name": "Round Devices",
+      "reason": "unsupported effect: 'Swap the ATK and HP of all other monsters.'"
+    },
+    {
+      "id": 694,
+      "name": "Tough Body",
+      "reason": "card 694: unsupported full text 'Delay: Deal 4 DMG to a random enemy monster. Excess DMG is dealt to the opponent.'"
+    },
+    {
+      "id": 695,
+      "name": "Flame of Love",
+      "reason": "unsupported effect: 'Give an enemy monster -3 ATK and -1 ATK to its adjacent monsters.'"
+    },
+    {
+      "id": 696,
+      "name": "Final Gambit!",
+      "reason": "unsupported effect: 'Summon Ultimathrash [#688], earn 7 GOLD, deal 7 DMG to all enemies, heal 7 HP to all allies, and add 7 Draft [#577] to your hand.'"
+    },
+    {
+      "id": 697,
+      "name": "Queen",
+      "reason": "unsupported effect: 'Choose An Enemy Monster. Summon A Werewire [#684] That Catches It.'"
+    },
+    {
+      "id": 698,
+      "name": "Snow Warning",
+      "reason": "unsupported effect: 'Equip the Hail [#44] artifact and give it 4 counters. Deal 1 DMG to all monsters.'"
+    },
+    {
+      "id": 699,
+      "name": "Wereform",
+      "reason": "unsupported effect: 'Choose an non-DT ally monster to summon a Werewire [#684] that Catches it.'"
+    },
+    {
+      "id": 700,
+      "name": "Vasebreaker",
+      "reason": "card 700: status text/metadata mismatch"
+    },
+    {
+      "id": 701,
+      "name": "Vase",
+      "reason": "card 701: unsupported full text 'Dust: If this died during the enemy turn, give its killer ATK -1/HP -1.'"
+    },
+    {
+      "id": 702,
+      "name": "Call for Help",
+      "reason": "unsupported effect: 'Summon a copy of all enemy monsters that died this turn for you.'"
+    },
+    {
+      "id": 703,
+      "name": "Proceed",
+      "reason": "unsupported effect: 'Silence a non-DT monster. It attacks all of its enemy monsters.'"
+    },
+    {
+      "id": 704,
+      "name": "Pezza Time",
+      "reason": "unsupported effect: 'Add a copy of a damaged non-DT ally monster to your hand with its current HP. It costs 1 less per HP missing.'"
+    },
+    {
+      "id": 705,
+      "name": "Knight's Shield",
+      "reason": "unsupported effect: 'Give an ally monster Taunt and +1 HP for each empty ally board slot.'"
+    },
+    {
+      "id": 706,
+      "name": "Star",
+      "reason": "unsupported effect: 'Die. Dust: Heal 1 HP to you.'"
+    },
+    {
+      "id": 707,
+      "name": "Captain Rouxls",
+      "reason": "unsupported effect: 'Fillst thy board with Blue House [#708] and enemy board with Red House [#709]. Delay: Killeth all Blue House [#708].'"
+    },
+    {
+      "id": 708,
+      "name": "Blue House",
+      "reason": "card 708: unsupported full text 'Dust: Silence and kill a random enemy Red House [#709]. If there were none, summon a Red House [#709].'"
+    },
+    {
+      "id": 709,
+      "name": "Red House",
+      "reason": "card 709: unsupported full text 'Dust: Heal 2 HP to you.'"
+    },
+    {
+      "id": 710,
+      "name": "Snoelle",
+      "reason": "unsupported effect: \"Paralyze a monster. Delay: If it's dead and this is alive, return to your deck with +1 base ATK. At 5, Erase this to add Snowgrave [#711] to your hand.\""
+    },
+    {
+      "id": 711,
+      "name": "Snowgrave",
+      "reason": "unsupported effect: \"If it's the first time you cast this, Silence and kill a monster. Fill your hand with Ice Crystal [#712] with its ATK and HP.\""
+    },
+    {
+      "id": 712,
+      "name": "Ice Crystal",
+      "reason": "unsupported effect: 'Paralyze a monster. Dust: Deal 3 DMG to all enemy monsters.'"
+    },
+    {
+      "id": 713,
+      "name": "Crystal Downpour",
+      "reason": "unsupported effect: 'Add 4 0-COST Gemstone [#598] to your hand.'"
+    },
+    {
+      "id": 714,
+      "name": "Caged Jester",
+      "reason": "unsupported effect: 'Attain Freedom [#45] to give it a counter for every different non-TOKEN spell of another SOUL you cast this game.'"
+    },
+    {
+      "id": 715,
+      "name": "Jevilstail",
+      "reason": "unsupported effect: 'Give all ally monsters ATK +1/HP +2. Give all monsters in your hand ATK +1/HP +1.'"
+    },
+    {
+      "id": 716,
+      "name": "Royal Papyrus",
+      "reason": "card 716: unsupported full text 'Need: 10+ non-Generated monsters costing 9+ GOLD in your dustpile. Magic: Equip the Underground Army [#62] artifact.'"
+    },
+    {
+      "id": 717,
+      "name": "Spamton NEO",
+      "reason": "unsupported effect: 'Give the opponent FREE KROMER [#46].'"
+    },
+    {
+      "id": 718,
+      "name": "BIG SHOT!!!",
+      "reason": "unsupported effect: 'DEAL 99 DMG TO ALL ALLIES 99 TIMES!'"
+    },
+    {
+      "id": 719,
+      "name": "Irresistible Deal",
+      "reason": "unsupported effect: 'Choose a Bargain to cast. Give a counter to FREE KROMER [#46]. Accept the deal or you will DIE!'"
+    },
+    {
+      "id": 720,
+      "name": "CLICK HERE TO DIE",
+      "reason": "unsupported effect: 'Give the highest HP ally monster -6 HP. Excess HP lost is dealt as DMG to you.'"
+    },
+    {
+      "id": 721,
+      "name": "Press F1 For HELP",
+      "reason": "unsupported effect: 'Give the opponent +8 HP.'"
+    },
+    {
+      "id": 722,
+      "name": "Generosity",
+      "reason": "unsupported effect: 'Lose 6 GOLD. The opponent earns 6 GOLD.'"
+    },
+    {
+      "id": 723,
+      "name": "HOTSINGLE",
+      "reason": "unsupported effect: \"Delay: Summon a Ms Pipis [#724]. If you can't, turn a random ally monster into Ms Pipis [#724].\""
+    },
+    {
+      "id": 724,
+      "name": "Ms Pipis",
+      "reason": "unsupported effect: 'Die to give all monsters in your hand and board ATK -2/HP -2 (min. ATK 1/HP 1 in hand).'"
+    },
+    {
+      "id": 725,
+      "name": "Shadow Crystal",
+      "reason": "unsupported effect: 'Look at all LEGENDARY monsters (except Seam [#472]) and choose one. Delay: Add it to your hand.'"
+    },
+    {
+      "id": 726,
+      "name": "Placeholder Kris",
+      "reason": "card 726: status text/metadata mismatch"
+    },
+    {
+      "id": 727,
+      "name": "Mister Ruckus",
+      "reason": "unsupported effect: \"Switch: [左侧] Set a monster's stats to ATK 3/HP 3 or [右侧] Deal 3 DMG to it.\""
+    },
+    {
+      "id": 728,
+      "name": "Ponqueen",
+      "reason": "unsupported effect: 'Equip Endgame [#47]. Erase 18 Piece in your dustpile to fill your hand with Ponman [#312] with +3 ATK and Dodge (1).'"
+    },
+    {
+      "id": 729,
+      "name": "Book Register",
+      "reason": "unsupported effect: 'If you have a non-TOKEN spell from another SOUL in your hand, deal 3 DMG to a monster.'"
+    },
+    {
+      "id": 730,
+      "name": "The Manual",
+      "reason": "unsupported effect: \"Look at 3 random spells you've cast this game from other SOULS. Add one to your hand with -2 COST.\""
+    },
+    {
+      "id": 731,
+      "name": "Ultimate Heal",
+      "reason": "unsupported effect: 'Draw 3 monsters. Give them +2 HP.'"
+    },
+    {
+      "id": 732,
+      "name": "Silly Strings",
+      "reason": "unsupported effect: 'Kill a non-DT enemy monster. Add a 1-COST copy of it to the top of your deck.'"
+    },
+    {
+      "id": 733,
+      "name": "Duck Off",
+      "reason": "card 733: status text/metadata mismatch"
+    },
+    {
+      "id": 734,
+      "name": "Control Wire",
+      "reason": "unsupported effect: 'Look at all non-DT monsters in the enemy hand. Choose one to add an exact copy of it to your hand.'"
+    },
+    {
+      "id": 735,
+      "name": "Judgement",
+      "reason": "unsupported effect: 'Deal DMG randomly split among all enemy monsters equal to your missing HP.'"
+    },
+    {
+      "id": 736,
+      "name": "Police Line",
+      "reason": "card 736: unsupported full text 'After this attacks and kills a monster, summon a Police Line [#736]. Turn end: Silence this and gain Taunt.'"
+    },
+    {
+      "id": 737,
+      "name": "Ice Shock",
+      "reason": "unsupported effect: 'Deal 2 DMG to a monster. If it killed, Paralyze the adjacent ones.'"
+    },
+    {
+      "id": 738,
+      "name": "Petrification",
+      "reason": "unsupported effect: 'Kill an enemy monster to summon a Petrified Monster [#739] for the opponent.'"
+    },
+    {
+      "id": 739,
+      "name": "Petrified Monster",
+      "reason": "unsupported effect: 'Die. Dust: Deal 2 DMG to all allies.'"
+    },
+    {
+      "id": 740,
+      "name": "Frisk Laser",
+      "reason": "card 740: unsupported full text 'After you draw a card, turn it into a random Undertale LEGENDARY with -2 COST.'"
+    },
+    {
+      "id": 741,
+      "name": "The Reflection",
+      "reason": "unsupported effect: 'Add a copy of all non-DT enemy monsters (except The Reflection [#741]) to your hand with -2 COST.'"
+    },
+    {
+      "id": 742,
+      "name": "Casual Guard 1",
+      "reason": "unsupported effect: 'Draw a Royal Guard with Dust. Trigger it. If this is your only monster, gain Haste.'"
+    },
+    {
+      "id": 743,
+      "name": "Casual Guard 2",
+      "reason": "card 743: status text/metadata mismatch"
+    },
+    {
+      "id": 744,
+      "name": "Hanging Spider",
+      "reason": "card 744: unsupported full text 'Delay: If this died to a monster, summon a Spider Croissant [#476] and add a Spider Donut [#475] to your hand.'"
+    },
+    {
+      "id": 745,
+      "name": "Stage Lights",
+      "reason": "unsupported effect: 'Add a copy of the most expensive non-DT monster in the enemy hand (except Stage Lights [#745]) to your hand.'"
+    },
+    {
+      "id": 746,
+      "name": "Sweet Dance",
+      "reason": "unsupported effect: 'Give all ally Plant Candy.'"
+    },
+    {
+      "id": 747,
+      "name": "Mocking Dance",
+      "reason": "unsupported effect: 'Give all ally Plant Taunt.'"
+    },
+    {
+      "id": 748,
+      "name": "Swift Dance",
+      "reason": "unsupported effect: 'Give all ally Plant Haste.'"
+    },
+    {
+      "id": 749,
+      "name": "Fluid Dance",
+      "reason": "unsupported effect: 'Give all ally Plant +2 HP.'"
+    },
+    {
+      "id": 750,
+      "name": "Mushroom Dance",
+      "reason": "unsupported effect: 'Choose a Dance to cast.'"
+    },
+    {
+      "id": 751,
+      "name": "Ruins Tree",
+      "reason": "card 751: status text/metadata mismatch"
+    },
+    {
+      "id": 752,
+      "name": "Lancer's Bike Bed",
+      "reason": "card 752: unsupported full text 'After you draw a monster, give it +1 ATK.'"
+    },
+    {
+      "id": 753,
+      "name": "Pipis",
+      "reason": "card 753: unsupported full text 'Dust: Add 2 Hyperlink Blocked [#665] to the top of the enemy deck.'"
+    },
+    {
+      "id": 754,
+      "name": "Flying Heads",
+      "reason": "card 754: unsupported full text 'Dust: Add 3 Hyperlink Blocked [#665] to the enemy deck.'"
+    },
+    {
+      "id": 755,
+      "name": "Spamton Poster",
+      "reason": "card 755: status text/metadata mismatch"
+    },
+    {
+      "id": 756,
+      "name": "Spamton Shop",
+      "reason": "card 756: status text/metadata mismatch"
+    },
+    {
+      "id": 757,
+      "name": "Pipis Cannon",
+      "reason": "unsupported effect: 'Erase up to 9 Hyperlink Blocked [#665] in the enemy deck. Summon a Pipis [#753] with Charge for every 3 Erased.'"
+    },
+    {
+      "id": 758,
+      "name": "Broken NEO",
+      "reason": "card 758: unsupported full text 'Need: 10+ Hyperlink Blocked [#665] in the enemy deck. Magic: Erase 10 to deal 10 DMG to an enemy monster and excess to all enemies.'"
+    },
+    {
+      "id": 759,
+      "name": "Tasque Singer",
+      "reason": "unsupported effect: 'Kill all enemy monsters costing less than or equal to the amount of non-TOKEN cards you played this turn.'"
+    },
+    {
+      "id": 760,
+      "name": "Butler Ralsei",
+      "reason": "card 760: status text/metadata mismatch"
+    },
+    {
+      "id": 761,
+      "name": "Berdly Statue",
+      "reason": "card 761: unsupported full text 'In your hand, this has -1 COST for each TOKEN card costing 1+ GOLD you played this game (max. -8 COST).'"
+    },
+    {
+      "id": 762,
+      "name": "Watching Man",
+      "reason": "card 762: status text/metadata mismatch"
+    },
+    {
+      "id": 763,
+      "name": "Control Panel",
+      "reason": "card 763: unsupported full text 'Magic and Dust: Add a Shovel [#631] to your hand.'"
+    },
+    {
+      "id": 764,
+      "name": "Swatchling",
+      "reason": "unsupported effect: 'Summon a Vase [#701] with Taunt. If you have less monsters than the opponent, give it Dodge (1).'"
+    },
+    {
+      "id": 765,
+      "name": "Trash Rudinn",
+      "reason": "unsupported effect: 'Add every BASE Deltarune monster to your hand (from cheapest to most expensive). Delay: Erase them from your hand.'"
+    },
+    {
+      "id": 766,
+      "name": "Large Chest",
+      "reason": "card 766: unsupported full text 'Need: 6+ unique rarities in your dustpile. Magic: Erase them and add 6 random monsters to your hand with COST -2/ATK +1/HP +1.'"
+    },
+    {
+      "id": 767,
+      "name": "Ball Dancer",
+      "reason": "unsupported effect: 'Give all monsters in your hand and deck with equal or less COST than this COST +1/ATK +1/HP +1.'"
+    },
+    {
+      "id": 768,
+      "name": "Space Stickers",
+      "reason": "card 768: status text/metadata mismatch"
+    },
+    {
+      "id": 769,
+      "name": "Mane Ax",
+      "reason": "unsupported effect: 'Silence a monster, then give it ATK -2/HP -1.'"
+    },
+    {
+      "id": 770,
+      "name": "MTT Reporter",
+      "reason": "unsupported effect: 'Return a non-DT ally monster to your hand (except MTT Reporter [#770]) with -8 COST. Delay: Erase it from your hand or deck.'"
+    },
+    {
+      "id": 771,
+      "name": "ACT Button",
+      "reason": "card 771: status text/metadata mismatch"
+    },
+    {
+      "id": 772,
+      "name": "Junk for Sale",
+      "reason": "unsupported effect: 'Look at 2 3-COST monsters (max. EPIC) and add one to your hand with 0 COST. Delay: Add a Junk for Sale [#772] to your hand if you have none.'"
+    },
+    {
+      "id": 773,
+      "name": "Shyra Tombstone",
+      "reason": "card 773: unsupported full text 'Need: 7+ monsters in your dustpile. Magic: Gain +3 HP.'"
+    },
+    {
+      "id": 774,
+      "name": "Disguised Lancer",
+      "reason": "unsupported effect: 'Return all other non-DT ally monsters to your hand. Summon Thrashing Machine [#270] with their stats in their places.'"
+    },
+    {
+      "id": 775,
+      "name": "Crimeter",
+      "reason": "card 775: status text/metadata mismatch"
+    },
+    {
+      "id": 776,
+      "name": "Traffic Light",
+      "reason": "unsupported effect: 'Give a random DT, LEGENDARY, and TOKEN card in your hand or deck -2 cost.'"
+    },
+    {
+      "id": 777,
+      "name": "Dog Slots",
+      "reason": "unsupported effect: 'Send your hand to your deck. Add 7 Arcane Codes [#614] to your hand.'"
+    },
+    {
+      "id": 778,
+      "name": "Bulldogzer",
+      "reason": "card 778: unsupported full text 'Running over your opponents with the power of luck!'"
+    },
+    {
+      "id": 779,
+      "name": "Sans Deltarune",
+      "reason": "unsupported effect: 'Switch: Reveal a random spell costing 1+ GOLD in [左侧] your or [右侧] the enemy hand. Turn it into a Gaster Blaster [#351].'"
+    },
+    {
+      "id": 780,
+      "name": "Wheelvil",
+      "reason": "unsupported effect: 'Cast a random Chaos Weapon for every 8 HP you are missing.'"
+    },
+    {
+      "id": 781,
+      "name": "Gift Bomb",
+      "reason": "card 781: unsupported full text 'Dust: Summon 2 random monsters from your hand with a base COST of 3 or less GOLD.'"
+    },
+    {
+      "id": 782,
+      "name": "Teacher Alphys",
+      "reason": "card 782: unsupported full text 'Need: Your dustpile has a monster of each COST from 1 to 10 GOLD. Magic: Erase them and add 3 Chalk [#783] to your deck.'"
+    },
+    {
+      "id": 783,
+      "name": "Chalk",
+      "reason": "unsupported effect: 'Deal 5 DMG to the opponent. Draw a card. Delay: Give all ally monsters ATK +1/HP +1.'"
+    },
+    {
+      "id": 784,
+      "name": "Lab Sign",
+      "reason": "unsupported effect: 'Send your hand to your deck. Add a copy of each different Amalgamate in your dustpile to your hand with COST -1/ATK +1/HP +1.'"
+    },
+    {
+      "id": 785,
+      "name": "Temmie Egg",
+      "reason": "card 785: unsupported full text 'Delay and Dust: Add a Temmie 2 [#356] to your hand.'"
+    },
+    {
+      "id": 786,
+      "name": "Dusty Chest",
+      "reason": "unsupported effect: 'Erase up to 9 monsters in your dustpile. Draw a card for every 3 Erased.'"
+    },
+    {
+      "id": 787,
+      "name": "Cyber Timer",
+      "reason": "card 787: unsupported full text 'Magic and Turn start: Cast Time Warp [#575].'"
+    },
+    {
+      "id": 788,
+      "name": "Ralsei Dummy",
+      "reason": "card 788: status text/metadata mismatch"
+    },
+    {
+      "id": 789,
+      "name": "Chaos Bomb",
+      "reason": "unsupported effect: 'Cast all Chaos Weapon (except Club Chaos [#447])!'"
+    },
+    {
+      "id": 790,
+      "name": "Mettabot Factory",
+      "reason": "card 790: status text/metadata mismatch"
+    },
+    {
+      "id": 791,
+      "name": "Giant Toilet",
+      "reason": "card 791: unsupported full text 'Need: This is non-Generated and you have no other cards in your hand or deck. Magic: Gain ATK +90/HP +90 and Charge.'"
+    },
+    {
+      "id": 792,
+      "name": "Noellecoaster",
+      "reason": "card 792: unsupported full text 'This has +1 COST in hand for each 2+ GOLD spell you cast this game. Magic: Look at 3 spells with equal COST to gain ATK +1/HP +1 equal to it. Cast one on the monster in front of this.'"
+    },
+    {
+      "id": 793,
+      "name": "Swatch",
+      "reason": "unsupported effect: 'If you spent 5+ GOLD on spells this turn, add a Swatch [#793] with COST -1/ATK +1/HP +1 base stats to your hand.'"
+    },
+    {
+      "id": 794,
+      "name": "GIGA Queen",
+      "reason": "unsupported effect: \"Look At All GIGA Attack You Haven't Cast And Add One To Your Hand. Begin Your Imminent Showdown [#63]!\""
+    },
+    {
+      "id": 795,
+      "name": "Detachable Hands",
+      "reason": "unsupported effect: 'Add All GIGA Attack To Your Hand.'"
+    },
+    {
+      "id": 796,
+      "name": "GIGA Punch",
+      "reason": "unsupported effect: 'Give An Ally Monster +1 Dodge. It Attacks The Lowest ATK Enemy Monster.'"
+    },
+    {
+      "id": 797,
+      "name": "GIGA Missiles",
+      "reason": "unsupported effect: 'Deal 3 DMG To All Enemies.'"
+    },
+    {
+      "id": 798,
+      "name": "GIGA Glass",
+      "reason": "unsupported effect: 'Kill An Enemy Monster.'"
+    },
+    {
+      "id": 799,
+      "name": "GIGA Balls",
+      "reason": "unsupported effect: 'Summon 2 GIGA Baseball [#800].'"
+    },
+    {
+      "id": 800,
+      "name": "GIGA Baseball",
+      "reason": "unsupported effect: 'Die to heal 3 HP to all allies and deal 2 DMG to all enemies.'"
+    },
+    {
+      "id": 801,
+      "name": "The Barrier",
+      "reason": "unsupported effect: 'Deal DMG to the opponent equal to half the amount of monsters in both dustpiles (rounded down).'"
+    },
+    {
+      "id": 802,
+      "name": "Mew Mew Wand",
+      "reason": "card 802: status text/metadata mismatch"
+    },
+    {
+      "id": 803,
+      "name": "Sidewalk Froggit",
+      "reason": "card 803: status text/metadata mismatch"
+    },
+    {
+      "id": 804,
+      "name": "Recycle Bin",
+      "reason": "card 804: status text/metadata mismatch"
+    },
+    {
+      "id": 805,
+      "name": "Yandereplane",
+      "reason": "card 805: unsupported full text \"Delay: If this didn't attack, die and deal 3 DMG to all enemies.\""
+    },
+    {
+      "id": 806,
+      "name": "Torch",
+      "reason": "card 806: unsupported full text 'After a non-Generated monster dies, deal 1 DMG to the opponent.'"
+    },
+    {
+      "id": 807,
+      "name": "Spamequin",
+      "reason": "card 807: status text/metadata mismatch"
+    },
+    {
+      "id": 808,
+      "name": "Clover",
+      "reason": "card 808: unsupported full text 'Your Round cost 0. Magic: Add The First Round [#818] to your hand.'"
+    },
+    {
+      "id": 809,
+      "name": "Penilla",
+      "reason": "unsupported effect: 'Both players draw a monster. Delay: If yours is still in your hand, swap them!'"
+    },
+    {
+      "id": 810,
+      "name": "Decibat",
+      "reason": "card 810: status text/metadata mismatch"
+    },
+    {
+      "id": 811,
+      "name": "Dunebud",
+      "reason": "card 811: status text/metadata mismatch"
+    },
+    {
+      "id": 812,
+      "name": "Flameguy",
+      "reason": "unsupported effect: 'Kill an ally monster to draw 2 cards.'"
+    },
+    {
+      "id": 813,
+      "name": "Sweet Corn",
+      "reason": "card 813: unsupported full text 'Dust: Give Candy to its killer.'"
+    },
+    {
+      "id": 814,
+      "name": "Rorrim",
+      "reason": "card 814: status text/metadata mismatch"
+    },
+    {
+      "id": 815,
+      "name": "Dalv's Wardrobe",
+      "reason": "card 815: unsupported full text 'Dust: Summon a Pops [#816]. Give it ATK +1/HP +1 for each other non-TOKEN monster that died this turn.'"
+    },
+    {
+      "id": 816,
+      "name": "Pops",
+      "reason": "card 816: status text/metadata mismatch"
+    },
+    {
+      "id": 817,
+      "name": "Giga Froggit",
+      "reason": "unsupported effect: 'Switch: Give all other ally Frog [左侧] Taunt or [右侧] Armor.'"
+    },
+    {
+      "id": 818,
+      "name": "The First Round",
+      "reason": "card 818: status text/metadata mismatch"
+    },
+    {
+      "id": 819,
+      "name": "The Second Round",
+      "reason": "card 819: status text/metadata mismatch"
+    },
+    {
+      "id": 820,
+      "name": "The Third Round",
+      "reason": "card 820: status text/metadata mismatch"
+    },
+    {
+      "id": 821,
+      "name": "The Fourth Round",
+      "reason": "card 821: status text/metadata mismatch"
+    },
+    {
+      "id": 822,
+      "name": "The Fifth Round",
+      "reason": "card 822: status text/metadata mismatch"
+    },
+    {
+      "id": 823,
+      "name": "The Final Round",
+      "reason": "unsupported effect: 'Deal 6 DMG to all enemies. If you have a Clover [#808], add The First Round [#818] to your hand!'"
+    },
+    {
+      "id": 824,
+      "name": "Dalv",
+      "reason": "card 824: status text/metadata mismatch"
+    },
+    {
+      "id": 825,
+      "name": "Lightning Bolt",
+      "reason": "card 825: unsupported full text 'Dust: If this died during your turn, deal 2 DMG to the lowest HP enemy monster.'"
+    },
+    {
+      "id": 826,
+      "name": "Starlo",
+      "reason": "card 826: unsupported full text 'After a Wanted monster dies during your turn and Magic: Add a Quick Draw [#855] to your hand.'"
+    },
+    {
+      "id": 827,
+      "name": "Lasso",
+      "reason": "unsupported effect: 'Summon the cheapest monster from the enemy hand for the opponent. Paralyze it and make it Wanted.'"
+    },
+    {
+      "id": 828,
+      "name": "Ceroba",
+      "reason": "card 828: unsupported full text 'Whenever an enemy monster is played or attacks during the enemy turn, give the opponent -2 HP. Magic: Paralyze an enemy monster.'"
+    },
+    {
+      "id": 829,
+      "name": "Chujin",
+      "reason": "unsupported effect: 'Take the Unstable Serum [#64]! Kill all enemy monsters, give all cards in your hand -1 COST, and draw up to 7 cards.'"
+    },
+    {
+      "id": 830,
+      "name": "Well",
+      "reason": "card 830: status text/metadata mismatch"
+    },
+    {
+      "id": 831,
+      "name": "TNT Man",
+      "reason": "card 831: status text/metadata mismatch"
+    },
+    {
+      "id": 832,
+      "name": "Tall Miner",
+      "reason": "card 832: status text/metadata mismatch"
+    },
+    {
+      "id": 833,
+      "name": "Gamer",
+      "reason": "card 833: status text/metadata mismatch"
+    },
+    {
+      "id": 834,
+      "name": "Drinki",
+      "reason": "card 834: status text/metadata mismatch"
+    },
+    {
+      "id": 835,
+      "name": "Rockman",
+      "reason": "card 835: status text/metadata mismatch"
+    },
+    {
+      "id": 836,
+      "name": "Food Enjoyer",
+      "reason": "unsupported effect: 'Choose a card in your hand. Delay: Erase it from your hand to fully heal this.'"
+    },
+    {
+      "id": 837,
+      "name": "El Bailador",
+      "reason": "card 837: unsupported full text \"Before any monster attacks, swap that monster's ATK and HP.\""
+    },
+    {
+      "id": 838,
+      "name": "Zenith Martlet",
+      "reason": "unsupported effect: 'Trigger the Dust effects of all non-TOKEN monsters costing 9 or less in your dustpile (max 3 per unique effect).'"
+    },
+    {
+      "id": 839,
+      "name": "Icemeter",
+      "reason": "unsupported effect: \"Gain +1 HP for each spell you've spent GOLD on this turn.\""
+    },
+    {
+      "id": 840,
+      "name": "Bowll",
+      "reason": "card 840: unsupported full text 'This takes +2 DMG from enemy monsters and spells.'"
+    },
+    {
+      "id": 841,
+      "name": "Frost Igloo",
+      "reason": "unsupported effect: \"Turn into Frostermit [#842] and set its base HP to this card's remaining HP.\""
+    },
+    {
+      "id": 843,
+      "name": "Cardmaster",
+      "reason": "unsupported effect: 'Earn 2 GOLD and add a Draft [#577] to your hand for every 3 GOLD the opponent has.'"
+    },
+    {
+      "id": 844,
+      "name": "Girlboss Cactus",
+      "reason": "card 844: unsupported full text 'Dust and Synergy: Add a Cactus [#136] to your hand with +2 HP and Haste.'"
+    },
+    {
+      "id": 845,
+      "name": "Spider Workers",
+      "reason": "unsupported effect: 'Summon a Spider [#115]. Synergy: Summon a Spider Croissant [#476] instead.'"
+    },
+    {
+      "id": 846,
+      "name": "Giftshopper",
+      "reason": "card 846: unsupported full text \"Dust: Give -4 COST to the most expensive card in both players' hands.\""
+    },
+    {
+      "id": 847,
+      "name": "Fortune Teller",
+      "reason": "unsupported effect: 'Look at the top 3 cards in the enemy deck. Give one +2 COST.'"
+    },
+    {
+      "id": 848,
+      "name": "Casino Sans",
+      "reason": "unsupported effect: 'Summon/Cast a random TOKEN card.'"
+    },
+    {
+      "id": 849,
+      "name": "Snake Miner",
+      "reason": "card 849: status text/metadata mismatch"
+    },
+    {
+      "id": 850,
+      "name": "Mines Sign",
+      "reason": "unsupported effect: 'Add a Explosion [#367] to the enemy deck.'"
+    },
+    {
+      "id": 851,
+      "name": "Minecart",
+      "reason": "card 851: unsupported full text 'Dust and Turn start: Add a Crystal Shard [#578] to your hand.'"
+    },
+    {
+      "id": 852,
+      "name": "Searby",
+      "reason": "card 852: status text/metadata mismatch"
+    },
+    {
+      "id": 853,
+      "name": "Chujin Tombstone",
+      "reason": "unsupported effect: 'Send 3 random different non-DT non-Generated monsters from your dustpile to your hand with -3 COST.'"
+    },
+    {
+      "id": 854,
+      "name": "Dual!",
+      "reason": "unsupported effect: \"Add a Quick Draw [#855] to both players' hands.\""
+    },
+    {
+      "id": 855,
+      "name": "Quick Draw",
+      "reason": "card 855: status text/metadata mismatch"
+    },
+    {
+      "id": 856,
+      "name": "Reminisce",
+      "reason": "unsupported effect: 'Look at 3 random non-TOKEN Dust monsters in your dustpile (max. 9 COST). Choose one to summon with Haste.'"
+    },
+    {
+      "id": 857,
+      "name": "Sandstorm",
+      "reason": "unsupported effect: 'Deal 1 DMG to all enemy monsters for each other card costing 1+ GOLD you played this turn.'"
+    },
+    {
+      "id": 858,
+      "name": "Trolley Problem",
+      "reason": "unsupported effect: 'Summon a Fake Train [#859].'"
+    },
+    {
+      "id": 859,
+      "name": "Fake Train",
+      "reason": "card 859: status text/metadata mismatch"
+    },
+    {
+      "id": 860,
+      "name": "Bounty",
+      "reason": "unsupported effect: 'Make 2 random enemy monsters Wanted. Delay: If both are dead, give 4 random monsters in your hand ATK +1/HP +1.'"
+    },
+    {
+      "id": 861,
+      "name": "Oasis",
+      "reason": "unsupported effect: 'Add 3 Change of Winds [#552] to your hand. Delay: Erase all Change of Winds [#552] in your hand to heal 3 HP to you for each.'"
+    },
+    {
+      "id": 862,
+      "name": "Arcade Samurai",
+      "reason": "unsupported effect: 'Summon 2 Arcade Bat [#863] for the opponent.'"
+    },
+    {
+      "id": 863,
+      "name": "Arcade Bat",
+      "reason": "card 863: status text/metadata mismatch"
+    },
+    {
+      "id": 864,
+      "name": "Axis",
+      "reason": "card 864: unsupported full text 'After this survives DMG, gain +1 base ATK. At 6+ base ATK, Overheat [#178].'"
+    },
+    {
+      "id": 865,
+      "name": "Gilbert",
+      "reason": "card 865: status text/metadata mismatch"
+    },
+    {
+      "id": 866,
+      "name": "Hard Hat",
+      "reason": "unsupported effect: 'Give a monster Armor.'"
+    },
+    {
+      "id": 867,
+      "name": "Organ Piano",
+      "reason": "card 867: unsupported full text 'Dust: Add a Lightning Bolt [#825] to your hand.'"
+    },
+    {
+      "id": 868,
+      "name": "Pancakes",
+      "reason": "unsupported effect: 'Fully heal a monster and heal the same amount of HP to you.'"
+    },
+    {
+      "id": 869,
+      "name": "Vengeful Virgil",
+      "reason": "card 869: status text/metadata mismatch"
+    },
+    {
+      "id": 870,
+      "name": "Angie",
+      "reason": "card 870: status text/metadata mismatch"
+    },
+    {
+      "id": 871,
+      "name": "Ice-E",
+      "reason": "unsupported effect: 'Paralyze a monster. If it was an ally monster costing 2+ GOLD, summon 2 Ice [#10].'"
+    },
+    {
+      "id": 872,
+      "name": "Bryan",
+      "reason": "card 872: unsupported full text 'After an enemy monster dies during your turn and Magic: Summon a Dynamite Stick [#513].'"
+    },
+    {
+      "id": 873,
+      "name": "Mo",
+      "reason": "unsupported effect: 'Add 3 random non-DT cards costing 5+ GOLD to your hand and give them -3 COST. Delay: Erase them from your hand.'"
+    },
+    {
+      "id": 874,
+      "name": "El Undercardio",
+      "reason": "unsupported effect: 'Fill your hand with random Pack (The better, the rarer!).'"
+    },
+    {
+      "id": 875,
+      "name": "Pack",
+      "reason": "unsupported effect: 'Look at 4 random monsters. Choose one to add to your hand.'"
+    },
+    {
+      "id": 876,
+      "name": "Super Pack",
+      "reason": "unsupported effect: 'Look at a COMMON, RARE, EPIC, and LEGENDARY monster. Choose one to add to your hand with -2 COST.'"
+    },
+    {
+      "id": 877,
+      "name": "Final Pack",
+      "reason": "unsupported effect: 'Look at a RARE, EPIC, LEGENDARY, and DT monster. Choose one to add to your hand with -2 COST and Haste.'"
+    },
+    {
+      "id": 878,
+      "name": "Ceroba Ketsukane",
+      "reason": "unsupported effect: 'Summon 2 Golden Mirror [#879] adjacent to this. They Catch the monsters in front of them. Turn start: Gain +1 Dodge.'"
+    },
+    {
+      "id": 879,
+      "name": "Golden Mirror",
+      "reason": "card 879: unsupported full text 'Non-TOKEN spells in the enemy hand have +1 COST. Dust: Release the caught monster.'"
+    },
+    {
+      "id": 880,
+      "name": "Martlet",
+      "reason": "card 880: status text/metadata mismatch"
+    },
+    {
+      "id": 881,
+      "name": "Cuptain",
+      "reason": "card 881: status text/metadata mismatch"
+    },
+    {
+      "id": 882,
+      "name": "Ramb",
+      "reason": "unsupported effect: 'Equip the Odd Controller [#70].'"
+    },
+    {
+      "id": 883,
+      "name": "Pixel Lancer",
+      "reason": "card 883: unsupported full text 'Delay: Cast Spade [#371] on the lowest HP enemy monster.'"
+    },
+    {
+      "id": 884,
+      "name": "Pixel Susie",
+      "reason": "unsupported effect: 'Set an ally monster’s stats to ATK 3/HP 3.'"
+    },
+    {
+      "id": 885,
+      "name": "Zoot Kris",
+      "reason": "unsupported effect: 'Add a Sharpshoot [#886] to your hand.'"
+    },
+    {
+      "id": 886,
+      "name": "Sharpshoot",
+      "reason": "card 886: status text/metadata mismatch"
+    },
+    {
+      "id": 887,
+      "name": "Zapper",
+      "reason": "card 887: unsupported full text 'Need: You spent GOLD on spells this turn. Magic: Erase a monster.'"
+    },
+    {
+      "id": 888,
+      "name": "White Cloak",
+      "reason": "card 888: unsupported full text 'Need: 7+ TOKEN monsters in your dustpile. Magic: Erase them and add a 2-COST Ice Crystal [#712] to your hand.'"
+    },
+    {
+      "id": 889,
+      "name": "Ribbick",
+      "reason": "unsupported effect: 'Deal 2 DMG to an ally monster and give it +2 ATK and Haste.'"
+    },
+    {
+      "id": 890,
+      "name": "Tenna",
+      "reason": "unsupported effect: 'Choose a non-DT monster in the enemy hand. Delay: Summon a Grand Prize that Catches it.'"
+    },
+    {
+      "id": 891,
+      "name": "Grand Prize",
+      "reason": "card 891: unsupported full text 'Dust: Release a copy of the caught monster to both hands. Give yours -1 COST.'"
+    },
+    {
+      "id": 892,
+      "name": "Knightdyne",
+      "reason": "unsupported effect: 'Deal 1 DMG to the lowest HP enemy monster 4 times. For each enemy killed, summon a base ATK 2/HP 3 Spear [#574] with Taunt.'"
+    },
+    {
+      "id": 893,
+      "name": "Treat Catcher",
+      "reason": "unsupported effect: 'Catch a non-TOKEN ally monster costing 2+ GOLD to gain Haste, Candy, and ATK +1/HP +1. Dust: Release it to your hand.'"
+    },
+    {
+      "id": 894,
+      "name": "Winglade",
+      "reason": "card 894: unsupported full text \"After an enemy monster with Haste or Charge is summoned, attack it. Magic: If there's a Taunt monster, gain Haste.\""
+    },
+    {
+      "id": 895,
+      "name": "Organikk",
+      "reason": "card 895: status text/metadata mismatch"
+    },
+    {
+      "id": 896,
+      "name": "Longanikk",
+      "reason": "card 896: status text/metadata mismatch"
+    },
+    {
+      "id": 897,
+      "name": "Titan Spawn",
+      "reason": "card 897: status text/metadata mismatch"
+    },
+    {
+      "id": 898,
+      "name": "Titan Serpent",
+      "reason": "card 898: status text/metadata mismatch"
+    },
+    {
+      "id": 899,
+      "name": "Friendogeny",
+      "reason": "unsupported effect: 'Draw a card. If this has ATK buffs, draw another. If this has HP buffs, gain Darkspawn.'"
+    },
+    {
+      "id": 900,
+      "name": "Gacha Ball",
+      "reason": "unsupported effect: 'Look at 4 random cards of the current Gachapon [#66] rarity and add one to your hand. Give a counter to Gachapon [#66].'"
+    },
+    {
+      "id": 901,
+      "name": "Titan",
+      "reason": "card 901: status text/metadata mismatch"
+    },
+    {
+      "id": 902,
+      "name": "Shadowguy",
+      "reason": "card 902: status text/metadata mismatch"
+    },
+    {
+      "id": 903,
+      "name": "Zoot Susie",
+      "reason": "card 903: status text/metadata mismatch"
+    },
+    {
+      "id": 904,
+      "name": "Zoot Ralsei",
+      "reason": "card 904: unsupported full text 'After an enemy Wanted monster dies, summon a base ATK 2/HP 3 copy of it. Magic: Make an enemy monster Wanted and deal 1 DMG to it.'"
+    },
+    {
+      "id": 905,
+      "name": "Lawnmower",
+      "reason": "card 905: status text/metadata mismatch"
+    },
+    {
+      "id": 906,
+      "name": "Pixel Lanino",
+      "reason": "unsupported effect: 'Summon a Pixel Elnina [#907] from your deck or hand.'"
+    },
+    {
+      "id": 907,
+      "name": "Pixel Elnina",
+      "reason": "unsupported effect: 'Summon a Pixel Lanino [#906] from your deck or hand.'"
+    },
+    {
+      "id": 908,
+      "name": "Rockstar Ralsei",
+      "reason": "card 908: status text/metadata mismatch"
+    },
+    {
+      "id": 909,
+      "name": "Rockstar Kris",
+      "reason": "card 909: status text/metadata mismatch"
+    },
+    {
+      "id": 910,
+      "name": "Golden Piano",
+      "reason": "unsupported effect: 'Gain ATK +1/HP +1 for every 2 monsters with a unique COST in your dustpile.'"
+    },
+    {
+      "id": 911,
+      "name": "Crossganikk",
+      "reason": "card 911: unsupported full text 'Need: You spent GOLD on spells last turn. Magic: Add 2 Dream [#536] to your hand.'"
+    },
+    {
+      "id": 912,
+      "name": "Jackenstein",
+      "reason": "unsupported effect: 'Both players enter a DARK ZONE [#69]. Yours starts with 6 less counters.'"
+    },
+    {
+      "id": 913,
+      "name": "Pumpkin Head",
+      "reason": "card 913: unsupported full text 'YOUR TAKING TOO LONG'"
+    },
+    {
+      "id": 914,
+      "name": "Cuptower",
+      "reason": "card 914: unsupported full text 'Dust: Summon 3 Cuptain [#881] with Haste.'"
+    },
+    {
+      "id": 915,
+      "name": "Cooking Poster",
+      "reason": "card 915: unsupported full text 'Dust: Add a Food Stack [#916] to your hand. If you already have a Food Stack [#916], give it +1 Loop instead.'"
+    },
+    {
+      "id": 916,
+      "name": "Food Stack",
+      "reason": "unsupported effect: 'Erase the copy. Deal 3 DMG to a random enemy monster. Repeat for every Loop this has.'"
+    },
+    {
+      "id": 917,
+      "name": "Rock Poster",
+      "reason": "card 917: status text/metadata mismatch"
+    },
+    {
+      "id": 918,
+      "name": "Rock Chord",
+      "reason": "unsupported effect: 'Summon a Rock [#108].'"
+    },
+    {
+      "id": 919,
+      "name": "Monster Poster",
+      "reason": "unsupported effect: 'Add a Susiezilla [#920] to your hand. Give it ATK +1/HP +1 for every 4 monsters in the enemy dustpile.'"
+    },
+    {
+      "id": 920,
+      "name": "Susiezilla",
+      "reason": "card 920: status text/metadata mismatch"
+    },
+    {
+      "id": 921,
+      "name": "Wicabel",
+      "reason": "card 921: unsupported full text 'Delay: If its HP is equal to its ATK, gain +2 ATK and fully heal this.'"
+    },
+    {
+      "id": 922,
+      "name": "Cooler Cooler",
+      "reason": "card 922: status text/metadata mismatch"
+    },
+    {
+      "id": 923,
+      "name": "Pixel Kris",
+      "reason": "card 923: unsupported full text \"Need: A monster with base COST of 2+ GOLD died this turn. Magic: Gain ATK equal to the ATK of the monster in front of this. If it's non-DT, make it Proceed [#703].\""
+    },
+    {
+      "id": 924,
+      "name": "Mizzle",
+      "reason": "unsupported effect: 'Heal 2 HP to the lowest HP damaged ally. If it was fully healed, gain ATK +1/HP +1.'"
+    },
+    {
+      "id": 925,
+      "name": "Guei",
+      "reason": "unsupported effect: 'Look at 2 random 1-COST, 2-COST, and 3-COST Dust monsters. Choose one to summon and kill.'"
+    },
+    {
+      "id": 926,
+      "name": "Carol",
+      "reason": "unsupported effect: 'Paralyze an enemy monster and its adjacent monsters.'"
+    },
+    {
+      "id": 927,
+      "name": "Gachapon Machine",
+      "reason": "unsupported effect: 'Look at 5 random non-DT monsters with a COST equal to the enemy GOLD (max. 15 GOLD). Choose one to summon.'"
+    },
+    {
+      "id": 928,
+      "name": "1225",
+      "reason": "unsupported effect: 'Erase the enemy hand.'"
+    },
+    {
+      "id": 929,
+      "name": "Chef Rouxls",
+      "reason": "unsupported effect: 'Addeth a Laser Pointere [#930] to your hand.'"
+    },
+    {
+      "id": 930,
+      "name": "Laser Pointere",
+      "reason": "unsupported effect: 'Choose an enemy monster. Its adjacent monsters attack it.'"
+    },
+    {
+      "id": 931,
+      "name": "Titan Fuzzy",
+      "reason": "card 931: status text/metadata mismatch"
+    },
+    {
+      "id": 933,
+      "name": "Meta Flowey",
+      "reason": "card 933: unsupported full text \"Immune to DMG if there's a Flowey [#54] and this doesn't have Taunt. Magic: Summon a Flowey [#54] in EVERY empty board space.\""
+    },
+    {
+      "id": 934,
+      "name": "Fireball",
+      "reason": "card 934: missing card type"
+    },
+    {
+      "id": 935,
+      "name": "Roaring Knight",
+      "reason": "card 935: status text/metadata mismatch"
+    },
+    {
+      "id": 936,
+      "name": "Black Knife",
+      "reason": "unsupported effect: 'Turbo: Erase this and draw a card. Deal 6 DMG randomly split among all ally monsters. Take any DMG not dealt.'"
+    },
+    {
+      "id": 937,
+      "name": "Friendliness Pellets",
+      "reason": "card 937: missing card type"
+    },
+    {
+      "id": 938,
+      "name": "Suspicious Poff",
+      "reason": "card 938: missing card type"
+    },
+    {
+      "id": 939,
+      "name": "Throw the Stick",
+      "reason": "card 939: missing card type"
+    },
+    {
+      "id": 940,
+      "name": "Strange Machine",
+      "reason": "card 940: unsupported full text 'This takes 1 less DMG for each enemy slot enchantment. Magic: Enchant enemy slots with a Green, Yellow, Purple, and Orange Tile.'"
+    },
+    {
+      "id": 941,
+      "name": "Jogboy Papyrus",
+      "reason": "unsupported effect: 'Enchant all enemy slots with Blue Bones.'"
+    },
+    {
+      "id": 942,
+      "name": "Wall of Fire",
+      "reason": "unsupported effect: 'Enchant all empty and unenchanted enemy slots with The Flame.'"
+    },
+    {
+      "id": 943,
+      "name": "Fire-E",
+      "reason": "unsupported effect: 'Enchant an ally board slot with Incinerator.'"
+    },
+    {
+      "id": 944,
+      "name": "Absolute Pack",
+      "reason": "card 944: missing card type"
+    },
+    {
+      "id": 945,
+      "name": "Arcade Mew Mew",
+      "reason": "unsupported effect: 'Halve the stats of the non-DT monster in front of this and summon an exact copy of it.'"
+    },
+    {
+      "id": 946,
+      "name": "Tall Bloxer",
+      "reason": "unsupported effect: 'Summon 3 random non-TOKEN monsters costing 3 or less GOLD from your dustpile.'"
+    },
+    {
+      "id": 947,
+      "name": "Wild Revolver",
+      "reason": "unsupported effect: 'Deal 6 DMG to a monster. For every excess DMG, give a random different monster in your hand COST -1/ATK +1/HP +1 and Wanted.'"
+    },
+    {
+      "id": 948,
+      "name": "Blackjack",
+      "reason": "card 948: unsupported full text 'Delay: Add a Wild Revolver [#947] to the top 6 cards of your deck. If a monster died with exactly 0 HP remaining this turn, add it to your hand instead.'"
+    },
+    {
+      "id": 949,
+      "name": "Moray",
+      "reason": "card 949: unsupported full text 'After a Wanted monster dies, deal 1 DMG to all enemy monsters. Magic: Deal 2 DMG to all enemy monsters.'"
+    },
+    {
+      "id": 950,
+      "name": "Plague Doctor",
+      "reason": "card 950: status text/metadata mismatch"
+    },
+    {
+      "id": 951,
+      "name": "Fire Fountain",
+      "reason": "card 951: unsupported full text 'Dust: Enchant this slot with The Flame.'"
+    },
+    {
+      "id": 952,
+      "name": "Miss Mizzle",
+      "reason": "card 952: unsupported full text 'Monsters heal 2 more HP to allies. Magic and Dust: Summon a ATK 1/HP 1 Mizzle [#924].'"
+    },
+    {
+      "id": 953,
+      "name": "Maus Hand",
+      "reason": "unsupported effect: 'Summon a copy of a monster with a base COST of 2 or less GOLD.'"
+    },
+    {
+      "id": 954,
+      "name": "Violetta",
+      "reason": "unsupported effect: 'Add a Blue Rose [#462] to your hand. Give it -1 COST for each other ally monster.'"
+    },
+    {
+      "id": 955,
+      "name": "Hammer of Justice",
+      "reason": "unsupported effect: \"Give an ally monster ATK +3/HP +3 and Haste. Enchant its slot with Gerson's Hammer.\""
+    },
+    {
+      "id": 956,
+      "name": "Tuning Fork",
+      "reason": "card 956: unsupported full text \"Delay: If this monster's HP equals the amount of cards in your hand, gain ATK +1/HP +1 and draw 2 cards.\""
+    },
+    {
+      "id": 957,
+      "name": "Pixel Lizard",
+      "reason": "unsupported effect: 'If you spent GOLD on TOKEN cards (except Lightning Bolt [#825]) this turn, add a Lightning Bolt [#825] to your hand.'"
+    },
+    {
+      "id": 958,
+      "name": "Rockstar Susie",
+      "reason": "card 958: status text/metadata mismatch"
+    },
+    {
+      "id": 960,
+      "name": "Shinobeetle",
+      "reason": "card 960: status text/metadata mismatch"
+    },
+    {
+      "id": 961,
+      "name": "Shi",
+      "reason": "unsupported effect: 'Switch: [左侧] Give all other ally monsters ATK +1/HP +1 or [右侧] Deal 1 DMG to all enemies.'"
+    },
+    {
+      "id": 962,
+      "name": "Trial Kris",
+      "reason": "card 962: unsupported full text 'Delay: Equip the True Justice [#37] artifact and give it a counter for every monster that died this turn.'"
+    },
+    {
+      "id": 963,
+      "name": "Strengthmeter",
+      "reason": "unsupported effect: 'Gain the ATK of adjacent monsters.'"
+    },
+    {
+      "id": 964,
+      "name": "Mantis Dancer",
+      "reason": "unsupported effect: 'Deal 3 DMG. If it kills, cast Carousel [#458].'"
+    },
+    {
+      "id": 965,
+      "name": "Blue",
+      "reason": "card 965: status text/metadata mismatch"
+    },
+    {
+      "id": 966,
+      "name": "Hopschef",
+      "reason": "unsupported effect: \"Summon a ATK 1/HP 2 Sauerdough [#959] for the opponent. Delay: If it's dead, summon a Sauerdough [#959] for you. Otherwise, kill it.\""
+    },
+    {
+      "id": 967,
+      "name": "Floradinn",
+      "reason": "unsupported effect: 'Add 2 Green Clover [#375] to your hand.'"
+    },
+    {
+      "id": 968,
+      "name": "Cherry Tree",
+      "reason": "unsupported effect: 'Give yourself +3 HP.'"
+    },
+    {
+      "id": 969,
+      "name": "Mew Mew Magic",
+      "reason": "unsupported effect: \"Halve an ally monster's ATK and HP. Gain Doki equal to the amount of stats reduced.\""
+    },
+    {
+      "id": 970,
+      "name": "Aqua",
+      "reason": "card 970: unsupported full text \"Need: You've drawn 3+ cards this turn. Magic: Deal 1 DMG to all enemies and draw a card.\""
+    },
+    {
+      "id": 971,
+      "name": "Duck of Doom",
+      "reason": "card 971: status text/metadata mismatch"
+    },
+    {
+      "id": 972,
+      "name": "Terakota",
+      "reason": "unsupported effect: 'Enchant an ally slot with Soil.'"
+    },
+    {
+      "id": 973,
+      "name": "Trial Susie",
+      "reason": "card 973: unsupported full text \"After this attacks and survives, set all monsters' HP to this card's HP and Silence this.\""
+    },
+    {
+      "id": 974,
+      "name": "Mr Butterfly",
+      "reason": "card 974: unsupported full text 'Need: You played another card costing 6+ GOLD this turn. Magic: Summon a Blue Rose [#462].'"
+    },
+    {
+      "id": 975,
+      "name": "Trial Ralsei",
+      "reason": "card 975: unsupported full text 'Delay: Summon a ATK 3/HP 3 copy of all non-DT ally monsters that died this turn.'"
+    },
+    {
+      "id": 976,
+      "name": "Leafling",
+      "reason": "card 976: status text/metadata mismatch"
+    },
+    {
+      "id": 977,
+      "name": "Pink",
+      "reason": "card 977: unsupported full text \"Mew Mew Magic [#969] can be used on enemy monsters. Quest: Let's fill the Quest [#76], mew!\""
+    },
+    {
+      "id": 978,
+      "name": "Pink's Ghost",
+      "reason": "card 978: unsupported full text \"Before this attacks a monster, halve its stats. If it's non-DT, add an exact copy of it to your hand.\""
+    },
+    {
+      "id": 979,
+      "name": "Green",
+      "reason": "card 979: unsupported full text 'Need: Allies healed 12+ HP this game. Magic: Give all other ally monsters ATK +1/HP +1 and Candy.'"
+    },
+    {
+      "id": 980,
+      "name": "Seth",
+      "reason": "card 980: unsupported full text 'Need: 3+ other monsters with negative effects. Magic: Give all enemy monsters ATK -2/HP -2.'"
+    },
+    {
+      "id": 981,
+      "name": "Orange",
+      "reason": "card 981: unsupported full text 'Need: Your monsters attacked 3+ times this turn. Magic: Give all ally monsters +1 ATK and Haste. They can attack again.'"
+    },
+    {
+      "id": 982,
+      "name": "Yellow",
+      "reason": "card 982: unsupported full text 'Need: 2+ monsters were killed by spells or effects this turn. Magic: Add a Quick Draw [#855] with Loop (2) to your hand.'"
+    },
+    {
+      "id": 983,
+      "name": "Our OMEGA!",
+      "reason": "unsupported effect: 'Look at Aqua [#970], Seth [#980], Green [#979], Yellow [#982], Blue [#965] and Orange [#981]. Add one to your hand. Delay: Send it from your hand to your deck.'"
+    },
+    {
+      "id": 984,
+      "name": "Terakota Archer",
+      "reason": "card 984: status text/metadata mismatch"
+    },
+    {
+      "id": 985,
+      "name": "Giant Shrubbery",
+      "reason": "card 985: unsupported full text 'Adjacent Plant have ATK +2/HP +2.'"
+    },
+    {
+      "id": 986,
+      "name": "Flowery",
+      "reason": "card 986: unsupported full text 'Quest: Obtain the Quest [#77]. After this attacks and kills a monster and Magic: Add an Our OMEGA! [#983] to your hand.'"
+    },
+    {
+      "id": 987,
+      "name": "Spikery",
+      "reason": "card 987: unsupported full text 'Need: You spent GOLD on a spell and a monster last turn. Magic: Add 3 Shield [#576] to your hand.'"
+    },
+    {
+      "id": 988,
+      "name": "Wind Struggler",
+      "reason": "card 988: unsupported full text 'All other monsters take +1 DMG.'"
+    },
+    {
+      "id": 989,
+      "name": "Vampire Alvin",
+      "reason": "unsupported effect: \"Give a non-DT monster COST -3/ATK -3/HP -3 (min. 1 HP). Delay: If it's alive, add an exact copy of it to your hand.\""
+    },
+    {
+      "id": 990,
+      "name": "Kawkaw",
+      "reason": "unsupported effect: 'Give a monster ATK +1/HP +3 and Paralyze it.'"
+    },
+    {
+      "id": 991,
+      "name": "Raincoat Spider",
+      "reason": "card 991: unsupported full text 'After you play an Arachnid not Generated by Raincoat Spider [#991], add a Spider [#115] to your hand.'"
+    },
+    {
+      "id": 992,
+      "name": "Ice-E Banner",
+      "reason": "unsupported effect: 'Silence a monster. Then Paralyze it, give it KR, and make it Wanted.'"
+    },
+    {
+      "id": 993,
+      "name": "Lost Noelle",
+      "reason": "card 993: unsupported full text 'Quest: Quest [#80]. Magic: Kill all other ally monsters. Add a 2-COST Ice Crystal [#712] to your hand for each.'"
+    },
+    {
+      "id": 994,
+      "name": "Woshing Soap",
+      "reason": "card 994: missing card type"
+    },
+    {
+      "id": 995,
+      "name": "Cotton Madness",
+      "reason": "card 995: missing card type"
+    },
+    {
+      "id": 996,
+      "name": "Magic Dummy",
+      "reason": "card 996: missing card type"
+    },
+    {
+      "id": 997,
+      "name": "Dummy Bot",
+      "reason": "card 997: missing card type"
+    },
+    {
+      "id": 998,
+      "name": "Flee!",
+      "reason": "card 998: missing card type"
+    },
+    {
+      "id": 999,
+      "name": "White Flower",
+      "reason": "card 999: status text/metadata mismatch"
+    },
+    {
+      "id": 1000,
+      "name": "Armored Undyne",
+      "reason": "unsupported effect: 'For each unique non-Generated Royal Guard in your dustpile, summon a Spear [#574] that attacks the lowest HP enemy.'"
+    }
+  ],
+  "interpretation": "Strict text coverage only; semantic guards can still reject transitions. New implementation, not recovered historical paid engine."
+}

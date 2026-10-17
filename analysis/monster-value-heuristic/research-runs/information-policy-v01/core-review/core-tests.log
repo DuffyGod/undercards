@@ -1,0 +1,52 @@
+test_armor_reduces_each_instance (finite_game.test_engine.PhysicalEngineTests.test_armor_reduces_each_instance) ... ok
+test_attack_and_play_both_orders (finite_game.test_engine.PhysicalEngineTests.test_attack_and_play_both_orders) ... ok
+test_body_capacity (finite_game.test_engine.PhysicalEngineTests.test_body_capacity) ... ok
+test_boolean_phase_key_not_coerced_to_one (finite_game.test_engine.PhysicalEngineTests.test_boolean_phase_key_not_coerced_to_one) ... ok
+test_buff_cannot_choose_caster_and_empty_rule_unknown (finite_game.test_engine.PhysicalEngineTests.test_buff_cannot_choose_caster_and_empty_rule_unknown) ... ok
+test_cost_predicate_disagreement_unknown (finite_game.test_engine.PhysicalEngineTests.test_cost_predicate_disagreement_unknown) ... ok
+test_declared_hand_cost_is_paid (finite_game.test_engine.PhysicalEngineTests.test_declared_hand_cost_is_paid) ... ok
+test_dodge_precedes_armor (finite_game.test_engine.PhysicalEngineTests.test_dodge_precedes_armor) ... ok
+test_enemy_generated_delay_does_not_leak_before_resolution (finite_game.test_engine.PhysicalEngineTests.test_enemy_generated_delay_does_not_leak_before_resolution) ... ok
+test_four_phase_horizon (finite_game.test_engine.PhysicalEngineTests.test_four_phase_horizon) ... ok
+test_fresh_charge_face (finite_game.test_engine.PhysicalEngineTests.test_fresh_charge_face) ... ok
+test_fresh_haste_only_monsters (finite_game.test_engine.PhysicalEngineTests.test_fresh_haste_only_monsters) ... ok
+test_fresh_plain_does_not_attack (finite_game.test_engine.PhysicalEngineTests.test_fresh_plain_does_not_attack) ... ok
+test_full_text_unknown_is_not_vanilla (finite_game.test_engine.PhysicalEngineTests.test_full_text_unknown_is_not_vanilla) ... ok
+test_generated_flags_validate_physical_length_and_type (finite_game.test_engine.PhysicalEngineTests.test_generated_flags_validate_physical_length_and_type) ... ok
+test_generated_worsening_does_not_copy (finite_game.test_engine.PhysicalEngineTests.test_generated_worsening_does_not_copy) ... ok
+test_goal_same_body_conjunction (finite_game.test_engine.PhysicalEngineTests.test_goal_same_body_conjunction) ... ok
+test_heal_fatigue_order_unknown (finite_game.test_engine.PhysicalEngineTests.test_heal_fatigue_order_unknown) ... ok
+test_hidden_identity_and_physical_index_absent (finite_game.test_engine.PhysicalEngineTests.test_hidden_identity_and_physical_index_absent) ... ok
+test_jerry_cost_defense_and_unknown_guard (finite_game.test_engine.PhysicalEngineTests.test_jerry_cost_defense_and_unknown_guard) ... ok
+test_known_draw_and_fatigue (finite_game.test_engine.PhysicalEngineTests.test_known_draw_and_fatigue) ... ok
+test_late_payment_retains_balance (finite_game.test_engine.PhysicalEngineTests.test_late_payment_retains_balance) ... ok
+test_magic_cannot_choose_caster (finite_game.test_engine.PhysicalEngineTests.test_magic_cannot_choose_caster) ... ok
+test_missing_draw_library_unknown (finite_game.test_engine.PhysicalEngineTests.test_missing_draw_library_unknown) ... ok
+test_next_turn_refreshes_plain (finite_game.test_engine.PhysicalEngineTests.test_next_turn_refreshes_plain) ... ok
+test_none_card_type_is_unknown (finite_game.test_engine.PhysicalEngineTests.test_none_card_type_is_unknown) ... ok
+test_observed_completed_magic_is_not_replayed (finite_game.test_engine.PhysicalEngineTests.test_observed_completed_magic_is_not_replayed) ... ok
+test_observed_cost_not_inferred_from_printed_identity (finite_game.test_engine.PhysicalEngineTests.test_observed_cost_not_inferred_from_printed_identity) ... ok
+test_observed_stats_and_phase_resources_require_exact_integers (finite_game.test_engine.PhysicalEngineTests.test_observed_stats_and_phase_resources_require_exact_integers) ... ok
+test_paid_native_cost (finite_game.test_engine.PhysicalEngineTests.test_paid_native_cost) ... ok
+test_public_enemy_play_ignores_hidden_hand_index (finite_game.test_engine.PhysicalEngineTests.test_public_enemy_play_ignores_hidden_hand_index) ... ok
+test_resources_require_exact_integers (finite_game.test_engine.PhysicalEngineTests.test_resources_require_exact_integers) ... ok
+test_root_silenced_does_not_restore_printed_taunt (finite_game.test_engine.PhysicalEngineTests.test_root_silenced_does_not_restore_printed_taunt) ... ok
+test_seven_hand_draw_burns (finite_game.test_engine.PhysicalEngineTests.test_seven_hand_draw_burns) ... ok
+test_silence_dt_is_immune (finite_game.test_engine.PhysicalEngineTests.test_silence_dt_is_immune) ... ok
+test_silence_modified_attack_unknown (finite_game.test_engine.PhysicalEngineTests.test_silence_modified_attack_unknown) ... ok
+test_silence_modified_maximum_unknown (finite_game.test_engine.PhysicalEngineTests.test_silence_modified_maximum_unknown) ... ok
+test_silence_removes_taunt (finite_game.test_engine.PhysicalEngineTests.test_silence_removes_taunt) ... ok
+test_simultaneous_retaliation (finite_game.test_engine.PhysicalEngineTests.test_simultaneous_retaliation) ... ok
+test_start_self_gain_and_heal (finite_game.test_engine.PhysicalEngineTests.test_start_self_gain_and_heal) ... ok
+test_target_magic_pays_and_damages (finite_game.test_engine.PhysicalEngineTests.test_target_magic_pays_and_damages) ... ok
+test_taunt_blocks_face (finite_game.test_engine.PhysicalEngineTests.test_taunt_blocks_face) ... ok
+test_terminal_draw_stops_remaining_events (finite_game.test_engine.PhysicalEngineTests.test_terminal_draw_stops_remaining_events) ... ok
+test_unaffordable_no_play (finite_game.test_engine.PhysicalEngineTests.test_unaffordable_no_play) ... ok
+test_unknown_configuration_fields_are_rejected (finite_game.test_engine.PhysicalEngineTests.test_unknown_configuration_fields_are_rejected) ... ok
+test_unknown_observed_maximum_healing_rejected (finite_game.test_engine.PhysicalEngineTests.test_unknown_observed_maximum_healing_rejected) ... ok
+test_worsening_delay_generated_once_and_paid (finite_game.test_engine.PhysicalEngineTests.test_worsening_delay_generated_once_and_paid) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 0.011s
+
+OK

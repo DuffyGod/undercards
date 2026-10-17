@@ -1,0 +1,19 @@
+{
+  "suite": "finite_game.test_engine",
+  "tests": 47,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "passed": true,
+  "elapsed_seconds": 0.011242772000514378,
+  "sources_sha256": {
+    "finite_game/root_mix.py": "4b888e1ebbb6c07e88c0095e5ed8794fbf3dbd2937406319c302f59dd61e42f5",
+    "finite_game/test_belief.py": "fe802424f188b6dbc427bc39c75fe1d5bb29fa10fa203956c7b206f1731065f4",
+    "finite_game/engine.py": "1e07e0f44219b38863f6b0873b213ccd060db614d0d6ba4a56d509891ea02564",
+    "finite_game/test_root_mix.py": "47878f94711e2bff3ddaec710b538e1a8a7a5b638b05ca2c29566ab64092d02b",
+    "finite_game/test_engine.py": "48f5a07e6c5d5d151d2015e30d940c033b746a837f845455d0b47d57eef0c309",
+    "finite_game/rules.py": "d39e6726d15f4b7973551e414f91a2f1f410db9f55126eb64b845aaf712d9f76",
+    "finite_game/__init__.py": "91c62e2a29ddc11385ea446b56a2680f8682c16b2530af881c97b6cfb118f63a",
+    "finite_game/belief.py": "e13517d7d211bbfb5dc12c23dd51a3b9a6af8a33ae6759e7024acb63743ebc95"
+  }
+}

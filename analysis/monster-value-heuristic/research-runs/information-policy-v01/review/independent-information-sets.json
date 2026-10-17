@@ -1,0 +1,224 @@
+{
+  "source_sha256": "e5020a3fcee3ed69d47ba8d5c63fc3bb0884892fd4075226fe75cdbfc784b476",
+  "visible_response": {
+    "branches": {
+      "Snowdrake:buff_old": {
+        "old": 5,
+        "new": 4
+      },
+      "Snowdrake:buff_self": {
+        "old": 3,
+        "new": 6
+      },
+      "Aaron:play": {
+        "old": 3,
+        "new": 6
+      },
+      "Snowdrake:hold": {
+        "old": 3
+      },
+      "Aaron:hold": {
+        "old": 3
+      }
+    },
+    "all_own_action_values": {
+      "Snowdrake:buff_old": {
+        "kill_old": 11,
+        "kill_new": 10,
+        "self_damage": 0,
+        "hold": 6
+      },
+      "Snowdrake:buff_self": {
+        "kill_old": 9,
+        "kill_new": 12,
+        "self_damage": 0,
+        "hold": 6
+      },
+      "Aaron:play": {
+        "kill_old": 9,
+        "kill_new": 12,
+        "self_damage": 0,
+        "hold": 6
+      },
+      "Snowdrake:hold": {
+        "kill_old": 15,
+        "kill_new": null,
+        "self_damage": 2,
+        "hold": 10
+      },
+      "Aaron:hold": {
+        "kill_old": 15,
+        "kill_new": null,
+        "self_damage": 4,
+        "hold": 12
+      }
+    },
+    "observed_history_optimal_actions": {
+      "Snowdrake:buff_old": {
+        "value": 11,
+        "actions": [
+          "kill_old"
+        ]
+      },
+      "Snowdrake:buff_self": {
+        "value": 12,
+        "actions": [
+          "kill_new"
+        ]
+      },
+      "Aaron:play": {
+        "value": 12,
+        "actions": [
+          "kill_new"
+        ]
+      },
+      "Snowdrake:hold": {
+        "value": 15,
+        "actions": [
+          "kill_old"
+        ]
+      },
+      "Aaron:hold": {
+        "value": 15,
+        "actions": [
+          "kill_old"
+        ]
+      }
+    },
+    "correct_observation_adaptive_guarantee": 11,
+    "incorrect_identical_future_target_guarantee": 10,
+    "displayed_matrix": {
+      "kill_old": {
+        "Snowdrake:buff_old": 11,
+        "Aaron:play": 9
+      },
+      "kill_new": {
+        "Snowdrake:buff_old": 10,
+        "Aaron:play": 12
+      }
+    },
+    "note": "Held-menu public histories are equal and both use kill_old. Different played cards/buffs are public and permit different target actions."
+  },
+  "same_public_action_hidden_menu": {
+    "worlds": [
+      {
+        "private_enemy_hand": [
+          {
+            "card_id": 79,
+            "generated": true
+          }
+        ],
+        "public": {
+          "phase": "own_turn_after_enemy_end",
+          "own_hp": 15,
+          "enemy_hp": 30,
+          "own_gold": 5,
+          "enemy_gold": 2,
+          "own_hand": [
+            14,
+            15
+          ],
+          "enemy_hand_count": 1,
+          "enemy_soul": "PERSEVERANCE",
+          "earlier_common_history": "Bone Box402 generated one hidden spell costing <=3 GOLD; source no longer on board",
+          "own_board": [],
+          "enemy_board": [
+            {
+              "key": "old",
+              "card_id": 246,
+              "attack": 3,
+              "health": 6,
+              "current_cost": 4,
+              "base_cost": 4,
+              "printed_cost": 4
+            }
+          ],
+          "public_history": [
+            {
+              "actor": "enemy",
+              "action": "attack_face",
+              "source": "old",
+              "damage": 3,
+              "own_hp_before": 18,
+              "own_hp_after": 15
+            },
+            {
+              "actor": "enemy",
+              "action": "end_turn"
+            }
+          ]
+        }
+      },
+      {
+        "private_enemy_hand": [
+          {
+            "card_id": 86,
+            "generated": true
+          }
+        ],
+        "public": {
+          "phase": "own_turn_after_enemy_end",
+          "own_hp": 15,
+          "enemy_hp": 30,
+          "own_gold": 5,
+          "enemy_gold": 2,
+          "own_hand": [
+            14,
+            15
+          ],
+          "enemy_hand_count": 1,
+          "enemy_soul": "PERSEVERANCE",
+          "earlier_common_history": "Bone Box402 generated one hidden spell costing <=3 GOLD; source no longer on board",
+          "own_board": [],
+          "enemy_board": [
+            {
+              "key": "old",
+              "card_id": 246,
+              "attack": 3,
+              "health": 6,
+              "current_cost": 4,
+              "base_cost": 4,
+              "printed_cost": 4
+            }
+          ],
+          "public_history": [
+            {
+              "actor": "enemy",
+              "action": "attack_face",
+              "source": "old",
+              "damage": 3,
+              "own_hp_before": 18,
+              "own_hp_after": 15
+            },
+            {
+              "actor": "enemy",
+              "action": "end_turn"
+            }
+          ]
+        }
+      }
+    ],
+    "public_observations_sha256": [
+      "ff18096176a766fb3b5c182f1bdb2c8ed816a21d3f1feee375dafe39103ec5b0",
+      "ff18096176a766fb3b5c182f1bdb2c8ed816a21d3f1feee375dafe39103ec5b0"
+    ],
+    "required_shared_root_action": true,
+    "forbidden_policy": {
+      "private_[79]": "play_Aaron",
+      "private_[86]": "play_Jerry"
+    },
+    "forbidden_policy_world_values": [
+      12,
+      15
+    ],
+    "forbidden_policy_min": 12,
+    "valid_common_policy": "play_Aaron; next own turn attack live enemy",
+    "valid_common_policy_world_values": [
+      12,
+      9
+    ],
+    "valid_common_policy_min": 9,
+    "independent_bound_reference": "independent-hidden-menu.json",
+    "note": "An enemy declining to reveal a card does not split own information sets without an independently justified public inference rule."
+  }
+}
