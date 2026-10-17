@@ -17,7 +17,7 @@ import context_value as ledger
 import heuristic_contexts as contexts
 import score_cards as base
 
-VERSION='common-state-reservation-0.3.1'
+VERSION='common-state-reservation-0.3.2'
 HERE=Path(__file__).resolve().parent
 ROLES=contexts.ROLES
 DEFAULT_PROFILE={
@@ -339,6 +339,7 @@ def score(card,reference,profile=None,include_rows=True):
         weight=sum(r['weight'] for r in group)
         tasks[role]=sum(r['weight']*r['adjusted_net_quote_model_gold'] for r in group)/weight if known and weight else None
     return dict(card_id=card['id'],name=card['name'],nominal_cost=card['cost'],printed_effect=card['effect_readable'],
+                assessment_evidence=base.assessment_evidence(),
                 profile_name=profile['name'],profile_sha256=hashlib.sha256(json.dumps(profile,sort_keys=True).encode()).hexdigest(),
                 weight_sum=sum(r['weight'] for r in rows),context_count=len(rows),
                 support_status='supported_local_heuristic' if supported else 'partial',
@@ -367,6 +368,7 @@ def main():
     chosen=[c for c in cards if c['id'] in args.cards] if args.cards else [c for c in cards if c['card_type']=='monster' and c['pool_category']=='ordinary_non_token' and 4<=c['cost']<=8]
     if args.cards and set(args.cards)!={c['id'] for c in chosen}: raise ValueError('Unknown card IDs')
     output=dict(version=VERSION,ledger_version=ledger.VERSION,profile=profile,reference_cost_counts=counts,
+                assessment_evidence=base.assessment_evidence(),
                 shared_state_weights=True,prices_are_normative=True,scores=[score(c,reference,profile,not args.compact) for c in chosen])
     args.output.parent.mkdir(parents=True,exist_ok=True)
     args.output.write_text(json.dumps(output,ensure_ascii=False,indent=2),encoding='utf-8')

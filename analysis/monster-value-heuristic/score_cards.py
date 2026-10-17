@@ -17,6 +17,21 @@ import re
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_SNAPSHOT = ROOT / "skills/undercards/references/snapshot.json"
 PARAMETER_VERSION = "heuristic-ledger-0.1.0"
+ASSESSMENT_POLICY_VERSION = "heuristic-evidence-1"
+
+
+def assessment_evidence():
+    """Label a quote's evidence separately from mechanical template support."""
+    return {
+        "policy_version": ASSESSMENT_POLICY_VERSION,
+        "assessment_kind": "heuristic",
+        "empirically_calibrated": False,
+        "numeric_meaning": "normative model-G, not measured Gold equivalence or win rate",
+        "missing_later_experiments_used": False,
+        "uncertainty_meaning": "scenario/parameter sensitivity, not a statistical confidence interval",
+    }
+
+
 ANCHOR = {"card_id": 15, "name": "Aaron", "attack": 6, "health": 5,
           "model_gold": 5, "meaning": "printed-body scale anchor, not a strength label"}
 ROLE_PARAMETERS = {
@@ -310,6 +325,7 @@ def score_card(card, reference, annotation=None, batch_consistency_passed=None,
         roles[role] = row
     subtotal = [r["net_model_gold"] for r in contexts.values()]
     return {"card_id": card["id"], "name": card["name"], "attack": card["attack"],
+            "assessment_evidence": assessment_evidence(),
             "health": card["health"], "printed_effect": card.get("effect_readable", ""),
             "support_status": status, "complete_score_available": complete,
             "gross_model_gold": central["gross_model_gold"] if complete else None,
@@ -362,6 +378,7 @@ def run(cards, ids=None, annotations=None, snapshot_path=DEFAULT_SNAPSHOT):
     scores = [score_card(by_id[cid], reference, annot.get(cid), batch_pass,
                          semantic_required, semantic_pass) for cid in selected]
     return {"parameter_version": PARAMETER_VERSION, "snapshot": str(snapshot_path),
+            "assessment_evidence": assessment_evidence(),
             "snapshot_sha256": digest, "anchor": ANCHOR,
             "assumptions": ["No actual matchup or deck distribution is estimated.",
                             "Equal four roles and equal 4-7G cost strata are normative assumptions.",
