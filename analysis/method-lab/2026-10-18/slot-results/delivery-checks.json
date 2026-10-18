@@ -1,0 +1,28 @@
+{
+  "gzip_checks": [
+    {
+      "name": "slot-primary.csv",
+      "bytes": 357506,
+      "roundtrip": true,
+      "deterministic_recompression_equal": true,
+      "mtime": 0,
+      "filename_flag_absent": true
+    },
+    {
+      "name": "slot-reference-sensitivity.csv",
+      "bytes": 225767,
+      "roundtrip": true,
+      "deterministic_recompression_equal": true,
+      "mtime": 0,
+      "filename_flag_absent": true
+    }
+  ],
+  "actual_handcalculation_tests": {
+    "tests_run": 8,
+    "failures": 0,
+    "errors": 0,
+    "command": "python -B -m unittest discover -s analysis/method-lab/2026-10-18 -p test_slot_value.py -v",
+    "evidence": "Completed after final mathematical/source edits; see task tool transcript."
+  },
+  "not_external_calibration": true
+}

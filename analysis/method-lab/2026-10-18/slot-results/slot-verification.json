@@ -1,0 +1,22 @@
+{
+  "primary_rows": 22140,
+  "alternate_reference_rows": 22140,
+  "summary_rows": 900,
+  "elapsed_seconds": 5.078000000008615,
+  "invariant_failure_counts": {
+    "fixed_attack_exceeds_reoptimization": 0,
+    "negative_attack_gain": 0,
+    "negative_cash_gain": 0,
+    "negative_slot_gain": 0,
+    "identity_failure": 0
+  },
+  "invariant_failures": {
+    "fixed_attack_exceeds_reoptimization": [],
+    "negative_attack_gain": [],
+    "negative_cash_gain": [],
+    "negative_slot_gain": [],
+    "identity_failure": []
+  },
+  "same_slot_identity_cases": 36,
+  "not_external_calibration": true
+}

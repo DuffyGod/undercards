@@ -1,0 +1,99 @@
+{
+  "producer_hashes": {
+    "demand-stress/provenance.json": {
+      "value_model.py": true,
+      "statistical_value.py": true,
+      "run_statistical_study.py": true,
+      "discount_statistics.py": true,
+      "demand_stress.py": true
+    },
+    "joint-stress/joint-design.json": {
+      "joint_stress.py": true,
+      "compressed_statistics.py": true,
+      "statistical_value.py": true,
+      "run_statistical_study.py": true,
+      "discount_statistics.py": true,
+      "value_model.py": true,
+      "statistical_inputs.json": true
+    },
+    "joint-stress/prototype-design.json": {
+      "prototype_stress.py": true,
+      "compressed_statistics.py": true,
+      "statistical_value.py": true,
+      "run_statistical_study.py": true,
+      "statistical_inputs.json": true,
+      "demand-stress/panels.json": true,
+      "joint-stress/joint-design.json": true
+    },
+    "slot-results/slot-design.json": {
+      "slot_value.py": true,
+      "run_slot_study.py": true,
+      "test_slot_value.py": true,
+      "statistical_value.py": true,
+      "value_model.py": true
+    }
+  },
+  "archives": [
+    {
+      "file": "slot-primary.csv.gz",
+      "gzip_sha256": "df1541982e9aa709a36e9a31ed8d15a765c2db6d06272dbdfbb9c62a0757ad4a",
+      "lossless": true,
+      "bytes": 357506,
+      "mtime": 0,
+      "no_filename": true
+    },
+    {
+      "file": "slot-reference-sensitivity.csv.gz",
+      "gzip_sha256": "01675f5272118466190d3b1b587152a8d299301c250dbd0df64b4631abdc1248",
+      "lossless": true,
+      "bytes": 225767,
+      "mtime": 0,
+      "no_filename": true
+    }
+  ],
+  "original_central_scalar_checks": 475,
+  "original_central_max_difference_below": 1e-09,
+  "negative_hp_physical_counterexample": {
+    "enemy": [
+      [
+        4,
+        3
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "parameters": {
+      "face_share": 0.35,
+      "threshold": 0.6,
+      "tail": 0.0,
+      "face": 0.15
+    },
+    "card_id": 469,
+    "base_q": 5.651550972766631,
+    "plus_hp_q": 4.288757043112638,
+    "hp_difference": -1.3627939296539928,
+    "base_plan": "deploy:attack_0",
+    "plus_hp_plan": "deploy:attack_0",
+    "meaning": "Same attack; original B dies and summons O now, extraHP leaves B3/1 and defers Dust. No future Dust reserve at tail0."
+  },
+  "actual_tests": {
+    "command": "python -B -m unittest discover -s analysis/method-lab/2026-10-18 -p test_*.py -v",
+    "passed": 39,
+    "failures": 0,
+    "errors": 0
+  },
+  "source_sha256": {
+    "round2_summary.py": "a9511a8ba2cb817236ba6e5a3b35aed535835f337a6ba94493377c9f5f92b402",
+    "quote_card.py": "8a376dc6a7e13a45822c7bb8a0d16bca4358a2d6f48870ea9902743f203ac5e6",
+    "test_joint_stress.py": "7d20ce23f1941950f20d0c4161160be51a7abf423f74d1172e628bd2299adcc7",
+    "test_value_ties.py": "1adea2d992d2fa4222d15d6b0c53a65f2eee93aa31c19c0018a550aaa034fa4d",
+    "test_quote_card.py": "6687b095a761d12a83aaef9c7df6c9285de62451bfdd091260204c716149cf1d"
+  },
+  "note": "Provenance, physical and accounting checks; not empirical Gold calibration"
+}

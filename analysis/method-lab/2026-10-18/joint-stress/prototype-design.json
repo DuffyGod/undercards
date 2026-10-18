@@ -1,0 +1,424 @@
+{
+  "source_sha256": {
+    "prototype_stress.py": "9899db7268a00cb6695e23234c765526064b0143909a2f3fb75c122f5b1fb828",
+    "compressed_statistics.py": "b775cf9ac154a70b6343f98322669293c1d73f3669aa8014e23faefcfe36764f",
+    "statistical_value.py": "a89e9ba9ff24d816bb05eee70c218f3226a9f846bc0b45e22f203a9fb2a6587b",
+    "run_statistical_study.py": "ccc954b04dc8721e622ace65812c8b5b51e616de808e5b9cda6bf1b151b5ba63",
+    "statistical_inputs.json": "2e26317e75f316d9bf272337f557f153baaceedf2d62016dc52133b4aa70cfad",
+    "demand-stress/panels.json": "38cc7f4727222c3cb296d7d5fb94527876205eb086a8a62ca19c2a685f85c183",
+    "joint-stress/joint-design.json": "c7e0a1842b92228764d8a7c89b68d874556b18dc1eb03dad0cc602a3b552f43a"
+  },
+  "rows": 323,
+  "comparisons": [
+    {
+      "left": 649,
+      "right": 530,
+      "central": -2.6563599389401604,
+      "minimum": -2.7663132616577943,
+      "maximum": -2.528881501494035,
+      "points": [
+        {
+          "setting": "central",
+          "difference": -2.6563599389401604
+        },
+        {
+          "setting": "corner_0000",
+          "difference": -2.7226050094975403
+        },
+        {
+          "setting": "corner_0001",
+          "difference": -2.7226050094975403
+        },
+        {
+          "setting": "corner_0010",
+          "difference": -2.7663132616577943
+        },
+        {
+          "setting": "corner_0011",
+          "difference": -2.7663132616577943
+        },
+        {
+          "setting": "corner_0100",
+          "difference": -2.5654854280158865
+        },
+        {
+          "setting": "corner_0101",
+          "difference": -2.5654854280158865
+        },
+        {
+          "setting": "corner_0110",
+          "difference": -2.61352735508847
+        },
+        {
+          "setting": "corner_0111",
+          "difference": -2.61352735508847
+        },
+        {
+          "setting": "corner_1000",
+          "difference": -2.6793518617961283
+        },
+        {
+          "setting": "corner_1001",
+          "difference": -2.6793518617961283
+        },
+        {
+          "setting": "corner_1010",
+          "difference": -2.7225447070805178
+        },
+        {
+          "setting": "corner_1011",
+          "difference": -2.7225447070805178
+        },
+        {
+          "setting": "corner_1100",
+          "difference": -2.528881501494035
+        },
+        {
+          "setting": "corner_1101",
+          "difference": -2.528881501494035
+        },
+        {
+          "setting": "corner_1110",
+          "difference": -2.5764897973481284
+        },
+        {
+          "setting": "corner_1111",
+          "difference": -2.5764897973481284
+        }
+      ]
+    },
+    {
+      "left": 49,
+      "right": 984,
+      "central": -1.6171393421060873,
+      "minimum": -2.0319946931505086,
+      "maximum": -1.1976994958934686,
+      "points": [
+        {
+          "setting": "central",
+          "difference": -1.6171393421060873
+        },
+        {
+          "setting": "corner_0000",
+          "difference": -1.9659132427462778
+        },
+        {
+          "setting": "corner_0001",
+          "difference": -1.9659132427462778
+        },
+        {
+          "setting": "corner_0010",
+          "difference": -2.0319946931505086
+        },
+        {
+          "setting": "corner_0011",
+          "difference": -2.0319946931505086
+        },
+        {
+          "setting": "corner_0100",
+          "difference": -1.28851239509964
+        },
+        {
+          "setting": "corner_0101",
+          "difference": -1.28851239509964
+        },
+        {
+          "setting": "corner_0110",
+          "difference": -1.3455061719542263
+        },
+        {
+          "setting": "corner_0111",
+          "difference": -1.3455061719542263
+        },
+        {
+          "setting": "corner_1000",
+          "difference": -1.8579745366005742
+        },
+        {
+          "setting": "corner_1001",
+          "difference": -1.8579745366005742
+        },
+        {
+          "setting": "corner_1010",
+          "difference": -1.9226102951807569
+        },
+        {
+          "setting": "corner_1011",
+          "difference": -1.9226102951807569
+        },
+        {
+          "setting": "corner_1100",
+          "difference": -1.1976994958934686
+        },
+        {
+          "setting": "corner_1101",
+          "difference": -1.1976994958934686
+        },
+        {
+          "setting": "corner_1110",
+          "difference": -1.2534769577616247
+        },
+        {
+          "setting": "corner_1111",
+          "difference": -1.2534769577616247
+        }
+      ]
+    },
+    {
+      "left": 469,
+      "right": 43,
+      "central": 0.5951019503847821,
+      "minimum": 0.5951019503847821,
+      "maximum": 2.347201489544738,
+      "points": [
+        {
+          "setting": "central",
+          "difference": 0.5951019503847821
+        },
+        {
+          "setting": "corner_0000",
+          "difference": 1.19466035331335
+        },
+        {
+          "setting": "corner_0001",
+          "difference": 1.19466035331335
+        },
+        {
+          "setting": "corner_0010",
+          "difference": 1.2708983387281103
+        },
+        {
+          "setting": "corner_0011",
+          "difference": 2.347201489544738
+        },
+        {
+          "setting": "corner_0100",
+          "difference": 0.8301737873842878
+        },
+        {
+          "setting": "corner_0101",
+          "difference": 0.8301737873842878
+        },
+        {
+          "setting": "corner_0110",
+          "difference": 0.6813792603607309
+        },
+        {
+          "setting": "corner_0111",
+          "difference": 1.7576824111773597
+        },
+        {
+          "setting": "corner_1000",
+          "difference": 1.1570526790759965
+        },
+        {
+          "setting": "corner_1001",
+          "difference": 1.1570526790759965
+        },
+        {
+          "setting": "corner_1010",
+          "difference": 1.195236640664083
+        },
+        {
+          "setting": "corner_1011",
+          "difference": 2.271539791480711
+        },
+        {
+          "setting": "corner_1100",
+          "difference": 0.7987472417601253
+        },
+        {
+          "setting": "corner_1101",
+          "difference": 0.7987472417601253
+        },
+        {
+          "setting": "corner_1110",
+          "difference": 0.6177222238313043
+        },
+        {
+          "setting": "corner_1111",
+          "difference": 1.6940253746479321
+        }
+      ]
+    },
+    {
+      "left": 20,
+      "right": 13,
+      "central": 0.35630439722938245,
+      "minimum": 0.2180334211965791,
+      "maximum": 0.4929286887269013,
+      "points": [
+        {
+          "setting": "central",
+          "difference": 0.35630439722938245
+        },
+        {
+          "setting": "corner_0000",
+          "difference": 0.4929286887269013
+        },
+        {
+          "setting": "corner_0001",
+          "difference": 0.4929286887269013
+        },
+        {
+          "setting": "corner_0010",
+          "difference": 0.4929286887269013
+        },
+        {
+          "setting": "corner_0011",
+          "difference": 0.4929286887269013
+        },
+        {
+          "setting": "corner_0100",
+          "difference": 0.23327619985965242
+        },
+        {
+          "setting": "corner_0101",
+          "difference": 0.23327619985965242
+        },
+        {
+          "setting": "corner_0110",
+          "difference": 0.23327619985965242
+        },
+        {
+          "setting": "corner_0111",
+          "difference": 0.23327619985965242
+        },
+        {
+          "setting": "corner_1000",
+          "difference": 0.4748113747622593
+        },
+        {
+          "setting": "corner_1001",
+          "difference": 0.4748113747622593
+        },
+        {
+          "setting": "corner_1010",
+          "difference": 0.4748113747622593
+        },
+        {
+          "setting": "corner_1011",
+          "difference": 0.4748113747622593
+        },
+        {
+          "setting": "corner_1100",
+          "difference": 0.2180334211965791
+        },
+        {
+          "setting": "corner_1101",
+          "difference": 0.2180334211965791
+        },
+        {
+          "setting": "corner_1110",
+          "difference": 0.2180334211965791
+        },
+        {
+          "setting": "corner_1111",
+          "difference": 0.2180334211965791
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "central": {},
+    "corner_0000": {
+      "face_share": 0.1,
+      "threshold": 0.2,
+      "tail": 0.0,
+      "face": 0.15
+    },
+    "corner_0001": {
+      "face_share": 0.1,
+      "threshold": 0.2,
+      "tail": 0.0,
+      "face": 0.4
+    },
+    "corner_0010": {
+      "face_share": 0.1,
+      "threshold": 0.2,
+      "tail": 1.0,
+      "face": 0.15
+    },
+    "corner_0011": {
+      "face_share": 0.1,
+      "threshold": 0.2,
+      "tail": 1.0,
+      "face": 0.4
+    },
+    "corner_0100": {
+      "face_share": 0.1,
+      "threshold": 0.6,
+      "tail": 0.0,
+      "face": 0.15
+    },
+    "corner_0101": {
+      "face_share": 0.1,
+      "threshold": 0.6,
+      "tail": 0.0,
+      "face": 0.4
+    },
+    "corner_0110": {
+      "face_share": 0.1,
+      "threshold": 0.6,
+      "tail": 1.0,
+      "face": 0.15
+    },
+    "corner_0111": {
+      "face_share": 0.1,
+      "threshold": 0.6,
+      "tail": 1.0,
+      "face": 0.4
+    },
+    "corner_1000": {
+      "face_share": 0.35,
+      "threshold": 0.2,
+      "tail": 0.0,
+      "face": 0.15
+    },
+    "corner_1001": {
+      "face_share": 0.35,
+      "threshold": 0.2,
+      "tail": 0.0,
+      "face": 0.4
+    },
+    "corner_1010": {
+      "face_share": 0.35,
+      "threshold": 0.2,
+      "tail": 1.0,
+      "face": 0.15
+    },
+    "corner_1011": {
+      "face_share": 0.35,
+      "threshold": 0.2,
+      "tail": 1.0,
+      "face": 0.4
+    },
+    "corner_1100": {
+      "face_share": 0.35,
+      "threshold": 0.6,
+      "tail": 0.0,
+      "face": 0.15
+    },
+    "corner_1101": {
+      "face_share": 0.35,
+      "threshold": 0.6,
+      "tail": 0.0,
+      "face": 0.4
+    },
+    "corner_1110": {
+      "face_share": 0.35,
+      "threshold": 0.6,
+      "tail": 1.0,
+      "face": 0.15
+    },
+    "corner_1111": {
+      "face_share": 0.35,
+      "threshold": 0.6,
+      "tail": 1.0,
+      "face": 0.4
+    }
+  },
+  "demand": "Three targets from IceCap3/1 and Vulkin4/4 independently with probability1/2, exact binomial count integration",
+  "uncertainty": "Exact conditional arithmetic; theta/hand histogram/demand assumptions are not empirical certainty",
+  "tie_rule": "all plans within1e-10 of baseline maximum; expected fixed-plan min/max over visible states"
+}

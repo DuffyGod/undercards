@@ -1,6 +1,6 @@
 # 稀疏价值、惩罚斜率与一次等待：本地方法试验
 
-**最新结果：**见 [共同统计标尺报告](STATISTICAL-REPORT.md) 与 [自动统计表](statistical-results/summary-tables.md)。后续已完成19张卡的共同需求报价、固定原当前计划的属性边际、资源结构与参数敏感度；下面保留第一阶段独立试验说明，不代表最新覆盖范围。
+**最新结果：**见 [第二轮：同槽位价值与联合压力检验](ROUND2-REPORT.md)。新增可查询程序`quote_card.py`、真实AOE幸存需求、17点联合参数、IceCap/Vulkin精确需求及付款/格子竞争。上一轮 [共同统计标尺报告](STATISTICAL-REPORT.md) 和 [自动统计表](statistical-results/summary-tables.md) 保留；其中受伤clamp结论需结合第二轮修正理解。下面保留第一阶段独立试验说明，不代表最新覆盖范围。
 
 2026-10-18。本目录是同一仓库的可合并研究产物，基于远端研究提交 `27854807a7e9e2867f8ef43bd2614478ac301a43`，新增于 `research/local-method-lab-20261018` 分支。只增加此目录；没有修改旧评分器、恢复文件、云端信息集模块或主分支。
 

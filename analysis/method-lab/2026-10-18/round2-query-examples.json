@@ -1,0 +1,530 @@
+{
+  "actual_survivors": {
+    "profile": "aoe2_survivors",
+    "source": "joint-stress/joint-scores.csv",
+    "unit": "model-G, common body anchor F(6,5)=5; not empirical Gold equivalence",
+    "setting_count": 17,
+    "range_meaning": "Finite shared parameter stress points, not confidence or continuous-box bounds",
+    "cards": [
+      {
+        "id": 649,
+        "name": "Broken Car",
+        "net_value": 0.4541764039781846,
+        "plus_attack": 0.6308538638831725,
+        "fixed_current_plan_plus_attack": 0.5922383483449924,
+        "gain_over_canonical_fixed_plan": 0.0386155155381801,
+        "plus_health": 0.4114469513575081,
+        "payable_share": 0.45066666666666666,
+        "opportunity_index": 0.3281781188107781,
+        "joint_parameter_ranges": {
+          "net_value": [
+            0.07024568111794682,
+            0.8317225782243369
+          ],
+          "plus_attack": [
+            0.592594832780774,
+            0.671962611065828
+          ],
+          "fixed_policy_plus_attack": [
+            0.5540459512991078,
+            0.6317603138429918
+          ],
+          "plus_health": [
+            0.4004308925813195,
+            0.41714753233457713
+          ]
+        },
+        "fixed_baseline_optimal_range": null,
+        "mandatory_reoptimization_gain": null
+      },
+      {
+        "id": 530,
+        "name": "Piranhas",
+        "net_value": 0.5446016573789025,
+        "plus_attack": 0.5384345479194059,
+        "fixed_current_plan_plus_attack": 0.49967620896605525,
+        "gain_over_canonical_fixed_plan": 0.03875833895335068,
+        "plus_health": 0.5906012173492973,
+        "payable_share": 0.45066666666666666,
+        "opportunity_index": 0.3564476201099133,
+        "joint_parameter_ranges": {
+          "net_value": [
+            -0.03297151384410135,
+            1.4811062264460526
+          ],
+          "plus_attack": [
+            0.4245798812315787,
+            0.8002156197833188
+          ],
+          "fixed_policy_plus_attack": [
+            0.3852703985045619,
+            0.7470415322878161
+          ],
+          "plus_health": [
+            0.4504828008499345,
+            0.6409606976680844
+          ]
+        },
+        "fixed_baseline_optimal_range": null,
+        "mandatory_reoptimization_gain": null
+      }
+    ],
+    "comparisons": [
+      {
+        "left": 649,
+        "right": 530,
+        "central": -0.09042525340071794,
+        "joint_stress_range": [
+          -0.6493836482217157,
+          0.11210668596407469
+        ]
+      }
+    ]
+  },
+  "prototype": {
+    "profile": "icecap_vulkin",
+    "source": "joint-stress/prototype-scores.csv",
+    "unit": "model-G, common body anchor F(6,5)=5; not empirical Gold equivalence",
+    "setting_count": 17,
+    "range_meaning": "Finite shared parameter stress points, not confidence or continuous-box bounds",
+    "cards": [
+      {
+        "id": 469,
+        "name": "Blockler B",
+        "net_value": 0.28783963669744406,
+        "plus_attack": 1.6374042454247142,
+        "fixed_current_plan_plus_attack": 1.612080540819614,
+        "gain_over_canonical_fixed_plan": 0.02532370460510025,
+        "plus_health": 0.4076852566619005,
+        "payable_share": 0.7716666666666667,
+        "opportunity_index": 0.22211625298486096,
+        "joint_parameter_ranges": {
+          "net_value": [
+            -0.7150358274251056,
+            3.241888882336964
+          ],
+          "plus_attack": [
+            0.44669902979194054,
+            1.7130266412085022
+          ],
+          "fixed_policy_plus_attack": [
+            0.44669902979194054,
+            1.6956002242543766
+          ],
+          "plus_health": [
+            -0.9117714817058221,
+            0.5236278661436657
+          ]
+        },
+        "fixed_baseline_optimal_range": [
+          1.6120805408196146,
+          1.6120805408196146
+        ],
+        "mandatory_reoptimization_gain": 0.025323704605100028
+      },
+      {
+        "id": 530,
+        "name": "Piranhas",
+        "net_value": 2.9895325569166893,
+        "plus_attack": 0.41898995400282013,
+        "fixed_current_plan_plus_attack": 0.41898995400282013,
+        "gain_over_canonical_fixed_plan": 0.0,
+        "plus_health": 0.6113867037399989,
+        "payable_share": 0.45066666666666666,
+        "opportunity_index": 1.3472826723171214,
+        "joint_parameter_ranges": {
+          "net_value": [
+            2.4455282459158667,
+            3.5156043097434697
+          ],
+          "plus_attack": [
+            0.35007688542771404,
+            0.4911162249537774
+          ],
+          "fixed_policy_plus_attack": [
+            0.35007688542771404,
+            0.4911162249537774
+          ],
+          "plus_health": [
+            0.5240617209119706,
+            0.7001365724387146
+          ]
+        },
+        "fixed_baseline_optimal_range": [
+          0.41898995400282024,
+          0.41898995400282024
+        ],
+        "mandatory_reoptimization_gain": 0.0
+      },
+      {
+        "id": 649,
+        "name": "Broken Car",
+        "net_value": 0.33317261797652886,
+        "plus_attack": 1.7271643346164762,
+        "fixed_current_plan_plus_attack": 0.68496128560562,
+        "gain_over_canonical_fixed_plan": 1.0422030490108563,
+        "plus_health": 0.4906158660502856,
+        "payable_share": 0.45066666666666666,
+        "opportunity_index": 0.1501497931680898,
+        "joint_parameter_ranges": {
+          "net_value": [
+            -0.0833532555781682,
+            0.7492910480856754
+          ],
+          "plus_attack": [
+            1.6812264751986634,
+            1.7768587699021263
+          ],
+          "fixed_policy_plus_attack": [
+            0.514527558570843,
+            0.68496128560562
+          ],
+          "plus_health": [
+            0.45805544460426906,
+            0.5095067946829243
+          ]
+        },
+        "fixed_baseline_optimal_range": [
+          0.6849612856056202,
+          0.6849612856056202
+        ],
+        "mandatory_reoptimization_gain": 1.0422030490108565
+      },
+      {
+        "id": 49,
+        "name": "Glyde",
+        "net_value": -1.1939271041860833,
+        "plus_attack": 0.2956482849254707,
+        "fixed_current_plan_plus_attack": 0.2956482849254707,
+        "gain_over_canonical_fixed_plan": 0.0,
+        "plus_health": 0.5247917595219819,
+        "payable_share": 0.45066666666666666,
+        "opportunity_index": 0.0026347213238757895,
+        "joint_parameter_ranges": {
+          "net_value": [
+            -1.229446569076754,
+            -1.1609855599869405
+          ],
+          "plus_attack": [
+            0.23105747855018366,
+            0.36516724220196317
+          ],
+          "fixed_policy_plus_attack": [
+            0.23105747855018366,
+            0.36516724220196317
+          ],
+          "plus_health": [
+            0.4905291012710302,
+            0.5582431648536145
+          ]
+        },
+        "fixed_baseline_optimal_range": [
+          0.2956482849254707,
+          0.2956482849254707
+        ],
+        "mandatory_reoptimization_gain": 0.0
+      },
+      {
+        "id": 984,
+        "name": "Terakota Archer",
+        "net_value": 0.42321223792000406,
+        "plus_attack": 0.4772631885368415,
+        "fixed_current_plan_plus_attack": 0.4772631885368415,
+        "gain_over_canonical_fixed_plan": 0.0,
+        "plus_health": 0.5146052044267106,
+        "payable_share": 0.45066666666666666,
+        "opportunity_index": 0.3022453725430768,
+        "joint_parameter_ranges": {
+          "net_value": [
+            -0.0317470731832854,
+            0.8710091331635681
+          ],
+          "plus_attack": [
+            0.4466990297919406,
+            0.5064411785946114
+          ],
+          "fixed_policy_plus_attack": [
+            0.4466990297919406,
+            0.5064411785946114
+          ],
+          "plus_health": [
+            0.45345074568312166,
+            0.5703716838180137
+          ]
+        },
+        "fixed_baseline_optimal_range": [
+          0.4772631885368415,
+          0.4772631885368415
+        ],
+        "mandatory_reoptimization_gain": 0.0
+      }
+    ],
+    "comparisons": [
+      {
+        "left": 469,
+        "right": 530,
+        "central": -2.7016929202192452,
+        "joint_stress_range": [
+          -3.6468237553574294,
+          -0.048618792427468804
+        ]
+      },
+      {
+        "left": 469,
+        "right": 649,
+        "central": -0.045332981279084805,
+        "joint_stress_range": [
+          -0.9242187458598892,
+          2.5278710049206596
+        ]
+      },
+      {
+        "left": 469,
+        "right": 49,
+        "central": 1.4817667408835273,
+        "joint_stress_range": [
+          0.5144107416516484,
+          4.402874442323904
+        ]
+      },
+      {
+        "left": 469,
+        "right": 984,
+        "central": -0.13537260122256,
+        "joint_stress_range": [
+          -0.979855380533551,
+          2.4204873606576207
+        ]
+      },
+      {
+        "left": 530,
+        "right": 649,
+        "central": 2.6563599389401604,
+        "joint_stress_range": [
+          2.528881501494035,
+          2.7663132616577943
+        ]
+      },
+      {
+        "left": 530,
+        "right": 49,
+        "central": 4.183459661102773,
+        "joint_stress_range": [
+          3.6749748149926207,
+          4.67658986973041
+        ]
+      },
+      {
+        "left": 530,
+        "right": 984,
+        "central": 2.5663203189966852,
+        "joint_stress_range": [
+          2.4691061530850895,
+          2.6669683748238784
+        ]
+      },
+      {
+        "left": 649,
+        "right": 49,
+        "central": 1.5270997221626121,
+        "joint_stress_range": [
+          1.1460933134985858,
+          1.910276608072616
+        ]
+      },
+      {
+        "left": 649,
+        "right": 984,
+        "central": -0.0900396199434752,
+        "joint_stress_range": [
+          -0.12171808507789272,
+          -0.051606182394882794
+        ]
+      },
+      {
+        "left": 49,
+        "right": 984,
+        "central": -1.6171393421060873,
+        "joint_stress_range": [
+          -2.0319946931505086,
+          -1.1976994958934686
+        ]
+      }
+    ]
+  },
+  "paid_slot": {
+    "menu": "three_plain",
+    "board_group": "aggro_32",
+    "cash": 8,
+    "available_slots": 2,
+    "cash_residual": 1.0,
+    "reference_id": 2,
+    "source": "slot-results/slot-primary.csv.gz",
+    "contract": "Current deadline, actual blank background bodies, tail=0, no reply; same-slot difference, not deployment score",
+    "weights": "Named board exact; aggro_32 is one shared 32-board numerical sample; cash and slot levels are NOT averaged",
+    "cards": [
+      {
+        "id": 530,
+        "name": "Piranhas",
+        "board_count": 32,
+        "slot_delta": 0.8638914144509999,
+        "candidate_gain_over_background": 0.8638914144509999,
+        "candidate_strictly_improves_background": 0.875,
+        "plus_attack_reoptimized": 0.5776807053349917,
+        "plus_attack_fixed_menu": 0.36267535983617805,
+        "plus_cash_candidate": 1.1928100878514616,
+        "plus_cash_slot_delta": 0.19281008785146098,
+        "plus_slot_candidate": 0.0,
+        "plus_slot_delta": -0.23821497755539056,
+        "slot_delta_mc_se": 0.11319839568667288,
+        "cash_opportunity_gain_above_residual": 0.1928100878514616
+      },
+      {
+        "id": 984,
+        "name": "Terakota Archer",
+        "board_count": 32,
+        "slot_delta": 0.6765140202773683,
+        "candidate_gain_over_background": 0.6765140202773683,
+        "candidate_strictly_improves_background": 0.5,
+        "plus_attack_reoptimized": 0.2397906405303618,
+        "plus_attack_fixed_menu": 0.2397906405303618,
+        "plus_cash_candidate": 1.0,
+        "plus_cash_slot_delta": 0.0,
+        "plus_slot_candidate": 0.39752551876831915,
+        "plus_slot_delta": 0.1593105412129286,
+        "slot_delta_mc_se": 0.13992147480286438,
+        "cash_opportunity_gain_above_residual": 0.0
+      },
+      {
+        "id": 469,
+        "name": "Blockler B",
+        "board_count": 32,
+        "slot_delta": 0.2029304555453295,
+        "candidate_gain_over_background": 0.2029304555453295,
+        "candidate_strictly_improves_background": 0.1875,
+        "plus_attack_reoptimized": 0.2116387765119186,
+        "plus_attack_fixed_menu": 0.0,
+        "plus_cash_candidate": 1.0,
+        "plus_cash_slot_delta": 0.0,
+        "plus_slot_candidate": 0.0,
+        "plus_slot_delta": -0.23821497755539056,
+        "slot_delta_mc_se": 0.07806987165817289,
+        "cash_opportunity_gain_above_residual": 0.0
+      },
+      {
+        "id": 20,
+        "name": "Vulkin",
+        "board_count": 32,
+        "slot_delta": 0.9927097439361259,
+        "candidate_gain_over_background": 0.9927097439361259,
+        "candidate_strictly_improves_background": 1.0,
+        "plus_attack_reoptimized": 0.4144861255270598,
+        "plus_attack_fixed_menu": 0.4144861255270598,
+        "plus_cash_candidate": 1.0,
+        "plus_cash_slot_delta": 0.0,
+        "plus_slot_candidate": 0.0,
+        "plus_slot_delta": -0.23821497755539056,
+        "slot_delta_mc_se": 0.06796726338451037,
+        "cash_opportunity_gain_above_residual": 0.0
+      }
+    ],
+    "comparisons": [
+      {
+        "left": 530,
+        "right": 984,
+        "slot_difference": 0.18737739417363175,
+        "paired_mc_se": 0.18446696362628384
+      },
+      {
+        "left": 530,
+        "right": 469,
+        "slot_difference": 0.6609609589056704,
+        "paired_mc_se": 0.12536039215944322
+      },
+      {
+        "left": 530,
+        "right": 20,
+        "slot_difference": -0.12881832948512573,
+        "paired_mc_se": 0.13333305249858876
+      },
+      {
+        "left": 984,
+        "right": 469,
+        "slot_difference": 0.4735835647320387,
+        "paired_mc_se": 0.09221664927389873
+      },
+      {
+        "left": 984,
+        "right": 20,
+        "slot_difference": -0.3161957236587575,
+        "paired_mc_se": 0.16120153581780763
+      },
+      {
+        "left": 469,
+        "right": 20,
+        "slot_difference": -0.7897792883907961,
+        "paired_mc_se": 0.1145970303877647
+      }
+    ]
+  },
+  "fixed_case_two_slots": {
+    "menu": "three_plain",
+    "board_group": "three_3_2",
+    "cash": 6,
+    "available_slots": 2,
+    "cash_residual": 0.0,
+    "reference_id": 2,
+    "source": "slot-results/slot-primary.csv.gz",
+    "contract": "Current deadline, actual blank background bodies, tail=0, no reply; same-slot difference, not deployment score",
+    "weights": "Named board exact; aggro_32 is one shared 32-board numerical sample; cash and slot levels are NOT averaged",
+    "cards": [
+      {
+        "id": 20,
+        "name": "Vulkin",
+        "board_count": 1,
+        "slot_delta": 2.335440454345836,
+        "candidate_gain_over_background": 2.335440454345836,
+        "candidate_strictly_improves_background": 1.0,
+        "plus_attack_reoptimized": 0.4144861255270609,
+        "plus_attack_fixed_menu": 0.4144861255270609,
+        "plus_cash_candidate": 1.2109839603082744,
+        "plus_cash_slot_delta": -0.3398171018280607,
+        "plus_slot_candidate": 0.0,
+        "plus_slot_delta": 0.0,
+        "slot_delta_mc_se": null,
+        "cash_opportunity_gain_above_residual": 1.2109839603082744
+      }
+    ],
+    "comparisons": []
+  },
+  "fixed_case_one_slot": {
+    "menu": "three_plain",
+    "board_group": "three_3_2",
+    "cash": 6,
+    "available_slots": 1,
+    "cash_residual": 0.0,
+    "reference_id": 2,
+    "source": "slot-results/slot-primary.csv.gz",
+    "contract": "Current deadline, actual blank background bodies, tail=0, no reply; same-slot difference, not deployment score",
+    "weights": "Named board exact; aggro_32 is one shared 32-board numerical sample; cash and slot levels are NOT averaged",
+    "cards": [
+      {
+        "id": 20,
+        "name": "Vulkin",
+        "board_count": 1,
+        "slot_delta": 0.7846393922095007,
+        "candidate_gain_over_background": 0.7846393922095007,
+        "candidate_strictly_improves_background": 1.0,
+        "plus_attack_reoptimized": 0.41448612552706,
+        "plus_attack_fixed_menu": 0.41448612552706,
+        "plus_cash_candidate": 0.0,
+        "plus_cash_slot_delta": 0.0,
+        "plus_slot_candidate": 2.2382149775553906,
+        "plus_slot_delta": 1.550801062136335,
+        "slot_delta_mc_se": null,
+        "cash_opportunity_gain_above_residual": 0.0
+      }
+    ],
+    "comparisons": []
+  }
+}

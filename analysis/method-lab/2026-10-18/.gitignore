@@ -1,3 +1,6 @@
 __pycache__/
 statistical-results/pilot-*
 statistical-results/full-*
+slot-results/slot-primary.csv
+slot-results/slot-reference-sensitivity.csv
+slot-results/slot-summary.json
