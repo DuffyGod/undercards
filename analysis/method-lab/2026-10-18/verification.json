@@ -1,0 +1,25 @@
+{
+  "executed_at": "2026-10-18T13:21:14.673339+08:00",
+  "tests_run": 10,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_ids": [
+    "test_value_model.MethodChecks.test_capped_attack_identity",
+    "test_value_model.MethodChecks.test_common_action_cannot_use_world_oracle",
+    "test_value_model.MethodChecks.test_crossing_and_endpoint_invariance",
+    "test_value_model.MethodChecks.test_damage_is_not_a_silence_heal",
+    "test_value_model.MethodChecks.test_no_clawback_of_realized_magic",
+    "test_value_model.MethodChecks.test_packet_count_changes_protection_in_opposite_directions",
+    "test_value_model.MethodChecks.test_response_must_be_payable",
+    "test_value_model.MethodChecks.test_same_slot_same_budget_replacement",
+    "test_value_model.MethodChecks.test_sparse_bridge_rejects_invalid_observations",
+    "test_value_model.MethodChecks.test_wait_once_has_a_real_deadline"
+  ],
+  "source_sha256": {
+    "run_experiment.py": "9352556cf7461c428af717c9a726fec94ac127a1194ad5a321e4d2fd2dab2530",
+    "test_value_model.py": "b7d7900379e57b0113df8a0d1ab4d535dc574ab2ca10c7c9468223934c2a36f8",
+    "value_model.py": "70eeec0c20f650498efb95e9bd3ab6581cd46e593c1d438e5652bfdecf9f0fff"
+  },
+  "meaning": "Local mathematical/protocol checks, not card quality calibration"
+}

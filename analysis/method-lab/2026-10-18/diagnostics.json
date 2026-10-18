@@ -1,0 +1,44 @@
+{
+  "attack_6_to_7_at_hp7": 0.27617369375996237,
+  "attack_9_to_10_at_hp7": 0.08259669475619624,
+  "common_action": {
+    "value": 5.0,
+    "plan_index": 0,
+    "oracle_diagnostic": 10.0,
+    "oracle_gap": 5.0
+  },
+  "fixed_deadline": {
+    "value": 2.5,
+    "choice": "deploy_now",
+    "choices": {
+      "deploy_now": 2.5,
+      "wait_once": 2.0,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      true,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  "replacement": {
+    "candidate": {
+      "value": 7,
+      "chosen_copies": [
+        0
+      ],
+      "paid": 6
+    },
+    "reference": {
+      "value": 8,
+      "chosen_copies": [
+        0,
+        1
+      ],
+      "paid": 6
+    }
+  },
+  "source_profiles": 12,
+  "body_grid_rows": 720,
+  "empirically_calibrated": false
+}

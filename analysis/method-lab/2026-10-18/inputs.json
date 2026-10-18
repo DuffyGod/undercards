@@ -1,0 +1,2476 @@
+{
+  "snapshot_sha256": "7f19bef22de440abf1c2273806acecd0447e8341ad12f10eb63b418dfad45b85",
+  "reference": [
+    {
+      "card_id": 11,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 12,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 13,
+      "attack": 3,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 16,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 18,
+      "attack": 3,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 19,
+      "attack": 4,
+      "health": 3,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 20,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 23,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 26,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 27,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 33,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 37,
+      "attack": 4,
+      "health": 3,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 42,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 54,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 102,
+      "attack": 2,
+      "health": 3,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 113,
+      "attack": 5,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 116,
+      "attack": 4,
+      "health": 3,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 124,
+      "attack": 3,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 125,
+      "attack": 5,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 126,
+      "attack": 3,
+      "health": 6,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 127,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 137,
+      "attack": 3,
+      "health": 2,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 140,
+      "attack": 3,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 142,
+      "attack": 1,
+      "health": 7,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 143,
+      "attack": 1,
+      "health": 7,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 146,
+      "attack": 6,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 148,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 151,
+      "attack": 5,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 165,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 169,
+      "attack": 2,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 173,
+      "attack": 1,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 174,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 191,
+      "attack": 2,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 193,
+      "attack": 5,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 195,
+      "attack": 2,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 217,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 221,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 228,
+      "attack": 4,
+      "health": 7,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 229,
+      "attack": 3,
+      "health": 3,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 239,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 242,
+      "attack": 3,
+      "health": 2,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 245,
+      "attack": 3,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 246,
+      "attack": 3,
+      "health": 6,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 247,
+      "attack": 2,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 262,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 273,
+      "attack": 2,
+      "health": 3,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 274,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 277,
+      "attack": 3,
+      "health": 3,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 288,
+      "attack": 5,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 289,
+      "attack": 4,
+      "health": 2,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 291,
+      "attack": 4,
+      "health": 6,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 298,
+      "attack": 4,
+      "health": 3,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 301,
+      "attack": 6,
+      "health": 3,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 307,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 308,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 310,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 313,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 385,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 386,
+      "attack": 3,
+      "health": 2,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 395,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 396,
+      "attack": 1,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 397,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 405,
+      "attack": 3,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 406,
+      "attack": 3,
+      "health": 3,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 407,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 409,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 413,
+      "attack": 4,
+      "health": 3,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 415,
+      "attack": 3,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 422,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 434,
+      "attack": 3,
+      "health": 3,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 438,
+      "attack": 3,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 439,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 450,
+      "attack": 2,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 468,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 473,
+      "attack": 3,
+      "health": 3,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 479,
+      "attack": 3,
+      "health": 1,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 480,
+      "attack": 2,
+      "health": 6,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 489,
+      "attack": 3,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 495,
+      "attack": 3,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 500,
+      "attack": 3,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 506,
+      "attack": 4,
+      "health": 6,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 508,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 510,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 514,
+      "attack": 5,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 519,
+      "attack": 2,
+      "health": 7,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 542,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 560,
+      "attack": 3,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 572,
+      "attack": 1,
+      "health": 7,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 582,
+      "attack": 2,
+      "health": 7,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 583,
+      "attack": 3,
+      "health": 3,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 588,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 592,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 593,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 599,
+      "attack": 3,
+      "health": 2,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 607,
+      "attack": 3,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 628,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 629,
+      "attack": 3,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 632,
+      "attack": 2,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 634,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 642,
+      "attack": 6,
+      "health": 3,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 646,
+      "attack": 5,
+      "health": 3,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 652,
+      "attack": 3,
+      "health": 7,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 653,
+      "attack": 3,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 656,
+      "attack": 3,
+      "health": 6,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 658,
+      "attack": 4,
+      "health": 3,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 659,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 660,
+      "attack": 3,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 663,
+      "attack": 3,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 666,
+      "attack": 4,
+      "health": 6,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 667,
+      "attack": 3,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 681,
+      "attack": 3,
+      "health": 3,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 682,
+      "attack": 2,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 740,
+      "attack": 1,
+      "health": 7,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 775,
+      "attack": 6,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 781,
+      "attack": 2,
+      "health": 2,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 786,
+      "attack": 3,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 790,
+      "attack": 3,
+      "health": 6,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 809,
+      "attack": 5,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 812,
+      "attack": 5,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 814,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 830,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 835,
+      "attack": 2,
+      "health": 6,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 850,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 884,
+      "attack": 4,
+      "health": 3,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 943,
+      "attack": 5,
+      "health": 3,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 953,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 957,
+      "attack": 3,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 961,
+      "attack": 4,
+      "health": 6,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 962,
+      "attack": 5,
+      "health": 4,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 967,
+      "attack": 3,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 968,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.0019083969465648854
+    },
+    {
+      "card_id": 14,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 15,
+      "attack": 6,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 34,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 59,
+      "attack": 1,
+      "health": 1,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 101,
+      "attack": 6,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 103,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 104,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 109,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 135,
+      "attack": 3,
+      "health": 7,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 141,
+      "attack": 5,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 150,
+      "attack": 3,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 153,
+      "attack": 3,
+      "health": 6,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 161,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 162,
+      "attack": 4,
+      "health": 6,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 163,
+      "attack": 2,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 167,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 170,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 171,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 177,
+      "attack": 4,
+      "health": 3,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 185,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 194,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 198,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 199,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 200,
+      "attack": 2,
+      "health": 2,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 215,
+      "attack": 2,
+      "health": 3,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 216,
+      "attack": 4,
+      "health": 6,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 243,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 248,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 276,
+      "attack": 3,
+      "health": 6,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 278,
+      "attack": 5,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 279,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 286,
+      "attack": 3,
+      "health": 7,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 296,
+      "attack": 3,
+      "health": 3,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 297,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 299,
+      "attack": 4,
+      "health": 3,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 394,
+      "attack": 3,
+      "health": 3,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 432,
+      "attack": 5,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 465,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 469,
+      "attack": 3,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 471,
+      "attack": 6,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 503,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 504,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 509,
+      "attack": 4,
+      "health": 6,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 512,
+      "attack": 4,
+      "health": 3,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 521,
+      "attack": 2,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 524,
+      "attack": 4,
+      "health": 6,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 527,
+      "attack": 3,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 528,
+      "attack": 3,
+      "health": 7,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 532,
+      "attack": 4,
+      "health": 6,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 534,
+      "attack": 2,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 555,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 584,
+      "attack": 4,
+      "health": 6,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 589,
+      "attack": 5,
+      "health": 6,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 594,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 604,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 608,
+      "attack": 1,
+      "health": 7,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 612,
+      "attack": 5,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 636,
+      "attack": 5,
+      "health": 6,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 650,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 657,
+      "attack": 4,
+      "health": 6,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 673,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 676,
+      "attack": 3,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 678,
+      "attack": 4,
+      "health": 6,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 683,
+      "attack": 2,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 684,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 730,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 742,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 743,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 745,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 754,
+      "attack": 3,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 762,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 767,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 773,
+      "attack": 6,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 793,
+      "attack": 3,
+      "health": 7,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 804,
+      "attack": 3,
+      "health": 7,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 807,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 815,
+      "attack": 3,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 828,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 832,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 834,
+      "attack": 3,
+      "health": 7,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 837,
+      "attack": 3,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 867,
+      "attack": 3,
+      "health": 6,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 868,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 897,
+      "attack": 5,
+      "health": 6,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 899,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 904,
+      "attack": 3,
+      "health": 3,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 910,
+      "attack": 3,
+      "health": 2,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 921,
+      "attack": 3,
+      "health": 7,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 923,
+      "attack": 2,
+      "health": 6,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 951,
+      "attack": 5,
+      "health": 6,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 954,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 956,
+      "attack": 3,
+      "health": 7,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 963,
+      "attack": 1,
+      "health": 7,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 974,
+      "attack": 3,
+      "health": 4,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 979,
+      "attack": 0,
+      "health": 8,
+      "weight": 0.002631578947368421
+    },
+    {
+      "card_id": 25,
+      "attack": 5,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 43,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 46,
+      "attack": 5,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 47,
+      "attack": 6,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 48,
+      "attack": 5,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 49,
+      "attack": 2,
+      "health": 2,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 52,
+      "attack": 4,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 58,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 108,
+      "attack": 3,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 112,
+      "attack": 6,
+      "health": 9,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 119,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 138,
+      "attack": 6,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 152,
+      "attack": 4,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 168,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 192,
+      "attack": 6,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 202,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 219,
+      "attack": 5,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 240,
+      "attack": 6,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 250,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 272,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 282,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 287,
+      "attack": 5,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 290,
+      "attack": 5,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 292,
+      "attack": 7,
+      "health": 9,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 293,
+      "attack": 4,
+      "health": 7,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 302,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 306,
+      "attack": 3,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 391,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 393,
+      "attack": 5,
+      "health": 7,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 403,
+      "attack": 6,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 408,
+      "attack": 5,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 411,
+      "attack": 5,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 416,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 418,
+      "attack": 7,
+      "health": 7,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 426,
+      "attack": 3,
+      "health": 4,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 466,
+      "attack": 4,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 472,
+      "attack": 6,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 501,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 507,
+      "attack": 4,
+      "health": 7,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 517,
+      "attack": 5,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 526,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 530,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 531,
+      "attack": 6,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 546,
+      "attack": 5,
+      "health": 7,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 547,
+      "attack": 4,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 557,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 561,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 570,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 591,
+      "attack": 4,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 606,
+      "attack": 6,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 609,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 624,
+      "attack": 2,
+      "health": 3,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 626,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 630,
+      "attack": 6,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 637,
+      "attack": 6,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 640,
+      "attack": 7,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 644,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 649,
+      "attack": 3,
+      "health": 7,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 651,
+      "attack": 5,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 654,
+      "attack": 5,
+      "health": 7,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 655,
+      "attack": 4,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 661,
+      "attack": 6,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 669,
+      "attack": 6,
+      "health": 4,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 671,
+      "attack": 5,
+      "health": 7,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 674,
+      "attack": 5,
+      "health": 4,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 685,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 707,
+      "attack": 5,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 764,
+      "attack": 5,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 774,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 776,
+      "attack": 3,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 780,
+      "attack": 0,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 782,
+      "attack": 6,
+      "health": 7,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 806,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 817,
+      "attack": 5,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 824,
+      "attack": 3,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 833,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 841,
+      "attack": 6,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 845,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 846,
+      "attack": 6,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 847,
+      "attack": 6,
+      "health": 7,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 848,
+      "attack": 1,
+      "health": 1,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 862,
+      "attack": 7,
+      "health": 8,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 873,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 883,
+      "attack": 2,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 893,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 906,
+      "attack": 3,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 907,
+      "attack": 5,
+      "health": 3,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 911,
+      "attack": 4,
+      "health": 8,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 912,
+      "attack": 6,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 925,
+      "attack": 6,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 948,
+      "attack": 6,
+      "health": 6,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 950,
+      "attack": 6,
+      "health": 7,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 964,
+      "attack": 3,
+      "health": 7,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 980,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 982,
+      "attack": 4,
+      "health": 3,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 984,
+      "attack": 3,
+      "health": 4,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 992,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.002577319587628866
+    },
+    {
+      "card_id": 21,
+      "attack": 6,
+      "health": 4,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 24,
+      "attack": 5,
+      "health": 6,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 35,
+      "attack": 5,
+      "health": 7,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 36,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 121,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 154,
+      "attack": 4,
+      "health": 7,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 201,
+      "attack": 4,
+      "health": 7,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 227,
+      "attack": 5,
+      "health": 7,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 235,
+      "attack": 6,
+      "health": 5,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 236,
+      "attack": 6,
+      "health": 7,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 265,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 271,
+      "attack": 5,
+      "health": 4,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 318,
+      "attack": 7,
+      "health": 7,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 410,
+      "attack": 6,
+      "health": 5,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 423,
+      "attack": 6,
+      "health": 8,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 424,
+      "attack": 3,
+      "health": 9,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 437,
+      "attack": 5,
+      "health": 7,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 441,
+      "attack": 6,
+      "health": 6,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 533,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 545,
+      "attack": 7,
+      "health": 7,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 548,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 549,
+      "attack": 4,
+      "health": 7,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 571,
+      "attack": 6,
+      "health": 9,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 581,
+      "attack": 5,
+      "health": 7,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 635,
+      "attack": 8,
+      "health": 8,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 664,
+      "attack": 8,
+      "health": 6,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 714,
+      "attack": 7,
+      "health": 7,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 741,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 751,
+      "attack": 3,
+      "health": 7,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 757,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 759,
+      "attack": 4,
+      "health": 5,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 763,
+      "attack": 7,
+      "health": 6,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 770,
+      "attack": 5,
+      "health": 6,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 777,
+      "attack": 7,
+      "health": 7,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 802,
+      "attack": 6,
+      "health": 6,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 805,
+      "attack": 6,
+      "health": 4,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 836,
+      "attack": 5,
+      "health": 6,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 840,
+      "attack": 8,
+      "health": 9,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 843,
+      "attack": 4,
+      "health": 4,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 851,
+      "attack": 7,
+      "health": 7,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 852,
+      "attack": 5,
+      "health": 4,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 864,
+      "attack": 4,
+      "health": 7,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 865,
+      "attack": 6,
+      "health": 5,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 874,
+      "attack": 5,
+      "health": 5,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 908,
+      "attack": 6,
+      "health": 8,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 909,
+      "attack": 4,
+      "health": 6,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 929,
+      "attack": 5,
+      "health": 6,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 945,
+      "attack": 5,
+      "health": 4,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 949,
+      "attack": 4,
+      "health": 6,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 952,
+      "attack": 4,
+      "health": 7,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 958,
+      "attack": 3,
+      "health": 7,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 973,
+      "attack": 3,
+      "health": 7,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 975,
+      "attack": 5,
+      "health": 4,
+      "weight": 0.004629629629629629
+    },
+    {
+      "card_id": 985,
+      "attack": 5,
+      "health": 7,
+      "weight": 0.004629629629629629
+    }
+  ],
+  "profiles": [
+    {
+      "card": {
+        "id": 2,
+        "name": "Froggit",
+        "cost": 2,
+        "attack": 2,
+        "health": 3,
+        "effect_readable": "",
+        "target": null
+      },
+      "feature_kind": "plain",
+      "amounts": []
+    },
+    {
+      "card": {
+        "id": 4,
+        "name": "Moldsmal",
+        "cost": 2,
+        "attack": 3,
+        "health": 2,
+        "effect_readable": "",
+        "target": null
+      },
+      "feature_kind": "plain",
+      "amounts": []
+    },
+    {
+      "card": {
+        "id": 11,
+        "name": "Snowdrake",
+        "cost": 4,
+        "attack": 4,
+        "health": 4,
+        "effect_readable": "Magic: Give an ally monster +2 ATK.",
+        "target": "ALLY_MONSTER"
+      },
+      "feature_kind": "ally_attack",
+      "amounts": [
+        2
+      ]
+    },
+    {
+      "card": {
+        "id": 13,
+        "name": "Woshua",
+        "cost": 4,
+        "attack": 3,
+        "health": 5,
+        "effect_readable": "Magic: Give all enemy monsters -1 ATK.",
+        "target": null
+      },
+      "feature_kind": "enemy_attack",
+      "amounts": [
+        1
+      ]
+    },
+    {
+      "card": {
+        "id": 15,
+        "name": "Aaron",
+        "cost": 5,
+        "attack": 6,
+        "health": 5,
+        "effect_readable": "",
+        "target": null
+      },
+      "feature_kind": "plain",
+      "amounts": []
+    },
+    {
+      "card": {
+        "id": 20,
+        "name": "Vulkin",
+        "cost": 4,
+        "attack": 4,
+        "health": 4,
+        "effect_readable": "Magic: Deal DMG 2.",
+        "target": "ALL"
+      },
+      "feature_kind": "damage_any",
+      "amounts": [
+        2
+      ]
+    },
+    {
+      "card": {
+        "id": 49,
+        "name": "Glyde",
+        "cost": 6,
+        "attack": 2,
+        "health": 2,
+        "effect_readable": "Magic: Gain ATK +1/HP +1 for each card in your hand.",
+        "target": null
+      },
+      "feature_kind": "hand_growth",
+      "amounts": [
+        1,
+        1
+      ]
+    },
+    {
+      "card": {
+        "id": 187,
+        "name": "Candy Dish",
+        "cost": 3,
+        "attack": 2,
+        "health": 6,
+        "effect_readable": "",
+        "target": null
+      },
+      "feature_kind": "plain",
+      "amounts": []
+    },
+    {
+      "card": {
+        "id": 196,
+        "name": "Tiny Froggit",
+        "cost": 0,
+        "attack": 1,
+        "health": 1,
+        "effect_readable": "",
+        "target": null
+      },
+      "feature_kind": "plain",
+      "amounts": []
+    },
+    {
+      "card": {
+        "id": 243,
+        "name": "Bench",
+        "cost": 5,
+        "attack": 5,
+        "health": 5,
+        "effect_readable": "Magic: Draw a card.",
+        "target": null
+      },
+      "feature_kind": "draw",
+      "amounts": []
+    },
+    {
+      "card": {
+        "id": 292,
+        "name": "The Warrior",
+        "cost": 6,
+        "attack": 7,
+        "health": 9,
+        "effect_readable": "Magic: Deal 5 DMG to this.",
+        "target": null
+      },
+      "feature_kind": "self_damage",
+      "amounts": [
+        5
+      ]
+    },
+    {
+      "card": {
+        "id": 602,
+        "name": "Rock Pet",
+        "cost": 2,
+        "attack": 3,
+        "health": 3,
+        "effect_readable": "",
+        "target": null
+      },
+      "feature_kind": "plain",
+      "amounts": []
+    }
+  ],
+  "response_sources": [
+    {
+      "id": 79,
+      "name": "Penetration",
+      "cost": 1,
+      "effect_readable": "Silence a monster.",
+      "soul": "BRAVERY"
+    },
+    {
+      "id": 96,
+      "name": "Punishment",
+      "cost": 3,
+      "effect_readable": "Deal 4 DMG to an enemy monster.",
+      "soul": "JUSTICE"
+    },
+    {
+      "id": 100,
+      "name": "Headshot",
+      "cost": 6,
+      "effect_readable": "Silence and kill a monster.",
+      "soul": "JUSTICE"
+    }
+  ],
+  "design": {
+    "face_share": 0.2,
+    "threshold_weight": 0.4,
+    "draw_net_option_model_gold": 0.65,
+    "enemy": [
+      4,
+      5
+    ],
+    "ally": [
+      3,
+      4
+    ],
+    "hand_after_play": 4,
+    "enemy_count": 1,
+    "face_damage_model_gold": 0.25
+  },
+  "origin": "Exact 2026-10-05 snapshot excerpts; no empirical frequencies"
+}

@@ -1,0 +1,14 @@
+{
+  "version": "endpoint-risk-option-0.1",
+  "base_remote_commit": "27854807a7e9e2867f8ef43bd2614478ac301a43",
+  "inputs_sha256": "5ae237207d40f9ecf3b1b0c5f60c15e60c8a3a949a869ce8ba5f12a3ec5dbab5",
+  "sources": {
+    "run_experiment.py": "9352556cf7461c428af717c9a726fec94ac127a1194ad5a321e4d2fd2dab2530",
+    "test_value_model.py": "b7d7900379e57b0113df8a0d1ab4d535dc574ab2ca10c7c9468223934c2a36f8",
+    "value_model.py": "70eeec0c20f650498efb95e9bd3ab6581cd46e593c1d438e5652bfdecf9f0fff"
+  },
+  "snapshot_sha256": "7f19bef22de440abf1c2273806acecd0447e8341ad12f10eb63b418dfad45b85",
+  "old_model_modified": false,
+  "no_battle_search": true,
+  "no_lost_experiments_replayed": true
+}

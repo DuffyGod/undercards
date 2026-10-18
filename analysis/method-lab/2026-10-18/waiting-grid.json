@@ -1,0 +1,482 @@
+[
+  {
+    "favorable_window_weight": 0.0,
+    "foregone_value": 0.0,
+    "value": 1.0,
+    "choice": "deploy_now",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 0.0,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.0,
+    "foregone_value": 0.25,
+    "value": 1.0,
+    "choice": "deploy_now",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": -0.25,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.0,
+    "foregone_value": 0.5,
+    "value": 1.0,
+    "choice": "deploy_now",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": -0.5,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.0,
+    "foregone_value": 1.0,
+    "value": 1.0,
+    "choice": "deploy_now",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": -1.0,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.0,
+    "foregone_value": 2.0,
+    "value": 1.0,
+    "choice": "deploy_now",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": -2.0,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.1,
+    "foregone_value": 0.0,
+    "value": 1.0,
+    "choice": "deploy_now",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 0.4,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.1,
+    "foregone_value": 0.25,
+    "value": 1.0,
+    "choice": "deploy_now",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 0.15000000000000002,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.1,
+    "foregone_value": 0.5,
+    "value": 1.0,
+    "choice": "deploy_now",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": -0.09999999999999998,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.1,
+    "foregone_value": 1.0,
+    "value": 1.0,
+    "choice": "deploy_now",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": -0.6,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.1,
+    "foregone_value": 2.0,
+    "value": 1.0,
+    "choice": "deploy_now",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": -1.6,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.25,
+    "foregone_value": 0.0,
+    "value": 1.0,
+    "choice": "deploy_now",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 1.0,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.25,
+    "foregone_value": 0.25,
+    "value": 1.0,
+    "choice": "deploy_now",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 0.75,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.25,
+    "foregone_value": 0.5,
+    "value": 1.0,
+    "choice": "deploy_now",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 0.5,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.25,
+    "foregone_value": 1.0,
+    "value": 1.0,
+    "choice": "deploy_now",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 0.0,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.25,
+    "foregone_value": 2.0,
+    "value": 1.0,
+    "choice": "deploy_now",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": -1.0,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.5,
+    "foregone_value": 0.0,
+    "value": 2.0,
+    "choice": "wait_once",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 2.0,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.5,
+    "foregone_value": 0.25,
+    "value": 1.75,
+    "choice": "wait_once",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 1.75,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.5,
+    "foregone_value": 0.5,
+    "value": 1.5,
+    "choice": "wait_once",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 1.5,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.5,
+    "foregone_value": 1.0,
+    "value": 1.0,
+    "choice": "deploy_now",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 1.0,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.5,
+    "foregone_value": 2.0,
+    "value": 1.0,
+    "choice": "deploy_now",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 0.0,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.75,
+    "foregone_value": 0.0,
+    "value": 3.0,
+    "choice": "wait_once",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 3.0,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.75,
+    "foregone_value": 0.25,
+    "value": 2.75,
+    "choice": "wait_once",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 2.75,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.75,
+    "foregone_value": 0.5,
+    "value": 2.5,
+    "choice": "wait_once",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 2.5,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.75,
+    "foregone_value": 1.0,
+    "value": 2.0,
+    "choice": "wait_once",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 2.0,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 0.75,
+    "foregone_value": 2.0,
+    "value": 1.0,
+    "choice": "deploy_now",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 1.0,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 1.0,
+    "foregone_value": 0.0,
+    "value": 4.0,
+    "choice": "wait_once",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 4.0,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 1.0,
+    "foregone_value": 0.25,
+    "value": 3.75,
+    "choice": "wait_once",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 3.75,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 1.0,
+    "foregone_value": 0.5,
+    "value": 3.5,
+    "choice": "wait_once",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 3.5,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 1.0,
+    "foregone_value": 1.0,
+    "value": 3.0,
+    "choice": "wait_once",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 3.0,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  },
+  {
+    "favorable_window_weight": 1.0,
+    "foregone_value": 2.0,
+    "value": 2.0,
+    "choice": "wait_once",
+    "choices": {
+      "deploy_now": 1.0,
+      "wait_once": 2.0,
+      "decline": 0.0
+    },
+    "future_deploy": [
+      false,
+      true
+    ],
+    "world_weights_are_design_assumptions": true
+  }
+]

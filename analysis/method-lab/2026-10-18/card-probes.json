@@ -1,0 +1,1057 @@
+{
+  "version": "endpoint-risk-option-0.1",
+  "scope": "Sparse conditional value probes, not card strength ranking",
+  "rows": [
+    {
+      "profile": {
+        "card": {
+          "id": 2,
+          "name": "Froggit",
+          "cost": 2,
+          "attack": 2,
+          "health": 3,
+          "effect_readable": "",
+          "target": null
+        },
+        "feature_kind": "plain",
+        "amounts": []
+      },
+      "context": {
+        "face_share": 0.2,
+        "threshold_weight": 0.4,
+        "draw_net_option_model_gold": 0.65,
+        "enemy": [
+          4,
+          5
+        ],
+        "ally": [
+          3,
+          4
+        ],
+        "hand_after_play": 4,
+        "enemy_count": 1,
+        "face_damage_model_gold": 0.25
+      },
+      "silence": {
+        "no_reply": 2.2382149775553906,
+        "answered": 2.2382149775553906,
+        "loss": 0.0,
+        "response_available": true,
+        "response_cost": 1,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 2.2382149775553906,
+          "0.1": 2.2382149775553906,
+          "0.25": 2.2382149775553906,
+          "0.5": 2.2382149775553906,
+          "1.0": 2.2382149775553906
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "damage4": {
+        "no_reply": 2.2382149775553906,
+        "answered": 0.0,
+        "loss": 2.2382149775553906,
+        "response_available": true,
+        "response_cost": 3,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 2.2382149775553906,
+          "0.1": 2.0143934797998515,
+          "0.25": 1.678661233166543,
+          "0.5": 1.1191074887776953,
+          "1.0": 0.0
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "headshot": {
+        "no_reply": 2.2382149775553906,
+        "answered": 0.0,
+        "loss": 2.2382149775553906,
+        "response_available": true,
+        "response_cost": 6,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 2.2382149775553906,
+          "0.1": 2.0143934797998515,
+          "0.25": 1.678661233166543,
+          "0.5": 1.1191074887776953,
+          "1.0": 0.0
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "assumptions": []
+    },
+    {
+      "profile": {
+        "card": {
+          "id": 4,
+          "name": "Moldsmal",
+          "cost": 2,
+          "attack": 3,
+          "health": 2,
+          "effect_readable": "",
+          "target": null
+        },
+        "feature_kind": "plain",
+        "amounts": []
+      },
+      "context": {
+        "face_share": 0.2,
+        "threshold_weight": 0.4,
+        "draw_net_option_model_gold": 0.65,
+        "enemy": [
+          4,
+          5
+        ],
+        "ally": [
+          3,
+          4
+        ],
+        "hand_after_play": 4,
+        "enemy_count": 1,
+        "face_damage_model_gold": 0.25
+      },
+      "silence": {
+        "no_reply": 2.1599450919476753,
+        "answered": 2.1599450919476753,
+        "loss": 0.0,
+        "response_available": true,
+        "response_cost": 1,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 2.1599450919476753,
+          "0.1": 2.1599450919476753,
+          "0.25": 2.1599450919476753,
+          "0.5": 2.1599450919476753,
+          "1.0": 2.1599450919476753
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "damage4": {
+        "no_reply": 2.1599450919476753,
+        "answered": 0.0,
+        "loss": 2.1599450919476753,
+        "response_available": true,
+        "response_cost": 3,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 2.1599450919476753,
+          "0.1": 1.9439505827529078,
+          "0.25": 1.6199588189607566,
+          "0.5": 1.0799725459738376,
+          "1.0": 0.0
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "headshot": {
+        "no_reply": 2.1599450919476753,
+        "answered": 0.0,
+        "loss": 2.1599450919476753,
+        "response_available": true,
+        "response_cost": 6,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 2.1599450919476753,
+          "0.1": 1.9439505827529078,
+          "0.25": 1.6199588189607566,
+          "0.5": 1.0799725459738376,
+          "1.0": 0.0
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "assumptions": []
+    },
+    {
+      "profile": {
+        "card": {
+          "id": 11,
+          "name": "Snowdrake",
+          "cost": 4,
+          "attack": 4,
+          "health": 4,
+          "effect_readable": "Magic: Give an ally monster +2 ATK.",
+          "target": "ALLY_MONSTER"
+        },
+        "feature_kind": "ally_attack",
+        "amounts": [
+          2
+        ]
+      },
+      "context": {
+        "face_share": 0.2,
+        "threshold_weight": 0.4,
+        "draw_net_option_model_gold": 0.65,
+        "enemy": [
+          4,
+          5
+        ],
+        "ally": [
+          3,
+          4
+        ],
+        "hand_after_play": 4,
+        "enemy_count": 1,
+        "face_damage_model_gold": 0.25
+      },
+      "silence": {
+        "no_reply": 4.518761706849609,
+        "answered": 4.518761706849609,
+        "loss": 0.0,
+        "response_available": true,
+        "response_cost": 1,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 4.518761706849609,
+          "0.1": 4.518761706849609,
+          "0.25": 4.518761706849609,
+          "0.5": 4.518761706849609,
+          "1.0": 4.518761706849609
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "damage4": {
+        "no_reply": 4.518761706849609,
+        "answered": 0.894067406587784,
+        "loss": 3.6246943002618246,
+        "response_available": true,
+        "response_cost": 3,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 4.518761706849609,
+          "0.1": 4.156292276823426,
+          "0.25": 3.6125881317841526,
+          "0.5": 2.7064145567186966,
+          "1.0": 0.894067406587784
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "headshot": {
+        "no_reply": 4.518761706849609,
+        "answered": 0.894067406587784,
+        "loss": 3.6246943002618246,
+        "response_available": true,
+        "response_cost": 6,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 4.518761706849609,
+          "0.1": 4.156292276823426,
+          "0.25": 3.6125881317841526,
+          "0.5": 2.7064145567186966,
+          "1.0": 0.894067406587784
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "assumptions": [
+        "Other ally is a declared ordinary numeric body; later silence on it is not modeled."
+      ]
+    },
+    {
+      "profile": {
+        "card": {
+          "id": 13,
+          "name": "Woshua",
+          "cost": 4,
+          "attack": 3,
+          "health": 5,
+          "effect_readable": "Magic: Give all enemy monsters -1 ATK.",
+          "target": null
+        },
+        "feature_kind": "enemy_attack",
+        "amounts": [
+          1
+        ]
+      },
+      "context": {
+        "face_share": 0.2,
+        "threshold_weight": 0.4,
+        "draw_net_option_model_gold": 0.65,
+        "enemy": [
+          4,
+          5
+        ],
+        "ally": [
+          3,
+          4
+        ],
+        "hand_after_play": 4,
+        "enemy_count": 1,
+        "face_damage_model_gold": 0.25
+      },
+      "silence": {
+        "no_reply": 4.2030223968917,
+        "answered": 4.2030223968917,
+        "loss": 0.0,
+        "response_available": true,
+        "response_cost": 1,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 4.2030223968917,
+          "0.1": 4.2030223968917,
+          "0.25": 4.2030223968917,
+          "0.5": 4.2030223968917,
+          "1.0": 4.2030223968917
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "damage4": {
+        "no_reply": 4.2030223968917,
+        "answered": 2.1005705115877213,
+        "loss": 2.1024518853039784,
+        "response_available": true,
+        "response_cost": 3,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 4.2030223968917,
+          "0.1": 3.992777208361302,
+          "0.25": 3.6774094255657053,
+          "0.5": 3.1517964542397108,
+          "1.0": 2.1005705115877213
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "headshot": {
+        "no_reply": 4.2030223968917,
+        "answered": 0.569692754669266,
+        "loss": 3.6333296422224337,
+        "response_available": true,
+        "response_cost": 6,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 4.2030223968917,
+          "0.1": 3.8396894326694566,
+          "0.25": 3.2946899863360914,
+          "0.5": 2.386357575780483,
+          "1.0": 0.569692754669266
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "assumptions": [
+        "Enemy state change uses one shared body potential; no extra control/kill bonus."
+      ]
+    },
+    {
+      "profile": {
+        "card": {
+          "id": 15,
+          "name": "Aaron",
+          "cost": 5,
+          "attack": 6,
+          "health": 5,
+          "effect_readable": "",
+          "target": null
+        },
+        "feature_kind": "plain",
+        "amounts": []
+      },
+      "context": {
+        "face_share": 0.2,
+        "threshold_weight": 0.4,
+        "draw_net_option_model_gold": 0.65,
+        "enemy": [
+          4,
+          5
+        ],
+        "ally": [
+          3,
+          4
+        ],
+        "hand_after_play": 4,
+        "enemy_count": 1,
+        "face_damage_model_gold": 0.25
+      },
+      "silence": {
+        "no_reply": 5.0,
+        "answered": 5.0,
+        "loss": 0.0,
+        "response_available": true,
+        "response_cost": 1,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 5.0,
+          "0.1": 5.0,
+          "0.25": 5.0,
+          "0.5": 5.0,
+          "1.0": 5.0
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "damage4": {
+        "no_reply": 5.0,
+        "answered": 2.230002163002071,
+        "loss": 2.769997836997929,
+        "response_available": true,
+        "response_cost": 3,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 5.0,
+          "0.1": 4.723000216300207,
+          "0.25": 4.307500540750517,
+          "0.5": 3.6150010815010356,
+          "1.0": 2.230002163002071
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "headshot": {
+        "no_reply": 5.0,
+        "answered": 0.0,
+        "loss": 5.0,
+        "response_available": true,
+        "response_cost": 6,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 5.0,
+          "0.1": 4.5,
+          "0.25": 3.75,
+          "0.5": 2.5,
+          "1.0": 0.0
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "assumptions": []
+    },
+    {
+      "profile": {
+        "card": {
+          "id": 20,
+          "name": "Vulkin",
+          "cost": 4,
+          "attack": 4,
+          "health": 4,
+          "effect_readable": "Magic: Deal DMG 2.",
+          "target": "ALL"
+        },
+        "feature_kind": "damage_any",
+        "amounts": [
+          2
+        ]
+      },
+      "context": {
+        "face_share": 0.2,
+        "threshold_weight": 0.4,
+        "draw_net_option_model_gold": 0.65,
+        "enemy": [
+          4,
+          5
+        ],
+        "ally": [
+          3,
+          4
+        ],
+        "hand_after_play": 4,
+        "enemy_count": 1,
+        "face_damage_model_gold": 0.25
+      },
+      "silence": {
+        "no_reply": 4.747487008330033,
+        "answered": 4.747487008330033,
+        "loss": 0.0,
+        "response_available": true,
+        "response_cost": 1,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 4.747487008330033,
+          "0.1": 4.747487008330033,
+          "0.25": 4.747487008330033,
+          "0.5": 4.747487008330033,
+          "1.0": 4.747487008330033
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "damage4": {
+        "no_reply": 4.747487008330033,
+        "answered": 1.122792708068209,
+        "loss": 3.624694300261824,
+        "response_available": true,
+        "response_cost": 3,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 4.747487008330033,
+          "0.1": 4.3850175783038505,
+          "0.25": 3.841313433264577,
+          "0.5": 2.935139858199121,
+          "1.0": 1.122792708068209
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "headshot": {
+        "no_reply": 4.747487008330033,
+        "answered": 1.122792708068209,
+        "loss": 3.624694300261824,
+        "response_available": true,
+        "response_cost": 6,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 4.747487008330033,
+          "0.1": 4.3850175783038505,
+          "0.25": 3.841313433264577,
+          "0.5": 2.935139858199121,
+          "1.0": 1.122792708068209
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "assumptions": [
+        "Restricted ordinary enemy/face target menu; hero marginal price is a design prior."
+      ]
+    },
+    {
+      "profile": {
+        "card": {
+          "id": 49,
+          "name": "Glyde",
+          "cost": 6,
+          "attack": 2,
+          "health": 2,
+          "effect_readable": "Magic: Gain ATK +1/HP +1 for each card in your hand.",
+          "target": null
+        },
+        "feature_kind": "hand_growth",
+        "amounts": [
+          1,
+          1
+        ]
+      },
+      "context": {
+        "face_share": 0.2,
+        "threshold_weight": 0.4,
+        "draw_net_option_model_gold": 0.65,
+        "enemy": [
+          4,
+          5
+        ],
+        "ally": [
+          3,
+          4
+        ],
+        "hand_after_play": 4,
+        "enemy_count": 1,
+        "face_damage_model_gold": 0.25
+      },
+      "silence": {
+        "no_reply": 5.598554667217816,
+        "answered": 1.8122151343311197,
+        "loss": 3.7863395328866964,
+        "response_available": true,
+        "response_cost": 1,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 5.598554667217816,
+          "0.1": 5.219920713929146,
+          "0.25": 4.651969783996142,
+          "0.5": 3.705384900774468,
+          "1.0": 1.8122151343311197
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "damage4": {
+        "no_reply": 5.598554667217816,
+        "answered": 3.032437715427916,
+        "loss": 2.5661169517899003,
+        "response_available": true,
+        "response_cost": 3,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 5.598554667217816,
+          "0.1": 5.341942972038826,
+          "0.25": 4.957025429270341,
+          "0.5": 4.315496191322866,
+          "1.0": 3.032437715427916
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "headshot": {
+        "no_reply": 5.598554667217816,
+        "answered": 0.0,
+        "loss": 5.598554667217816,
+        "response_available": true,
+        "response_cost": 6,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 5.598554667217816,
+          "0.1": 5.038699200496034,
+          "0.25": 4.198916000413362,
+          "0.5": 2.799277333608908,
+          "1.0": 0.0
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "assumptions": []
+    },
+    {
+      "profile": {
+        "card": {
+          "id": 187,
+          "name": "Candy Dish",
+          "cost": 3,
+          "attack": 2,
+          "health": 6,
+          "effect_readable": "",
+          "target": null
+        },
+        "feature_kind": "plain",
+        "amounts": []
+      },
+      "context": {
+        "face_share": 0.2,
+        "threshold_weight": 0.4,
+        "draw_net_option_model_gold": 0.65,
+        "enemy": [
+          4,
+          5
+        ],
+        "ally": [
+          3,
+          4
+        ],
+        "hand_after_play": 4,
+        "enemy_count": 1,
+        "face_damage_model_gold": 0.25
+      },
+      "silence": {
+        "no_reply": 3.4491989378636645,
+        "answered": 3.4491989378636645,
+        "loss": 0.0,
+        "response_available": true,
+        "response_cost": 1,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 3.4491989378636645,
+          "0.1": 3.4491989378636645,
+          "0.25": 3.4491989378636645,
+          "0.5": 3.4491989378636645,
+          "1.0": 3.4491989378636645
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "damage4": {
+        "no_reply": 3.4491989378636645,
+        "answered": 1.8122151343311197,
+        "loss": 1.6369838035325448,
+        "response_available": true,
+        "response_cost": 3,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 3.4491989378636645,
+          "0.1": 3.28550055751041,
+          "0.25": 3.0399529869805284,
+          "0.5": 2.630707036097392,
+          "1.0": 1.8122151343311197
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "headshot": {
+        "no_reply": 3.4491989378636645,
+        "answered": 0.0,
+        "loss": 3.4491989378636645,
+        "response_available": true,
+        "response_cost": 6,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 3.4491989378636645,
+          "0.1": 3.1042790440772983,
+          "0.25": 2.5868992033977483,
+          "0.5": 1.7245994689318322,
+          "1.0": 0.0
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "assumptions": []
+    },
+    {
+      "profile": {
+        "card": {
+          "id": 196,
+          "name": "Tiny Froggit",
+          "cost": 0,
+          "attack": 1,
+          "health": 1,
+          "effect_readable": "",
+          "target": null
+        },
+        "feature_kind": "plain",
+        "amounts": []
+      },
+      "context": {
+        "face_share": 0.2,
+        "threshold_weight": 0.4,
+        "draw_net_option_model_gold": 0.65,
+        "enemy": [
+          4,
+          5
+        ],
+        "ally": [
+          3,
+          4
+        ],
+        "hand_after_play": 4,
+        "enemy_count": 1,
+        "face_damage_model_gold": 0.25
+      },
+      "silence": {
+        "no_reply": 0.9857680408198535,
+        "answered": 0.9857680408198535,
+        "loss": 0.0,
+        "response_available": true,
+        "response_cost": 1,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 0.9857680408198535,
+          "0.1": 0.9857680408198535,
+          "0.25": 0.9857680408198535,
+          "0.5": 0.9857680408198535,
+          "1.0": 0.9857680408198535
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "damage4": {
+        "no_reply": 0.9857680408198535,
+        "answered": 0.0,
+        "loss": 0.9857680408198535,
+        "response_available": true,
+        "response_cost": 3,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 0.9857680408198535,
+          "0.1": 0.8871912367378681,
+          "0.25": 0.7393260306148901,
+          "0.5": 0.49288402040992674,
+          "1.0": 0.0
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "headshot": {
+        "no_reply": 0.9857680408198535,
+        "answered": 0.0,
+        "loss": 0.9857680408198535,
+        "response_available": true,
+        "response_cost": 6,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 0.9857680408198535,
+          "0.1": 0.8871912367378681,
+          "0.25": 0.7393260306148901,
+          "0.5": 0.49288402040992674,
+          "1.0": 0.0
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "assumptions": []
+    },
+    {
+      "profile": {
+        "card": {
+          "id": 243,
+          "name": "Bench",
+          "cost": 5,
+          "attack": 5,
+          "health": 5,
+          "effect_readable": "Magic: Draw a card.",
+          "target": null
+        },
+        "feature_kind": "draw",
+        "amounts": []
+      },
+      "context": {
+        "face_share": 0.2,
+        "threshold_weight": 0.4,
+        "draw_net_option_model_gold": 0.65,
+        "enemy": [
+          4,
+          5
+        ],
+        "ally": [
+          3,
+          4
+        ],
+        "hand_after_play": 4,
+        "enemy_count": 1,
+        "face_damage_model_gold": 0.25
+      },
+      "silence": {
+        "no_reply": 5.334963451460235,
+        "answered": 5.334963451460235,
+        "loss": 0.0,
+        "response_available": true,
+        "response_cost": 1,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 5.334963451460235,
+          "0.1": 5.334963451460235,
+          "0.25": 5.334963451460235,
+          "0.5": 5.334963451460235,
+          "1.0": 5.334963451460235
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "damage4": {
+        "no_reply": 5.334963451460235,
+        "answered": 2.71016078987071,
+        "loss": 2.624802661589525,
+        "response_available": true,
+        "response_cost": 3,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 5.334963451460235,
+          "0.1": 5.072483185301282,
+          "0.25": 4.678762786062854,
+          "0.5": 4.022562120665472,
+          "1.0": 2.71016078987071
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "headshot": {
+        "no_reply": 5.334963451460235,
+        "answered": 0.65,
+        "loss": 4.684963451460234,
+        "response_available": true,
+        "response_cost": 6,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 5.334963451460235,
+          "0.1": 4.866467106314211,
+          "0.25": 4.163722588595176,
+          "0.5": 2.9924817257301175,
+          "1.0": 0.6500000000000004
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "assumptions": [
+        "Draw net option prior .65; identity, Turbo, fatigue and long-run use are not solved."
+      ]
+    },
+    {
+      "profile": {
+        "card": {
+          "id": 292,
+          "name": "The Warrior",
+          "cost": 6,
+          "attack": 7,
+          "health": 9,
+          "effect_readable": "Magic: Deal 5 DMG to this.",
+          "target": null
+        },
+        "feature_kind": "self_damage",
+        "amounts": [
+          5
+        ]
+      },
+      "context": {
+        "face_share": 0.2,
+        "threshold_weight": 0.4,
+        "draw_net_option_model_gold": 0.65,
+        "enemy": [
+          4,
+          5
+        ],
+        "ally": [
+          3,
+          4
+        ],
+        "hand_after_play": 4,
+        "enemy_count": 1,
+        "face_damage_model_gold": 0.25
+      },
+      "silence": {
+        "no_reply": 4.518847621906614,
+        "answered": 4.518847621906614,
+        "loss": 0.0,
+        "response_available": true,
+        "response_cost": 1,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 4.518847621906614,
+          "0.1": 4.518847621906614,
+          "0.25": 4.518847621906614,
+          "0.5": 4.518847621906614,
+          "1.0": 4.518847621906614
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "damage4": {
+        "no_reply": 4.518847621906614,
+        "answered": 0.0,
+        "loss": 4.518847621906614,
+        "response_available": true,
+        "response_cost": 3,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 4.518847621906614,
+          "0.1": 4.066962859715953,
+          "0.25": 3.3891357164299607,
+          "0.5": 2.259423810953307,
+          "1.0": 0.0
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "headshot": {
+        "no_reply": 4.518847621906614,
+        "answered": 0.0,
+        "loss": 4.518847621906614,
+        "response_available": true,
+        "response_cost": 6,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 4.518847621906614,
+          "0.1": 4.066962859715953,
+          "0.25": 3.3891357164299607,
+          "0.5": 2.259423810953307,
+          "1.0": 0.0
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "assumptions": []
+    },
+    {
+      "profile": {
+        "card": {
+          "id": 602,
+          "name": "Rock Pet",
+          "cost": 2,
+          "attack": 3,
+          "health": 3,
+          "effect_readable": "",
+          "target": null
+        },
+        "feature_kind": "plain",
+        "amounts": []
+      },
+      "context": {
+        "face_share": 0.2,
+        "threshold_weight": 0.4,
+        "draw_net_option_model_gold": 0.65,
+        "enemy": [
+          4,
+          5
+        ],
+        "ally": [
+          3,
+          4
+        ],
+        "hand_after_play": 4,
+        "enemy_count": 1,
+        "face_damage_model_gold": 0.25
+      },
+      "silence": {
+        "no_reply": 2.661923415263233,
+        "answered": 2.661923415263233,
+        "loss": 0.0,
+        "response_available": true,
+        "response_cost": 1,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 2.661923415263233,
+          "0.1": 2.661923415263233,
+          "0.25": 2.661923415263233,
+          "0.5": 2.661923415263233,
+          "1.0": 2.661923415263233
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "damage4": {
+        "no_reply": 2.661923415263233,
+        "answered": 0.0,
+        "loss": 2.661923415263233,
+        "response_available": true,
+        "response_cost": 3,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 2.661923415263233,
+          "0.1": 2.3957310737369095,
+          "0.25": 1.9964425614474246,
+          "0.5": 1.3309617076316165,
+          "1.0": 0.0
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "headshot": {
+        "no_reply": 2.661923415263233,
+        "answered": 0.0,
+        "loss": 2.661923415263233,
+        "response_available": true,
+        "response_cost": 6,
+        "enemy_cash": 6,
+        "response_target": "candidate_body",
+        "response_access_assumed": true,
+        "value_at_p": {
+          "0.0": 2.661923415263233,
+          "0.1": 2.3957310737369095,
+          "0.25": 1.9964425614474246,
+          "0.5": 1.3309617076316165,
+          "1.0": 0.0
+        },
+        "numeric_meaning": "conditional recovered asset model-G; opponent resources excluded"
+      },
+      "assumptions": []
+    }
+  ]
+}
