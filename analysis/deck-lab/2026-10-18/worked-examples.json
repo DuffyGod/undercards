@@ -1,0 +1,661 @@
+{
+  "assumptions": [
+    "Exact worked lines, no opponent response, no preexisting own body or Soul/Power tick.",
+    "First sources have no end trigger in these examples; no artificial end-of-turn effect is resolved between the two Plays.",
+    "Face clock: enemy board stays empty, source never removed, no other plays/buffs/spell casts, three subsequent own action turns.",
+    "All printed Haste is monster-only and cannot add immediate face attacks; NPC never attacks on entry in this empty-board clock.",
+    "Clock is conditional pressure, not expected game damage; unused healing/draw and card survival are not priced at zero."
+  ],
+  "two_source_examples": [
+    {
+      "initial_enemy": [
+        6,
+        7,
+        7
+      ],
+      "initial_hand": 5,
+      "initial_cash": 9,
+      "first_id": 984,
+      "second_id": 436,
+      "first_line": {
+        "card_id": 984,
+        "name": "Terakota Archer",
+        "required_gold": 6,
+        "own": [
+          {
+            "id": 984,
+            "name": "Terakota Archer",
+            "attack": 3,
+            "health": 4,
+            "max_health": 4,
+            "statuses": [],
+            "attacked": false,
+            "can_attack_this_turn": false,
+            "next_own_turn_can_attack": true,
+            "source": "played_root",
+            "remaining_source_text": "Magic: Deal DMG to an enemy monster equal to the number of cards in your hand. Bullseye: Summon a ATK 2/HP 3 Green Clover [#375]."
+          }
+        ],
+        "enemy": {
+          "attack": 6,
+          "health": 3,
+          "max_health": 7,
+          "statuses": []
+        },
+        "hand_after": 4,
+        "hand_additions": [],
+        "hand_additions_not_held": 0,
+        "draws_requested": 0,
+        "draws_to_hand": 0,
+        "draws_erased": 0,
+        "deck_additions": [],
+        "generated_spells_spent": 0,
+        "conditional_hand_changes": [],
+        "healing": [],
+        "hero_damage": 0,
+        "opponent_gold_gained": 0,
+        "own_flame_slots": 0,
+        "debts": [],
+        "notes": [],
+        "plan": "hold_attack",
+        "payable": true,
+        "cash_after": 3,
+        "healing_potential_interval": [
+          0,
+          0
+        ],
+        "actual_healing_interval": null,
+        "clears_this_turn": false
+      },
+      "second_line": {
+        "card_id": 436,
+        "name": "Town Hall Guy",
+        "required_gold": 3,
+        "own": [],
+        "enemy": null,
+        "hand_after": 3,
+        "hand_additions": [],
+        "hand_additions_not_held": 0,
+        "draws_requested": 0,
+        "draws_to_hand": 0,
+        "draws_erased": 0,
+        "deck_additions": [],
+        "generated_spells_spent": 0,
+        "conditional_hand_changes": [
+          {
+            "condition": "A Haste monster is actually in the other hand cards",
+            "change": "Give one such monster +1 ATK",
+            "resolved": false
+          }
+        ],
+        "healing": [],
+        "hero_damage": 0,
+        "opponent_gold_gained": 0,
+        "own_flame_slots": 0,
+        "debts": [],
+        "notes": [],
+        "plan": "attack_enemy_once",
+        "payable": true,
+        "cash_after": 0,
+        "healing_potential_interval": [
+          0,
+          0
+        ],
+        "actual_healing_interval": null,
+        "clears_this_turn": true
+      },
+      "surviving_own_bodies": [
+        {
+          "id": 984,
+          "name": "Terakota Archer",
+          "attack": 3,
+          "health": 4,
+          "max_health": 4,
+          "statuses": [],
+          "attacked": false,
+          "can_attack_this_turn": false,
+          "next_own_turn_can_attack": true,
+          "source": "played_root",
+          "remaining_source_text": "Magic: Deal DMG to an enemy monster equal to the number of cards in your hand. Bullseye: Summon a ATK 2/HP 3 Green Clover [#375]."
+        }
+      ],
+      "clears_this_turn": true,
+      "total_gold": 9,
+      "p_two_sources_in_uniform_original_hand": 0.06231884057971015,
+      "access_deck": "A_early",
+      "extra_assumption": "No relevant Town Hall hand buff is cashed in this two-source line; all four own slots start empty."
+    },
+    {
+      "initial_enemy": [
+        6,
+        7,
+        7
+      ],
+      "initial_hand": 7,
+      "initial_cash": 10,
+      "first_id": 20,
+      "second_id": 984,
+      "first_line": {
+        "card_id": 20,
+        "name": "Vulkin",
+        "required_gold": 4,
+        "own": [
+          {
+            "id": 20,
+            "name": "Vulkin",
+            "attack": 4,
+            "health": 4,
+            "max_health": 4,
+            "statuses": [],
+            "attacked": false,
+            "can_attack_this_turn": false,
+            "next_own_turn_can_attack": true,
+            "source": "played_root",
+            "remaining_source_text": "Magic: Deal DMG 2."
+          }
+        ],
+        "enemy": {
+          "attack": 6,
+          "health": 5,
+          "max_health": 7,
+          "statuses": []
+        },
+        "hand_after": 6,
+        "hand_additions": [],
+        "hand_additions_not_held": 0,
+        "draws_requested": 0,
+        "draws_to_hand": 0,
+        "draws_erased": 0,
+        "deck_additions": [],
+        "generated_spells_spent": 0,
+        "conditional_hand_changes": [],
+        "healing": [],
+        "hero_damage": 0,
+        "opponent_gold_gained": 0,
+        "own_flame_slots": 0,
+        "debts": [],
+        "notes": [],
+        "plan": "hold_attack",
+        "payable": true,
+        "cash_after": 6,
+        "healing_potential_interval": [
+          0,
+          0
+        ],
+        "actual_healing_interval": null,
+        "clears_this_turn": false
+      },
+      "second_line": {
+        "card_id": 984,
+        "name": "Terakota Archer",
+        "required_gold": 6,
+        "own": [
+          {
+            "id": 984,
+            "name": "Terakota Archer",
+            "attack": 3,
+            "health": 4,
+            "max_health": 4,
+            "statuses": [],
+            "attacked": false,
+            "can_attack_this_turn": false,
+            "next_own_turn_can_attack": true,
+            "source": "played_root",
+            "remaining_source_text": "Magic: Deal DMG to an enemy monster equal to the number of cards in your hand. Bullseye: Summon a ATK 2/HP 3 Green Clover [#375]."
+          },
+          {
+            "id": 375,
+            "name": "Green Clover",
+            "attack": 2,
+            "health": 3,
+            "max_health": 3,
+            "statuses": [],
+            "attacked": false,
+            "can_attack_this_turn": false,
+            "next_own_turn_can_attack": true,
+            "source": "Bullseye_summon"
+          }
+        ],
+        "enemy": null,
+        "hand_after": 5,
+        "hand_additions": [],
+        "hand_additions_not_held": 0,
+        "draws_requested": 0,
+        "draws_to_hand": 0,
+        "draws_erased": 0,
+        "deck_additions": [],
+        "generated_spells_spent": 0,
+        "conditional_hand_changes": [],
+        "healing": [],
+        "hero_damage": 0,
+        "opponent_gold_gained": 0,
+        "own_flame_slots": 0,
+        "debts": [],
+        "notes": [],
+        "plan": "hold_attack",
+        "payable": true,
+        "cash_after": 0,
+        "healing_potential_interval": [
+          0,
+          0
+        ],
+        "actual_healing_interval": null,
+        "clears_this_turn": true
+      },
+      "surviving_own_bodies": [
+        {
+          "id": 20,
+          "name": "Vulkin",
+          "attack": 4,
+          "health": 4,
+          "max_health": 4,
+          "statuses": [],
+          "attacked": false,
+          "can_attack_this_turn": false,
+          "next_own_turn_can_attack": true,
+          "source": "played_root",
+          "remaining_source_text": "Magic: Deal DMG 2."
+        },
+        {
+          "id": 984,
+          "name": "Terakota Archer",
+          "attack": 3,
+          "health": 4,
+          "max_health": 4,
+          "statuses": [],
+          "attacked": false,
+          "can_attack_this_turn": false,
+          "next_own_turn_can_attack": true,
+          "source": "played_root",
+          "remaining_source_text": "Magic: Deal DMG to an enemy monster equal to the number of cards in your hand. Bullseye: Summon a ATK 2/HP 3 Green Clover [#375]."
+        },
+        {
+          "id": 375,
+          "name": "Green Clover",
+          "attack": 2,
+          "health": 3,
+          "max_health": 3,
+          "statuses": [],
+          "attacked": false,
+          "can_attack_this_turn": false,
+          "next_own_turn_can_attack": true,
+          "source": "Bullseye_summon"
+        }
+      ],
+      "clears_this_turn": true,
+      "total_gold": 10,
+      "p_two_sources_in_uniform_original_hand": 0.12478260869565218,
+      "access_deck": "A_early",
+      "extra_assumption": "No relevant Town Hall hand buff is cashed in this two-source line; all four own slots start empty."
+    },
+    {
+      "initial_enemy": [
+        6,
+        7,
+        7
+      ],
+      "initial_hand": 5,
+      "initial_cash": 10,
+      "first_id": 20,
+      "second_id": 984,
+      "first_line": {
+        "card_id": 20,
+        "name": "Vulkin",
+        "required_gold": 4,
+        "own": [
+          {
+            "id": 20,
+            "name": "Vulkin",
+            "attack": 4,
+            "health": 4,
+            "max_health": 4,
+            "statuses": [],
+            "attacked": false,
+            "can_attack_this_turn": false,
+            "next_own_turn_can_attack": true,
+            "source": "played_root",
+            "remaining_source_text": "Magic: Deal DMG 2."
+          }
+        ],
+        "enemy": {
+          "attack": 6,
+          "health": 5,
+          "max_health": 7,
+          "statuses": []
+        },
+        "hand_after": 4,
+        "hand_additions": [],
+        "hand_additions_not_held": 0,
+        "draws_requested": 0,
+        "draws_to_hand": 0,
+        "draws_erased": 0,
+        "deck_additions": [],
+        "generated_spells_spent": 0,
+        "conditional_hand_changes": [],
+        "healing": [],
+        "hero_damage": 0,
+        "opponent_gold_gained": 0,
+        "own_flame_slots": 0,
+        "debts": [],
+        "notes": [],
+        "plan": "hold_attack",
+        "payable": true,
+        "cash_after": 6,
+        "healing_potential_interval": [
+          0,
+          0
+        ],
+        "actual_healing_interval": null,
+        "clears_this_turn": false
+      },
+      "second_line": {
+        "card_id": 984,
+        "name": "Terakota Archer",
+        "required_gold": 6,
+        "own": [
+          {
+            "id": 984,
+            "name": "Terakota Archer",
+            "attack": 3,
+            "health": 4,
+            "max_health": 4,
+            "statuses": [],
+            "attacked": false,
+            "can_attack_this_turn": false,
+            "next_own_turn_can_attack": true,
+            "source": "played_root",
+            "remaining_source_text": "Magic: Deal DMG to an enemy monster equal to the number of cards in your hand. Bullseye: Summon a ATK 2/HP 3 Green Clover [#375]."
+          }
+        ],
+        "enemy": {
+          "attack": 6,
+          "health": 2,
+          "max_health": 7,
+          "statuses": []
+        },
+        "hand_after": 3,
+        "hand_additions": [],
+        "hand_additions_not_held": 0,
+        "draws_requested": 0,
+        "draws_to_hand": 0,
+        "draws_erased": 0,
+        "deck_additions": [],
+        "generated_spells_spent": 0,
+        "conditional_hand_changes": [],
+        "healing": [],
+        "hero_damage": 0,
+        "opponent_gold_gained": 0,
+        "own_flame_slots": 0,
+        "debts": [],
+        "notes": [],
+        "plan": "hold_attack",
+        "payable": true,
+        "cash_after": 0,
+        "healing_potential_interval": [
+          0,
+          0
+        ],
+        "actual_healing_interval": null,
+        "clears_this_turn": false
+      },
+      "surviving_own_bodies": [
+        {
+          "id": 20,
+          "name": "Vulkin",
+          "attack": 4,
+          "health": 4,
+          "max_health": 4,
+          "statuses": [],
+          "attacked": false,
+          "can_attack_this_turn": false,
+          "next_own_turn_can_attack": true,
+          "source": "played_root",
+          "remaining_source_text": "Magic: Deal DMG 2."
+        },
+        {
+          "id": 984,
+          "name": "Terakota Archer",
+          "attack": 3,
+          "health": 4,
+          "max_health": 4,
+          "statuses": [],
+          "attacked": false,
+          "can_attack_this_turn": false,
+          "next_own_turn_can_attack": true,
+          "source": "played_root",
+          "remaining_source_text": "Magic: Deal DMG to an enemy monster equal to the number of cards in your hand. Bullseye: Summon a ATK 2/HP 3 Green Clover [#375]."
+        }
+      ],
+      "clears_this_turn": false,
+      "total_gold": 10,
+      "p_two_sources_in_uniform_original_hand": 0.06231884057971015,
+      "access_deck": "A_early",
+      "extra_assumption": "No relevant Town Hall hand buff is cashed in this two-source line; all four own slots start empty."
+    },
+    {
+      "initial_enemy": [
+        6,
+        7,
+        7
+      ],
+      "initial_hand": 5,
+      "initial_cash": 9,
+      "first_id": 20,
+      "second_id": 951,
+      "first_line": {
+        "card_id": 20,
+        "name": "Vulkin",
+        "required_gold": 4,
+        "own": [
+          {
+            "id": 20,
+            "name": "Vulkin",
+            "attack": 4,
+            "health": 4,
+            "max_health": 4,
+            "statuses": [],
+            "attacked": false,
+            "can_attack_this_turn": false,
+            "next_own_turn_can_attack": true,
+            "source": "played_root",
+            "remaining_source_text": "Magic: Deal DMG 2."
+          }
+        ],
+        "enemy": {
+          "attack": 6,
+          "health": 5,
+          "max_health": 7,
+          "statuses": []
+        },
+        "hand_after": 4,
+        "hand_additions": [],
+        "hand_additions_not_held": 0,
+        "draws_requested": 0,
+        "draws_to_hand": 0,
+        "draws_erased": 0,
+        "deck_additions": [],
+        "generated_spells_spent": 0,
+        "conditional_hand_changes": [],
+        "healing": [],
+        "hero_damage": 0,
+        "opponent_gold_gained": 0,
+        "own_flame_slots": 0,
+        "debts": [],
+        "notes": [],
+        "plan": "hold_attack",
+        "payable": true,
+        "cash_after": 5,
+        "healing_potential_interval": [
+          0,
+          0
+        ],
+        "actual_healing_interval": null,
+        "clears_this_turn": false
+      },
+      "second_line": {
+        "card_id": 951,
+        "name": "Fire Fountain",
+        "required_gold": 5,
+        "own": [],
+        "enemy": null,
+        "hand_after": 3,
+        "hand_additions": [],
+        "hand_additions_not_held": 0,
+        "draws_requested": 0,
+        "draws_to_hand": 0,
+        "draws_erased": 0,
+        "deck_additions": [],
+        "generated_spells_spent": 0,
+        "conditional_hand_changes": [],
+        "healing": [],
+        "hero_damage": 2,
+        "opponent_gold_gained": 0,
+        "own_flame_slots": 1,
+        "debts": [
+          {
+            "kind": "The Flame",
+            "owner": "self",
+            "next_play_on_slot_damage": 2,
+            "consumes_on_next_play": true,
+            "each_own_turn_end_damage": 2
+          }
+        ],
+        "notes": [
+          "The unconsumed own Flame deals 2 to own hero at this turn end and remains a burden."
+        ],
+        "plan": "attack_enemy_once",
+        "payable": true,
+        "cash_after": 0,
+        "healing_potential_interval": [
+          0,
+          0
+        ],
+        "actual_healing_interval": null,
+        "clears_this_turn": true
+      },
+      "surviving_own_bodies": [
+        {
+          "id": 20,
+          "name": "Vulkin",
+          "attack": 4,
+          "health": 4,
+          "max_health": 4,
+          "statuses": [],
+          "attacked": false,
+          "can_attack_this_turn": false,
+          "next_own_turn_can_attack": true,
+          "source": "played_root",
+          "remaining_source_text": "Magic: Deal DMG 2."
+        }
+      ],
+      "clears_this_turn": true,
+      "total_gold": 9,
+      "p_two_sources_in_uniform_original_hand": 0.06231884057971015,
+      "access_deck": "A_quality_bookshelf",
+      "extra_assumption": "No relevant Town Hall hand buff is cashed in this two-source line; all four own slots start empty."
+    }
+  ],
+  "unopposed_clocks": [
+    {
+      "id": 602,
+      "name": "Rock Pet",
+      "cost": 2,
+      "immediate_face_magic": 0,
+      "next_three_own_action_turn_face_damage": [
+        3,
+        3,
+        3
+      ],
+      "total_face_damage": 9
+    },
+    {
+      "id": 373,
+      "name": "Worm",
+      "cost": 2,
+      "immediate_face_magic": 0,
+      "next_three_own_action_turn_face_damage": [
+        2,
+        2,
+        2
+      ],
+      "total_face_damage": 6
+    },
+    {
+      "id": 436,
+      "name": "Town Hall Guy",
+      "cost": 3,
+      "immediate_face_magic": 0,
+      "next_three_own_action_turn_face_damage": [
+        3,
+        3,
+        3
+      ],
+      "total_face_damage": 9
+    },
+    {
+      "id": 20,
+      "name": "Vulkin",
+      "cost": 4,
+      "immediate_face_magic": 2,
+      "next_three_own_action_turn_face_damage": [
+        4,
+        4,
+        4
+      ],
+      "total_face_damage": 14
+    },
+    {
+      "id": 54,
+      "name": "Flowey",
+      "cost": 4,
+      "immediate_face_magic": 0,
+      "next_three_own_action_turn_face_damage": [
+        4,
+        4,
+        4
+      ],
+      "total_face_damage": 12
+    },
+    {
+      "id": 291,
+      "name": "Normal NPC",
+      "cost": 4,
+      "immediate_face_magic": 0,
+      "next_three_own_action_turn_face_damage": [
+        4,
+        0,
+        4
+      ],
+      "total_face_damage": 8
+    },
+    {
+      "id": 53,
+      "name": "Napstablook",
+      "cost": 3,
+      "immediate_face_magic": 0,
+      "next_three_own_action_turn_face_damage": [
+        4,
+        3,
+        2
+      ],
+      "total_face_damage": 9
+    },
+    {
+      "id": 466,
+      "name": "Bookshelf",
+      "cost": 6,
+      "immediate_face_magic": 0,
+      "next_three_own_action_turn_face_damage": [
+        4,
+        4,
+        4
+      ],
+      "total_face_damage": 12
+    }
+  ],
+  "source_sha256": {
+    "snapshot": "7f19bef22de440abf1c2273806acecd0447e8341ad12f10eb63b418dfad45b85",
+    "producer": "f0608edc92a931e4da2e47a2322bfb71f87e85eee58855ce5c2301a3b57fc68a",
+    "kernel": "98985700178a511f11f9fefa28bd628ecfe3549dd660ae04e02e71486841a3e1"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "A_safe_slots",
+  "status": "root_reviewed_research_list_not_match_validated",
+  "snapshot": "2026-10-05",
+  "soul": "JUSTICE",
+  "artifacts": [
+    1,
+    4
+  ],
+  "counts": {
+    "932": 2,
+    "373": 1,
+    "869": 1,
+    "602": 1,
+    "111": 2,
+    "436": 2,
+    "225": 2,
+    "20": 2,
+    "468": 1,
+    "54": 1,
+    "148": 1,
+    "291": 1,
+    "469": 1,
+    "509": 2,
+    "466": 2,
+    "984": 1,
+    "391": 1,
+    "530": 1
+  },
+  "decision": "Controlled same-cost swap: Fire Fountain out, second Long Sink in; loses the 5-ATK immediate threshold.",
+  "legality": {
+    "physical_copies": 25,
+    "ordinary_monsters_only": true,
+    "rarity_limits_pass": true,
+    "ranked_dt_limit_pass": true,
+    "two_selectable_regular_artifacts": true
+  },
+  "source_sha256": "7f19bef22de440abf1c2273806acecd0447e8341ad12f10eb63b418dfad45b85"
+}

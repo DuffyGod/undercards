@@ -1,0 +1,2172 @@
+{
+  "snapshot_provenance": {
+    "compiled_date": "2026-10-05",
+    "game_version": null,
+    "note": "User-provided snapshot; version not tagged. Not a live server rules dump.",
+    "input_sha256": {
+      "data.json": "e738930b0654ca4e64d5f38186e4b5465d7271ec919f3da04d8d231505cfca46",
+      "collection.json": "e8a681bd901b387f538727a51e5e8e05b2edb29a868508b360dc4ac309d7730f",
+      "deck_sample.json": "e01a9deeaf1bc105c876bdaedad472ae0df5e7e805eacc0f8b6b9d66ad875288",
+      "survey.md": "e57ff08d213f1666c52e243f463a366115fa78ea38801f5221b09aa917ea8606"
+    }
+  },
+  "cards": [
+    {
+      "id": 13,
+      "name": "Woshua",
+      "metadata_name": "Woshua",
+      "cost": 4,
+      "attack": 3,
+      "health": 5,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give all enemy monsters -1 {{ATK}}.",
+      "effect_readable": "Magic: Give all enemy monsters -1 ATK.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-13",
+      "source_line": 295
+    },
+    {
+      "id": 20,
+      "name": "Vulkin",
+      "metadata_name": "Vulkin",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALL",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal {{DMG:2}}.",
+      "effect_readable": "Magic: Deal DMG 2.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-20",
+      "source_line": 302
+    },
+    {
+      "id": 22,
+      "name": "Shyren",
+      "metadata_name": "Shyren",
+      "cost": 3,
+      "attack": 2,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALL",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Heal 4 {{HP}}.",
+      "effect_readable": "Magic: Heal 4 HP.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-22",
+      "source_line": 304
+    },
+    {
+      "id": 53,
+      "name": "Napstablook",
+      "metadata_name": "Napstablook",
+      "cost": 3,
+      "attack": 5,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Lose 1 {{ATK}}. If this has 0 {{ATK}}, kill this.",
+      "effect_readable": "Turn end: Lose 1 ATK. If this has 0 ATK, kill this.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-53",
+      "source_line": 335
+    },
+    {
+      "id": 54,
+      "name": "Flowey",
+      "metadata_name": "Flowey",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:DUST}}: Add a copy of this to your hand with {{STATS:-1|-1|-1}} base stats. At base 1 {{ATK}} or less, turn it into {{CARD:550|1}}.",
+      "effect_readable": "Haste. Dust: Add a copy of this to your hand with COST -1/ATK -1/HP -1 base stats. At base 1 ATK or less, turn it into Demon Flowey [#550].",
+      "keyword_mentions": [
+        "DUST",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        550
+      ],
+      "source_key": "card-54",
+      "source_line": 336
+    },
+    {
+      "id": 111,
+      "name": "Memorial Statue",
+      "metadata_name": "Memorial Statue",
+      "cost": 3,
+      "attack": 2,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Before this attacks a monster, {{KW:SILENCE}} it. {{KW:MAGIC}}: If you have equal or less monsters than the opponent, gain {{KW:HASTE}}.",
+      "effect_readable": "Before this attacks a monster, Silence it. Magic: If you have equal or less monsters than the opponent, gain Haste.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC",
+        "SILENCE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-111",
+      "source_line": 393
+    },
+    {
+      "id": 148,
+      "name": "Faun",
+      "metadata_name": "Faun",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give an enemy monster -2 {{ATK}}. Add a random non-{{RARITY:DETERMINATION}} card of a {{COST}} equal to the monster's new {{ATK}} to your hand.",
+      "effect_readable": "Magic: Give an enemy monster -2 ATK. Add a random non-DT card of a COST equal to the monster's new ATK to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-148",
+      "source_line": 430
+    },
+    {
+      "id": 166,
+      "name": "Crazy Bun",
+      "metadata_name": "Crazy Bun",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 1 {{DMG}} to all other monsters.",
+      "effect_readable": "Magic: Deal 1 DMG to all other monsters.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-166",
+      "source_line": 443
+    },
+    {
+      "id": 185,
+      "name": "Librarian",
+      "metadata_name": "Librarian",
+      "cost": 5,
+      "attack": 4,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: Your deck has no non-{{KW:GENERATED}} duplicates. {{KW:MAGIC}}: Draw 3 cards and add 3 random cards to your deck. They cost 1 less {{GOLD}}.",
+      "effect_readable": "Need: Your deck has no non-Generated duplicates. Magic: Draw 3 cards and add 3 random cards to your deck. They cost 1 less GOLD.",
+      "keyword_mentions": [
+        "GENERATED",
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-185",
+      "source_line": 462
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    },
+    {
+      "id": 291,
+      "name": "Normal NPC",
+      "metadata_name": "Normal NPC",
+      "cost": 4,
+      "attack": 4,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. After this attacks, {{KW:PARALYZE}} it.",
+      "effect_readable": "Haste. After this attacks, Paralyze it.",
+      "keyword_mentions": [
+        "HASTE",
+        "PARALYZE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-291",
+      "source_line": 547
+    },
+    {
+      "id": 373,
+      "name": "Worm",
+      "metadata_name": "Worm",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. After this deals {{DMG}} to a monster, heal {{HP}} to you equal to the {{DMG}} dealt.",
+      "effect_readable": "Haste. After this deals DMG to a monster, heal HP to you equal to the DMG dealt.",
+      "keyword_mentions": [
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-373",
+      "source_line": 597
+    },
+    {
+      "id": 391,
+      "name": "Sheary",
+      "metadata_name": "Sheary",
+      "cost": 6,
+      "attack": 5,
+      "health": 5,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 1 {{DMG}} to a monster. If it's damaged, deal 4 {{DMG}} instead.",
+      "effect_readable": "Magic: Deal 1 DMG to a monster. If it's damaged, deal 4 DMG instead.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-391",
+      "source_line": 611
+    },
+    {
+      "id": 436,
+      "name": "Town Hall Guy",
+      "metadata_name": "Town Hall Guy",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "HAND",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: Give a {{KW:HASTE}} monster in your hand +1 {{ATK}}.",
+      "effect_readable": "Haste. Magic: Give a Haste monster in your hand +1 ATK.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-436",
+      "source_line": 1539
+    },
+    {
+      "id": 466,
+      "name": "Bookshelf",
+      "metadata_name": "Bookshelf",
+      "cost": 6,
+      "attack": 4,
+      "health": 6,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: Your deck has no non-{{KW:GENERATED}} spells. {{KW:MAGIC}}: Choose a spell of your SOUL to add to your hand with -2 {{COST}}.",
+      "effect_readable": "Need: Your deck has no non-Generated spells. Magic: Choose a spell of your SOUL to add to your hand with -2 COST.",
+      "keyword_mentions": [
+        "GENERATED",
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-466",
+      "source_line": 1672
+    },
+    {
+      "id": 468,
+      "name": "Rudolph",
+      "metadata_name": "Rudolph",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: Your deck has no non-{{KW:GENERATED}} spells. {{KW:MAGIC}}: Heal 5 {{HP}} to you.",
+      "effect_readable": "Need: Your deck has no non-Generated spells. Magic: Heal 5 HP to you.",
+      "keyword_mentions": [
+        "GENERATED",
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-468",
+      "source_line": 1676
+    },
+    {
+      "id": 469,
+      "name": "Blockler B",
+      "metadata_name": "Blockler B",
+      "cost": 5,
+      "attack": 3,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:DUST}}: Summon {{CARD:470|1}}.",
+      "effect_readable": "Haste. Dust: Summon Blockler O [#470].",
+      "keyword_mentions": [
+        "DUST",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        470
+      ],
+      "source_key": "card-469",
+      "source_line": 1678
+    },
+    {
+      "id": 509,
+      "name": "Long Sink",
+      "metadata_name": "Long Sink",
+      "cost": 5,
+      "attack": 4,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:TURN_END}}: If this didn't attack this turn, heal 3 {{HP}} to you.",
+      "effect_readable": "Haste. Turn end: If this didn't attack this turn, heal 3 HP to you.",
+      "keyword_mentions": [
+        "HASTE",
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-509",
+      "source_line": 1775
+    },
+    {
+      "id": 530,
+      "name": "Piranhas",
+      "metadata_name": "Piranhas",
+      "cost": 6,
+      "attack": 4,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Dodge",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:DODGE}} (1). After this attacks and kills a monster, deal 1 {{DMG}} to a random enemy monster. If it died, repeat.",
+      "effect_readable": "Haste. Dodge (1). After this attacks and kills a monster, deal 1 DMG to a random enemy monster. If it died, repeat.",
+      "keyword_mentions": [
+        "DODGE",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-530",
+      "source_line": 1819
+    },
+    {
+      "id": 602,
+      "name": "Rock Pet",
+      "metadata_name": "Rock Pet",
+      "cost": 2,
+      "attack": 3,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": " ",
+      "effect_readable": "",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-602",
+      "source_line": 1985
+    },
+    {
+      "id": 869,
+      "name": "Vengeful Virgil",
+      "metadata_name": "Vengeful Virgil",
+      "cost": 2,
+      "attack": 3,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Bullseye",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "NEGATIVE",
+          "name": "Wanted",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:WANTED}}. {{KW:HASTE}}. {{KW:BULLSEYE}}: Make the target's adjacent monsters {{KW:WANTED}}.",
+      "effect_readable": "Wanted. Haste. Bullseye: Make the target's adjacent monsters Wanted.",
+      "keyword_mentions": [
+        "BULLSEYE",
+        "HASTE",
+        "WANTED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-869",
+      "source_line": 2602
+    },
+    {
+      "id": 932,
+      "name": "Pixel Vase",
+      "metadata_name": "Pixel Vase",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Give an enemy monster {{STATS:-1|-1}}.",
+      "effect_readable": "Taunt. Magic: Give an enemy monster ATK -1/HP -1.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-932",
+      "source_line": 2778
+    },
+    {
+      "id": 951,
+      "name": "Fire Fountain",
+      "metadata_name": "Fire Fountain",
+      "cost": 5,
+      "attack": 5,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:DUST}}: Enchant this slot with {{ENCHANT:THE_FLAME|1}}.",
+      "effect_readable": "Haste. Dust: Enchant this slot with The Flame.",
+      "keyword_mentions": [
+        "DUST",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-951",
+      "source_line": 3096
+    },
+    {
+      "id": 984,
+      "name": "Terakota Archer",
+      "metadata_name": "Terakota Archer",
+      "cost": 6,
+      "attack": 3,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Bullseye",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal {{DMG}} to an enemy monster equal to the number of cards in your hand. {{KW:BULLSEYE}}: Summon a {{STATS:2|3}} {{CARD:375|1}}.",
+      "effect_readable": "Magic: Deal DMG to an enemy monster equal to the number of cards in your hand. Bullseye: Summon a ATK 2/HP 3 Green Clover [#375].",
+      "keyword_mentions": [
+        "BULLSEYE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        375
+      ],
+      "source_key": "card-984",
+      "source_line": 3194
+    }
+  ],
+  "referenced_cards": [
+    {
+      "id": 375,
+      "name": "Green Clover",
+      "metadata_name": "Green Clover",
+      "cost": 0,
+      "attack": 1,
+      "health": 1,
+      "rarity": "TOKEN",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "token",
+      "effect_raw": " ",
+      "effect_readable": "",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-375",
+      "source_line": 599
+    },
+    {
+      "id": 470,
+      "name": "Blockler O",
+      "metadata_name": "Blockler O",
+      "cost": 3,
+      "attack": 4,
+      "health": 3,
+      "rarity": "TOKEN",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "token",
+      "effect_raw": "{{KW:TAUNT}}.",
+      "effect_readable": "Taunt.",
+      "keyword_mentions": [
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-470",
+      "source_line": 1680
+    },
+    {
+      "id": 550,
+      "name": "Demon Flowey",
+      "metadata_name": "Demon Flowey",
+      "cost": 3,
+      "attack": 2,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:DUST}}: Add a {{KW:SILENCE|override=Silenced}} {{CARD:550|1}} with {{STATS:+3|+3|+3}} base stats and {{KW:HASTE}} to your deck.",
+      "effect_readable": "Haste. Dust: Add a Silenced Demon Flowey [#550] with COST +3/ATK +3/HP +3 base stats and Haste to your deck.",
+      "keyword_mentions": [
+        "DUST",
+        "HASTE",
+        "SILENCE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        550
+      ],
+      "source_key": "card-550",
+      "source_line": 1871
+    }
+  ],
+  "soul_spells": [
+    {
+      "id": 91,
+      "name": "Heal",
+      "metadata_name": "Heal",
+      "cost": 1,
+      "attack": null,
+      "health": null,
+      "rarity": "COMMON",
+      "card_type": "spell",
+      "soul": "KINDNESS",
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALL",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Heal 3 {{HP}}. If this targeted a player, draw a card. If this targeted a monster, remove negative effects from it.",
+      "effect_readable": "Heal 3 HP. If this targeted a player, draw a card. If this targeted a monster, remove negative effects from it.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-91",
+      "source_line": 373
+    },
+    {
+      "id": 92,
+      "name": "Force of Nature",
+      "metadata_name": "Force of Nature",
+      "cost": 3,
+      "attack": null,
+      "health": null,
+      "rarity": "COMMON",
+      "card_type": "spell",
+      "soul": "KINDNESS",
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALL",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Deal 3 {{DMG}}. Give excess {{DMG}} as {{HP}} to all allies.",
+      "effect_readable": "Deal 3 DMG. Give excess DMG as HP to all allies.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-92",
+      "source_line": 374
+    },
+    {
+      "id": 93,
+      "name": "Longevity",
+      "metadata_name": "Longevity",
+      "cost": 2,
+      "attack": null,
+      "health": null,
+      "rarity": "EPIC",
+      "card_type": "spell",
+      "soul": "KINDNESS",
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Give all ally monsters +1 {{HP}} and draw a card.",
+      "effect_readable": "Give all ally monsters +1 HP and draw a card.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-93",
+      "source_line": 375
+    },
+    {
+      "id": 94,
+      "name": "Feast",
+      "metadata_name": "Feast",
+      "cost": 5,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "KINDNESS",
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Give all ally monsters with 4 or less {{HP}} +2 {{HP}}. {{KW:DELAY}}: Give all ally monsters with 4 or less {{ATK}} +2 {{ATK}}.",
+      "effect_readable": "Give all ally monsters with 4 or less HP +2 HP. Delay: Give all ally monsters with 4 or less ATK +2 ATK.",
+      "keyword_mentions": [
+        "DELAY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-94",
+      "source_line": 376
+    },
+    {
+      "id": 95,
+      "name": "Test of Will",
+      "metadata_name": "Test of Will",
+      "cost": 8,
+      "attack": null,
+      "health": null,
+      "rarity": "EPIC",
+      "card_type": "spell",
+      "soul": "KINDNESS",
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Deal {{DMG}} to all monsters equal to their {{ATK}}.",
+      "effect_readable": "Deal DMG to all monsters equal to their ATK.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-95",
+      "source_line": 377
+    },
+    {
+      "id": 96,
+      "name": "Punishment",
+      "metadata_name": "Punishment",
+      "cost": 3,
+      "attack": null,
+      "health": null,
+      "rarity": "BASE",
+      "card_type": "spell",
+      "soul": "JUSTICE",
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Deal 4 {{DMG}} to an enemy monster.",
+      "effect_readable": "Deal 4 DMG to an enemy monster.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-96",
+      "source_line": 378
+    },
+    {
+      "id": 97,
+      "name": "Strafe",
+      "metadata_name": "Strafe",
+      "cost": 6,
+      "attack": null,
+      "health": null,
+      "rarity": "COMMON",
+      "card_type": "spell",
+      "soul": "JUSTICE",
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Deal 7 {{DMG}} to an enemy monster. Excess {{DMG}} is dealt to its adjacent monsters.",
+      "effect_readable": "Deal 7 DMG to an enemy monster. Excess DMG is dealt to its adjacent monsters.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-97",
+      "source_line": 379
+    },
+    {
+      "id": 98,
+      "name": "Undyne's Spears",
+      "metadata_name": "Undyne's Spears",
+      "cost": 5,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "JUSTICE",
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "NEUTRAL",
+          "name": "Program",
+          "statusBehavior": "STACKABLE",
+          "counter": 5,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Summon 2 {{CARD:574|2}}. They attack the lowest-{{ATK}} enemy monsters. {{KW:PROGRAM}} (5): Set their stats to {{STATS:5|7}} first.",
+      "effect_readable": "Summon 2 Spear [#574]. They attack the lowest-ATK enemy monsters. Program (5): Set their stats to ATK 5/HP 7 first.",
+      "keyword_mentions": [
+        "PROGRAM"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        574
+      ],
+      "source_key": "card-98",
+      "source_line": 380
+    },
+    {
+      "id": 99,
+      "name": "Reload",
+      "metadata_name": "Reload",
+      "cost": 4,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "JUSTICE",
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Give all non-{{RARITY:TOKEN}} spells in your hand (except {{CARD:99|1}}) +1 {{KW:LOOP}}.",
+      "effect_readable": "Give all non-TOKEN spells in your hand (except Reload [#99]) +1 Loop.",
+      "keyword_mentions": [
+        "LOOP"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        99
+      ],
+      "source_key": "card-99",
+      "source_line": 381
+    },
+    {
+      "id": 100,
+      "name": "Headshot",
+      "metadata_name": "Headshot",
+      "cost": 6,
+      "attack": null,
+      "health": null,
+      "rarity": "EPIC",
+      "card_type": "spell",
+      "soul": "JUSTICE",
+      "set": "BASE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SILENCE}} and kill a monster.",
+      "effect_readable": "Silence and kill a monster.",
+      "keyword_mentions": [
+        "SILENCE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-100",
+      "source_line": 382
+    },
+    {
+      "id": 131,
+      "name": "Energizer",
+      "metadata_name": "Energizer",
+      "cost": 3,
+      "attack": null,
+      "health": null,
+      "rarity": "COMMON",
+      "card_type": "spell",
+      "soul": "JUSTICE",
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Give all ally monsters +1 {{ATK}}. Deal 1 {{DMG}} to all enemy monsters.",
+      "effect_readable": "Give all ally monsters +1 ATK. Deal 1 DMG to all enemy monsters.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-131",
+      "source_line": 413
+    },
+    {
+      "id": 132,
+      "name": "Pie",
+      "metadata_name": "Pie",
+      "cost": 2,
+      "attack": null,
+      "health": null,
+      "rarity": "BASE",
+      "card_type": "spell",
+      "soul": "KINDNESS",
+      "set": "BASE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Loop",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:LOOP}} (1). Fully heal a monster. If it was already full, give it +2 {{HP}} instead.",
+      "effect_readable": "Loop (1). Fully heal a monster. If it was already full, give it +2 HP instead.",
+      "keyword_mentions": [
+        "LOOP"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-132",
+      "source_line": 414
+    },
+    {
+      "id": 181,
+      "name": "Multi Shot",
+      "metadata_name": "Multi Shot",
+      "cost": 4,
+      "attack": null,
+      "health": null,
+      "rarity": "EPIC",
+      "card_type": "spell",
+      "soul": "JUSTICE",
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DELAY}}: Equip the {{ARTIFACT:37}} artifact and give it 6 counters. If you have it, trigger its {{KW:TURN_END}} until it has no counters, then give it 6.",
+      "effect_readable": "Delay: Equip the True Justice [#37] artifact and give it 6 counters. If you have it, trigger its Turn end until it has no counters, then give it 6.",
+      "keyword_mentions": [
+        "DELAY",
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-181",
+      "source_line": 458
+    },
+    {
+      "id": 184,
+      "name": "Soothing",
+      "metadata_name": "Soothing",
+      "cost": 3,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "KINDNESS",
+      "set": "BASE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Set a monster's stats to {{STATS:3|2}}.",
+      "effect_readable": "Set a monster's stats to ATK 3/HP 2.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-184",
+      "source_line": 461
+    },
+    {
+      "id": 258,
+      "name": "Blitz Quiz",
+      "metadata_name": "Blitz Quiz",
+      "cost": 3,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "JUSTICE",
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Look at {{CARD:463}} and {{CARD:464|1}}. Choose one to add to your hand.",
+      "effect_readable": "Look at Trick Question [#463] and Zap Cannon [#464]. Choose one to add to your hand.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [
+        463,
+        464
+      ],
+      "source_key": "card-258",
+      "source_line": 518
+    },
+    {
+      "id": 259,
+      "name": "Octofriend",
+      "metadata_name": "Octofriend",
+      "cost": 2,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "KINDNESS",
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Give an ally monster {{STATS:+1|+1}}. Add a 1-{{COST}} {{CARD:353|1}} and {{CARD:354|1}} to your hand.",
+      "effect_readable": "Give an ally monster ATK +1/HP +1. Add a 1-COST Left Tentacle [#353] and Right Tentacle [#354] to your hand.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [
+        353,
+        354
+      ],
+      "source_key": "card-259",
+      "source_line": 519
+    },
+    {
+      "id": 455,
+      "name": "Powerhouse",
+      "metadata_name": "Powerhouse",
+      "cost": 5,
+      "attack": null,
+      "health": null,
+      "rarity": "COMMON",
+      "card_type": "spell",
+      "soul": "JUSTICE",
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Draw up to 2 cards and give all cards in your hand -1 {{COST}}.",
+      "effect_readable": "Draw up to 2 cards and give all cards in your hand -1 COST.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-455",
+      "source_line": 1597
+    },
+    {
+      "id": 456,
+      "name": "Campfire",
+      "metadata_name": "Campfire",
+      "cost": 3,
+      "attack": null,
+      "health": null,
+      "rarity": "COMMON",
+      "card_type": "spell",
+      "soul": "KINDNESS",
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Heal 4 {{HP}} randomly split among all ally monsters. Give 4 random monsters in your hand {{STATS:+1|+1}}.",
+      "effect_readable": "Heal 4 HP randomly split among all ally monsters. Give 4 random monsters in your hand ATK +1/HP +1.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-456",
+      "source_line": 1599
+    },
+    {
+      "id": 700,
+      "name": "Vasebreaker",
+      "metadata_name": "Vasebreaker",
+      "cost": 3,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "JUSTICE",
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Loop",
+          "statusBehavior": "STACKABLE",
+          "counter": 2,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:LOOP}} (2). Deal 2 {{DMG}} to a monster. If it killed, summon a {{CARD:701|1}}.",
+      "effect_readable": "Loop (2). Deal 2 DMG to a monster. If it killed, summon a Vase [#701].",
+      "keyword_mentions": [
+        "LOOP"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        701
+      ],
+      "source_key": "card-700",
+      "source_line": 2196
+    },
+    {
+      "id": 704,
+      "name": "Pezza Time",
+      "metadata_name": "Pezza Time",
+      "cost": 2,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "KINDNESS",
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Add a copy of a damaged non-{{RARITY:DETERMINATION}} ally monster to your hand with its current {{HP}}. It costs 1 less per {{HP}} missing.",
+      "effect_readable": "Add a copy of a damaged non-DT ally monster to your hand with its current HP. It costs 1 less per HP missing.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-704",
+      "source_line": 2204
+    },
+    {
+      "id": 731,
+      "name": "Ultimate Heal",
+      "metadata_name": "Ultimate Heal",
+      "cost": 4,
+      "attack": null,
+      "health": null,
+      "rarity": "EPIC",
+      "card_type": "spell",
+      "soul": "KINDNESS",
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Draw 3 monsters. Give them +2 {{HP}}.",
+      "effect_readable": "Draw 3 monsters. Give them +2 HP.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-731",
+      "source_line": 2269
+    },
+    {
+      "id": 735,
+      "name": "Judgement",
+      "metadata_name": "Judgement",
+      "cost": 11,
+      "attack": null,
+      "health": null,
+      "rarity": "EPIC",
+      "card_type": "spell",
+      "soul": "JUSTICE",
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Deal {{DMG}} randomly split among all enemy monsters equal to your missing {{HP}}.",
+      "effect_readable": "Deal DMG randomly split among all enemy monsters equal to your missing HP.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-735",
+      "source_line": 2277
+    },
+    {
+      "id": 854,
+      "name": "Dual!",
+      "metadata_name": "Dual",
+      "cost": 1,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "JUSTICE",
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Add a {{CARD:855|1}} to both players' hands.",
+      "effect_readable": "Add a Quick Draw [#855] to both players' hands.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [
+        855
+      ],
+      "source_key": "card-854",
+      "source_line": 2570
+    },
+    {
+      "id": 860,
+      "name": "Bounty",
+      "metadata_name": "Bounty",
+      "cost": 1,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "KINDNESS",
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Make 2 random enemy monsters {{KW:WANTED}}. {{KW:DELAY}}: If both are dead, give 4 random monsters in your hand {{STATS:+1|+1}}.",
+      "effect_readable": "Make 2 random enemy monsters Wanted. Delay: If both are dead, give 4 random monsters in your hand ATK +1/HP +1.",
+      "keyword_mentions": [
+        "DELAY",
+        "WANTED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-860",
+      "source_line": 2582
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 1,
+      "name": "Health",
+      "effect": "At the start of the game, gain +7 HP.",
+      "metadata": {
+        "id": 1,
+        "name": "Health",
+        "legendary": false,
+        "unavailable": false,
+        "disabled": false,
+        "artifactType": 0,
+        "cost": 300
+      },
+      "selectable_by_observed_flags": true
+    },
+    {
+      "id": 2,
+      "name": "Draw",
+      "effect": "At the start of the game and on every 5th turn, draw a card unless your hand is full.",
+      "metadata": {
+        "id": 2,
+        "name": "Draw",
+        "legendary": false,
+        "unavailable": false,
+        "disabled": false,
+        "artifactType": 0,
+        "cost": 300
+      },
+      "selectable_by_observed_flags": true
+    },
+    {
+      "id": 4,
+      "name": "Power",
+      "effect": "At the start of your 4th turn and every 3rd turn after that, gain a counter. After you play a monster, spend a counter to give it ATK +1/HP +1.",
+      "metadata": {
+        "id": 4,
+        "name": "Power",
+        "legendary": false,
+        "unavailable": false,
+        "disabled": false,
+        "artifactType": 0,
+        "cost": 300
+      },
+      "selectable_by_observed_flags": true
+    },
+    {
+      "id": 12,
+      "name": "Science",
+      "effect": "At the start of the game, add a 3-COST Gaster Blaster [#351] to your hand. After you play a TOKEN card not Generated by this, gain counters equal to its COST. Turn start: Spend 8 counters to add a 2-COST Gaster Blaster [#351] to your hand.",
+      "metadata": {
+        "id": 12,
+        "name": "Science",
+        "legendary": true,
+        "unavailable": false,
+        "disabled": false,
+        "artifactType": 0,
+        "cost": 1000
+      },
+      "selectable_by_observed_flags": true
+    },
+    {
+      "id": 53,
+      "name": "Glamburger",
+      "effect": "At the start of your 4th, 7th, and 10th turn, earn 1 GOLD.",
+      "metadata": {
+        "id": 53,
+        "name": "Glamburger",
+        "legendary": false,
+        "unavailable": false,
+        "disabled": false,
+        "artifactType": 0,
+        "cost": 300
+      },
+      "selectable_by_observed_flags": true
+    },
+    {
+      "id": 61,
+      "name": "Brave Ax",
+      "effect": "At the start of the game, add a Recruitment [#452] to your hand. At the end of your 7th turn, give all ally monsters ATK +1/HP +1.",
+      "metadata": {
+        "id": 61,
+        "name": "Brave Ax",
+        "legendary": false,
+        "unavailable": false,
+        "disabled": false,
+        "artifactType": 0,
+        "cost": 300
+      },
+      "selectable_by_observed_flags": true
+    }
+  ],
+  "mechanics": {
+    "keyword": [
+      {
+        "key": "kw-magic-desc",
+        "raw": "The monster will trigger its effect when played on the board.",
+        "readable": "The monster will trigger its effect when played on the board.",
+        "source_line": 262
+      },
+      {
+        "key": "kw-dust-desc",
+        "raw": "The monster will trigger its effect when dying.",
+        "readable": "The monster will trigger its effect when dying.",
+        "source_line": 263
+      },
+      {
+        "key": "kw-charge-desc",
+        "raw": "The monster can attack during its first turn. Overrides {{KW:HASTE}}. Removed after attacking or when your turn ends.",
+        "readable": "The monster can attack during its first turn. Overrides Haste. Removed after attacking or when your turn ends.",
+        "source_line": 264
+      },
+      {
+        "key": "kw-haste-desc",
+        "raw": "The monster can attack once during its first turn, but can't attack the opponent. Removed after attacking or whenever a turn ends.",
+        "readable": "The monster can attack once during its first turn, but can't attack the opponent. Removed after attacking or whenever a turn ends.",
+        "source_line": 265
+      },
+      {
+        "key": "kw-armor-desc",
+        "raw": "This monster takes 1 less {{DMG}}.",
+        "readable": "This monster takes 1 less DMG.",
+        "source_line": 266
+      },
+      {
+        "key": "kw-disarmed-desc",
+        "raw": "This monster can't attack.",
+        "readable": "This monster can't attack.",
+        "source_line": 267
+      },
+      {
+        "key": "kw-candy-desc",
+        "raw": "This monster will be healed by 3 at the end of its owner's turn.",
+        "readable": "This monster will be healed by 3 at the end of its owner's turn.",
+        "source_line": 268
+      },
+      {
+        "key": "kw-turn-start-desc",
+        "raw": "This effect will trigger at the start of its owner's turn.",
+        "readable": "This effect will trigger at the start of its owner's turn.",
+        "source_line": 269
+      },
+      {
+        "key": "kw-turn-end-desc",
+        "raw": "This effect will trigger at the end of its owner's turn.",
+        "readable": "This effect will trigger at the end of its owner's turn.",
+        "source_line": 270
+      },
+      {
+        "key": "kw-future-desc",
+        "raw": "The monster will trigger its effect in (x) turns (can't be cancelled by the effect {{KW:SILENCE}}).",
+        "readable": "The monster will trigger its effect in (x) turns (can't be cancelled by the effect Silence).",
+        "source_line": 271
+      },
+      {
+        "key": "kw-fatigue-desc",
+        "raw": "{{DMG}} dealt to players every time they draw a card when they have an empty deck. The first instance of its' {{DMG}} is 1. Fatigue {{DMG}} is increased by 1 each time it is triggered.",
+        "readable": "DMG dealt to players every time they draw a card when they have an empty deck. The first instance of its' DMG is 1. Fatigue DMG is increased by 1 each time it is triggered.",
+        "source_line": 272
+      },
+      {
+        "key": "kw-turbo-desc",
+        "raw": "This card will trigger its effect when drawn.",
+        "readable": "This card will trigger its effect when drawn.",
+        "source_line": 273
+      },
+      {
+        "key": "kw-support-desc",
+        "raw": "This monster will trigger its effect before another ally monster attacks.",
+        "readable": "This monster will trigger its effect before another ally monster attacks.",
+        "source_line": 274
+      },
+      {
+        "key": "kw-paralyze-desc",
+        "raw": "Make a monster unable to attack for its next turn.",
+        "readable": "Make a monster unable to attack for its next turn.",
+        "source_line": 275
+      },
+      {
+        "key": "kw-silence-desc",
+        "raw": "Remove all status effects from a monster and make it unable to use its abilities.",
+        "readable": "Remove all status effects from a monster and make it unable to use its abilities.",
+        "source_line": 276
+      },
+      {
+        "key": "kw-transparency-desc",
+        "raw": "The monster can't be targeted. Takes priority over {{KW:TAUNT}}. Removed at the start of its owner's turn.",
+        "readable": "The monster can't be targeted. Takes priority over Taunt. Removed at the start of its owner's turn.",
+        "source_line": 277
+      },
+      {
+        "key": "kw-invulnerable-desc",
+        "raw": "This entity is immune to all {{DMG}}.",
+        "readable": "This entity is immune to all DMG.",
+        "source_line": 278
+      },
+      {
+        "key": "kw-taunt-desc",
+        "raw": "Enemy monsters must kill monsters with this effect before they can attack the player or other ally monsters.",
+        "readable": "Enemy monsters must kill monsters with this effect before they can attack the player or other ally monsters.",
+        "source_line": 279
+      },
+      {
+        "key": "kw-dodge-desc",
+        "raw": "This monster will negate any instance of {{DMG}} to itself (x) times.",
+        "readable": "This monster will negate any instance of DMG to itself (x) times.",
+        "source_line": 280
+      },
+      {
+        "key": "kw-thorns-desc",
+        "raw": "This monster will deal (x) {{DMG}} to the attacker.",
+        "readable": "This monster will deal (x) DMG to the attacker.",
+        "source_line": 1499
+      },
+      {
+        "key": "kw-burn-desc",
+        "raw": "Remove a card. Cards removed this way are not sent to the dustpile.",
+        "readable": "Remove a card. Cards removed this way are not sent to the dustpile.",
+        "source_line": 1590
+      },
+      {
+        "key": "kw-synergy-desc",
+        "raw": "The monster will trigger its effect when played and if an ally monster of the same tribe has been played this turn.",
+        "readable": "The monster will trigger its effect when played and if an ally monster of the same tribe has been played this turn.",
+        "source_line": 1686
+      },
+      {
+        "key": "kw-shock-desc",
+        "raw": "After you cast a spell with a base {{COST}} of 2 or more, trigger this effect.",
+        "readable": "After you cast a spell with a base COST of 2 or more, trigger this effect.",
+        "source_line": 1769
+      },
+      {
+        "key": "kw-delay-desc",
+        "raw": "The card will trigger this effect at the end of the turn it was played. It will trigger even if the card is killed or removed from the board before the turn ends.",
+        "readable": "The card will trigger this effect at the end of the turn it was played. It will trigger even if the card is killed or removed from the board before the turn ends.",
+        "source_line": 1791
+      },
+      {
+        "key": "kw-generated-desc",
+        "raw": "Card that didn't start in the deck.",
+        "readable": "Card that didn't start in the deck.",
+        "source_line": 1835
+      },
+      {
+        "key": "kw-need-desc",
+        "raw": "This card's {{KW:MAGIC}} effect can only trigger if the following condition is met. This monster will glow yellow in your hand while its condition is met.",
+        "readable": "This card's Magic effect can only trigger if the following condition is met. This monster will glow yellow in your hand while its condition is met.",
+        "source_line": 1845
+      },
+      {
+        "key": "kw-loop-desc",
+        "raw": "When you play this card while it has 1 or more {{KW:LOOP}}, add a copy of this to your hand with -1 {{KW:LOOP}}.",
+        "readable": "When you play this card while it has 1 or more Loop, add a copy of this to your hand with -1 Loop.",
+        "source_line": 2019
+      },
+      {
+        "key": "kw-program-desc",
+        "raw": "If you have (x) {{GOLD}}, spend it to trigger this effect.",
+        "readable": "If you have (x) GOLD, spend it to trigger this effect.",
+        "source_line": 2022
+      },
+      {
+        "key": "kw-switch-desc",
+        "raw": "When this effect triggers, if this monster is on the left side of the board do the first effect, highlighted in blue. Otherwise, do the second effect, highlighted in red.",
+        "readable": "When this effect triggers, if this monster is on the left side of the board do the first effect, highlighted in blue. Otherwise, do the second effect, highlighted in red.",
+        "source_line": 2257
+      },
+      {
+        "key": "kw-catch-desc",
+        "raw": "Remove a card and store a copy of it within this monster. The copy stored can be released to the original owner's board or elsewhere if specified.",
+        "readable": "Remove a card and store a copy of it within this monster. The copy stored can be released to the original owner's board or elsewhere if specified.",
+        "source_line": 2461
+      },
+      {
+        "key": "kw-bullseye-desc",
+        "raw": "If this card kills a monster by bringing it to exactly 0 {{HP}}, trigger this effect.",
+        "readable": "If this card kills a monster by bringing it to exactly 0 HP, trigger this effect.",
+        "source_line": 2501
+      },
+      {
+        "key": "kw-wanted-desc",
+        "raw": "Wanted. Before this monster dies, give 1 {{GOLD}} to its opponent.",
+        "readable": "Wanted. Before this monster dies, give 1 GOLD to its opponent.",
+        "source_line": 2567
+      },
+      {
+        "key": "kw-erase-desc",
+        "raw": "Remove a card. Cards removed this way are not sent to the dustpile.",
+        "readable": "Remove a card. Cards removed this way are not sent to the dustpile.",
+        "source_line": 2585
+      },
+      {
+        "key": "kw-darkspawn-desc",
+        "raw": "This monster takes no {{DMG}} from spells and cannot be targeted by them.",
+        "readable": "This monster takes no DMG from spells and cannot be targeted by them.",
+        "source_line": 2642
+      },
+      {
+        "key": "kw-upgraded-souls-desc",
+        "raw": "Each SOUL has an \"upgraded\" artifact counterpart.<br>{{SOUL:DETERMINATION}} -- {{ARTIFACT:60}}<br>{{SOUL:BRAVERY}} -- {{ARTIFACT:56}}<br>{{SOUL:JUSTICE}} -- {{ARTIFACT:59}}<br>{{SOUL:KINDNESS}} -- {{ARTIFACT:58}}<br>{{SOUL:PATIENCE}} -- {{ARTIFACT:55}}<br>{{SOUL:INTEGRITY}} -- {{ARTIFACT:57}}<br>{{SOUL:PERSEVERANCE}} -- {{ARTIFACT:24}}",
+        "readable": "Each SOUL has an \"upgraded\" artifact counterpart.; DETERMINATION -- Worn Dagger [#60]; BRAVERY -- Tough Glove [#56]; JUSTICE -- Empty Gun [#59]; KINDNESS -- Burnt Pan [#58]; PATIENCE -- Toy Knife [#55]; INTEGRITY -- Ballet Shoes [#57]; PERSEVERANCE -- Torn Notebook [#24]",
+        "source_line": 2688
+      },
+      {
+        "key": "kw-quest-desc",
+        "raw": "This monster will start a quest at the start of the game.",
+        "readable": "This monster will start a quest at the start of the game.",
+        "source_line": 3124
+      },
+      {
+        "key": "kw-quest-goal-desc",
+        "raw": "Amount of points needed to trigger the reward.",
+        "readable": "Amount of points needed to trigger the reward.",
+        "source_line": 3126
+      },
+      {
+        "key": "kw-quest-reward-desc",
+        "raw": "This effect will trigger upon completion.",
+        "readable": "This effect will trigger upon completion.",
+        "source_line": 3128
+      },
+      {
+        "key": "kw-flowery-power-desc",
+        "raw": "This card's {{KW:NEED}} condition is always fulfilled.",
+        "readable": "This card's Need condition is always fulfilled.",
+        "source_line": 3130
+      },
+      {
+        "key": "kw-game-info-turn-desc",
+        "raw": "Current turn of the game: $1.",
+        "readable": "Current turn of the game: $1.",
+        "source_line": 3133
+      },
+      {
+        "key": "kw-game-info-hand-desc",
+        "raw": "Size of the hand: $1/7. If a player draws when their hand is full it will {{KW:ERASE}} the card.",
+        "readable": "Size of the hand: $1/7. If a player draws when their hand is full it will Erase the card.",
+        "source_line": 3135
+      },
+      {
+        "key": "kw-game-info-deck-desc",
+        "raw": "Size of the deck: $1. Drawing when the deck is empty will deal {{KW:FATIGUE}} {{DMG}} to the player.",
+        "readable": "Size of the deck: $1. Drawing when the deck is empty will deal Fatigue DMG to the player.",
+        "source_line": 3137
+      },
+      {
+        "key": "kw-game-info-gold-desc",
+        "raw": "Amount of {{GOLD}}: $1. The player will get +$2 {{GOLD}} next turn.",
+        "readable": "Amount of GOLD: $1. The player will get +$2 GOLD next turn.",
+        "source_line": 3139
+      },
+      {
+        "key": "kw-mold-spore-desc",
+        "raw": "{{KW:TURN_END}}: Gain +1 {{KW:MOLD_SPORE}}. When this monster dies, summon an enemy {{CARD:4|1}} with {{ATK}} and {{HP}} equal to its {{KW:MOLD_SPORE}} count. (Negative status effect)",
+        "readable": "Turn end: Gain +1 Mold Spore. When this monster dies, summon an enemy Moldsmal [#4] with ATK and HP equal to its Mold Spore count. (Negative status effect)",
+        "source_line": 3293
+      }
+    ],
+    "status": [
+      {
+        "key": "status-paralyzed",
+        "raw": "Paralyzed. This monster can't attack for a turn. Removed at the start of the owner's 2nd turn after it's applied. (Negative status effect)",
+        "readable": "Paralyzed. This monster can't attack for a turn. Removed at the start of the owner's 2nd turn after it's applied. (Negative status effect)",
+        "source_line": 225
+      },
+      {
+        "key": "status-disarmed",
+        "raw": "Disarmed. This monster can't attack. (Negative status effect)",
+        "readable": "Disarmed. This monster can't attack. (Negative status effect)",
+        "source_line": 226
+      },
+      {
+        "key": "status-silenced",
+        "raw": "Silenced. This monster can no longer use its abilities. (Negative status effect)",
+        "readable": "Silenced. This monster can no longer use its abilities. (Negative status effect)",
+        "source_line": 227
+      },
+      {
+        "key": "status-atk-buff",
+        "raw": "{{ATK}} buff. This monster's {{ATK}} has been increased. Base {{ATK}}: $1.",
+        "readable": "ATK buff. This monster's ATK has been increased. Base ATK: $1.",
+        "source_line": 228
+      },
+      {
+        "key": "status-atk-debuff",
+        "raw": "{{ATK}} debuff. This monster's {{ATK}} has been lowered. Base {{ATK}}: $1. (Negative status effect)",
+        "readable": "ATK debuff. This monster's ATK has been lowered. Base ATK: $1. (Negative status effect)",
+        "source_line": 229
+      },
+      {
+        "key": "status-hp-buff",
+        "raw": "Max {{HP}} buff. This monster's max {{HP}} has been increased. Base {{HP}}: $1.",
+        "readable": "Max HP buff. This monster's max HP has been increased. Base HP: $1.",
+        "source_line": 230
+      },
+      {
+        "key": "status-cost-debuff",
+        "raw": "{{COST||override=Cost}} reduction. This monster's {{COST}} has been lowered. Base {{COST}}: $1.",
+        "readable": "COST||override=Cost reduction. This monster's COST has been lowered. Base COST: $1.",
+        "source_line": 231
+      },
+      {
+        "key": "status-cost-buff",
+        "raw": "{{COST||override=Cost}} increase. This monster's {{COST}} has been increased. Base {{COST}}: $1. (Negative status effect)",
+        "readable": "COST||override=Cost increase. This monster's COST has been increased. Base COST: $1. (Negative status effect)",
+        "source_line": 232
+      },
+      {
+        "key": "status-another-chance",
+        "raw": "Another Chance. {{KW:DUST}}: Summon this monster for the opponent with {{STATS:+1|+1}}.",
+        "readable": "Another Chance. Dust: Summon this monster for the opponent with ATK +1/HP +1.",
+        "source_line": 233
+      },
+      {
+        "key": "status-kr",
+        "raw": "{{KR}}. Before this dies, give its killer {{STATS:+1|+1}}. If there's no killer or the killer dies during its owner's turn, give a random other enemy monster {{STATS:+1|+1}} instead. (Negative status effect)",
+        "readable": "KR. Before this dies, give its killer ATK +1/HP +1. If there's no killer or the killer dies during its owner's turn, give a random other enemy monster ATK +1/HP +1 instead. (Negative status effect)",
+        "source_line": 234
+      },
+      {
+        "key": "status-invulnerable",
+        "raw": "Invulnerable. This monster is immune to all {{DMG}}.",
+        "readable": "Invulnerable. This monster is immune to all DMG.",
+        "source_line": 235
+      },
+      {
+        "key": "status-transparency",
+        "raw": "Transparency. This monster can't be targeted. Takes priority over {{KW:TAUNT}}. Removed at the start of its owner's turn.",
+        "readable": "Transparency. This monster can't be targeted. Takes priority over Taunt. Removed at the start of its owner's turn.",
+        "source_line": 236
+      },
+      {
+        "key": "status-determination",
+        "raw": "Determination. This monster is immune to {{KW:SILENCE}}. This status is innate to all {{RARITY:DETERMINATION}} monsters.",
+        "readable": "Determination. This monster is immune to Silence. This status is innate to all DT monsters.",
+        "source_line": 237
+      },
+      {
+        "key": "status-taunt",
+        "raw": "Taunt. Enemy monsters must kill monsters with this effect before they can attack the player or other ally monsters.",
+        "readable": "Taunt. Enemy monsters must kill monsters with this effect before they can attack the player or other ally monsters.",
+        "source_line": 238
+      },
+      {
+        "key": "status-charge",
+        "raw": "Charge. This monster can attack during its first turn. Overrides {{KW:HASTE}}. Removed after attacking or when your turn ends.",
+        "readable": "Charge. This monster can attack during its first turn. Overrides Haste. Removed after attacking or when your turn ends.",
+        "source_line": 239
+      },
+      {
+        "key": "status-haste",
+        "raw": "Haste. This monster can attack during its first turn, but can't attack the opponent. Removed after attacking or when your turn ends.",
+        "readable": "Haste. This monster can attack during its first turn, but can't attack the opponent. Removed after attacking or when your turn ends.",
+        "source_line": 240
+      },
+      {
+        "key": "status-candy",
+        "raw": "Candy. Heal {{HP:3}} to this monster at the end of its owner's turn.",
+        "readable": "Candy. Heal HP 3 to this monster at the end of its owner's turn.",
+        "source_line": 241
+      },
+      {
+        "key": "status-caught",
+        "raw": "Caught monster: $1 | Owner: $2.",
+        "readable": "Caught monster: $1 | Owner: $2.",
+        "source_line": 242
+      },
+      {
+        "key": "status-dodge",
+        "raw": "Dodge. This monster will negate the next {{PLURAL:$1|instance|$1 instances}} of {{DMG}} to itself.",
+        "readable": "Dodge. This monster will negate the next instance of DMG to itself.",
+        "source_line": 1475
+      },
+      {
+        "key": "status-thorns",
+        "raw": "This monster will deal $1 {{DMG}} to the attacker.",
+        "readable": "This monster will deal $1 DMG to the attacker.",
+        "source_line": 1500
+      },
+      {
+        "key": "status-armor",
+        "raw": "Armor. This monster takes 1 less {{DMG}}.",
+        "readable": "Armor. This monster takes 1 less DMG.",
+        "source_line": 1501
+      },
+      {
+        "key": "status-created",
+        "raw": "This card has been created by $1.",
+        "readable": "This card has been created by $1.",
+        "source_line": 1582
+      },
+      {
+        "key": "status-burn",
+        "raw": "{{KW:TURN_END}}: Deal $1 {{DMG}} to its owner.",
+        "readable": "Turn end: Deal $1 DMG to its owner.",
+        "source_line": 1591
+      },
+      {
+        "key": "status-loop",
+        "raw": "This card can trigger its {{KW:LOOP}} effect $1 more {{PLURAL:$1|time|times}}.",
+        "readable": "This card can trigger its Loop effect $1 more time.",
+        "source_line": 2020
+      },
+      {
+        "key": "status-shock",
+        "raw": "This monster's {{KW:SHOCK}} effect is active.",
+        "readable": "This monster's Shock effect is active.",
+        "source_line": 2023
+      },
+      {
+        "key": "status-support",
+        "raw": "This monster's {{KW:SUPPORT}} effect is active.",
+        "readable": "This monster's Support effect is active.",
+        "source_line": 2024
+      },
+      {
+        "key": "status-hp-debuff",
+        "raw": "Max {{HP}} debuff. This monster's max {{HP}} has been decreased. Base {{HP}}: $1. (Negative status effect)",
+        "readable": "Max HP debuff. This monster's max HP has been decreased. Base HP: $1. (Negative status effect)",
+        "source_line": 2463
+      },
+      {
+        "key": "status-bullseye",
+        "raw": "This monster's {{KW:BULLSEYE}} is active.",
+        "readable": "This monster's Bullseye is active.",
+        "source_line": 2502
+      },
+      {
+        "key": "status-wanted",
+        "raw": "Wanted. Before this monster dies, give 1 {{GOLD}} to its opponent. (Negative status effect)",
+        "readable": "Wanted. Before this monster dies, give 1 GOLD to its opponent. (Negative status effect)",
+        "source_line": 2568
+      },
+      {
+        "key": "status-base-stat-change",
+        "raw": "This monster's base stats are changed.\n$1's usual base stats: {{STATS:$2|$3|$4}}\n$1's current base stats: {{STATS:$5|$6|$7}}",
+        "readable": "This monster's base stats are changed. $1's usual base stats: COST $2/ATK $3/HP $4 $1's current base stats: COST $5/ATK $6/HP $7",
+        "source_line": 2607
+      },
+      {
+        "key": "status-underevent-2024",
+        "raw": "UNDEREVENT 2024: This card is a commemoration of Undercards's participation in the 2024 UNDEREVENT. Thank you, UNDEREVENT team, and everyone who watched it!",
+        "readable": "UNDEREVENT 2024: This card is a commemoration of Undercards's participation in the 2024 UNDEREVENT. Thank you, UNDEREVENT team, and everyone who watched it!",
+        "source_line": 2615
+      },
+      {
+        "key": "status-darkspawn",
+        "raw": "Darkspawn. This monster takes no {{DMG}} from spells and cannot be targeted by them.",
+        "readable": "Darkspawn. This monster takes no DMG from spells and cannot be targeted by them.",
+        "source_line": 2643
+      },
+      {
+        "key": "status-program",
+        "raw": "If you have ($1) {{GOLD}}, spend it to trigger this effect.",
+        "readable": "If you have ($1) GOLD, spend it to trigger this effect.",
+        "source_line": 2765
+      },
+      {
+        "key": "status-flowery-power",
+        "raw": "Flowery Power. This card's {{KW:NEED}} condition is always fulfilled.",
+        "readable": "Flowery Power. This card's Need condition is always fulfilled.",
+        "source_line": 3131
+      },
+      {
+        "key": "status-mold-spore",
+        "raw": "{{KW:MOLD_SPORE}} ($1). {{KW:TURN_END}}: Gain +1 {{KW:MOLD_SPORE}}. When this monster dies, summon an enemy {{CARD:4|1}} with {{STATS:$1|$1}}. (Negative status effect)",
+        "readable": "Mold Spore ($1). Turn end: Gain +1 Mold Spore. When this monster dies, summon an enemy Moldsmal [#4] with ATK $1/HP $1. (Negative status effect)",
+        "source_line": 3294
+      }
+    ],
+    "enchant": [
+      {
+        "key": "enchant-blue-bones-desc",
+        "raw": "After the monster here attacks, deal 5 {{DMG}} to it, and this effect expires.",
+        "readable": "After the monster here attacks, deal 5 DMG to it, and this effect expires.",
+        "source_line": 2920
+      },
+      {
+        "key": "enchant-x-desc",
+        "raw": "After a monster is summoned here, turn into an {{ENCHANT:O|1}}. {{KW:TURN_END}}: Deal 1 {{DMG}} to you.",
+        "readable": "After a monster is summoned here, turn into an O-slot. Turn end: Deal 1 DMG to you.",
+        "source_line": 2922
+      },
+      {
+        "key": "enchant-a-desc",
+        "raw": "After a monster is summoned here, turn into an {{ENCHANT:X|1}}. {{KW:TURN_END}}: Deal 1 {{DMG}} to you.",
+        "readable": "After a monster is summoned here, turn into an X-slot. Turn end: Deal 1 DMG to you.",
+        "source_line": 2924
+      },
+      {
+        "key": "enchant-o-desc",
+        "raw": "After a monster is summoned here, turn into an {{ENCHANT:A|1}}. {{KW:TURN_END}}: If all slots are {{ENCHANT:O|2}}, their effects expire.",
+        "readable": "After a monster is summoned here, turn into an A-slot. Turn end: If all slots are O-slot, their effects expire.",
+        "source_line": 2926
+      },
+      {
+        "key": "enchant-green-tile-desc",
+        "raw": "After a monster is played here, summon an enemy {{CARD:126|1}}, and this effect expires.",
+        "readable": "After a monster is played here, summon an enemy Papyrus Statue [#126], and this effect expires.",
+        "source_line": 2928
+      },
+      {
+        "key": "enchant-yellow-tile-desc",
+        "raw": "After a monster is played here, deal 3 {{DMG}} to all other ally monsters, and this effect expires.",
+        "readable": "After a monster is played here, deal 3 DMG to all other ally monsters, and this effect expires.",
+        "source_line": 2930
+      },
+      {
+        "key": "enchant-purple-tile-desc",
+        "raw": "After a monster is played here, it is instead summoned for the opponent, and this effect expires.",
+        "readable": "After a monster is played here, it is instead summoned for the opponent, and this effect expires.",
+        "source_line": 2932
+      },
+      {
+        "key": "enchant-orange-tile-desc",
+        "raw": "After a monster is played here, the enemy draws 3 cards, and this effect expires.",
+        "readable": "After a monster is played here, the enemy draws 3 cards, and this effect expires.",
+        "source_line": 2934
+      },
+      {
+        "key": "enchant-the-flame-desc",
+        "raw": "After a monster is played here, deal 2 {{DMG}} to it, and this effect expires. {{KW:TURN_END}}: Deal 2 {{DMG}} to you.",
+        "readable": "After a monster is played here, deal 2 DMG to it, and this effect expires. Turn end: Deal 2 DMG to you.",
+        "source_line": 2936
+      },
+      {
+        "key": "enchant-scattering-dust-desc",
+        "raw": "Starts with 2 counters. After a monster dies here (except {{CARD:490|1}}) during the enemy turn, summon a {{CARD:490|1}} and lose a counter. At 0 counters, this effect expires.",
+        "readable": "Starts with 2 counters. After a monster dies here (except Pile of Dust [#490]) during the enemy turn, summon a Pile of Dust [#490] and lose a counter. At 0 counters, this effect expires.",
+        "source_line": 3031
+      },
+      {
+        "key": "enchant-incinerator-desc",
+        "raw": "Starts with 5 counters. After a monster is played here, if there is another ally monster, kill the monster played here to give a random ally monster {{STATS:+1|+1}} and lose a counter. At 0 counters, this effect expires.",
+        "readable": "Starts with 5 counters. After a monster is played here, if there is another ally monster, kill the monster played here to give a random ally monster ATK +1/HP +1 and lose a counter. At 0 counters, this effect expires.",
+        "source_line": 3033
+      },
+      {
+        "key": "enchant-the-cure-desc",
+        "raw": "{{KW:TURN_END}}: Remove all negative effects from the monster on this slot and give it {{KR}}.",
+        "readable": "Turn end: Remove all negative effects from the monster on this slot and give it KR.",
+        "source_line": 3092
+      },
+      {
+        "key": "enchant-gersons-hammer-desc",
+        "raw": "The monster on this slot deals 1 more {{DMG}} to monsters. After it attacks, it gains {{KW:HASTE}} and can attack again (once per turn). After it dies, summon an exact copy with full {{HP}}, and this effect expires.",
+        "readable": "The monster on this slot deals 1 more DMG to monsters. After it attacks, it gains Haste and can attack again (once per turn). After it dies, summon an exact copy with full HP, and this effect expires.",
+        "source_line": 3112
+      },
+      {
+        "key": "enchant-soil-desc",
+        "raw": "{{KW:TURN_END}}: If this slot is empty, summon a {{CARD:375|1}} on this slot.",
+        "readable": "Turn end: If this slot is empty, summon a Green Clover [#375] on this slot.",
+        "source_line": 3206
+      },
+      {
+        "key": "enchant-ambushing-spears-desc",
+        "raw": "{{KW:TURN_END}}: This effect expires. If there is a monster on this slot, summon a {{STATS:7|7}} {{CARD:574|1}} for the opponent that attacks it.",
+        "readable": "Turn end: This effect expires. If there is a monster on this slot, summon a ATK 7/HP 7 Spear [#574] for the opponent that attacks it.",
+        "source_line": 3305
+      },
+      {
+        "key": "enchant-spear-of-courage-desc",
+        "raw": "The monster here takes 1 less {{DMG}}. {{KW:TURN_START}}: Move this enchantment one slot to the right (loops back at the end).",
+        "readable": "The monster here takes 1 less DMG. Turn start: Move this enchantment one slot to the right (loops back at the end).",
+        "source_line": 3354
+      }
+    ],
+    "soul": [
+      {
+        "key": "soul-determination-desc",
+        "raw": "The first time you would die, set your {{HP}} to 5 instead. Start with the {{ARTIFACT:33}} artifact.",
+        "readable": "The first time you would die, set your HP to 5 instead. Start with the Save [#33] artifact.",
+        "source_line": 212
+      },
+      {
+        "key": "soul-patience-desc",
+        "raw": "At the end of every 2nd turn, add {{CARD:552|1}} to the top of your deck if your hand isn't full and you have no {{CARD:552|1}} in your hand or deck.",
+        "readable": "At the end of every 2nd turn, add Change of Winds [#552] to the top of your deck if your hand isn't full and you have no Change of Winds [#552] in your hand or deck.",
+        "source_line": 213
+      },
+      {
+        "key": "soul-bravery-desc",
+        "raw": "At the start of every 3rd turn, add a {{CARD:452|1}} to your hand. If your hand is full, add a {{CARD:577|1}} to your deck instead.",
+        "readable": "At the start of every 3rd turn, add a Recruitment [#452] to your hand. If your hand is full, add a Draft [#577] to your deck instead.",
+        "source_line": 214
+      },
+      {
+        "key": "soul-integrity-desc",
+        "raw": "{{KW:TURN_END}}: If you spent more {{GOLD}} this turn than last turn, earn 1 {{GOLD}} (except turn 1). Your {{GOLD}} cap past turn 10 is 11.",
+        "readable": "Turn end: If you spent more GOLD this turn than last turn, earn 1 GOLD (except turn 1). Your GOLD cap past turn 10 is 11.",
+        "source_line": 215
+      },
+      {
+        "key": "soul-perseverance-desc",
+        "raw": "{{KW:TURN_START}}: Give {{KR}} to the highest {{ATK}} enemy monster without {{KR}}.",
+        "readable": "Turn start: Give KR to the highest ATK enemy monster without KR.",
+        "source_line": 216
+      },
+      {
+        "key": "soul-kindness-desc",
+        "raw": "{{KW:TURN_END}}: If it's turn 3 or later, heal 1 {{HP}} to you and all damaged ally monsters. If there were no damaged ally monsters, give the rightmost ally monster +1 {{HP}}.",
+        "readable": "Turn end: If it's turn 3 or later, heal 1 HP to you and all damaged ally monsters. If there were no damaged ally monsters, give the rightmost ally monster +1 HP.",
+        "source_line": 217
+      },
+      {
+        "key": "soul-justice-desc",
+        "raw": "{{KW:TURN_START}}: Deal 1 {{DMG}} to the lowest {{HP}} enemy monster.",
+        "readable": "Turn start: Deal 1 DMG to the lowest HP enemy monster.",
+        "source_line": 218
+      }
+    ]
+  }
+}

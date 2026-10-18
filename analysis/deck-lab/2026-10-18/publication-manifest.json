@@ -1,0 +1,221 @@
+{
+  "parent_commit": "a58e869eab60f5e79c176be6c5a4d70b614a20fa",
+  "base_tree": "13c6c2808cc4b181746328c4ef3ef8694b44fe0b",
+  "branch": "research/local-method-lab-20261018",
+  "repository": "DuffyGod/undercards",
+  "scope": "Only new analysis/deck-lab/2026-10-18/ paths",
+  "files": [
+    {
+      "path": "analysis/deck-lab/2026-10-18/A_early.json",
+      "bytes": 902,
+      "sha256": "aa000e0942b5ff4b1764642f82eade5446a070f495d555bf655aba2f0e4c0dcb",
+      "git_blob_sha": "07b43628ec286ef4a9259e3674ad30c23b6a1211"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/A_early.metrics.json",
+      "bytes": 14379,
+      "sha256": "07fdb98b0c7ff0b98bfd8b9be35789af99895833e353527d4dc68620eb73a484",
+      "git_blob_sha": "83a29335a8249a14ee4940c0cf35d770ffdf4ad5"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/A_kindness.json",
+      "bytes": 905,
+      "sha256": "ee17d270a637f0df35d39bd9a3da3457181db689be4bcad55ae9d0690a4fde06",
+      "git_blob_sha": "36050a58dccba8b2c6c8ef1ff6a96b6815441a87"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/A_kindness.metrics.json",
+      "bytes": 14379,
+      "sha256": "6afbe72e22f4a523d37f2dbaf0629546dba7a0fe9437e07d2fcc2ce512d7b976",
+      "git_blob_sha": "5be0f4907dc7faa4247da67950ea271eaefd690a"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/A_quality_bookshelf.json",
+      "bytes": 891,
+      "sha256": "dece502a9e5043d557b34c3817a19c8bdad115119b98a3487d7b581fcf3e0a8e",
+      "git_blob_sha": "d562dc8b0bbc471a65014cb19855305f61293a4e"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/A_quality_bookshelf.metrics.json",
+      "bytes": 14397,
+      "sha256": "3b2c62a504efc784e94b5e326089dc211b8773bbbb08720ceb9839402b93c296",
+      "git_blob_sha": "f20e3775f22288c19e7bfb8d068b07bb797c6742"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/A_safe_slots.json",
+      "bytes": 884,
+      "sha256": "a9a04c844b0a8261d6b2513c22ad538b056eea2df3252bd0624da9be86425700",
+      "git_blob_sha": "ad0be2e6ea074ca8c7ca0a7849f732329a4b1eb3"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/A_safe_slots.metrics.json",
+      "bytes": 14382,
+      "sha256": "d399dfe6f16ad17b225314188abf5b88c8e3b0105be738c9cca6582c60bb04b9",
+      "git_blob_sha": "7c0aa7afc1c168fdc8ffc1d340cb8cf77f8f30bb"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/answer-access-compact.json",
+      "bytes": 12177,
+      "sha256": "6413457cdcbe07beb528befc330daa58434f5bad654e2df5e0304475c39bf80e",
+      "git_blob_sha": "703106448af3c407fff62c8afdb2bb7e3b8cda4a"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/answer-access.json.gz",
+      "bytes": 9988,
+      "sha256": "7b564002df3e33e6fcb47c7b10668613377dc112a452337533327b233b84a76c",
+      "git_blob_sha": "c0bec8f79f4188725aab9b766ea5506ca9b59162"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/API-AUDIT.md",
+      "bytes": 3715,
+      "sha256": "835e1d91056fbb2b5ee248c5f2377687eaeb0bd9f8ad20faf3bd31f9267cc3fc",
+      "git_blob_sha": "10098d8de3c7a10fa5339546886ac0819105cf71"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/api-evidence-index.json",
+      "bytes": 16547,
+      "sha256": "738dac20ab9ecd17911d72c68127434ac93c65bf686f8253a3fc887eb7c06c9b",
+      "git_blob_sha": "16b0a2b4045045bd75d4b3a38daa9d4faa8b3e5d"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/api-evidence.json.gz",
+      "bytes": 487702,
+      "sha256": "f16638e9d7a9e9d1c984d9b9457a50fe515f486de7aa7a3ceffd773454c91bc1",
+      "git_blob_sha": "cd26e52c895ac12ef8191247cc7e2ca7476d2a1f"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/B_library_singletons.json",
+      "bytes": 972,
+      "sha256": "e4f04ae56b0e65fb2c0a2fa5deafdaec57b12b7d49812917d9c034a59412a6bb",
+      "git_blob_sha": "b04ee18a6e8d891bf831e872efde84a2beb792a2"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/B_library_singletons.metrics.json",
+      "bytes": 14355,
+      "sha256": "a7e8c98ff10c12c14ca64db56f57cbbf8717b33d725ed6ec2d2aaf523333eb1b",
+      "git_blob_sha": "560723b98b33f5bbb293425dcf3e30f68a7734df"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/bounded_review.py",
+      "bytes": 4936,
+      "sha256": "39cbf55d60cac52d360452fddcf6386e367d33b11ac700a50fa0c25329f0cbcb",
+      "git_blob_sha": "18b00cf3d5c488b9686bd77bf940df09d09be0b3"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/build_decks.py",
+      "bytes": 6799,
+      "sha256": "9eb9bffdaee8a5ab1959cd2e8f479f844bbf49d3fa5ed4eee043eee7ddcfa176",
+      "git_blob_sha": "d28c8cf8832f37bd9e361f0301beb137b6f3b957"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/deck_metrics.py",
+      "bytes": 12306,
+      "sha256": "6de9ec48c2a6d3f9327180750b5934a2b3ebcf0d10da5d901fc28e7677b68083",
+      "git_blob_sha": "1de726d83f8ed01119d7e42d8dc46748720a7b58"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/deck_review_api.py",
+      "bytes": 7229,
+      "sha256": "5c5466cdb2b8b8eca043e75ee085714a025f0c148fab3c84f5f756a5d95d7048",
+      "git_blob_sha": "5d4cfb8556872aaa15aa831bbaf87adb85837823"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/evaluate_decks.py",
+      "bytes": 4634,
+      "sha256": "3cfff26145f7538a0a8b9a7dfd8ea2d06ba6996b6fdaee1d3b3ff0e25c6da67f",
+      "git_blob_sha": "be7ec35ceb93ea769022948f755c5ccb7ae37b5c"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/exchange-ledgers.json.gz",
+      "bytes": 10996,
+      "sha256": "5c2a52866832ab6120e0ee294a5c5223ab579bd9327206f23538416fca88bef3",
+      "git_blob_sha": "e70dddf608b3bc848fb8b1a20958c3c2f2b93113"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/immediate_exchange.py",
+      "bytes": 12573,
+      "sha256": "98985700178a511f11f9fefa28bd628ecfe3549dd660ae04e02e71486841a3e1",
+      "git_blob_sha": "00a1c7db5644e46f58d650fb5077e122f173a9e0"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/METRICS.md",
+      "bytes": 3706,
+      "sha256": "7bf9d87d371f57ba6c04183e7fac695b4722f12fb337c3516b74466bf8938d88",
+      "git_blob_sha": "6716d4a2d25b411569f8a087767d352abbf111a2"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/pack_evidence.py",
+      "bytes": 2084,
+      "sha256": "0a3331d14e8cbec8649e499692b25d2d560772028c28c48e8f1b4020bd558081",
+      "git_blob_sha": "53f6631f3f91efb20f601dbc2fcf3af01ddb8524"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/pool_screen.py",
+      "bytes": 10293,
+      "sha256": "a51554e8afd38f4a524bbfbce53e1ef0c094a229cafa3317be2a074a47682be0",
+      "git_blob_sha": "419d88c738cf80c3f1e9a19adcf42c92cbc426df"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/README.md",
+      "bytes": 2292,
+      "sha256": "d618a4d1daf82e20c50459f46b167e64abba54cd08254915fef1521ff6e5c08d",
+      "git_blob_sha": "6a6eb2635b6a0c3e8ee6d6810b5979f680bc2d6f"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/REPORT.md",
+      "bytes": 17818,
+      "sha256": "8ceedf0ea557b758dc3338e6f4c3050edd57738bc3e0b7242680bf28f406c7f2",
+      "git_blob_sha": "b98dccdc997340eae36e4269dcc62c05b3098698"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/selected-source.json",
+      "bytes": 78545,
+      "sha256": "529434d0ff3c9d976a872a77c5b648d1b49d9ee7715b06d189dc243c2db0b84a",
+      "git_blob_sha": "17516a20ae0c591a9212bd37b57c1f82640431da"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/structural-comparison.json",
+      "bytes": 19475,
+      "sha256": "dff49594a0eca9e9b50f48f0a9b192cf74d55a91ddf94e2f7684f54a40856e9d",
+      "git_blob_sha": "4dcff36c96a7fd19c21a41714a7bfe96b711bed6"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/test_deck_metrics.py",
+      "bytes": 3516,
+      "sha256": "53027efa392f16849b7c67f0ca0f3487fc37924b47a55ecf3029b0faefc407d0",
+      "git_blob_sha": "a6637d83f56af1042114bd5e6fc4c7f2bf381988"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/test_immediate_exchange.py",
+      "bytes": 4325,
+      "sha256": "69d3fda85fee703ba132cf5027398e49c01f1d251a329f37a6f335b83f0db932",
+      "git_blob_sha": "a24c96a0af8ad901eb7ea7932a06243c61f1a467"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/worked-examples.json",
+      "bytes": 19235,
+      "sha256": "84d0f6b4c73f296fc587fa0f1fea88e1ae5638864742f3f6b0936c1256ec6e01",
+      "git_blob_sha": "8b45720aa13102f32c88ba5c906ffd352db65bd0"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/worked_examples.py",
+      "bytes": 4206,
+      "sha256": "f0608edc92a931e4da2e47a2322bfb71f87e85eee58855ce5c2301a3b57fc68a",
+      "git_blob_sha": "32253ccfa47651c245c5b58a8f9c957b724c081e"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/drafts/A_quality_bookshelf_v0.json",
+      "bytes": 483,
+      "sha256": "979522fc274eb570d83841e57e892724c0232041b5e39ab00a76db686d11af51",
+      "git_blob_sha": "f45ce76be3d4d44992590166db24f00e73d54f52"
+    },
+    {
+      "path": "analysis/deck-lab/2026-10-18/drafts/B_library_singletons_v0.json",
+      "bytes": 571,
+      "sha256": "cd355e0119a39de478199e5669925a4d8a8abb8428375e2c6762142ea98ae8c6",
+      "git_blob_sha": "f3b9527419f4519d3c1afc78de86175c25e9c88c"
+    }
+  ],
+  "self_excluded": true,
+  "verification": "17 checks passed; all5 decks25 legal; 864 matrix rows; 93 API evidence docs roundtripped"
+}

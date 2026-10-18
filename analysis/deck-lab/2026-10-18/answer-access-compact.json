@@ -1,0 +1,583 @@
+[
+  {
+    "deck": "A_early",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "icecap",
+    "enemy": [
+      3,
+      1,
+      1
+    ],
+    "cash": 3,
+    "clearing_physical_copies": 9,
+    "clearing_source_ids": [
+      932,
+      373,
+      869,
+      111,
+      436
+    ],
+    "favorable_uniform_hands": 48762,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.9177865612648222
+  },
+  {
+    "deck": "A_early",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "vulkin",
+    "enemy": [
+      4,
+      4,
+      4
+    ],
+    "cash": 4,
+    "clearing_physical_copies": 2,
+    "clearing_source_ids": [
+      54,
+      291
+    ],
+    "favorable_uniform_hands": 19481,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.36666666666666664
+  },
+  {
+    "deck": "A_early",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "vulkin",
+    "enemy": [
+      4,
+      4,
+      4
+    ],
+    "cash": 6,
+    "clearing_physical_copies": 5,
+    "clearing_source_ids": [
+      54,
+      291,
+      509,
+      984,
+      530
+    ],
+    "favorable_uniform_hands": 37626,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.7081874647092038
+  },
+  {
+    "deck": "A_early",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "five",
+    "enemy": [
+      5,
+      5,
+      5
+    ],
+    "cash": 6,
+    "clearing_physical_copies": 0,
+    "clearing_source_ids": [],
+    "favorable_uniform_hands": 0,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.0
+  },
+  {
+    "deck": "A_early",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "large",
+    "enemy": [
+      6,
+      7,
+      7
+    ],
+    "cash": 6,
+    "clearing_physical_copies": 0,
+    "clearing_source_ids": [],
+    "favorable_uniform_hands": 0,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.0
+  },
+  {
+    "deck": "A_early",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "large",
+    "enemy": [
+      6,
+      7,
+      7
+    ],
+    "cash": 10,
+    "clearing_physical_copies": 2,
+    "clearing_source_ids": [
+      466
+    ],
+    "favorable_uniform_hands": 19481,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.36666666666666664
+  },
+  {
+    "deck": "A_early",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "injured_large",
+    "enemy": [
+      6,
+      4,
+      7
+    ],
+    "cash": 6,
+    "clearing_physical_copies": 6,
+    "clearing_source_ids": [
+      54,
+      291,
+      509,
+      984,
+      391,
+      530
+    ],
+    "favorable_uniform_hands": 41502,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.7811405985319029
+  },
+  {
+    "deck": "A_quality_bookshelf",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "icecap",
+    "enemy": [
+      3,
+      1,
+      1
+    ],
+    "cash": 3,
+    "clearing_physical_copies": 8,
+    "clearing_source_ids": [
+      932,
+      373,
+      869,
+      111,
+      436
+    ],
+    "favorable_uniform_hands": 46942,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.8835309617918313
+  },
+  {
+    "deck": "A_quality_bookshelf",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "vulkin",
+    "enemy": [
+      4,
+      4,
+      4
+    ],
+    "cash": 4,
+    "clearing_physical_copies": 2,
+    "clearing_source_ids": [
+      54,
+      291
+    ],
+    "favorable_uniform_hands": 19481,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.36666666666666664
+  },
+  {
+    "deck": "A_quality_bookshelf",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "vulkin",
+    "enemy": [
+      4,
+      4,
+      4
+    ],
+    "cash": 6,
+    "clearing_physical_copies": 6,
+    "clearing_source_ids": [
+      54,
+      291,
+      509,
+      951,
+      984,
+      530
+    ],
+    "favorable_uniform_hands": 41502,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.7811405985319029
+  },
+  {
+    "deck": "A_quality_bookshelf",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "five",
+    "enemy": [
+      5,
+      5,
+      5
+    ],
+    "cash": 6,
+    "clearing_physical_copies": 1,
+    "clearing_source_ids": [
+      951
+    ],
+    "favorable_uniform_hands": 10626,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.2
+  },
+  {
+    "deck": "A_quality_bookshelf",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "large",
+    "enemy": [
+      6,
+      7,
+      7
+    ],
+    "cash": 6,
+    "clearing_physical_copies": 0,
+    "clearing_source_ids": [],
+    "favorable_uniform_hands": 0,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.0
+  },
+  {
+    "deck": "A_quality_bookshelf",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "large",
+    "enemy": [
+      6,
+      7,
+      7
+    ],
+    "cash": 10,
+    "clearing_physical_copies": 2,
+    "clearing_source_ids": [
+      466
+    ],
+    "favorable_uniform_hands": 19481,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.36666666666666664
+  },
+  {
+    "deck": "A_quality_bookshelf",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "injured_large",
+    "enemy": [
+      6,
+      4,
+      7
+    ],
+    "cash": 6,
+    "clearing_physical_copies": 7,
+    "clearing_source_ids": [
+      54,
+      291,
+      509,
+      951,
+      984,
+      391,
+      530
+    ],
+    "favorable_uniform_hands": 44562,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.8387351778656127
+  },
+  {
+    "deck": "A_safe_slots",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "icecap",
+    "enemy": [
+      3,
+      1,
+      1
+    ],
+    "cash": 3,
+    "clearing_physical_copies": 8,
+    "clearing_source_ids": [
+      932,
+      373,
+      869,
+      111,
+      436
+    ],
+    "favorable_uniform_hands": 46942,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.8835309617918313
+  },
+  {
+    "deck": "A_safe_slots",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "vulkin",
+    "enemy": [
+      4,
+      4,
+      4
+    ],
+    "cash": 4,
+    "clearing_physical_copies": 2,
+    "clearing_source_ids": [
+      54,
+      291
+    ],
+    "favorable_uniform_hands": 19481,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.36666666666666664
+  },
+  {
+    "deck": "A_safe_slots",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "vulkin",
+    "enemy": [
+      4,
+      4,
+      4
+    ],
+    "cash": 6,
+    "clearing_physical_copies": 6,
+    "clearing_source_ids": [
+      54,
+      291,
+      509,
+      984,
+      530
+    ],
+    "favorable_uniform_hands": 41502,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.7811405985319029
+  },
+  {
+    "deck": "A_safe_slots",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "five",
+    "enemy": [
+      5,
+      5,
+      5
+    ],
+    "cash": 6,
+    "clearing_physical_copies": 0,
+    "clearing_source_ids": [],
+    "favorable_uniform_hands": 0,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.0
+  },
+  {
+    "deck": "A_safe_slots",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "large",
+    "enemy": [
+      6,
+      7,
+      7
+    ],
+    "cash": 6,
+    "clearing_physical_copies": 0,
+    "clearing_source_ids": [],
+    "favorable_uniform_hands": 0,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.0
+  },
+  {
+    "deck": "A_safe_slots",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "large",
+    "enemy": [
+      6,
+      7,
+      7
+    ],
+    "cash": 10,
+    "clearing_physical_copies": 2,
+    "clearing_source_ids": [
+      466
+    ],
+    "favorable_uniform_hands": 19481,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.36666666666666664
+  },
+  {
+    "deck": "A_safe_slots",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "injured_large",
+    "enemy": [
+      6,
+      4,
+      7
+    ],
+    "cash": 6,
+    "clearing_physical_copies": 7,
+    "clearing_source_ids": [
+      54,
+      291,
+      509,
+      984,
+      391,
+      530
+    ],
+    "favorable_uniform_hands": 44562,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.8387351778656127
+  },
+  {
+    "deck": "B_library_singletons",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "icecap",
+    "enemy": [
+      3,
+      1,
+      1
+    ],
+    "cash": 3,
+    "clearing_physical_copies": 6,
+    "clearing_source_ids": [
+      932,
+      373,
+      869,
+      166,
+      111,
+      436
+    ],
+    "favorable_uniform_hands": 41502,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.7811405985319029
+  },
+  {
+    "deck": "B_library_singletons",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "vulkin",
+    "enemy": [
+      4,
+      4,
+      4
+    ],
+    "cash": 4,
+    "clearing_physical_copies": 2,
+    "clearing_source_ids": [
+      54,
+      291
+    ],
+    "favorable_uniform_hands": 19481,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.36666666666666664
+  },
+  {
+    "deck": "B_library_singletons",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "vulkin",
+    "enemy": [
+      4,
+      4,
+      4
+    ],
+    "cash": 6,
+    "clearing_physical_copies": 6,
+    "clearing_source_ids": [
+      54,
+      291,
+      509,
+      951,
+      984,
+      530
+    ],
+    "favorable_uniform_hands": 41502,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.7811405985319029
+  },
+  {
+    "deck": "B_library_singletons",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "five",
+    "enemy": [
+      5,
+      5,
+      5
+    ],
+    "cash": 6,
+    "clearing_physical_copies": 1,
+    "clearing_source_ids": [
+      951
+    ],
+    "favorable_uniform_hands": 10626,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.2
+  },
+  {
+    "deck": "B_library_singletons",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "large",
+    "enemy": [
+      6,
+      7,
+      7
+    ],
+    "cash": 6,
+    "clearing_physical_copies": 0,
+    "clearing_source_ids": [],
+    "favorable_uniform_hands": 0,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.0
+  },
+  {
+    "deck": "B_library_singletons",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "large",
+    "enemy": [
+      6,
+      7,
+      7
+    ],
+    "cash": 10,
+    "clearing_physical_copies": 1,
+    "clearing_source_ids": [
+      466
+    ],
+    "favorable_uniform_hands": 10626,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.2
+  },
+  {
+    "deck": "B_library_singletons",
+    "hand": 5,
+    "power_counter_spent_on_source": 0,
+    "target": "injured_large",
+    "enemy": [
+      6,
+      4,
+      7
+    ],
+    "cash": 6,
+    "clearing_physical_copies": 7,
+    "clearing_source_ids": [
+      54,
+      291,
+      509,
+      951,
+      984,
+      391,
+      530
+    ],
+    "favorable_uniform_hands": 44562,
+    "all_uniform_hands": 53130,
+    "p_short_answer_in_uniform_original_hand": 0.8387351778656127
+  }
+]

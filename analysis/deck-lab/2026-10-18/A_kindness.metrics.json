@@ -1,0 +1,578 @@
+{
+  "deck_counts": {
+    "932": 2,
+    "373": 2,
+    "869": 1,
+    "602": 1,
+    "111": 2,
+    "436": 2,
+    "225": 2,
+    "20": 2,
+    "468": 1,
+    "54": 1,
+    "148": 1,
+    "291": 1,
+    "469": 1,
+    "509": 1,
+    "466": 2,
+    "984": 1,
+    "391": 1,
+    "530": 1
+  },
+  "cost_counts": {
+    "2": 6,
+    "3": 6,
+    "4": 6,
+    "5": 2,
+    "6": 5
+  },
+  "unique_names": 18,
+  "extra_duplicate_copies": 7,
+  "repeated_names": {
+    "932": 2,
+    "373": 2,
+    "111": 2,
+    "436": 2,
+    "225": 2,
+    "20": 2,
+    "466": 2
+  },
+  "seen_grid": [
+    {
+      "removed": 4,
+      "bookshelf": {
+        "removed": 4,
+        "p_seen": 0.3,
+        "p_need": 1.0,
+        "p_seen_and_need": 0.3,
+        "p_need_given_seen": 1.0
+      },
+      "librarian": {
+        "removed": 4,
+        "p_need": 0.0,
+        "p_focal_seen": 0.0,
+        "p_seen_and_need": 0.0,
+        "p_need_given_focal_seen": null,
+        "favorable_subsets": 0,
+        "total_subsets": 12650
+      },
+      "interactions": {
+        "interaction_copies": 0,
+        "interaction_density": 0.0,
+        "removed": 4,
+        "p_seen_at_least_one": 0.0,
+        "p_seen_at_least_two": 0.0,
+        "expected_seen": 0.0
+      }
+    },
+    {
+      "removed": 5,
+      "bookshelf": {
+        "removed": 5,
+        "p_seen": 0.36666666666666664,
+        "p_need": 1.0,
+        "p_seen_and_need": 0.36666666666666664,
+        "p_need_given_seen": 1.0
+      },
+      "librarian": {
+        "removed": 5,
+        "p_need": 0.0,
+        "p_focal_seen": 0.0,
+        "p_seen_and_need": 0.0,
+        "p_need_given_focal_seen": null,
+        "favorable_subsets": 0,
+        "total_subsets": 53130
+      },
+      "interactions": {
+        "interaction_copies": 0,
+        "interaction_density": 0.0,
+        "removed": 5,
+        "p_seen_at_least_one": 0.0,
+        "p_seen_at_least_two": 0.0,
+        "expected_seen": 0.0
+      }
+    },
+    {
+      "removed": 6,
+      "bookshelf": {
+        "removed": 6,
+        "p_seen": 0.43,
+        "p_need": 1.0,
+        "p_seen_and_need": 0.43,
+        "p_need_given_seen": 1.0
+      },
+      "librarian": {
+        "removed": 6,
+        "p_need": 0.0,
+        "p_focal_seen": 0.0,
+        "p_seen_and_need": 0.0,
+        "p_need_given_focal_seen": null,
+        "favorable_subsets": 0,
+        "total_subsets": 177100
+      },
+      "interactions": {
+        "interaction_copies": 0,
+        "interaction_density": 0.0,
+        "removed": 6,
+        "p_seen_at_least_one": 0.0,
+        "p_seen_at_least_two": 0.0,
+        "expected_seen": 0.0
+      }
+    },
+    {
+      "removed": 7,
+      "bookshelf": {
+        "removed": 7,
+        "p_seen": 0.49,
+        "p_need": 1.0,
+        "p_seen_and_need": 0.49,
+        "p_need_given_seen": 1.0
+      },
+      "librarian": {
+        "removed": 7,
+        "p_need": 0.00026627834408154776,
+        "p_focal_seen": 0.0,
+        "p_seen_and_need": 0.0,
+        "p_need_given_focal_seen": null,
+        "favorable_subsets": 0,
+        "total_subsets": 480700
+      },
+      "interactions": {
+        "interaction_copies": 0,
+        "interaction_density": 0.0,
+        "removed": 7,
+        "p_seen_at_least_one": 0.0,
+        "p_seen_at_least_two": 0.0,
+        "expected_seen": 0.0
+      }
+    },
+    {
+      "removed": 8,
+      "bookshelf": {
+        "removed": 8,
+        "p_seen": 0.5466666666666666,
+        "p_need": 1.0,
+        "p_seen_and_need": 0.5466666666666666,
+        "p_need_given_seen": 1.0
+      },
+      "librarian": {
+        "removed": 8,
+        "p_need": 0.0017160159951921967,
+        "p_focal_seen": 0.0,
+        "p_seen_and_need": 0.0,
+        "p_need_given_focal_seen": null,
+        "favorable_subsets": 0,
+        "total_subsets": 1081575
+      },
+      "interactions": {
+        "interaction_copies": 0,
+        "interaction_density": 0.0,
+        "removed": 8,
+        "p_seen_at_least_one": 0.0,
+        "p_seen_at_least_two": 0.0,
+        "expected_seen": 0.0
+      }
+    },
+    {
+      "removed": 10,
+      "bookshelf": {
+        "removed": 10,
+        "p_seen": 0.65,
+        "p_need": 1.0,
+        "p_seen_and_need": 0.65,
+        "p_need_given_seen": 1.0
+      },
+      "librarian": {
+        "removed": 10,
+        "p_need": 0.016431919137532277,
+        "p_focal_seen": 0.0,
+        "p_seen_and_need": 0.0,
+        "p_need_given_focal_seen": null,
+        "favorable_subsets": 0,
+        "total_subsets": 3268760
+      },
+      "interactions": {
+        "interaction_copies": 0,
+        "interaction_density": 0.0,
+        "removed": 10,
+        "p_seen_at_least_one": 0.0,
+        "p_seen_at_least_two": 0.0,
+        "expected_seen": 0.0
+      }
+    }
+  ],
+  "gold_path": [
+    {
+      "first": true,
+      "turn": 1,
+      "income": 1,
+      "gold_before": 2,
+      "payment": 2,
+      "gold_after": 0
+    },
+    {
+      "first": true,
+      "turn": 2,
+      "income": 2,
+      "gold_before": 2,
+      "payment": 2,
+      "gold_after": 0
+    },
+    {
+      "first": true,
+      "turn": 3,
+      "income": 3,
+      "gold_before": 3,
+      "payment": 3,
+      "gold_after": 0
+    },
+    {
+      "first": true,
+      "turn": 4,
+      "income": 4,
+      "gold_before": 4,
+      "payment": 4,
+      "gold_after": 0
+    },
+    {
+      "first": true,
+      "turn": 5,
+      "income": 5,
+      "gold_before": 5,
+      "payment": 5,
+      "gold_after": 0
+    },
+    {
+      "first": false,
+      "turn": 1,
+      "income": 2,
+      "gold_before": 3,
+      "payment": 2,
+      "gold_after": 1
+    },
+    {
+      "first": false,
+      "turn": 2,
+      "income": 2,
+      "gold_before": 3,
+      "payment": 2,
+      "gold_after": 1
+    },
+    {
+      "first": false,
+      "turn": 3,
+      "income": 4,
+      "gold_before": 5,
+      "payment": 3,
+      "gold_after": 2
+    },
+    {
+      "first": false,
+      "turn": 4,
+      "income": 4,
+      "gold_before": 6,
+      "payment": 4,
+      "gold_after": 2
+    },
+    {
+      "first": false,
+      "turn": 5,
+      "income": 6,
+      "gold_before": 8,
+      "payment": 5,
+      "gold_after": 3
+    }
+  ],
+  "uniform_hand_budget_grid": [
+    {
+      "first": true,
+      "turn": 1,
+      "hand": 4,
+      "cash": 2,
+      "p_affordable_single": 0.693596837944664,
+      "p_affordable_two": 0.0,
+      "expected_affordable_copies": 0.96
+    },
+    {
+      "first": true,
+      "turn": 1,
+      "hand": 5,
+      "cash": 2,
+      "p_affordable_single": 0.7811405985319029,
+      "p_affordable_two": 0.0,
+      "expected_affordable_copies": 1.2
+    },
+    {
+      "first": true,
+      "turn": 1,
+      "hand": 6,
+      "cash": 2,
+      "p_affordable_single": 0.846798418972332,
+      "p_affordable_two": 0.0,
+      "expected_affordable_copies": 1.44
+    },
+    {
+      "first": true,
+      "turn": 2,
+      "hand": 4,
+      "cash": 2,
+      "p_affordable_single": 0.693596837944664,
+      "p_affordable_two": 0.0,
+      "expected_affordable_copies": 0.96
+    },
+    {
+      "first": true,
+      "turn": 2,
+      "hand": 5,
+      "cash": 2,
+      "p_affordable_single": 0.7811405985319029,
+      "p_affordable_two": 0.0,
+      "expected_affordable_copies": 1.2
+    },
+    {
+      "first": true,
+      "turn": 2,
+      "hand": 6,
+      "cash": 2,
+      "p_affordable_single": 0.846798418972332,
+      "p_affordable_two": 0.0,
+      "expected_affordable_copies": 1.44
+    },
+    {
+      "first": true,
+      "turn": 3,
+      "hand": 4,
+      "cash": 3,
+      "p_affordable_single": 0.9434782608695652,
+      "p_affordable_two": 0.0,
+      "expected_affordable_copies": 1.92
+    },
+    {
+      "first": true,
+      "turn": 3,
+      "hand": 5,
+      "cash": 3,
+      "p_affordable_single": 0.9757763975155279,
+      "p_affordable_two": 0.0,
+      "expected_affordable_copies": 2.4
+    },
+    {
+      "first": true,
+      "turn": 3,
+      "hand": 6,
+      "cash": 3,
+      "p_affordable_single": 0.9903105590062112,
+      "p_affordable_two": 0.0,
+      "expected_affordable_copies": 2.88
+    },
+    {
+      "first": true,
+      "turn": 4,
+      "hand": 4,
+      "cash": 4,
+      "p_affordable_single": 0.9972332015810277,
+      "p_affordable_two": 0.2339920948616601,
+      "expected_affordable_copies": 2.88
+    },
+    {
+      "first": true,
+      "turn": 4,
+      "hand": 5,
+      "cash": 4,
+      "p_affordable_single": 0.999604743083004,
+      "p_affordable_two": 0.3434217955957086,
+      "expected_affordable_copies": 3.6
+    },
+    {
+      "first": true,
+      "turn": 4,
+      "hand": 6,
+      "cash": 4,
+      "p_affordable_single": 0.9999604743083004,
+      "p_affordable_two": 0.4528514963297572,
+      "expected_affordable_copies": 4.32
+    },
+    {
+      "first": true,
+      "turn": 5,
+      "hand": 4,
+      "cash": 5,
+      "p_affordable_single": 0.999604743083004,
+      "p_affordable_two": 0.5579446640316206,
+      "expected_affordable_copies": 3.2
+    },
+    {
+      "first": true,
+      "turn": 5,
+      "hand": 5,
+      "cash": 5,
+      "p_affordable_single": 0.9999811782420478,
+      "p_affordable_two": 0.700395256916996,
+      "expected_affordable_copies": 4.0
+    },
+    {
+      "first": true,
+      "turn": 5,
+      "hand": 6,
+      "cash": 5,
+      "p_affordable_single": 1.0,
+      "p_affordable_two": 0.8031959345002824,
+      "expected_affordable_copies": 4.8
+    },
+    {
+      "first": false,
+      "turn": 1,
+      "hand": 4,
+      "cash": 3,
+      "p_affordable_single": 0.9434782608695652,
+      "p_affordable_two": 0.0,
+      "expected_affordable_copies": 1.92
+    },
+    {
+      "first": false,
+      "turn": 1,
+      "hand": 5,
+      "cash": 3,
+      "p_affordable_single": 0.9757763975155279,
+      "p_affordable_two": 0.0,
+      "expected_affordable_copies": 2.4
+    },
+    {
+      "first": false,
+      "turn": 1,
+      "hand": 6,
+      "cash": 3,
+      "p_affordable_single": 0.9903105590062112,
+      "p_affordable_two": 0.0,
+      "expected_affordable_copies": 2.88
+    },
+    {
+      "first": false,
+      "turn": 2,
+      "hand": 4,
+      "cash": 3,
+      "p_affordable_single": 0.9434782608695652,
+      "p_affordable_two": 0.0,
+      "expected_affordable_copies": 1.92
+    },
+    {
+      "first": false,
+      "turn": 2,
+      "hand": 5,
+      "cash": 3,
+      "p_affordable_single": 0.9757763975155279,
+      "p_affordable_two": 0.0,
+      "expected_affordable_copies": 2.4
+    },
+    {
+      "first": false,
+      "turn": 2,
+      "hand": 6,
+      "cash": 3,
+      "p_affordable_single": 0.9903105590062112,
+      "p_affordable_two": 0.0,
+      "expected_affordable_copies": 2.88
+    },
+    {
+      "first": false,
+      "turn": 3,
+      "hand": 4,
+      "cash": 5,
+      "p_affordable_single": 0.999604743083004,
+      "p_affordable_two": 0.5579446640316206,
+      "expected_affordable_copies": 3.2
+    },
+    {
+      "first": false,
+      "turn": 3,
+      "hand": 5,
+      "cash": 5,
+      "p_affordable_single": 0.9999811782420478,
+      "p_affordable_two": 0.700395256916996,
+      "expected_affordable_copies": 4.0
+    },
+    {
+      "first": false,
+      "turn": 3,
+      "hand": 6,
+      "cash": 5,
+      "p_affordable_single": 1.0,
+      "p_affordable_two": 0.8031959345002824,
+      "expected_affordable_copies": 4.8
+    },
+    {
+      "first": false,
+      "turn": 4,
+      "hand": 4,
+      "cash": 6,
+      "p_affordable_single": 1.0,
+      "p_affordable_two": 0.7912252964426878,
+      "expected_affordable_copies": 4.0
+    },
+    {
+      "first": false,
+      "turn": 4,
+      "hand": 5,
+      "cash": 6,
+      "p_affordable_single": 1.0,
+      "p_affordable_two": 0.8910784867306606,
+      "expected_affordable_copies": 5.0
+    },
+    {
+      "first": false,
+      "turn": 4,
+      "hand": 6,
+      "cash": 6,
+      "p_affordable_single": 1.0,
+      "p_affordable_two": 0.9459966120835686,
+      "expected_affordable_copies": 6.0
+    },
+    {
+      "first": false,
+      "turn": 5,
+      "hand": 4,
+      "cash": 8,
+      "p_affordable_single": 1.0,
+      "p_affordable_two": 0.9758893280632411,
+      "expected_affordable_copies": 4.0
+    },
+    {
+      "first": false,
+      "turn": 5,
+      "hand": 5,
+      "cash": 8,
+      "p_affordable_single": 1.0,
+      "p_affordable_two": 0.9950875211744777,
+      "expected_affordable_copies": 5.0
+    },
+    {
+      "first": false,
+      "turn": 5,
+      "hand": 6,
+      "cash": 8,
+      "p_affordable_single": 1.0,
+      "p_affordable_two": 0.9992151326933936,
+      "expected_affordable_copies": 6.0
+    }
+  ],
+  "assumptions": [
+    "Initial 25 physical cards are non-Generated; exact random subsets without mulligan.",
+    "Removed/seen copies are not guaranteed still held, unburned, or affordable.",
+    "Current-hand cost samples are separate unconditioned structural probes, not leftovers after the payment prefix.",
+    "Gold uses base income/retention and an explicit exogenous payment prefix; missing payments mean zero.",
+    "Pair budgets need two physical cards and ordinary payment only; no target, board or survival feasibility.",
+    "Need checks remaining deck; generated additions, extra draws and deck edits are not simulated.",
+    "Interaction labels are caller declared, not empirical card quality; rarity/Soul/artifact legality is not certified."
+  ],
+  "notes": [
+    "Printed-cost probes omit extra gold/artifact gains; these four decks use no gold-altering SOUL in the probe.",
+    "Payment prefix [2,2,3,4,5] is feasible but exogenous, not guaranteed by a sampled hand.",
+    "Uniform current hands are a separate experiment, not conditioned leftovers of that payment prefix."
+  ],
+  "source_sha256": {
+    "snapshot": "7f19bef22de440abf1c2273806acecd0447e8341ad12f10eb63b418dfad45b85",
+    "deck": "ee17d270a637f0df35d39bd9a3da3457181db689be4bcad55ae9d0690a4fde06",
+    "producer": "9eb9bffdaee8a5ab1959cd2e8f479f844bbf49d3fa5ed4eee043eee7ddcfa176",
+    "deck_metrics": "6de9ec48c2a6d3f9327180750b5934a2b3ebcf0d10da5d901fc28e7677b68083"
+  }
+}

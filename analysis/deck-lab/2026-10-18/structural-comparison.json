@@ -1,0 +1,740 @@
+{
+  "A_quality_bookshelf": {
+    "soul": "JUSTICE",
+    "count": 25,
+    "cost_counts": {
+      "2": 5,
+      "3": 6,
+      "4": 6,
+      "5": 3,
+      "6": 5
+    },
+    "average_cost": 3.88,
+    "unique_names": 19,
+    "two_cost_copies": 5,
+    "cost_le3_copies": 11,
+    "p_seen_two_cost_n4": 0.61699604743083,
+    "p_seen_cost_le3_n4": 0.9208695652173913,
+    "uniform_h5_two_plays": {
+      "3": 0.0,
+      "4": 0.25223037831733486,
+      "5": 0.6139845661584792,
+      "6": 0.8426877470355731,
+      "7": 0.9539431582909844,
+      "8": 0.9904761904761905,
+      "9": 0.9983813288161114
+    },
+    "ceiling_access": [
+      {
+        "seen": 4,
+        "p_any_book_or_library": 0.3,
+        "bookshelf": {
+          "removed": 4,
+          "p_seen": 0.3,
+          "p_need": 1.0,
+          "p_seen_and_need": 0.3,
+          "p_need_given_seen": 1.0
+        },
+        "librarian": {
+          "removed": 4,
+          "p_need": 0.0,
+          "p_focal_seen": 0.0,
+          "p_seen_and_need": 0.0,
+          "p_need_given_focal_seen": null,
+          "favorable_subsets": 0,
+          "total_subsets": 12650
+        }
+      },
+      {
+        "seen": 6,
+        "p_any_book_or_library": 0.43,
+        "bookshelf": {
+          "removed": 6,
+          "p_seen": 0.43,
+          "p_need": 1.0,
+          "p_seen_and_need": 0.43,
+          "p_need_given_seen": 1.0
+        },
+        "librarian": {
+          "removed": 6,
+          "p_need": 0.00036137775268210053,
+          "p_focal_seen": 0.0,
+          "p_seen_and_need": 0.0,
+          "p_need_given_focal_seen": null,
+          "favorable_subsets": 0,
+          "total_subsets": 177100
+        }
+      },
+      {
+        "seen": 8,
+        "p_any_book_or_library": 0.5466666666666666,
+        "bookshelf": {
+          "removed": 8,
+          "p_seen": 0.5466666666666666,
+          "p_need": 1.0,
+          "p_seen_and_need": 0.5466666666666666,
+          "p_need_given_seen": 1.0
+        },
+        "librarian": {
+          "removed": 8,
+          "p_need": 0.007145135566188197,
+          "p_focal_seen": 0.0,
+          "p_seen_and_need": 0.0,
+          "p_need_given_focal_seen": null,
+          "favorable_subsets": 0,
+          "total_subsets": 1081575
+        }
+      },
+      {
+        "seen": 10,
+        "p_any_book_or_library": 0.65,
+        "bookshelf": {
+          "removed": 10,
+          "p_seen": 0.65,
+          "p_need": 1.0,
+          "p_seen_and_need": 0.65,
+          "p_need_given_seen": 1.0
+        },
+        "librarian": {
+          "removed": 10,
+          "p_need": 0.03717984801576133,
+          "p_focal_seen": 0.0,
+          "p_seen_and_need": 0.0,
+          "p_need_given_focal_seen": null,
+          "favorable_subsets": 0,
+          "total_subsets": 3268760
+        }
+      }
+    ]
+  },
+  "B_library_singletons": {
+    "soul": "JUSTICE",
+    "count": 25,
+    "cost_counts": {
+      "2": 5,
+      "3": 5,
+      "4": 6,
+      "5": 5,
+      "6": 4
+    },
+    "average_cost": 3.92,
+    "unique_names": 24,
+    "two_cost_copies": 5,
+    "cost_le3_copies": 10,
+    "p_seen_two_cost_n4": 0.61699604743083,
+    "p_seen_cost_le3_n4": 0.892094861660079,
+    "uniform_h5_two_plays": {
+      "3": 0.0,
+      "4": 0.25223037831733486,
+      "5": 0.5797289666854885,
+      "6": 0.8031620553359684,
+      "7": 0.9315264445699228,
+      "8": 0.9833051006964051,
+      "9": 0.9975155279503105
+    },
+    "ceiling_access": [
+      {
+        "seen": 4,
+        "p_any_book_or_library": 0.4217391304347826,
+        "bookshelf": {
+          "removed": 4,
+          "p_seen": 0.16,
+          "p_need": 1.0,
+          "p_seen_and_need": 0.16,
+          "p_need_given_seen": 1.0
+        },
+        "librarian": {
+          "removed": 4,
+          "p_need": 0.3,
+          "p_focal_seen": 0.3,
+          "p_seen_and_need": 0.3,
+          "p_need_given_focal_seen": 1.0,
+          "favorable_subsets": 3795,
+          "total_subsets": 12650
+        }
+      },
+      {
+        "seen": 6,
+        "p_any_book_or_library": 0.578695652173913,
+        "bookshelf": {
+          "removed": 6,
+          "p_seen": 0.24,
+          "p_need": 1.0,
+          "p_seen_and_need": 0.24,
+          "p_need_given_seen": 1.0
+        },
+        "librarian": {
+          "removed": 6,
+          "p_need": 0.43,
+          "p_focal_seen": 0.43,
+          "p_seen_and_need": 0.43,
+          "p_need_given_focal_seen": 1.0,
+          "favorable_subsets": 76153,
+          "total_subsets": 177100
+        }
+      },
+      {
+        "seen": 8,
+        "p_any_book_or_library": 0.7043478260869566,
+        "bookshelf": {
+          "removed": 8,
+          "p_seen": 0.32,
+          "p_need": 1.0,
+          "p_seen_and_need": 0.32,
+          "p_need_given_seen": 1.0
+        },
+        "librarian": {
+          "removed": 8,
+          "p_need": 0.5466666666666666,
+          "p_focal_seen": 0.5466666666666666,
+          "p_seen_and_need": 0.5466666666666666,
+          "p_need_given_focal_seen": 1.0,
+          "favorable_subsets": 591261,
+          "total_subsets": 1081575
+        }
+      },
+      {
+        "seen": 10,
+        "p_any_book_or_library": 0.8021739130434783,
+        "bookshelf": {
+          "removed": 10,
+          "p_seen": 0.4,
+          "p_need": 1.0,
+          "p_seen_and_need": 0.4,
+          "p_need_given_seen": 1.0
+        },
+        "librarian": {
+          "removed": 10,
+          "p_need": 0.65,
+          "p_focal_seen": 0.65,
+          "p_seen_and_need": 0.65,
+          "p_need_given_focal_seen": 1.0,
+          "favorable_subsets": 2124694,
+          "total_subsets": 3268760
+        }
+      }
+    ]
+  },
+  "A_safe_slots": {
+    "soul": "JUSTICE",
+    "count": 25,
+    "cost_counts": {
+      "2": 5,
+      "3": 6,
+      "4": 6,
+      "5": 3,
+      "6": 5
+    },
+    "average_cost": 3.88,
+    "unique_names": 18,
+    "two_cost_copies": 5,
+    "cost_le3_copies": 11,
+    "p_seen_two_cost_n4": 0.61699604743083,
+    "p_seen_cost_le3_n4": 0.9208695652173913,
+    "uniform_h5_two_plays": {
+      "3": 0.0,
+      "4": 0.25223037831733486,
+      "5": 0.6139845661584792,
+      "6": 0.8426877470355731,
+      "7": 0.9539431582909844,
+      "8": 0.9904761904761905,
+      "9": 0.9983813288161114
+    },
+    "ceiling_access": [
+      {
+        "seen": 4,
+        "p_any_book_or_library": 0.3,
+        "bookshelf": {
+          "removed": 4,
+          "p_seen": 0.3,
+          "p_need": 1.0,
+          "p_seen_and_need": 0.3,
+          "p_need_given_seen": 1.0
+        },
+        "librarian": {
+          "removed": 4,
+          "p_need": 0.0,
+          "p_focal_seen": 0.0,
+          "p_seen_and_need": 0.0,
+          "p_need_given_focal_seen": null,
+          "favorable_subsets": 0,
+          "total_subsets": 12650
+        }
+      },
+      {
+        "seen": 6,
+        "p_any_book_or_library": 0.43,
+        "bookshelf": {
+          "removed": 6,
+          "p_seen": 0.43,
+          "p_need": 1.0,
+          "p_seen_and_need": 0.43,
+          "p_need_given_seen": 1.0
+        },
+        "librarian": {
+          "removed": 6,
+          "p_need": 0.0,
+          "p_focal_seen": 0.0,
+          "p_seen_and_need": 0.0,
+          "p_need_given_focal_seen": null,
+          "favorable_subsets": 0,
+          "total_subsets": 177100
+        }
+      },
+      {
+        "seen": 8,
+        "p_any_book_or_library": 0.5466666666666666,
+        "bookshelf": {
+          "removed": 8,
+          "p_seen": 0.5466666666666666,
+          "p_need": 1.0,
+          "p_seen_and_need": 0.5466666666666666,
+          "p_need_given_seen": 1.0
+        },
+        "librarian": {
+          "removed": 8,
+          "p_need": 0.0017160159951921967,
+          "p_focal_seen": 0.0,
+          "p_seen_and_need": 0.0,
+          "p_need_given_focal_seen": null,
+          "favorable_subsets": 0,
+          "total_subsets": 1081575
+        }
+      },
+      {
+        "seen": 10,
+        "p_any_book_or_library": 0.65,
+        "bookshelf": {
+          "removed": 10,
+          "p_seen": 0.65,
+          "p_need": 1.0,
+          "p_seen_and_need": 0.65,
+          "p_need_given_seen": 1.0
+        },
+        "librarian": {
+          "removed": 10,
+          "p_need": 0.016431919137532277,
+          "p_focal_seen": 0.0,
+          "p_seen_and_need": 0.0,
+          "p_need_given_focal_seen": null,
+          "favorable_subsets": 0,
+          "total_subsets": 3268760
+        }
+      }
+    ]
+  },
+  "A_early": {
+    "soul": "JUSTICE",
+    "count": 25,
+    "cost_counts": {
+      "2": 6,
+      "3": 6,
+      "4": 6,
+      "5": 2,
+      "6": 5
+    },
+    "average_cost": 3.76,
+    "unique_names": 18,
+    "two_cost_copies": 6,
+    "cost_le3_copies": 12,
+    "p_seen_two_cost_n4": 0.693596837944664,
+    "p_seen_cost_le3_n4": 0.9434782608695652,
+    "uniform_h5_two_plays": {
+      "3": 0.0,
+      "4": 0.3434217955957086,
+      "5": 0.700395256916996,
+      "6": 0.8910784867306606,
+      "7": 0.9712591756070017,
+      "8": 0.9950875211744777,
+      "9": 0.9990400903444382
+    },
+    "ceiling_access": [
+      {
+        "seen": 4,
+        "p_any_book_or_library": 0.3,
+        "bookshelf": {
+          "removed": 4,
+          "p_seen": 0.3,
+          "p_need": 1.0,
+          "p_seen_and_need": 0.3,
+          "p_need_given_seen": 1.0
+        },
+        "librarian": {
+          "removed": 4,
+          "p_need": 0.0,
+          "p_focal_seen": 0.0,
+          "p_seen_and_need": 0.0,
+          "p_need_given_focal_seen": null,
+          "favorable_subsets": 0,
+          "total_subsets": 12650
+        }
+      },
+      {
+        "seen": 6,
+        "p_any_book_or_library": 0.43,
+        "bookshelf": {
+          "removed": 6,
+          "p_seen": 0.43,
+          "p_need": 1.0,
+          "p_seen_and_need": 0.43,
+          "p_need_given_seen": 1.0
+        },
+        "librarian": {
+          "removed": 6,
+          "p_need": 0.0,
+          "p_focal_seen": 0.0,
+          "p_seen_and_need": 0.0,
+          "p_need_given_focal_seen": null,
+          "favorable_subsets": 0,
+          "total_subsets": 177100
+        }
+      },
+      {
+        "seen": 8,
+        "p_any_book_or_library": 0.5466666666666666,
+        "bookshelf": {
+          "removed": 8,
+          "p_seen": 0.5466666666666666,
+          "p_need": 1.0,
+          "p_seen_and_need": 0.5466666666666666,
+          "p_need_given_seen": 1.0
+        },
+        "librarian": {
+          "removed": 8,
+          "p_need": 0.0017160159951921967,
+          "p_focal_seen": 0.0,
+          "p_seen_and_need": 0.0,
+          "p_need_given_focal_seen": null,
+          "favorable_subsets": 0,
+          "total_subsets": 1081575
+        }
+      },
+      {
+        "seen": 10,
+        "p_any_book_or_library": 0.65,
+        "bookshelf": {
+          "removed": 10,
+          "p_seen": 0.65,
+          "p_need": 1.0,
+          "p_seen_and_need": 0.65,
+          "p_need_given_seen": 1.0
+        },
+        "librarian": {
+          "removed": 10,
+          "p_need": 0.016431919137532277,
+          "p_focal_seen": 0.0,
+          "p_seen_and_need": 0.0,
+          "p_need_given_focal_seen": null,
+          "favorable_subsets": 0,
+          "total_subsets": 3268760
+        }
+      }
+    ]
+  },
+  "A_kindness": {
+    "soul": "KINDNESS",
+    "count": 25,
+    "cost_counts": {
+      "2": 6,
+      "3": 6,
+      "4": 6,
+      "5": 2,
+      "6": 5
+    },
+    "average_cost": 3.76,
+    "unique_names": 18,
+    "two_cost_copies": 6,
+    "cost_le3_copies": 12,
+    "p_seen_two_cost_n4": 0.693596837944664,
+    "p_seen_cost_le3_n4": 0.9434782608695652,
+    "uniform_h5_two_plays": {
+      "3": 0.0,
+      "4": 0.3434217955957086,
+      "5": 0.700395256916996,
+      "6": 0.8910784867306606,
+      "7": 0.9712591756070017,
+      "8": 0.9950875211744777,
+      "9": 0.9990400903444382
+    },
+    "ceiling_access": [
+      {
+        "seen": 4,
+        "p_any_book_or_library": 0.3,
+        "bookshelf": {
+          "removed": 4,
+          "p_seen": 0.3,
+          "p_need": 1.0,
+          "p_seen_and_need": 0.3,
+          "p_need_given_seen": 1.0
+        },
+        "librarian": {
+          "removed": 4,
+          "p_need": 0.0,
+          "p_focal_seen": 0.0,
+          "p_seen_and_need": 0.0,
+          "p_need_given_focal_seen": null,
+          "favorable_subsets": 0,
+          "total_subsets": 12650
+        }
+      },
+      {
+        "seen": 6,
+        "p_any_book_or_library": 0.43,
+        "bookshelf": {
+          "removed": 6,
+          "p_seen": 0.43,
+          "p_need": 1.0,
+          "p_seen_and_need": 0.43,
+          "p_need_given_seen": 1.0
+        },
+        "librarian": {
+          "removed": 6,
+          "p_need": 0.0,
+          "p_focal_seen": 0.0,
+          "p_seen_and_need": 0.0,
+          "p_need_given_focal_seen": null,
+          "favorable_subsets": 0,
+          "total_subsets": 177100
+        }
+      },
+      {
+        "seen": 8,
+        "p_any_book_or_library": 0.5466666666666666,
+        "bookshelf": {
+          "removed": 8,
+          "p_seen": 0.5466666666666666,
+          "p_need": 1.0,
+          "p_seen_and_need": 0.5466666666666666,
+          "p_need_given_seen": 1.0
+        },
+        "librarian": {
+          "removed": 8,
+          "p_need": 0.0017160159951921967,
+          "p_focal_seen": 0.0,
+          "p_seen_and_need": 0.0,
+          "p_need_given_focal_seen": null,
+          "favorable_subsets": 0,
+          "total_subsets": 1081575
+        }
+      },
+      {
+        "seen": 10,
+        "p_any_book_or_library": 0.65,
+        "bookshelf": {
+          "removed": 10,
+          "p_seen": 0.65,
+          "p_need": 1.0,
+          "p_seen_and_need": 0.65,
+          "p_need_given_seen": 1.0
+        },
+        "librarian": {
+          "removed": 10,
+          "p_need": 0.016431919137532277,
+          "p_focal_seen": 0.0,
+          "p_seen_and_need": 0.0,
+          "p_need_given_focal_seen": null,
+          "favorable_subsets": 0,
+          "total_subsets": 3268760
+        }
+      }
+    ]
+  },
+  "duplicate_barrier_only": {
+    "4": {
+      "only_two_lib": {
+        "removed": 4,
+        "p_need": 0.3,
+        "p_focal_seen": 0.3,
+        "p_seen_and_need": 0.3,
+        "p_need_given_focal_seen": 1.0,
+        "favorable_subsets": 3795,
+        "total_subsets": 12650
+      },
+      "lib_plus_book_pair": {
+        "removed": 4,
+        "p_need": 0.07312252964426877,
+        "p_focal_seen": 0.3,
+        "p_seen_and_need": 0.07312252964426877,
+        "p_need_given_focal_seen": 0.2437417654808959,
+        "favorable_subsets": 925,
+        "total_subsets": 12650
+      }
+    },
+    "5": {
+      "only_two_lib": {
+        "removed": 5,
+        "p_need": 0.36666666666666664,
+        "p_focal_seen": 0.36666666666666664,
+        "p_seen_and_need": 0.36666666666666664,
+        "p_need_given_focal_seen": 1.0,
+        "favorable_subsets": 19481,
+        "total_subsets": 53130
+      },
+      "lib_plus_book_pair": {
+        "removed": 5,
+        "p_need": 0.11633728590250329,
+        "p_focal_seen": 0.36666666666666664,
+        "p_seen_and_need": 0.11633728590250329,
+        "p_need_given_focal_seen": 0.31728350700682717,
+        "favorable_subsets": 6181,
+        "total_subsets": 53130
+      }
+    },
+    "6": {
+      "only_two_lib": {
+        "removed": 6,
+        "p_need": 0.43,
+        "p_focal_seen": 0.43,
+        "p_seen_and_need": 0.43,
+        "p_need_given_focal_seen": 1.0,
+        "favorable_subsets": 76153,
+        "total_subsets": 177100
+      },
+      "lib_plus_book_pair": {
+        "removed": 6,
+        "p_need": 0.16640316205533598,
+        "p_focal_seen": 0.43,
+        "p_seen_and_need": 0.16640316205533598,
+        "p_need_given_focal_seen": 0.3869840978031069,
+        "favorable_subsets": 29470,
+        "total_subsets": 177100
+      }
+    },
+    "7": {
+      "only_two_lib": {
+        "removed": 7,
+        "p_need": 0.49,
+        "p_focal_seen": 0.49,
+        "p_seen_and_need": 0.49,
+        "p_need_given_focal_seen": 1.0,
+        "favorable_subsets": 235543,
+        "total_subsets": 480700
+      },
+      "lib_plus_book_pair": {
+        "removed": 7,
+        "p_need": 0.22189723320158103,
+        "p_focal_seen": 0.49,
+        "p_seen_and_need": 0.22189723320158103,
+        "p_need_given_focal_seen": 0.4528514963297572,
+        "favorable_subsets": 106666,
+        "total_subsets": 480700
+      }
+    },
+    "8": {
+      "only_two_lib": {
+        "removed": 8,
+        "p_need": 0.5466666666666666,
+        "p_focal_seen": 0.5466666666666666,
+        "p_seen_and_need": 0.5466666666666666,
+        "p_need_given_focal_seen": 1.0,
+        "favorable_subsets": 591261,
+        "total_subsets": 1081575
+      },
+      "lib_plus_book_pair": {
+        "removed": 8,
+        "p_need": 0.2814756258234519,
+        "p_focal_seen": 0.5466666666666666,
+        "p_seen_and_need": 0.2814756258234519,
+        "p_need_given_focal_seen": 0.5148944374819242,
+        "favorable_subsets": 304437,
+        "total_subsets": 1081575
+      }
+    },
+    "10": {
+      "only_two_lib": {
+        "removed": 10,
+        "p_need": 0.65,
+        "p_focal_seen": 0.65,
+        "p_seen_and_need": 0.65,
+        "p_need_given_focal_seen": 1.0,
+        "favorable_subsets": 2124694,
+        "total_subsets": 3268760
+      },
+      "lib_plus_book_pair": {
+        "removed": 10,
+        "p_need": 0.4079051383399209,
+        "p_focal_seen": 0.65,
+        "p_seen_and_need": 0.4079051383399209,
+        "p_need_given_focal_seen": 0.6275463666768014,
+        "favorable_subsets": 1333344,
+        "total_subsets": 3268760
+      }
+    }
+  },
+  "gold_path_exogenous": {
+    "True": [
+      {
+        "turn": 1,
+        "income": 1,
+        "gold_before": 2,
+        "payment": 2,
+        "gold_after": 0
+      },
+      {
+        "turn": 2,
+        "income": 2,
+        "gold_before": 2,
+        "payment": 2,
+        "gold_after": 0
+      },
+      {
+        "turn": 3,
+        "income": 3,
+        "gold_before": 3,
+        "payment": 3,
+        "gold_after": 0
+      },
+      {
+        "turn": 4,
+        "income": 4,
+        "gold_before": 4,
+        "payment": 4,
+        "gold_after": 0
+      },
+      {
+        "turn": 5,
+        "income": 5,
+        "gold_before": 5,
+        "payment": 5,
+        "gold_after": 0
+      }
+    ],
+    "False": [
+      {
+        "turn": 1,
+        "income": 2,
+        "gold_before": 3,
+        "payment": 2,
+        "gold_after": 1
+      },
+      {
+        "turn": 2,
+        "income": 2,
+        "gold_before": 3,
+        "payment": 2,
+        "gold_after": 1
+      },
+      {
+        "turn": 3,
+        "income": 4,
+        "gold_before": 5,
+        "payment": 3,
+        "gold_after": 2
+      },
+      {
+        "turn": 4,
+        "income": 4,
+        "gold_before": 6,
+        "payment": 4,
+        "gold_after": 2
+      },
+      {
+        "turn": 5,
+        "income": 6,
+        "gold_before": 8,
+        "payment": 5,
+        "gold_after": 3
+      }
+    ]
+  }
+}
