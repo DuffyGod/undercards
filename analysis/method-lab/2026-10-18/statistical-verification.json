@@ -1,0 +1,36 @@
+{
+  "tests": {
+    "command": "python -B -m unittest discover -s analysis/method-lab/2026-10-18 -p test_*.py -v",
+    "passed": 22,
+    "failures": 0,
+    "meaning": "Physical anchors and accounting checks, not empirical calibration"
+  },
+  "independent_review": {
+    "report_primary_numeric_cells_checked": 50,
+    "numeric_cells_match_final_csv": true,
+    "paid_order_counterfactual_reviewed": true,
+    "full_match_validity_claimed": false
+  },
+  "central_statistical_rows": 114,
+  "final_rows": 1254,
+  "correction": {
+    "superseded_tags": [
+      "pilot",
+      "full"
+    ],
+    "reason": "Early discount averaging depended on source-array order; final uses exact exchangeable hypergeometric multiset expectation"
+  },
+  "source_sha256": {
+    "discount_statistics.py": "6258da1675bdfcb71f92c1693a084c9ecfaac62deaa76d204723309b8cc0f837",
+    "order_sensitivity.py": "53c1c120aa368f64c4a4229865f0a98fd30d61c02802658cfe14b10028bb38e0",
+    "run_experiment.py": "9352556cf7461c428af717c9a726fec94ac127a1194ad5a321e4d2fd2dab2530",
+    "run_statistical_study.py": "ccc954b04dc8721e622ace65812c8b5b51e616de808e5b9cda6bf1b151b5ba63",
+    "statistical_auxiliary_review.py": "0d202a4846d9a55ce0f2279914ce62156c6dee9a3bd7fea84e9ede322863dab9",
+    "statistical_data.py": "3a583f595e4d8b98e9ca10213e6fa9c94146ef81d27be90e6932376d3b5532a1",
+    "statistical_value.py": "a89e9ba9ff24d816bb05eee70c218f3226a9f846bc0b45e22f203a9fb2a6587b",
+    "summarize_statistics.py": "803d10ef099fa625282a9a497e063c6d3eb4419dc1910f9326512434f004892e",
+    "test_statistical_value.py": "b0198b82ac4ddf7d2a929237e1cea0ebe90cf37e3734edc46b7b47a46214c548",
+    "test_value_model.py": "b7d7900379e57b0113df8a0d1ab4d535dc574ab2ca10c7c9468223934c2a36f8",
+    "value_model.py": "70eeec0c20f650498efb95e9bd3ab6581cd46e593c1d438e5652bfdecf9f0fff"
+  }
+}

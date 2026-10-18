@@ -1,0 +1,258 @@
+{
+  "contract": {
+    "background": "Mandatory plain 2G Froggit held in a second fixed hand slot",
+    "payment": "Both orders spend focal.cost + 2; no free hand tuning",
+    "cancellation": "Same remaining background 2/3 body cancels; at most three own slots needed",
+    "response": "Only the focal-root reply of the main study; not arbitrary whole-board reply",
+    "baseline": "Focal first; compare max over two orders in the same observable state",
+    "price": "Only the isolated order premium, not whole-card value or actual holding frequencies"
+  },
+  "source_hashes": {
+    "order_sensitivity.py": "53c1c120aa368f64c4a4229865f0a98fd30d61c02802658cfe14b10028bb38e0",
+    "statistical_value.py": "a89e9ba9ff24d816bb05eee70c218f3226a9f846bc0b45e22f203a9fb2a6587b",
+    "statistical_inputs.json": "2e26317e75f316d9bf272337f557f153baaceedf2d62016dc52133b4aa70cfad",
+    "statistical-results/final-design.json": "6bf06dff2017dafb0c6932222af0cc4ca357aea83164e961a9e740f5792c8dec"
+  },
+  "rows": [
+    {
+      "resource": "lower_cost",
+      "scenario": "aggro_wide",
+      "id": 49,
+      "name": "Glyde",
+      "ordering_gross_premium": 0.0,
+      "payable_ordering_premium": 0.0,
+      "joint_payable_mass": 0.22033333333333333,
+      "preferred_background_first_mass": 0.0
+    },
+    {
+      "resource": "lower_cost",
+      "scenario": "aggro_wide",
+      "id": 984,
+      "name": "Terakota Archer",
+      "ordering_gross_premium": 0.4436122090552205,
+      "payable_ordering_premium": 0.025538424962870145,
+      "joint_payable_mass": 0.22033333333333333,
+      "preferred_background_first_mass": 0.22825325520832687
+    },
+    {
+      "resource": "lower_cost",
+      "scenario": "midrange_single",
+      "id": 49,
+      "name": "Glyde",
+      "ordering_gross_premium": 0.0,
+      "payable_ordering_premium": 0.0,
+      "joint_payable_mass": 0.22033333333333333,
+      "preferred_background_first_mass": 0.0
+    },
+    {
+      "resource": "lower_cost",
+      "scenario": "midrange_single",
+      "id": 984,
+      "name": "Terakota Archer",
+      "ordering_gross_premium": 0.036268908484788795,
+      "payable_ordering_premium": 0.0011667735300517987,
+      "joint_payable_mass": 0.22033333333333333,
+      "preferred_background_first_mass": 0.016204390037815878
+    },
+    {
+      "resource": "lower_cost",
+      "scenario": "control_silence",
+      "id": 49,
+      "name": "Glyde",
+      "ordering_gross_premium": 0.0,
+      "payable_ordering_premium": 0.0,
+      "joint_payable_mass": 0.22033333333333333,
+      "preferred_background_first_mass": 0.0
+    },
+    {
+      "resource": "lower_cost",
+      "scenario": "control_silence",
+      "id": 984,
+      "name": "Terakota Archer",
+      "ordering_gross_premium": 0.02396653064637097,
+      "payable_ordering_premium": 0.0008560685388220286,
+      "joint_payable_mass": 0.22033333333333333,
+      "preferred_background_first_mass": 0.010707876985323194
+    },
+    {
+      "resource": "lower_cost",
+      "scenario": "wounded_wide",
+      "id": 49,
+      "name": "Glyde",
+      "ordering_gross_premium": 0.0,
+      "payable_ordering_premium": 0.0,
+      "joint_payable_mass": 0.22033333333333333,
+      "preferred_background_first_mass": 0.0
+    },
+    {
+      "resource": "lower_cost",
+      "scenario": "wounded_wide",
+      "id": 984,
+      "name": "Terakota Archer",
+      "ordering_gross_premium": 0.6112081072443266,
+      "payable_ordering_premium": 0.0736518674766032,
+      "joint_payable_mass": 0.22033333333333333,
+      "preferred_background_first_mass": 0.28616536458331515
+    },
+    {
+      "resource": "middle_cost",
+      "scenario": "aggro_wide",
+      "id": 49,
+      "name": "Glyde",
+      "ordering_gross_premium": 0.0,
+      "payable_ordering_premium": 0.0,
+      "joint_payable_mass": 0.3586666666666667,
+      "preferred_background_first_mass": 0.0
+    },
+    {
+      "resource": "middle_cost",
+      "scenario": "aggro_wide",
+      "id": 984,
+      "name": "Terakota Archer",
+      "ordering_gross_premium": 0.6968359150195135,
+      "payable_ordering_premium": 0.20488389636513385,
+      "joint_payable_mass": 0.3586666666666667,
+      "preferred_background_first_mass": 0.3558430989583383
+    },
+    {
+      "resource": "middle_cost",
+      "scenario": "midrange_single",
+      "id": 49,
+      "name": "Glyde",
+      "ordering_gross_premium": 0.0,
+      "payable_ordering_premium": 0.0,
+      "joint_payable_mass": 0.3586666666666667,
+      "preferred_background_first_mass": 0.0
+    },
+    {
+      "resource": "middle_cost",
+      "scenario": "midrange_single",
+      "id": 984,
+      "name": "Terakota Archer",
+      "ordering_gross_premium": 0.09072441350912026,
+      "payable_ordering_premium": 0.019178668749266402,
+      "joint_payable_mass": 0.3586666666666667,
+      "preferred_background_first_mass": 0.040534271470300164
+    },
+    {
+      "resource": "middle_cost",
+      "scenario": "control_silence",
+      "id": 49,
+      "name": "Glyde",
+      "ordering_gross_premium": 0.0,
+      "payable_ordering_premium": 0.0,
+      "joint_payable_mass": 0.3586666666666667,
+      "preferred_background_first_mass": 0.0
+    },
+    {
+      "resource": "middle_cost",
+      "scenario": "control_silence",
+      "id": 984,
+      "name": "Terakota Archer",
+      "ordering_gross_premium": 0.04810615101216907,
+      "payable_ordering_premium": 0.012665307073817593,
+      "joint_payable_mass": 0.3586666666666667,
+      "preferred_background_first_mass": 0.021493087792983808
+    },
+    {
+      "resource": "middle_cost",
+      "scenario": "wounded_wide",
+      "id": 49,
+      "name": "Glyde",
+      "ordering_gross_premium": 0.0,
+      "payable_ordering_premium": 0.0,
+      "joint_payable_mass": 0.3586666666666667,
+      "preferred_background_first_mass": 0.0
+    },
+    {
+      "resource": "middle_cost",
+      "scenario": "wounded_wide",
+      "id": 984,
+      "name": "Terakota Archer",
+      "ordering_gross_premium": 0.724417144028185,
+      "payable_ordering_premium": 0.3019375049667512,
+      "joint_payable_mass": 0.3586666666666667,
+      "preferred_background_first_mass": 0.337427083333328
+    },
+    {
+      "resource": "higher_cost",
+      "scenario": "aggro_wide",
+      "id": 49,
+      "name": "Glyde",
+      "ordering_gross_premium": 0.0,
+      "payable_ordering_premium": 0.0,
+      "joint_payable_mass": 0.38033333333333325,
+      "preferred_background_first_mass": 0.0
+    },
+    {
+      "resource": "higher_cost",
+      "scenario": "aggro_wide",
+      "id": 984,
+      "name": "Terakota Archer",
+      "ordering_gross_premium": 0.7890582845411279,
+      "payable_ordering_premium": 0.28946384392893953,
+      "joint_payable_mass": 0.38033333333333325,
+      "preferred_background_first_mass": 0.3963704427083465
+    },
+    {
+      "resource": "higher_cost",
+      "scenario": "midrange_single",
+      "id": 49,
+      "name": "Glyde",
+      "ordering_gross_premium": 0.0,
+      "payable_ordering_premium": 0.0,
+      "joint_payable_mass": 0.38033333333333325,
+      "preferred_background_first_mass": 0.0
+    },
+    {
+      "resource": "higher_cost",
+      "scenario": "midrange_single",
+      "id": 984,
+      "name": "Terakota Archer",
+      "ordering_gross_premium": 0.21149706720410108,
+      "payable_ordering_premium": 0.08676028205090228,
+      "joint_payable_mass": 0.38033333333333325,
+      "preferred_background_first_mass": 0.09449363413477672
+    },
+    {
+      "resource": "higher_cost",
+      "scenario": "control_silence",
+      "id": 49,
+      "name": "Glyde",
+      "ordering_gross_premium": 0.0,
+      "payable_ordering_premium": 0.0,
+      "joint_payable_mass": 0.38033333333333325,
+      "preferred_background_first_mass": 0.0
+    },
+    {
+      "resource": "higher_cost",
+      "scenario": "control_silence",
+      "id": 984,
+      "name": "Terakota Archer",
+      "ordering_gross_premium": 0.11984152052614142,
+      "payable_ordering_premium": 0.05382191437830765,
+      "joint_payable_mass": 0.38033333333333325,
+      "preferred_background_first_mass": 0.053543346697212106
+    },
+    {
+      "resource": "higher_cost",
+      "scenario": "wounded_wide",
+      "id": 49,
+      "name": "Glyde",
+      "ordering_gross_premium": 0.0,
+      "payable_ordering_premium": 0.0,
+      "joint_payable_mass": 0.38033333333333325,
+      "preferred_background_first_mass": 0.0
+    },
+    {
+      "resource": "higher_cost",
+      "scenario": "wounded_wide",
+      "id": 984,
+      "name": "Terakota Archer",
+      "ordering_gross_premium": 0.5304834931684297,
+      "payable_ordering_premium": 0.18979454864621698,
+      "joint_payable_mass": 0.38033333333333325,
+      "preferred_background_first_mass": 0.24395182291666956
+    }
+  ]
+}

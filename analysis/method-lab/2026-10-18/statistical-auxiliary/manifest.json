@@ -1,0 +1,44 @@
+{
+  "planned_calls": 2,
+  "maximum_calls": 2,
+  "automatic_retries": 0,
+  "prefix_message_count": 11,
+  "shared_prefix_sha256": "2717ce14dee91c328d713c036258aecb49153ecef70f4482dc07697be9e7fee2",
+  "shared_prefix_bytes": 24209,
+  "input_sha256": "2e26317e75f316d9bf272337f557f153baaceedf2d62016dc52133b4aa70cfad",
+  "helper_sha256": "95075e49654613caf8ff82358d264b85658b09cdf65ac97ac7f3346435e9c8b0",
+  "sources_sha256": {
+    "skill": "9c33ea4557b6ff8d8c6668484627b89ee839fd82cd6829011f0b76cff6abb105",
+    "rules": "76554b57c81978bd8c2cd44e22877f439dc5b9c60cb42b02daa885b9456613ee"
+  },
+  "batches": {
+    "same_policy_numeric": [
+      15,
+      20,
+      21,
+      43,
+      49,
+      649,
+      984,
+      530,
+      469,
+      175
+    ],
+    "demand_distribution_bias": [
+      2,
+      4,
+      11,
+      13,
+      49,
+      168,
+      243,
+      292,
+      530,
+      984,
+      649,
+      377
+    ]
+  },
+  "created_at_utc": "2026-10-18T06:07:25.205373+00:00",
+  "output_status": "Unreviewed auxiliary candidates; never automatically assigned prices."
+}

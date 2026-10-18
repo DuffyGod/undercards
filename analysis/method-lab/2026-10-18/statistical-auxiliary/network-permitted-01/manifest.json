@@ -1,0 +1,17 @@
+{
+  "planned_calls": 2,
+  "maximum_calls": 2,
+  "automatic_retries": 0,
+  "explicit_transport_retry_run": "network-permitted-01",
+  "created_at_utc": "2026-10-18T06:11:31.781243+00:00",
+  "original_manifest": "E:\\NoScan\\Codex\\Undercards\\analysis\\method-lab\\2026-10-18\\statistical-auxiliary\\manifest.json",
+  "original_manifest_sha256": "318792a7cfbf951764bd615ce2e1ef00dc9ce9cf2170a3726abca73d5fc7f389",
+  "shared_prefix_sha256": "2717ce14dee91c328d713c036258aecb49153ecef70f4482dc07697be9e7fee2",
+  "frozen_payload_bytes_sha256": {
+    "same_policy_numeric": "84450924a68d185984996323c92039f2e2b2a690bad8268d09397377caa6962c",
+    "demand_distribution_bias": "537b8a1b99adc359fb7372c95b68577f7c3aaec0f27e6a6bccf7d2f9acaa8ea7"
+  },
+  "original_failures_preserved": true,
+  "payloads_rebuilt": false,
+  "output_status": "Unreviewed auxiliary candidates; never automatically assigned prices."
+}

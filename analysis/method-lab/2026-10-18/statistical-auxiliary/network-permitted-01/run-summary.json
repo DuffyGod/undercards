@@ -1,0 +1,43 @@
+{
+  "actual_complete_invocations": 2,
+  "results": [
+    {
+      "task_id": "same_policy_numeric",
+      "http_result": "returned",
+      "parse_status": "json_parseable_not_semantically_approved",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 9442,
+        "completion_tokens": 1708,
+        "total_tokens": 11150,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "elapsed_seconds": 14.156000000002678
+    },
+    {
+      "task_id": "demand_distribution_bias",
+      "http_result": "returned",
+      "parse_status": "json_parseable_not_semantically_approved",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 9674,
+        "completion_tokens": 2804,
+        "total_tokens": 12478,
+        "prompt_tokens_details": {
+          "cached_tokens": 6528
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "elapsed_seconds": 20.85899999999674
+    }
+  ],
+  "maximum_calls": 2,
+  "no_automatic_numeric_adoption": true
+}

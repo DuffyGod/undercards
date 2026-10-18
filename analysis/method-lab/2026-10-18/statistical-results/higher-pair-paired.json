@@ -1,0 +1,326 @@
+[
+  {
+    "scenario": "aggro_wide",
+    "left": 49,
+    "right": 984,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": -1.2413755946620295
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": -1.3012672017170717
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": -1.154795240733499
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": -1.6754628854063567
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": -0.8102053472223769
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": -1.2108784751822501
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": -1.2718727141418151
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": -1.2413755946620295
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": -1.2413755946620295
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": -1.2413755946620295
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": -1.2413755946620295
+      }
+    ],
+    "min_shared_parameter_difference": -1.6754628854063567,
+    "max_shared_parameter_difference": -0.8102053472223769,
+    "paired_demand_mc_se": 0.0513285238430824
+  },
+  {
+    "scenario": "midrange_single",
+    "left": 49,
+    "right": 984,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": -0.531699801952902
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": -0.573771276983714
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": -0.47091816578043577
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": -0.7460962382703711
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": -0.31730336563542494
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": -0.5062855357197558
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": -0.5571140681860678
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": -0.531699801952902
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": -0.531699801952902
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": -0.531699801952902
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": -0.531699801952902
+      }
+    ],
+    "min_shared_parameter_difference": -0.7460962382703711,
+    "max_shared_parameter_difference": -0.31730336563542494,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "control_silence",
+    "left": 49,
+    "right": 984,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": -1.4830054699002995
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": -1.5218045006261525
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": -1.426917376644341
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": -1.6774734008670293
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": -1.288537538933575
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": -1.4575912036671408
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": -1.5084197361334635
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": -1.4830054699002995
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": -1.4830054699002995
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": -1.4830054699002995
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": -1.4830054699002995
+      }
+    ],
+    "min_shared_parameter_difference": -1.6774734008670293,
+    "max_shared_parameter_difference": -1.288537538933575,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "empty_development",
+    "left": 49,
+    "right": 984,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 2.4893353945163508
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 2.4575479794083646
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 2.5352046719907193
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 2.247265605760397
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 2.731405183272303
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 2.52322108282723
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 2.4554497062054708
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 2.4893353945163508
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 2.4893353945163508
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 2.4893353945163508
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 2.4893353945163508
+      }
+    ],
+    "min_shared_parameter_difference": 2.247265605760397,
+    "max_shared_parameter_difference": 2.731405183272303,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "clock_pressure",
+    "left": 49,
+    "right": 984,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 0.8712673880807227
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 0.8601417927929278
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 0.8873216351967512
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 0.7865429620161395
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 0.9559918141453059
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.8831273789895304
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 0.8594073971719149
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 0.8712673880807227
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 0.8712673880807227
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 0.8712673880807227
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 0.8712673880807227
+      }
+    ],
+    "min_shared_parameter_difference": 0.7865429620161395,
+    "max_shared_parameter_difference": 0.9559918141453059,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "wounded_wide",
+    "left": 49,
+    "right": 984,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 0.11085114489165004
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 0.06195271994465834
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 0.18150257019006943
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": -0.25631040329280186
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 0.4771254972050043
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.14134826437145165
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 0.08035402541186976
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 0.11085114489165004
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 0.11085114489165004
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 0.11085114489165004
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 0.11085114489165004
+      }
+    ],
+    "min_shared_parameter_difference": -0.25631040329280186,
+    "max_shared_parameter_difference": 0.4771254972050043,
+    "paired_demand_mc_se": 0.040222360098863465
+  }
+]

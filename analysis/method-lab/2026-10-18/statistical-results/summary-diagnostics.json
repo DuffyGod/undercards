@@ -1,0 +1,472 @@
+{
+  "schema_version": 1,
+  "body_marginals": [
+    {
+      "attack": 2,
+      "health": 7,
+      "target_hp_above_attack": 0.9735918453566842,
+      "effective_attack_increment": 0.9788734762853375,
+      "body_increment": 0.6538665507377539
+    },
+    {
+      "attack": 3,
+      "health": 7,
+      "target_hp_above_attack": 0.9092708950309208,
+      "effective_attack_increment": 0.9274167160247457,
+      "body_increment": 0.6728630626129597
+    },
+    {
+      "attack": 4,
+      "health": 7,
+      "target_hp_above_attack": 0.6882552992617696,
+      "effective_attack_increment": 0.7506042394094044,
+      "body_increment": 0.5935931865186834
+    },
+    {
+      "attack": 5,
+      "health": 7,
+      "target_hp_above_attack": 0.40146143221085356,
+      "effective_attack_increment": 0.5211691457686793,
+      "body_increment": 0.3928938075688624
+    },
+    {
+      "attack": 6,
+      "health": 7,
+      "target_hp_above_attack": 0.20119239813637418,
+      "effective_attack_increment": 0.36095391850910374,
+      "body_increment": 0.27617369375996237
+    },
+    {
+      "attack": 7,
+      "health": 7,
+      "target_hp_above_attack": 0.04071863507566166,
+      "effective_attack_increment": 0.2325749080605295,
+      "body_increment": 0.11382127485307425
+    },
+    {
+      "attack": 8,
+      "health": 7,
+      "target_hp_above_attack": 0.01904352806414662,
+      "effective_attack_increment": 0.21523482245131742,
+      "body_increment": 0.10267724874180217
+    },
+    {
+      "attack": 9,
+      "health": 7,
+      "target_hp_above_attack": 0,
+      "effective_attack_increment": 0.20000000000000018,
+      "body_increment": 0.08259669475619624
+    },
+    {
+      "attack": 10,
+      "health": 7,
+      "target_hp_above_attack": 0,
+      "effective_attack_increment": 0.20000000000000018,
+      "body_increment": 0.08136940552538441
+    }
+  ],
+  "discount_prior_grid": [
+    {
+      "resource": "lower_cost",
+      "cash": 3,
+      "quality": 0.0,
+      "value": 1.386941238471673
+    },
+    {
+      "resource": "lower_cost",
+      "cash": 3,
+      "quality": 1.0,
+      "value": 1.8336615546772066
+    },
+    {
+      "resource": "lower_cost",
+      "cash": 3,
+      "quality": 2.0,
+      "value": 2.2803818708827404
+    },
+    {
+      "resource": "lower_cost",
+      "cash": 5,
+      "quality": 0.0,
+      "value": 1.766043820816864
+    },
+    {
+      "resource": "lower_cost",
+      "cash": 5,
+      "quality": 1.0,
+      "value": 2.1711733333333334
+    },
+    {
+      "resource": "lower_cost",
+      "cash": 5,
+      "quality": 2.0,
+      "value": 2.5763028458498023
+    },
+    {
+      "resource": "lower_cost",
+      "cash": 8,
+      "quality": 0.0,
+      "value": 2.0758845147123406
+    },
+    {
+      "resource": "lower_cost",
+      "cash": 8,
+      "quality": 1.0,
+      "value": 2.3519190689503726
+    },
+    {
+      "resource": "lower_cost",
+      "cash": 8,
+      "quality": 2.0,
+      "value": 2.627953623188405
+    },
+    {
+      "resource": "middle_cost",
+      "cash": 3,
+      "quality": 0.0,
+      "value": 1.3090032523997737
+    },
+    {
+      "resource": "middle_cost",
+      "cash": 3,
+      "quality": 1.0,
+      "value": 1.760167872513958
+    },
+    {
+      "resource": "middle_cost",
+      "cash": 3,
+      "quality": 2.0,
+      "value": 2.211332492628144
+    },
+    {
+      "resource": "middle_cost",
+      "cash": 5,
+      "quality": 0.0,
+      "value": 1.7997218307296556
+    },
+    {
+      "resource": "middle_cost",
+      "cash": 5,
+      "quality": 1.0,
+      "value": 2.2642754438797907
+    },
+    {
+      "resource": "middle_cost",
+      "cash": 5,
+      "quality": 2.0,
+      "value": 2.728829057029924
+    },
+    {
+      "resource": "middle_cost",
+      "cash": 8,
+      "quality": 0.0,
+      "value": 2.3926042687747024
+    },
+    {
+      "resource": "middle_cost",
+      "cash": 8,
+      "quality": 1.0,
+      "value": 2.867431424807075
+    },
+    {
+      "resource": "middle_cost",
+      "cash": 8,
+      "quality": 2.0,
+      "value": 3.3422585808394483
+    },
+    {
+      "resource": "higher_cost",
+      "cash": 3,
+      "quality": 0.0,
+      "value": 0.9881135096304648
+    },
+    {
+      "resource": "higher_cost",
+      "cash": 3,
+      "quality": 1.0,
+      "value": 1.3505133107472236
+    },
+    {
+      "resource": "higher_cost",
+      "cash": 3,
+      "quality": 2.0,
+      "value": 1.7129131118639782
+    },
+    {
+      "resource": "higher_cost",
+      "cash": 5,
+      "quality": 0.0,
+      "value": 1.4844804768178674
+    },
+    {
+      "resource": "higher_cost",
+      "cash": 5,
+      "quality": 1.0,
+      "value": 1.8800482796913214
+    },
+    {
+      "resource": "higher_cost",
+      "cash": 5,
+      "quality": 2.0,
+      "value": 2.2756160825647784
+    },
+    {
+      "resource": "higher_cost",
+      "cash": 8,
+      "quality": 0.0,
+      "value": 2.121899882050314
+    },
+    {
+      "resource": "higher_cost",
+      "cash": 8,
+      "quality": 1.0,
+      "value": 2.5875401687684283
+    },
+    {
+      "resource": "higher_cost",
+      "cash": 8,
+      "quality": 2.0,
+      "value": 3.0531804554865385
+    }
+  ],
+  "bullseye_matching_target_opportunities": [
+    {
+      "resource": "lower_cost",
+      "cohort": "aggro",
+      "targets": 1,
+      "exact_target_opportunity": 0.20165547974314804
+    },
+    {
+      "resource": "lower_cost",
+      "cohort": "aggro",
+      "targets": 3,
+      "exact_target_opportunity": 0.47162087231684374
+    },
+    {
+      "resource": "lower_cost",
+      "cohort": "midrange",
+      "targets": 1,
+      "exact_target_opportunity": 0.055039956806512205
+    },
+    {
+      "resource": "lower_cost",
+      "cohort": "midrange",
+      "targets": 3,
+      "exact_target_opportunity": 0.145024759012834
+    },
+    {
+      "resource": "lower_cost",
+      "cohort": "control",
+      "targets": 1,
+      "exact_target_opportunity": 0.03158022162603915
+    },
+    {
+      "resource": "lower_cost",
+      "cohort": "control",
+      "targets": 3,
+      "exact_target_opportunity": 0.08646528463508564
+    },
+    {
+      "resource": "middle_cost",
+      "cohort": "aggro",
+      "targets": 1,
+      "exact_target_opportunity": 0.21656082104573568
+    },
+    {
+      "resource": "middle_cost",
+      "cohort": "aggro",
+      "targets": 3,
+      "exact_target_opportunity": 0.5138099898577091
+    },
+    {
+      "resource": "middle_cost",
+      "cohort": "midrange",
+      "targets": 1,
+      "exact_target_opportunity": 0.12959655375468268
+    },
+    {
+      "resource": "middle_cost",
+      "cohort": "midrange",
+      "targets": 3,
+      "exact_target_opportunity": 0.3205526283702425
+    },
+    {
+      "resource": "middle_cost",
+      "cohort": "control",
+      "targets": 1,
+      "exact_target_opportunity": 0.08371958645659584
+    },
+    {
+      "resource": "middle_cost",
+      "cohort": "control",
+      "targets": 3,
+      "exact_target_opportunity": 0.21812317950509277
+    },
+    {
+      "resource": "higher_cost",
+      "cohort": "aggro",
+      "targets": 1,
+      "exact_target_opportunity": 0.1666200081213532
+    },
+    {
+      "resource": "higher_cost",
+      "cohort": "aggro",
+      "targets": 3,
+      "exact_target_opportunity": 0.4173190538468519
+    },
+    {
+      "resource": "higher_cost",
+      "cohort": "midrange",
+      "targets": 1,
+      "exact_target_opportunity": 0.2187372830552432
+    },
+    {
+      "resource": "higher_cost",
+      "cohort": "midrange",
+      "targets": 3,
+      "exact_target_opportunity": 0.5147538939307421
+    },
+    {
+      "resource": "higher_cost",
+      "cohort": "control",
+      "targets": 1,
+      "exact_target_opportunity": 0.16390041565349023
+    },
+    {
+      "resource": "higher_cost",
+      "cohort": "control",
+      "targets": 3,
+      "exact_target_opportunity": 0.40470611779861904
+    }
+  ],
+  "vanilla_anchor_audit": [
+    {
+      "id": 2,
+      "name": "Froggit",
+      "cost": 2,
+      "attack": 2,
+      "health": 3,
+      "F": 2.2382149775553906,
+      "residual": 0.23821497755539056
+    },
+    {
+      "id": 4,
+      "name": "Moldsmal",
+      "cost": 2,
+      "attack": 3,
+      "health": 2,
+      "F": 2.1599450919476753,
+      "residual": 0.15994509194767526
+    },
+    {
+      "id": 15,
+      "name": "Aaron",
+      "cost": 5,
+      "attack": 6,
+      "health": 5,
+      "F": 5.0,
+      "residual": 0.0
+    },
+    {
+      "id": 187,
+      "name": "Candy Dish",
+      "cost": 3,
+      "attack": 2,
+      "health": 6,
+      "F": 3.4491989378636645,
+      "residual": 0.4491989378636645
+    },
+    {
+      "id": 196,
+      "name": "Tiny Froggit",
+      "cost": 0,
+      "attack": 1,
+      "health": 1,
+      "F": 0.9857680408198535,
+      "residual": 0.9857680408198535
+    },
+    {
+      "id": 602,
+      "name": "Rock Pet",
+      "cost": 2,
+      "attack": 3,
+      "health": 3,
+      "F": 2.661923415263233,
+      "residual": 0.661923415263233
+    }
+  ],
+  "clock_icecap_minus_rockpet_crossings": [
+    {
+      "face_price": 0.15,
+      "retention_crossing": -0.48627568298603824,
+      "physically_possible_crossing": false
+    },
+    {
+      "face_price": 0.25,
+      "retention_crossing": -0.2210344013572901,
+      "physically_possible_crossing": false
+    },
+    {
+      "face_price": 0.4,
+      "retention_crossing": 0.17682752108583225,
+      "physically_possible_crossing": true
+    },
+    {
+      "face_price": 0.6,
+      "retention_crossing": 0.7073100843433282,
+      "physically_possible_crossing": true
+    }
+  ],
+  "final_producer_source_validation": {
+    "final": {
+      "input_matches": true,
+      "source_matches": {
+        "value_model.py": true,
+        "statistical_value.py": true,
+        "discount_statistics.py": true,
+        "statistical_data.py": true,
+        "run_statistical_study.py": true
+      }
+    },
+    "lower": {
+      "input_matches": true,
+      "source_matches": {
+        "value_model.py": true,
+        "statistical_value.py": true,
+        "discount_statistics.py": true,
+        "statistical_data.py": true,
+        "run_statistical_study.py": true
+      }
+    },
+    "higher": {
+      "input_matches": true,
+      "source_matches": {
+        "value_model.py": true,
+        "statistical_value.py": true,
+        "discount_statistics.py": true,
+        "statistical_data.py": true,
+        "run_statistical_study.py": true
+      }
+    },
+    "higher-pair": {
+      "input_matches": true,
+      "source_matches": {
+        "value_model.py": true,
+        "statistical_value.py": true,
+        "discount_statistics.py": true,
+        "statistical_data.py": true,
+        "run_statistical_study.py": true
+      }
+    }
+  },
+  "source_hashes": {
+    "statistical_inputs.json": "2e26317e75f316d9bf272337f557f153baaceedf2d62016dc52133b4aa70cfad",
+    "snapshot.json": "7f19bef22de440abf1c2273806acecd0447e8341ad12f10eb63b418dfad45b85",
+    "summarize_statistics.py": "803d10ef099fa625282a9a497e063c6d3eb4419dc1910f9326512434f004892e"
+  },
+  "assertions": {
+    "fixed_current_plan_marginal_bounded_by_reoptimized": true,
+    "central_rows": 114,
+    "attributions_are_empirical_match_values": false
+  }
+}

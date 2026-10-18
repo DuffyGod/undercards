@@ -1,0 +1,123 @@
+{
+  "task_id": "same_policy_numeric",
+  "rows": [
+    {
+      "card_id": 15,
+      "fixed_action": "Play 后，下一自主行动攻击同一无保护3/3",
+      "perturbation": "HP 5→6",
+      "physical_delta": "攻击后本体由6/2变为6/3；敌人均死，攻击结果不变。",
+      "retained_value_delta": "仅剩身体残值差F(6,3)-F(6,2)；不额外给击杀奖金。",
+      "distribution_dependency": "aaron属于4..7G层，需求HP截断来自该层印刷HP分布，不是实战。",
+      "uncertain": "若后续被移除且当前攻击不受影响，该分支边际为0。"
+    },
+    {
+      "card_id": 20,
+      "fixed_action": "Play Vulkin 并指定同一敌方怪物；不再追加攻击",
+      "perturbation": "HP 4→5",
+      "physical_delta": "Magic 2伤对敌相同；本体留场由4/4变4/5。",
+      "retained_value_delta": "只差身体残值，Magic兑现不变；未来保护属候选储备。",
+      "distribution_dependency": "受伤面板与非受伤面板需求不同，取决于后续是否被2伤打。",
+      "uncertain": "若Magic后本体立即被交换移除，增量可近0。"
+    },
+    {
+      "card_id": 21,
+      "fixed_action": "Play Tsunderplane 后用Haste攻击同一敌方怪物；Magic对敌群与玩家同时结算",
+      "perturbation": "ATK 6→7",
+      "physical_delta": "对玩家3伤不变，对敌怪1伤不变；若该怪被本体攻击，敌怪承伤6→7。",
+      "retained_value_delta": "仅改变被选怪物击杀质量；对全体1伤/玩家3伤资产不随ATK改。",
+      "distribution_dependency": "额外击杀取决于目标当前HP点质量；非全体平均。",
+      "uncertain": "若目标已被1伤打到≤0或另有击杀者，攻击边际可0。"
+    },
+    {
+      "card_id": 43,
+      "fixed_action": "按同一攻击顺序让Lesser Dog死亡，Dust对当前手牌全部减1",
+      "perturbation": "ATK 5→6",
+      "physical_delta": "死亡触发前，若攻击同一无保护低血怪，击杀质量改变；Dust文本相同。",
+      "retained_value_delta": "Dust已兑现手牌折扣不随ATK变；仅差死亡前交换/留场路径。",
+      "distribution_dependency": "折扣收益按同一物理成本多重集超几何积分，非实战频率。",
+      "uncertain": "死亡顺序固定时，若ATK改变导致死亡时点提前或延后，折扣作用的手牌集合可变。"
+    },
+    {
+      "card_id": 49,
+      "fixed_action": "Play Glyde，按同一手牌数取+1/+1；下一步攻击同一目标",
+      "perturbation": "手牌数+1",
+      "physical_delta": "Magic增益多+1/+1；本体离场身材更大。",
+      "retained_value_delta": "多出的+1/+1是已兑现状态差；不要同时记省费和手牌数量二遍。",
+      "distribution_dependency": "替换一张已有手牌再打出的手牌均值依赖资源联合分布，不是条件分布。",
+      "uncertain": "若手牌9→上限7导致溢出Erase，增量可能反转。"
+    },
+    {
+      "card_id": 649,
+      "fixed_action": "Play Broken Car，Magic指定同一怪物；计算伤害≤3时获Haste",
+      "perturbation": "HP 7→8",
+      "physical_delta": "Magic伤害段数由其它怪物数决定不变；本体留场3/7→3/8。",
+      "retained_value_delta": "差身体残值；Haste条件与DMG路径不变。",
+      "distribution_dependency": "需要其它怪物计数；4..7G层HP需求截断。",
+      "uncertain": "若被打到0或Haste分支未达成，增量可0。"
+    },
+    {
+      "card_id": 984,
+      "fixed_action": "Play Terakota Archer，Magic按同一手牌数打同一敌怪；Bullseye判定同一，若恰好0击杀则召唤同token",
+      "perturbation": "手牌数+1",
+      "physical_delta": "Magic伤害+1；Bullseye是否恰好0可能从是变否。",
+      "retained_value_delta": "伤害数字变大不自动更值；损失召唤(2/3)是独立状态差。",
+      "distribution_dependency": "Bullseye取决于目标HP点质量，不由均值给触发率。",
+      "uncertain": "对手牌上限7溢出时可能反转。"
+    },
+    {
+      "card_id": 530,
+      "fixed_action": "Play Piranhas 后用Haste攻击同一怪物；Dodge(1)保留到反击结算",
+      "perturbation": "ATK 4→5",
+      "physical_delta": "被选怪物承伤4→5；Dodge(1)同一实例抵消，反击后若消耗则不能又记未来保护。",
+      "retained_value_delta": "击杀链“After this attacks and kills a monster, deal 1 DMG...”是否开启改变；链式伤害是当前结算。",
+      "distribution_dependency": "额外击杀与随机1伤重复链依赖敌怪HP分布，不编频率。",
+      "uncertain": "若先被Dodge/护甲/未击杀，ATK边际可0。"
+    },
+    {
+      "card_id": 469,
+      "fixed_action": "Play Blockler B 后用Haste攻击；死亡时Dust召唤Blockler O",
+      "perturbation": "HP 4→5",
+      "physical_delta": "攻击后本体剩HP多1；Dust触发文本相同。",
+      "retained_value_delta": "差身体残值；Dust产物O的Taunt/4/3资产不因HP+1而改。",
+      "distribution_dependency": "5G处于midrange带下缘，受伤阈值影响留场。",
+      "uncertain": "若已确定下一事件移除且死亡Dust照常触发，增量可为0。"
+    },
+    {
+      "card_id": 175,
+      "fixed_action": "Play Charles 后攻击同一怪物；Armor每次伤害减一",
+      "perturbation": "HP 1→2",
+      "physical_delta": "Armor仍按每次伤害减1；本体存活门槛提高，例如受1点物理攻击从0变1。",
+      "retained_value_delta": "差1HP身体残值与反杀/占格质量；Armor兑现不减。",
+      "distribution_dependency": "aggro层HP≥2质量高，1→2跨过截断点。",
+      "uncertain": "若被不可减伤或直接移除，HP边际可0。"
+    }
+  ],
+  "cross_card_findings": [
+    {
+      "finding": "真实当前状态差：HP/ATK+1直接改变身体残值，FX如Vulkin 2伤、Tsunderplane 1伤/3伤、Broken Car分段伤不随本体身材自动改。",
+      "scope": "15,20,21,649",
+      "kind": "已物理兑现"
+    },
+    {
+      "finding": "触发质量按点质量：Terakota Bullseye、Piranhas击杀链、Broken Car≤3获Haste均由目标HP或怪物数条件决定，非均值。",
+      "scope": "984,530,649",
+      "kind": "条件触发"
+    },
+    {
+      "finding": "手牌±1对Glyde、Terakota Archer是当前已兑现增益/伤害，不是未来储备；但满手可能Erase并反转。",
+      "scope": "49,984",
+      "kind": "已兑现/可反转"
+    },
+    {
+      "finding": "未来tail储备：Armor剩余、Dodge剩余、Taunt产物Blockler O、Dust减费与死亡召唤属未来保护/触发器，不能与当前攻击/召唤收益重复计。",
+      "scope": "175,530,469,43",
+      "kind": "候选储备"
+    }
+  ],
+  "unresolved": [
+    "召唤属性覆盖：Archer文本{{STATS:2|3}}覆盖token 375默认1/1，按原文以2/3视为产物；未实测。",
+    "Blockler B死亡时满格召唤Blockler O的失败规则未统一。",
+    "Dodge在反击后消耗的时点与重复攻击链交互未完整裁定。",
+    "手牌上限7溢出Erase对Glyde/Archer的增量可反转，需具体状态确认。"
+  ]
+}

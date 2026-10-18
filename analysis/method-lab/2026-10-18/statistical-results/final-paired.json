@@ -1,0 +1,1946 @@
+[
+  {
+    "scenario": "aggro_wide",
+    "left": 49,
+    "right": 984,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": -1.7726176087052536
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": -1.815640987635061
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": -1.7102442158637619
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": -2.1454406117707236
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": -1.4035708535283566
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": -1.742120489225469
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": -1.8031147281850286
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": -1.7726176087052536
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": -1.7726176087052536
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": -1.7726176087052536
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": -1.7726176087052536
+      }
+    ],
+    "min_shared_parameter_difference": -2.1454406117707236,
+    "max_shared_parameter_difference": -1.4035708535283566,
+    "paired_demand_mc_se": 0.03665698476584619
+  },
+  {
+    "scenario": "aggro_wide",
+    "left": 649,
+    "right": 530,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 0.535666195282297
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 0.5442298070328659
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 0.5232093051057642
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 0.5766821191215614
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 0.4999532183906794
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.591408125372288
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 0.29366325205634514
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 0.535666195282297
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 0.535666195282297
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 0.535666195282297
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 0.535666195282297
+      }
+    ],
+    "min_shared_parameter_difference": 0.29366325205634514,
+    "max_shared_parameter_difference": 0.591408125372288,
+    "paired_demand_mc_se": 0.04248703806419926
+  },
+  {
+    "scenario": "aggro_wide",
+    "left": 469,
+    "right": 43,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 1.493861522812252
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 1.5195256705244766
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 1.4566063031965744
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 1.802806812249286
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 1.1872381142418673
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 1.0637307451038671
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 2.2270611583057898
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 1.493861522812252
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 1.493861522812252
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 1.278600892648912
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 1.8167524680572358
+      }
+    ],
+    "min_shared_parameter_difference": 1.0637307451038671,
+    "max_shared_parameter_difference": 2.2270611583057898,
+    "paired_demand_mc_se": 0.014614558225383576
+  },
+  {
+    "scenario": "aggro_wide",
+    "left": 20,
+    "right": 13,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 0.15594019676261173
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 0.15800368751308635
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 0.15297004429376493
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 0.21255574840494873
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 0.10637218165121887
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.15594019676261173
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 0.15594019676261173
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 0.15594019676261173
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 0.15594019676261173
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 0.15594019676261173
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 0.15594019676261173
+      }
+    ],
+    "min_shared_parameter_difference": 0.10637218165121887,
+    "max_shared_parameter_difference": 0.21255574840494873,
+    "paired_demand_mc_se": 0.02693575415618709
+  },
+  {
+    "scenario": "aggro_wide",
+    "left": 243,
+    "right": 15,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 0.34265606697643936
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 0.3623828404300733
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 0.3142070901146301
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 0.38136426480920615
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 0.30394786914380134
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.34265606697643936
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 0.34265606697643936
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 0.09265606697644291
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 0.5926560669764394
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 0.34265606697643936
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 0.34265606697643936
+      }
+    ],
+    "min_shared_parameter_difference": 0.09265606697644291,
+    "max_shared_parameter_difference": 0.5926560669764394,
+    "paired_demand_mc_se": 1.2358419468634699e-17
+  },
+  {
+    "scenario": "aggro_wide",
+    "left": 175,
+    "right": 602,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": -1.1559266104067218
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": -1.1657174008067732
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": -1.1417407457759432
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": -1.233213184972433
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": -1.0786400358410404
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": -1.1710288682021244
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": -1.1408243526112987
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": -1.1559266104067218
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": -1.1559266104067218
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": -1.1559266104067218
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": -1.1559266104067218
+      }
+    ],
+    "min_shared_parameter_difference": -1.233213184972433,
+    "max_shared_parameter_difference": -1.0786400358410404,
+    "paired_demand_mc_se": 1.4651835297567874e-17
+  },
+  {
+    "scenario": "midrange_single",
+    "left": 49,
+    "right": 984,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": -0.4670079441629227
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": -0.48979884931186923
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": -0.43395151034306956
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": -0.5933703120318174
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": -0.34064557629403147
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": -0.4415936779297738
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": -0.4924222103960867
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": -0.4670079441629227
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": -0.4670079441629227
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": -0.4670079441629227
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": -0.4670079441629227
+      }
+    ],
+    "min_shared_parameter_difference": -0.5933703120318174,
+    "max_shared_parameter_difference": -0.34064557629403147,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "midrange_single",
+    "left": 649,
+    "right": 530,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": -0.6120037841435231
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": -0.6100494605821067
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": -0.6150674446824906
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": -0.6235374445178667
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": -0.6132658040873498
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": -0.5197299887069784
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": -1.3718170492390147
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": -0.6120037841435231
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": -0.6120037841435231
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": -0.6120037841435231
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": -0.6120037841435231
+      }
+    ],
+    "min_shared_parameter_difference": -1.3718170492390147,
+    "max_shared_parameter_difference": -0.5197299887069784,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "midrange_single",
+    "left": 469,
+    "right": 43,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 0.8259339004557038
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 0.8434106492652509
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 0.8005187912990852
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 1.0222638903853927
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 0.6386208659956143
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.9343516921402051
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 1.350324482268423
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 0.8259339004557038
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 0.8259339004557038
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 0.6130720023959455
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 1.1459228520794928
+      }
+    ],
+    "min_shared_parameter_difference": 0.6130720023959455,
+    "max_shared_parameter_difference": 1.350324482268423,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "midrange_single",
+    "left": 20,
+    "right": 13,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 0.21069702337696317
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 0.2158262893900118
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 0.20333605657976905
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 0.18702041731288244
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 0.23451296929570464
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.21069702337696317
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 0.21069702337696317
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 0.21069702337696317
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 0.21069702337696317
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 0.2101215093255293
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 0.22026037963306733
+      }
+    ],
+    "min_shared_parameter_difference": 0.18702041731288244,
+    "max_shared_parameter_difference": 0.23451296929570464,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "midrange_single",
+    "left": 243,
+    "right": 15,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 0.371262245312332
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 0.38865488153699435
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 0.3461794457005549
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 0.40927024818972946
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 0.3332542424349212
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.371262245312332
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 0.371262245312332
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 0.12126224531235064
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 0.6212622453123569
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 0.371262245312332
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 0.371262245312332
+      }
+    ],
+    "min_shared_parameter_difference": 0.12126224531235064,
+    "max_shared_parameter_difference": 0.6212622453123569,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "midrange_single",
+    "left": 175,
+    "right": 602,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": -0.8356990289290862
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": -0.8427686747328265
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": -0.8254558274854518
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": -0.8909864496507678
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": -0.7804116082073773
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": -0.8482842437585896
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": -0.8231138140995817
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": -0.8356990289290862
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": -0.8356990289290862
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": -0.8356990289290862
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": -0.8356990289290862
+      }
+    ],
+    "min_shared_parameter_difference": -0.8909864496507678,
+    "max_shared_parameter_difference": -0.7804116082073773,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "control_silence",
+    "left": 49,
+    "right": 984,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": -1.211660851031965
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": -1.2340049576523064
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": -1.1792433725144225
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": -1.3213127529525215
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": -1.1020089491114158
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": -1.1862465847988073
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": -1.2370751172651264
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": -1.211660851031965
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": -1.211660851031965
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": -1.211660851031965
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": -1.211660851031965
+      }
+    ],
+    "min_shared_parameter_difference": -1.3213127529525215,
+    "max_shared_parameter_difference": -1.1020089491114158,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "control_silence",
+    "left": 649,
+    "right": 530,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": -1.0097827163862485
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": -1.0077446500211344
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": -1.0127627439009617
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": -1.0066984358283824
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": -1.0092282490960924
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": -0.9834804464776727
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": -1.184697533121919
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": -1.0097827163862485
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": -1.0097827163862485
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": -1.0097827163862485
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": -1.0097827163862485
+      }
+    ],
+    "min_shared_parameter_difference": -1.184697533121919,
+    "max_shared_parameter_difference": -0.9834804464776727,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "control_silence",
+    "left": 469,
+    "right": 43,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 0.6865120497407009
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 0.6956700938913318
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 0.6732336744626428
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 0.7790092390392793
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 0.5949348513049353
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.9422491590264466
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 0.9240813620148574
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 0.6865120497407009
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 0.6865120497407009
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 0.5250665771181993
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 0.9286802586744418
+      }
+    ],
+    "min_shared_parameter_difference": 0.5250665771181993,
+    "max_shared_parameter_difference": 0.9422491590264466,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "control_silence",
+    "left": 20,
+    "right": 13,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 0.6238196320061142
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 0.6341638632483004
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 0.6089619693427464
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 0.6277247185012413
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 0.6200538853655964
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.6238196320061142
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 0.6238196320061142
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 0.6238196320061142
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 0.6238196320061142
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 0.6232441179546804
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 0.6332121250074154
+      }
+    ],
+    "min_shared_parameter_difference": 0.6089619693427464,
+    "max_shared_parameter_difference": 0.6341638632483004,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "control_silence",
+    "left": 243,
+    "right": 15,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 0.33496345146024353
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 0.3551451265933041
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 0.30585843789852785
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 0.3748668792364116
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 0.2950600236840195
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.33496345146024353
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 0.33496345146024353
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 0.08496345146022755
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 0.5849634514602293
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 0.33496345146024353
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 0.33496345146024353
+      }
+    ],
+    "min_shared_parameter_difference": 0.08496345146022755,
+    "max_shared_parameter_difference": 0.5849634514602293,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "control_silence",
+    "left": 175,
+    "right": 602,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": -1.1184604435152679
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": -1.1279224596071096
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": -1.1047509395907231
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": -1.1924768395735537
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": -1.0444440474569918
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": -1.1310456583447808
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": -1.105875228685769
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": -1.1184604435152679
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": -1.1184604435152679
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": -1.1184604435152679
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": -1.1184604435152679
+      }
+    ],
+    "min_shared_parameter_difference": -1.1924768395735537,
+    "max_shared_parameter_difference": -1.0444440474569918,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "empty_development",
+    "left": 49,
+    "right": 984,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 1.7511081890259779
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 1.735955606413298
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 1.7731069916690876
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 1.5832770489093133
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 1.918939329142641
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 1.784993877336857
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 1.7172225007150992
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 1.7511081890259779
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 1.7511081890259779
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 1.7511081890259779
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 1.7511081890259779
+      }
+    ],
+    "min_shared_parameter_difference": 1.5832770489093133,
+    "max_shared_parameter_difference": 1.918939329142641,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "empty_development",
+    "left": 649,
+    "right": 530,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": -0.8514772328392102
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": -0.8546969083110225
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": -0.8468750648099324
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": -0.9559931492006744
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": -0.7469613164777389
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.7758891987324557
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": -2.4788436644108742
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": -0.8514772328392102
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": -0.8514772328392102
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": -0.8514772328392102
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": -0.8514772328392102
+      }
+    ],
+    "min_shared_parameter_difference": -2.4788436644108742,
+    "max_shared_parameter_difference": 0.7758891987324557,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "empty_development",
+    "left": 469,
+    "right": 43,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 0.4062782656210304
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 0.42361820711039666
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 0.3810373326595249
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 0.6262955190796315
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 0.18626101216243018
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": -0.5398504322591342
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 1.3524069635011937
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 0.4062782656210304
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 0.4062782656210304
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 0.19101763545770467
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 0.7291692108660186
+      }
+    ],
+    "min_shared_parameter_difference": -0.5398504322591342,
+    "max_shared_parameter_difference": 1.3524069635011937,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "empty_development",
+    "left": 20,
+    "right": 13,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 0.49136465803939045
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 0.48840919943147343
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 0.49569088056214117
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 0.5089572135317968
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 0.47377210254698543
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.49136465803939045
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 0.49136465803939045
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 0.49136465803939045
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 0.49136465803939045
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 0.29136465803939116
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 0.7913646580393903
+      }
+    ],
+    "min_shared_parameter_difference": 0.29136465803939116,
+    "max_shared_parameter_difference": 0.7913646580393903,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "empty_development",
+    "left": 243,
+    "right": 15,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 0.33496345146023554
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 0.3551451265933183
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 0.3058584378985332
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 0.3748668792364196
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 0.2950600236840524
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.33496345146023554
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 0.33496345146023554
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 0.08496345146023554
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 0.5849634514602355
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 0.33496345146023554
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 0.33496345146023554
+      }
+    ],
+    "min_shared_parameter_difference": 0.08496345146023554,
+    "max_shared_parameter_difference": 0.5849634514602355,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "empty_development",
+    "left": 175,
+    "right": 602,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": -1.114265371905438
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": -1.1236915663104279
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": -1.1006077699805927
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": -1.1879819328677088
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": -1.0405488109431684
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": -1.1310456583447777
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": -1.0974850854660991
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": -1.114265371905438
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": -1.114265371905438
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": -1.114265371905438
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": -1.114265371905438
+      }
+    ],
+    "min_shared_parameter_difference": -1.1879819328677088,
+    "max_shared_parameter_difference": -1.0405488109431684,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "clock_pressure",
+    "left": 49,
+    "right": 984,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 0.6128878661590926
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 0.6075844622446542
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 0.6205874470841799
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 0.5541469671182604
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 0.6716287651999249
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.6247478570679004
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 0.6010278752502849
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 0.6128878661590926
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 0.6128878661590926
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 0.6128878661590926
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 0.6128878661590926
+      }
+    ],
+    "min_shared_parameter_difference": 0.5541469671182604,
+    "max_shared_parameter_difference": 0.6716287651999249,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "clock_pressure",
+    "left": 649,
+    "right": 530,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": -0.2980170314937238
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": -0.2991439179088573
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": -0.29640627268347597
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": -0.33459760222023593
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": -0.26143646076720817
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.27156121955635903
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": -0.8675952825438067
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": -0.2980170314937238
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": -0.2980170314937238
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": -0.2980170314937238
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": -0.2980170314937238
+      }
+    ],
+    "min_shared_parameter_difference": -0.8675952825438067,
+    "max_shared_parameter_difference": 0.27156121955635903,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "clock_pressure",
+    "left": 469,
+    "right": 43,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 0.9052092238031064
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 0.9112782033243847
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 0.8963748972665799
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 0.9822152625136167
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 0.8282031850925966
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.4610523487093028
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 1.3493660988969096
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 0.9052092238031064
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 0.9052092238031064
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 0.7168561724101967
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 0.9052092238031064
+      }
+    ],
+    "min_shared_parameter_difference": 0.4610523487093028,
+    "max_shared_parameter_difference": 1.3493660988969096,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "clock_pressure",
+    "left": 20,
+    "right": 13,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 0.796977630313787
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 0.7959432198010159
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 0.7984918081967494
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 0.8031350247361293
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 0.7908202358914447
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.796977630313787
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 0.796977630313787
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 0.796977630313787
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 0.796977630313787
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 0.296977630313787
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 0.796977630313787
+      }
+    ],
+    "min_shared_parameter_difference": 0.296977630313787,
+    "max_shared_parameter_difference": 0.8031350247361293,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "clock_pressure",
+    "left": 243,
+    "right": 15,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 0.1172372080110824
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 0.12430079430766083
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 0.10705045326448559
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 0.1312034077327464
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 0.10327100828941749
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.1172372080110824
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 0.1172372080110824
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 0.02973720801108204
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 0.20473720801108186
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 0.1172372080110824
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 0.1172372080110824
+      }
+    ],
+    "min_shared_parameter_difference": 0.02973720801108204,
+    "max_shared_parameter_difference": 0.20473720801108186,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "clock_pressure",
+    "left": 175,
+    "right": 602,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": -0.38999288016690326
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": -0.3932920482086497
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": -0.3852127194932071
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": -0.41579367650369803
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": -0.3641920838301087
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": -0.3958659804206721
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": -0.3841197799131346
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": -0.38999288016690326
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": -0.38999288016690326
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": -0.38999288016690326
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": -0.38999288016690326
+      }
+    ],
+    "min_shared_parameter_difference": -0.41579367650369803,
+    "max_shared_parameter_difference": -0.3641920838301087,
+    "paired_demand_mc_se": null
+  },
+  {
+    "scenario": "wounded_wide",
+    "left": 49,
+    "right": 984,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": -0.8348839728902542
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": -0.8695965239809214
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": -0.7845556855272919
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": -1.1506285553953646
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": -0.5201157101883496
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": -0.804386853410457
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": -0.8653810923700318
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": -0.8348839728902542
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": -0.8348839728902542
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": -0.8348839728902542
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": -0.8348839728902542
+      }
+    ],
+    "min_shared_parameter_difference": -1.1506285553953646,
+    "max_shared_parameter_difference": -0.5201157101883496,
+    "paired_demand_mc_se": 0.0426740663160054
+  },
+  {
+    "scenario": "wounded_wide",
+    "left": 649,
+    "right": 530,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": -0.7414044571635126
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": -0.7451638783871646
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": -0.7359979858018475
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": -0.8228371562675818
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": -0.6593834508395258
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": -0.6508816810762763
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": -0.8704117506291897
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": -0.7414044571635126
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": -0.7414044571635126
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": -0.7414044571635126
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": -0.7414044571635126
+      }
+    ],
+    "min_shared_parameter_difference": -0.8704117506291897,
+    "max_shared_parameter_difference": -0.6508816810762763,
+    "paired_demand_mc_se": 0.042586812817430424
+  },
+  {
+    "scenario": "wounded_wide",
+    "left": 469,
+    "right": 43,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 1.2873420897347465
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 1.3100675922971323
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 1.2543152864892697
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 1.5728732365458518
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 1.0047972747358465
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.9915320367588816
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 1.9331700420173883
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 1.2873420897347465
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 1.2873420897347465
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 1.0720814595714057
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 1.6102330349797214
+      }
+    ],
+    "min_shared_parameter_difference": 0.9915320367588816,
+    "max_shared_parameter_difference": 1.9331700420173883,
+    "paired_demand_mc_se": 0.018529745570258115
+  },
+  {
+    "scenario": "wounded_wide",
+    "left": 20,
+    "right": 13,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 0.7049982715977627
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 0.7094070416022875
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 0.6986421730575056
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 0.7846982323359475
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 0.6264682656451948
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.7049982715977627
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 0.7049982715977627
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 0.7049982715977627
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 0.7049982715977627
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 0.7049982715977627
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 0.7049982715977627
+      }
+    ],
+    "min_shared_parameter_difference": 0.6264682656451948,
+    "max_shared_parameter_difference": 0.7846982323359475,
+    "paired_demand_mc_se": 0.024255718559596247
+  },
+  {
+    "scenario": "wounded_wide",
+    "left": 243,
+    "right": 15,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": 0.34265606697643936
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": 0.3623828404300733
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": 0.3142070901146301
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": 0.38136426480920615
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": 0.30394786914380134
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": 0.34265606697643936
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": 0.34265606697643936
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": 0.09265606697644291
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": 0.5926560669764394
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": 0.34265606697643936
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": 0.34265606697643936
+      }
+    ],
+    "min_shared_parameter_difference": 0.09265606697644291,
+    "max_shared_parameter_difference": 0.5926560669764394,
+    "paired_demand_mc_se": 1.9086895432932427e-17
+  },
+  {
+    "scenario": "wounded_wide",
+    "left": 175,
+    "right": 602,
+    "differences": [
+      {
+        "parameter": "central",
+        "net_difference": -1.1559266104067218
+      },
+      {
+        "parameter": "face_share_low",
+        "net_difference": -1.1657174008067732
+      },
+      {
+        "parameter": "face_share_high",
+        "net_difference": -1.1417407457759432
+      },
+      {
+        "parameter": "threshold_low",
+        "net_difference": -1.2332131849724324
+      },
+      {
+        "parameter": "threshold_high",
+        "net_difference": -1.0786400358410404
+      },
+      {
+        "parameter": "tail_zero",
+        "net_difference": -1.1710288682021244
+      },
+      {
+        "parameter": "tail_full",
+        "net_difference": -1.1408243526112987
+      },
+      {
+        "parameter": "draw_low",
+        "net_difference": -1.1559266104067218
+      },
+      {
+        "parameter": "draw_high",
+        "net_difference": -1.1559266104067218
+      },
+      {
+        "parameter": "face_price_low",
+        "net_difference": -1.1559266104067218
+      },
+      {
+        "parameter": "face_price_high",
+        "net_difference": -1.1559266104067218
+      }
+    ],
+    "min_shared_parameter_difference": -1.2332131849724324,
+    "max_shared_parameter_difference": -1.0786400358410404,
+    "paired_demand_mc_se": 8.173380517897572e-18
+  }
+]

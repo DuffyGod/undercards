@@ -1,0 +1,21 @@
+{
+  "actual_complete_invocations": 2,
+  "results": [
+    {
+      "task_id": "same_policy_numeric",
+      "http_result": "failed_no_retry",
+      "exception_type": "TaskError",
+      "error": "<urlopen error [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。>",
+      "elapsed_seconds": 0.062000000005355105
+    },
+    {
+      "task_id": "demand_distribution_bias",
+      "http_result": "failed_no_retry",
+      "exception_type": "TaskError",
+      "error": "<urlopen error [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。>",
+      "elapsed_seconds": 0.03199999999196734
+    }
+  ],
+  "maximum_calls": 2,
+  "no_automatic_numeric_adoption": true
+}
