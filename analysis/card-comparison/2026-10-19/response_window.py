@@ -57,7 +57,7 @@ def replies(own, enemy, own_hp):
 
 
 def frontier_after_reply(solver,cid,backgrounds,enemy,cash,slots,own_hp=15,minimum_own_hp=1,
-                         remove_focal_defense=False):
+                         remove_focal_defense=False,minimum_own_bodies=0):
     if cid not in SUPPORTED:
         raise ValueError('Unsupported response mechanism; no zero substitute')
     number(cash,'cash',0)
@@ -68,6 +68,8 @@ def frontier_after_reply(solver,cid,backgrounds,enemy,cash,slots,own_hp=15,minim
             raise ValueError(name+' must be a positive integer')
     if minimum_own_hp>own_hp:
         raise ValueError('No healing operators in this declared response subset')
+    if type(minimum_own_bodies) is not int or not 0<=minimum_own_bodies<=4:
+        raise ValueError('Body-retention floor must be an integer from zero to four')
     if len(enemy)>1 or any(type(x) is not int or x<0 for pair in enemy for x in pair):
         raise ValueError('One ordinary nonnegative-integer body required')
     if any(h<=0 for _,h in enemy):
@@ -89,11 +91,16 @@ def frontier_after_reply(solver,cid,backgrounds,enemy,cash,slots,own_hp=15,minim
         if remove_focal_defense:
             own=tuple(replace(u,dodge=0,armor=False) if u.root else u for u in own)
         outcomes=replies(own,remaining,own_hp)
+        own_endpoint=[dict(attack=u.a,health=u.h,dodge=u.dodge,armor=u.armor,taunt=u.taunt) for u in own]
         guaranteed_hp=min(r['own_hp'] for r in outcomes)
         hp_witness=min(outcomes,key=lambda r:r['own_hp'])['action']
-        if guaranteed_hp<minimum_own_hp:
+        guaranteed_bodies=min(len(r['own']) for r in outcomes)
+        body_witness=min(outcomes,key=lambda r:len(r['own']))['action']
+        if guaranteed_hp<minimum_own_hp or guaranteed_bodies<minimum_own_bodies:
             records.append(dict(plan=asdict(q.plan),paid=q.paid,feasible=False,
                                 guaranteed_own_hp=guaranteed_hp,minimum_hp_reply=hp_witness,
+                                guaranteed_body_count=guaranteed_bodies,minimum_body_reply=body_witness,
+                                own_after_own=own_endpoint,
                                 enemy_after_own=remaining))
             continue  # hard goal: never buy back lethal with a large body quote
         for r in outcomes:
@@ -103,6 +110,7 @@ def frontier_after_reply(solver,cid,backgrounds,enemy,cash,slots,own_hp=15,minim
         worst=min(outcomes,key=lambda r:r['asset'])
         line=dict(intercept=worst['asset'],slope=-q.paid,action=asdict(q.plan),
                   guaranteed_own_hp=guaranteed_hp,worst_reply=worst['action'],
+                  guaranteed_body_count=guaranteed_bodies,minimum_body_reply=body_witness,
                   asset_worst_reply_own_hp=worst['own_hp'],minimum_hp_reply=hp_witness,
                   own_after=[[u.a,u.h,u.dodge,int(u.armor)] for u in worst['own']],
                   enemy_after=worst['enemy'])
@@ -110,31 +118,54 @@ def frontier_after_reply(solver,cid,backgrounds,enemy,cash,slots,own_hp=15,minim
         if not q.plan.candidate_used:background_lines.append(line)
         records.append(dict(plan=asdict(q.plan),paid=q.paid,feasible=True,
                             guaranteed_own_hp=guaranteed_hp,worst_reply=worst['action'],
+                            guaranteed_body_count=guaranteed_bodies,minimum_body_reply=body_witness,
+                            own_after_own=own_endpoint,
                             minimum_hp_reply=hp_witness,enemy_after_own=remaining,
                             asset_worst_reply_own_hp=worst['own_hp'],
                             worst_asset=worst['asset']))
     return dict(curve=envelope(all_lines) if all_lines else None,
                 background_curve=envelope(background_lines) if background_lines else None,
                 own_hp=own_hp,minimum_own_hp=minimum_own_hp,
+                minimum_own_bodies=minimum_own_bodies,
                 enemy_hero_hp=30,
                 condition=dict(background_ids=list(backgrounds),enemy_before=[list(e) for e in enemy],
                                cash=cash,initial_own_board='empty',slots=4,own_hp=own_hp,
                                minimum_own_hp=minimum_own_hp,enemy_hero_hp=30,
+                               minimum_own_bodies=minimum_own_bodies,
                                face_price=solver.face_price,
                                body_face_share=getattr(solver.scale,'face_share',None),
                                body_threshold=getattr(solver.scale,'threshold_weight',None)),
                 guarantee_feasible=bool(all_lines),
-                enabled_survival_when_background_cannot=bool(all_lines) and not background_lines,
+                enabled_goal_when_background_cannot=bool(all_lines) and not background_lines,
+                enabled_survival_when_background_cannot=minimum_own_bodies==0 and bool(all_lines) and not background_lines,
                 source_focal_defense_removed=remove_focal_defense,menus=records)
 
 
 def compare_reply(left,right):
-    if left['condition']!=right['condition']:
-        raise ValueError('Reply comparison requires the same physical state, goal and shared price setting')
-    if not left['guarantee_feasible'] or not right['guarantee_feasible']:
-        return dict(left_feasible=left['guarantee_feasible'],right_feasible=right['guarantee_feasible'],
-                    numeric_difference=None,
-                    status='survival_feasibility_differs' if left['guarantee_feasible']!=right['guarantee_feasible']
-                           else 'neither_guarantees_the_declared_survival_floor')
-    r=paired_range({'same_prices':{'a':left['curve'],'b':right['curve']}},'a','b')
-    return dict(left_feasible=True,right_feasible=True,numeric_difference=r,status=r['status'])
+    return compare_reply_set({'same_prices':{'a':left,'b':right}},'a','b')
+
+
+def compare_reply_set(settings_map,left,right,cash_price=None):
+    if cash_price is not None:number(cash_price,'cash price',0,1)
+    states=[];physical=[]
+    price_fields={'face_price','body_face_share','body_threshold'}
+    for results in settings_map.values():
+        a,b=results[str(left)],results[str(right)]
+        if a['condition']!=b['condition']:
+            raise ValueError('Both candidates must share the physical window, goal and prices')
+        states.append((a['guarantee_feasible'],b['guarantee_feasible']))
+        physical.append({k:v for k,v in a['condition'].items() if k not in price_fields})
+    if not states or any(p!=physical[0] for p in physical):
+        raise ValueError('Price settings must preserve the SAME physical window and goal')
+    if len(set(states))!=1:
+        raise ValueError('Hard survival feasibility cannot change with normative prices')
+    a,b=states[0]
+    if not a or not b:
+        board_goal=physical[0].get('minimum_own_bodies',0)>0
+        return dict(left_feasible=a,right_feasible=b,numeric_difference=None,
+                    status=('shared_goal_feasibility_differs' if a!=b else 'neither_guarantees_shared_goal') if board_goal
+                           else ('survival_feasibility_differs' if a!=b else 'neither_guarantees_survival'))
+    curves={s:{str(left):r[str(left)]['curve'],str(right):r[str(right)]['curve']}
+            for s,r in settings_map.items()}
+    delta=paired_range(curves,left,right,cash_price)
+    return dict(left_feasible=True,right_feasible=True,numeric_difference=delta,status=delta['status'])

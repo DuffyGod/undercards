@@ -7,6 +7,7 @@ import json
 
 from frontier import paired_range, diagnose_pair, mixture, piece_at, value, single_use_opportunity_bounds, TOL
 from run_study import case_id
+from response_window import compare_reply_set
 
 HERE = Path(__file__).resolve().parent
 
@@ -77,6 +78,47 @@ def compare(data, design, ids, menu, board, cash, slots, price_setting='all',
     return output
 
 
+def compare_saved_reply(data,design,ids,case,price_setting='all',cash_price=None):
+    if len(ids)<2 or len(set(ids))!=len(ids) or any(i not in design['candidate_ids'] for i in ids):
+        raise ValueError('Use at least two distinct supported focal IDs; excluded effects are not zero')
+    if case not in data:raise ValueError('No saved response window under that name')
+    selected=data[case]
+    if price_setting!='all':
+        if price_setting not in selected:raise ValueError('Unknown shared price setting')
+        selected={price_setting:selected[price_setting]}
+    pairs=[dict(left=a,right=b,**compare_reply_set(selected,a,b,cash_price)) for a,b in combinations(ids,2)]
+    cards=[]
+    for cid in ids:
+        first=next(iter(selected.values()))[str(cid)]
+        row=dict(id=cid,name=design.get('names',{}).get(str(cid)),shared_goal_feasible=first['guarantee_feasible'],
+                 enabled_goal_when_background_cannot=first.get('enabled_goal_when_background_cannot',first['enabled_survival_when_background_cannot']),
+                 enabled_survival_when_background_cannot=first['enabled_survival_when_background_cannot'])
+        if first['guarantee_feasible'] and first['background_curve'] is not None:
+            curves={s:{'c':r[str(cid)]['curve'],'b':r[str(cid)]['background_curve']} for s,r in selected.items()}
+            row['current_gain_over_feasible_background']=paired_range(curves,'c','b',cash_price)
+        else:
+            row['current_gain_over_feasible_background']=None
+        if 'defense_removed_control' in first and first['guarantee_feasible']:
+            control=first['defense_removed_control']
+            if not control['guarantee_feasible']:
+                row['defense_enables_shared_goal']=True
+                row['defense_value_vs_same_body_without_keyword']=None
+            else:
+                curves={s:{'yes':r[str(cid)]['curve'],'no':r[str(cid)]['defense_removed_control']['curve']}
+                        for s,r in selected.items()}
+                row['defense_enables_shared_goal']=False
+                row['defense_value_vs_same_body_without_keyword']=paired_range(curves,'yes','no',cash_price)
+        cards.append(row)
+    return dict(assessment_kind='heuristic',empirically_calibrated=False,
+                case=case,condition=design['cases'][case],
+                initial_friendly_board='empty/four free slots',enemy_hero_hp=30,
+                cash_price=cash_price if cash_price is not None else [0,1],
+                shared_price_settings=list(selected),cards=cards,comparisons=pairs,
+                scope='Only the declared one ordinary enemy optional-attack window; not full-turn or match safety',
+                infeasible_policy='No numeric fallback when the shared HP/body-retention goal is infeasible',
+                trace_warning='Lowest hero HP and lowest asset value can have different enemy-reply witnesses')
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     sub = p.add_subparsers(dest='command', required=True)
@@ -90,6 +132,12 @@ def main():
     c.add_argument('--cash-price', type=float)
     c.add_argument('--second-board')
     c.add_argument('--results', type=Path, default=HERE/'results')
+    r = sub.add_parser('reply')
+    r.add_argument('--ids',nargs='+',type=int,required=True)
+    r.add_argument('--case',required=True)
+    r.add_argument('--price-setting',default='all')
+    r.add_argument('--cash-price',type=float)
+    r.add_argument('--results',type=Path,default=HERE/'reply-results')
     b = sub.add_parser('opportunity-bounds')
     b.add_argument('--reward', type=float, required=True)
     b.add_argument('--marginals', type=float, nargs='+', required=True)
@@ -98,6 +146,11 @@ def main():
     try:
         if args.command == 'opportunity-bounds':
             out = single_use_opportunity_bounds(args.reward, args.marginals, args.reference_value)
+        elif args.command == 'reply':
+            with gzip.open(args.results/'reply-curves.json.gz','rt',encoding='utf-8') as f:data=json.load(f)
+            design=json.loads((args.results/'design.json').read_text(encoding='utf-8'))
+            out=compare_saved_reply(data,design,args.ids,args.case,args.price_setting,args.cash_price)
+            out['numerical_producer_commit']=design['producer_source_commit']
         else:
             with gzip.open(args.results/'curves.json.gz', 'rt', encoding='utf-8') as f:
                 data = json.load(f)

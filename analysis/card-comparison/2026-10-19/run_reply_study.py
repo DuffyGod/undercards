@@ -11,7 +11,7 @@ import time
 from run_study import METHOD, settings, dump, write_csv
 from slot_value import SlotSolver
 from value_model import BodyScale
-from response_window import SUPPORTED,frontier_after_reply,compare_reply
+from response_window import SUPPORTED,frontier_after_reply,compare_reply_set
 from frontier import paired_range,difference,value
 
 HERE=Path(__file__).resolve().parent
@@ -28,33 +28,30 @@ CASES={
     'small_threat':dict(enemy=((1,2),),own_hp=15,cash=4,bg=(2,4),floor=1),
     'dodge_cannot_block_lethal_face':dict(enemy=((5,8),),own_hp=5,cash=6,bg=(2,187,15),floor=1),
 }
+STANDING_CASES={
+    'balanced_trade_keep_body':dict(enemy=((5,5),),own_hp=15,cash=6,bg=(),floor=1,body_floor=1),
+    'three_cost_keep_body':dict(enemy=((3,2),),own_hp=15,cash=3,bg=(),floor=1,body_floor=1),
+    'emergency_clear_and_body':dict(enemy=((4,2),),own_hp=3,cash=3,bg=(2,4),floor=1,body_floor=1),
+}
 
 
 def common_compare(settings_map,a,b):
-    states=[(r[str(a)]['guarantee_feasible'],r[str(b)]['guarantee_feasible']) for r in settings_map.values()]
-    if len(set(states))!=1:
-        raise AssertionError('Hard physical feasibility cannot depend on normative price coefficients')
-    fa,fb=states[0]
-    if not fa or not fb:
-        return dict(left_feasible=fa,right_feasible=fb,numeric_difference=None,
-                    status='survival_feasibility_differs' if fa!=fb else 'neither_guarantees_survival')
-    curves={s:{str(a):r[str(a)]['curve'],str(b):r[str(b)]['curve']} for s,r in settings_map.items()}
-    return dict(left_feasible=True,right_feasible=True,
-                numeric_difference=paired_range(curves,a,b),
-                status=paired_range(curves,a,b)['status'])
+    return compare_reply_set(settings_map,a,b)
 
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output',type=Path,required=True)
     parser.add_argument('--pilot',action='store_true')
+    parser.add_argument('--study',choices=('base','standing'),default='base')
     args=parser.parse_args()
     if args.output.exists():parser.error('Preserve earlier evidence; output directory must be new')
     args.output.mkdir(parents=True)
     start=time.monotonic()
     inputs=json.loads((METHOD/'statistical_inputs.json').read_text(encoding='utf-8'))
     ids=(9,13,20,168,187) if args.pilot else SUPPORTED
-    cases={k:CASES[k] for k in ('immediate_attack_needed','lethal_4_2_at_3hp')} if args.pilot else CASES
+    cases=(dict(list(STANDING_CASES.items())[:1]) if args.pilot else STANDING_CASES) if args.study=='standing' else (
+        {k:CASES[k] for k in ('immediate_attack_needed','lethal_4_2_at_3hp')} if args.pilot else CASES)
     prices={'central':settings()['central']} if args.pilot else settings()
     all_results={case:{} for case in cases};checks=0
     for label,p in prices.items():
@@ -64,13 +61,16 @@ def main():
             results={}
             for cid in ids:
                 args_physical=(solver,cid,c['bg'],c['enemy'],c['cash'],4,c['own_hp'],c['floor'])
-                r=frontier_after_reply(*args_physical)
+                r=frontier_after_reply(*args_physical,minimum_own_bodies=c.get('body_floor',0))
                 if cid in (168,175,377):
-                    control=frontier_after_reply(*args_physical,remove_focal_defense=True)
-                    if r['guarantee_feasible']!=control['guarantee_feasible']:
+                    control=frontier_after_reply(*args_physical,remove_focal_defense=True,
+                                                minimum_own_bodies=c.get('body_floor',0))
+                    if c.get('body_floor',0)==0 and r['guarantee_feasible']!=control['guarantee_feasible']:
                         raise AssertionError('Standalone Dodge/Armor does not prevent a legal hero face attack')
+                    if not r['guarantee_feasible'] and control['guarantee_feasible']:
+                        raise AssertionError('Removing standalone defense cannot enable this monotone shared goal')
                     r['defense_removed_control']=control
-                    if r['curve'] is not None:
+                    if r['curve'] is not None and control['curve'] is not None:
                         delta=difference(r['curve'],control['curve'])
                         if delta['minimum'] < -1e-8:
                             raise AssertionError('Defense removal improved this monotone one-response projection')
@@ -105,12 +105,13 @@ def main():
     dump(args.output/'design.json',dict(assessment_kind='heuristic',empirically_calibrated=False,
         producer_source_commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
         candidate_ids=ids,price_settings=prices,cases=cases,
+        names={str(i):c['name'] for i,c in ((int(k),v) for k,v in inputs['cards'].items())},
         source_files=['response_window.py','run_reply_study.py','frontier.py'],
         price_input='analysis/method-lab/2026-10-18/statistical_inputs.json',
         initial_own_board='empty, four free physical slots',enemy_hero_hp=30,
         enemy_action='One ordinary ready enemy may attack a living friendly body, attack hero, or decline',
         opponent_other_actions='No hand plays, draws, income, turn triggers or additional attackers in this declared window',
-        survival_goal='Every enemy response meets the stated own-HP floor; infeasible values remain null',
+        survival_goal='Every enemy response meets the stated own-HP AND body-retention floors; infeasible values remain null',
         signed_damage_price='Nonlethal player damage only, at common external face_price',
         field_warning='guaranteed_own_hp and asset-worst reply HP are different bounds; do not splice their witnesses',
         unknown_future='Dust discounts and other future options outside this deadline are not estimated',
