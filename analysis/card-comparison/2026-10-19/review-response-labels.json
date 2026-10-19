@@ -1,0 +1,18 @@
+{
+  "scope": "Independent no-Taunt one-attacker HP algebra over retained JSON; no search or price recomputation",
+  "formula": "ownHP - surviving_enemy_attack; ownHP if no surviving attacker",
+  "production_imports": false,
+  "old_producer_executed": false,
+  "post_own_enemy_transitions_independently_recomputed": false,
+  "opponent_asset_optimum_independently_recomputed": false,
+  "totals": {
+    "case_card_settings": 1386,
+    "menu_labels": 9459,
+    "feasible_menus": 5679,
+    "infeasible_menus": 3780,
+    "curve_pieces": 1198,
+    "distinct_hp_witnesses": 1738
+  },
+  "failure_count": 0,
+  "failures": []
+}

@@ -1,0 +1,5 @@
+case,left,right,left_feasible,right_feasible,minimum,maximum,status
+immediate_attack_needed,9,187,True,False,,,survival_feasibility_differs
+immediate_attack_needed,13,20,False,False,,,neither_guarantees_survival
+lethal_4_2_at_3hp,9,187,True,False,,,survival_feasibility_differs
+lethal_4_2_at_3hp,13,20,False,True,,,survival_feasibility_differs

@@ -1,0 +1,18 @@
+{
+  "scope": "Only new reply-standing JSON; independent one-body HP/retention algebra",
+  "production_imports": false,
+  "old_hp_label_audit_executed": false,
+  "old_producer_executed": false,
+  "physical_post_own_transitions_recomputed": false,
+  "totals": {
+    "base_results": 378,
+    "defense_control_results": 81,
+    "base_menus": 936,
+    "defense_control_menus": 198,
+    "feasible_menus": 54,
+    "infeasible_menus": 1080,
+    "curve_pieces": 54
+  },
+  "failure_count": 0,
+  "failures": []
+}

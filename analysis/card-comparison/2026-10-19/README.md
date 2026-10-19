@@ -1,10 +1,25 @@
 # 单卡条件比较：共同价格、真实替代与时机边界
 
-本轮按用户要求暂停组卡。先读 [研究结果](REPORT.md)。程序比较单卡，不输出牌组或无条件全池排名。当前仍是未实战校准的启发式模型。
+本轮按用户要求暂停组卡。最新为[敌方回应、保命与留体用途报告](RESPONSE-REPORT.md)；前阶段的[共同价格与手牌研究](REPORT.md)保留。程序比较单卡，不输出牌组或无条件全池排名。当前仍是未实战校准的启发式模型。
 
 ## 直接查询已保存结果
 
 Python标准库，无需安装依赖或API。下面命令只读冻结文件，不重跑实验。
+
+共同致命敌4/2、己3HP、3G，比较能否保证保命：
+
+```sh
+python analysis/card-comparison/2026-10-19/compare_cards.py reply --ids 9 187 --case immediate_attack_needed
+```
+
+同为5/5，先比较只要求保命的条件，再比较要求至少留1体的用途：
+
+```sh
+python analysis/card-comparison/2026-10-19/compare_cards.py reply --ids 43 168 --case balanced_trade --price-setting central --cash-price .5
+python analysis/card-comparison/2026-10-19/compare_cards.py reply --ids 43 168 --case balanced_trade_keep_body --results analysis/card-comparison/2026-10-19/reply-standing
+```
+
+`reply`仅包含一个普通敌体的一次可选攻击；初始己场为空、4格、敌英雄30HP。未达到共同HP/留体目标时不给数值替代。不能保证目标不等于不可打出，也不表示对手必然选最坏分支。完整限定、14卡支持集、独立标签核查及防护反事实见最新报告；`reply-examples.json`保留7条实际查询。
 
 同为6G，背景Froggit＋Moldsmal，敌三个3/2、现金6、两格：
 
@@ -46,4 +61,4 @@ python analysis/card-comparison/2026-10-19/compare_cards.py opportunity-bounds -
 
 新增研究的生产脚本为`run_study.py`、`controlled_hand_probe.py`、`summarize_saved.py`；各自拒绝覆盖已有输出。旧方法试验、旧恢复快照及deck-lab保持原样。日常使用只查询，不为刷新报告重做这些计算。
 
-现有假设：当前有限截止；共同身体F保留普通残值；未来特殊能力储备为0；无敌方回应、玩家生存目标或跨回合手牌过程；部分无目标落地和召唤格子处理沿用旧稀疏菜单假设。条件值不等于整卡携带分。详见结果报告的边界。
+静态`compare`的假设：当前有限截止；共同身体F保留普通残值；未来特殊能力储备为0；无敌方回应、玩家生存目标或跨回合手牌过程；部分无目标落地和召唤格子处理沿用旧稀疏菜单假设。新增`reply`不改变这些旧数据，只在新目录加入明确的回应和HP/留体目标，生产源为`response_window.py`、`run_reply_study.py`。两类条件值都不等于整卡携带分。日常使用冻结查询，不重新运行生产器。

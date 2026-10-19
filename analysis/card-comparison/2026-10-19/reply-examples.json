@@ -1,0 +1,702 @@
+{
+  "emergency_charge": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "analysis/card-comparison/2026-10-19/compare_cards.py",
+      "reply",
+      "--ids",
+      "9",
+      "187",
+      "--case",
+      "immediate_attack_needed"
+    ],
+    "result": {
+      "assessment_kind": "heuristic",
+      "empirically_calibrated": false,
+      "case": "immediate_attack_needed",
+      "condition": {
+        "enemy": [
+          [
+            4,
+            2
+          ]
+        ],
+        "own_hp": 3,
+        "cash": 3,
+        "bg": [
+          2,
+          4
+        ],
+        "floor": 1
+      },
+      "initial_friendly_board": "empty/four free slots",
+      "enemy_hero_hp": 30,
+      "cash_price": [
+        0,
+        1
+      ],
+      "shared_price_settings": [
+        "central",
+        "corner_000",
+        "corner_001",
+        "corner_010",
+        "corner_011",
+        "corner_100",
+        "corner_101",
+        "corner_110",
+        "corner_111"
+      ],
+      "cards": [
+        {
+          "id": 9,
+          "name": "Ice Cap",
+          "shared_goal_feasible": true,
+          "enabled_goal_when_background_cannot": true,
+          "enabled_survival_when_background_cannot": true,
+          "current_gain_over_feasible_background": null
+        },
+        {
+          "id": 187,
+          "name": "Candy Dish",
+          "shared_goal_feasible": false,
+          "enabled_goal_when_background_cannot": false,
+          "enabled_survival_when_background_cannot": false,
+          "current_gain_over_feasible_background": null
+        }
+      ],
+      "comparisons": [
+        {
+          "left": 9,
+          "right": 187,
+          "left_feasible": true,
+          "right_feasible": false,
+          "numeric_difference": null,
+          "status": "survival_feasibility_differs"
+        }
+      ],
+      "scope": "Only the declared one ordinary enemy optional-attack window; not full-turn or match safety",
+      "infeasible_policy": "No numeric fallback when the shared HP/body-retention goal is infeasible",
+      "trace_warning": "Lowest hero HP and lowest asset value can have different enemy-reply witnesses",
+      "numerical_producer_commit": "475b436f6902faa8f5755c7959989421353c6ed7"
+    }
+  },
+  "damage_vs_soften": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "analysis/card-comparison/2026-10-19/compare_cards.py",
+      "reply",
+      "--ids",
+      "13",
+      "20",
+      "--case",
+      "lethal_4_2_at_3hp"
+    ],
+    "result": {
+      "assessment_kind": "heuristic",
+      "empirically_calibrated": false,
+      "case": "lethal_4_2_at_3hp",
+      "condition": {
+        "enemy": [
+          [
+            4,
+            2
+          ]
+        ],
+        "own_hp": 3,
+        "cash": 4,
+        "bg": [
+          2,
+          4
+        ],
+        "floor": 1
+      },
+      "initial_friendly_board": "empty/four free slots",
+      "enemy_hero_hp": 30,
+      "cash_price": [
+        0,
+        1
+      ],
+      "shared_price_settings": [
+        "central",
+        "corner_000",
+        "corner_001",
+        "corner_010",
+        "corner_011",
+        "corner_100",
+        "corner_101",
+        "corner_110",
+        "corner_111"
+      ],
+      "cards": [
+        {
+          "id": 13,
+          "name": "Woshua",
+          "shared_goal_feasible": false,
+          "enabled_goal_when_background_cannot": false,
+          "enabled_survival_when_background_cannot": false,
+          "current_gain_over_feasible_background": null
+        },
+        {
+          "id": 20,
+          "name": "Vulkin",
+          "shared_goal_feasible": true,
+          "enabled_goal_when_background_cannot": true,
+          "enabled_survival_when_background_cannot": true,
+          "current_gain_over_feasible_background": null
+        }
+      ],
+      "comparisons": [
+        {
+          "left": 13,
+          "right": 20,
+          "left_feasible": false,
+          "right_feasible": true,
+          "numeric_difference": null,
+          "status": "survival_feasibility_differs"
+        }
+      ],
+      "scope": "Only the declared one ordinary enemy optional-attack window; not full-turn or match safety",
+      "infeasible_policy": "No numeric fallback when the shared HP/body-retention goal is infeasible",
+      "trace_warning": "Lowest hero HP and lowest asset value can have different enemy-reply witnesses",
+      "numerical_producer_commit": "475b436f6902faa8f5755c7959989421353c6ed7"
+    }
+  },
+  "one_more_hero_hp": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "analysis/card-comparison/2026-10-19/compare_cards.py",
+      "reply",
+      "--ids",
+      "13",
+      "20",
+      "--case",
+      "same_enemy_at_4hp"
+    ],
+    "result": {
+      "assessment_kind": "heuristic",
+      "empirically_calibrated": false,
+      "case": "same_enemy_at_4hp",
+      "condition": {
+        "enemy": [
+          [
+            4,
+            2
+          ]
+        ],
+        "own_hp": 4,
+        "cash": 4,
+        "bg": [
+          2,
+          4
+        ],
+        "floor": 1
+      },
+      "initial_friendly_board": "empty/four free slots",
+      "enemy_hero_hp": 30,
+      "cash_price": [
+        0,
+        1
+      ],
+      "shared_price_settings": [
+        "central",
+        "corner_000",
+        "corner_001",
+        "corner_010",
+        "corner_011",
+        "corner_100",
+        "corner_101",
+        "corner_110",
+        "corner_111"
+      ],
+      "cards": [
+        {
+          "id": 13,
+          "name": "Woshua",
+          "shared_goal_feasible": true,
+          "enabled_goal_when_background_cannot": true,
+          "enabled_survival_when_background_cannot": true,
+          "current_gain_over_feasible_background": null
+        },
+        {
+          "id": 20,
+          "name": "Vulkin",
+          "shared_goal_feasible": true,
+          "enabled_goal_when_background_cannot": true,
+          "enabled_survival_when_background_cannot": true,
+          "current_gain_over_feasible_background": null
+        }
+      ],
+      "comparisons": [
+        {
+          "left": 13,
+          "right": 20,
+          "left_feasible": true,
+          "right_feasible": true,
+          "numeric_difference": {
+            "minimum": -3.543032027677593,
+            "maximum": -2.405933062836815,
+            "minimum_witness": {
+              "setting": "corner_001",
+              "cash_price": 0.0
+            },
+            "maximum_witness": {
+              "setting": "corner_110",
+              "cash_price": 0.0
+            },
+            "status": "right_strictly_preferred_on_declared_support"
+          },
+          "status": "right_strictly_preferred_on_declared_support"
+        }
+      ],
+      "scope": "Only the declared one ordinary enemy optional-attack window; not full-turn or match safety",
+      "infeasible_policy": "No numeric fallback when the shared HP/body-retention goal is infeasible",
+      "trace_warning": "Lowest hero HP and lowest asset value can have different enemy-reply witnesses",
+      "numerical_producer_commit": "475b436f6902faa8f5755c7959989421353c6ed7"
+    }
+  },
+  "dodge_not_forced_target": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "analysis/card-comparison/2026-10-19/compare_cards.py",
+      "reply",
+      "--ids",
+      "43",
+      "168",
+      "--case",
+      "balanced_trade",
+      "--price-setting",
+      "central",
+      "--cash-price",
+      ".5"
+    ],
+    "result": {
+      "assessment_kind": "heuristic",
+      "empirically_calibrated": false,
+      "case": "balanced_trade",
+      "condition": {
+        "enemy": [
+          [
+            5,
+            5
+          ]
+        ],
+        "own_hp": 15,
+        "cash": 6,
+        "bg": [],
+        "floor": 1
+      },
+      "initial_friendly_board": "empty/four free slots",
+      "enemy_hero_hp": 30,
+      "cash_price": 0.5,
+      "shared_price_settings": [
+        "central"
+      ],
+      "cards": [
+        {
+          "id": 43,
+          "name": "Lesser Dog",
+          "shared_goal_feasible": true,
+          "enabled_goal_when_background_cannot": false,
+          "enabled_survival_when_background_cannot": false,
+          "current_gain_over_feasible_background": {
+            "minimum": 1.6849634514602325,
+            "maximum": 1.6849634514602325,
+            "minimum_witness": {
+              "setting": "central",
+              "cash_price": 0.5
+            },
+            "maximum_witness": {
+              "setting": "central",
+              "cash_price": 0.5
+            },
+            "status": "left_strictly_preferred_on_declared_support"
+          }
+        },
+        {
+          "id": 168,
+          "name": "Sad Dragon",
+          "shared_goal_feasible": true,
+          "enabled_goal_when_background_cannot": false,
+          "enabled_survival_when_background_cannot": false,
+          "current_gain_over_feasible_background": {
+            "minimum": 1.6849634514602325,
+            "maximum": 1.6849634514602325,
+            "minimum_witness": {
+              "setting": "central",
+              "cash_price": 0.5
+            },
+            "maximum_witness": {
+              "setting": "central",
+              "cash_price": 0.5
+            },
+            "status": "left_strictly_preferred_on_declared_support"
+          },
+          "defense_enables_shared_goal": false,
+          "defense_value_vs_same_body_without_keyword": {
+            "minimum": 0.0,
+            "maximum": 0.0,
+            "minimum_witness": {
+              "setting": "central",
+              "cash_price": 0.5
+            },
+            "maximum_witness": {
+              "setting": "central",
+              "cash_price": 0.5
+            },
+            "status": "equal_in_current_projection"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "left": 43,
+          "right": 168,
+          "left_feasible": true,
+          "right_feasible": true,
+          "numeric_difference": {
+            "minimum": 0.0,
+            "maximum": 0.0,
+            "minimum_witness": {
+              "setting": "central",
+              "cash_price": 0.5
+            },
+            "maximum_witness": {
+              "setting": "central",
+              "cash_price": 0.5
+            },
+            "status": "equal_in_current_projection"
+          },
+          "status": "equal_in_current_projection"
+        }
+      ],
+      "scope": "Only the declared one ordinary enemy optional-attack window; not full-turn or match safety",
+      "infeasible_policy": "No numeric fallback when the shared HP/body-retention goal is infeasible",
+      "trace_warning": "Lowest hero HP and lowest asset value can have different enemy-reply witnesses",
+      "numerical_producer_commit": "475b436f6902faa8f5755c7959989421353c6ed7"
+    }
+  },
+  "dodge_durable_target": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "analysis/card-comparison/2026-10-19/compare_cards.py",
+      "reply",
+      "--ids",
+      "43",
+      "168",
+      "--case",
+      "durable_threat",
+      "--price-setting",
+      "central",
+      "--cash-price",
+      ".5"
+    ],
+    "result": {
+      "assessment_kind": "heuristic",
+      "empirically_calibrated": false,
+      "case": "durable_threat",
+      "condition": {
+        "enemy": [
+          [
+            5,
+            8
+          ]
+        ],
+        "own_hp": 15,
+        "cash": 6,
+        "bg": [],
+        "floor": 1
+      },
+      "initial_friendly_board": "empty/four free slots",
+      "enemy_hero_hp": 30,
+      "cash_price": 0.5,
+      "shared_price_settings": [
+        "central"
+      ],
+      "cards": [
+        {
+          "id": 43,
+          "name": "Lesser Dog",
+          "shared_goal_feasible": true,
+          "enabled_goal_when_background_cannot": false,
+          "enabled_survival_when_background_cannot": false,
+          "current_gain_over_feasible_background": {
+            "minimum": 0.8229831891475463,
+            "maximum": 0.8229831891475463,
+            "minimum_witness": {
+              "setting": "central",
+              "cash_price": 0.5
+            },
+            "maximum_witness": {
+              "setting": "central",
+              "cash_price": 0.5
+            },
+            "status": "left_strictly_preferred_on_declared_support"
+          }
+        },
+        {
+          "id": 168,
+          "name": "Sad Dragon",
+          "shared_goal_feasible": true,
+          "enabled_goal_when_background_cannot": false,
+          "enabled_survival_when_background_cannot": false,
+          "current_gain_over_feasible_background": {
+            "minimum": 1.6849634514602334,
+            "maximum": 1.6849634514602334,
+            "minimum_witness": {
+              "setting": "central",
+              "cash_price": 0.5
+            },
+            "maximum_witness": {
+              "setting": "central",
+              "cash_price": 0.5
+            },
+            "status": "left_strictly_preferred_on_declared_support"
+          },
+          "defense_enables_shared_goal": false,
+          "defense_value_vs_same_body_without_keyword": {
+            "minimum": 0.8619802623126871,
+            "maximum": 0.8619802623126871,
+            "minimum_witness": {
+              "setting": "central",
+              "cash_price": 0.5
+            },
+            "maximum_witness": {
+              "setting": "central",
+              "cash_price": 0.5
+            },
+            "status": "left_strictly_preferred_on_declared_support"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "left": 43,
+          "right": 168,
+          "left_feasible": true,
+          "right_feasible": true,
+          "numeric_difference": {
+            "minimum": -0.8619802623126871,
+            "maximum": -0.8619802623126871,
+            "minimum_witness": {
+              "setting": "central",
+              "cash_price": 0.5
+            },
+            "maximum_witness": {
+              "setting": "central",
+              "cash_price": 0.5
+            },
+            "status": "right_strictly_preferred_on_declared_support"
+          },
+          "status": "right_strictly_preferred_on_declared_support"
+        }
+      ],
+      "scope": "Only the declared one ordinary enemy optional-attack window; not full-turn or match safety",
+      "infeasible_policy": "No numeric fallback when the shared HP/body-retention goal is infeasible",
+      "trace_warning": "Lowest hero HP and lowest asset value can have different enemy-reply witnesses",
+      "numerical_producer_commit": "475b436f6902faa8f5755c7959989421353c6ed7"
+    }
+  },
+  "keep_body_goal": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "analysis/card-comparison/2026-10-19/compare_cards.py",
+      "reply",
+      "--ids",
+      "43",
+      "168",
+      "--case",
+      "balanced_trade_keep_body",
+      "--results",
+      "analysis/card-comparison/2026-10-19/reply-standing"
+    ],
+    "result": {
+      "assessment_kind": "heuristic",
+      "empirically_calibrated": false,
+      "case": "balanced_trade_keep_body",
+      "condition": {
+        "enemy": [
+          [
+            5,
+            5
+          ]
+        ],
+        "own_hp": 15,
+        "cash": 6,
+        "bg": [],
+        "floor": 1,
+        "body_floor": 1
+      },
+      "initial_friendly_board": "empty/four free slots",
+      "enemy_hero_hp": 30,
+      "cash_price": [
+        0,
+        1
+      ],
+      "shared_price_settings": [
+        "central",
+        "corner_000",
+        "corner_001",
+        "corner_010",
+        "corner_011",
+        "corner_100",
+        "corner_101",
+        "corner_110",
+        "corner_111"
+      ],
+      "cards": [
+        {
+          "id": 43,
+          "name": "Lesser Dog",
+          "shared_goal_feasible": false,
+          "enabled_goal_when_background_cannot": false,
+          "enabled_survival_when_background_cannot": false,
+          "current_gain_over_feasible_background": null
+        },
+        {
+          "id": 168,
+          "name": "Sad Dragon",
+          "shared_goal_feasible": true,
+          "enabled_goal_when_background_cannot": true,
+          "enabled_survival_when_background_cannot": false,
+          "current_gain_over_feasible_background": null,
+          "defense_enables_shared_goal": true,
+          "defense_value_vs_same_body_without_keyword": null
+        }
+      ],
+      "comparisons": [
+        {
+          "left": 43,
+          "right": 168,
+          "left_feasible": false,
+          "right_feasible": true,
+          "numeric_difference": null,
+          "status": "shared_goal_feasibility_differs"
+        }
+      ],
+      "scope": "Only the declared one ordinary enemy optional-attack window; not full-turn or match safety",
+      "infeasible_policy": "No numeric fallback when the shared HP/body-retention goal is infeasible",
+      "trace_warning": "Lowest hero HP and lowest asset value can have different enemy-reply witnesses",
+      "numerical_producer_commit": "ffe6d600913714280d1baa00b1c2d3bb748411c1"
+    }
+  },
+  "three_cost_keep_body": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "analysis/card-comparison/2026-10-19/compare_cards.py",
+      "reply",
+      "--ids",
+      "9",
+      "377",
+      "187",
+      "--case",
+      "three_cost_keep_body",
+      "--results",
+      "analysis/card-comparison/2026-10-19/reply-standing"
+    ],
+    "result": {
+      "assessment_kind": "heuristic",
+      "empirically_calibrated": false,
+      "case": "three_cost_keep_body",
+      "condition": {
+        "enemy": [
+          [
+            3,
+            2
+          ]
+        ],
+        "own_hp": 15,
+        "cash": 3,
+        "bg": [],
+        "floor": 1,
+        "body_floor": 1
+      },
+      "initial_friendly_board": "empty/four free slots",
+      "enemy_hero_hp": 30,
+      "cash_price": [
+        0,
+        1
+      ],
+      "shared_price_settings": [
+        "central",
+        "corner_000",
+        "corner_001",
+        "corner_010",
+        "corner_011",
+        "corner_100",
+        "corner_101",
+        "corner_110",
+        "corner_111"
+      ],
+      "cards": [
+        {
+          "id": 9,
+          "name": "Ice Cap",
+          "shared_goal_feasible": false,
+          "enabled_goal_when_background_cannot": false,
+          "enabled_survival_when_background_cannot": false,
+          "current_gain_over_feasible_background": null
+        },
+        {
+          "id": 377,
+          "name": "Ranger Rudinn",
+          "shared_goal_feasible": true,
+          "enabled_goal_when_background_cannot": true,
+          "enabled_survival_when_background_cannot": false,
+          "current_gain_over_feasible_background": null,
+          "defense_enables_shared_goal": true,
+          "defense_value_vs_same_body_without_keyword": null
+        },
+        {
+          "id": 187,
+          "name": "Candy Dish",
+          "shared_goal_feasible": true,
+          "enabled_goal_when_background_cannot": true,
+          "enabled_survival_when_background_cannot": false,
+          "current_gain_over_feasible_background": null
+        }
+      ],
+      "comparisons": [
+        {
+          "left": 9,
+          "right": 377,
+          "left_feasible": false,
+          "right_feasible": true,
+          "numeric_difference": null,
+          "status": "shared_goal_feasibility_differs"
+        },
+        {
+          "left": 9,
+          "right": 187,
+          "left_feasible": false,
+          "right_feasible": true,
+          "numeric_difference": null,
+          "status": "shared_goal_feasibility_differs"
+        },
+        {
+          "left": 377,
+          "right": 187,
+          "left_feasible": true,
+          "right_feasible": true,
+          "numeric_difference": {
+            "minimum": -1.363957376009162,
+            "maximum": -1.2081225778512656,
+            "minimum_witness": {
+              "setting": "corner_010",
+              "cash_price": 0.0
+            },
+            "maximum_witness": {
+              "setting": "corner_100",
+              "cash_price": 0.0
+            },
+            "status": "right_strictly_preferred_on_declared_support"
+          },
+          "status": "right_strictly_preferred_on_declared_support"
+        }
+      ],
+      "scope": "Only the declared one ordinary enemy optional-attack window; not full-turn or match safety",
+      "infeasible_policy": "No numeric fallback when the shared HP/body-retention goal is infeasible",
+      "trace_warning": "Lowest hero HP and lowest asset value can have different enemy-reply witnesses",
+      "numerical_producer_commit": "ffe6d600913714280d1baa00b1c2d3bb748411c1"
+    }
+  }
+}

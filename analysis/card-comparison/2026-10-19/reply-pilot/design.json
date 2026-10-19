@@ -1,0 +1,93 @@
+{
+  "assessment_kind": "heuristic",
+  "empirically_calibrated": false,
+  "producer_source_commit": "475b436f6902faa8f5755c7959989421353c6ed7",
+  "candidate_ids": [
+    9,
+    13,
+    20,
+    168,
+    187
+  ],
+  "price_settings": {
+    "central": {
+      "face_share": 0.2,
+      "threshold": 0.4,
+      "face_price": 0.25
+    }
+  },
+  "cases": {
+    "immediate_attack_needed": {
+      "enemy": [
+        [
+          4,
+          2
+        ]
+      ],
+      "own_hp": 3,
+      "cash": 3,
+      "bg": [
+        2,
+        4
+      ],
+      "floor": 1
+    },
+    "lethal_4_2_at_3hp": {
+      "enemy": [
+        [
+          4,
+          2
+        ]
+      ],
+      "own_hp": 3,
+      "cash": 4,
+      "bg": [
+        2,
+        4
+      ],
+      "floor": 1
+    }
+  },
+  "source_files": [
+    "response_window.py",
+    "run_reply_study.py",
+    "frontier.py"
+  ],
+  "price_input": "analysis/method-lab/2026-10-18/statistical_inputs.json",
+  "initial_own_board": "empty, four free physical slots",
+  "enemy_hero_hp": 30,
+  "enemy_action": "One ordinary ready enemy may attack a living friendly body, attack hero, or decline",
+  "opponent_other_actions": "No hand plays, draws, income, turn triggers or additional attackers in this declared window",
+  "survival_goal": "Every enemy response meets the stated own-HP floor; infeasible values remain null",
+  "signed_damage_price": "Nonlethal player damage only, at common external face_price",
+  "field_warning": "guaranteed_own_hp and asset-worst reply HP are different bounds; do not splice their witnesses",
+  "unknown_future": "Dust discounts and other future options outside this deadline are not estimated",
+  "excluded": "Bullseye/chain/death-child and multi-enemy combat rejected; no pretend-zero support",
+  "parameter_probabilities": null,
+  "real_match_winrate": null,
+  "names": {
+    "2": "Froggit",
+    "4": "Moldsmal",
+    "9": "Ice Cap",
+    "11": "Snowdrake",
+    "13": "Woshua",
+    "15": "Aaron",
+    "20": "Vulkin",
+    "21": "Tsunderplane",
+    "43": "Lesser Dog",
+    "49": "Glyde",
+    "168": "Sad Dragon",
+    "175": "Charles",
+    "187": "Candy Dish",
+    "243": "Bench",
+    "292": "The Warrior",
+    "377": "Ranger Rudinn",
+    "469": "Blockler B",
+    "470": "Blockler O",
+    "530": "Piranhas",
+    "602": "Rock Pet",
+    "649": "Broken Car",
+    "984": "Terakota Archer",
+    "375": "Green Clover"
+  }
+}
