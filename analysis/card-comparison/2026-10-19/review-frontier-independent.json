@@ -1,0 +1,68 @@
+{
+  "scope": "New finite synthetic menu mathematics only; no historical card experiment or model calibration rerun.",
+  "independent_oracle": "Fraction all-pair original line intersections and direct max evaluation; no production hull/difference oracle.",
+  "seed": 202610190217,
+  "checks": {
+    "envelope_cases": 606,
+    "difference_cases": 303,
+    "weighted_cases": 100,
+    "mixture_cases": 321,
+    "paired_range_cases": 160
+  },
+  "mathematical_checks_passed": true,
+  "observations": [
+    {
+      "case": "two_order_reversals",
+      "result": {
+        "minimum": -1.0,
+        "maximum": 1.0,
+        "minimum_at": 0.5,
+        "maximum_at": 0.0,
+        "zero_points": [
+          0.25,
+          0.75
+        ]
+      }
+    },
+    {
+      "case": "shared_lambda_cancellation",
+      "result": {
+        "second_board_mass_is_unknown": true,
+        "left_weakly_preferred_mass": [
+          0.5,
+          0.5
+        ],
+        "right_weakly_preferred_mass": [
+          0.5,
+          0.5
+        ],
+        "meaning": "All selected shared price settings and cash prices; not a meta estimate or a waiting-time model"
+      },
+      "reason": "Per-scenario independent extrema would incorrectly discard the common q=.5 equality."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "small numerical boundary bug",
+      "function": "affine_nonnegative_interval",
+      "input": [
+        [
+          -0.5000000000001,
+          1
+        ],
+        [
+          0.5,
+          -1
+        ]
+      ],
+      "output": [
+        0.5000000000001,
+        0.5
+      ],
+      "mathematical_interval": null,
+      "problem": "Tolerance permits an inverted interval.",
+      "recommendation": "Return None for strictly inconsistent bounds, or explicitly merge near ties into one valid point."
+    }
+  ],
+  "limitation": "Integer synthetic menus plus selected cancellation/tie boundaries; not proof of all floating-point inputs or real-game validity."
+}

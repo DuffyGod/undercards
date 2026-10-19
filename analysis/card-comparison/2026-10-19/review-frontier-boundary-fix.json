@@ -1,0 +1,301 @@
+{
+  "scope": "Only the interval-boundary repair and nearby endpoint safety.",
+  "original_finding_preserved": "review-frontier-independent.json",
+  "original_failure_now_returns": null,
+  "passed_cases": 17,
+  "original_main_mathematical_checks_rerun": false,
+  "cases": [
+    {
+      "case": "original_inverted_interval",
+      "constraints": [
+        [
+          -0.5000000000001,
+          1
+        ],
+        [
+          0.5,
+          -1
+        ]
+      ],
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": "reverse_constraint_order",
+      "constraints": [
+        [
+          0.5,
+          -1
+        ],
+        [
+          -0.5000000000001,
+          1
+        ]
+      ],
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": "exact_interior_singleton",
+      "constraints": [
+        [
+          -0.5,
+          1
+        ],
+        [
+          0.5,
+          -1
+        ]
+      ],
+      "expected": [
+        0.5,
+        0.5
+      ],
+      "actual": [
+        0.5,
+        0.5
+      ],
+      "passed": true
+    },
+    {
+      "case": "narrow_positive_interior",
+      "constraints": [
+        [
+          -0.5,
+          1
+        ],
+        [
+          0.5000000000001,
+          -1
+        ]
+      ],
+      "expected": [
+        0.5,
+        0.5000000000001
+      ],
+      "actual": [
+        0.5,
+        0.5000000000001
+      ],
+      "passed": true
+    },
+    {
+      "case": "empty_at_left_boundary",
+      "constraints": [
+        [
+          -1e-13,
+          -1
+        ]
+      ],
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": "left_boundary_singleton",
+      "constraints": [
+        [
+          0,
+          -1
+        ]
+      ],
+      "expected": [
+        0,
+        0
+      ],
+      "actual": [
+        0.0,
+        -0.0
+      ],
+      "passed": true
+    },
+    {
+      "case": "left_boundary_clipping",
+      "constraints": [
+        [
+          1e-13,
+          1
+        ]
+      ],
+      "expected": [
+        0,
+        1
+      ],
+      "actual": [
+        0.0,
+        1.0
+      ],
+      "passed": true
+    },
+    {
+      "case": "narrow_left_interval",
+      "constraints": [
+        [
+          1e-13,
+          -1
+        ]
+      ],
+      "expected": [
+        0,
+        1e-13
+      ],
+      "actual": [
+        0.0,
+        1e-13
+      ],
+      "passed": true
+    },
+    {
+      "case": "empty_at_right_boundary",
+      "constraints": [
+        [
+          -1.0000000000001,
+          1
+        ]
+      ],
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": "right_boundary_singleton",
+      "constraints": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "expected": [
+        1,
+        1
+      ],
+      "actual": [
+        1.0,
+        1.0
+      ],
+      "passed": true
+    },
+    {
+      "case": "right_boundary_clipping",
+      "constraints": [
+        [
+          1.0000000000001,
+          -1
+        ]
+      ],
+      "expected": [
+        0,
+        1
+      ],
+      "actual": [
+        0.0,
+        1.0
+      ],
+      "passed": true
+    },
+    {
+      "case": "narrow_right_interval",
+      "constraints": [
+        [
+          -0.9999999999999,
+          1
+        ]
+      ],
+      "expected": [
+        0.9999999999999,
+        1
+      ],
+      "actual": [
+        0.9999999999999,
+        1.0
+      ],
+      "passed": true
+    },
+    {
+      "case": "two_endpoint_constraints",
+      "constraints": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "expected": [
+        0,
+        1
+      ],
+      "actual": [
+        0.0,
+        1.0
+      ],
+      "passed": true
+    },
+    {
+      "case": "no_constraints",
+      "constraints": [],
+      "expected": [
+        0,
+        1
+      ],
+      "actual": [
+        0.0,
+        1.0
+      ],
+      "passed": true
+    },
+    {
+      "case": "constant_negative_above_tolerance",
+      "constraints": [
+        [
+          -1e-08,
+          0
+        ]
+      ],
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case": "constant_zero",
+      "constraints": [
+        [
+          0,
+          0
+        ]
+      ],
+      "expected": [
+        0,
+        1
+      ],
+      "actual": [
+        0.0,
+        1.0
+      ],
+      "passed": true
+    },
+    {
+      "case": "constant_positive",
+      "constraints": [
+        [
+          1,
+          0
+        ]
+      ],
+      "expected": [
+        0,
+        1
+      ],
+      "actual": [
+        0.0,
+        1.0
+      ],
+      "passed": true
+    }
+  ],
+  "limitation": "Floating-point/tolerance semantics for near-zero constant inequalities are unchanged; this checks bound ordering and [0,1] endpoints."
+}
