@@ -4,6 +4,8 @@
 
 2026-10-19 更新：当前续作分支为 `research/local-method-lab-20261018`，包含 `f75d98c` 及此前全部云端提交；新增方法研究和构筑实验，见 [恢复核对记录](analysis/recovery-review-2026-10-19.md)。后期旧实验缺口仍不重跑补齐；当前通用评分按未实战校准的启发式解释，详见 [评估标准](analysis/monster-value-heuristic/evidence-status-2026-10-17.md)。输出的 `assessment_evidence` 区分机械支持与实证可靠性。
 
+同日补传 `1a50ed9` 已接入：三份旧内核及测试的历史快照、原始变更和未应用补丁已归档，见 [补传说明](analysis/recovery-supplement-2026-10-19.md)。它们不覆盖当前模型，不代表完整旧实验已恢复。
+
 先读 [CONTINUATION.md](CONTINUATION.md) 接续研究；云端配置见 [CLOUD_SETUP.md](CLOUD_SETUP.md)。规则在 `skills/undercards/`，当前工具与报告在 `analysis/monster-value-heuristic/`。
 
 Python 3.11+，离线工具只需标准库。克隆后的首次启动：
