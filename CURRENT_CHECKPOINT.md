@@ -1,6 +1,8 @@
-# 2026-10-17：Git 交付与续作说明
+# 2026-10-19：Git 交付与续作说明
 
 此页优先于旧 `CONTINUATION.md` 中的下一步安排。
+
+**2026-10-19 获取结果：** 已获取并检出 `research/local-method-lab-20261018`，确认包含用户指定提交 `f75d98c`，并完整继承云端提交 `2bac3f2`、`2785480`。本地获取前无未提交改动；相对云端已交付版本仅新增 144 个文件，没有修改或删除旧文件。恢复范围及剩余缺口见 [本次核对记录](analysis/recovery-review-2026-10-19.md)。
 
 **最新研究决定：** 用户要求不重做缺失实验，降级为未实战校准的启发式评估模型。缺失范围、保留证据及执行规则见 [缺失实验与启发式降级决定](analysis/monster-value-heuristic/evidence-status-2026-10-17.md)。该决定优先于旧模拟器重建计划。
 
@@ -8,7 +10,7 @@
 
 用户已明确：只有成功推送到 Git 远端才算交付。后续实质成果必须提交并推送，同时报告分支和提交号。不能以本地文件、压缩包或哈希代替；不为交付重复计算已验证结论。
 
-本次保存分支：`research/information-policy-v01-20261017`，远端 `https://github.com/DuffyGod/undercards.git`。是否交付完成以推送成功及远端提交存在为准，具体提交号见交付消息。
+当前续作分支：`research/local-method-lab-20261018`，远端 `https://github.com/DuffyGod/undercards.git`。此前云端成果仍保留在 `research/information-policy-v01-20261017`，并已成为当前分支的祖先。是否交付完成以推送成功及远端提交存在为准，具体提交号见交付消息。
 
 ## 为什么此前文件缺失
 
