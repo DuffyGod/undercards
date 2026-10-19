@@ -5,7 +5,7 @@ import argparse
 import gzip
 import json
 
-from frontier import paired_range, mixture, piece_at, value, single_use_opportunity_bounds
+from frontier import paired_range, diagnose_pair, mixture, piece_at, value, single_use_opportunity_bounds, TOL
 from run_study import case_id
 
 HERE = Path(__file__).resolve().parent
@@ -29,7 +29,7 @@ def compare(data, design, ids, menu, board, cash, slots, price_setting='all',
                      board=board, cash=cash, available_slots=slots,
                      cash_price=cash_price if cash_price is not None else [0, 1],
                      shared_price_settings=list(selected))
-    comparison = [dict(left=a, right=b, **paired_range(selected, a, b, cash_price))
+    comparison = [dict(left=a, right=b, **diagnose_pair(selected, a, b, cash_price))
                   for a, b in combinations(ids, 2)]
     cards = []
     for cid in ids:
@@ -44,8 +44,13 @@ def compare(data, design, ids, menu, board, cash, slots, price_setting='all',
         if cash_price is not None and len(selected) == 1:
             curves = next(iter(selected.values()))
             p = piece_at(curves[str(cid)], cash_price)
-            row['chosen_current_plan'] = p.get('action', 'Condition on the publicly observed source board')
-            row['cash_paid'] = -p['slope']
+            strict = value(curves[str(cid)], cash_price) > value(curves['background'], cash_price) + TOL
+            if not strict:
+                p = piece_at(curves['background'], cash_price)
+            row['one_optimal_current_plan'] = p.get('action', 'Condition on the publicly observed source board')
+            row['focal_required_for_strict_gain'] = strict
+            row['plan_may_be_nonunique'] = True
+            row['menu_paid_or_design_mean_paid'] = -p['slope']
             row['net_menu_value'] = value(curves[str(cid)], cash_price)
         cards.append(row)
     output = dict(assessment_kind='heuristic', empirically_calibrated=False,
@@ -54,6 +59,7 @@ def compare(data, design, ids, menu, board, cash, slots, price_setting='all',
                              opponent_response=False, player_survival_evaluated=False,
                              real_world_opportunity_frequency_identified=False,
                              parameter_ranges_are_finite_designs=True,
+                             empty_target_legality='Inherited sparse-menu assumption when applicable; not independently server validated',
                              equality_may_hide_future_ability_differences=True),
                   source='results/curves.json.gz; design.json identifies frozen source revision')
     if second_board is not None:
@@ -98,6 +104,9 @@ def main():
             design = json.loads((args.results/'design.json').read_text(encoding='utf-8'))
             out = compare(data, design, args.ids, args.menu, args.board, args.cash, args.slots,
                           args.price_setting, args.cash_price, args.second_board)
+            out['source'] = dict(curves=str(args.results/'curves.json.gz'),
+                                 input_checkout_commit=design.get('input_checkout_commit'),
+                                 numerical_producer_commit=design.get('producer_source_commit'))
     except (ValueError, KeyError, FileNotFoundError) as e:
         p.error(str(e))
     print(json.dumps(out, ensure_ascii=False, indent=2))

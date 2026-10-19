@@ -131,6 +131,20 @@ def paired_range(setting_curves, left, right, lam=None):
                 status=classification(lo['minimum'], hi['maximum']))
 
 
+def diagnose_pair(setting_curves, left, right, lam=None):
+    result = paired_range(setting_curves, left, right, lam)
+    gains = [paired_range(setting_curves, cid, 'background', lam) for cid in (left, right)]
+    suppressed = all(g['maximum'] <= TOL for g in gains)
+    if suppressed:
+        explanation = 'Both focal cards add no current value over the background on this support; not evidence of whole-card equality'
+    elif result['status'] == 'equal_in_current_projection':
+        explanation = 'Equal current projected value; future triggers, defense and holding options can differ'
+    else:
+        explanation = 'Compare current achievable menus at shared prices; future and opponent responses are outside this result'
+    return dict(result, both_suppressed_by_background_or_budget=suppressed,
+                whole_card_ordering_identified=False, interpretation=explanation)
+
+
 def affine_nonnegative_interval(lines):
     """Intersection of a+b*q >= 0 for q in [0,1], without assigning q."""
     low, high = 0., 1.

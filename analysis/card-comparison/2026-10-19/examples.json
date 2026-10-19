@@ -1,0 +1,955 @@
+{
+  "archer_piranhas_two": {
+    "assessment_kind": "heuristic",
+    "empirically_calibrated": false,
+    "condition": {
+      "background_ids": [
+        2,
+        4
+      ],
+      "menu": "two_plain",
+      "board": "three_3_2",
+      "cash": 6,
+      "available_slots": 2,
+      "cash_price": 0.5,
+      "shared_price_settings": [
+        "central"
+      ]
+    },
+    "cards": [
+      {
+        "id": 530,
+        "name": "Piranhas",
+        "current_gain_over_background": {
+          "minimum": 1.0155466577356504,
+          "maximum": 1.0155466577356504,
+          "minimum_witness": {
+            "setting": "central",
+            "cash_price": 0.5
+          },
+          "maximum_witness": {
+            "setting": "central",
+            "cash_price": 0.5
+          },
+          "status": "left_strictly_preferred_on_declared_support"
+        },
+        "current_replacement_relative_to_froggit": {
+          "minimum": 0.9372767721279383,
+          "maximum": 0.9372767721279383,
+          "minimum_witness": {
+            "setting": "central",
+            "cash_price": 0.5
+          },
+          "maximum_witness": {
+            "setting": "central",
+            "cash_price": 0.5
+          },
+          "status": "left_strictly_preferred_on_declared_support"
+        },
+        "current_replacement_loss_range": [
+          0.0,
+          0.0
+        ],
+        "multi_turn_holding_cost_identified": false,
+        "one_optimal_current_plan": {
+          "prefix": [],
+          "suffix": [],
+          "candidate_used": true,
+          "focal_action": "deploy:attack_0"
+        },
+        "focal_required_for_strict_gain": true,
+        "plan_may_be_nonunique": true,
+        "menu_paid_or_design_mean_paid": 6,
+        "net_menu_value": 3.4137067272387114
+      },
+      {
+        "id": 984,
+        "name": "Terakota Archer",
+        "current_gain_over_background": {
+          "minimum": 2.1451130192010996,
+          "maximum": 2.1451130192010996,
+          "minimum_witness": {
+            "setting": "central",
+            "cash_price": 0.5
+          },
+          "maximum_witness": {
+            "setting": "central",
+            "cash_price": 0.5
+          },
+          "status": "left_strictly_preferred_on_declared_support"
+        },
+        "current_replacement_relative_to_froggit": {
+          "minimum": 2.0668431335933874,
+          "maximum": 2.0668431335933874,
+          "minimum_witness": {
+            "setting": "central",
+            "cash_price": 0.5
+          },
+          "maximum_witness": {
+            "setting": "central",
+            "cash_price": 0.5
+          },
+          "status": "left_strictly_preferred_on_declared_support"
+        },
+        "current_replacement_loss_range": [
+          0.0,
+          0.0
+        ],
+        "multi_turn_holding_cost_identified": false,
+        "one_optimal_current_plan": {
+          "prefix": [],
+          "suffix": [],
+          "candidate_used": true,
+          "focal_action": "magic_target_0:hold_attack"
+        },
+        "focal_required_for_strict_gain": true,
+        "plan_may_be_nonunique": true,
+        "menu_paid_or_design_mean_paid": 6,
+        "net_menu_value": 4.543273088704161
+      }
+    ],
+    "comparisons": [
+      {
+        "left": 530,
+        "right": 984,
+        "minimum": -1.1295663614654492,
+        "maximum": -1.1295663614654492,
+        "minimum_witness": {
+          "setting": "central",
+          "cash_price": 0.5
+        },
+        "maximum_witness": {
+          "setting": "central",
+          "cash_price": 0.5
+        },
+        "status": "right_strictly_preferred_on_declared_support",
+        "both_suppressed_by_background_or_budget": false,
+        "whole_card_ordering_identified": false,
+        "interpretation": "Compare current achievable menus at shared prices; future and opponent responses are outside this result"
+      }
+    ],
+    "scope": {
+      "current_deadline": true,
+      "future_special_abilities_priced": false,
+      "opponent_response": false,
+      "player_survival_evaluated": false,
+      "real_world_opportunity_frequency_identified": false,
+      "parameter_ranges_are_finite_designs": true,
+      "equality_may_hide_future_ability_differences": true
+    },
+    "source": "results/curves.json.gz; design.json identifies frozen source revision"
+  },
+  "archer_piranhas_three": {
+    "assessment_kind": "heuristic",
+    "empirically_calibrated": false,
+    "condition": {
+      "background_ids": [
+        2,
+        187,
+        15
+      ],
+      "menu": "three_plain",
+      "board": "three_3_2",
+      "cash": 6,
+      "available_slots": 2,
+      "cash_price": 0.5,
+      "shared_price_settings": [
+        "central"
+      ]
+    },
+    "cards": [
+      {
+        "id": 530,
+        "name": "Piranhas",
+        "current_gain_over_background": {
+          "minimum": 0.22629281181966654,
+          "maximum": 0.22629281181966654,
+          "minimum_witness": {
+            "setting": "central",
+            "cash_price": 0.5
+          },
+          "maximum_witness": {
+            "setting": "central",
+            "cash_price": 0.5
+          },
+          "status": "left_strictly_preferred_on_declared_support"
+        },
+        "current_replacement_relative_to_froggit": {
+          "minimum": 0.22629281181966654,
+          "maximum": 0.22629281181966654,
+          "minimum_witness": {
+            "setting": "central",
+            "cash_price": 0.5
+          },
+          "maximum_witness": {
+            "setting": "central",
+            "cash_price": 0.5
+          },
+          "status": "left_strictly_preferred_on_declared_support"
+        },
+        "current_replacement_loss_range": [
+          0.0,
+          0.0
+        ],
+        "multi_turn_holding_cost_identified": false,
+        "one_optimal_current_plan": {
+          "prefix": [],
+          "suffix": [],
+          "candidate_used": true,
+          "focal_action": "deploy:attack_0"
+        },
+        "focal_required_for_strict_gain": true,
+        "plan_may_be_nonunique": true,
+        "menu_paid_or_design_mean_paid": 6,
+        "net_menu_value": 3.4137067272387114
+      },
+      {
+        "id": 984,
+        "name": "Terakota Archer",
+        "current_gain_over_background": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "minimum_witness": {
+            "setting": "central",
+            "cash_price": 0.5
+          },
+          "maximum_witness": {
+            "setting": "central",
+            "cash_price": 0.5
+          },
+          "status": "equal_in_current_projection"
+        },
+        "current_replacement_relative_to_froggit": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "minimum_witness": {
+            "setting": "central",
+            "cash_price": 0.5
+          },
+          "maximum_witness": {
+            "setting": "central",
+            "cash_price": 0.5
+          },
+          "status": "equal_in_current_projection"
+        },
+        "current_replacement_loss_range": [
+          0.0,
+          0.0
+        ],
+        "multi_turn_holding_cost_identified": false,
+        "one_optimal_current_plan": {
+          "prefix": [],
+          "suffix": [
+            0,
+            1
+          ],
+          "candidate_used": false,
+          "focal_action": ""
+        },
+        "focal_required_for_strict_gain": false,
+        "plan_may_be_nonunique": true,
+        "menu_paid_or_design_mean_paid": 5,
+        "net_menu_value": 3.187413915419045
+      }
+    ],
+    "comparisons": [
+      {
+        "left": 530,
+        "right": 984,
+        "minimum": 0.22629281181966654,
+        "maximum": 0.22629281181966654,
+        "minimum_witness": {
+          "setting": "central",
+          "cash_price": 0.5
+        },
+        "maximum_witness": {
+          "setting": "central",
+          "cash_price": 0.5
+        },
+        "status": "left_strictly_preferred_on_declared_support",
+        "both_suppressed_by_background_or_budget": false,
+        "whole_card_ordering_identified": false,
+        "interpretation": "Compare current achievable menus at shared prices; future and opponent responses are outside this result"
+      }
+    ],
+    "scope": {
+      "current_deadline": true,
+      "future_special_abilities_priced": false,
+      "opponent_response": false,
+      "player_survival_evaluated": false,
+      "real_world_opportunity_frequency_identified": false,
+      "parameter_ranges_are_finite_designs": true,
+      "equality_may_hide_future_ability_differences": true
+    },
+    "source": "results/curves.json.gz; design.json identifies frozen source revision"
+  },
+  "archer_glyde_threshold": {
+    "assessment_kind": "heuristic",
+    "empirically_calibrated": false,
+    "condition": {
+      "background_ids": [
+        2,
+        4
+      ],
+      "menu": "two_plain",
+      "board": "empty",
+      "cash": 6,
+      "available_slots": 1,
+      "cash_price": [
+        0,
+        1
+      ],
+      "shared_price_settings": [
+        "central",
+        "corner_000",
+        "corner_001",
+        "corner_010",
+        "corner_011",
+        "corner_100",
+        "corner_101",
+        "corner_110",
+        "corner_111"
+      ]
+    },
+    "cards": [
+      {
+        "id": 49,
+        "name": "Glyde",
+        "current_gain_over_background": {
+          "minimum": -2.220446049250313e-16,
+          "maximum": 1.4001248183961144,
+          "minimum_witness": {
+            "setting": "corner_000",
+            "cash_price": 0.3463761337993577
+          },
+          "maximum_witness": {
+            "setting": "corner_010",
+            "cash_price": 0.0
+          },
+          "status": "left_weakly_preferred_on_declared_support"
+        },
+        "current_replacement_relative_to_froggit": {
+          "minimum": -2.220446049250313e-16,
+          "maximum": 1.4001248183961144,
+          "minimum_witness": {
+            "setting": "corner_000",
+            "cash_price": 0.3463761337993577
+          },
+          "maximum_witness": {
+            "setting": "corner_010",
+            "cash_price": 0.0
+          },
+          "status": "left_weakly_preferred_on_declared_support"
+        },
+        "current_replacement_loss_range": [
+          0.0,
+          2.220446049250313e-16
+        ],
+        "multi_turn_holding_cost_identified": false
+      },
+      {
+        "id": 984,
+        "name": "Terakota Archer",
+        "current_gain_over_background": {
+          "minimum": 0.0,
+          "maximum": 0.9257719242235174,
+          "minimum_witness": {
+            "setting": "central",
+            "cash_price": 0.22672451041142827
+          },
+          "maximum_witness": {
+            "setting": "corner_000",
+            "cash_price": 0.0
+          },
+          "status": "left_weakly_preferred_on_declared_support"
+        },
+        "current_replacement_relative_to_froggit": {
+          "minimum": 0.0,
+          "maximum": 0.9257719242235174,
+          "minimum_witness": {
+            "setting": "central",
+            "cash_price": 0.22672451041142827
+          },
+          "maximum_witness": {
+            "setting": "corner_000",
+            "cash_price": 0.0
+          },
+          "status": "left_weakly_preferred_on_declared_support"
+        },
+        "current_replacement_loss_range": [
+          0.0,
+          0.0
+        ],
+        "multi_turn_holding_cost_identified": false
+      }
+    ],
+    "comparisons": [
+      {
+        "left": 49,
+        "right": 984,
+        "minimum": -2.220446049250313e-16,
+        "maximum": 0.49969086801208173,
+        "minimum_witness": {
+          "setting": "corner_000",
+          "cash_price": 0.3463761337993577
+        },
+        "maximum_witness": {
+          "setting": "corner_010",
+          "cash_price": 0.2251084875960082
+        },
+        "status": "left_weakly_preferred_on_declared_support",
+        "both_suppressed_by_background_or_budget": false,
+        "whole_card_ordering_identified": false,
+        "interpretation": "Compare current achievable menus at shared prices; future and opponent responses are outside this result"
+      }
+    ],
+    "scope": {
+      "current_deadline": true,
+      "future_special_abilities_priced": false,
+      "opponent_response": false,
+      "player_survival_evaluated": false,
+      "real_world_opportunity_frequency_identified": false,
+      "parameter_ranges_are_finite_designs": true,
+      "equality_may_hide_future_ability_differences": true
+    },
+    "source": "results/curves.json.gz; design.json identifies frozen source revision",
+    "two_board_opportunity_conditions": {
+      "first_board": "empty",
+      "second_board": "three_3_2",
+      "interpretation": "Select focal card before the board is revealed; q is SECOND-board mass, not a temporal arrival model",
+      "comparisons": [
+        {
+          "left": 49,
+          "right": 984,
+          "second_board_mass_is_unknown": true,
+          "left_weakly_preferred_mass": null,
+          "right_weakly_preferred_mass": [
+            0.25247057179706045,
+            1.0
+          ],
+          "meaning": "All selected shared price settings and cash prices; not a meta estimate or a waiting-time model"
+        }
+      ]
+    }
+  },
+  "icecap_ranger_price_dependence": {
+    "assessment_kind": "heuristic",
+    "empirically_calibrated": false,
+    "condition": {
+      "background_ids": [
+        2,
+        4
+      ],
+      "menu": "two_plain",
+      "board": "empty",
+      "cash": 7,
+      "available_slots": 3,
+      "cash_price": [
+        0,
+        1
+      ],
+      "shared_price_settings": [
+        "central",
+        "corner_000",
+        "corner_001",
+        "corner_010",
+        "corner_011",
+        "corner_100",
+        "corner_101",
+        "corner_110",
+        "corner_111"
+      ]
+    },
+    "cards": [
+      {
+        "id": 9,
+        "name": "Ice Cap",
+        "current_gain_over_background": {
+          "minimum": -4.440892098500626e-16,
+          "maximum": 2.8544929951057254,
+          "minimum_witness": {
+            "setting": "corner_100",
+            "cash_price": 0.6899074014590315
+          },
+          "maximum_witness": {
+            "setting": "corner_001",
+            "cash_price": 0.0
+          },
+          "status": "left_weakly_preferred_on_declared_support"
+        },
+        "current_replacement_relative_to_froggit": {
+          "minimum": -1.021897488599544,
+          "maximum": 0.5573701931143873,
+          "minimum_witness": {
+            "setting": "corner_000",
+            "cash_price": 0.7014976650352415
+          },
+          "maximum_witness": {
+            "setting": "corner_111",
+            "cash_price": 0.0
+          },
+          "status": "conditional_ordering"
+        },
+        "current_replacement_loss_range": [
+          0.0,
+          1.021897488599544
+        ],
+        "multi_turn_holding_cost_identified": false
+      },
+      {
+        "id": 377,
+        "name": "Ranger Rudinn",
+        "current_gain_over_background": {
+          "minimum": -4.440892098500626e-16,
+          "maximum": 2.337284935418946,
+          "minimum_witness": {
+            "setting": "central",
+            "cash_price": 0.7199816973158913
+          },
+          "maximum_witness": {
+            "setting": "corner_000",
+            "cash_price": 0.0
+          },
+          "status": "left_weakly_preferred_on_declared_support"
+        },
+        "current_replacement_relative_to_froggit": {
+          "minimum": -0.8667028617240629,
+          "maximum": -0.04678265837629869,
+          "minimum_witness": {
+            "setting": "corner_000",
+            "cash_price": 0.779094978472982
+          },
+          "maximum_witness": {
+            "setting": "corner_110",
+            "cash_price": 1.0
+          },
+          "status": "right_strictly_preferred_on_declared_support"
+        },
+        "current_replacement_loss_range": [
+          0.04678265837629869,
+          0.8667028617240629
+        ],
+        "multi_turn_holding_cost_identified": false
+      }
+    ],
+    "comparisons": [
+      {
+        "left": 9,
+        "right": 377,
+        "minimum": -0.2327919403132217,
+        "maximum": 0.625945336600263,
+        "minimum_witness": {
+          "setting": "corner_000",
+          "cash_price": 0.0
+        },
+        "maximum_witness": {
+          "setting": "corner_111",
+          "cash_price": 0.0
+        },
+        "status": "conditional_ordering",
+        "both_suppressed_by_background_or_budget": false,
+        "whole_card_ordering_identified": false,
+        "interpretation": "Compare current achievable menus at shared prices; future and opponent responses are outside this result"
+      }
+    ],
+    "scope": {
+      "current_deadline": true,
+      "future_special_abilities_priced": false,
+      "opponent_response": false,
+      "player_survival_evaluated": false,
+      "real_world_opportunity_frequency_identified": false,
+      "parameter_ranges_are_finite_designs": true,
+      "equality_may_hide_future_ability_differences": true
+    },
+    "source": "results/curves.json.gz; design.json identifies frozen source revision"
+  },
+  "woshua_vulkin_supported_comparison": {
+    "assessment_kind": "heuristic",
+    "empirically_calibrated": false,
+    "condition": {
+      "background_ids": [
+        2,
+        187,
+        15
+      ],
+      "menu": "three_plain",
+      "board": "single_6_7",
+      "cash": 6,
+      "available_slots": 2,
+      "cash_price": [
+        0,
+        1
+      ],
+      "shared_price_settings": [
+        "central",
+        "corner_000",
+        "corner_001",
+        "corner_010",
+        "corner_011",
+        "corner_100",
+        "corner_101",
+        "corner_110",
+        "corner_111"
+      ]
+    },
+    "cards": [
+      {
+        "id": 13,
+        "name": "Woshua",
+        "current_gain_over_background": {
+          "minimum": 0.0,
+          "maximum": 0.6162874502975786,
+          "minimum_witness": {
+            "setting": "central",
+            "cash_price": 0.577024511927636
+          },
+          "maximum_witness": {
+            "setting": "corner_110",
+            "cash_price": 0.0
+          },
+          "status": "left_weakly_preferred_on_declared_support"
+        },
+        "current_replacement_relative_to_froggit": {
+          "minimum": 0.0,
+          "maximum": 0.6162874502975786,
+          "minimum_witness": {
+            "setting": "central",
+            "cash_price": 0.577024511927636
+          },
+          "maximum_witness": {
+            "setting": "corner_110",
+            "cash_price": 0.0
+          },
+          "status": "left_weakly_preferred_on_declared_support"
+        },
+        "current_replacement_loss_range": [
+          0.0,
+          0.0
+        ],
+        "multi_turn_holding_cost_identified": false
+      },
+      {
+        "id": 20,
+        "name": "Vulkin",
+        "current_gain_over_background": {
+          "minimum": 0.22714523125126362,
+          "maximum": 1.2442263490844754,
+          "minimum_witness": {
+            "setting": "corner_000",
+            "cash_price": 1.0
+          },
+          "maximum_witness": {
+            "setting": "corner_110",
+            "cash_price": 0.0
+          },
+          "status": "left_strictly_preferred_on_declared_support"
+        },
+        "current_replacement_relative_to_froggit": {
+          "minimum": 0.22714523125126362,
+          "maximum": 1.2442263490844754,
+          "minimum_witness": {
+            "setting": "corner_000",
+            "cash_price": 1.0
+          },
+          "maximum_witness": {
+            "setting": "corner_110",
+            "cash_price": 0.0
+          },
+          "status": "left_strictly_preferred_on_declared_support"
+        },
+        "current_replacement_loss_range": [
+          0.0,
+          0.0
+        ],
+        "multi_turn_holding_cost_identified": false
+      }
+    ],
+    "comparisons": [
+      {
+        "left": 13,
+        "right": 20,
+        "minimum": -0.68407997801744,
+        "maximum": -0.22714523125126362,
+        "minimum_witness": {
+          "setting": "corner_000",
+          "cash_price": 0.0
+        },
+        "maximum_witness": {
+          "setting": "corner_000",
+          "cash_price": 1.0
+        },
+        "status": "right_strictly_preferred_on_declared_support",
+        "both_suppressed_by_background_or_budget": false,
+        "whole_card_ordering_identified": false,
+        "interpretation": "Compare current achievable menus at shared prices; future and opponent responses are outside this result"
+      }
+    ],
+    "scope": {
+      "current_deadline": true,
+      "future_special_abilities_priced": false,
+      "opponent_response": false,
+      "player_survival_evaluated": false,
+      "real_world_opportunity_frequency_identified": false,
+      "parameter_ranges_are_finite_designs": true,
+      "equality_may_hide_future_ability_differences": true
+    },
+    "source": "results/curves.json.gz; design.json identifies frozen source revision"
+  },
+  "suppressed_glyde_archer": {
+    "assessment_kind": "heuristic",
+    "empirically_calibrated": false,
+    "condition": {
+      "background_ids": [
+        2,
+        187,
+        15
+      ],
+      "menu": "three_plain",
+      "board": "empty",
+      "cash": 8,
+      "available_slots": 2,
+      "cash_price": [
+        0,
+        1
+      ],
+      "shared_price_settings": [
+        "central",
+        "corner_000",
+        "corner_001",
+        "corner_010",
+        "corner_011",
+        "corner_100",
+        "corner_101",
+        "corner_110",
+        "corner_111"
+      ]
+    },
+    "cards": [
+      {
+        "id": 49,
+        "name": "Glyde",
+        "current_gain_over_background": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "minimum_witness": {
+            "setting": "central",
+            "cash_price": 0.0
+          },
+          "maximum_witness": {
+            "setting": "central",
+            "cash_price": 0.0
+          },
+          "status": "equal_in_current_projection"
+        },
+        "current_replacement_relative_to_froggit": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "minimum_witness": {
+            "setting": "central",
+            "cash_price": 0.0
+          },
+          "maximum_witness": {
+            "setting": "central",
+            "cash_price": 0.0
+          },
+          "status": "equal_in_current_projection"
+        },
+        "current_replacement_loss_range": [
+          0.0,
+          0.0
+        ],
+        "multi_turn_holding_cost_identified": false
+      },
+      {
+        "id": 984,
+        "name": "Terakota Archer",
+        "current_gain_over_background": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "minimum_witness": {
+            "setting": "central",
+            "cash_price": 0.0
+          },
+          "maximum_witness": {
+            "setting": "central",
+            "cash_price": 0.0
+          },
+          "status": "equal_in_current_projection"
+        },
+        "current_replacement_relative_to_froggit": {
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "minimum_witness": {
+            "setting": "central",
+            "cash_price": 0.0
+          },
+          "maximum_witness": {
+            "setting": "central",
+            "cash_price": 0.0
+          },
+          "status": "equal_in_current_projection"
+        },
+        "current_replacement_loss_range": [
+          0.0,
+          0.0
+        ],
+        "multi_turn_holding_cost_identified": false
+      }
+    ],
+    "comparisons": [
+      {
+        "left": 49,
+        "right": 984,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "minimum_witness": {
+          "setting": "central",
+          "cash_price": 0.0
+        },
+        "maximum_witness": {
+          "setting": "central",
+          "cash_price": 0.0
+        },
+        "status": "equal_in_current_projection",
+        "both_suppressed_by_background_or_budget": true,
+        "whole_card_ordering_identified": false,
+        "interpretation": "Both focal cards add no current value over the background on this support; not evidence of whole-card equality"
+      }
+    ],
+    "scope": {
+      "current_deadline": true,
+      "future_special_abilities_priced": false,
+      "opponent_response": false,
+      "player_survival_evaluated": false,
+      "real_world_opportunity_frequency_identified": false,
+      "parameter_ranges_are_finite_designs": true,
+      "equality_may_hide_future_ability_differences": true
+    },
+    "source": "results/curves.json.gz; design.json identifies frozen source revision"
+  },
+  "interior_price_counterexample": {
+    "assessment_kind": "heuristic",
+    "empirically_calibrated": false,
+    "condition": {
+      "background_ids": [
+        4,
+        602,
+        187,
+        15
+      ],
+      "menu": "four_plain",
+      "board": "three_3_2",
+      "cash": 11,
+      "available_slots": 2,
+      "cash_price": [
+        0,
+        1
+      ],
+      "shared_price_settings": [
+        "central"
+      ]
+    },
+    "cards": [
+      {
+        "id": 9,
+        "name": "Ice Cap",
+        "current_gain_over_background": {
+          "minimum": 0.0,
+          "maximum": 2.159945091947673,
+          "minimum_witness": {
+            "setting": "central",
+            "cash_price": 0.719981697315891
+          },
+          "maximum_witness": {
+            "setting": "central",
+            "cash_price": 0.0
+          },
+          "status": "left_weakly_preferred_on_declared_support"
+        },
+        "current_replacement_relative_to_froggit": {
+          "minimum": 0.0,
+          "maximum": 2.159945091947673,
+          "minimum_witness": {
+            "setting": "central",
+            "cash_price": 0.719981697315891
+          },
+          "maximum_witness": {
+            "setting": "central",
+            "cash_price": 0.0
+          },
+          "status": "left_weakly_preferred_on_declared_support"
+        },
+        "current_replacement_loss_range": [
+          0.0,
+          0.0
+        ],
+        "multi_turn_holding_cost_identified": false
+      },
+      {
+        "id": 187,
+        "name": "Candy Dish",
+        "current_gain_over_background": {
+          "minimum": 0.0,
+          "maximum": 0.007916661021503124,
+          "minimum_witness": {
+            "setting": "central",
+            "cash_price": 0.0
+          },
+          "maximum_witness": {
+            "setting": "central",
+            "cash_price": 0.7793588615789228
+          },
+          "status": "left_weakly_preferred_on_declared_support"
+        },
+        "current_replacement_relative_to_froggit": {
+          "minimum": 0.0,
+          "maximum": 0.007916661021503124,
+          "minimum_witness": {
+            "setting": "central",
+            "cash_price": 0.0
+          },
+          "maximum_witness": {
+            "setting": "central",
+            "cash_price": 0.7793588615789228
+          },
+          "status": "left_weakly_preferred_on_declared_support"
+        },
+        "current_replacement_loss_range": [
+          0.0,
+          0.0
+        ],
+        "multi_turn_holding_cost_identified": false
+      }
+    ],
+    "comparisons": [
+      {
+        "left": 9,
+        "right": 187,
+        "minimum": -0.007916661021503124,
+        "maximum": 2.159945091947673,
+        "minimum_witness": {
+          "setting": "central",
+          "cash_price": 0.7793588615789228
+        },
+        "maximum_witness": {
+          "setting": "central",
+          "cash_price": 0.0
+        },
+        "status": "conditional_ordering",
+        "both_suppressed_by_background_or_budget": false,
+        "whole_card_ordering_identified": false,
+        "interpretation": "Compare current achievable menus at shared prices; future and opponent responses are outside this result"
+      }
+    ],
+    "scope": {
+      "current_deadline": true,
+      "future_special_abilities_priced": false,
+      "opponent_response": false,
+      "player_survival_evaluated": false,
+      "real_world_opportunity_frequency_identified": false,
+      "parameter_ranges_are_finite_designs": true,
+      "equality_may_hide_future_ability_differences": true
+    },
+    "source": "results/curves.json.gz; design.json identifies frozen source revision"
+  }
+}

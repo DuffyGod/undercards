@@ -1,0 +1,5485 @@
+{
+  "assessment_kind": "heuristic",
+  "empirically_calibrated": false,
+  "intervention": "Background [Froggit,Moldsmal] -> [Froggit,Moldsmal,Aaron], identical cash6/slots2/enemy3x3/2",
+  "hypothesis": "Hand structure changes focal realization AND replacement competition; do not collapse them into a card-name bonus",
+  "forced_focal_only_is_diagnostic": true,
+  "forced_play_is_not_the_adopted_policy": true,
+  "current_deadline_only": true,
+  "opponent_reply": false,
+  "identity": "Every used focal costs6; at cash6 no other card can be played: M=max(B,Focal-only)",
+  "source_code": "controlled_hand_probe.py in the same Git delivery",
+  "results": {
+    "two_backgrounds": {
+      "central": {
+        "curves": {
+          "43": [
+            {
+              "intercept": 4.6849634514602325,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.1434016909785858
+            },
+            {
+              "intercept": 4.398160069503061,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.1434016909785858,
+              "high": 1.0
+            }
+          ],
+          "background": [
+            {
+              "intercept": 4.398160069503061,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 4.398160069503061,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.6849634514602325,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.1434016909785858
+            },
+            {
+              "intercept": 4.398160069503061,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.1434016909785858,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.413706727238711,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 7.543273088704161,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 2.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        },
+        "forced_focal_only": {
+          "43": [
+            {
+              "intercept": 4.6849634514602325,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 3.6246943002618175,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.6849634514602325,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.413706727238711,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 7.543273088704161,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 2.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        }
+      },
+      "corner_000": {
+        "curves": {
+          "43": [
+            {
+              "intercept": 4.762177754088974,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "background": [
+            {
+              "intercept": 4.762177754088974,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 4.762177754088974,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.762177754088974,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.830474229599625,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 8.112842496982518,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 2.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        },
+        "forced_focal_only": {
+          "43": [
+            {
+              "intercept": 4.746787546471896,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 3.8103973538674585,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.746787546471896,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.830474229599625,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 8.112842496982518,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 2.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        }
+      },
+      "corner_001": {
+        "curves": {
+          "43": [
+            {
+              "intercept": 4.762177754088974,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "background": [
+            {
+              "intercept": 4.762177754088974,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 4.762177754088974,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.762177754088974,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.830474229599625,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 8.112842496982518,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 2.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        },
+        "forced_focal_only": {
+          "43": [
+            {
+              "intercept": 4.746787546471896,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 3.8103973538674585,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.746787546471896,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.830474229599625,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 8.112842496982518,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 2.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        }
+      },
+      "corner_010": {
+        "curves": {
+          "43": [
+            {
+              "intercept": 4.663502706714733,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.2762539298678872
+            },
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.2762539298678872,
+              "high": 1.0
+            }
+          ],
+          "background": [
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.663502706714733,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.2762539298678872
+            },
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.2762539298678872,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.097291722367011,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.993148437694026
+            },
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.993148437694026,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 7.102844759908424,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 2.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        },
+        "forced_focal_only": {
+          "43": [
+            {
+              "intercept": 4.663502706714733,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 3.491540780941546,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.663502706714733,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.097291722367011,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 7.102844759908424,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 2.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        }
+      },
+      "corner_011": {
+        "curves": {
+          "43": [
+            {
+              "intercept": 4.663502706714733,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.2762539298678872
+            },
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.2762539298678872,
+              "high": 1.0
+            }
+          ],
+          "background": [
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.663502706714733,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.2762539298678872
+            },
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.2762539298678872,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.097291722367011,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.993148437694026
+            },
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.993148437694026,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 7.102844759908424,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 2.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        },
+        "forced_focal_only": {
+          "43": [
+            {
+              "intercept": 4.663502706714733,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 3.491540780941546,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.663502706714733,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.097291722367011,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 7.102844759908424,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 2.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        }
+      },
+      "corner_100": {
+        "curves": {
+          "43": [
+            {
+              "intercept": 4.6932539772863535,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.01664997612526209
+            },
+            {
+              "intercept": 4.659954025035829,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.01664997612526209,
+              "high": 1.0
+            }
+          ],
+          "background": [
+            {
+              "intercept": 4.659954025035829,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 4.659954025035829,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.6932539772863535,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.01664997612526209
+            },
+            {
+              "intercept": 4.659954025035829,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.01664997612526209,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.697057641901122,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 7.941077186472113,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 2.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        },
+        "forced_focal_only": {
+          "43": [
+            {
+              "intercept": 4.6932539772863535,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 3.7405566230860554,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.6932539772863535,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.697057641901122,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 7.941077186472113,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 2.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        }
+      },
+      "corner_101": {
+        "curves": {
+          "43": [
+            {
+              "intercept": 4.6932539772863535,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.01664997612526209
+            },
+            {
+              "intercept": 4.659954025035829,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.01664997612526209,
+              "high": 1.0
+            }
+          ],
+          "background": [
+            {
+              "intercept": 4.659954025035829,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 4.659954025035829,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.6932539772863535,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.01664997612526209
+            },
+            {
+              "intercept": 4.659954025035829,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.01664997612526209,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.697057641901122,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 7.941077186472113,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 2.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        },
+        "forced_focal_only": {
+          "43": [
+            {
+              "intercept": 4.6932539772863535,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 3.7405566230860554,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.6932539772863535,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.697057641901122,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 7.941077186472113,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 2.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        }
+      },
+      "corner_110": {
+        "curves": {
+          "43": [
+            {
+              "intercept": 4.618462898510707,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.29673636262199254
+            },
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.29673636262199254,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ],
+          "background": [
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.618462898510707,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.29673636262199254
+            },
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.29673636262199254,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 5.9850433217354455,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.9800265742343619
+            },
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.9800265742343619,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 6.9583321342943805,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 2.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        },
+        "forced_focal_only": {
+          "43": [
+            {
+              "intercept": 4.618462898510707,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 3.4327811434452853,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.618462898510707,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 5.9850433217354455,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 6.9583321342943805,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 2.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        }
+      },
+      "corner_111": {
+        "curves": {
+          "43": [
+            {
+              "intercept": 4.618462898510707,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.29673636262199254
+            },
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.29673636262199254,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ],
+          "background": [
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.0,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.618462898510707,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.29673636262199254
+            },
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.29673636262199254,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 5.9850433217354455,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.9800265742343619
+            },
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.9800265742343619,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 6.9583321342943805,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 2.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        },
+        "forced_focal_only": {
+          "43": [
+            {
+              "intercept": 4.618462898510707,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 3.4327811434452853,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.618462898510707,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 5.9850433217354455,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 6.9583321342943805,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 2.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "plus_aaron": {
+      "central": {
+        "curves": {
+          "43": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.6018399304969391
+            },
+            {
+              "intercept": 4.398160069503061,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.6018399304969391,
+              "high": 1.0
+            }
+          ],
+          "background": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.6018399304969391
+            },
+            {
+              "intercept": 4.398160069503061,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.6018399304969391,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.6018399304969391
+            },
+            {
+              "intercept": 4.398160069503061,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.6018399304969391,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.6018399304969391
+            },
+            {
+              "intercept": 4.398160069503061,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.6018399304969391,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.413706727238711,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 5.305058111148774,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.30505811114877357
+            },
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.30505811114877357,
+              "high": 0.6018399304969391
+            },
+            {
+              "intercept": 4.398160069503061,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.6018399304969391,
+              "high": 1.0
+            }
+          ]
+        },
+        "forced_focal_only": {
+          "43": [
+            {
+              "intercept": 4.6849634514602325,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 4.6849634514602325,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.6849634514602325,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.413706727238711,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 5.305058111148774,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        }
+      },
+      "corner_000": {
+        "curves": {
+          "43": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.2378222459110262
+            },
+            {
+              "intercept": 4.762177754088974,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.2378222459110262,
+              "high": 1.0
+            }
+          ],
+          "background": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.2378222459110262
+            },
+            {
+              "intercept": 4.762177754088974,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.2378222459110262,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.2378222459110262
+            },
+            {
+              "intercept": 4.762177754088974,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.2378222459110262,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.2378222459110262
+            },
+            {
+              "intercept": 4.762177754088974,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.2378222459110262,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.830474229599625,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 5.68794967831249,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.46288596211175825
+            },
+            {
+              "intercept": 4.762177754088974,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.46288596211175825,
+              "high": 1.0
+            }
+          ]
+        },
+        "forced_focal_only": {
+          "43": [
+            {
+              "intercept": 4.746787546471896,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 4.746787546471896,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.746787546471896,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.830474229599625,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 5.68794967831249,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        }
+      },
+      "corner_001": {
+        "curves": {
+          "43": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.2378222459110262
+            },
+            {
+              "intercept": 4.762177754088974,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.2378222459110262,
+              "high": 1.0
+            }
+          ],
+          "background": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.2378222459110262
+            },
+            {
+              "intercept": 4.762177754088974,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.2378222459110262,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.2378222459110262
+            },
+            {
+              "intercept": 4.762177754088974,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.2378222459110262,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.2378222459110262
+            },
+            {
+              "intercept": 4.762177754088974,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.2378222459110262,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.830474229599625,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 5.68794967831249,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.46288596211175825
+            },
+            {
+              "intercept": 4.762177754088974,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.46288596211175825,
+              "high": 1.0
+            }
+          ]
+        },
+        "forced_focal_only": {
+          "43": [
+            {
+              "intercept": 4.746787546471896,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 4.746787546471896,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.746787546471896,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.830474229599625,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 5.68794967831249,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        }
+      },
+      "corner_010": {
+        "curves": {
+          "43": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.8890051530210412
+            },
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.8890051530210412,
+              "high": 1.0
+            }
+          ],
+          "background": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.8890051530210412
+            },
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.8890051530210412,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.8890051530210412
+            },
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.8890051530210412,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.8890051530210412
+            },
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.8890051530210412,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.097291722367011,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.993148437694026
+            },
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.993148437694026,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 5.011428797362992,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.011428797362992071
+            },
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.011428797362992071,
+              "high": 0.8890051530210412
+            },
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.8890051530210412,
+              "high": 1.0
+            }
+          ]
+        },
+        "forced_focal_only": {
+          "43": [
+            {
+              "intercept": 4.663502706714733,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 4.663502706714733,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.663502706714733,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.097291722367011,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 5.011428797362992,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        }
+      },
+      "corner_011": {
+        "curves": {
+          "43": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.8890051530210412
+            },
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.8890051530210412,
+              "high": 1.0
+            }
+          ],
+          "background": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.8890051530210412
+            },
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.8890051530210412,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.8890051530210412
+            },
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.8890051530210412,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.8890051530210412
+            },
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.8890051530210412,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.097291722367011,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.993148437694026
+            },
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.993148437694026,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 5.011428797362992,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.011428797362992071
+            },
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.011428797362992071,
+              "high": 0.8890051530210412
+            },
+            {
+              "intercept": 4.110994846978959,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.8890051530210412,
+              "high": 1.0
+            }
+          ]
+        },
+        "forced_focal_only": {
+          "43": [
+            {
+              "intercept": 4.663502706714733,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 4.663502706714733,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.663502706714733,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.097291722367011,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 5.011428797362992,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        }
+      },
+      "corner_100": {
+        "curves": {
+          "43": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.34004597496417066
+            },
+            {
+              "intercept": 4.659954025035829,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.34004597496417066,
+              "high": 1.0
+            }
+          ],
+          "background": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.34004597496417066
+            },
+            {
+              "intercept": 4.659954025035829,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.34004597496417066,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.34004597496417066
+            },
+            {
+              "intercept": 4.659954025035829,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.34004597496417066,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.34004597496417066
+            },
+            {
+              "intercept": 4.659954025035829,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.34004597496417066,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.697057641901122,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 5.569234773032365,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.45464037399826784
+            },
+            {
+              "intercept": 4.659954025035829,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.45464037399826784,
+              "high": 1.0
+            }
+          ]
+        },
+        "forced_focal_only": {
+          "43": [
+            {
+              "intercept": 4.6932539772863535,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 4.6932539772863535,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.6932539772863535,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.697057641901122,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 5.569234773032365,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        }
+      },
+      "corner_101": {
+        "curves": {
+          "43": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.34004597496417066
+            },
+            {
+              "intercept": 4.659954025035829,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.34004597496417066,
+              "high": 1.0
+            }
+          ],
+          "background": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.34004597496417066
+            },
+            {
+              "intercept": 4.659954025035829,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.34004597496417066,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.34004597496417066
+            },
+            {
+              "intercept": 4.659954025035829,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.34004597496417066,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.34004597496417066
+            },
+            {
+              "intercept": 4.659954025035829,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.34004597496417066,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.697057641901122,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 5.569234773032365,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.45464037399826784
+            },
+            {
+              "intercept": 4.659954025035829,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.45464037399826784,
+              "high": 1.0
+            }
+          ]
+        },
+        "forced_focal_only": {
+          "43": [
+            {
+              "intercept": 4.6932539772863535,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 4.6932539772863535,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.6932539772863535,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 6.697057641901122,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 5.569234773032365,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        }
+      },
+      "corner_110": {
+        "curves": {
+          "43": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.9750098267332783
+            },
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.9750098267332783,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ],
+          "background": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.9750098267332783
+            },
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.9750098267332783,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.9750098267332783
+            },
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.9750098267332783,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.9750098267332783
+            },
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.9750098267332783,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 5.9850433217354455,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.9800265742343619
+            },
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.9800265742343619,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.9750098267332783
+            },
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.9750098267332783,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ]
+        },
+        "forced_focal_only": {
+          "43": [
+            {
+              "intercept": 4.618462898510707,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 4.618462898510707,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.618462898510707,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 5.9850433217354455,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 4.911549475918082,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        }
+      },
+      "corner_111": {
+        "curves": {
+          "43": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.9750098267332783
+            },
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.9750098267332783,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ],
+          "background": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.9750098267332783
+            },
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.9750098267332783,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.9750098267332783
+            },
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.9750098267332783,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.9750098267332783
+            },
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.9750098267332783,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 5.9850433217354455,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 0.9800265742343619
+            },
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.9800265742343619,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 5.0,
+              "slope": -5,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  2
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.0,
+              "high": 0.9750098267332783
+            },
+            {
+              "intercept": 4.024990173266722,
+              "slope": -4,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0,
+                  1
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 2,
+              "low": 0.9750098267332783,
+              "high": 0.9891037574452115
+            },
+            {
+              "intercept": 2.0467826583762987,
+              "slope": -2,
+              "action": {
+                "prefix": [],
+                "suffix": [
+                  0
+                ],
+                "candidate_used": false,
+                "focal_action": ""
+              },
+              "remaining_bodies": 1,
+              "low": 0.9891037574452115,
+              "high": 1.0
+            }
+          ]
+        },
+        "forced_focal_only": {
+          "43": [
+            {
+              "intercept": 4.618462898510707,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "49": [
+            {
+              "intercept": 4.618462898510707,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "168": [
+            {
+              "intercept": 4.618462898510707,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "530": [
+            {
+              "intercept": 5.9850433217354455,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "deploy:attack_0"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ],
+          "984": [
+            {
+              "intercept": 4.911549475918082,
+              "slope": -6,
+              "action": {
+                "prefix": [],
+                "suffix": [],
+                "candidate_used": true,
+                "focal_action": "magic_target_0:hold_attack"
+              },
+              "remaining_bodies": 1.0,
+              "low": 0.0,
+              "high": 1.0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "setting": "central",
+      "id": 43,
+      "name": "Lesser Dog",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 2.398160069503061,
+      "actual_menu_after_half": 2.5,
+      "background_before_half": 2.398160069503061,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "central",
+      "id": 49,
+      "name": "Glyde",
+      "focal_only_delta": 1.060269151198415,
+      "independent_mechanism_delta": 1.060269151198415,
+      "actual_menu_before_half": 2.398160069503061,
+      "actual_menu_after_half": 2.5,
+      "background_before_half": 2.398160069503061,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "central",
+      "id": 168,
+      "name": "Sad Dragon",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 2.398160069503061,
+      "actual_menu_after_half": 2.5,
+      "background_before_half": 2.398160069503061,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "central",
+      "id": 530,
+      "name": "Piranhas",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 3.4137067272387114,
+      "actual_menu_after_half": 3.4137067272387114,
+      "background_before_half": 2.398160069503061,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "central",
+      "id": 984,
+      "name": "Terakota Archer",
+      "focal_only_delta": -2.238214977555387,
+      "independent_mechanism_delta": -2.2382149775553866,
+      "actual_menu_before_half": 4.543273088704161,
+      "actual_menu_after_half": 2.5,
+      "background_before_half": 2.398160069503061,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "corner_000",
+      "id": 43,
+      "name": "Lesser Dog",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 2.762177754088974,
+      "actual_menu_after_half": 2.762177754088974,
+      "background_before_half": 2.762177754088974,
+      "background_after_half": 2.762177754088974
+    },
+    {
+      "setting": "corner_000",
+      "id": 49,
+      "name": "Glyde",
+      "focal_only_delta": 0.9363901926044371,
+      "independent_mechanism_delta": 0.9363901926044371,
+      "actual_menu_before_half": 2.762177754088974,
+      "actual_menu_after_half": 2.762177754088974,
+      "background_before_half": 2.762177754088974,
+      "background_after_half": 2.762177754088974
+    },
+    {
+      "setting": "corner_000",
+      "id": 168,
+      "name": "Sad Dragon",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 2.762177754088974,
+      "actual_menu_after_half": 2.762177754088974,
+      "background_before_half": 2.762177754088974,
+      "background_after_half": 2.762177754088974
+    },
+    {
+      "setting": "corner_000",
+      "id": 530,
+      "name": "Piranhas",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 3.8304742295996252,
+      "actual_menu_after_half": 3.8304742295996252,
+      "background_before_half": 2.762177754088974,
+      "background_after_half": 2.762177754088974
+    },
+    {
+      "setting": "corner_000",
+      "id": 984,
+      "name": "Terakota Archer",
+      "focal_only_delta": -2.4248928186700276,
+      "independent_mechanism_delta": -2.4248928186700276,
+      "actual_menu_before_half": 5.112842496982518,
+      "actual_menu_after_half": 2.762177754088974,
+      "background_before_half": 2.762177754088974,
+      "background_after_half": 2.762177754088974
+    },
+    {
+      "setting": "corner_001",
+      "id": 43,
+      "name": "Lesser Dog",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 2.762177754088974,
+      "actual_menu_after_half": 2.762177754088974,
+      "background_before_half": 2.762177754088974,
+      "background_after_half": 2.762177754088974
+    },
+    {
+      "setting": "corner_001",
+      "id": 49,
+      "name": "Glyde",
+      "focal_only_delta": 0.9363901926044371,
+      "independent_mechanism_delta": 0.9363901926044371,
+      "actual_menu_before_half": 2.762177754088974,
+      "actual_menu_after_half": 2.762177754088974,
+      "background_before_half": 2.762177754088974,
+      "background_after_half": 2.762177754088974
+    },
+    {
+      "setting": "corner_001",
+      "id": 168,
+      "name": "Sad Dragon",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 2.762177754088974,
+      "actual_menu_after_half": 2.762177754088974,
+      "background_before_half": 2.762177754088974,
+      "background_after_half": 2.762177754088974
+    },
+    {
+      "setting": "corner_001",
+      "id": 530,
+      "name": "Piranhas",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 3.8304742295996252,
+      "actual_menu_after_half": 3.8304742295996252,
+      "background_before_half": 2.762177754088974,
+      "background_after_half": 2.762177754088974
+    },
+    {
+      "setting": "corner_001",
+      "id": 984,
+      "name": "Terakota Archer",
+      "focal_only_delta": -2.4248928186700276,
+      "independent_mechanism_delta": -2.4248928186700276,
+      "actual_menu_before_half": 5.112842496982518,
+      "actual_menu_after_half": 2.762177754088974,
+      "background_before_half": 2.762177754088974,
+      "background_after_half": 2.762177754088974
+    },
+    {
+      "setting": "corner_010",
+      "id": 43,
+      "name": "Lesser Dog",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 2.110994846978959,
+      "actual_menu_after_half": 2.5,
+      "background_before_half": 2.110994846978959,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "corner_010",
+      "id": 49,
+      "name": "Glyde",
+      "focal_only_delta": 1.171961925773187,
+      "independent_mechanism_delta": 1.171961925773187,
+      "actual_menu_before_half": 2.110994846978959,
+      "actual_menu_after_half": 2.5,
+      "background_before_half": 2.110994846978959,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "corner_010",
+      "id": 168,
+      "name": "Sad Dragon",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 2.110994846978959,
+      "actual_menu_after_half": 2.5,
+      "background_before_half": 2.110994846978959,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "corner_010",
+      "id": 530,
+      "name": "Piranhas",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 3.097291722367011,
+      "actual_menu_after_half": 3.097291722367011,
+      "background_before_half": 2.110994846978959,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "corner_010",
+      "id": 984,
+      "name": "Terakota Archer",
+      "focal_only_delta": -2.0914159625454323,
+      "independent_mechanism_delta": -2.091415962545432,
+      "actual_menu_before_half": 4.102844759908424,
+      "actual_menu_after_half": 2.5,
+      "background_before_half": 2.110994846978959,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "corner_011",
+      "id": 43,
+      "name": "Lesser Dog",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 2.110994846978959,
+      "actual_menu_after_half": 2.5,
+      "background_before_half": 2.110994846978959,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "corner_011",
+      "id": 49,
+      "name": "Glyde",
+      "focal_only_delta": 1.171961925773187,
+      "independent_mechanism_delta": 1.171961925773187,
+      "actual_menu_before_half": 2.110994846978959,
+      "actual_menu_after_half": 2.5,
+      "background_before_half": 2.110994846978959,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "corner_011",
+      "id": 168,
+      "name": "Sad Dragon",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 2.110994846978959,
+      "actual_menu_after_half": 2.5,
+      "background_before_half": 2.110994846978959,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "corner_011",
+      "id": 530,
+      "name": "Piranhas",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 3.097291722367011,
+      "actual_menu_after_half": 3.097291722367011,
+      "background_before_half": 2.110994846978959,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "corner_011",
+      "id": 984,
+      "name": "Terakota Archer",
+      "focal_only_delta": -2.0914159625454323,
+      "independent_mechanism_delta": -2.091415962545432,
+      "actual_menu_before_half": 4.102844759908424,
+      "actual_menu_after_half": 2.5,
+      "background_before_half": 2.110994846978959,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "corner_100",
+      "id": 43,
+      "name": "Lesser Dog",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 2.6599540250358293,
+      "actual_menu_after_half": 2.6599540250358293,
+      "background_before_half": 2.6599540250358293,
+      "background_after_half": 2.6599540250358293
+    },
+    {
+      "setting": "corner_100",
+      "id": 49,
+      "name": "Glyde",
+      "focal_only_delta": 0.9526973542002981,
+      "independent_mechanism_delta": 0.9526973542002981,
+      "actual_menu_before_half": 2.6599540250358293,
+      "actual_menu_after_half": 2.6599540250358293,
+      "background_before_half": 2.6599540250358293,
+      "background_after_half": 2.6599540250358293
+    },
+    {
+      "setting": "corner_100",
+      "id": 168,
+      "name": "Sad Dragon",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 2.6599540250358293,
+      "actual_menu_after_half": 2.6599540250358293,
+      "background_before_half": 2.6599540250358293,
+      "background_after_half": 2.6599540250358293
+    },
+    {
+      "setting": "corner_100",
+      "id": 530,
+      "name": "Piranhas",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 3.6970576419011216,
+      "actual_menu_after_half": 3.6970576419011216,
+      "background_before_half": 2.6599540250358293,
+      "background_after_half": 2.6599540250358293
+    },
+    {
+      "setting": "corner_100",
+      "id": 984,
+      "name": "Terakota Archer",
+      "focal_only_delta": -2.371842413439748,
+      "independent_mechanism_delta": -2.371842413439749,
+      "actual_menu_before_half": 4.941077186472113,
+      "actual_menu_after_half": 2.6599540250358293,
+      "background_before_half": 2.6599540250358293,
+      "background_after_half": 2.6599540250358293
+    },
+    {
+      "setting": "corner_101",
+      "id": 43,
+      "name": "Lesser Dog",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 2.6599540250358293,
+      "actual_menu_after_half": 2.6599540250358293,
+      "background_before_half": 2.6599540250358293,
+      "background_after_half": 2.6599540250358293
+    },
+    {
+      "setting": "corner_101",
+      "id": 49,
+      "name": "Glyde",
+      "focal_only_delta": 0.9526973542002981,
+      "independent_mechanism_delta": 0.9526973542002981,
+      "actual_menu_before_half": 2.6599540250358293,
+      "actual_menu_after_half": 2.6599540250358293,
+      "background_before_half": 2.6599540250358293,
+      "background_after_half": 2.6599540250358293
+    },
+    {
+      "setting": "corner_101",
+      "id": 168,
+      "name": "Sad Dragon",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 2.6599540250358293,
+      "actual_menu_after_half": 2.6599540250358293,
+      "background_before_half": 2.6599540250358293,
+      "background_after_half": 2.6599540250358293
+    },
+    {
+      "setting": "corner_101",
+      "id": 530,
+      "name": "Piranhas",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 3.6970576419011216,
+      "actual_menu_after_half": 3.6970576419011216,
+      "background_before_half": 2.6599540250358293,
+      "background_after_half": 2.6599540250358293
+    },
+    {
+      "setting": "corner_101",
+      "id": 984,
+      "name": "Terakota Archer",
+      "focal_only_delta": -2.371842413439748,
+      "independent_mechanism_delta": -2.371842413439749,
+      "actual_menu_before_half": 4.941077186472113,
+      "actual_menu_after_half": 2.6599540250358293,
+      "background_before_half": 2.6599540250358293,
+      "background_after_half": 2.6599540250358293
+    },
+    {
+      "setting": "corner_110",
+      "id": 43,
+      "name": "Lesser Dog",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 2.0249901732667217,
+      "actual_menu_after_half": 2.5,
+      "background_before_half": 2.0249901732667217,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "corner_110",
+      "id": 49,
+      "name": "Glyde",
+      "focal_only_delta": 1.1856817550654215,
+      "independent_mechanism_delta": 1.1856817550654215,
+      "actual_menu_before_half": 2.0249901732667217,
+      "actual_menu_after_half": 2.5,
+      "background_before_half": 2.0249901732667217,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "corner_110",
+      "id": 168,
+      "name": "Sad Dragon",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 2.0249901732667217,
+      "actual_menu_after_half": 2.5,
+      "background_before_half": 2.0249901732667217,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "corner_110",
+      "id": 530,
+      "name": "Piranhas",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 2.9850433217354455,
+      "actual_menu_after_half": 2.9850433217354455,
+      "background_before_half": 2.0249901732667217,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "corner_110",
+      "id": 984,
+      "name": "Terakota Archer",
+      "focal_only_delta": -2.0467826583762987,
+      "independent_mechanism_delta": -2.0467826583762987,
+      "actual_menu_before_half": 3.9583321342943805,
+      "actual_menu_after_half": 2.5,
+      "background_before_half": 2.0249901732667217,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "corner_111",
+      "id": 43,
+      "name": "Lesser Dog",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 2.0249901732667217,
+      "actual_menu_after_half": 2.5,
+      "background_before_half": 2.0249901732667217,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "corner_111",
+      "id": 49,
+      "name": "Glyde",
+      "focal_only_delta": 1.1856817550654215,
+      "independent_mechanism_delta": 1.1856817550654215,
+      "actual_menu_before_half": 2.0249901732667217,
+      "actual_menu_after_half": 2.5,
+      "background_before_half": 2.0249901732667217,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "corner_111",
+      "id": 168,
+      "name": "Sad Dragon",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 2.0249901732667217,
+      "actual_menu_after_half": 2.5,
+      "background_before_half": 2.0249901732667217,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "corner_111",
+      "id": 530,
+      "name": "Piranhas",
+      "focal_only_delta": 0.0,
+      "independent_mechanism_delta": 0.0,
+      "actual_menu_before_half": 2.9850433217354455,
+      "actual_menu_after_half": 2.9850433217354455,
+      "background_before_half": 2.0249901732667217,
+      "background_after_half": 2.5
+    },
+    {
+      "setting": "corner_111",
+      "id": 984,
+      "name": "Terakota Archer",
+      "focal_only_delta": -2.0467826583762987,
+      "independent_mechanism_delta": -2.0467826583762987,
+      "actual_menu_before_half": 3.9583321342943805,
+      "actual_menu_after_half": 2.5,
+      "background_before_half": 2.0249901732667217,
+      "background_after_half": 2.5
+    }
+  ],
+  "input_and_frontier_revision": "a8b8e9d",
+  "cross_card_before_after": [
+    {
+      "left": 43,
+      "right": 49,
+      "before": {
+        "minimum": 0.0,
+        "maximum": 0.5934727252439851,
+        "minimum_witness": {
+          "setting": "central",
+          "cash_price": 0.1434016909785858
+        },
+        "maximum_witness": {
+          "setting": "corner_110",
+          "cash_price": 0.0
+        },
+        "status": "left_weakly_preferred_on_declared_support"
+      },
+      "after": {
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "minimum_witness": {
+          "setting": "central",
+          "cash_price": 0.0
+        },
+        "maximum_witness": {
+          "setting": "central",
+          "cash_price": 0.0
+        },
+        "status": "equal_in_current_projection"
+      }
+    },
+    {
+      "left": 43,
+      "right": 168,
+      "before": {
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "minimum_witness": {
+          "setting": "central",
+          "cash_price": 0.0
+        },
+        "maximum_witness": {
+          "setting": "central",
+          "cash_price": 0.0
+        },
+        "status": "equal_in_current_projection"
+      },
+      "after": {
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "minimum_witness": {
+          "setting": "central",
+          "cash_price": 0.0
+        },
+        "maximum_witness": {
+          "setting": "central",
+          "cash_price": 0.0
+        },
+        "status": "equal_in_current_projection"
+      }
+    },
+    {
+      "left": 43,
+      "right": 530,
+      "before": {
+        "minimum": -2.0682964755106514,
+        "maximum": 0.0,
+        "minimum_witness": {
+          "setting": "corner_000",
+          "cash_price": 0.0
+        },
+        "maximum_witness": {
+          "setting": "corner_010",
+          "cash_price": 0.993148437694026
+        },
+        "status": "right_weakly_preferred_on_declared_support"
+      },
+      "after": {
+        "minimum": -1.8304742295996252,
+        "maximum": 0.0,
+        "minimum_witness": {
+          "setting": "corner_000",
+          "cash_price": 0.0
+        },
+        "maximum_witness": {
+          "setting": "corner_010",
+          "cash_price": 0.993148437694026
+        },
+        "status": "right_weakly_preferred_on_declared_support"
+      }
+    },
+    {
+      "left": 43,
+      "right": 984,
+      "before": {
+        "minimum": -3.350664742893544,
+        "maximum": -0.9115494759180818,
+        "minimum_witness": {
+          "setting": "corner_000",
+          "cash_price": 0.0
+        },
+        "maximum_witness": {
+          "setting": "corner_110",
+          "cash_price": 1.0
+        },
+        "status": "right_strictly_preferred_on_declared_support"
+      },
+      "after": {
+        "minimum": -0.6879496783124903,
+        "maximum": 0.0,
+        "minimum_witness": {
+          "setting": "corner_000",
+          "cash_price": 0.0
+        },
+        "maximum_witness": {
+          "setting": "central",
+          "cash_price": 0.30505811114877357
+        },
+        "status": "right_weakly_preferred_on_declared_support"
+      }
+    },
+    {
+      "left": 49,
+      "right": 168,
+      "before": {
+        "minimum": -0.5934727252439851,
+        "maximum": 0.0,
+        "minimum_witness": {
+          "setting": "corner_110",
+          "cash_price": 0.0
+        },
+        "maximum_witness": {
+          "setting": "central",
+          "cash_price": 0.1434016909785858
+        },
+        "status": "right_weakly_preferred_on_declared_support"
+      },
+      "after": {
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "minimum_witness": {
+          "setting": "central",
+          "cash_price": 0.0
+        },
+        "maximum_witness": {
+          "setting": "central",
+          "cash_price": 0.0
+        },
+        "status": "equal_in_current_projection"
+      }
+    },
+    {
+      "left": 49,
+      "right": 530,
+      "before": {
+        "minimum": -2.0682964755106514,
+        "maximum": 0.0,
+        "minimum_witness": {
+          "setting": "corner_000",
+          "cash_price": 0.0
+        },
+        "maximum_witness": {
+          "setting": "corner_010",
+          "cash_price": 0.993148437694026
+        },
+        "status": "right_weakly_preferred_on_declared_support"
+      },
+      "after": {
+        "minimum": -1.8304742295996252,
+        "maximum": 0.0,
+        "minimum_witness": {
+          "setting": "corner_000",
+          "cash_price": 0.0
+        },
+        "maximum_witness": {
+          "setting": "corner_010",
+          "cash_price": 0.993148437694026
+        },
+        "status": "right_weakly_preferred_on_declared_support"
+      }
+    },
+    {
+      "left": 49,
+      "right": 984,
+      "before": {
+        "minimum": -3.350664742893544,
+        "maximum": -0.9115494759180818,
+        "minimum_witness": {
+          "setting": "corner_000",
+          "cash_price": 0.0
+        },
+        "maximum_witness": {
+          "setting": "corner_110",
+          "cash_price": 1.0
+        },
+        "status": "right_strictly_preferred_on_declared_support"
+      },
+      "after": {
+        "minimum": -0.6879496783124903,
+        "maximum": 0.0,
+        "minimum_witness": {
+          "setting": "corner_000",
+          "cash_price": 0.0
+        },
+        "maximum_witness": {
+          "setting": "central",
+          "cash_price": 0.30505811114877357
+        },
+        "status": "right_weakly_preferred_on_declared_support"
+      }
+    },
+    {
+      "left": 168,
+      "right": 530,
+      "before": {
+        "minimum": -2.0682964755106514,
+        "maximum": 0.0,
+        "minimum_witness": {
+          "setting": "corner_000",
+          "cash_price": 0.0
+        },
+        "maximum_witness": {
+          "setting": "corner_010",
+          "cash_price": 0.993148437694026
+        },
+        "status": "right_weakly_preferred_on_declared_support"
+      },
+      "after": {
+        "minimum": -1.8304742295996252,
+        "maximum": 0.0,
+        "minimum_witness": {
+          "setting": "corner_000",
+          "cash_price": 0.0
+        },
+        "maximum_witness": {
+          "setting": "corner_010",
+          "cash_price": 0.993148437694026
+        },
+        "status": "right_weakly_preferred_on_declared_support"
+      }
+    },
+    {
+      "left": 168,
+      "right": 984,
+      "before": {
+        "minimum": -3.350664742893544,
+        "maximum": -0.9115494759180818,
+        "minimum_witness": {
+          "setting": "corner_000",
+          "cash_price": 0.0
+        },
+        "maximum_witness": {
+          "setting": "corner_110",
+          "cash_price": 1.0
+        },
+        "status": "right_strictly_preferred_on_declared_support"
+      },
+      "after": {
+        "minimum": -0.6879496783124903,
+        "maximum": 0.0,
+        "minimum_witness": {
+          "setting": "corner_000",
+          "cash_price": 0.0
+        },
+        "maximum_witness": {
+          "setting": "central",
+          "cash_price": 0.30505811114877357
+        },
+        "status": "right_weakly_preferred_on_declared_support"
+      }
+    },
+    {
+      "left": 530,
+      "right": 984,
+      "before": {
+        "minimum": -1.2823682673828927,
+        "maximum": -0.9115494759180818,
+        "minimum_witness": {
+          "setting": "corner_000",
+          "cash_price": 0.0
+        },
+        "maximum_witness": {
+          "setting": "corner_110",
+          "cash_price": 1.0
+        },
+        "status": "right_strictly_preferred_on_declared_support"
+      },
+      "after": {
+        "minimum": 0.0,
+        "maximum": 1.142524551287135,
+        "minimum_witness": {
+          "setting": "corner_010",
+          "cash_price": 0.993148437694026
+        },
+        "maximum_witness": {
+          "setting": "corner_000",
+          "cash_price": 0.0
+        },
+        "status": "left_weakly_preferred_on_declared_support"
+      }
+    }
+  ]
+}

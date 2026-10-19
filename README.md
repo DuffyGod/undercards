@@ -1,5 +1,7 @@
 # Undercards 通用 Value 建模
 
+当前入口：[单卡条件比较程序与研究结果](analysis/card-comparison/2026-10-19/README.md)。按用户要求暂停组卡，先研究共同价格、同槽替代、手牌兑现条件及未识别的时机成本。
+
 低成本、可解释、对数值差异敏感的随从评价研究。主智能体负责数值模型；DeepSeek承担批量机制拆解、跨批检查、反例提案和代码审查。当前模型是有明确边界的启发式报价程序，仍不是完整卡池强度榜。
 
 2026-10-19 更新：当前续作分支为 `research/local-method-lab-20261018`，包含 `f75d98c` 及此前全部云端提交；新增方法研究和构筑实验，见 [恢复核对记录](analysis/recovery-review-2026-10-19.md)。后期旧实验缺口仍不重跑补齐；当前通用评分按未实战校准的启发式解释，详见 [评估标准](analysis/monster-value-heuristic/evidence-status-2026-10-17.md)。输出的 `assessment_evidence` 区分机械支持与实证可靠性。

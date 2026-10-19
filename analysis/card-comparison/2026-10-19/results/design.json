@@ -1,0 +1,185 @@
+{
+  "assessment_kind": "heuristic",
+  "empirically_calibrated": false,
+  "source_files": [
+    "analysis/method-lab/2026-10-18/statistical_inputs.json",
+    "analysis/method-lab/2026-10-18/slot_value.py",
+    "analysis/method-lab/2026-10-18/statistical_value.py",
+    "analysis/method-lab/2026-10-18/value_model.py",
+    "analysis/method-lab/2026-10-18/slot-results/slot-design.json",
+    "analysis/method-lab/2026-10-18/slot-results/slot-primary.csv.gz"
+  ],
+  "candidate_ids": [
+    2,
+    4,
+    9,
+    13,
+    15,
+    20,
+    21,
+    43,
+    49,
+    168,
+    175,
+    187,
+    377,
+    469,
+    530,
+    602,
+    984
+  ],
+  "names": {
+    "2": "Froggit",
+    "4": "Moldsmal",
+    "9": "Ice Cap",
+    "13": "Woshua",
+    "15": "Aaron",
+    "20": "Vulkin",
+    "21": "Tsunderplane",
+    "43": "Lesser Dog",
+    "49": "Glyde",
+    "168": "Sad Dragon",
+    "175": "Charles",
+    "187": "Candy Dish",
+    "377": "Ranger Rudinn",
+    "469": "Blockler B",
+    "530": "Piranhas",
+    "602": "Rock Pet",
+    "984": "Terakota Archer"
+  },
+  "native_costs": {
+    "2": 2,
+    "4": 2,
+    "9": 3,
+    "13": 4,
+    "15": 5,
+    "20": 4,
+    "21": 7,
+    "43": 6,
+    "49": 6,
+    "168": 6,
+    "175": 2,
+    "187": 3,
+    "377": 3,
+    "469": 5,
+    "530": 6,
+    "602": 2,
+    "984": 6
+  },
+  "price_settings": {
+    "central": {
+      "face_share": 0.2,
+      "threshold": 0.4,
+      "face_price": 0.25
+    },
+    "corner_000": {
+      "face_share": 0.1,
+      "threshold": 0.2,
+      "face_price": 0.15
+    },
+    "corner_001": {
+      "face_share": 0.1,
+      "threshold": 0.2,
+      "face_price": 0.4
+    },
+    "corner_010": {
+      "face_share": 0.1,
+      "threshold": 0.6,
+      "face_price": 0.15
+    },
+    "corner_011": {
+      "face_share": 0.1,
+      "threshold": 0.6,
+      "face_price": 0.4
+    },
+    "corner_100": {
+      "face_share": 0.35,
+      "threshold": 0.2,
+      "face_price": 0.15
+    },
+    "corner_101": {
+      "face_share": 0.35,
+      "threshold": 0.2,
+      "face_price": 0.4
+    },
+    "corner_110": {
+      "face_share": 0.35,
+      "threshold": 0.6,
+      "face_price": 0.15
+    },
+    "corner_111": {
+      "face_share": 0.35,
+      "threshold": 0.6,
+      "face_price": 0.4
+    }
+  },
+  "cash_residual_interval": [
+    0,
+    1
+  ],
+  "background_menus": {
+    "two_plain": [
+      2,
+      4
+    ],
+    "three_plain": [
+      2,
+      187,
+      15
+    ],
+    "four_plain": [
+      4,
+      602,
+      187,
+      15
+    ]
+  },
+  "cash_levels": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "slot_levels": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "pair_selection": "Every same-native-cost pair within the supported focal subset",
+  "no_parameter_probabilities": true,
+  "no_cross_cash_or_slot_average": true,
+  "stock_unit": "F(6,5)=5 model-G; retained hypothetical body scale, not calibrated Gold",
+  "objective": "max(asset - lambda*paid); common lambda*starting_cash cancels in every comparison",
+  "current_window_only": true,
+  "future_tail": 0,
+  "opponent_response": "none",
+  "holding_cost_estimated": false,
+  "player_survival_constraint": false,
+  "limits": [
+    "Only finite shared body-price settings; no continuous bound on body parameters",
+    "Named ordinary enemy bodies and a retained 32-board integration design, not a meta distribution",
+    "Cash lambda has a continuous finite-menu envelope, with floating-point tolerance",
+    "Observed-board policy differs across boards; focal card identity is fixed before mixing",
+    "No value assigned to future Dust/Dodge/Armor after the deadline; equality can be projection loss",
+    "The focal mechanism menu and summon-capacity assumptions are inherited, not independently server validated",
+    "Current same-slot loss is not a multi-turn holding cost or a deck recommendation"
+  ],
+  "input_checkout_commit": "59f895448a925959f3e3f426d550bfcfa3200614",
+  "producer_source_commit": "a8b8e9dc0f73955e175684baf242918018d4b30c",
+  "producer_sources": [
+    "analysis/card-comparison/2026-10-19/frontier.py",
+    "analysis/card-comparison/2026-10-19/run_study.py"
+  ],
+  "producer_uncommitted_at_execution": true,
+  "provenance_note": "Numerical producer content is preserved in producer_source_commit, committed after execution; input_checkout_commit identifies the pre-existing frozen input files. This metadata correction did not regenerate any numeric result."
+}

@@ -1,0 +1,94 @@
+{
+  "assessment_kind": "heuristic",
+  "empirically_calibrated": false,
+  "source_files": [
+    "analysis/method-lab/2026-10-18/statistical_inputs.json",
+    "analysis/method-lab/2026-10-18/slot_value.py",
+    "analysis/method-lab/2026-10-18/statistical_value.py",
+    "analysis/method-lab/2026-10-18/value_model.py",
+    "analysis/method-lab/2026-10-18/slot-results/slot-design.json",
+    "analysis/method-lab/2026-10-18/slot-results/slot-primary.csv.gz"
+  ],
+  "candidate_ids": [
+    2,
+    4,
+    13,
+    20,
+    49,
+    984
+  ],
+  "names": {
+    "2": "Froggit",
+    "4": "Moldsmal",
+    "13": "Woshua",
+    "20": "Vulkin",
+    "49": "Glyde",
+    "984": "Terakota Archer"
+  },
+  "native_costs": {
+    "2": 2,
+    "4": 2,
+    "13": 4,
+    "20": 4,
+    "49": 6,
+    "984": 6
+  },
+  "price_settings": {
+    "central": {
+      "face_share": 0.2,
+      "threshold": 0.4,
+      "face_price": 0.25
+    },
+    "corner_000": {
+      "face_share": 0.1,
+      "threshold": 0.2,
+      "face_price": 0.15
+    }
+  },
+  "cash_residual_interval": [
+    0,
+    1
+  ],
+  "background_menus": {
+    "three_plain": [
+      2,
+      187,
+      15
+    ]
+  },
+  "cash_levels": [
+    5,
+    8
+  ],
+  "slot_levels": [
+    1,
+    2
+  ],
+  "pair_selection": "Every same-native-cost pair within the supported focal subset",
+  "no_parameter_probabilities": true,
+  "no_cross_cash_or_slot_average": true,
+  "stock_unit": "F(6,5)=5 model-G; retained hypothetical body scale, not calibrated Gold",
+  "objective": "max(asset - lambda*paid); common lambda*starting_cash cancels in every comparison",
+  "current_window_only": true,
+  "future_tail": 0,
+  "opponent_response": "none",
+  "holding_cost_estimated": false,
+  "player_survival_constraint": false,
+  "limits": [
+    "Only finite shared body-price settings; no continuous bound on body parameters",
+    "Named ordinary enemy bodies and a retained 32-board integration design, not a meta distribution",
+    "Cash lambda has a continuous finite-menu envelope, with floating-point tolerance",
+    "Observed-board policy differs across boards; focal card identity is fixed before mixing",
+    "No value assigned to future Dust/Dodge/Armor after the deadline; equality can be projection loss",
+    "The focal mechanism menu and summon-capacity assumptions are inherited, not independently server validated",
+    "Current same-slot loss is not a multi-turn holding cost or a deck recommendation"
+  ],
+  "input_checkout_commit": "59f895448a925959f3e3f426d550bfcfa3200614",
+  "producer_source_commit": "a8b8e9dc0f73955e175684baf242918018d4b30c",
+  "producer_sources": [
+    "analysis/card-comparison/2026-10-19/frontier.py",
+    "analysis/card-comparison/2026-10-19/run_study.py"
+  ],
+  "producer_uncommitted_at_execution": true,
+  "provenance_note": "Numerical producer content is preserved in producer_source_commit, committed after execution; input_checkout_commit identifies the pre-existing frozen input files. This metadata correction did not regenerate any numeric result."
+}

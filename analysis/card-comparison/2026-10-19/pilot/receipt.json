@@ -1,0 +1,18 @@
+{
+  "new_envelopes": 144,
+  "cases": 12,
+  "same_cost_pairs": 3,
+  "pair_rows": 36,
+  "card_rows": 72,
+  "mixture_rows": 0,
+  "pair_classification_counts": {
+    "equal_in_current_projection": 27,
+    "right_weakly_preferred_on_declared_support": 5,
+    "right_strictly_preferred_on_declared_support": 4
+  },
+  "retained_point_values_reused": 72,
+  "largest_discrepancy_from_retained_points": 1.1546319456101628e-14,
+  "old_producer_executed": false,
+  "api_requests": 0,
+  "elapsed_seconds": 0.16393695899751037
+}

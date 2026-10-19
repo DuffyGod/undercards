@@ -1,0 +1,28 @@
+{
+  "source": "Previously generated results/curves.json.gz; no physical solver rerun",
+  "central_three_anchor_blind_cases": 41,
+  "largest_central_missed_negative_difference": 0.07137926961259211,
+  "all_price_three_anchor_blind_cases": 279,
+  "all_equal_or_suppressed_pair_rows": 5667,
+  "mixture_rows": 1701,
+  "no_row_counts_are_independent_game_samples": true,
+  "timing_nonidentification_example": {
+    "opportunity_union_bounds": [
+      0.5,
+      1.0
+    ],
+    "relative_value_bounds": [
+      -1.0,
+      1.0
+    ],
+    "temporal_dependence_identified": false,
+    "scope": "One use, constant reward, free waiting, no intertemporal budget competition; supplied marginals only"
+  },
+  "scientific_interpretation": [
+    "Most central sampling blind spots here are tiny; the material hand-structure reversal is a separate controlled probe",
+    "Cash/budget/background changes are conditional analyses, not a fabricated metagame mixture",
+    "No probability assigned to price corners; compare pairs at the SAME setting and cash price",
+    "Both suppressed is a current opportunity statement, not a whole-card equality assertion",
+    "Static opportunity proportions do not identify the temporal window dependence needed for carry value"
+  ]
+}

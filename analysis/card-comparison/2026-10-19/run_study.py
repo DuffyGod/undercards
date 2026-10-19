@@ -64,6 +64,10 @@ def main():
     args = parser.parse_args()
     if args.output.exists() and any(args.output.iterdir()):
         parser.error('Use a new output directory; existing evidence is never overwritten')
+    producer_paths = [str((HERE/name).relative_to(ROOT)) for name in ('frontier.py', 'run_study.py')]
+    producer_dirty = subprocess.check_output(
+        ['git', 'status', '--porcelain', '--', *producer_paths], cwd=ROOT, text=True).strip()
+    checkout_commit = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()
     args.output.mkdir(parents=True, exist_ok=True)
     started = time.monotonic()
     inputs = json.loads((METHOD / 'statistical_inputs.json').read_text(encoding='utf-8'))
@@ -185,7 +189,10 @@ def main():
         f.write(json.dumps(cases, ensure_ascii=False, separators=(',', ':')).encode('utf-8'))
     dump(args.output / 'design.json', dict(
         assessment_kind='heuristic', empirically_calibrated=False,
-        source_commit=subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(),
+        input_checkout_commit=checkout_commit,
+        producer_source_commit=checkout_commit if not producer_dirty else None,
+        producer_sources=producer_paths,
+        producer_uncommitted_at_execution=bool(producer_dirty),
         source_files=['analysis/method-lab/2026-10-18/' + p for p in
                       ('statistical_inputs.json', 'slot_value.py', 'statistical_value.py', 'value_model.py',
                        'slot-results/slot-design.json', 'slot-results/slot-primary.csv.gz')],
