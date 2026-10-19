@@ -1,0 +1,179 @@
+import copy
+import unittest
+import board_tactics as tactics
+import score_cards
+
+
+class BoardTacticsTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.cards=score_cards.load_cards()
+        cls.by={c['id']:c for c in cls.cards}
+
+    def solve(self,scene,objective='survive',cards=None,projection=False):
+        result=tactics.evaluate(dict(objectives=[objective],**scene),self.cards if cards is None else cards,projection=projection)
+        self.assertTrue(result['complete_in_declared_scope'],result['unknown'])
+        return result['objectives'][0]
+
+    def body(self,cid,**changes):
+        c=self.by[cid]
+        return dict(card_id=cid,attack=c['attack'],health=c['health'],**changes)
+
+    def test_real_budget_two_taunts_survive_while_expensive_body_dies(self):
+        scene=dict(gold_before_play=5,own_player_hp=2,enemy_bodies=[self.body(15),self.body(2)],horizon='enemy_attack')
+        winning=self.solve(dict(hand_ids=[15,1,1],**scene))
+        self.assertEqual(winning['metrics']['own_player_hp'],2)
+        self.assertEqual(winning['metrics']['own_remaining_gold'],3)
+        self.assertEqual({a['hand_index'] for a in winning['principal_variation'] if a['kind']=='deploy'},{1,2})
+        losing=self.solve(dict(hand_ids=[15],**scene))
+        self.assertTrue(losing['metrics']['own_player_dead'])
+
+    def test_haste_plus_ready_ally_exact_kill_threshold(self):
+        scene=dict(hand_ids=[115],gold_before_play=1,own_player_hp=6,
+                   ally_bodies_before_play=[self.body(4)],enemy_bodies=[self.body(15)],horizon='enemy_attack')
+        result=self.solve(scene)
+        self.assertEqual(result['metrics']['enemy_living_count'],0)
+        self.assertEqual(result['metrics']['own_player_hp'],6)
+        mutant=copy.deepcopy(self.cards)
+        next(c for c in mutant if c['id']==115)['attack']=1
+        self.assertTrue(self.solve(scene,cards=mutant)['metrics']['own_player_dead'])
+
+    def test_opponent_weak_first_consumes_dodge_then_lethal(self):
+        result=self.solve(dict(own_player_hp=3,ally_bodies_before_play=[dict(attack=2,health=4,taunt=True,dodge=1,ready=False)],
+                               enemy_bodies=[self.body(15),self.body(4),self.body(2)],horizon='enemy_attack'))
+        self.assertTrue(result['metrics']['own_player_dead'])
+        attacks=[a for a in result['principal_variation'] if a['kind']=='attack']
+        self.assertEqual([a['attacker'] for a in attacks],['enemy:2','enemy:0','enemy:1'])
+        self.assertEqual(attacks[-1]['target'],'face')
+
+    def test_charge_can_face_immediately_haste_cannot(self):
+        base=dict(gold_before_play=3,enemy_player_hp=3,horizon='enemy_attack')
+        self.assertTrue(self.solve(dict(hand_ids=[9],**base),'race')['metrics']['enemy_player_defeated'])
+        self.assertEqual(self.solve(dict(hand_ids=[115],**base),'race')['metrics']['enemy_player_hp'],3)
+
+    def test_attack_and_play_can_interleave_to_use_freed_slot(self):
+        own=[dict(attack=1,health=1) for _ in range(4)]
+        result=self.solve(dict(hand_ids=[115],gold_before_play=1,own_player_hp=2,ally_bodies_before_play=own,
+                               enemy_bodies=[dict(attack=4,health=5)],horizon='enemy_attack'))
+        self.assertFalse(result['metrics']['own_player_dead'])
+        path=result['principal_variation']; index=next(i for i,a in enumerate(path) if a['kind']=='deploy')
+        self.assertGreater(index,0)
+
+    def test_fresh_magic_cannot_select_caster(self):
+        scene=dict(hand_ids=[11],gold_before_play=4,enemy_player_hp=30)
+        result=self.solve(scene,'race')
+        self.assertEqual(result['metrics']['enemy_player_hp'],26)
+        self.assertEqual(result['endpoint_boards']['own'][0]['attack'],4)
+
+    def test_toriel_hp_buff_on_caster_not_hero(self):
+        result=self.solve(dict(hand_ids=[8],gold_before_play=self.by[8]['cost'],own_player_hp=10,enemy_player_hp=60,
+                               enemy_bodies=[dict(attack=9,health=9,ready=False)],horizon='enemy_attack'))
+        self.assertEqual(result['metrics']['own_player_hp'],10)
+        self.assertEqual(result['endpoint_boards']['own'][0]['max_health'],self.by[8]['health']+8)
+        self.assertEqual(result['endpoint_boards']['enemy'][0]['attack'],1)
+
+    def test_growth_happens_before_next_attack_not_deployment(self):
+        result=self.solve(dict(hand_ids=[307],gold_before_play=4,enemy_player_hp=30),'race')
+        self.assertEqual(result['metrics']['enemy_player_hp'],25)
+        self.assertEqual(result['endpoint_boards']['own'][0]['attack'],5)
+
+    def test_no_attack_heal_and_cash_cannot_override_win(self):
+        result=self.solve(dict(hand_ids=[9,404],gold_before_play=6,enemy_player_hp=3),'race')
+        self.assertTrue(result['metrics']['enemy_player_defeated'])
+        self.assertTrue(any(a.get('card_id')==9 for a in result['principal_variation']))
+        sink=self.solve(dict(hand_ids=[509],gold_before_play=5,own_player_hp=10,own_player_max_hp=30,enemy_player_hp=30),'survive')
+        self.assertEqual(sink['metrics']['own_player_hp'],16)
+
+    def test_refresh_and_swap_unverified_rulings_remain_unknown(self):
+        for cid in (514,16):
+            result=tactics.evaluate(dict(hand_ids=[cid],gold_before_play=20,enemy_bodies=[self.body(15,max_health=5)]),self.cards)
+            self.assertFalse(result['complete_in_declared_scope'])
+            self.assertFalse(result['full_legal_own_action_menu_searched'])
+
+    def test_summon_does_not_execute_magic_or_pay_summon_cost(self):
+        result=self.solve(dict(hand_ids=[563],gold_before_play=1,enemy_player_hp=30),'race')
+        self.assertEqual(result['metrics']['own_living_count'],2)
+        self.assertEqual(result['metrics']['own_remaining_gold'],0)
+        self.assertEqual(result['metrics']['enemy_player_hp'],28)
+
+    def test_unknown_is_not_zero_or_complete_and_projection_retains_text(self):
+        scene=dict(hand_ids=[17],gold_before_play=9)
+        result=tactics.evaluate(scene,self.cards)
+        self.assertFalse(result['complete_in_declared_scope'])
+        self.assertTrue(result['unknown'])
+        projected=tactics.evaluate(scene,self.cards,projection=True)
+        self.assertTrue(projected['complete_in_declared_scope'])
+        self.assertEqual(projected['scope'],'printed_body_projection')
+        self.assertIn('After this attacks',projected['omitted_effects'][0]['text'])
+        self.assertFalse(projected['full_card_value_evaluated'])
+
+    def test_state_budget_exhaustion_not_claimed_optimal(self):
+        result=tactics.evaluate(dict(hand_ids=[15],gold_before_play=5,node_limit=1),self.cards)
+        self.assertFalse(result['complete_in_declared_scope'])
+        self.assertTrue(all(not r['search_complete'] and r['metrics'] is None for r in result['objectives']))
+
+    def test_unpayable_unknown_or_no_play_limit_does_not_block_known_rescue(self):
+        scene=dict(hand_ids=[115,28],gold_before_play=1,own_player_hp=6,
+                   ally_bodies_before_play=[self.body(4)],enemy_bodies=[self.body(15)],horizon='enemy_attack')
+        result=tactics.evaluate(scene,self.cards)
+        self.assertTrue(result['complete_in_declared_scope'])
+        self.assertEqual(result['unreachable_unknown_hand_indexes'],[1])
+        self.assertEqual(result['objectives'][0]['metrics']['own_player_hp'],6)
+        result=tactics.evaluate(dict(hand_ids=[28],gold_before_play=100,max_plays=0),self.cards)
+        self.assertTrue(result['complete_in_declared_scope'])
+
+    def test_payable_unknown_retains_known_policy_without_claiming_global_best(self):
+        result=tactics.evaluate(dict(hand_ids=[115,17],gold_before_play=10),self.cards)
+        self.assertFalse(result['complete_in_declared_scope'])
+        self.assertTrue(result['known_feasible_policy_available'])
+        self.assertFalse(result['full_legal_own_action_menu_searched'])
+
+    def test_dust_replacement_has_real_slot_and_does_not_repeat_source_death(self):
+        result=self.solve(dict(hand_ids=[108],gold_before_play=6,own_player_hp=2,
+                               enemy_bodies=[self.body(15),self.body(2)],horizon='enemy_attack'))
+        self.assertFalse(result['metrics']['own_player_dead'])
+        self.assertTrue(any(u['card_id']==352 for u in result['endpoint_boards']['own']))
+        self.assertLessEqual(result['metrics']['own_living_count'],4)
+        self.assertEqual(result['metrics']['own_remaining_gold'],0)
+
+    def test_competing_dust_slot_queues_remain_unknown(self):
+        result=tactics.evaluate(dict(hand_ids=[13],gold_before_play=20,enemy_bodies=[self.body(108),self.body(235)]),self.cards)
+        self.assertFalse(result['complete_in_declared_scope'])
+        self.assertTrue(any('queue unknown' in x for x in result['unknown']))
+
+    def test_damage_reduction_per_instance_and_dodge_consumption(self):
+        u=tactics.Unit('x',-1,3,5,5,armor=True,dodge=1)
+        first=tactics.hurt(u,9)
+        self.assertEqual((first.health,first.dodge),(5,0))
+        self.assertEqual(tactics.hurt(first,3).health,3)
+
+    def test_observed_attacked_idle_heal_cannot_fabricate_rescue(self):
+        scene=dict(gold_before_play=0,max_plays=0,own_player_hp=1,own_player_max_hp=30,
+                   ally_bodies_before_play=[self.body(509,ready=False,attacked=True)],enemy_bodies=[self.body(2)],horizon='enemy_attack')
+        self.assertTrue(self.solve(scene)['metrics']['own_player_dead'])
+        del scene['ally_bodies_before_play'][0]['attacked']
+        unknown=tactics.evaluate(scene,self.cards)
+        self.assertFalse(unknown['complete_in_declared_scope'])
+        self.assertTrue(any('attacked fact' in x for x in unknown['unknown']))
+
+    def test_observed_fresh_haste_permission_cannot_hit_face(self):
+        result=self.solve(dict(ally_bodies_before_play=[self.body(115,attack_permission='monster_only')],
+                               enemy_player_hp=2,max_plays=0,horizon='enemy_attack'),'race')
+        self.assertFalse(result['metrics']['enemy_player_defeated'])
+        self.assertEqual(result['metrics']['enemy_player_hp'],2)
+
+    def test_target_choosing_obeys_taunt_after_each_kill(self):
+        result=self.solve(dict(enemy_player_hp=3,ally_bodies_before_play=[dict(attack=1,health=2),dict(attack=3,health=3)],
+                               enemy_bodies=[dict(attack=0,health=1,taunt=True)],horizon='enemy_attack'),'race')
+        self.assertTrue(result['metrics']['enemy_player_defeated'])
+        own=[a for a in result['principal_variation'] if a['kind']=='attack']
+        self.assertEqual([a['target'] for a in own],['enemy:0','face'])
+
+    def test_pyrope_before_attack_can_win_before_retaliation(self):
+        result=self.solve(dict(ally_bodies_before_play=[self.body(18)],enemy_bodies=[dict(attack=10,health=10,taunt=True)],
+                               enemy_player_hp=3,horizon='enemy_attack'),'race')
+        self.assertTrue(result['metrics']['enemy_player_defeated'])
+        self.assertEqual(result['endpoint_boards']['own'][0]['health'],5)
+
+
+if __name__=='__main__': unittest.main()

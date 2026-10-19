@@ -1,0 +1,88 @@
+{
+  "repository": "DuffyGod/undercards",
+  "branch": "research/local-method-lab-20261018",
+  "parent_commit": "85f6ca0b829307075d37b56f643a3edb05550e27",
+  "base_tree": "e5d1db25f971e0348d542a4ba82a2bed76735415",
+  "files": [
+    {
+      "path": "analysis/recovery-supplement-2026-10-19.md",
+      "bytes": 1693,
+      "sha256": "5451976f75a602296cd0a4ff35185c965e8973e14b472e2eedcea9b3f0fb0f72",
+      "git_blob_sha": "e5971018a5c54931bffdba510033ad6e76058749"
+    },
+    {
+      "path": "research-archive/recovered-file-changes-2026-10-19/historical-combat-report.md",
+      "bytes": 8961,
+      "sha256": "95ab1cf5584c41843aea41e294e8b2437300661eebe6a00fe1341efe2e1bdfb1",
+      "git_blob_sha": "15fcf4583defd4faf253f3eb08bef138560153b3"
+    },
+    {
+      "path": "research-archive/recovered-file-changes-2026-10-19/manifest.json",
+      "bytes": 123165,
+      "sha256": "589655f8d56cd91acb7367a02ee211695fdc1aad441315c08f07fcc7473775c1",
+      "git_blob_sha": "b40c12c4d2c2b51018adcf38893e3f1775dc5cac"
+    },
+    {
+      "path": "research-archive/recovered-file-changes-2026-10-19/prepare_bundle.py",
+      "bytes": 8452,
+      "sha256": "a71a2967049186fbb8e396065e027dbd3fb38fd11ec4a90012e28e54f1bac4aa",
+      "git_blob_sha": "c76087fe7de0889aa53b776afa99f444a77e2c8b"
+    },
+    {
+      "path": "research-archive/recovered-file-changes-2026-10-19/README.md",
+      "bytes": 5014,
+      "sha256": "a69609acc0dc483999e81c31905d10d37497e2ae7eb59e4635e112dea0a7ffb1",
+      "git_blob_sha": "a9e39c10e1b6d1fbadc1f59fc38daf34616f48f0"
+    },
+    {
+      "path": "research-archive/recovered-file-changes-2026-10-19/restored-source.tar.xz",
+      "bytes": 589984,
+      "sha256": "d0a9f77e4e1ea5ba02672692c0e2eebe6ceddf5943958edc07bd453195dadcec",
+      "git_blob_sha": "8389797c2d03c986c0d8e231d661a37567431c68"
+    },
+    {
+      "path": "research-archive/recovered-file-changes-2026-10-19/selected/board_tactics.py.txt",
+      "bytes": 34829,
+      "sha256": "f5a9bbf794ec1f4f0d4ea58dcf90a94b3cb54e7d42c3bf7fcccca3e97b6ba697",
+      "git_blob_sha": "b77d166afacad0db43d532dfba1d6784854c21bd"
+    },
+    {
+      "path": "research-archive/recovered-file-changes-2026-10-19/selected/combat_event_extensions.py.txt",
+      "bytes": 10177,
+      "sha256": "57a8b2bee597bff89ab1031bb22a906c84eb0690b7c3ee38dd657866b0a148df",
+      "git_blob_sha": "ac1a9c829545ddf437662686139cb3ca203c33c4"
+    },
+    {
+      "path": "research-archive/recovered-file-changes-2026-10-19/selected/paid_board_tactics.py.txt",
+      "bytes": 54288,
+      "sha256": "7dbf2ad8bfd4b7fa58b223c5e82556d6ff86b73e6940a67789304e73ad319400",
+      "git_blob_sha": "01a1af69767f1c5bcd5715534c1a23fc34de9076"
+    },
+    {
+      "path": "research-archive/recovered-file-changes-2026-10-19/selected/test_board_tactics.py.txt",
+      "bytes": 11020,
+      "sha256": "318b5cb488ba5f22235d586412d3668b9df6b832f54ed54c0140403b5be5277f",
+      "git_blob_sha": "f9f3141e8c2fb76d38ed3a78b3e8ac0e389e91f7"
+    },
+    {
+      "path": "research-archive/recovered-file-changes-2026-10-19/selected/test_combat_event_extensions.py.txt",
+      "bytes": 11787,
+      "sha256": "de1b1bb802c338ff646b8e1702ed55d324a4588d1101ebbf150e954f4b26b6aa",
+      "git_blob_sha": "2ea4215cb97c4e0f7e1daec97ff3bd2379f2f779"
+    },
+    {
+      "path": "research-archive/recovered-file-changes-2026-10-19/selected/test_paid_board_tactics.py.txt",
+      "bytes": 21625,
+      "sha256": "12f18a07d90902fa1ba56ccb22e476048c0ba7dce9b4e4aa3699b6e636cfcf56",
+      "git_blob_sha": "0b9ce32b3c8a7de79bb8062deede634287b7d4fa"
+    },
+    {
+      "path": "research-archive/recovered-file-changes-2026-10-19/verify_bundle.py",
+      "bytes": 2405,
+      "sha256": "54c06fc110257b739798a81ab784125835d59fc1eefec8423205fc2740b0368b",
+      "git_blob_sha": "23c31e7003a7b222c25a14c0c76ed1d18e8bd102"
+    }
+  ],
+  "self_excluded": true,
+  "scope": "New recovery archive and supplemental note only; no local trajectories or active model replacements."
+}

@@ -1,0 +1,212 @@
+"""Damage accounting, callback timing and explicit interpretation boundaries."""
+import copy
+from dataclasses import replace
+import json
+from pathlib import Path
+import unittest
+
+import board_tactics as board
+import combat_event_extensions as event
+import paid_board_tactics as paid
+import score_cards
+import certify_hand_hp
+import position_quotient_score as quotient
+
+
+class CombatEventTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.cards = score_cards.load_cards()
+        cls.by = {c['id']: c for c in cls.cards}
+
+    def body(self, cid, **changes):
+        c = self.by[cid]
+        return dict(dict(card_id=cid, attack=c['attack'], health=c['health'],
+                         max_health=c['health'], ready=True), **changes)
+
+    def engine(self, **changes):
+        data = dict(hand_ids=[], gold_before_play=0, max_plays='all_physical',
+                    next_max_plays='all_physical', own_deck_ids=[], opponent_deck_ids=[],
+                    own_fatigue_next=1, opponent_fatigue_next=1,
+                    own_player_hp=15, own_player_max_hp=30, enemy_player_hp=30,
+                    enemy_player_max_hp=30, opponent_hand_ids=[], opponent_gold_before_response=0,
+                    ally_bodies_before_play=[], enemy_bodies=[], horizon='next_enemy_attack',
+                    next_own_gold_income=0, next_natural_draw_count=0,
+                    next_opponent_gold_income=0, next_opponent_natural_draw_count=0)
+        data.update(changes)
+        e = paid.PaidSearch(self.cards, data)
+        self.assertFalse(e.unknown, e.unknown)
+        return e, e.root()
+
+    def attack(self, e, s, target='enemy:0'):
+        return next((a, child) for a, child in e.attacks(s) if a['target'] == target)
+
+    def test_strict_parser_and_plain_board_refusal(self):
+        for cid in (17, 163, 291, 526):
+            self.assertIsNotNone(event.parse(self.by[cid]))
+            self.assertTrue(board.compile_card(self.by[cid])['unknown'])
+        for text in ('After this takes DMG, heal the DMG taken as HP to you. Draw a card.',
+                     'Magic: After this takes DMG, deal 1 DMG to the opponent.',
+                     'After an ally takes DMG, deal 1 DMG to the opponent.'):
+            self.assertIsNone(event.parse(dict(effect_readable=text)))
+
+    def test_bad_rules_rejected(self):
+        for rs in ([], {'lethal_received': True}, {'npc': 'self'}, {'damage_measure': 'raw'}):
+            with self.assertRaises(ValueError):
+                self.engine(combat_event_rules=rs)
+
+    def test_knight_real_exchange_and_cap(self):
+        e, s = self.engine(ally_bodies_before_play=[self.body(17)], enemy_bodies=[dict(attack=2, health=3)])
+        a, t = self.attack(e, s)
+        self.assertEqual((t.own[0].health, t.enemy[0].health), (9, 0))
+        self.assertEqual((s.own[0].health, s.enemy[0].health), (9, 3))
+        self.assertEqual((t.own[0].ready, t.own[0].attacked), (0, True))
+
+    def test_knight_must_survive_and_does_not_heal_when_attacked(self):
+        e, s = self.engine(ally_bodies_before_play=[self.body(17)], enemy_bodies=[dict(attack=9, health=3)])
+        self.assertEqual(self.attack(e, s)[1].own[0].health, 0)
+        e, s = self.engine(ally_bodies_before_play=[self.body(17)], enemy_bodies=[dict(attack=2, health=8)])
+        s = e.boundary(s)
+        self.assertEqual(self.attack(e, s, 'own:0')[1].own[0].health, 7)
+
+    def test_knight_overkill_not_silently_hp_loss(self):
+        data = dict(ally_bodies_before_play=[self.body(17)], enemy_bodies=[dict(attack=2, health=1)])
+        e, s = self.engine(**data)
+        with self.assertRaisesRegex(paid.UnknownMechanic, 'damage measure'):
+            self.attack(e, s)
+        for measure, hp in (('hp_loss', 8), ('effective', 9)):
+            e, s = self.engine(**data, combat_event_rules={'damage_measure': measure})
+            self.assertEqual(self.attack(e, s)[1].own[0].health, hp)
+
+    def test_knight_dodge_and_armor_measurement(self):
+        for extra, hp in ((dict(dodge=1), 7), (dict(armor=True), 9)):
+            e, s = self.engine(ally_bodies_before_play=[self.body(17)],
+                               enemy_bodies=[dict(attack=2, health=8, **extra)])
+            self.assertEqual(self.attack(e, s)[1].own[0].health, hp)
+
+    def test_knight_observed_hp_cap_not_invented(self):
+        e, s = self.engine(ally_bodies_before_play=[dict(card_id=17, attack=5, health=9)],
+                           enemy_bodies=[dict(attack=2, health=8)])
+        with self.assertRaises(paid.UnknownMechanic):
+            self.attack(e, s)
+
+    def test_fountain_simultaneous_exchange_and_owner_cap(self):
+        for hp, expected in ((15, 17), (29, 30)):
+            e, s = self.engine(own_player_hp=hp, ally_bodies_before_play=[self.body(163)],
+                               enemy_bodies=[dict(attack=2, health=3)])
+            t = self.attack(e, s)[1]
+            self.assertEqual((t.own_hp, t.own[0].health, t.enemy[0].health), (expected, 3, 1))
+            self.assertFalse(t.own[0].pending_damage)
+
+    def test_fountain_lethal_unknown_but_cap_can_make_invariant(self):
+        data = dict(ally_bodies_before_play=[self.body(163)], enemy_bodies=[dict(attack=6, health=3)])
+        e, s = self.engine(**data)
+        with self.assertRaisesRegex(paid.UnknownMechanic, 'lethal'):
+            self.attack(e, s)
+        e, s = self.engine(**data, own_player_hp=30)
+        self.assertEqual(self.attack(e, s)[1].own_hp, 30)
+
+    def test_fountain_spell_events_are_not_merged_or_replayed(self):
+        e, s = self.engine(ally_bodies_before_play=[self.body(163)])
+        t = replace(s, own=(e.hurt_unit(s.own[0], 1, source=None, source_is_enemy=True),))
+        self.assertEqual(len(t.own[0].pending_damage), 1)
+        t = e.deaths(s, t)
+        self.assertEqual(t.own_hp, 16)
+        t = e.deaths(s, t)
+        self.assertEqual(t.own_hp, 16)
+        u = e.hurt_unit(t.own[0], 2, source=None, source_is_enemy=True)
+        t = e.deaths(t, replace(t, own=(u,)))
+        self.assertEqual((t.own_hp, t.own[0].health), (18, 2))
+
+    def test_pipe_positive_zero_and_lethal_boundaries(self):
+        for incoming, hp, enemy_hp in ((2, 4, 29), (5, 1, 29)):
+            e, s = self.engine(ally_bodies_before_play=[self.body(526)],
+                               enemy_bodies=[dict(attack=incoming, health=8)])
+            t = self.attack(e, s)[1]
+            self.assertEqual((t.own[0].health, t.enemy_hp), (hp, enemy_hp))
+        for incoming in (1, 6):
+            e, s = self.engine(ally_bodies_before_play=[self.body(526)],
+                               enemy_bodies=[dict(attack=incoming, health=8)])
+            with self.assertRaises(paid.UnknownMechanic): self.attack(e, s)
+
+    def test_pipe_zero_rule_explicit_and_dodge_consumes_once(self):
+        for trigger, expected in (('trigger', 29), ('no_trigger', 30)):
+            e, s = self.engine(ally_bodies_before_play=[self.body(526, dodge=1)],
+                               enemy_bodies=[dict(attack=2, health=8)],
+                               combat_event_rules={'zero_received': trigger})
+            t = self.attack(e, s)[1]
+            self.assertEqual((t.own[0].health, t.own[0].dodge, t.enemy_hp), (5, 0, expected))
+
+    def test_both_owners_and_monster_source_cost_are_preserved(self):
+        e, s = self.engine(enemy_bodies=[self.body(163)], ally_bodies_before_play=[dict(attack=2, health=3)], enemy_player_hp=15)
+        t = self.attack(e, s)[1]
+        self.assertEqual((t.enemy_hp, t.enemy[0].health), (17, 3))
+        e, s = self.engine(ally_bodies_before_play=[self.body(526)], enemy_bodies=[dict(attack=2, health=8)])
+        probe = event.effective_damage(e, s.own[0], 2, s.enemy[0], True)
+        self.assertEqual(probe, 1)
+        self.assertFalse(s.own[0].pending_damage)
+
+    def test_npc_pronoun_not_inferred_and_self_clock_blocks_next_attack(self):
+        data = dict(ally_bodies_before_play=[self.body(291)], enemy_bodies=[dict(attack=1, health=8)])
+        e, s = self.engine(**data)
+        with self.assertRaisesRegex(paid.UnknownMechanic, 'pronoun'): self.attack(e, s)
+        e, s = self.engine(**data, combat_event_rules={'attack_paralyze_it': 'self'})
+        t = self.attack(e, s)[1]
+        self.assertEqual(t.own[0].paralyze_owner_starts_remaining, 2)
+        t = e.boundary(e.boundary(t))
+        self.assertEqual(t.own[0].paralyze_owner_starts_remaining, 1)
+        self.assertFalse(list(e.attacks(t)))
+
+    def test_npc_target_rule_targets_original_physical_copy(self):
+        e, s = self.engine(ally_bodies_before_play=[self.body(291)], enemy_bodies=[dict(attack=1, health=8)],
+                           combat_event_rules={'attack_paralyze_it': 'target'})
+        t = self.attack(e, s)[1]
+        self.assertEqual((t.own[0].paralyze_owner_starts_remaining, t.enemy[0].paralyze_owner_starts_remaining), (0, 2))
+
+    def test_npc_face_does_not_invent_player_paralyze(self):
+        e, s = self.engine(ally_bodies_before_play=[self.body(291)],
+                           combat_event_rules={'attack_paralyze_it': 'target'})
+        with self.assertRaisesRegex(paid.UnknownMechanic, 'player'): self.attack(e, s, 'face')
+
+    def test_dead_npc_does_not_invent_a_surviving_source(self):
+        data = dict(ally_bodies_before_play=[self.body(291)], enemy_bodies=[dict(attack=6, health=8)])
+        e, s = self.engine(**data, combat_event_rules={'attack_paralyze_it': 'target'})
+        with self.assertRaises(paid.UnknownMechanic): self.attack(e, s)
+        for policy, clock in (('trigger', 2), ('no_trigger', 0)):
+            e, s = self.engine(**data, combat_event_rules={'attack_paralyze_it': 'target', 'dead_attacker': policy})
+            self.assertEqual(self.attack(e, s)[1].enemy[0].paralyze_owner_starts_remaining, clock)
+
+    def test_opposed_callbacks_cannot_choose_favorable_terminal_order(self):
+        e, s = self.engine(own_player_hp=1, enemy_player_hp=1,
+                           ally_bodies_before_play=[self.body(526)], enemy_bodies=[self.body(526)])
+        with self.assertRaisesRegex(paid.UnknownMechanic, 'order'): self.attack(e, s)
+
+    def test_silence_removes_future_callbacks_not_past_healing(self):
+        e, s = self.engine(ally_bodies_before_play=[self.body(163)])
+        t = e.deaths(s, replace(s, own=(e.hurt_unit(s.own[0], 1, source=None, source_is_enemy=True),)))
+        u = e.silence(t.own[0], phase=0)
+        self.assertFalse(u.after_damage)
+        t = replace(t, own=(u,))
+        t = e.deaths(t, replace(t, own=(e.hurt_unit(u, 1, source=None, source_is_enemy=True),)))
+        self.assertEqual(t.own_hp, 16)
+
+    def test_full_projection_and_silenced_hand_do_not_keep_callback(self):
+        e, s = self.engine(hand_ids=[163], hand_silenced=[True], gold_before_play=5)
+        self.assertFalse(e.hand[0][1].get('after_damage'))
+        t = list(e.deploys(s))[0][1]
+        self.assertFalse(t.own[0].after_damage)
+        projected = board.BoardSearch(self.cards, dict(e.data, max_plays=1, horizon='next_own_attack'), projection=True)
+        self.assertFalse(projected.hand[0][1].get('after_damage'))
+
+    def test_live_dust_order_is_not_guessed(self):
+        e, s = self.engine(ally_bodies_before_play=[self.body(17)], enemy_bodies=[self.body(617, attack=2)])
+        with self.assertRaisesRegex(paid.UnknownMechanic, 'Dust'): self.attack(e, s)
+
+    def test_event_body_cannot_gain_old_healing_or_position_certificate(self):
+        e, s = self.engine(hand_ids=[163], gold_before_play=5)
+        with self.assertRaisesRegex(paid.UnknownMechanic, 'Combat callbacks'): certify_hand_hp.healing_ceiling(e, s)
+        data = copy.deepcopy(e.data); data.update(physical_slots=True, front_slot_map=[0, 1, 2, 3])
+        self.assertFalse(quotient.eligibility(data, self.cards)['eligible'])
+
+
+if __name__ == '__main__': unittest.main()

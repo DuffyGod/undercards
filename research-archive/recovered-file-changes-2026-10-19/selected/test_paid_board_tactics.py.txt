@@ -1,0 +1,356 @@
+import copy
+from dataclasses import replace
+import unittest
+
+import paid_board_tactics as paid
+import score_cards
+
+
+class PaidBoardTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.cards = score_cards.load_cards()
+        cls.by = {c['id']: c for c in cls.cards}
+
+    def body(self, cid, **changes):
+        c = self.by[cid]
+        return dict(card_id=cid, attack=c['attack'], health=c['health'], **changes)
+
+    def solve(self, scene, objective='survive', cards=None):
+        result = paid.evaluate(dict(scene, objectives=[objective]), cards or self.cards)
+        self.assertTrue(result['complete_in_declared_scope'], result['unknown'])
+        return result['objectives'][0]
+
+    def played(self, scene, objective='survive'):
+        engine = paid.PaidSearch(self.cards, scene)
+        state = next(s for a, s in engine.deploys(engine.root()) if a['kind'] == 'deploy')
+        result = engine.solve(state, objective)
+        self.assertTrue(result['search_complete'], result.get('unknown'))
+        return result
+
+    def test_paid_damage_releases_taunt_then_face_budget_threshold(self):
+        scene = dict(hand_ids=[1], gold_before_play=1, own_player_hp=3,
+                     enemy_bodies=[self.body(15)], opponent_hand_ids=[96], horizon='enemy_attack')
+        safe = self.solve(dict(scene, opponent_gold_before_response=2))
+        dead = self.played(dict(scene, opponent_gold_before_response=3))
+        self.assertEqual(safe['metrics']['own_player_hp'], 3)
+        self.assertTrue(dead['metrics']['own_player_dead'])
+        cast = next(a for a in dead['principal_variation'] if a['kind'] == 'cast_spell')
+        self.assertEqual(cast['paid_gold'], 3)
+        self.assertEqual(cast['after_metrics']['enemy_remaining_gold'], 0)
+        self.assertEqual(cast['after_metrics']['own_remaining_gold'], 0)
+
+    def test_rock_dust_survives_damage_but_not_silence(self):
+        scene = dict(hand_ids=[108], gold_before_play=self.by[108]['cost'], own_player_hp=2,
+                     enemy_bodies=[self.body(15)], horizon='enemy_attack')
+        damage = self.solve(dict(scene, opponent_hand_ids=[96], opponent_gold_before_response=3))
+        silence = self.solve(dict(scene, opponent_hand_ids=[79], opponent_gold_before_response=1))
+        self.assertEqual(damage['metrics']['own_player_hp'], 2)
+        self.assertTrue(silence['metrics']['own_player_dead'])
+
+    def test_after_attack_damage_clears_dust_product_before_second_attack(self):
+        scene = dict(hand_ids=[108], gold_before_play=self.by[108]['cost'], own_player_hp=2,
+                     enemy_bodies=[self.body(15), self.body(2)], horizon='enemy_attack',
+                     opponent_hand_ids=[96], opponent_gold_before_response=3)
+        r = self.played(scene)
+        self.assertTrue(r['metrics']['own_player_dead'])
+        actions = [a for a in r['principal_variation'] if a.get('side') == 'enemy']
+        self.assertEqual([a['kind'] for a in actions], ['attack', 'cast_spell', 'attack'])
+        self.assertTrue(actions[1]['targets'][0][0] == 'own')
+        self.assertEqual(actions[2]['target'], 'face')
+
+    def test_enemy_spell_may_target_its_own_monster(self):
+        scene = dict(own_player_hp=2, enemy_bodies=[self.body(1)],
+                     ally_bodies_before_play=[self.body(15)], opponent_hand_ids=[79],
+                     opponent_gold_before_response=1, max_plays=0, horizon='next_own_attack')
+        result = self.solve(scene, 'race')
+        self.assertEqual(result['metrics']['enemy_player_hp'], 24)
+        engine = paid.PaidSearch(self.cards, scene)
+        enemy = engine.boundary(engine.root())
+        targets = {a['targets'][0][0] for a, _ in engine.casts(enemy, 'enemy')}
+        self.assertEqual(targets, {'own', 'enemy'})
+
+    def test_spell_and_attacks_can_interleave(self):
+        scene = dict(own_player_hp=2, ally_bodies_before_play=[dict(attack=0, health=6, taunt=True, dodge=1, ready=False)],
+                     enemy_bodies=[self.body(2), self.body(15)], opponent_hand_ids=[598],
+                     opponent_gold_before_response=1, max_plays=0, horizon='enemy_attack')
+        r = self.solve(scene)
+        self.assertTrue(r['metrics']['own_player_dead'])
+        self.assertTrue(any(a['kind'] == 'cast_spell' for a in r['principal_variation']))
+
+    def test_headshot_silences_dust_before_killing(self):
+        scene = dict(hand_ids=[108], gold_before_play=6, own_player_hp=2,
+                     enemy_bodies=[self.body(15), self.body(2)], horizon='enemy_attack',
+                     opponent_hand_ids=[100], opponent_gold_before_response=6)
+        r = self.solve(scene)
+        self.assertTrue(r['metrics']['own_player_dead'])
+        self.assertEqual(r['metrics']['own_living_count'], 0)
+
+    def test_two_physical_spell_copies_require_two_payments(self):
+        scene = dict(own_player_hp=1, opponent_hand_ids=[598, 598], opponent_gold_before_response=1,
+                     max_plays=0, horizon='enemy_attack')
+        r = self.solve(scene)
+        casts = [a for a in r['principal_variation'] if a['kind'] == 'cast_spell']
+        self.assertEqual(len(casts), 1)
+        self.assertEqual(r['metrics']['enemy_remaining_gold'], 0)
+
+    def test_restore_punishment_battleflies_seven_vs_six_real_gold(self):
+        scene = dict(hand_ids=[96, 438], own_player_hp=5, enemy_bodies=[dict(attack=6, health=6), dict(attack=3, health=3)],
+                     condition_known_state={'last_turn_gold_spent_on_spells': 1}, horizon='enemy_attack')
+        high = self.solve(dict(scene, gold_before_play=7))
+        low = self.solve(dict(scene, gold_before_play=6))
+        self.assertFalse(high['metrics']['own_player_dead'])
+        self.assertTrue(low['metrics']['own_player_dead'])
+        self.assertEqual(high['metrics']['own_remaining_gold'], 0)
+
+    def test_restore_gemstone_battleflies_five_vs_four(self):
+        scene = dict(hand_ids=[598, 438], own_player_hp=5, enemy_bodies=[dict(attack=6, health=6), dict(attack=3, health=3)],
+                     condition_known_state={'last_turn_gold_spent_on_spells': 1}, horizon='enemy_attack')
+        self.assertFalse(self.solve(dict(scene, gold_before_play=5))['metrics']['own_player_dead'])
+        self.assertTrue(self.solve(dict(scene, gold_before_play=4))['metrics']['own_player_dead'])
+
+    def test_need_false_body_play_and_unknown_history_retained(self):
+        scene = dict(hand_ids=[438], gold_before_play=4, enemy_bodies=[dict(attack=1, health=4, ready=False)], horizon='enemy_attack')
+        engine = paid.PaidSearch(self.cards, dict(scene, condition_known_state={'last_turn_gold_spent_on_spells': 0}))
+        state = next(s for a, s in engine.deploys(engine.root()))
+        self.assertEqual(state.own[0].attack, 3)
+        hit = next(s for a, s in engine.attacks(state))
+        self.assertEqual(hit.enemy[0].health, 1)
+        missing = paid.evaluate(scene, self.cards)
+        self.assertFalse(missing['complete_in_declared_scope'])
+        self.assertTrue(any('Need unknown' in x for x in missing['unknown']))
+
+    def test_full_board_spell_legal_monster_blocked(self):
+        scene = dict(hand_ids=[76, 15], gold_before_play=8, max_plays=1,
+                     ally_bodies_before_play=[self.body(2) for _ in range(4)], horizon='enemy_attack')
+        r = self.solve(scene, 'control')
+        self.assertFalse(any(a['kind'] == 'deploy' for a in r['principal_variation']))
+        self.assertTrue(any(a['kind'] == 'cast_spell' for a in r['principal_variation']))
+
+    def test_modified_stat_silence_unknown_not_dropped(self):
+        scene = dict(hand_ids=[8], gold_before_play=8, own_player_hp=6, enemy_bodies=[self.body(15)],
+                     opponent_hand_ids=[79], opponent_gold_before_response=1, horizon='enemy_attack')
+        r = paid.evaluate(scene, self.cards)
+        self.assertFalse(r['complete_in_declared_scope'])
+        self.assertTrue(any('Silence stat reset' in x for x in r['unknown']))
+
+    def test_unaffordable_unknown_enemy_not_assumed_free(self):
+        scene = dict(hand_ids=[1], gold_before_play=1, own_player_hp=3, enemy_bodies=[self.body(15)],
+                     opponent_hand_ids=[14], opponent_gold_before_response=4, horizon='enemy_attack')
+        self.assertEqual(self.solve(scene)['metrics']['own_player_hp'], 3)
+        r = paid.evaluate(dict(scene, opponent_gold_before_response=5), self.cards)
+        self.assertFalse(r['complete_in_declared_scope'])
+
+    def test_paralyze_prevents_attack_even_when_caster_is_killed(self):
+        scene = dict(hand_ids=[990], gold_before_play=1, own_player_hp=3, enemy_bodies=[self.body(15)],
+                     opponent_hand_ids=[96], opponent_gold_before_response=3, horizon='enemy_attack')
+        r = self.solve(scene)
+        self.assertEqual(r['metrics']['own_player_hp'], 3)
+        foe = r['endpoint_boards']['enemy'][0]
+        self.assertEqual((foe['attack'], foe['health'], foe['paralyze_owner_starts_remaining']), (7, 8, 1))
+
+    def test_paralyze_clock_is_owner_starts_not_half_turns(self):
+        scene = dict(enemy_bodies=[dict(attack=6, health=5, paralyze_owner_starts_remaining=2)], max_plays=0)
+        engine = paid.PaidSearch(self.cards, scene)
+        enemy = engine.boundary(engine.root())
+        self.assertEqual(enemy.enemy[0].paralyze_owner_starts_remaining, 1)
+        self.assertEqual(list(engine.attacks(enemy)), [])
+        own = engine.boundary(enemy)
+        self.assertEqual(own.enemy[0].paralyze_owner_starts_remaining, 1)
+        # The second start for this owner removes it. This is still only a
+        # rule-clock check, not an extension of the production search horizon.
+        next_enemy = engine.boundary(replace(own, phase=0))
+        self.assertEqual(next_enemy.enemy[0].paralyze_owner_starts_remaining, 0)
+        self.assertTrue(list(engine.attacks(next_enemy)))
+
+    def test_silence_current_charge_does_not_preserve_keyword_permission(self):
+        scene = dict(hand_ids=[9, 79], gold_before_play=4, max_plays=2)
+        engine = paid.PaidSearch(self.cards, scene)
+        state = next(s for a, s in engine.deploys(engine.root()) if a['kind'] == 'deploy')
+        silenced = next(s for a, s in engine.casts(state, 'own') if a['targets'] == [('own', 0)])
+        self.assertEqual(silenced.own[0].ready, 0)
+
+    def test_own_end_income_can_make_unknown_enemy_action_reachable(self):
+        custom = copy.deepcopy(self.cards)
+        c = next(c for c in custom if c['id'] == 196)
+        c['effect_readable'] = 'Turn end: Both players earn 5 GOLD.'
+        r = paid.evaluate(dict(hand_ids=[196], gold_before_play=0, opponent_hand_ids=[14],
+                               opponent_gold_before_response=0), custom)
+        self.assertFalse(r['complete_in_declared_scope'])
+
+    def test_restore_bench_fortune_deck_one_vs_two_at_natural_draw(self):
+        scene = dict(hand_ids=[243, 81], gold_before_play=5, own_player_hp=1,
+                     own_fatigue_next=1, next_natural_draw_count=1)
+        # Force the actual previously proposed two-card route. The planner may
+        # correctly prefer hold when paying Bench would cause later fatigue.
+        def route(deck):
+            engine = paid.PaidSearch(self.cards, dict(scene, own_deck_ids=deck))
+            state = next(s for a, s in engine.deploys(engine.root()) if a.get('card_id') == 243)
+            state = next(s for a, s in engine.deploys(state) if a.get('card_id') == 81)
+            return engine.solve(state, 'survive')
+        one, two = route([15]), route([15, 15])
+        self.assertTrue(one['metrics']['own_player_dead'])
+        self.assertFalse(two['metrics']['own_player_dead'])
+        self.assertEqual(one['draw_accounting']['fatigue_damage'], 1)
+        self.assertEqual(two['draw_accounting']['remaining_hand_count'], 2)
+
+    def test_unknown_draw_identity_and_playable_drawn_mechanic_not_zero(self):
+        scene = dict(hand_ids=[243], gold_before_play=20, max_plays=2, horizon='enemy_attack')
+        missing = paid.evaluate(scene, self.cards)
+        self.assertFalse(missing['complete_in_declared_scope'])
+        self.assertTrue(any('ordered known' in x for x in missing['unknown']))
+        unknown = paid.evaluate(dict(scene, own_deck_ids=[17]), self.cards)
+        self.assertFalse(unknown['complete_in_declared_scope'])
+        self.assertTrue(any('Reachable current card 17' in x for x in unknown['unknown']))
+
+    def test_draw_releases_played_slot_and_burns_only_over_capacity(self):
+        scene = dict(hand_ids=[243]*7, gold_before_play=5, max_plays=1, own_deck_ids=[15, 15],
+                     next_natural_draw_count=1)
+        engine = paid.PaidSearch(self.cards, scene)
+        state = next(s for _, s in engine.deploys(engine.root()))
+        r = engine.solve(state, 'survive')
+        self.assertTrue(r['search_complete'])
+        self.assertEqual(r['draw_accounting']['remaining_hand_count'], 7)
+        self.assertEqual(r['draw_accounting']['cards_burned'], 1)
+
+    def test_unknown_fatigue_does_not_default_to_first_hit(self):
+        r = paid.evaluate(dict(hand_ids=[243], gold_before_play=5, own_deck_ids=[]), self.cards)
+        self.assertFalse(r['complete_in_declared_scope'])
+        self.assertTrue(any('own_fatigue_next' in x for x in r['unknown']))
+
+    def test_dynamic_hand_discount_and_buff_unlock_real_saving_line(self):
+        scene = dict(hand_ids=[461,115],hand_costs=[8,1],gold_before_play=7,max_plays=2,own_player_hp=3,
+                     ally_bodies_before_play=[self.body(2)],enemy_bodies=[self.body(4),dict(card_id=15,attack=6,health=3,max_health=5)],
+                     horizon='enemy_attack')
+        r=paid.evaluate(scene,self.cards)
+        self.assertTrue(r['complete_in_declared_scope'],r['unknown'])
+        best=r['objectives'][0]
+        self.assertEqual(best['metrics']['own_player_hp'],3)
+        self.assertEqual(best['metrics']['enemy_living_count'],0)
+        cast=next(a for a in best['principal_variation'] if a['kind']=='cast_spell')
+        self.assertEqual(cast['paid_gold'],6)
+        self.assertEqual(best['metrics']['own_remaining_gold'],0)
+
+    def test_dynamic_discount_still_needs_observed_initial_cost(self):
+        r=paid.evaluate(dict(hand_ids=[461],gold_before_play=20),self.cards)
+        self.assertFalse(r['complete_in_declared_scope'])
+        self.assertTrue(any('observed current hand_costs' in x for x in r['unknown']))
+
+    def test_other_unknown_dynamic_discount_not_excluded_by_starting_cost(self):
+        changed=copy.deepcopy(self.cards)
+        next(c for c in changed if c['id']==461)['effect_readable']+=' Delay: Heal 3 HP to you.'
+        r=paid.evaluate(dict(hand_ids=[461],hand_costs=[8],gold_before_play=7),changed)
+        self.assertFalse(r['complete_in_declared_scope'])
+
+    def test_newly_deployed_dust_competition_is_unknown(self):
+        scene=dict(hand_ids=[235,164,20],gold_before_play=13,max_plays=3,own_player_hp=5,
+                   ally_bodies_before_play=[self.body(15,ready=False)],enemy_bodies=[self.body(2)],
+                   opponent_hand_ids=[797],opponent_gold_before_response=1,horizon='enemy_attack')
+        r=paid.evaluate(scene,self.cards)
+        self.assertFalse(r['complete_in_declared_scope'])
+        self.assertTrue(any('Dust products compete' in x for x in r['unknown']))
+
+    def test_natural_draw_before_heal_order_not_fabricated(self):
+        scene=dict(max_plays=0,own_player_hp=1,own_player_max_hp=30,own_deck_ids=[],own_fatigue_next=1,
+                   next_natural_draw_count=1,ally_bodies_before_play=[self.body(6,ready=False)])
+        unknown=paid.evaluate(scene,self.cards)
+        self.assertFalse(unknown['complete_in_declared_scope'])
+        self.assertTrue(any('order changes outcome' in x for x in unknown['unknown']))
+        first=self.solve(dict(scene,start_draw_order='draw_before_start'))
+        second=self.solve(dict(scene,start_draw_order='start_before_draw'))
+        self.assertTrue(first['metrics']['own_player_dead'])
+        self.assertEqual(second['metrics']['own_player_hp'],5)
+
+    def test_previous_silence_does_not_restore_growth(self):
+        scene=dict(max_plays=0,enemy_player_hp=9,ally_bodies_before_play=[self.body(307,silenced=True)])
+        r=self.solve(scene,'race')
+        self.assertFalse(r['metrics']['enemy_player_defeated'])
+        self.assertEqual(r['metrics']['enemy_player_hp'],1)
+        self.assertTrue(r['endpoint_boards']['own'][0]['silenced'])
+
+    def test_intrinsic_dt_silence_immunity(self):
+        scene=dict(max_plays=0,own_player_hp=2,ally_bodies_before_play=[self.body(65,ready=False)],
+                   enemy_bodies=[self.body(2)],opponent_hand_ids=[79],opponent_gold_before_response=1,horizon='enemy_attack')
+        r=self.solve(scene)
+        self.assertEqual(r['metrics']['own_player_hp'],2)
+        self.assertTrue(r['endpoint_boards']['own'][0]['taunt'])
+
+    def test_silence_removes_plain_paralyze_but_not_dt_intrinsic_immunity(self):
+        scene=dict(hand_ids=[79],gold_before_play=1,max_plays=1,horizon='enemy_attack',
+            ally_bodies_before_play=[self.body(15,paralyze_owner_starts_remaining=2)])
+        engine=paid.PaidSearch(self.cards,scene);root=engine.root()
+        self.assertEqual(list(engine.attacks(root)),[])
+        state=next(s for a,s in engine.casts(root,'own') if a['targets']==[('own',0)])
+        self.assertEqual(state.own[0].paralyze_owner_starts_remaining,0)
+        self.assertTrue(list(engine.attacks(state)))
+        dt=paid.PaidSearch(self.cards,dict(scene,ally_bodies_before_play=[
+            self.body(65,paralyze_owner_starts_remaining=2)]))
+        state=next(s for a,s in dt.casts(dt.root(),'own') if a['targets']==[('own',0)])
+        self.assertEqual(state.own[0].paralyze_owner_starts_remaining,2)
+        self.assertEqual(list(dt.attacks(state)),[])
+
+    def test_paralyze_removal_does_not_guess_modified_stat_reset(self):
+        engine=paid.PaidSearch(self.cards,dict(hand_ids=[79],gold_before_play=1,
+            ally_bodies_before_play=[dict(card_id=15,attack=7,health=5,
+                paralyze_owner_starts_remaining=2)]))
+        with self.assertRaisesRegex(paid.UnknownMechanic,'modified body'):
+            list(engine.casts(engine.root(),'own'))
+
+    def test_enemy_attacks_refresh_including_previously_spent_haste(self):
+        for permission in ('none','monster_only'):
+            scene=dict(max_plays=0,own_player_hp=2,enemy_bodies=[self.body(115,attack_permission=permission)],horizon='enemy_attack')
+            r=self.solve(scene)
+            self.assertTrue(r['metrics']['own_player_dead'])
+
+    def test_fatigue_death_before_owner_start_does_not_refresh_attack(self):
+        scene=dict(max_plays=0,own_player_hp=1,own_deck_ids=[],own_fatigue_next=1,next_natural_draw_count=1,
+                   start_draw_order='draw_before_start',ally_bodies_before_play=[self.body(2,ready=False)])
+        r=self.solve(scene)
+        self.assertTrue(r['metrics']['own_player_dead'])
+        self.assertEqual(r['endpoint_boards']['own'][0]['ready'],0)
+
+    def test_joint_goal_has_actual_damage_kill_and_payment_threshold(self):
+        scene=dict(hand_ids=[96,438],max_plays=2,own_player_hp=3,
+                   enemy_bodies=[self.body(15),self.body(2)],
+                   opponent_hand_ids=[96],opponent_gold_before_response=3,
+                   condition_known_state={'last_turn_gold_spent_on_spells':1},
+                   horizon='enemy_attack',purpose_constraints={
+                       'min_own_player_hp':3,'max_enemy_living_count':0})
+        low=self.solve(dict(scene,gold_before_play=6),'purpose')
+        enough=self.solve(dict(scene,gold_before_play=7),'purpose')
+        self.assertFalse(low['purpose_guaranteed'])
+        self.assertTrue(enough['purpose_guaranteed'])
+        changed=copy.deepcopy(scene)
+        changed['enemy_bodies'][0].update(health=6,max_health=6)
+        high=self.solve(dict(changed,gold_before_play=7),'purpose')
+        self.assertFalse(high['purpose_guaranteed'])
+
+    def test_purpose_enforces_all_constraints_and_survival(self):
+        # With no initial hand, a face attack and stopping can share a
+        # cleared-board endpoint. Death must still fail a cleared-board goal.
+        scene=dict(max_plays=0,own_player_hp=3,enemy_bodies=[self.body(15)],
+                   horizon='enemy_attack',purpose_constraints={'max_enemy_living_count':1})
+        result=self.solve(scene,'purpose')
+        self.assertFalse(result['purpose_guaranteed'])
+        self.assertTrue(result['metrics']['own_player_dead'])
+        safe=self.solve(dict(scene,enemy_bodies=[]),'purpose')
+        self.assertTrue(safe['purpose_guaranteed'])
+
+    def test_invalid_or_missing_purpose_rejected(self):
+        for constraints in (None,{}, {'fake_gold':1},{'min_own_player_hp':-1}):
+            with self.assertRaises(ValueError):
+                paid.evaluate(dict(objectives=['purpose'],purpose_constraints=constraints),self.cards)
+
+    def test_victory_first_leaf_hp_is_not_a_guaranteed_hp_bound(self):
+        scene=dict(max_plays=0,own_player_hp=3,enemy_player_hp=1,
+            ally_bodies_before_play=[dict(card_id=2,attack=1,health=1,ready=False)],
+            enemy_bodies=[dict(card_id=2,attack=2,health=2)],horizon='next_own_attack')
+        victory_first=self.solve(scene,'survive')
+        scalar_hp=self.solve(scene,'guaranteed_hp')
+        self.assertEqual(victory_first['metrics']['own_player_hp'],3)
+        self.assertFalse(victory_first['metrics']['enemy_player_defeated'])
+        self.assertEqual(scalar_hp['metrics']['own_player_hp'],1)
+        self.assertTrue(scalar_hp['metrics']['enemy_player_defeated'])
+
+
+if __name__ == '__main__': unittest.main()

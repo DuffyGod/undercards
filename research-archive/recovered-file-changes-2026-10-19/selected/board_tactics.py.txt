@@ -1,0 +1,580 @@
+"""Source-bound, perfect-information board combat; no fitted Gold utility.
+
+Search current plays AND attacks in any order, all opposing attacks/targets,
+then the next own attack turn. Unknown effects block a complete verdict.
+Lexicographic objectives are public tactical preferences, not win probabilities.
+"""
+from __future__ import annotations
+import argparse
+import copy
+from dataclasses import dataclass, replace
+from functools import lru_cache
+import json
+import math
+from pathlib import Path
+import re
+import score_cards as source
+
+VERSION = 'observed-board-adversarial-tactics-0.2.0'
+OBJECTIVES = ('survive', 'race', 'control')
+PREFIX = re.compile(r'^(Taunt|Haste|Charge|Armor|Dodge \((\d+)\))\.\s*')
+LIMITATIONS = [
+    'Closed declared board subgame, not a complete match, whole-card price or calibrated win probability.',
+    'No new enemy plays, natural draws, SOUL, artifacts or slot enchantments; unknown incoming reach is outside the guarantee.',
+    'Observed ready=true means ordinary monster/player attack permission; fresh Haste requires attack_permission=monster_only. Observed idle-heal sources require attacked explicitly.',
+    'Dodge consumes a positive damage instance before Armor, following the shared primitive; that combined-status ordering remains a source-unverified assumption.',
+    'Current known monster plays and attacks can interleave; up to declared max_plays; next own turn has attacks only.',
+    'Opponent minimizes the same declared tactical objective, with every legal attack order/target and stopping point.',
+    'All participants must have implemented in-window effects; printed-body projections retain omitted text explicitly.',
+    'Survival/race/control are lexicographic preferences, not learned player behavior or likelihoods.',
+    'Unspent Gold and killed printed costs are physical diagnostics and final tie breakers, never substitutes for a lethal result.',
+]
+
+
+def compile_card(card, *, observed=False):
+    """Full-match exact templates only, not keyword mentions in referenced text."""
+    text = card.get('effect_readable', '').strip()
+    statuses = dict(taunt=False, armor=False, dodge=0, speed=0)
+    while (m := PREFIX.match(text)):
+        word = m[1]
+        if word == 'Taunt': statuses['taunt'] = True
+        elif word == 'Armor': statuses['armor'] = True
+        elif word.startswith('Dodge'): statuses['dodge'] += int(m[2])
+        elif word == 'Charge': statuses['speed'] = 2
+        elif word == 'Haste': statuses['speed'] = max(1, statuses['speed'])
+        text = text[m.end():]
+    result = dict(statuses=statuses, magic=None, start=None, end=None, dust=None,
+                  before_attack_face=0, unknown=[], evidence=card.get('effect_readable', ''))
+    if not text: return result
+    # For an observed board, a one-time Magic has already resolved. The caller
+    # must supply the resulting stats/other units; this is NOT deploy coverage.
+    if observed and text.startswith('Magic:') and not re.search(r'\b(?:Dust|Turn start|Turn end|Delay|After|Before|Whenever|Support|Shock|Bullseye|Synergy):?', text):
+        result['resolved_magic_from_observation'] = True
+        return result
+    if text == "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.":
+        result['magic'] = ('toriel',)
+        return result
+    if (m := re.fullmatch(r'Before this attacks a monster, deal (\d+) DMG to the opponent\.', text)):
+        result['before_attack_face'] = int(m[1])
+        return result
+    special_magic={
+        'Magic: Silence a monster.':('silence_monster',),
+        'Magic: Silence an enemy monster. If it was already Silenced, kill it instead.':('silence_or_kill_enemy',),
+        'Magic: Paralyze a monster.':('paralyze_monster',),
+        'Magic: Paralyze a monster. If it was already Paralyzed, deal 2 DMG to it.':('paralyze_monster_if_already_damage',2),
+    }
+    if text in special_magic:
+        result['magic']=special_magic[text]
+        return result
+    if (m:=re.fullmatch(r'Magic: Paralyze a monster\. Dust: Deal (\d+) DMG to all enemy monsters\.',text)):
+        result.update(magic=('paralyze_monster',),dust=('damage_all_enemy_monsters',int(m[1])))
+        return result
+    if text=='Dust: Deal its ATK as DMG to all enemy monsters.':
+        result['dust']=('damage_all_enemy_monsters','source_atk')
+        return result
+    patterns = [
+        ('magic', r'Magic: Deal (\d+) DMG to an enemy monster\.', 'damage_enemy'),
+        ('magic', r'Magic: Deal (\d+) DMG to all enemy monsters\.', 'damage_all_enemy'),
+        ('magic', r'Magic: Deal (\d+) DMG to the opponent\.', 'damage_face'),
+        ('magic', r'Magic: Deal DMG (\d+)\.', 'damage_any'),
+        ('magic', r'Magic: Deal (\d+) DMG\.', 'damage_any'),
+        ('magic', r'Magic: Give an ally monster \+(\d+) ATK\.', 'buff_ally_atk'),
+        ('magic', r'Magic: Give an ally monster \+(\d+) HP\.', 'buff_ally_hp'),
+        ('magic', r'Magic: Give a monster \+(\d+) HP\.', 'buff_any_hp'),
+        ('magic', r'Magic: Give all enemy monsters -(\d+) ATK\.', 'debuff_all_enemy_atk'),
+        ('magic', r'Magic: Give all other ally monsters \+(\d+) ATK\.', 'buff_all_ally_atk'),
+        ('magic', r'Magic: Give all other ally monsters ATK \+(\d+)/HP \+(\d+)\.', 'buff_all_ally_stats'),
+        ('magic', r'Magic: Give an ally monster ATK \+(\d+)/HP \+(\d+)\.', 'buff_ally_stats'),
+        ('magic', r'Magic: Give an enemy monster ATK -(\d+)/HP -(\d+)\.', 'debuff_enemy_stats'),
+        ('magic', r'Magic: Gain \+ATK (\d+) for each other ally monster\.', 'self_atk_per_ally'),
+        ('magic', r'Magic: Gain \+(\d+) HP for each enemy monster\.', 'self_hp_per_enemy'),
+        ('magic', r'Magic: Deal (\d+) DMG to this\.', 'self_damage'),
+        ('magic', r'Magic: Heal (\d+) HP to you\.', 'heal_player'),
+        ('magic', r'Magic: Give yourself \+(\d+) HP\.', 'extend_player_hp'),
+        ('magic', r'Magic: Heal (\d+) HP\.', 'heal_any'),
+        ('magic', r'Magic: Summon (\d+) [^.]+ \[#(\d+)\]\.', 'summon_many'),
+        ('magic', r'Magic: Summon (?:a |an )?(?!\d)[^.]+ \[#(\d+)\]\.', 'summon'),
+        ('start', r'Turn start: Gain \+(\d+) ATK\.', 'self_atk'),
+        ('start', r'Turn start: Heal (\d+) HP to you\.', 'heal_player'),
+        ('start', r'Turn start: Give yourself \+(\d+) HP\.', 'extend_player_hp'),
+        ('end', r'Turn end: Earn GOLD (\d+)\.', 'cash'),
+        ('end', r'Turn end: Both players earn (\d+) GOLD\.', 'both_cash'),
+        ('end', r'Turn end: Lose (\d+) ATK\. If this has 0 ATK, kill this\.', 'decline'),
+        ('end', r"Turn end: If this didn't attack this turn, heal (\d+) HP to you\.", 'idle_heal'),
+        ('dust', r'Dust: Earn GOLD (\d+)\.', 'cash'),
+        ('dust', r'Dust: Deal (\d+) DMG to all monsters\.', 'damage_all_monsters'),
+        ('dust', r'Dust: Deal (\d+) DMG to all enemy monsters\.', 'damage_all_enemy_monsters'),
+        ('dust', r'Dust: Summon (\d+) [^.]+ \[#(\d+)\]\.', 'summon_many'),
+        ('dust', r'Dust: Summon (?:a |an )?(?!\d)[^.]+ \[#(\d+)\]\.', 'summon'),
+    ]
+    for field, pattern, kind in patterns:
+        if (m := re.fullmatch(pattern, text)):
+            result[field] = (kind, *(int(x) for x in m.groups()))
+            return result
+    result['unknown'] = ['Unimplemented complete in-window text: ' + text]
+    return result
+
+
+@dataclass(frozen=True)
+class Unit:
+    key: str
+    card_id: int
+    attack: float
+    health: float
+    max_health: float
+    cost: float = 0
+    taunt: bool = False
+    armor: bool = False
+    dodge: int = 0
+    ready: int = 0  # 1 monster-only (Haste this turn), 2 monster or player
+    attacked: bool = False
+    start: tuple | None = None
+    end: tuple | None = None
+    dust: tuple | None = None
+    before_attack_face: int = 0
+    printed_cost: float | None = None
+
+
+@dataclass(frozen=True)
+class State:
+    own: tuple
+    enemy: tuple
+    own_hp: float
+    enemy_hp: float
+    own_max_hp: float
+    enemy_max_hp: float
+    gold: float
+    enemy_gold: float
+    hand: tuple
+    phase: int = 0
+    plays: int = 0
+
+
+class SearchLimit(Exception): pass
+
+
+def finite_number(value, name, minimum=0):
+    if type(value) not in (int, float) or not math.isfinite(value) or value < minimum:
+        raise ValueError(name + ' must be finite and >= ' + str(minimum))
+    return value
+
+
+def metrics(s):
+    alive = lambda board: [u for u in board if u.health > 0]
+    a, b = alive(s.own), alive(s.enemy)
+    win, lose = s.enemy_hp <= 0, s.own_hp <= 0
+    # Simultaneous player death is below continued play and above outright loss.
+    status = 1 if win and lose else 3 if win else 0 if lose else 2
+    return dict(terminal_rank=status, own_player_hp=max(0, s.own_hp), enemy_player_hp=max(0, s.enemy_hp),
+                own_player_dead=lose, enemy_player_defeated=win,
+                own_board_attack=sum(u.attack for u in a), enemy_board_attack=sum(u.attack for u in b),
+                own_board_health=sum(u.health for u in a), enemy_board_health=sum(u.health for u in b),
+                own_living_count=len(a), enemy_living_count=len(b),
+                enemy_killed_printed_cost=sum(u.cost if u.printed_cost is None else u.printed_cost for u in s.enemy if u.health <= 0),
+                own_lost_paid_or_declared_cost=sum(u.cost for u in s.own if u.health <= 0),
+                own_remaining_gold=s.gold, enemy_remaining_gold=s.enemy_gold)
+
+
+def objective_vector(s, mode):
+    m = metrics(s)
+    common = (m['terminal_rank'],)
+    net = m['enemy_killed_printed_cost'] - m['own_lost_paid_or_declared_cost']
+    if mode == 'race':
+        rest = (-m['enemy_player_hp'], m['own_player_hp'], -m['enemy_board_attack'], m['own_board_attack'], net)
+    elif mode == 'control':
+        rest = (-m['enemy_board_attack'], m['own_board_attack'], m['own_board_health'], m['own_player_hp'], -m['enemy_player_hp'], net)
+    elif mode == 'survive':
+        rest = (m['own_player_hp'], -m['enemy_board_attack'], m['own_board_attack'], -m['enemy_player_hp'], net)
+    else: raise ValueError('Unknown objective: ' + str(mode))
+    return common + rest + (s.gold,)
+
+
+def hurt(u, damage):
+    if damage <= 0 or u.health <= 0: return u
+    if u.dodge: return replace(u, dodge=u.dodge - 1)
+    return replace(u, health=max(0, u.health - max(0, damage - int(u.armor))))
+
+
+class BoardSearch:
+    SUPPORTED_HORIZONS = ('enemy_attack', 'next_own_attack')
+    SUPPORTS_EXTENDED_MAGIC = False
+    SUPPORTS_DUST_DAMAGE = False
+
+    @staticmethod
+    def active_side(state):
+        return 'enemy' if state.phase % 2 else 'own'
+
+    def __init__(self, cards, data, *, projection=False):
+        self.by = {c['id']: c for c in cards}
+        self.data = copy.deepcopy(data)
+        self.projection = projection
+        self.unknown = []
+        self.omitted = []
+        self.nodes = 0
+        self.node_limit = data.get('node_limit', 200000)
+        if type(self.node_limit) is not int or self.node_limit < 1: raise ValueError('Positive node_limit required')
+        self.max_plays = data.get('max_plays', 2)
+        if type(self.max_plays) is not int or not 0 <= self.max_plays <= 4: raise ValueError('max_plays is 0..4')
+        self.horizon = data.get('horizon', 'next_own_attack')
+        if self.horizon not in self.SUPPORTED_HORIZONS: raise ValueError('Unsupported horizon')
+        self.end_phase = 4 if self.horizon == 'next_enemy_attack' else 3
+        self.hand = []
+        ids = data.get('hand_ids', [])
+        costs = data.get('hand_costs', [])
+        if not isinstance(ids, list) or len(ids) > 7 or (costs and len(costs) != len(ids)):
+            raise ValueError('Up to seven physical hand copies; matching hand_costs')
+        for i, cid in enumerate(ids):
+            if type(cid) is not int or cid not in self.by or self.by[cid]['card_type'] != 'monster':
+                raise ValueError('Known monster hand IDs required')
+            c = copy.deepcopy(self.by[cid])
+            if costs: c['cost'] = finite_number(costs[i], 'hand cost')
+            spec = self.spec(c, collect_unknown=False)
+            self.hand.append((c, spec))
+        # Recursively validate summoned bodies (Magic is NOT executed on Summon).
+        for c, spec in self.hand:
+            if spec.get('magic') and spec['magic'][0] in ('summon', 'summon_many'):
+                cid = spec['magic'][-1]
+                if cid not in self.by:
+                    spec['unknown'].append('Unknown summoned card ID ' + str(cid))
+                else:
+                    summoned = self.spec(self.summoned_source(self.by[cid]),observed=True,collect_unknown=False)
+                    spec['unknown'].extend('Summoned card ' + str(cid) + ': ' + x for x in summoned['unknown'])
+
+    def spec(self, c, observed=False, collect_unknown=True):
+        result = compile_card(c, observed=observed)
+        if result.get('magic') and result['magic'][0] in ('silence_monster','silence_or_kill_enemy','paralyze_monster','paralyze_monster_if_already_damage') and not self.SUPPORTS_EXTENDED_MAGIC:
+            result['unknown'].append('Extended monster control requires the paid adapter')
+        if result.get('dust') and result['dust'][0] in ('damage_all_monsters','damage_all_enemy_monsters') and not self.SUPPORTS_DUST_DAMAGE:
+            result['unknown'].append('Dust damage requires the paid event adapter; never a Summon')
+        if self.projection:
+            # Keep only a literal self-status PREFIX, never mentions in Magic.
+            if c.get('effect_readable'):
+                self.omitted.append(dict(card_id=c['id'], text=c['effect_readable']))
+            result.update(magic=None, start=None, end=None, dust=None, unknown=[])
+            result['before_attack_face'] = 0
+        if result['dust'] and result['dust'][0] in ('summon','summon_many'):
+            cid=result['dust'][-1]
+            if cid not in self.by:
+                result['unknown'].append('Unknown Dust summon card '+str(cid))
+            else:
+                child=self.compile_summoned(self.by[cid])
+                result['unknown'].extend('Dust summon '+str(cid)+': '+x for x in child['unknown'])
+                if child['dust'] or child['start'] or child['end'] or child['before_attack_face']:
+                    result['unknown'].append('Dust summon has further live callbacks; recursive death queue remains unclosed')
+        if collect_unknown:
+            self.unknown.extend('Card ' + str(c['id']) + ': ' + x for x in result['unknown'])
+        return result
+
+    def compile_summoned(self,card):
+        return compile_card(self.summoned_source(card),observed=True)
+
+    def summoned_source(self,card):
+        return card
+
+    def unit(self, c, spec, key, ready=None, cost=None):
+        flags = spec['statuses']
+        return Unit(key, c['id'], c['attack'], c['health'], c['health'],
+                    c['cost'] if cost is None else cost, flags['taunt'], flags['armor'], flags['dodge'],
+                    flags['speed'] if ready is None else ready, False, spec['start'], spec['end'], spec['dust'],spec['before_attack_face'],
+                    self.by.get(c['id'],c)['cost'])
+
+    def observed(self, row, key):
+        allowed = {'attack','health','max_health','taunt','armor','dodge','ready','attack_permission','attacked','card_id','cost','name'}
+        if not isinstance(row, dict) or set(row) - allowed or not {'attack','health'} <= set(row):
+            raise ValueError('Observed board body has unsupported/missing fields')
+        a = finite_number(row['attack'], 'observed attack')
+        h = finite_number(row['health'], 'observed health', 1)
+        mh = finite_number(row.get('max_health', h), 'max health', h)
+        ready = row.get('ready', True)
+        if type(ready) is not bool: raise ValueError('Observed ready is a boolean')
+        permission=row.get('attack_permission','all' if ready else 'none')
+        if permission not in ('none','monster_only','all'): raise ValueError('attack_permission is none/monster_only/all')
+        if 'ready' in row and ready != (permission!='none'): raise ValueError('ready and attack_permission disagree')
+        ready_code={'none':0,'monster_only':1,'all':2}[permission]
+        attacked=row.get('attacked',False)
+        if type(attacked) is not bool: raise ValueError('Observed attacked is a boolean')
+        cid = row.get('card_id', -1)
+        if cid != -1:
+            if cid not in self.by: raise ValueError('Unknown observed card ID')
+            spec = self.spec(self.by[cid], observed=True)
+            u = self.unit(self.by[cid], spec, key, ready_code)
+            if u.end and u.end[0]=='idle_heal' and 'attacked' not in row:
+                self.unknown.append('Observed card '+str(cid)+' needs attacked fact for its conditional end callback')
+        else: u = Unit(key, -1, a, h, mh, ready=ready_code)
+        for flag in ('taunt','armor'):
+            if flag in row and type(row[flag]) is not bool: raise ValueError(flag + ' must be boolean')
+        dodge = row.get('dodge', u.dodge)
+        if type(dodge) is not int or dodge < 0: raise ValueError('dodge is a nonnegative integer')
+        return replace(u, attack=a, health=h, max_health=mh, cost=finite_number(row.get('cost',u.cost),'declared cost'),
+                       taunt=row.get('taunt',u.taunt), armor=row.get('armor',u.armor), dodge=dodge,attacked=attacked)
+
+    def root(self):
+        data = self.data
+        own = data.get('ally_bodies_before_play', [])
+        enemy = data.get('enemy_bodies', [])
+        if not isinstance(own,list) or not isinstance(enemy,list) or max(len(own),len(enemy)) > 4:
+            raise ValueError('Each declared board has 0..4 bodies')
+        hp = finite_number(data.get('own_player_hp',30),'own HP',1)
+        ep = finite_number(data.get('enemy_player_hp',30),'enemy HP',1)
+        a=tuple(self.observed(u,'own:' + str(i)) for i,u in enumerate(own))
+        b=tuple(self.observed(u,'enemy:' + str(i)) for i,u in enumerate(enemy))
+        # Only our AoE can kill multiple same-side sources in this action set.
+        # One-for-one replacements commute; competing multi-body overflow does
+        # not. Ordinary attacks kill at most one source on either side at once.
+        summoners=[u for u in b if u.dust and u.dust[0] in ('summon','summon_many')]
+        if len(summoners)>1 and any(u.dust[0]=='summon_many' and u.dust[1]>1 for u in summoners):
+            self.unknown.append('Multiple enemy Dust summoners can compete for slots after AoE; queue unknown')
+        return State(a,b,
+                     hp,ep,finite_number(data.get('own_player_max_hp',hp),'own max HP',hp),
+                     finite_number(data.get('enemy_player_max_hp',ep),'enemy max HP',ep),
+                     finite_number(data.get('gold_before_play',0),'Gold'),
+                     finite_number(data.get('opponent_gold_before_response',0),'enemy Gold'),tuple(range(len(self.hand))))
+
+    @staticmethod
+    def terminal(s): return s.own_hp <= 0 or s.enemy_hp <= 0
+
+    def deaths(self, before, after):
+        # Simultaneous damage is fully applied before either side's Dust. This
+        # adapter admits primitive products; same-side competing AoE overflow
+        # and recursive callbacks stay unknown, one-for-one replacements commute.
+        gold, enemy_gold = after.gold, after.enemy_gold
+        boards={'own':list(after.own),'enemy':list(after.enemy)}
+        for side in ('own','enemy'):
+            previous = {u.key:u for u in getattr(before,side)}
+            for u in getattr(after,side):
+                if u.health <= 0 and u.key in previous and previous[u.key].health > 0 and u.dust:
+                    if u.dust[0]=='cash':
+                        if side == 'own': gold += u.dust[1]
+                        else: enemy_gold += u.dust[1]
+                    elif u.dust[0] in ('summon','summon_many'):
+                        count,cid=(1,u.dust[1]) if u.dust[0]=='summon' else u.dust[1:]
+                        c=self.by[cid];spec=self.compile_summoned(c)
+                        board=boards[side]
+                        for k in range(min(count,4-sum(v.health>0 for v in board))):
+                            board.append(self.unit(c,spec,u.key+':dust:'+str(k),cost=0))
+                    else:
+                        raise ValueError('Unimplemented base death callback: '+str(u.dust[0]))
+        return replace(after,gold=gold,enemy_gold=enemy_gold,own=tuple(boards['own']),enemy=tuple(boards['enemy']))
+
+    def attacks(self,s):
+        side = self.active_side(s)
+        other = 'own' if side == 'enemy' else 'enemy'
+        units, foes = getattr(s,side), getattr(s,other)
+        living = [i for i,u in enumerate(foes) if u.health > 0]
+        taunts = [i for i in living if foes[i].taunt]
+        for i,u in enumerate(units):
+            if u.health <= 0 or u.attack <= 0 or not u.ready: continue
+            targets = taunts or living + (['face'] if u.ready == 2 else [])
+            for j in targets:
+                aa,bb = list(units),list(foes)
+                aa[i] = replace(u,ready=0,attacked=True)
+                if j == 'face':
+                    key = 'own_hp' if side == 'enemy' else 'enemy_hp'
+                    child = replace(s, **{side:tuple(aa),key:max(0,getattr(s,key)-u.attack)})
+                else:
+                    if u.before_attack_face:
+                        key = 'own_hp' if side == 'enemy' else 'enemy_hp'
+                        s_before_hit = replace(s,**{key:max(0,getattr(s,key)-u.before_attack_face)})
+                        if self.terminal(s_before_hit):
+                            yield dict(kind='attack',side=side,attacker=u.key,target=foes[j].key,before_attack_face=u.before_attack_face),s_before_hit
+                            continue
+                    else: s_before_hit = s
+                    outgoing,incoming = u.attack,foes[j].attack
+                    aa[i],bb[j] = hurt(aa[i],incoming),hurt(bb[j],outgoing)
+                    child = replace(s_before_hit, **{side:tuple(aa),other:tuple(bb)})
+                    child = self.deaths(s,child)
+                yield dict(kind='attack',side=side,attacker=u.key,target='face' if j=='face' else foes[j].key),child
+
+    def magic(self,s,i,u,spec):
+        effect = spec['magic']
+        if effect is None: return [(dict(kind='deploy',hand_index=i,card_id=u.card_id),s)]
+        kind,*amount = effect
+        old_own = [j for j,v in enumerate(s.own) if v.health > 0 and v.key != u.key]
+        enemy = [j for j,v in enumerate(s.enemy) if v.health > 0]
+        if kind in ('damage_enemy','debuff_enemy_stats','toriel'): targets = [('enemy',j) for j in enemy]
+        elif kind in ('buff_ally_atk','buff_ally_hp','buff_ally_stats','refresh_ally_haste'): targets = [('own',j) for j in old_own]
+        elif kind in ('buff_any_hp','swap'): targets = [('own',j) for j in old_own] + [('enemy',j) for j in enemy]
+        elif kind == 'damage_any': targets = [('own',j) for j in old_own] + [('enemy',j) for j in enemy] + [('own_player',None),('enemy_player',None)]
+        elif kind == 'heal_any': targets = [('own',j) for j in old_own] + [('enemy',j) for j in enemy] + [('own_player',None),('enemy_player',None)]
+        else: targets = [(None,None)]
+        # No legal selectable target means the Magic fizzles, never self-select.
+        if not targets: targets = [(None,None)]
+        out = []
+        for side,j in targets:
+            child = s
+            if side in ('own','enemy'):
+                board = list(getattr(s,side)); v = board[j]
+                if kind.startswith('damage'): v = hurt(v,amount[0])
+                elif kind == 'toriel':
+                    gain=max(0,v.attack-1)
+                    own=list(s.own); caster=next(k for k,w in enumerate(own) if w.key==u.key)
+                    own[caster]=replace(own[caster],health=own[caster].health+gain,max_health=own[caster].max_health+gain)
+                    child=replace(s,own=tuple(own)); v=replace(v,attack=1)
+                elif kind == 'swap': v=replace(v,attack=v.health,health=v.attack,max_health=v.attack)
+                elif kind == 'refresh_ally_haste': v=replace(v,ready=max(1,v.ready))
+                elif kind == 'heal_any': v = replace(v,health=min(v.max_health,v.health+amount[0]))
+                elif kind.endswith('_stats'):
+                    sign = -1 if kind.startswith('debuff') else 1
+                    v = replace(v,attack=max(0,v.attack+sign*amount[0]),health=max(0,v.health+sign*amount[1]),max_health=max(0,v.max_health+sign*amount[1]))
+                elif kind.endswith('_atk'): v = replace(v,attack=v.attack+amount[0])
+                else: v = replace(v,health=v.health+amount[0],max_health=v.max_health+amount[0])
+                board[j] = v; child = replace(child,**{side:tuple(board)})
+            elif side is not None:
+                key = 'own_hp' if side == 'own_player' else 'enemy_hp'
+                maximum = s.own_max_hp if side == 'own_player' else s.enemy_max_hp
+                value = max(0,getattr(s,key)-amount[0]) if kind.startswith('damage') else min(maximum,getattr(s,key)+amount[0])
+                child = replace(s,**{key:value})
+            elif kind == 'damage_face': child = replace(s,enemy_hp=max(0,s.enemy_hp-amount[0]))
+            elif kind == 'heal_player': child = replace(s,own_hp=min(s.own_max_hp,s.own_hp+amount[0]))
+            elif kind == 'extend_player_hp': child = replace(s,own_hp=s.own_hp+amount[0],own_max_hp=s.own_max_hp+amount[0])
+            elif kind in ('summon','summon_many'):
+                count,cid = (1,amount[0]) if kind == 'summon' else amount
+                c = self.by[cid]; compiled = self.compile_summoned(c)
+                board = list(s.own)
+                # Summon ignores Magic and payment; fresh Charge/Haste apply.
+                for k in range(min(count,4-sum(v.health>0 for v in board))):
+                    board.append(self.unit(c,compiled,u.key+':summon:'+str(k),cost=0))
+                child = replace(s,own=tuple(board))
+            elif kind == 'damage_all_enemy': child = replace(s,enemy=tuple(hurt(v,amount[0]) for v in s.enemy))
+            elif kind == 'debuff_all_enemy_atk': child = replace(s,enemy=tuple(replace(v,attack=max(0,v.attack-amount[0])) if v.health>0 else v for v in s.enemy))
+            elif kind in ('buff_all_ally_atk','buff_all_ally_stats'):
+                child = replace(s,own=tuple(replace(v,attack=v.attack+amount[0],health=v.health+(amount[1] if len(amount)>1 else 0),max_health=v.max_health+(amount[1] if len(amount)>1 else 0)) if j in old_own else v for j,v in enumerate(s.own)))
+            elif kind in ('self_atk_per_ally','self_hp_per_enemy','self_damage'):
+                board = list(s.own); j = next(j for j,v in enumerate(board) if v.key==u.key); v = board[j]
+                if kind == 'self_damage': v = hurt(v,amount[0])
+                elif kind == 'self_atk_per_ally': v = replace(v,attack=v.attack+amount[0]*len(old_own))
+                else: v = replace(v,health=v.health+amount[0]*len(enemy),max_health=v.max_health+amount[0]*len(enemy))
+                board[j] = v; child = replace(s,own=tuple(board))
+            child = self.deaths(s,child)
+            out.append((dict(kind='deploy',hand_index=i,card_id=u.card_id,magic=effect,magic_target=(side,j)),child))
+        return out
+
+    def deploys(self,s):
+        if s.phase != 0 or s.plays >= self.max_plays or sum(u.health>0 for u in s.own) >= 4: return
+        for i in s.hand:
+            c,spec = self.hand[i]
+            if c['cost'] > s.gold or spec['unknown']: continue
+            u = self.unit(c,spec,'hand:'+str(i))
+            child = replace(s,own=s.own+(u,),gold=s.gold-c['cost'],hand=tuple(j for j in s.hand if j!=i),plays=s.plays+1)
+            yield from self.magic(child,i,u,spec)
+
+    def boundary(self,s):
+        side = self.active_side(s)
+        board = list(getattr(s,side)); gold,eg = s.gold,s.enemy_gold
+        hp,mhp = (s.enemy_hp,s.enemy_max_hp) if side=='enemy' else (s.own_hp,s.own_max_hp)
+        for i,u in enumerate(board):
+            if u.health <= 0 or not u.end: continue
+            kind,amount = u.end
+            if kind in ('cash','both_cash'):
+                if side=='own' or kind=='both_cash': gold += amount
+                if side=='enemy' or kind=='both_cash': eg += amount
+            elif kind == 'decline':
+                a = max(0,u.attack-amount); board[i] = replace(u,attack=a,health=u.health if a else 0)
+            elif kind == 'idle_heal' and not u.attacked: hp = min(mhp,hp+amount)
+        child = replace(s,**{side:tuple(board),'gold':gold,'enemy_gold':eg,'enemy_hp' if side=='enemy' else 'own_hp':hp})
+        child = self.deaths(s,child)
+        phase = s.phase+1
+        if self.terminal(child) or phase >= self.end_phase or (s.phase==1 and self.horizon=='enemy_attack'):
+            return replace(child,phase=self.end_phase)
+        # Owner start triggers occur before its attacks; readiness on the first
+        # enemy turn is supplied, while surviving allies refresh next own turn.
+        side = 'enemy' if phase % 2 else 'own'
+        board = list(getattr(child,side))
+        hp,mhp = (child.enemy_hp,child.enemy_max_hp) if side=='enemy' else (child.own_hp,child.own_max_hp)
+        for i,u in enumerate(board):
+            if u.health<=0: continue
+            if side=='own': u = replace(u,ready=2,attacked=False)
+            else: u = replace(u,attacked=False)
+            if u.start:
+                kind,amount = u.start
+                if kind=='self_atk': u = replace(u,attack=u.attack+amount)
+                elif kind=='heal_player': hp = min(mhp,hp+amount)
+                elif kind=='extend_player_hp': hp+=amount; mhp+=amount
+            board[i] = u
+        return replace(child,phase=phase,**{side:tuple(board),'enemy_hp' if side=='enemy' else 'own_hp':hp,
+                        'enemy_max_hp' if side=='enemy' else 'own_max_hp':mhp})
+
+    def objective(self, state, mode):
+        return objective_vector(state, mode)
+
+    def solve(self,root,mode):
+        self.nodes=0
+        policy={}
+        @lru_cache(maxsize=None)
+        def visit(s):
+            self.nodes += 1
+            if self.nodes > self.node_limit: raise SearchLimit()
+            if self.terminal(s) or s.phase>=self.end_phase:
+                return self.objective(s,mode),s
+            options=[(dict(kind='end_turn',phase=s.phase),self.boundary(s))]
+            options.extend(self.attacks(s))
+            options.extend(self.deploys(s))
+            best=None
+            for action,child in options:
+                vector,leaf=visit(child)
+                if best is None or (vector < best[0] if self.active_side(s)=='enemy' else vector > best[0]):
+                    best=vector,leaf,action,child
+            policy[s]=best[2],best[3]
+            return best[:2]
+        try:
+            vector,leaf=visit(root)
+        except SearchLimit:
+            return dict(search_complete=False,objective=mode,visited_states=self.nodes,unknown=['Search state budget exhausted'],metrics=None,principal_variation=[])
+        path=[]; cursor=root
+        while cursor in policy:
+            previous=cursor
+            action,cursor=policy[cursor]
+            path.append(dict(**action, before_metrics=metrics(previous), after_metrics=metrics(cursor)))
+        return dict(search_complete=True,objective=mode,visited_states=self.nodes,objective_vector=vector,
+                    metrics=metrics(leaf),principal_variation=path,
+                    endpoint_boards=dict(own=[u.__dict__ for u in leaf.own if u.health>0],enemy=[u.__dict__ for u in leaf.enemy if u.health>0]))
+
+
+def evaluate(data,cards=None,*,projection=False):
+    cards=source.load_cards() if cards is None else cards
+    engine=BoardSearch(cards,data,projection=projection)
+    root=engine.root()
+    board_unknown=sorted(set(engine.unknown))
+    # Proven upper bound for money available DURING the current play phase.
+    # End-turn income cannot fund another current play. Known cash Dust can.
+    cash=lambda u: u.dust[1] if u.dust and u.dust[0]=='cash' else 0
+    upper=root.gold+sum(cash(u) for u in root.own)
+    upper+=sum(sorted((spec['dust'][1] if spec['dust'] and spec['dust'][0]=='cash' else 0
+                       for _,spec in engine.hand),reverse=True)[:engine.max_plays])
+    raw_unknown=[(i,c,spec) for i,(c,spec) in enumerate(engine.hand) if spec['unknown']]
+    possible_unknown=raw_unknown if engine.max_plays and any(c['cost']<=upper for _,c,_ in raw_unknown) else []
+    hand_unknown=['Hand '+str(i)+' / card '+str(c['id'])+': '+reason for i,c,spec in possible_unknown for reason in spec['unknown']]
+    unknown=sorted(set(board_unknown+hand_unknown))
+    modes=data.get('objectives',list(OBJECTIVES))
+    if not isinstance(modes,list) or not modes or any(m not in OBJECTIVES for m in modes) or len(set(modes))!=len(modes):
+        raise ValueError('objectives must be a unique nonempty subset of survive/race/control')
+    # Unsupported affordable cards are not silently removed from a global best.
+    # A caller can explicitly request a projection, with all omitted text shown.
+    # Known feasible strategies still prove a rescue in the declared subgame;
+    # unknown own options prevent an optimality claim, not executing this line.
+    results=[] if board_unknown else [engine.solve(root,mode) for mode in modes]
+    complete=not unknown and all(r['search_complete'] for r in results)
+    return dict(version=VERSION,scope='printed_body_projection' if projection else 'closed_declared_board_subgame',
+                complete_in_declared_scope=complete,full_card_value_evaluated=False,
+                empirical_win_probability=None,model_gold=None,unknown=unknown,
+                board_mechanics_known=not bool(board_unknown), full_legal_own_action_menu_searched=not bool(hand_unknown),
+                unreachable_unknown_hand_indexes=[i for i,c,spec in raw_unknown if not possible_unknown],
+                known_feasible_policy_available=bool(results) and all(r['search_complete'] for r in results),
+                omitted_effects=list({(x['card_id'],x['text']):x for x in engine.omitted}.values()),
+                initial_metrics=metrics(root),objectives=results,assumptions=LIMITATIONS,
+                objective_first_action_agreement=(len({json.dumps(r['principal_variation'][0] if r['principal_variation'] else None,sort_keys=True) for r in results})==1) if complete else None)
+
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--input',type=Path,required=True)
+    parser.add_argument('--output',type=Path)
+    parser.add_argument('--projection',action='store_true')
+    args=parser.parse_args()
+    result=evaluate(json.loads(args.input.read_text()),projection=args.projection)
+    body=json.dumps(result,ensure_ascii=False,indent=2)+'\n'
+    if args.output: args.output.write_text(body)
+    else: print(body,end='')
+
+
+if __name__=='__main__': main()

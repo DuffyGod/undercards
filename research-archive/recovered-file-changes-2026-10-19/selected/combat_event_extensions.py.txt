@@ -1,0 +1,212 @@
+"""Source-aware received/attack callbacks, with unresolved rule alternatives.
+
+Rules are hypotheses, never observations inferred from a preferred outcome.
+Only identical complete physical outcomes close an undeclared interpretation.
+"""
+from dataclasses import dataclass, replace
+from functools import lru_cache
+import re
+
+import board_tactics as board
+
+VERSION = 'physical-combat-events-0.1.0'
+PREFIX = re.compile(r'(?:(?:Taunt|Armor|Transparency|Charge|Haste|Dodge \(\d+\))\.\s*)*')
+RULES = {
+    'damage_measure': ('unknown', 'hp_loss', 'effective'),
+    'lethal_received': ('unknown', 'trigger', 'no_trigger'),
+    'zero_received': ('unknown', 'trigger', 'no_trigger'),
+    'attack_paralyze_it': ('unknown', 'self', 'target'),
+    'dead_attacker': ('unknown', 'trigger', 'no_trigger'),
+}
+
+
+def rules(data):
+    supplied = data.get('combat_event_rules', {})
+    if not isinstance(supplied, dict) or set(supplied) - set(RULES):
+        raise ValueError('combat_event_rules has only ' + ', '.join(RULES))
+    result = {name: supplied.get(name, 'unknown') for name in RULES}
+    if any(value not in RULES[name] for name, value in result.items()):
+        raise ValueError('Unknown combat-event rule interpretation')
+    return result
+
+
+def parse(card):
+    text = card.get('effect_readable', '').strip()
+    text = text[PREFIX.match(text).end():]
+    if text == 'After this attacks and survives, heal HP to this equal to the DMG dealt.':
+        return {'after_attack': ('heal_self_dealt',)}
+    if text == 'After this attacks, Paralyze it.':
+        return {'after_attack': ('paralyze_it',)}
+    if text == 'After this takes DMG, heal the DMG taken as HP to you.':
+        return {'after_damage': ('heal_owner_taken',)}
+    match = re.fullmatch(r'After this takes DMG, deal ([1-9]\d*) DMG to the opponent\.', text)
+    if match:
+        return {'after_damage': ('damage_opponent', int(match[1]))}
+    return None
+
+
+@dataclass(frozen=True)
+class DamageEvent:
+    source_key: str | None
+    source_card_id: int | None
+    source_is_enemy: bool | None
+    raw: float
+    effective: float
+    hp_loss: float
+    survived: bool
+
+
+def effective_damage(search, target, raw, source, source_is_enemy):
+    """Measure the existing pure primitive without clipping overkill.
+
+    In board0.6 hurt_unit, target HP is ONLY a live guard and subtraction:
+    reductions read statuses and SOURCE costs, never target HP predicates.
+    raw+enemy_bonus bounds every admitted damage ordering. A high-HP probe
+    thus reveals post-modifier damage. It is NOT a physical event, uses the
+    original source, and never calls this extension's recording override.
+    If differing packet amounts were folded by real HP clipping, the probe
+    conservatively raises unknown. Revisit this proof if that primitive gains
+    target-HP-dependent damage modifiers.
+    """
+    high = target.health + raw + target.enemy_damage_bonus + 1
+    probe = board.BoardSearch.hurt_unit(search, replace(target, health=high), raw,
+                                       source=source, source_is_enemy=source_is_enemy)
+    return high - probe.health
+
+
+def record_damage(search, target, child, raw, source, source_is_enemy):
+    if target.health <= 0 or raw < 0 or not getattr(target, 'after_damage', None):
+        return child
+    amount = effective_damage(search, target, raw, source, source_is_enemy)
+    event = DamageEvent(getattr(source, 'key', None), getattr(source, 'card_id', None),
+                        source_is_enemy, raw, amount, target.health-child.health,
+                        child.health > 0)
+    return replace(child, pending_damage=child.pending_damage + (event,))
+
+
+def dying_dust(before, after):
+    return any(u.health <= 0 and u.dust and any(v.key == u.key and v.health > 0
+               for v in getattr(before, side)) for side in ('own', 'enemy')
+               for u in getattr(after, side))
+
+
+def resolve_received(search, before, after):
+    events = tuple((side, u.after_damage, event) for side in ('own', 'enemy')
+                   for u in getattr(after, side) for event in getattr(u, 'pending_damage', ()))
+    if not events:
+        return after
+    if dying_dust(before, after):
+        search.unknown_mechanic('Received-damage callback versus live Dust queue order is unverified')
+    clean = replace(after, **{side: tuple(replace(u, pending_damage=())
+                           if getattr(u, 'pending_damage', ()) else u
+                           for u in getattr(after, side)) for side in ('own', 'enemy')})
+    rs = search.combat_event_rules
+
+    def outcomes(state, item):
+        side, effect, event = item
+        kind, *args = effect
+        # No effect revives a player after the existing terminal boundary.
+        if search.terminal(state):
+            return {state}
+        amount = event.effective
+        active = {True}
+        if amount == 0:
+            rule = rs['zero_received']
+            active = {True, False} if rule == 'unknown' else {rule == 'trigger'}
+        if not event.survived:
+            rule = rs['lethal_received']
+            active = active | {False} if rule == 'unknown' else active if rule == 'trigger' else {False}
+        result = set()
+        for trigger in active:
+            if not trigger:
+                result.add(state)
+            elif kind == 'damage_opponent':
+                key = ('enemy' if side == 'own' else 'own') + '_hp'
+                result.add(replace(state, **{key: max(0, getattr(state, key)-args[0])}))
+            elif kind == 'heal_owner_taken':
+                measure = rs['damage_measure']
+                amounts = {event.hp_loss, event.effective} if measure == 'unknown' else {
+                    event.hp_loss if measure == 'hp_loss' else event.effective}
+                key, maximum = side+'_hp', getattr(state, side+'_max_hp')
+                result.update(replace(state, **{key: min(maximum, getattr(state, key)+n)}) for n in amounts)
+            else:
+                search.unknown_mechanic('Unimplemented received-damage effect: ' + kind)
+        return result
+
+    @lru_cache(None)
+    def run(state, pending):
+        if not pending or search.terminal(state):
+            return frozenset((state,))
+        result = set()
+        # Callback order is not chosen by either player. Enumerate all orders
+        # and rule readings, requiring the whole immutable state to commute.
+        for i, item in enumerate(pending):
+            for child in outcomes(state, item):
+                result.update(run(child, pending[:i]+pending[i+1:]))
+        return frozenset(result)
+    results = run(clean, events)
+    if len(results) != 1:
+        search.unknown_mechanic('Received-damage amount/zero/lethal/order interpretations change physical state')
+    return next(iter(results))
+
+
+def resolve_attack(search, before, after, action):
+    side = action['side']; other = 'enemy' if side == 'own' else 'own'
+    prior = next(u for u in getattr(before, side) if u.key == action['attacker'])
+    effect = getattr(prior, 'after_attack', None)
+    if not effect or search.terminal(after):
+        return search.deaths(before, after)
+    source = next(u for u in getattr(after, side) if u.key == prior.key)
+    kind = effect[0]
+    outcomes = set()
+    if kind == 'heal_self_dealt':
+        if source.health <= 0:
+            return search.deaths(before, after)
+        search.require_body_hp_cap(source, 'Attack-survivor healing')
+        raw = board.effective_attack(prior, before, side)
+        if action['target'] == 'face':
+            effective = raw; lost = getattr(before, other+'_hp')-getattr(after, other+'_hp')
+        else:
+            target = next(u for u in getattr(before, other) if u.key == action['target'])
+            effective = effective_damage(search, target, raw, prior, True)
+            target_after = next(u for u in getattr(after, other) if u.key == target.key)
+            lost = target.health-target_after.health
+        measure = search.combat_event_rules['damage_measure']
+        amounts = {lost, effective} if measure == 'unknown' else {lost if measure == 'hp_loss' else effective}
+        for n in amounts:
+            healed = replace(source, health=min(source.max_health, source.health+n))
+            outcomes.add(replace(after, **{side: tuple(healed if u.key == source.key else u for u in getattr(after, side))}))
+    elif kind == 'paralyze_it':
+        rule = search.combat_event_rules['attack_paralyze_it']
+        readings = ('self', 'target') if rule == 'unknown' else (rule,)
+        for reading in readings:
+            owner, key = (side, source.key) if reading == 'self' else (other, action['target'])
+            if key == 'face':
+                search.unknown_mechanic('Attack Paralyze pronoun may denote a player; no player Paralyze rule established')
+            units = []
+            for u in getattr(after, owner):
+                units.append(replace(u, paralyze_owner_starts_remaining=search.paralyze_clock(u))
+                             if u.key == key and u.health > 0 else u)
+            outcomes.add(replace(after, **{owner: tuple(units)}))
+        if source.health <= 0:
+            rule = search.combat_event_rules['dead_attacker']
+            if rule == 'unknown': outcomes.add(after)
+            elif rule == 'no_trigger': outcomes = {after}
+    else:
+        search.unknown_mechanic('Unimplemented attack callback: ' + kind)
+    if len(outcomes) != 1:
+        search.unknown_mechanic('Attack damage measure/Paralyze pronoun interpretations change physical state')
+    child = next(iter(outcomes))
+    if child != after and dying_dust(before, after):
+        search.unknown_mechanic('Attack callback versus live Dust queue order is unverified')
+    first = search.deaths(before, child)
+    if child != after and any(getattr(u, 'pending_damage', ()) for u in after.own+after.enemy):
+        received_first = resolve_received(search, before, after)
+        second = resolve_attack(search, before, received_first, action)
+        if first != second:
+            search.unknown_mechanic('Attack versus received-damage callback order changes physical state')
+    return first
+
+
+import loaded_sources
+loaded_sources.record(__name__, __file__)

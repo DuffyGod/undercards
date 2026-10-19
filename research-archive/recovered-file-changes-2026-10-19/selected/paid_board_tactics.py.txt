@@ -1,0 +1,832 @@
+"""Exact declared-hand punishment and attack search, extending board_tactics.
+
+Both players spend real currency and physical spell copies. Spells and attacks
+can interleave; enemy payments are never credited to us. No response frequency
+or arbitrary punishment surcharge is fitted here.
+"""
+from __future__ import annotations
+
+import argparse
+import copy
+from dataclasses import dataclass, replace
+import json
+from pathlib import Path
+import re
+
+import board_tactics as board
+import finite_conditions
+import draw_options
+import score_cards
+import spell_window
+import queued_delay
+import alpha_beta_search
+
+VERSION = 'declared-paid-board-search-0.5.0'
+PURPOSE_FIELDS = {'min_own_player_hp', 'max_enemy_player_hp',
+                  'max_enemy_board_attack', 'max_enemy_living_count',
+                  'min_own_living_count'}
+
+
+def may_reduce_own_hand_cost(card):
+    text = card.get('effect_readable', '')
+    return bool(re.search(r'-(?:\d+) COST|costs? .*less|COST.*(?:decrease|reduc)', text, re.I))
+
+
+class UnknownMechanic(Exception):
+    pass
+
+
+@dataclass(frozen=True)
+class PaidState(board.State):
+    enemy_hand: tuple = ()
+    own_deck: tuple | None = None
+    own_fatigue_next: float | None = None
+    own_cards_burned: int = 0
+    own_fatigue_damage: float = 0
+    monster_deaths_since_root: int = 0
+    own_hand_buffs: tuple = ()
+    enemy_hand_buffs: tuple = ()
+    own_dust_costs: tuple | None = None
+    queued_delays: tuple = ()
+    delay_healed_hp: float = 0
+    own_spell_spend_since_root: float = 0
+    previous_own_spell_spend: float | None = None
+    current_paid_gold: float = 0
+    next_paid_gold: float = 0
+    next_income_credited: float = 0
+    next_start_gold: float | None = None
+    enemy_deck: tuple | None = None
+    enemy_fatigue_next: float | None = None
+    enemy_cards_burned: int = 0
+    enemy_fatigue_damage: float = 0
+    second_enemy_income_credited: float = 0
+    second_enemy_start_gold: float | None = None
+    enemy_first_paid_gold: float = 0
+    enemy_second_paid_gold: float = 0
+    enemy_first_spell_gold_paid: float = 0
+
+
+@dataclass(frozen=True)
+class PaidUnit(board.Unit):
+    paralyze_owner_starts_remaining: int = 0
+    silenced: bool = False
+    current_card_cost: float | None = None
+    base_cost: float | None = None
+    deployed_phase: int = -1
+
+
+def spell_spec(card):
+    text = card.get('effect_readable', '').strip()
+    dynamic = re.fullmatch(r"In your hand, this has -(\d+) COST for each monster in both players' dustpiles\. Give all monsters in your hand ATK \+(\d+)/HP \+(\d+)\.", text)
+    if dynamic:
+        discount, attack, health = map(int, dynamic.groups())
+        return dict(spell=[dict(kind='buff_hand', target='owner_hand', attack=attack, health=health)],
+                    dynamic_dust_discount=discount, unknown=[])
+    extra = {
+        'Silence a monster.': ('silence', 'monster'),
+        'Silence and kill a monster.': ('silence_kill', 'monster'),
+    }
+    if text in extra:
+        kind, target = extra[text]
+        return {'spell': [dict(kind=kind, target=target)], 'unknown': []}
+    effects, unknown = spell_window.parse(card)
+    return {'spell': effects, 'unknown': unknown}
+
+
+class PaidSearch(board.BoardSearch):
+    SUPPORTED_HORIZONS = ('enemy_attack', 'next_own_attack', 'next_enemy_attack')
+    mechanic_error_types = (UnknownMechanic,)
+
+    def __init__(self, cards, data):
+        by = {c['id']: c for c in cards}
+        ids = data.get('hand_ids', [])
+        costs = data.get('hand_costs', [])
+        hand_silenced=data.get('hand_silenced',[False]*len(ids))
+        if not isinstance(hand_silenced,list) or len(hand_silenced)!=len(ids) or any(type(v) is not bool for v in hand_silenced):
+            raise ValueError('hand_silenced must match copies with boolean observations')
+        if not isinstance(ids, list) or len(ids) > 7 or (costs and len(costs) != len(ids)):
+            raise ValueError('At most seven known physical own hand copies and matching costs')
+        if any(type(cid) is not int or cid not in by for cid in ids):
+            raise ValueError('Known card IDs required')
+        monster_indexes = [i for i, cid in enumerate(ids) if by[cid]['card_type'] == 'monster']
+        initial = dict(data, hand_ids=[ids[i] for i in monster_indexes])
+        initial['hand_costs'] = [costs[i] for i in monster_indexes] if costs else []
+        super().__init__(cards, initial)
+        self.data = copy.deepcopy(data)
+        base_costs=data.get('hand_base_costs')
+        if base_costs is not None and (not isinstance(base_costs,list) or len(base_costs)!=len(ids)):
+            raise ValueError('hand_base_costs must match physical hand copies')
+        monster_specs = iter(self.hand)
+        self.hand = []
+        for i, cid in enumerate(ids):
+            if by[cid]['card_type'] == 'monster':
+                c,spec=next(monster_specs)
+                c['_observed_base_cost']=(board.finite_number(base_costs[i],'base cost') if base_costs is not None else None)
+                if hand_silenced[i]:
+                    if c['rarity'] in ('DT','DETERMINATION'): raise ValueError('DT hand monster cannot be Silenced')
+                    spec=board.compile_card(dict(c,effect_readable=''))
+                    c['_silenced_in_hand']=True
+                self.hand.append((c,spec))
+            elif by[cid]['card_type'] == 'spell':
+                if hand_silenced[i]: raise ValueError('Spell cannot have monster Silenced state')
+                c = copy.deepcopy(by[cid])
+                if costs:
+                    c['cost'] = board.finite_number(costs[i], 'actual spell cost')
+                spec = spell_spec(c)
+                if spec.get('dynamic_dust_discount') and not costs:
+                    spec['unknown'].append('Dynamic dust cost requires observed current hand_costs, not printed cost')
+                self.hand.append((c, spec))
+            else:
+                raise ValueError('Only monster and spell hand cards supported')
+        dust=data.get('own_dustpile_monsters')
+        self.initial_dust_costs=None
+        if dust is not None:
+            if not isinstance(dust,list): raise ValueError('own_dustpile_monsters must be observed monster records')
+            parsed=[]
+            for row in dust:
+                if not isinstance(row,dict) or set(row)-{'card_id','current_cost','base_cost'} or 'card_id' not in row:
+                    raise ValueError('Dust record fields: card_id, current_cost, base_cost')
+                if row['card_id'] not in by or by[row['card_id']]['card_type']!='monster':
+                    raise ValueError('Dust record needs a known monster card_id')
+                parsed.append(tuple(board.finite_number(row[k],'dust '+k) if row.get(k) is not None else None
+                    for k in ('current_cost','base_cost'))+(by[row['card_id']]['cost'],))
+            self.initial_dust_costs=tuple(parsed)
+        eids = data.get('opponent_hand_ids', [])
+        ecosts = data.get('opponent_hand_costs', [])
+        enemy_base_costs=data.get('opponent_hand_base_costs')
+        if enemy_base_costs is not None and (not isinstance(enemy_base_costs,list) or len(enemy_base_costs)!=len(eids)):
+            raise ValueError('opponent_hand_base_costs must match physical opponent copies')
+        if not isinstance(eids, list) or len(eids) > 7 or (ecosts and len(ecosts) != len(eids)):
+            raise ValueError('At most seven known physical opponent hand copies and matching costs')
+        self.enemy_hand = []
+        for i, cid in enumerate(eids):
+            if type(cid) is not int or cid not in by:
+                raise ValueError('Known opponent card IDs required')
+            c = copy.deepcopy(by[cid])
+            if c['card_type'] not in ('monster','spell'):
+                raise ValueError('Only monster and spell opponent hand cards supported')
+            if c['card_type']=='monster':
+                c['_observed_base_cost']=(board.finite_number(enemy_base_costs[i],'opponent base cost')
+                    if enemy_base_costs is not None else None)
+            if ecosts:
+                c['cost'] = board.finite_number(ecosts[i], 'opponent actual spell cost')
+            if c['card_type'] == 'spell':
+                spec = spell_spec(c)
+                if spec.get('dynamic_dust_discount') and not ecosts:
+                    spec['unknown'].append('Dynamic dust cost requires observed opponent_hand_costs')
+            else:
+                spec = self.enemy_body_spec(c)
+            self.enemy_hand.append((c, spec))
+        self.initial_enemy_hand_count = len(self.enemy_hand)
+        self.enemy_deck_indexes = None
+        enemy_deck = data.get('opponent_deck_ids')
+        if enemy_deck is not None:
+            if not isinstance(enemy_deck,list) or any(type(cid) is not int or cid not in by for cid in enemy_deck):
+                raise ValueError('opponent_deck_ids must be an ordered known remaining library')
+            self.enemy_deck_indexes=tuple(range(len(self.enemy_hand),len(self.enemy_hand)+len(enemy_deck)))
+            for cid in enemy_deck:
+                c=copy.deepcopy(by[cid])
+                self.enemy_hand.append((c,spell_spec(c) if c['card_type']=='spell' else self.enemy_body_spec(c)))
+        self.initial_hand_count = len(self.hand)
+        deck = data.get('own_deck_ids')
+        self.deck_indexes = None
+        if deck is not None:
+            if not isinstance(deck, list) or any(type(cid) is not int or cid not in by for cid in deck):
+                raise ValueError('own_deck_ids must be an ordered known remaining library')
+            self.deck_indexes = tuple(range(len(self.hand), len(self.hand)+len(deck)))
+            for cid in deck:
+                c = copy.deepcopy(by[cid])
+                self.hand.append((c, spell_spec(c) if c['card_type'] == 'spell' else self.spec(c, collect_unknown=False)))
+        self.natural_draw = data.get('next_natural_draw_count', 0)
+        if type(self.natural_draw) is not int or not 0 <= self.natural_draw <= 1:
+            raise ValueError('next_natural_draw_count is 0 or 1 in this single-next-turn horizon')
+        self.start_draw_order = data.get('start_draw_order', 'unknown')
+        if self.start_draw_order not in ('unknown', 'draw_before_start', 'start_before_draw'):
+            raise ValueError('start_draw_order is unknown/draw_before_start/start_before_draw')
+        self.next_max_plays = data.get('next_max_plays', 0)
+        if type(self.next_max_plays) is not int or not 0 <= self.next_max_plays <= 4:
+            raise ValueError('next_max_plays is 0..4')
+        if self.next_max_plays and self.horizon == 'enemy_attack':
+            raise ValueError('Future own plays require a next-turn horizon')
+        self.next_income = data.get('next_own_gold_income')
+        if self.next_income is not None:
+            self.next_income = board.finite_number(self.next_income, 'next own income')
+            if self.horizon == 'enemy_attack':
+                raise ValueError('Next own income requires a next-turn horizon')
+        if self.next_max_plays and self.next_income is None:
+            raise ValueError('Future payment requires explicit next_own_gold_income, including known zero')
+        self.second_enemy_income = data.get('next_opponent_gold_income')
+        if self.second_enemy_income is not None:
+            self.second_enemy_income=board.finite_number(self.second_enemy_income,'next opponent income')
+        self.second_enemy_draw = data.get('next_opponent_natural_draw_count')
+        if self.second_enemy_draw is not None and (type(self.second_enemy_draw) is not int or not 0<=self.second_enemy_draw<=1):
+            raise ValueError('next_opponent_natural_draw_count is 0 or 1')
+        if self.horizon=='next_enemy_attack' and (self.second_enemy_income is None or self.second_enemy_draw is None):
+            raise ValueError('Second enemy response requires explicit next_opponent_gold_income and next_opponent_natural_draw_count, including known zero')
+        if self.horizon!='next_enemy_attack' and (self.second_enemy_income is not None or self.second_enemy_draw is not None):
+            raise ValueError('Second enemy start parameters require next_enemy_attack horizon')
+        self.prior_current_spell_spend = data.get('current_turn_gold_spent_on_spells')
+        if self.prior_current_spell_spend is not None:
+            self.prior_current_spell_spend = board.finite_number(self.prior_current_spell_spend, 'current turn spell spend')
+        self._runtime_specs = {}
+        self.search_algorithm=data.get('search_algorithm','alpha_beta')
+        if self.search_algorithm not in ('alpha_beta','exhaustive'):
+            raise ValueError('search_algorithm is alpha_beta or exhaustive')
+        self.purpose = data.get('purpose_constraints')
+        if self.purpose is not None:
+            if not isinstance(self.purpose, dict) or not self.purpose or set(self.purpose)-PURPOSE_FIELDS:
+                raise ValueError('Nonempty supported purpose_constraints required')
+            for key, value in self.purpose.items():
+                board.finite_number(value, key)
+
+    def enemy_body_spec(self, card):
+        spec=self.spec(card,collect_unknown=False,
+            condition_known_state=self.data.get('opponent_condition_known_state',{}))
+        if 'Delay:' in card.get('effect_readable',''):
+            spec['unknown'].append('Opponent monster Delay remains unimplemented')
+        return spec
+
+    def enemy_hand_spec(self,card,cached,state):
+        if card['card_type']!='monster' or finite_conditions.parse_need(card.get('effect_readable','')) is None:
+            return cached
+        known=copy.deepcopy(self.data.get('opponent_condition_known_state',{}))
+        if state.phase==3:known['last_turn_gold_spent_on_spells']=state.enemy_first_spell_gold_paid
+        if state.enemy_deck!=self.enemy_deck_indexes:known.pop('remaining_deck',None)
+        result=self.spec(card,collect_unknown=False,condition_known_state=known)
+        if result.get('delay'):result['unknown'].append('Opponent monster Delay remains unimplemented')
+        return result
+
+    def objective(self, state, mode):
+        if mode == 'guaranteed_hp':
+            # Victory-first minimax can select an ongoing 3HP leaf while the
+            # enemy can instead leave us a winning 1HP leaf. Its HP component
+            # is not a lower bound. This explicit scalar comes before status.
+            return (board.metrics(state)['own_player_hp'],) + board.objective_vector(state, 'survive')
+        if mode != 'purpose': return super().objective(state, mode)
+        if self.purpose is None: raise ValueError('purpose objective requires purpose_constraints')
+        m = board.metrics(state)
+        # A conjunction is minimized as one predicate. Separate worst-case
+        # columns or a single control trajectory do not establish this goal.
+        satisfied = not m['own_player_dead'] and all(
+            m[key[4:]] >= value if key.startswith('min_') else m[key[4:]] <= value
+            for key, value in self.purpose.items())
+        return (int(satisfied),) + board.objective_vector(state, 'survive')
+
+    def spec(self, c, observed=False, collect_unknown=True, condition_known_state=None):
+        # Reuse the established three-valued Need registry. It controls Magic,
+        # not whether the body may be deployed. Runtime compilation receives
+        # branch-local history; it must never mutate the cached tree's context.
+        changed = copy.deepcopy(c)
+        text = changed.get('effect_readable', '')
+        delay=queued_delay.parse(text)
+        if delay is not None and not observed:
+            text=delay[0]
+            changed['effect_readable']=text
+        need = finite_conditions.parse_need(text)
+        condition = None
+        if need is not None and not observed:
+            condition = finite_conditions.evaluate_condition(need, self.data.get('condition_known_state', {})
+                if condition_known_state is None else condition_known_state)
+            if condition['value'] is not None:
+                for clause in finite_conditions.NEED_CLAUSES:
+                    text = text.replace(clause + ' ', '').replace(clause, '')
+                if not condition['value']:
+                    text = re.sub(r'Magic:.*$', '', text).strip()
+                changed['effect_readable'] = text
+        result = super().spec(changed, observed=observed, collect_unknown=False)
+        if delay is not None and not observed: result['delay']=delay[1]
+        if result['unknown']:
+            prefix = re.match(r'((?:(?:Haste|Taunt|Charge|Armor|Dodge \(\d+\))\. )*)', text)[0]
+            rest = text[len(prefix):]
+            if (m := re.fullmatch(r'Magic: Gain \+(\d+) ATK(?: and (Taunt))?\.', rest)):
+                result['magic'] = ('self_atk_taunt', int(m[1]), bool(m[2]))
+                result['unknown'] = []
+            if (m := re.fullmatch(r'Magic: Give a monster ATK \+(\d+)/HP \+(\d+) and Paralyze it\.', rest)):
+                result['magic'] = ('buff_paralyze', int(m[1]), int(m[2]))
+                result['unknown'] = []
+            if (m := re.fullmatch(r'Magic: Draw (?:a card|(\d+) cards)\.', rest)):
+                result['magic'] = ('draw', int(m[1] or 1))
+                result['unknown'] = []
+        if condition is not None:
+            result['condition'] = condition
+            if condition['value'] is None:
+                result['unknown'].append('Need unknown: ' + condition['reason'])
+        if result['magic'] and result['magic'][0] in ('summon', 'summon_many'):
+            cid = result['magic'][-1]
+            if cid not in self.by:
+                result['unknown'].append('Unknown summoned card '+str(cid))
+            else:
+                child = self.spec(self.summoned_source(self.by[cid]),observed=True,collect_unknown=False)
+                result['unknown'] += ['Summoned card '+str(cid)+': '+x for x in child['unknown']]
+        result['evidence'] = c.get('effect_readable', '')
+        if collect_unknown:
+            self.unknown.extend('Card ' + str(c['id']) + ': ' + x for x in result['unknown'])
+        return result
+
+    def hand_spec(self, c, cached, s):
+        if c['card_type'] != 'monster' or c.get('_silenced_in_hand') or finite_conditions.parse_need(c.get('effect_readable', '')) is None:
+            return cached
+        key = (c['id'], c['cost'], c.get('_observed_base_cost'), s.phase == 2,
+            s.previous_own_spell_spend if s.phase == 2 else None, s.own_deck != self.deck_indexes)
+        if key in self._runtime_specs: return self._runtime_specs[key]
+        known = copy.deepcopy(self.data.get('condition_known_state', {}))
+        if s.phase == 2:
+            known.pop('last_turn_gold_spent_on_spells', None)
+            if s.previous_own_spell_spend is not None:
+                known['last_turn_gold_spent_on_spells'] = s.previous_own_spell_spend
+        if s.own_deck != self.deck_indexes:
+            # Physical IDs alone cannot establish Generated or current identity.
+            # A root remaining_deck observation expires after any actual draw.
+            known.pop('remaining_deck', None)
+        result = self.spec(c, collect_unknown=False, condition_known_state=known)
+        self._runtime_specs[key] = result
+        return result
+
+    def unit(self, *args, **kwargs):
+        u = super().unit(*args, **kwargs)
+        c=args[0]
+        return PaidUnit(**u.__dict__,current_card_cost=c['cost'],base_cost=c.get('_observed_base_cost',c['cost']),
+            silenced=c.get('_silenced_in_hand',False))
+
+    def summoned_source(self,c):
+        delay=queued_delay.parse(c.get('effect_readable',''))
+        if delay is not None:
+            c=dict(c,effect_readable=delay[0])
+        return c
+
+    def observed(self, row, key):
+        cleaned = dict(row)
+        current_cost=cleaned.pop('current_card_cost',None)
+        base_cost=cleaned.pop('base_cost',None)
+        for value in (current_cost,base_cost):
+            if value is not None: board.finite_number(value,'observed card cost')
+        silenced = cleaned.pop('silenced', False)
+        if type(silenced) is not bool: raise ValueError('Observed silenced is boolean')
+        cid = cleaned.get('card_id', -1)
+        if silenced:
+            if cid != -1 and cid not in self.by: raise ValueError('Known observed card ID required')
+            if cid != -1 and self.by[cid]['rarity'] in ('DT', 'DETERMINATION'):
+                raise ValueError('DT card cannot be observed Silenced: intrinsic immunity')
+            # Stats/attack readiness are post-history observations, not reset
+            # guesses. Suppress abilities already removed before this search.
+            cleaned.pop('card_id', None)
+            cleaned['cost'] = cleaned.get('cost', self.by[cid]['cost'] if cid != -1 else 0)
+            cleaned.update(taunt=False, armor=False, dodge=0)
+        clock = cleaned.pop('paralyze_owner_starts_remaining', 0)
+        if type(clock) is not int or not 0 <= clock <= 2:
+            raise ValueError('Paralyze remaining owner starts is 0..2')
+        u = super().observed(cleaned, key)
+        values = dict(u.__dict__, paralyze_owner_starts_remaining=clock, silenced=silenced,
+            current_card_cost=current_cost,base_cost=base_cost)
+        if silenced: values['card_id'] = cid
+        return PaidUnit(**values)
+
+    def root(self):
+        original = super().root()
+        # Enemy damage spells now can kill multiple OWN summoners at once.
+        summoners = [u for u in original.own if u.dust and u.dust[0] in ('summon', 'summon_many')]
+        if len(summoners) > 1 and any(u.dust[0] == 'summon_many' and u.dust[1] > 1 for u in summoners):
+            self.unknown.append('Multiple own Dust summoners competing after enemy AoE: queue unknown')
+        values = dict(original.__dict__, hand=tuple(range(self.initial_hand_count)))
+        fatigue = self.data.get('own_fatigue_next')
+        if fatigue is not None and (type(fatigue) is not int or fatigue < 1):
+            raise ValueError('own_fatigue_next is a positive integer or unknown')
+        enemy_fatigue=self.data.get('opponent_fatigue_next')
+        if enemy_fatigue is not None and (type(enemy_fatigue) is not int or enemy_fatigue<1):
+            raise ValueError('opponent_fatigue_next is a positive integer or unknown')
+        return PaidState(**values, enemy_hand=tuple(range(self.initial_enemy_hand_count)),
+                         own_deck=self.deck_indexes, own_fatigue_next=fatigue,
+                         own_dust_costs=self.initial_dust_costs,
+                         enemy_deck=self.enemy_deck_indexes,enemy_fatigue_next=enemy_fatigue)
+
+    def deaths(self, before, after):
+        # Check each actual event, including sources DEPLOYED after root.
+        # Headshot's removed Dust is absent from `after`, so does not compete.
+        for side in ('own', 'enemy'):
+            previous = {u.key: u for u in getattr(before, side)}
+            dying = [u for u in getattr(after, side) if u.key in previous and previous[u.key].health > 0
+                     and u.health <= 0 and u.dust and u.dust[0] in ('summon', 'summon_many')]
+            products = sum(1 if u.dust[0] == 'summon' else u.dust[1] for u in dying)
+            free = 4-sum(u.health > 0 for u in getattr(after, side))
+            if len(dying) > 1 and products > free:
+                raise UnknownMechanic('Actual simultaneous '+side+' Dust products compete for slots; death queue order unknown')
+        count = sum(1 for side in ('own','enemy') for u in getattr(after,side)
+                    if u.health <= 0 and any(v.key == u.key and v.health > 0 for v in getattr(before,side)))
+        child = super().deaths(before, after)
+        previous_keys = {u.key for u in before.own+before.enemy}
+        child = replace(child, **{side: tuple(replace(u, deployed_phase=after.phase)
+            if u.key not in previous_keys else u for u in getattr(child, side)) for side in ('own', 'enemy')})
+        dust=after.own_dust_costs
+        if dust is not None:
+            for u in after.own:
+                if u.health<=0 and any(v.key==u.key and v.health>0 for v in before.own):
+                    printed=self.by.get(u.card_id,{}).get('cost')
+                    # Cross-zone retention of modified costs is unverified.
+                    # Unmodified source/base/current agreement is invariant;
+                    # generated bodies' zero payment is not their card COST.
+                    stable=u.current_card_cost is not None and u.current_card_cost==u.base_cost==printed
+                    dust+=(((u.current_card_cost,u.base_cost,printed) if stable else (None,None,printed)),)
+        return replace(child, monster_deaths_since_root=after.monster_deaths_since_root+count,own_dust_costs=dust)
+
+    def draw(self, s, count, side='own'):
+        deckfield=side+'_deck';handfield='hand' if side=='own' else 'enemy_hand'
+        fatiguefield=side+'_fatigue_next';hpfield=side+'_hp'
+        menufield=self.hand if side=='own' else self.enemy_hand
+        if getattr(s,deckfield) is None:
+            label='own_deck_ids' if side=='own' else 'opponent_deck_ids'
+            raise UnknownMechanic('Draw requires ordered known '+label+'; unknown drawn identities can change the board or legal actions')
+        if count > len(getattr(s,deckfield)) and getattr(s,fatiguefield) is None:
+            raise UnknownMechanic('Empty-library draw requires known '+('own_fatigue_next' if side=='own' else 'opponent_fatigue_next'))
+        # Sequential attempts stop on death. Reuse the earlier physical ledger
+        # without introducing a fatigue default or its Gold option prior.
+        for _ in range(count):
+            if self.terminal(s): break
+            ledger = draw_options.draw_ledger(1, dict(hand_size=len(getattr(s,handfield)), deck_available=len(getattr(s,deckfield)),
+                       fatigue_next=getattr(s,fatiguefield), player_hp=getattr(s,hpfield), design_prior=False),
+                       net_option_value=0, hp_model_gold=0)
+            drawn = getattr(s,deckfield)[:1]
+            for i in drawn:
+                c, _ = menufield[i]
+                if re.search(r'\bTurbo\b|(?:After|When|Whenever).*draw|in (?:your )?hand', c.get('effect_readable', ''), re.I):
+                    raise UnknownMechanic('Drawn card '+str(c['id'])+' has unimplemented draw/hand callbacks')
+            s = replace(s, **{handfield:getattr(s,handfield)+drawn[:ledger['kept']],
+                deckfield:getattr(s,deckfield)[len(drawn):],hpfield:max(0,getattr(s,hpfield)-ledger['fatigue_damage']),
+                fatiguefield:ledger['fatigue_next_after'],
+                side+'_cards_burned':getattr(s,side+'_cards_burned')+ledger['burned'],
+                side+'_fatigue_damage':getattr(s,side+'_fatigue_damage')+ledger['fatigue_damage']})
+        return s
+
+    def magic(self, s, i, u, spec, caster='own'):
+        action=dict(kind='deploy',hand_index=i,card_id=u.card_id)
+        if caster=='enemy':action['side']='enemy'
+        if spec.get('delay'):
+            if caster!='own':raise UnknownMechanic('Opponent monster Delay remains unimplemented')
+            fields=spec['delay']
+            gate=self.delay_gate(s,fields)
+            event=queued_delay.Delay(u.key,**fields,deployment_gate=gate)
+            s=replace(s,queued_delays=s.queued_delays+(event,))
+        if spec['magic'] and spec['magic'][0] == 'draw':
+            return [(dict(action,magic=spec['magic']), self.draw(s,spec['magic'][1],caster))]
+        if spec['magic'] and spec['magic'][0] == 'self_atk_taunt':
+            _, amount, taunt = spec['magic']
+            allies = tuple(replace(v, attack=v.attack+amount, taunt=v.taunt or taunt) if v.key == u.key else v for v in getattr(s,caster))
+            return [(dict(action,magic=spec['magic']),replace(s,**{caster:allies}))]
+        if spec['magic'] and spec['magic'][0] == 'buff_paralyze':
+            _, attack, health = spec['magic']
+            outcomes = []
+            for side in ('own', 'enemy'):
+                for j, v in enumerate(getattr(s, side)):
+                    if v.health <= 0 or v.key == u.key: continue
+                    units = list(getattr(s, side))
+                    units[j] = replace(v, attack=v.attack+attack, health=v.health+health,
+                                       max_health=v.max_health+health, paralyze_owner_starts_remaining=2)
+                    outcomes.append((dict(action,magic=spec['magic'],magic_target=(side,j)),replace(s,**{side:tuple(units)})))
+            return outcomes or [(dict(action,magic_fizzled=True),s)]
+        keys = {v.key for v in getattr(s,caster)}
+        return [(a,replace(child,**{caster:tuple(replace(v,deployed_phase=s.phase)
+            if v.key not in keys else v for v in getattr(child,caster))})) for a,child in super().magic(s,i,u,spec,caster=caster)]
+
+    def delay_gate(self,s,fields):
+        if fields.get('threshold') is None: return True
+        hand=[]
+        for i in s.hand:
+            c,spec=self.hand[i]
+            if c['card_type']=='monster':
+                hand.append((self.current_cost(c,spec,s),c.get('_observed_base_cost',c['cost']),self.by[c['id']]['cost']))
+        return queued_delay.cost_gate(hand,s.own_dust_costs,fields['threshold'],fields['cost'])
+
+    def apply_delays(self,s):
+        for event in s.queued_delays:
+            gate=self.delay_gate(s,event.__dict__)
+            if gate is None or event.deployment_gate is None:
+                raise UnknownMechanic('Delay cost filter/history is unknown (current/base/printed COST or missing dust): '+event.source_key)
+            if gate!=event.deployment_gate:
+                raise UnknownMechanic('Delay condition changed between Play and execution; check timing is unverified: '+event.source_key)
+            if gate:
+                after=min(s.own_max_hp,s.own_hp+event.heal)
+                s=replace(s,own_hp=after,delay_healed_hp=s.delay_healed_hp+after-s.own_hp)
+        return replace(s,queued_delays=())
+
+    def attacks(self, s):
+        side = self.active_side(s)
+        blocked = {u.key: u.ready for u in getattr(s, side) if u.paralyze_owner_starts_remaining}
+        filtered = replace(s, **{side: tuple(replace(u, ready=0) if u.key in blocked else u for u in getattr(s, side))})
+        for action, child in super().attacks(filtered):
+            # Paralyze blocks attack legality; it does not spend an attack.
+            yield action, replace(child, **{side: tuple(replace(u, ready=blocked[u.key]) if u.key in blocked else u for u in getattr(child, side))})
+
+    def ordered_boundary(self, s, order):
+        incoming_side='own' if s.phase==1 else 'enemy'
+        count=(self.natural_draw if s.phase==1 and self.horizon!='enemy_attack' else
+            self.second_enemy_draw if s.phase==2 and self.horizon=='next_enemy_attack' else 0)
+        incoming_phase=s.phase+1
+        callbacks = {u.key: u.start for u in getattr(s,incoming_side)}
+        if count and order == 'draw_before_start':
+            child = super().boundary(replace(s, **{incoming_side:tuple(replace(u,start=None) for u in getattr(s,incoming_side))}))
+            prior = {u.key:u for u in getattr(s,incoming_side)}
+            child = replace(child, **{incoming_side:tuple(replace(u, start=callbacks.get(u.key),ready=prior[u.key].ready,
+                attacked=prior[u.key].attacked) for u in getattr(child,incoming_side))})
+            if child.phase == incoming_phase and child.phase<self.end_phase and not self.terminal(child):
+                child = self.draw(child,count,incoming_side)
+                if not self.terminal(child):
+                    hpfield=incoming_side+'_hp';maxfield=incoming_side+'_max_hp'
+                    hp, mhp = getattr(child,hpfield),getattr(child,maxfield)
+                    units = list(getattr(child,incoming_side))
+                    for i, u in enumerate(units):
+                        if u.health <= 0: continue
+                        u=replace(u,ready=2,attacked=False)
+                        units[i]=u
+                        if not u.start: continue
+                        kind, amount = u.start
+                        if kind == 'self_atk': units[i] = replace(u, attack=u.attack+amount)
+                        elif kind == 'heal_player': hp = min(mhp, hp+amount)
+                        elif kind == 'extend_player_hp': hp += amount; mhp += amount
+                    child = replace(child, **{incoming_side:tuple(units),hpfield:hp,maxfield:mhp})
+        else:
+            child = super().boundary(s)
+            if count and child.phase==incoming_phase and child.phase<self.end_phase and not self.terminal(child):
+                child = self.draw(child,count,incoming_side)
+        if 0 < child.phase < self.end_phase:
+            side = self.active_side(child)
+            if not self.terminal(child):
+                child = replace(child, **{side: tuple(replace(u,
+                    ready=2 if side=='enemy' and u.health>0 else u.ready,
+                    paralyze_owner_starts_remaining=max(0,u.paralyze_owner_starts_remaining-1)) for u in getattr(child,side))})
+        return child
+
+    def boundary(self, s):
+        if s.phase in (0, 2) and s.queued_delays:
+            # No ordering is chosen when an existing Turn end/death callback
+            # could change the condition or competing healing state.
+            if any(u.health>0 and u.end for u in s.own):
+                raise UnknownMechanic('Queued Delay versus live Turn end callback order is unverified')
+            s=self.apply_delays(s)
+        first = self.ordered_boundary(s, self.start_draw_order if self.start_draw_order != 'unknown' else 'draw_before_start')
+        count=(self.natural_draw if s.phase==1 and self.horizon!='enemy_attack' else
+            self.second_enemy_draw if s.phase==2 and self.horizon=='next_enemy_attack' else 0)
+        incoming_side='own' if s.phase==1 else 'enemy'
+        if self.start_draw_order == 'unknown' and count and any(u.health > 0 and u.start for u in getattr(s,incoming_side)):
+            other = self.ordered_boundary(s, 'start_before_draw')
+            if other != first:
+                raise UnknownMechanic('Natural draw versus '+incoming_side+' owner Turn start order changes outcome; source ruling unknown')
+        if s.phase == 1 and first.phase == 2:
+            # Income belongs to this reached owner start even when its draw
+            # subsequently kills us. Supported start/draw callbacks do not
+            # read cash, so crediting the ledger here commutes with them.
+            income = self.next_income if self.next_income is not None else 0
+            prior = self.prior_current_spell_spend
+            # Unknown earlier spend cannot establish zero. A positive actual
+            # payment since root is nevertheless a sufficient positive witness.
+            spent = (prior+s.own_spell_spend_since_root if prior is not None else
+                s.own_spell_spend_since_root if s.own_spell_spend_since_root > 0 else None)
+            first = replace(first, gold=first.gold+income, next_income_credited=income,
+                next_start_gold=first.gold+income, previous_own_spell_spend=spent,
+                plays=0 if self.next_max_plays else first.plays)
+        if s.phase==2 and first.phase==3 and self.horizon=='next_enemy_attack':
+            first=replace(first,enemy_gold=first.enemy_gold+self.second_enemy_income,
+                second_enemy_income_credited=self.second_enemy_income,
+                second_enemy_start_gold=first.enemy_gold+self.second_enemy_income)
+        return first
+
+    def silence(self, u, *, also_kill=False, phase=1):
+        # Ability-only reset is verified by the status rule. Removing modified
+        # stats (especially injured max HP) has no complete source ruling yet.
+        # Do not guess, or silently omit that legal enemy branch.
+        base = self.by.get(u.card_id)
+        if base and base['rarity'] in ('DT', 'DETERMINATION'):
+            return replace(u, health=0) if also_kill else u
+        if not also_kill:
+            if u.paralyze_owner_starts_remaining:
+                raise UnknownMechanic('Silence removal of Paralyze on ' + u.key + ' is unverified')
+            if base and (u.attack != base['attack'] or u.max_health != base['health']):
+                raise UnknownMechanic('Silence stat reset on modified body ' + u.key + ' is unverified')
+        return replace(u, taunt=False, armor=False, dodge=0, start=None, end=None, dust=None,
+                       before_attack_face=0, health=0 if also_kill else u.health,
+                       ready=0 if u.ready == 1 or u.deployed_phase == phase else u.ready,
+                       paralyze_owner_starts_remaining=0 if also_kill else u.paralyze_owner_starts_remaining, silenced=True)
+
+    @staticmethod
+    def targets(s, target, caster):
+        other = 'own' if caster == 'enemy' else 'enemy'
+        bodies = lambda side: [(side, i) for i, u in enumerate(getattr(s, side)) if u.health > 0]
+        allies, enemies = bodies(caster), bodies(other)
+        owner = (caster + '_player', None)
+        opponent = (other + '_player', None)
+        if target == 'owner_hand': return [[(caster+'_hand',None)]]
+        if target.startswith('all_'):
+            return [enemies if target == 'all_enemy_monsters' else enemies+[opponent] if target == 'all_enemies'
+                    else allies+enemies if target == 'all_monsters' else allies]
+        if target == 'opponent': return [[opponent]]
+        if target in ('owner', 'both'): return [[owner] if target == 'owner' else [owner, opponent]]
+        choices = enemies[:]
+        if target in ('monster', 'monster_or_owner', 'wide_entity'): choices += allies
+        if target in ('monster_or_owner', 'wide_entity'): choices += [owner]
+        if target in ('enemy_entity', 'wide_entity'): choices += [opponent]
+        return [[x] for x in choices]
+
+    def casts(self, s, caster):
+        physical = s.enemy_hand if caster == 'enemy' else s.hand
+        menu = self.enemy_hand if caster == 'enemy' else self.hand
+        balance = 'enemy_gold' if caster == 'enemy' else 'gold'
+        handfield = 'enemy_hand' if caster == 'enemy' else 'hand'
+        for i in physical:
+            card, spec = menu[i]
+            cost = self.current_cost(card, spec, s)
+            if card['card_type'] != 'spell' or spec['unknown'] or cost > getattr(s, balance): continue
+            effect = spec['spell'][0]  # parser admits one complete primitive
+            for targets in self.targets(s, effect['target'], caster):
+                changes = {balance: getattr(s, balance)-cost, handfield: tuple(j for j in physical if j != i)}
+                if caster == 'own':
+                    changes['plays'] = s.plays+1
+                    changes['current_paid_gold' if s.phase == 0 else 'next_paid_gold'] = (s.current_paid_gold if s.phase == 0 else s.next_paid_gold)+cost
+                    if s.phase == 0: changes['own_spell_spend_since_root'] = s.own_spell_spend_since_root+cost
+                else:
+                    field='enemy_first_paid_gold' if s.phase==1 else 'enemy_second_paid_gold'
+                    changes[field]=getattr(s,field)+cost
+                    if s.phase==1:changes['enemy_first_spell_gold_paid']=s.enemy_first_spell_gold_paid+cost
+                paid = replace(s, **changes)
+                child = paid
+                for side, j in targets:
+                    if side.endswith('_hand'):
+                        buffsfield = 'enemy_hand_buffs' if caster == 'enemy' else 'own_hand_buffs'
+                        buffs = {k:(a,h) for k,a,h in getattr(child,buffsfield)}
+                        for k in getattr(child,handfield):
+                            if menu[k][0]['card_type'] == 'monster':
+                                a,h = buffs.get(k,(0,0))
+                                buffs[k] = (a+effect['attack'],h+effect['health'])
+                        child = replace(child,**{buffsfield:tuple((k,a,h) for k,(a,h) in sorted(buffs.items()))})
+                    elif side.endswith('_player'):
+                        key = 'own_hp' if side == 'own_player' else 'enemy_hp'
+                        if effect['kind'] == 'gold':
+                            cash = 'gold' if side == 'own_player' else 'enemy_gold'
+                            child = replace(child, **{cash: getattr(child, cash)+effect['amount']})
+                        else:
+                            child = replace(child, **{key: max(0, getattr(child, key)-effect['amount'])})
+                    else:
+                        units = list(getattr(child, side)); u = units[j]
+                        if effect['kind'] == 'damage': u = board.hurt(u, effect['amount'])
+                        elif effect['kind'] == 'kill': u = replace(u, health=0)
+                        elif effect['kind'] in ('silence', 'silence_kill'):
+                            if s.phase in (0, 2) and any(e.source_key==u.key for e in s.queued_delays):
+                                raise UnknownMechanic('Silence of already queued Delay is unverified')
+                            u = self.silence(u, also_kill=effect['kind'] == 'silence_kill', phase=s.phase)
+                        elif effect['kind'] == 'buff':
+                            u = replace(u, attack=u.attack+effect['attack'], health=u.health+effect['health'],
+                                        max_health=u.max_health+effect['health'])
+                        units[j] = u
+                        child = replace(child, **{side: tuple(units)})
+                child = self.deaths(paid, child)
+                yield dict(kind='cast_spell', side=caster, hand_index=i, card_id=card['id'],
+                           paid_gold=cost, targets=targets), child
+
+    @staticmethod
+    def current_cost(card, spec, s):
+        # Caller costs are observed at origin. New dust additions lower this
+        # known current cost; no reconstruction of an unknown historical pile.
+        return max(0, card['cost']-spec.get('dynamic_dust_discount',0)*s.monster_deaths_since_root)
+
+    def deploys(self, s):
+        if self.active_side(s)=='enemy' and s.phase<self.end_phase:
+            for i in s.enemy_hand:
+                c,spec=self.enemy_hand[i]
+                spec=self.enemy_hand_spec(c,spec,s)
+                if (self.current_cost(c,spec,s)<=s.enemy_gold or may_reduce_own_hand_cost(c)) and spec['unknown']:
+                    raise UnknownMechanic('Reachable enemy card '+str(c['id'])+' in phase '+str(s.phase)+': '+'; '.join(spec['unknown']))
+            yield from self.casts(s, 'enemy')
+            if sum(u.health>0 for u in s.enemy)<4:
+                for i in s.enemy_hand:
+                    c,spec=self.enemy_hand[i]
+                    spec=self.enemy_hand_spec(c,spec,s)
+                    if c['card_type']!='monster' or c['cost']>s.enemy_gold or spec['unknown']:continue
+                    u=replace(self.unit(c,spec,'enemy_hand:'+str(i)),deployed_phase=s.phase)
+                    buffs={k:(a,h) for k,a,h in s.enemy_hand_buffs};a,h=buffs.get(i,(0,0))
+                    u=replace(u,attack=u.attack+a,health=u.health+h,max_health=u.max_health+h)
+                    field='enemy_first_paid_gold' if s.phase==1 else 'enemy_second_paid_gold'
+                    child=replace(s,enemy=s.enemy+(u,),enemy_gold=s.enemy_gold-c['cost'],
+                        enemy_hand=tuple(j for j in s.enemy_hand if j!=i),**{field:getattr(s,field)+c['cost']})
+                    for action,outcome in self.magic(child,i,u,spec,caster='enemy'):
+                        yield dict(action,paid_gold=c['cost']),outcome
+        elif s.phase in (0, 2) and s.plays < (self.max_plays if s.phase == 0 else self.next_max_plays):
+            for i in s.hand:
+                c, spec = self.hand[i]
+                spec = self.hand_spec(c, spec, s)
+                if (self.current_cost(c,spec,s) <= s.gold or may_reduce_own_hand_cost(c)) and spec['unknown']:
+                    label = 'Reachable current card ' if s.phase == 0 else 'Reachable next-turn card '
+                    raise UnknownMechanic(label+str(c['id'])+': '+'; '.join(spec['unknown']))
+            # A full board blocks monsters but never blocks a spell.
+            yield from self.casts(s, 'own')
+            if sum(u.health > 0 for u in s.own) < 4:
+                for i in s.hand:
+                    c, spec = self.hand[i]
+                    spec = self.hand_spec(c, spec, s)
+                    if c['card_type'] != 'monster' or c['cost'] > s.gold or spec['unknown']: continue
+                    u = replace(self.unit(c, spec, 'hand:'+str(i)), deployed_phase=s.phase)
+                    buffs = {k:(a,h) for k,a,h in s.own_hand_buffs}
+                    a,h = buffs.get(i,(0,0))
+                    u = replace(u,attack=u.attack+a,health=u.health+h,max_health=u.max_health+h)
+                    child = replace(s, own=s.own+(u,), gold=s.gold-c['cost'],
+                                    hand=tuple(j for j in s.hand if j != i), plays=s.plays+1)
+                    child = replace(child, **{('current_paid_gold' if s.phase == 0 else 'next_paid_gold'):
+                        (s.current_paid_gold if s.phase == 0 else s.next_paid_gold)+c['cost']})
+                    yield from self.magic(child, i, u, spec)
+
+    def solve(self, root, mode):
+        try:
+            result = (alpha_beta_search.solve(self,root,mode) if self.search_algorithm=='alpha_beta'
+                else super().solve(root,mode))
+            if result['search_complete']:
+                # Replay the selected path through the same physical adapter
+                # to expose library/fatigue accounting at the common endpoint.
+                state = root
+                for action in result['principal_variation']:
+                    if action['kind'] == 'end_turn': state = self.boundary(state)
+                    else:
+                        clean = {k:v for k,v in action.items() if k not in ('before_metrics', 'after_metrics')}
+                        state = next(child for a, child in list(self.attacks(state))+list(self.deploys(state)) if a == clean)
+                result['draw_accounting'] = dict(remaining_known_deck=None if state.own_deck is None else len(state.own_deck),
+                    remaining_hand_count=len(state.hand), cards_burned=state.own_cards_burned,
+                    fatigue_damage=state.own_fatigue_damage, fatigue_next=state.own_fatigue_next)
+                result['opponent_draw_accounting']=dict(remaining_known_deck=None if state.enemy_deck is None else len(state.enemy_deck),
+                    remaining_hand_count=len(state.enemy_hand),cards_burned=state.enemy_cards_burned,
+                    fatigue_damage=state.enemy_fatigue_damage,fatigue_next=state.enemy_fatigue_next)
+                result['delay_accounting']=dict(healed_hp=state.delay_healed_hp,
+                    pending_count=len(state.queued_delays),
+                    known_dust_count=None if state.own_dust_costs is None else len(state.own_dust_costs))
+                result['payment_accounting'] = dict(current_paid_gold=state.current_paid_gold,
+                    next_paid_gold=state.next_paid_gold, next_income_credited=state.next_income_credited,
+                    next_start_gold=state.next_start_gold, current_spell_gold_paid_since_root=state.own_spell_spend_since_root,
+                    next_turn_previous_spell_spend=state.previous_own_spell_spend,
+                    previous_spell_spend_is_positive_witness_only=self.prior_current_spell_spend is None and state.previous_own_spell_spend is not None,
+                    enemy_first_paid_gold=state.enemy_first_paid_gold,enemy_second_paid_gold=state.enemy_second_paid_gold,
+                    enemy_first_spell_gold_paid=state.enemy_first_spell_gold_paid,
+                    second_enemy_income_credited=state.second_enemy_income_credited,
+                    second_enemy_start_gold=state.second_enemy_start_gold)
+                result['endpoint_phase']=state.phase
+                if mode == 'purpose':
+                    result['purpose_constraints'] = self.purpose
+                    result['purpose_guaranteed'] = bool(result['objective_vector'][0])
+            return result
+        except UnknownMechanic as error:
+            return dict(search_complete=False, objective=mode, visited_states=self.nodes,
+                        unknown=[str(error)], metrics=None, principal_variation=[])
+
+
+def evaluate(data, cards=None):
+    cards = score_cards.load_cards() if cards is None else cards
+    search = PaidSearch(cards, data)
+    root = search.root()
+    unknown = list(search.unknown)
+    # Physical deploy guards validate actual cash and branch-local conditions.
+    # A root upper-budget estimate can incorrectly reject an unplayable root
+    # Need whose real future history is known. Never substitute that estimate
+    # for the state in which the action is actually legal.
+    modes = data.get('objectives', list(board.OBJECTIVES))
+    if not isinstance(modes, list) or not modes or len(set(modes)) != len(modes) or any(m not in (*board.OBJECTIVES, 'purpose', 'guaranteed_hp') for m in modes):
+        raise ValueError('Unique nonempty objective subset required')
+    if 'purpose' in modes and search.purpose is None:
+        raise ValueError('purpose objective requires purpose_constraints')
+    outcomes = [] if unknown else [search.solve(root, mode) for mode in modes]
+    unknown += [x for r in outcomes for x in r.get('unknown', [])]
+    assumptions = [x for x in board.LIMITATIONS if not x.startswith('No new enemy plays') and not x.startswith('Current known monster')]
+    assumptions += [
+        'Known physical monsters/spells for both players share the implemented Magic, statuses, death/start/end callbacks. Opponent Delay queues remain unknown.',
+        'Opponent Need uses separate opponent_condition_known_state; second enemy turn spell-spend Need uses actual first-response spell payments, never own history or monster payments.',
+        'Reachable hand mechanics are checked against actual branch cash and history at expanded nodes, not a root future-budget guess. Unknown held passive effects are not modeled as implemented abilities.',
+        'Second enemy response is explicitly selected by next_enemy_attack, requiring declared next_opponent_gold_income and next_opponent_natural_draw_count. Physical enemy copies, cash, deaths and status clocks persist across responses.',
+        'First response hand is the declared known physical response menu; no additional first-response natural draw is inserted. Second-response draw count must be explicit, and enabled draws require an ordered opponent_deck_ids and known empty-library fatigue.',
+        'Alpha-beta proves the root objective through legal bounds; it does not audit all reachable mechanics. Every expanded node exhausts transition guards. Exhaustive search remains selectable for independent small comparisons.',
+        'Opponent declared hand is perfect information; separate reply panels are conditional comparisons, not hidden-hand probabilities.',
+        'Natural draw is explicitly enabled by next_natural_draw_count; drawn identities need ordered own_deck_ids. No SOUL or artifacts.',
+        'Future own plays require explicit next_max_plays and next_own_gold_income. Income is caller-declared, credited once on the reached next own start, in addition to retained cash, including when subsequent fatigue kills us. Supported start/draw callbacks are cash-independent. Default next_max_plays=0 preserves the older attack-only window.',
+        'Need is recomputed on branch-local previous-turn actual spell spend. Missing earlier current-turn spend cannot prove zero; any positive payment since root suffices. Root deck predicates expire after a draw until Generated/current-identity mapping is supported.',
+        'Modified-stat Silence remains unknown. Headshot removes abilities before killing; previously resolved effects on other entities persist.',
+        'Observed card abilities are active unless silenced=true is supplied; printed statuses require current observation overrides if they changed.',
+        'DT Silence immunity is intrinsic. Explicit start_draw_order is a caller hypothesis, not a confirmed server ruling; default unknown compares both orders.',
+        'Enemy normal attacks refresh on its upcoming owner start; current ready=false/monster-only is not permanent incapacity. Paralyze uses its explicit owner-start clock.',
+        'Hand bodies use snapshot ATK/HP; altered hand body stats remain outside this adapter. Abilities are active unless explicit hand_silenced is supplied.',
+        'Delay is a Play queue independent of source survival. Current/base/printed filters in each zone and condition timing must agree; queued Silence and competing Turn end order stay unknown.',
+        'Dust costs are observed records, not inferred from empty deck. Modified death-zone cost retention stays unknown; zero summon payment is not zero card COST.',
+    ]
+    complete=not unknown and all(r['search_complete'] for r in outcomes)
+    return dict(version=VERSION, complete_in_declared_scope=complete,
+                scope='declared_hand_paid_combat_subgame', unknown=sorted(set(unknown)),
+                initial_metrics=board.metrics(root), objectives=outcomes, assumptions=assumptions,
+                recommendations=[dict(objective=r['objective'],
+                    first_action=r['principal_variation'][0] if r['principal_variation'] else None,
+                    policy=r['principal_variation']) for r in outcomes] if complete else [],
+                metrics_are_componentwise_worst_cases=False,
+                rule_hypotheses=[] if search.start_draw_order=='unknown' else ['start_draw_order='+search.start_draw_order],
+                model_gold=None, empirical_win_probability=None, full_card_value_evaluated=False)
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--input', type=Path, required=True)
+    parser.add_argument('--output', type=Path)
+    args = parser.parse_args()
+    result = json.dumps(evaluate(json.loads(args.input.read_text())), ensure_ascii=False, indent=2)+'\n'
+    if args.output: args.output.write_text(result)
+    else: print(result, end='')
+
+
+if __name__ == '__main__': main()
