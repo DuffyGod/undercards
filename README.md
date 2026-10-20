@@ -1,6 +1,8 @@
 # Undercards 通用 Value 建模
 
-当前入口：[Agent主导逐卡多维模型](analysis/card-assessment/2026-10-20/README.md)与[数值标准/携带门槛](analysis/card-assessment/2026-10-20/MODEL.md)。研究流程已纠正为从全卡池读卡、推演用途和替代候选，再由通用端点账本定价/反证；不要求先实现对局机制。已有755卡目录、49卡条件档案和197卡旧DeepSeek材料索引，未审阅项不冒充裸体整卡分。DeepSeek新用途协议已备，当前凭据缺失，未发新请求。[联合开局](analysis/card-comparison/2026-10-20/joint-opening/README.md)及此前研究保留为辅助证据；暂停搜索推荐完整卡组。
+研究首先遵循[整体研究原则](RESEARCH_PRINCIPLES.md)。主Agent自主形成对随机、部分可观测、双方策略相互作用的整体认识，再选择能检验关键未知的方法；不以逐卡端点、模拟器支持名单或用户举例决定长期范围。历史理论已有正确框架，执行曾偏向累计局部评分，本次纠正与证据标准已记录并由根目录[AGENTS.md](AGENTS.md)接续。
+
+现有工具包括[逐卡多维账本](analysis/card-assessment/2026-10-20/README.md)、[随机联合开局](analysis/card-comparison/2026-10-20/joint-opening/README.md)及有限信息研究。755卡目录、78个条件档案与旧DeepSeek材料是辅助证据，不是完整实战强度榜或整体目标进度。暂停搜索推荐完整卡组；方法、结构与候选选择均可按研究证据调整。当前工作状态见[CURRENT_CHECKPOINT.md](CURRENT_CHECKPOINT.md)。
 
 低成本、可解释、对数值差异敏感的随从评价研究。主智能体负责数值模型；DeepSeek承担批量机制拆解、跨批检查、反例提案和代码审查。当前模型是有明确边界的启发式报价程序，仍不是完整卡池强度榜。
 

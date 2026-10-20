@@ -2,6 +2,8 @@
 
 此页优先于旧 `CONTINUATION.md` 中的下一步安排。
 
+**方法优先级再次纠正：** 用户要求研究者自主形成整体卡牌游戏理解，再决定合适的方法。[RESEARCH_PRINCIPLES.md](RESEARCH_PRINCIPLES.md)记录偏航、整体思想、证据与交付标准；[AGENTS.md](AGENTS.md)负责后续自动接续。下面“逐卡为当前主线”和各阶段“下一轮优先”是历史安排，不能覆盖这一纠正。逐卡/模拟都是工具，不固定费用区间、卡牌或研究题。新研究先复用既有整体与有限信息证据，选择最能减少关键未知的切口；不能以新增档案数充当进展，也不要求先完整模拟全卡池。
+
 **最新扩展：** [29张新潜力卡与打法比较](analysis/card-assessment/2026-10-20/promising-tactics/REPORT.md)，新增183条条件动作、16组同根比较，累计78张档案。不是78张完整实战总分。现有`assess.py`同时读取新旧档案；旧673条未重跑。新净值J计入所有打出/Erase的手牌库存，和旧共同一张焦点牌N不同，禁止直接混比或套携带函数。5/5目标下，Loox+Soul Cage5G、Searby7G、Loox+Dancer8G已有共同目标/预算和卡价翻转点；Pancakes/Sheary/Mantis/Guard等有可执行顺序优势。新13项针对性检查通过，未重跑旧开局实验。已证明静态J可偏好留下致死残敌，后续优先补已选候选的有限可见回应与匹配等待基线，不能只按最高J出牌，也不把J<0解释成永不建场。新档案含Source/阶段/消耗/未定价项；DeepSeek仍凭据skipped/标准客户端credential_error，本轮新HTTP请求0，95批尚未执行。
 
 **当前研究主线已按用户纠正：Agent读卡/推演/候选为主，通用数值账本与局部模拟验证为辅。** 最新入口为[逐卡模型README](analysis/card-assessment/2026-10-20/README.md)、[MODEL及定量实例](analysis/card-assessment/2026-10-20/MODEL.md)。不以对局模拟器实现名单筛卡，不扩窄场景就宣称全池强度。暂停搜索推荐完整卡组。
