@@ -31,9 +31,9 @@ def groups(stage):
         return [dict(composition=c,policy=p,soul='KINDNESS',opponent='large_reply',seat=s,intervention=i)
                 for c,p,s,i in product(('small_draw','middle_draw'),('balanced','reserve_slot'),(0,1),
                     ('base','no_bonus_draw','extra_natural','hand10','slots6','no_foe_hero_heal','hp_loss','soul_first','no_t1_draw'))]
-    if stage=='stress':
+    if stage in ('stress','stress_extension'):
         return [dict(composition=c,policy='balanced',soul='KINDNESS',opponent=o,seat=s,intervention='public_tactics')
-                for c,o,s in product(('small_draw','middle_draw','heavy'),('pressure_mid','pressure_large'),(0,1))]
+                for c,o,s in product(('small_draw','middle_draw','heavy') if stage=='stress' else ('small_anchor','small_reach'),('pressure_mid','pressure_large'),(0,1))]
     if stage in ('tactics','extension'):
         comps=('small_draw','middle_draw','heavy') if stage=='tactics' else ('small_anchor','small_reach')
         return [dict(composition=c,policy='balanced',soul='KINDNESS',opponent=o,seat=s,intervention='public_tactics')
@@ -65,7 +65,7 @@ def trial(g,seed,horizon,trace=False):
 
 def main():
     a=argparse.ArgumentParser(description=__doc__)
-    a.add_argument('--stage',choices=('pilot','main','counterfactual','heal','tactics','extension','stress'),required=True)
+    a.add_argument('--stage',choices=('pilot','main','counterfactual','heal','tactics','extension','stress','stress_extension'),required=True)
     a.add_argument('--output',type=Path,required=True);a.add_argument('--samples',type=int,default=128)
     a.add_argument('--horizon',type=int,default=8);a.add_argument('--seed-start',type=int,default=0)
     a.add_argument('--resume',action='store_true');args=a.parse_args()
