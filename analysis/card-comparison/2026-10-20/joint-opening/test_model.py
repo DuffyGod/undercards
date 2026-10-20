@@ -60,6 +60,25 @@ class JointTests(unittest.TestCase):
             self.assertEqual(choose_deployment(a.view(0),policy),choose_deployment(b.view(0),policy))
             self.assertEqual(choose_combat(a.view(0),policy,a.config),choose_combat(b.view(0),policy,b.config))
 
+    def test_optional_empty_draw_and_fixed_capacity_standard(self):
+        m=Match((MIDDLE,MIDDLE),('KINDNESS','INTEGRITY'),('reserve_slot','balanced'),2)
+        p=m.players[0];p.deck=[];p.cash=8;p.hand=[Held(100,44)]
+        m.deploy(0,100)
+        self.assertEqual(p.fatigue,0)
+        p.field=tuple(Unit(i,2,2,3,3) for i in range(4))
+        p.hand=[Held(100,196),Held(101,17)];p.cash=8;m.turn=3
+        self.assertTrue(m.full_slot_candidate(0))
+        # Known fatal forced draw is not assigned a positive draw bonus.
+        p.field=();p.hand=[Held(100,243)];p.hp=1
+        self.assertIsNone(choose_deployment(m.view(0),'balanced'))
+
+    def test_kindness_growth_is_not_hero_healing(self):
+        m=Match((MIDDLE,MIDDLE),('KINDNESS','INTEGRITY'),('balanced','balanced'),0,
+                Config(hero_healing=(False,True)))
+        p=m.players[0];p.hp=20;p.field=(Unit(0,2,2,3,3),);m.turn=3
+        m.soul_end(0)
+        self.assertEqual(p.hp,20);self.assertEqual(p.field[0].max_h,4)
+
     def test_death_stops_before_draw_or_heal(self):
         m=Match((MIDDLE,MIDDLE),('KINDNESS','KINDNESS'),('pressure','pressure'),2)
         m.players[0].field=(Unit(100,15,6,5,5,True),);m.players[1].hp=1

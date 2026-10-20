@@ -14,7 +14,7 @@ HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[3]
 sys.path.insert(0,str(ROOT/'analysis/method-lab/2026-10-18'))
 from value_model import BodyScale
-VERSION='joint-opening-0.1'
+VERSION='joint-opening-0.2'
 SNAPSHOT=json.loads((ROOT/'skills/undercards/references/snapshot.json').read_text())
 CARDS={c['id']:c for c in SNAPSHOT['cards']}
 REFERENCE=json.loads((ROOT/'analysis/method-lab/2026-10-18/statistical_inputs.json').read_text())['reference']
@@ -84,6 +84,8 @@ class View:
     soul:str
     healing:bool
     knight_damage:str
+    deck_count:int
+    fatigue:int
     # No enemy hand identities, deck order, seed or hidden-state reference.
 
 @dataclass
@@ -189,7 +191,10 @@ def deployment_scores(view,policy):
         if cost>view.cash:continue
         if h.cid==91:
             missing=30-current.hp
-            score=.25*min(3,missing)*int(view.healing)+.6-.5*cost
+            restored=min(3,missing)*int(view.healing)
+            flow=.6 if view.deck_count else -.25*(view.fatigue+1)
+            score=.25*restored+flow-.5*cost
+            if not view.deck_count and current.hp+restored<=view.fatigue+1:score=-1e9
             out.append((score,h.uid));continue
         if len(current.own)>=view.slots:continue
         u=unit(h);f=body_value(u)
@@ -200,9 +205,14 @@ def deployment_scores(view,policy):
             score+=face*min(3,max(0,current.foe_hp))
             score+=sum(body_value(e)-body_value(hurt(e,1)[0]) for e in current.foe)
         if h.cid in (243,44):
-            count=min(1 if h.cid==243 else 2,view.hand_cap-len(view.hand)+1)
+            count=min(1 if h.cid==243 else 2,view.hand_cap-len(view.hand)+1,view.deck_count)
             score+=.6*count
-        if h.cid==225:score+=.6*int(len(view.hand)<=view.hand_cap)
+            if h.cid==243 and not view.deck_count:
+                score-=.25*(view.fatigue+1)
+                if current.hp<=view.fatigue+1:score=-1e9
+        if h.cid==225:
+            score+=.6 if view.deck_count else -.25*(view.fatigue+1)
+            if not view.deck_count and current.hp<=view.fatigue+1:score=-1e9
         if u.taunt:score+=.25*min(sum(e.a for e in current.foe),u.h)
         if policy=='reserve_slot' and len(current.own)==view.slots-1:
             # Reserve last slot only for a stronger currently held monster
@@ -232,7 +242,7 @@ class Match:
         self.players=[];self.trace=[];self.keep_trace=trace;self.snapshots=[]
         self.stats=[dict(draws=0,bonus_draws=0,burned=0,bonus_burned=0,played=0,bonus_played=0,
                          spent=0,damage=0,healed=0,monster_healed=0,fatigue_damage=0,
-                         slot_blocked_turns=0,slot_missed=0,empty_hand_turns=0,first_turn_no_opener=False,
+                         slot_blocked_turns=0,slot_missed=0,reserve_withheld_turns=0,empty_hand_turns=0,first_turn_no_opener=False,
                          first_turn_available_but_no_play=False,first_turn_no_play=False,first_play=None,
                          big_reply=None,small_killed_by_big=0,small_deployed=0,drawn_ids=[]) for _ in range(2)]
         for side,(deck,soul,policy) in enumerate(zip(decks,souls,policies)):
@@ -269,7 +279,7 @@ class Match:
     def view(self,side):
         p=self.players[side];e=self.players[1-side]
         return View(Board(p.field,e.field,p.hp,e.hp),tuple(p.hand),p.cash,self.turn,side,
-                    self.config.hand_cap,self.config.slots,self.souls[side],self.config.healing and self.config.hero_healing[side],self.config.knight_damage)
+                    self.config.hand_cap,self.config.slots,self.souls[side],self.config.healing and self.config.hero_healing[side],self.config.knight_damage,len(p.deck),p.fatigue)
 
     def apply_attack(self,side,a,target):
         v=self.view(side);before=v.board
@@ -307,7 +317,7 @@ class Match:
         elif held.cid==243:self.draw(side,'bonus')
         elif held.cid==44:
             # "up to 2": causal policy chooses only draws which fit after play.
-            for _ in range(min(2,self.config.hand_cap-len(p.hand))):
+            for _ in range(min(2,self.config.hand_cap-len(p.hand),len(p.deck))):
                 if not self.alive():break
                 self.draw(side,'bonus')
         elif held.cid==21:
@@ -323,15 +333,15 @@ class Match:
         # Current legal monster utility if one slot existed, before seeing result.
         test=replace(v,slots=self.config.slots+1)
         return any(score>0 and next(h.cid for h in v.hand if h.uid==uid)!=91
-                   for score,uid in deployment_scores(test,self.policies[side]))
+                   for score,uid in deployment_scores(test,'balanced'))
 
     def soul_end(self,side):
         p=self.players[side]
-        if self.souls[side]=='KINDNESS' and self.turn>=3 and self.config.healing:
+        if self.souls[side]=='KINDNESS' and self.turn>=3:
             self.heal(side,1)
             injured=any(u.h<u.max_h for u in p.field)
-            healed=sum(min(1,u.max_h-u.h) for u in p.field)
-            p.field=tuple(replace(u,h=min(u.max_h,u.h+1)) for u in p.field)
+            healed=sum(min(1,u.max_h-u.h) for u in p.field) if self.config.healing else 0
+            if self.config.healing:p.field=tuple(replace(u,h=min(u.max_h,u.h+1)) for u in p.field)
             self.stats[side]['monster_healed']+=healed
             if not injured and p.field:
                 u=p.field[-1];p.field=p.field[:-1]+(replace(u,h=u.h+1,max_h=u.max_h+1),)
@@ -353,7 +363,7 @@ class Match:
             op=[h for h in p.hand if h.cid!=91 and CARDS[h.cid]['cost']<=p.cash]
             s['first_turn_no_opener']=not op
             opener_ids={h.uid for h in op}
-        paid=0;blocked=False;steps=0
+        paid=0;blocked=False;withheld=False;steps=0
         while self.alive():
             steps+=1
             if steps>45:raise RuntimeError('Turn policy guard exceeded')
@@ -363,12 +373,17 @@ class Match:
                 for a,target in plan:
                     if self.alive():self.apply_attack(side,a,target)
                 continue
-            uid=choose_deployment(self.view(side),self.policies[side])
+            v=self.view(side)
+            uid=choose_deployment(v,self.policies[side])
+            if self.policies[side]=='reserve_slot' and len(p.field)==self.config.slots-1:
+                base_uid=choose_deployment(v,'balanced')
+                withheld=withheld or (uid!=base_uid and base_uid is not None)
             if uid is None:break
             paid+=self.deploy(side,uid)
         if turn==1:
             s['first_turn_available_but_no_play']=bool(opener_ids) and opener_ids <= {h.uid for h in p.hand}
             s['first_turn_no_play']=s['played']==0
+        s['reserve_withheld_turns']+=int(withheld)
         s['slot_blocked_turns']+=int(blocked)
         s['slot_missed']+=int(self.alive() and self.full_slot_candidate(side))
         s['empty_hand_turns']+=int(not p.hand)
