@@ -1,0 +1,324 @@
+{
+  "producer_source_commit": "394dab03f1938ea244e812f8ff7035d1ea708f03",
+  "assessment_kind": "heuristic",
+  "empirically_calibrated": false,
+  "cases": {
+    "guard/KINDNESS/one_large_hit/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        377,
+        1
+      ],
+      "soul": "KINDNESS",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          10,
+          1
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0
+    },
+    "guard/KINDNESS/order_probe/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        377,
+        1
+      ],
+      "soul": "KINDNESS",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0
+    },
+    "guard/JUSTICE/one_large_hit/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        377,
+        1
+      ],
+      "soul": "JUSTICE",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          10,
+          1
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0
+    },
+    "guard/JUSTICE/order_probe/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        377,
+        1
+      ],
+      "soul": "JUSTICE",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0
+    }
+  },
+  "price_settings": {
+    "central": {
+      "face_share": 0.2,
+      "threshold": 0.4,
+      "face_price": 0.25
+    }
+  },
+  "cash_price_domain": [
+    0,
+    1
+  ],
+  "hand_price_display_domain": [
+    0,
+    3
+  ],
+  "hand_price_interpretation": "Unidentified homogeneous per-card opportunity price; sensitivity, not measured card value",
+  "source": "skills/undercards/references/snapshot.json; compiled 2026-10-05",
+  "used_cards": {
+    "1": {
+      "id": 1,
+      "name": "Dummy",
+      "metadata_name": "Dummy",
+      "cost": 1,
+      "attack": 0,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}.",
+      "effect_readable": "Taunt.",
+      "keyword_mentions": [
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-1",
+      "source_line": 283
+    },
+    "15": {
+      "id": 15,
+      "name": "Aaron",
+      "metadata_name": "Aaron",
+      "cost": 5,
+      "attack": 6,
+      "health": 5,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": " ",
+      "effect_readable": "",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-15",
+      "source_line": 297
+    },
+    "38": {
+      "id": 38,
+      "name": "Royal Guard 1",
+      "metadata_name": "Royal Guard 1",
+      "cost": 9,
+      "attack": 7,
+      "health": 10,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "ROYAL_GUARD"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Give all ally {{TRIBE:ROYAL_GUARD|2}} {{KW:ARMOR}}.",
+      "effect_readable": "Dust: Give all ally Royal Guard Armor.",
+      "keyword_mentions": [
+        "ARMOR",
+        "DUST"
+      ],
+      "tribe_mentions": [
+        "ROYAL_GUARD"
+      ],
+      "card_references": [],
+      "source_key": "card-38",
+      "source_line": 320
+    },
+    "187": {
+      "id": 187,
+      "name": "Candy Dish",
+      "metadata_name": "Candy Dish",
+      "cost": 3,
+      "attack": 2,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": " ",
+      "effect_readable": "",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-187",
+      "source_line": 464
+    },
+    "377": {
+      "id": 377,
+      "name": "Ranger Rudinn",
+      "metadata_name": "Ranger Rudinn",
+      "cost": 3,
+      "attack": 3,
+      "health": 2,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Dodge",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DODGE}} (1).",
+      "effect_readable": "Dodge (1).",
+      "keyword_mentions": [
+        "DODGE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-377",
+      "source_line": 601
+    },
+    "602": {
+      "id": 602,
+      "name": "Rock Pet",
+      "metadata_name": "Rock Pet",
+      "cost": 2,
+      "attack": 3,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": " ",
+      "effect_readable": "",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-602",
+      "source_line": 1985
+    }
+  },
+  "conditional_scope": "Budget ledger plus one deployment and complete ordinary-enemy attack phase; not an opening trajectory or match",
+  "enemy_soul": "INTEGRITY; no cards played or expenditures, previous spend zero, end rebate zero",
+  "inactive_guard_dust": "Only one Royal Guard available; no other ally Royal Guard, future hand/deck effects unpriced",
+  "inactive_ex_magic": "Action cash below20 and enemy cash below10, so no reset after paying10",
+  "unknown": "Prior field/draw trajectory, real opportunity correlations, future SOUL/card effects and resource prices uncalibrated"
+}

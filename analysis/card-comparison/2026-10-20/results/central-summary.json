@@ -1,0 +1,3343 @@
+[
+  {
+    "case": "guard/INTEGRITY/empty/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 7.3456006953744435
+  },
+  {
+    "case": "guard/INTEGRITY/empty/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 4.161923415263232
+  },
+  {
+    "case": "guard/INTEGRITY/empty/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 1.5
+  },
+  {
+    "case": "guard/INTEGRITY/empty/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": 0.38798922683093906
+  },
+  {
+    "case": "guard/INTEGRITY/empty/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 7.3456006953744435
+  },
+  {
+    "case": "guard/INTEGRITY/empty/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 4.161923415263232
+  },
+  {
+    "case": "guard/INTEGRITY/empty/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 1.5
+  },
+  {
+    "case": "guard/INTEGRITY/empty/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": 0.38798922683093906
+  },
+  {
+    "case": "guard/INTEGRITY/one_large_hit/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 6.111122353126891
+  },
+  {
+    "case": "guard/INTEGRITY/one_large_hit/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 2.1111223531268912
+  },
+  {
+    "case": "guard/INTEGRITY/one_large_hit/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      15
+    ],
+    "value": -1.0
+  },
+  {
+    "case": "guard/INTEGRITY/one_large_hit/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [],
+    "value": -2.5
+  },
+  {
+    "case": "guard/INTEGRITY/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 6.111122353126891
+  },
+  {
+    "case": "guard/INTEGRITY/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 2.1111223531268912
+  },
+  {
+    "case": "guard/INTEGRITY/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      15
+    ],
+    "value": -1.0
+  },
+  {
+    "case": "guard/INTEGRITY/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -3.025803396195265
+  },
+  {
+    "case": "guard/INTEGRITY/two_durable/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 4.718001311382103
+  },
+  {
+    "case": "guard/INTEGRITY/two_durable/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 1.3756813317736594
+  },
+  {
+    "case": "guard/INTEGRITY/two_durable/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -1.1120107731690592
+  },
+  {
+    "case": "guard/INTEGRITY/two_durable/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -2.112010773169059
+  },
+  {
+    "case": "guard/INTEGRITY/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 4.718001311382103
+  },
+  {
+    "case": "guard/INTEGRITY/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 1.3756813317736594
+  },
+  {
+    "case": "guard/INTEGRITY/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      38,
+      187
+    ],
+    "value": -1.162811835305403
+  },
+  {
+    "case": "guard/INTEGRITY/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38,
+      187
+    ],
+    "value": -3.162811835305403
+  },
+  {
+    "case": "guard/INTEGRITY/order_probe/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 6.679492743693343
+  },
+  {
+    "case": "guard/INTEGRITY/order_probe/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.4119234152632316
+  },
+  {
+    "case": "guard/INTEGRITY/order_probe/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 0.75
+  },
+  {
+    "case": "guard/INTEGRITY/order_probe/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -0.36201077316906094
+  },
+  {
+    "case": "guard/INTEGRITY/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 6.679492743693343
+  },
+  {
+    "case": "guard/INTEGRITY/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.4119234152632316
+  },
+  {
+    "case": "guard/INTEGRITY/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 0.75
+  },
+  {
+    "case": "guard/INTEGRITY/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -0.36201077316906094
+  },
+  {
+    "case": "guard/INTEGRITY/three_medium/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 4.161923415263232
+  },
+  {
+    "case": "guard/INTEGRITY/three_medium/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 1.1619234152632316
+  },
+  {
+    "case": "guard/INTEGRITY/three_medium/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -1.5
+  },
+  {
+    "case": "guard/INTEGRITY/three_medium/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -2.612010773169061
+  },
+  {
+    "case": "guard/INTEGRITY/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 4.161923415263232
+  },
+  {
+    "case": "guard/INTEGRITY/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 1.1619234152632316
+  },
+  {
+    "case": "guard/INTEGRITY/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -1.5
+  },
+  {
+    "case": "guard/INTEGRITY/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -3.5
+  },
+  {
+    "case": "guard/INTEGRITY/four_small/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 6.161923415263232
+  },
+  {
+    "case": "guard/INTEGRITY/four_small/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.1619234152632316
+  },
+  {
+    "case": "guard/INTEGRITY/four_small/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 0.5
+  },
+  {
+    "case": "guard/INTEGRITY/four_small/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -0.61201077316906
+  },
+  {
+    "case": "guard/INTEGRITY/four_small/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 6.161923415263232
+  },
+  {
+    "case": "guard/INTEGRITY/four_small/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.1619234152632316
+  },
+  {
+    "case": "guard/INTEGRITY/four_small/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 0.5
+  },
+  {
+    "case": "guard/INTEGRITY/four_small/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -0.61201077316906
+  },
+  {
+    "case": "guard/INTEGRITY/kindness_taunt/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 6.161923415263232
+  },
+  {
+    "case": "guard/INTEGRITY/kindness_taunt/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.1619234152632316
+  },
+  {
+    "case": "guard/INTEGRITY/kindness_taunt/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 0.5
+  },
+  {
+    "case": "guard/INTEGRITY/kindness_taunt/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -0.61201077316906
+  },
+  {
+    "case": "guard/INTEGRITY/kindness_taunt/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 6.161923415263232
+  },
+  {
+    "case": "guard/INTEGRITY/kindness_taunt/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.1619234152632316
+  },
+  {
+    "case": "guard/INTEGRITY/kindness_taunt/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 0.5
+  },
+  {
+    "case": "guard/INTEGRITY/kindness_taunt/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -0.61201077316906
+  },
+  {
+    "case": "guard/INTEGRITY/justice_emergency/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 5.1111223531268895
+  },
+  {
+    "case": "guard/INTEGRITY/justice_emergency/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 1.1111223531268895
+  },
+  {
+    "case": "guard/INTEGRITY/justice_emergency/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      15
+    ],
+    "value": -2.0
+  },
+  {
+    "case": "guard/INTEGRITY/justice_emergency/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      1
+    ],
+    "value": -4.0
+  },
+  {
+    "case": "guard/INTEGRITY/justice_emergency/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 5.1111223531268895
+  },
+  {
+    "case": "guard/INTEGRITY/justice_emergency/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 1.1111223531268895
+  },
+  {
+    "case": "guard/INTEGRITY/justice_emergency/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      15
+    ],
+    "value": -2.0
+  },
+  {
+    "case": "guard/INTEGRITY/justice_emergency/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      38
+    ],
+    "value": -4.112010773169061
+  },
+  {
+    "case": "guard/KINDNESS/empty/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 7.444155362592259
+  },
+  {
+    "case": "guard/KINDNESS/empty/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 4.260478082481047
+  },
+  {
+    "case": "guard/KINDNESS/empty/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 1.5985546672178153
+  },
+  {
+    "case": "guard/KINDNESS/empty/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": 0.19160779722354704
+  },
+  {
+    "case": "guard/KINDNESS/empty/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 7.444155362592259
+  },
+  {
+    "case": "guard/KINDNESS/empty/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 4.260478082481047
+  },
+  {
+    "case": "guard/KINDNESS/empty/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 1.5985546672178153
+  },
+  {
+    "case": "guard/KINDNESS/empty/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": 0.19160779722354704
+  },
+  {
+    "case": "guard/KINDNESS/one_large_hit/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 6.2096770203447065
+  },
+  {
+    "case": "guard/KINDNESS/one_large_hit/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 2.2096770203447065
+  },
+  {
+    "case": "guard/KINDNESS/one_large_hit/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      15
+    ],
+    "value": -0.9014453327821847
+  },
+  {
+    "case": "guard/KINDNESS/one_large_hit/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [],
+    "value": -2.5
+  },
+  {
+    "case": "guard/KINDNESS/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 6.2096770203447065
+  },
+  {
+    "case": "guard/KINDNESS/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 2.2096770203447065
+  },
+  {
+    "case": "guard/KINDNESS/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      15
+    ],
+    "value": -0.9014453327821847
+  },
+  {
+    "case": "guard/KINDNESS/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -2.671861263235286
+  },
+  {
+    "case": "guard/KINDNESS/two_durable/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 4.959677020344708
+  },
+  {
+    "case": "guard/KINDNESS/two_durable/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 1.617357040736259
+  },
+  {
+    "case": "guard/KINDNESS/two_durable/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -1.0445663745269727
+  },
+  {
+    "case": "guard/KINDNESS/two_durable/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -2.308392202776451
+  },
+  {
+    "case": "guard/KINDNESS/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 4.959677020344708
+  },
+  {
+    "case": "guard/KINDNESS/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 1.617357040736259
+  },
+  {
+    "case": "guard/KINDNESS/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -1.0445663745269727
+  },
+  {
+    "case": "guard/KINDNESS/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -2.308392202776451
+  },
+  {
+    "case": "guard/KINDNESS/order_probe/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 6.778047410911158
+  },
+  {
+    "case": "guard/KINDNESS/order_probe/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.510478082481047
+  },
+  {
+    "case": "guard/KINDNESS/order_probe/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 0.8485546672178153
+  },
+  {
+    "case": "guard/KINDNESS/order_probe/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -0.558392202776453
+  },
+  {
+    "case": "guard/KINDNESS/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 6.778047410911158
+  },
+  {
+    "case": "guard/KINDNESS/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.510478082481047
+  },
+  {
+    "case": "guard/KINDNESS/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 0.8485546672178153
+  },
+  {
+    "case": "guard/KINDNESS/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -0.558392202776453
+  },
+  {
+    "case": "guard/KINDNESS/three_medium/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 4.611122353126891
+  },
+  {
+    "case": "guard/KINDNESS/three_medium/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 1.2604780824810469
+  },
+  {
+    "case": "guard/KINDNESS/three_medium/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -1.4014453327821847
+  },
+  {
+    "case": "guard/KINDNESS/three_medium/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -2.808392202776453
+  },
+  {
+    "case": "guard/KINDNESS/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 4.611122353126891
+  },
+  {
+    "case": "guard/KINDNESS/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 1.2604780824810469
+  },
+  {
+    "case": "guard/KINDNESS/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -1.4014453327821847
+  },
+  {
+    "case": "guard/KINDNESS/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -3.4014453327821847
+  },
+  {
+    "case": "guard/KINDNESS/four_small/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 6.260478082481047
+  },
+  {
+    "case": "guard/KINDNESS/four_small/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.260478082481047
+  },
+  {
+    "case": "guard/KINDNESS/four_small/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 0.5985546672178153
+  },
+  {
+    "case": "guard/KINDNESS/four_small/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -0.8083922027764521
+  },
+  {
+    "case": "guard/KINDNESS/four_small/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 6.260478082481047
+  },
+  {
+    "case": "guard/KINDNESS/four_small/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.260478082481047
+  },
+  {
+    "case": "guard/KINDNESS/four_small/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 0.5985546672178153
+  },
+  {
+    "case": "guard/KINDNESS/four_small/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -0.8083922027764521
+  },
+  {
+    "case": "guard/KINDNESS/kindness_taunt/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 6.260478082481047
+  },
+  {
+    "case": "guard/KINDNESS/kindness_taunt/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.260478082481047
+  },
+  {
+    "case": "guard/KINDNESS/kindness_taunt/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 0.5985546672178153
+  },
+  {
+    "case": "guard/KINDNESS/kindness_taunt/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -0.8083922027764521
+  },
+  {
+    "case": "guard/KINDNESS/kindness_taunt/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 6.260478082481047
+  },
+  {
+    "case": "guard/KINDNESS/kindness_taunt/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.260478082481047
+  },
+  {
+    "case": "guard/KINDNESS/kindness_taunt/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 0.5985546672178153
+  },
+  {
+    "case": "guard/KINDNESS/kindness_taunt/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -0.8083922027764521
+  },
+  {
+    "case": "guard/KINDNESS/justice_emergency/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 5.8611223531268895
+  },
+  {
+    "case": "guard/KINDNESS/justice_emergency/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 1.8611223531268895
+  },
+  {
+    "case": "guard/KINDNESS/justice_emergency/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      15
+    ],
+    "value": -1.25
+  },
+  {
+    "case": "guard/KINDNESS/justice_emergency/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      1
+    ],
+    "value": -3.25
+  },
+  {
+    "case": "guard/KINDNESS/justice_emergency/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 5.8611223531268895
+  },
+  {
+    "case": "guard/KINDNESS/justice_emergency/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 1.8611223531268895
+  },
+  {
+    "case": "guard/KINDNESS/justice_emergency/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      15
+    ],
+    "value": -1.25
+  },
+  {
+    "case": "guard/KINDNESS/justice_emergency/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      38
+    ],
+    "value": -3.362010773169061
+  },
+  {
+    "case": "guard/JUSTICE/empty/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 6.8456006953744435
+  },
+  {
+    "case": "guard/JUSTICE/empty/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.6619234152632316
+  },
+  {
+    "case": "guard/JUSTICE/empty/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 1.0
+  },
+  {
+    "case": "guard/JUSTICE/empty/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [],
+    "value": 0.0
+  },
+  {
+    "case": "guard/JUSTICE/empty/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 6.8456006953744435
+  },
+  {
+    "case": "guard/JUSTICE/empty/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.6619234152632316
+  },
+  {
+    "case": "guard/JUSTICE/empty/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 1.0
+  },
+  {
+    "case": "guard/JUSTICE/empty/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -0.11201077316906094
+  },
+  {
+    "case": "guard/JUSTICE/one_large_hit/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 9.319797299179179
+  },
+  {
+    "case": "guard/JUSTICE/one_large_hit/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 6.136120019067967
+  },
+  {
+    "case": "guard/JUSTICE/one_large_hit/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 3.474196603804735
+  },
+  {
+    "case": "guard/JUSTICE/one_large_hit/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [],
+    "value": 2.4741966038047356
+  },
+  {
+    "case": "guard/JUSTICE/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 9.319797299179179
+  },
+  {
+    "case": "guard/JUSTICE/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 6.136120019067967
+  },
+  {
+    "case": "guard/JUSTICE/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 3.474196603804735
+  },
+  {
+    "case": "guard/JUSTICE/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": 2.362185830635674
+  },
+  {
+    "case": "guard/JUSTICE/two_durable/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 4.645694073767185
+  },
+  {
+    "case": "guard/JUSTICE/two_durable/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 1.446495135903529
+  },
+  {
+    "case": "guard/JUSTICE/two_durable/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -1.1843180107839775
+  },
+  {
+    "case": "guard/JUSTICE/two_durable/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [],
+    "value": -2.0723072376149183
+  },
+  {
+    "case": "guard/JUSTICE/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 4.645694073767185
+  },
+  {
+    "case": "guard/JUSTICE/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 1.446495135903529
+  },
+  {
+    "case": "guard/JUSTICE/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      38,
+      187
+    ],
+    "value": -1.2351190729203214
+  },
+  {
+    "case": "guard/JUSTICE/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38,
+      187
+    ],
+    "value": -3.2351190729203214
+  },
+  {
+    "case": "guard/JUSTICE/order_probe/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 7.408593445413473
+  },
+  {
+    "case": "guard/JUSTICE/order_probe/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 4.147691456083084
+  },
+  {
+    "case": "guard/JUSTICE/order_probe/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 1.4857680408198526
+  },
+  {
+    "case": "guard/JUSTICE/order_probe/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [],
+    "value": 0.4857680408198517
+  },
+  {
+    "case": "guard/JUSTICE/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 7.408593445413473
+  },
+  {
+    "case": "guard/JUSTICE/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 4.147691456083084
+  },
+  {
+    "case": "guard/JUSTICE/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 1.4857680408198526
+  },
+  {
+    "case": "guard/JUSTICE/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": 0.37375726765079165
+  },
+  {
+    "case": "guard/JUSTICE/three_medium/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 4.206388026701566
+  },
+  {
+    "case": "guard/JUSTICE/three_medium/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 1.2063880267015659
+  },
+  {
+    "case": "guard/JUSTICE/three_medium/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -1.4555353885616658
+  },
+  {
+    "case": "guard/JUSTICE/three_medium/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [],
+    "value": -2.4555353885616658
+  },
+  {
+    "case": "guard/JUSTICE/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 4.206388026701566
+  },
+  {
+    "case": "guard/JUSTICE/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 1.2063880267015659
+  },
+  {
+    "case": "guard/JUSTICE/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -1.4555353885616658
+  },
+  {
+    "case": "guard/JUSTICE/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -3.4555353885616658
+  },
+  {
+    "case": "guard/JUSTICE/four_small/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 6.079052171088778
+  },
+  {
+    "case": "guard/JUSTICE/four_small/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.0790521710887777
+  },
+  {
+    "case": "guard/JUSTICE/four_small/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 0.4171287558255461
+  },
+  {
+    "case": "guard/JUSTICE/four_small/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [],
+    "value": -0.5828712441744548
+  },
+  {
+    "case": "guard/JUSTICE/four_small/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 6.079052171088778
+  },
+  {
+    "case": "guard/JUSTICE/four_small/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.0790521710887777
+  },
+  {
+    "case": "guard/JUSTICE/four_small/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 0.4171287558255461
+  },
+  {
+    "case": "guard/JUSTICE/four_small/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -0.6948820173435148
+  },
+  {
+    "case": "guard/JUSTICE/kindness_taunt/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 8.652374188923073
+  },
+  {
+    "case": "guard/JUSTICE/kindness_taunt/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 5.468696908811861
+  },
+  {
+    "case": "guard/JUSTICE/kindness_taunt/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 2.8067734935486293
+  },
+  {
+    "case": "guard/JUSTICE/kindness_taunt/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [],
+    "value": 1.8067734935486286
+  },
+  {
+    "case": "guard/JUSTICE/kindness_taunt/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 8.652374188923073
+  },
+  {
+    "case": "guard/JUSTICE/kindness_taunt/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 5.468696908811861
+  },
+  {
+    "case": "guard/JUSTICE/kindness_taunt/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 2.8067734935486293
+  },
+  {
+    "case": "guard/JUSTICE/kindness_taunt/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": 1.6947627203795683
+  },
+  {
+    "case": "guard/JUSTICE/justice_emergency/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 7.468696908811863
+  },
+  {
+    "case": "guard/JUSTICE/justice_emergency/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 4.468696908811863
+  },
+  {
+    "case": "guard/JUSTICE/justice_emergency/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 1.8067734935486293
+  },
+  {
+    "case": "guard/JUSTICE/justice_emergency/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [],
+    "value": 0.8067734935486288
+  },
+  {
+    "case": "guard/JUSTICE/justice_emergency/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 7.468696908811863
+  },
+  {
+    "case": "guard/JUSTICE/justice_emergency/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 4.468696908811863
+  },
+  {
+    "case": "guard/JUSTICE/justice_emergency/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 1.8067734935486293
+  },
+  {
+    "case": "guard/JUSTICE/justice_emergency/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": 0.6947627203795683
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/empty/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 6.8456006953744435
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/empty/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.6619234152632316
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/empty/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 1.0
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/empty/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [],
+    "value": 0.0
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/empty/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 6.8456006953744435
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/empty/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.6619234152632316
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/empty/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 1.0
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/empty/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -0.11201077316906094
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/one_large_hit/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 5.611122353126891
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/one_large_hit/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 1.6111223531268912
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/one_large_hit/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      15
+    ],
+    "value": -1.5
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/one_large_hit/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [],
+    "value": -2.5
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 5.611122353126891
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 1.6111223531268912
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      15
+    ],
+    "value": -1.5
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -3.525803396195265
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/two_durable/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 4.218001311382103
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/two_durable/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 0.8756813317736594
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/two_durable/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -1.6120107731690592
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/two_durable/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [],
+    "value": -2.5
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 4.218001311382103
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 0.8756813317736594
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      38,
+      187
+    ],
+    "value": -1.662811835305403
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38,
+      187
+    ],
+    "value": -3.662811835305403
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/order_probe/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 6.179492743693343
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/order_probe/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 2.9119234152632316
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/order_probe/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 0.25
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/order_probe/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [],
+    "value": -0.75
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 6.179492743693343
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 2.9119234152632316
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 0.25
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -0.8620107731690609
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/three_medium/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.6619234152632316
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/three_medium/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 0.6619234152632316
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/three_medium/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -2.0
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/three_medium/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [],
+    "value": -3.0
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.6619234152632316
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 0.6619234152632316
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -2.0
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -4.0
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/four_small/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 5.661923415263232
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/four_small/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 2.6619234152632316
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/four_small/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 0.0
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/four_small/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [],
+    "value": -1.0
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/four_small/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 5.661923415263232
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/four_small/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 2.6619234152632316
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/four_small/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 0.0
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/four_small/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -1.11201077316906
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/kindness_taunt/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 5.661923415263232
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/kindness_taunt/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 2.6619234152632316
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/kindness_taunt/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 0.0
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/kindness_taunt/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [],
+    "value": -1.0
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/kindness_taunt/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 5.661923415263232
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/kindness_taunt/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 2.6619234152632316
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/kindness_taunt/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 0.0
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/kindness_taunt/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -1.11201077316906
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/justice_emergency/keep0",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 4.6111223531268895
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/justice_emergency/keep0",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 0.6111223531268895
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/justice_emergency/keep0",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      15
+    ],
+    "value": -2.5
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/justice_emergency/keep0",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      1
+    ],
+    "value": -4.5
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/justice_emergency/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 4.6111223531268895
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/justice_emergency/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 0.6111223531268895
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/justice_emergency/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      15
+    ],
+    "value": -2.5
+  },
+  {
+    "case": "guard/DISABLED_COUNTERFACTUAL/justice_emergency/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      38
+    ],
+    "value": -4.612010773169061
+  },
+  {
+    "case": "ex/INTEGRITY/empty/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 7.3456006953744435
+  },
+  {
+    "case": "ex/INTEGRITY/empty/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 4.161923415263232
+  },
+  {
+    "case": "ex/INTEGRITY/empty/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 1.5
+  },
+  {
+    "case": "ex/INTEGRITY/empty/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      15
+    ],
+    "value": 0.0
+  },
+  {
+    "case": "ex/INTEGRITY/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 4.718001311382103
+  },
+  {
+    "case": "ex/INTEGRITY/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 1.3756813317736594
+  },
+  {
+    "case": "ex/INTEGRITY/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": -1.6243186682263406
+  },
+  {
+    "case": "ex/INTEGRITY/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      187
+    ],
+    "value": -3.6939221038811283
+  },
+  {
+    "case": "ex/INTEGRITY/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 4.161923415263232
+  },
+  {
+    "case": "ex/INTEGRITY/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 1.1619234152632316
+  },
+  {
+    "case": "ex/INTEGRITY/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -1.5
+  },
+  {
+    "case": "ex/INTEGRITY/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -3.5
+  },
+  {
+    "case": "ex/KINDNESS/empty/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 7.444155362592259
+  },
+  {
+    "case": "ex/KINDNESS/empty/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 4.260478082481047
+  },
+  {
+    "case": "ex/KINDNESS/empty/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 1.5985546672178153
+  },
+  {
+    "case": "ex/KINDNESS/empty/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      15
+    ],
+    "value": 0.09855466721781525
+  },
+  {
+    "case": "ex/KINDNESS/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 4.959677020344708
+  },
+  {
+    "case": "ex/KINDNESS/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 1.617357040736259
+  },
+  {
+    "case": "ex/KINDNESS/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -1.0445663745269727
+  },
+  {
+    "case": "ex/KINDNESS/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -3.0445663745269727
+  },
+  {
+    "case": "ex/KINDNESS/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 4.611122353126891
+  },
+  {
+    "case": "ex/KINDNESS/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 1.2604780824810469
+  },
+  {
+    "case": "ex/KINDNESS/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -1.4014453327821847
+  },
+  {
+    "case": "ex/KINDNESS/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -3.4014453327821847
+  },
+  {
+    "case": "ex/JUSTICE/empty/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 6.8456006953744435
+  },
+  {
+    "case": "ex/JUSTICE/empty/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.6619234152632316
+  },
+  {
+    "case": "ex/JUSTICE/empty/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 1.0
+  },
+  {
+    "case": "ex/JUSTICE/empty/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      15
+    ],
+    "value": -0.5
+  },
+  {
+    "case": "ex/JUSTICE/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 4.645694073767185
+  },
+  {
+    "case": "ex/JUSTICE/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 1.446495135903529
+  },
+  {
+    "case": "ex/JUSTICE/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": -1.553504864096471
+  },
+  {
+    "case": "ex/JUSTICE/two_durable/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      187
+    ],
+    "value": -3.7662293414960466
+  },
+  {
+    "case": "ex/JUSTICE/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 4.206388026701566
+  },
+  {
+    "case": "ex/JUSTICE/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 1.2063880267015659
+  },
+  {
+    "case": "ex/JUSTICE/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -1.4555353885616658
+  },
+  {
+    "case": "ex/JUSTICE/three_medium/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": -3.4555353885616658
+  }
+]

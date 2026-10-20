@@ -1,0 +1,8 @@
+{
+  "source": "analysis/card-comparison/2026-10-20/arrival-results",
+  "vertices_checked": 36561,
+  "price_points_checked": 16425,
+  "failures": [],
+  "physical_search_executed": false,
+  "limitations": "Floating-point polygon consistency only; finite coverage grid, not a formal clipping proof or real-world price calibration"
+}

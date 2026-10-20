@@ -1,0 +1,14 @@
+{
+  "new_mechanism_tests": 7,
+  "outcome": "passed",
+  "command": "python -m unittest discover -s analysis/card-comparison/2026-10-20 -p test_package_model.py -v",
+  "old_experiments_executed": false,
+  "api_calls": 0,
+  "scope": "new bounded mechanisms only; not real-game scoring accuracy",
+  "follow_up": {
+    "reason": "independent review found unspecified enemy-SOUL input could be silently ignored",
+    "new_rejection_test": "passed",
+    "all_saved_cases_satisfy_guard": 73,
+    "physical_results_regenerated": false
+  }
+}

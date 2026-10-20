@@ -1,0 +1,4709 @@
+[
+  {
+    "command": [
+      "python",
+      "analysis/card-comparison/2026-10-20/compare_packages.py",
+      "--case",
+      "guard/INTEGRITY/empty/keep1",
+      "--left",
+      "15",
+      "15",
+      "--right",
+      "38",
+      "--hand-price",
+      "2.1"
+    ],
+    "output": {
+      "assessment_kind": "heuristic",
+      "empirically_calibrated": false,
+      "case": "guard/INTEGRITY/empty/keep1",
+      "condition": {
+        "hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "soul": "INTEGRITY",
+        "seat": "second",
+        "previous_spends": [
+          1,
+          0,
+          0
+        ],
+        "enemy": [],
+        "own_hp": 30,
+        "minimum_hp": 1,
+        "minimum_bodies": 1,
+        "enemy_cash": 0,
+        "enemy_soul": "INTEGRITY",
+        "enemy_previous_spent": 0,
+        "arrival_witness": {
+          "initial_hand": [
+            1,
+            38,
+            15
+          ],
+          "turn_draws": [
+            15,
+            602,
+            187,
+            1
+          ],
+          "turn1_play": [
+            1
+          ],
+          "current_hand": [
+            38,
+            15,
+            15,
+            602,
+            187,
+            1
+          ],
+          "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+        }
+      },
+      "economy": {
+        "turn": 4,
+        "seat": "second",
+        "soul": "INTEGRITY",
+        "history": [
+          {
+            "turn": 1,
+            "income": 2,
+            "before": 3,
+            "actual_spent": 1,
+            "end_bonus": 0,
+            "after": 2
+          },
+          {
+            "turn": 2,
+            "income": 2,
+            "before": 4,
+            "actual_spent": 0,
+            "end_bonus": 0,
+            "after": 4
+          },
+          {
+            "turn": 3,
+            "income": 4,
+            "before": 8,
+            "actual_spent": 0,
+            "end_bonus": 0,
+            "after": 8
+          }
+        ],
+        "previous_spent": 0,
+        "cash": 12,
+        "initial_cash": 1,
+        "scope": "Budget reachability only; prior board and draw history are conditioned, not simulated"
+      },
+      "prices": {
+        "cash": 0.5,
+        "hand": 2.1
+      },
+      "best_by_shared_setting": {
+        "central": {
+          "package": [
+            15,
+            15
+          ],
+          "play_order": [
+            15,
+            15
+          ],
+          "value": 1.2999999999999998,
+          "paid": 10,
+          "refund": 1,
+          "cash_after": 3,
+          "cards_used": 2,
+          "remaining_hand": [
+            38,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 2,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": []
+        },
+        "corner_000": {
+          "package": [
+            15,
+            15
+          ],
+          "play_order": [
+            15,
+            15
+          ],
+          "value": 1.2999999999999998,
+          "paid": 10,
+          "refund": 1,
+          "cash_after": 3,
+          "cards_used": 2,
+          "remaining_hand": [
+            38,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 2,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": []
+        },
+        "corner_001": {
+          "package": [
+            15,
+            15
+          ],
+          "play_order": [
+            15,
+            15
+          ],
+          "value": 1.2999999999999998,
+          "paid": 10,
+          "refund": 1,
+          "cash_after": 3,
+          "cards_used": 2,
+          "remaining_hand": [
+            38,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 2,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": []
+        },
+        "corner_010": {
+          "package": [
+            38
+          ],
+          "play_order": [
+            38
+          ],
+          "value": 1.3004139143215574,
+          "paid": 9,
+          "refund": 1,
+          "cash_after": 4,
+          "cards_used": 1,
+          "remaining_hand": [
+            15,
+            15,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": []
+        },
+        "corner_011": {
+          "package": [
+            38
+          ],
+          "play_order": [
+            38
+          ],
+          "value": 1.3004139143215574,
+          "paid": 9,
+          "refund": 1,
+          "cash_after": 4,
+          "cards_used": 1,
+          "remaining_hand": [
+            15,
+            15,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": []
+        },
+        "corner_100": {
+          "package": [
+            15,
+            15
+          ],
+          "play_order": [
+            15,
+            15
+          ],
+          "value": 1.2999999999999998,
+          "paid": 10,
+          "refund": 1,
+          "cash_after": 3,
+          "cards_used": 2,
+          "remaining_hand": [
+            38,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 2,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": []
+        },
+        "corner_101": {
+          "package": [
+            15,
+            15
+          ],
+          "play_order": [
+            15,
+            15
+          ],
+          "value": 1.2999999999999998,
+          "paid": 10,
+          "refund": 1,
+          "cash_after": 3,
+          "cards_used": 2,
+          "remaining_hand": [
+            38,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 2,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": []
+        },
+        "corner_110": {
+          "package": [
+            38
+          ],
+          "play_order": [
+            38
+          ],
+          "value": 1.3858896668241951,
+          "paid": 9,
+          "refund": 1,
+          "cash_after": 4,
+          "cards_used": 1,
+          "remaining_hand": [
+            15,
+            15,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": []
+        },
+        "corner_111": {
+          "package": [
+            38
+          ],
+          "play_order": [
+            38
+          ],
+          "value": 1.3858896668241951,
+          "paid": 9,
+          "refund": 1,
+          "cash_after": 4,
+          "cards_used": 1,
+          "remaining_hand": [
+            15,
+            15,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": []
+        }
+      },
+      "scope": "Budget ledger plus one deployment and complete ordinary-enemy attack phase; not an opening trajectory or match",
+      "producer_source_commit": "394dab03f1938ea244e812f8ff7035d1ea708f03",
+      "hand_price_warning": "Unidentified homogeneous per-card opportunity price; sensitivity, not measured card value",
+      "witness_warning": "HP, body and asset minima can have different witnesses; do not splice them",
+      "comparison": {
+        "left_feasible": true,
+        "right_feasible": true,
+        "minimum": -0.0858896668241953,
+        "maximum": 0.10165134764198624,
+        "planes": [
+          {
+            "setting": "central",
+            "coefficients": [
+              2.612010773169061,
+              -1,
+              -1
+            ],
+            "left_minus_right": 0.012010773169060851,
+            "left_order": [
+              15,
+              15
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_000",
+            "coefficients": [
+              2.7016513476419863,
+              -1,
+              -1
+            ],
+            "left_minus_right": 0.10165134764198624,
+            "left_order": [
+              15,
+              15
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_001",
+            "coefficients": [
+              2.7016513476419863,
+              -1,
+              -1
+            ],
+            "left_minus_right": 0.10165134764198624,
+            "left_order": [
+              15,
+              15
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_010",
+            "coefficients": [
+              2.5995860856784425,
+              -1,
+              -1
+            ],
+            "left_minus_right": -0.00041391432155757357,
+            "left_order": [
+              15,
+              15
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_011",
+            "coefficients": [
+              2.5995860856784425,
+              -1,
+              -1
+            ],
+            "left_minus_right": -0.00041391432155757357,
+            "left_order": [
+              15,
+              15
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_100",
+            "coefficients": [
+              2.6000562855680514,
+              -1,
+              -1
+            ],
+            "left_minus_right": 5.628556805126195e-05,
+            "left_order": [
+              15,
+              15
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_101",
+            "coefficients": [
+              2.6000562855680514,
+              -1,
+              -1
+            ],
+            "left_minus_right": 5.628556805126195e-05,
+            "left_order": [
+              15,
+              15
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_110",
+            "coefficients": [
+              2.514110333175805,
+              -1,
+              -1
+            ],
+            "left_minus_right": -0.0858896668241953,
+            "left_order": [
+              15,
+              15
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_111",
+            "coefficients": [
+              2.514110333175805,
+              -1,
+              -1
+            ],
+            "left_minus_right": -0.0858896668241953,
+            "left_order": [
+              15,
+              15
+            ],
+            "right_order": [
+              38
+            ]
+          }
+        ],
+        "interpretation": "a+b*cash_price+c*hand_price; no empirical probability over settings",
+        "left_weakly_preferred_all_settings_polygon": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.5141103331758048
+          ],
+          [
+            0.0,
+            2.514110333175805
+          ]
+        ],
+        "right_weakly_preferred_all_settings_polygon": [
+          [
+            1.0,
+            1.7016513476419863
+          ],
+          [
+            1.0,
+            3.0
+          ],
+          [
+            0.0,
+            3.0
+          ],
+          [
+            0.0,
+            2.7016513476419863
+          ]
+        ],
+        "polygon_domain": {
+          "cash_price": [
+            0,
+            1
+          ],
+          "hand_price": [
+            0,
+            3
+          ]
+        }
+      }
+    }
+  },
+  {
+    "command": [
+      "python",
+      "analysis/card-comparison/2026-10-20/compare_packages.py",
+      "--case",
+      "guard/INTEGRITY/empty/keep1",
+      "--left",
+      "15",
+      "15",
+      "602",
+      "--right",
+      "38",
+      "--hand-price",
+      "2"
+    ],
+    "output": {
+      "assessment_kind": "heuristic",
+      "empirically_calibrated": false,
+      "case": "guard/INTEGRITY/empty/keep1",
+      "condition": {
+        "hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "soul": "INTEGRITY",
+        "seat": "second",
+        "previous_spends": [
+          1,
+          0,
+          0
+        ],
+        "enemy": [],
+        "own_hp": 30,
+        "minimum_hp": 1,
+        "minimum_bodies": 1,
+        "enemy_cash": 0,
+        "enemy_soul": "INTEGRITY",
+        "enemy_previous_spent": 0,
+        "arrival_witness": {
+          "initial_hand": [
+            1,
+            38,
+            15
+          ],
+          "turn_draws": [
+            15,
+            602,
+            187,
+            1
+          ],
+          "turn1_play": [
+            1
+          ],
+          "current_hand": [
+            38,
+            15,
+            15,
+            602,
+            187,
+            1
+          ],
+          "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+        }
+      },
+      "economy": {
+        "turn": 4,
+        "seat": "second",
+        "soul": "INTEGRITY",
+        "history": [
+          {
+            "turn": 1,
+            "income": 2,
+            "before": 3,
+            "actual_spent": 1,
+            "end_bonus": 0,
+            "after": 2
+          },
+          {
+            "turn": 2,
+            "income": 2,
+            "before": 4,
+            "actual_spent": 0,
+            "end_bonus": 0,
+            "after": 4
+          },
+          {
+            "turn": 3,
+            "income": 4,
+            "before": 8,
+            "actual_spent": 0,
+            "end_bonus": 0,
+            "after": 8
+          }
+        ],
+        "previous_spent": 0,
+        "cash": 12,
+        "initial_cash": 1,
+        "scope": "Budget reachability only; prior board and draw history are conditioned, not simulated"
+      },
+      "prices": {
+        "cash": 0.5,
+        "hand": 2.0
+      },
+      "best_by_shared_setting": {
+        "central": {
+          "package": [
+            15,
+            15
+          ],
+          "play_order": [
+            15,
+            15
+          ],
+          "value": 1.5,
+          "paid": 10,
+          "refund": 1,
+          "cash_after": 3,
+          "cards_used": 2,
+          "remaining_hand": [
+            38,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 2,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": []
+        },
+        "corner_000": {
+          "package": [
+            15,
+            15
+          ],
+          "play_order": [
+            15,
+            15
+          ],
+          "value": 1.5,
+          "paid": 10,
+          "refund": 1,
+          "cash_after": 3,
+          "cards_used": 2,
+          "remaining_hand": [
+            38,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 2,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": []
+        },
+        "corner_001": {
+          "package": [
+            15,
+            15
+          ],
+          "play_order": [
+            15,
+            15
+          ],
+          "value": 1.5,
+          "paid": 10,
+          "refund": 1,
+          "cash_after": 3,
+          "cards_used": 2,
+          "remaining_hand": [
+            38,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 2,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": []
+        },
+        "corner_010": {
+          "package": [
+            15,
+            15
+          ],
+          "play_order": [
+            15,
+            15
+          ],
+          "value": 1.5,
+          "paid": 10,
+          "refund": 1,
+          "cash_after": 3,
+          "cards_used": 2,
+          "remaining_hand": [
+            38,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 2,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": []
+        },
+        "corner_011": {
+          "package": [
+            15,
+            15
+          ],
+          "play_order": [
+            15,
+            15
+          ],
+          "value": 1.5,
+          "paid": 10,
+          "refund": 1,
+          "cash_after": 3,
+          "cards_used": 2,
+          "remaining_hand": [
+            38,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 2,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": []
+        },
+        "corner_100": {
+          "package": [
+            15,
+            15
+          ],
+          "play_order": [
+            15,
+            15
+          ],
+          "value": 1.5,
+          "paid": 10,
+          "refund": 1,
+          "cash_after": 3,
+          "cards_used": 2,
+          "remaining_hand": [
+            38,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 2,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": []
+        },
+        "corner_101": {
+          "package": [
+            15,
+            15
+          ],
+          "play_order": [
+            15,
+            15
+          ],
+          "value": 1.5,
+          "paid": 10,
+          "refund": 1,
+          "cash_after": 3,
+          "cards_used": 2,
+          "remaining_hand": [
+            38,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 2,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": []
+        },
+        "corner_110": {
+          "package": [
+            15,
+            15
+          ],
+          "play_order": [
+            15,
+            15
+          ],
+          "value": 1.5,
+          "paid": 10,
+          "refund": 1,
+          "cash_after": 3,
+          "cards_used": 2,
+          "remaining_hand": [
+            38,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 2,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": []
+        },
+        "corner_111": {
+          "package": [
+            15,
+            15
+          ],
+          "play_order": [
+            15,
+            15
+          ],
+          "value": 1.5,
+          "paid": 10,
+          "refund": 1,
+          "cash_after": 3,
+          "cards_used": 2,
+          "remaining_hand": [
+            38,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 2,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": []
+        }
+      },
+      "scope": "Budget ledger plus one deployment and complete ordinary-enemy attack phase; not an opening trajectory or match",
+      "producer_source_commit": "394dab03f1938ea244e812f8ff7035d1ea708f03",
+      "hand_price_warning": "Unidentified homogeneous per-card opportunity price; sensitivity, not measured card value",
+      "witness_warning": "HP, body and asset minima can have different witnesses; do not splice them",
+      "comparison": {
+        "left_feasible": true,
+        "right_feasible": true,
+        "minimum": -0.5382775462945242,
+        "maximum": 0.07249995598360393,
+        "planes": [
+          {
+            "setting": "central",
+            "coefficients": [
+              5.273934188432293,
+              -3,
+              -2
+            ],
+            "left_minus_right": -0.22606581156770744,
+            "left_order": [
+              15,
+              15,
+              602
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_000",
+            "coefficients": [
+              5.572499955983604,
+              -3,
+              -2
+            ],
+            "left_minus_right": 0.07249995598360393,
+            "left_order": [
+              15,
+              15,
+              602
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_001",
+            "coefficients": [
+              5.572499955983604,
+              -3,
+              -2
+            ],
+            "left_minus_right": 0.07249995598360393,
+            "left_order": [
+              15,
+              15,
+              602
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_010",
+            "coefficients": [
+              5.097867578878477,
+              -3,
+              -2
+            ],
+            "left_minus_right": -0.40213242112152336,
+            "left_order": [
+              15,
+              15,
+              602
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_011",
+            "coefficients": [
+              5.097867578878477,
+              -3,
+              -2
+            ],
+            "left_minus_right": -0.40213242112152336,
+            "left_order": [
+              15,
+              15,
+              602
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_100",
+            "coefficients": [
+              5.410680117748335,
+              -3,
+              -2
+            ],
+            "left_minus_right": -0.0893198822516652,
+            "left_order": [
+              15,
+              15,
+              602
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_101",
+            "coefficients": [
+              5.410680117748335,
+              -3,
+              -2
+            ],
+            "left_minus_right": -0.0893198822516652,
+            "left_order": [
+              15,
+              15,
+              602
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_110",
+            "coefficients": [
+              4.961722453705476,
+              -3,
+              -2
+            ],
+            "left_minus_right": -0.5382775462945242,
+            "left_order": [
+              15,
+              15,
+              602
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_111",
+            "coefficients": [
+              4.961722453705476,
+              -3,
+              -2
+            ],
+            "left_minus_right": -0.5382775462945242,
+            "left_order": [
+              15,
+              15,
+              602
+            ],
+            "right_order": [
+              38
+            ]
+          }
+        ],
+        "interpretation": "a+b*cash_price+c*hand_price; no empirical probability over settings",
+        "left_weakly_preferred_all_settings_polygon": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.9808612268527379
+          ],
+          [
+            0.0,
+            2.480861226852738
+          ]
+        ],
+        "right_weakly_preferred_all_settings_polygon": [
+          [
+            1.0,
+            1.286249977991802
+          ],
+          [
+            1.0,
+            3.0
+          ],
+          [
+            0.0,
+            3.0
+          ],
+          [
+            0.0,
+            2.786249977991802
+          ]
+        ],
+        "polygon_domain": {
+          "cash_price": [
+            0,
+            1
+          ],
+          "hand_price": [
+            0,
+            3
+          ]
+        }
+      }
+    }
+  },
+  {
+    "command": [
+      "python",
+      "analysis/card-comparison/2026-10-20/compare_packages.py",
+      "--case",
+      "guard/INTEGRITY/one_large_hit/keep1",
+      "--left",
+      "38",
+      "--right",
+      "15",
+      "15"
+    ],
+    "output": {
+      "assessment_kind": "heuristic",
+      "empirically_calibrated": false,
+      "case": "guard/INTEGRITY/one_large_hit/keep1",
+      "condition": {
+        "hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "soul": "INTEGRITY",
+        "seat": "second",
+        "previous_spends": [
+          1,
+          0,
+          0
+        ],
+        "enemy": [
+          [
+            10,
+            1
+          ]
+        ],
+        "own_hp": 30,
+        "minimum_hp": 1,
+        "minimum_bodies": 1,
+        "enemy_cash": 0,
+        "enemy_soul": "INTEGRITY",
+        "enemy_previous_spent": 0,
+        "arrival_witness": {
+          "initial_hand": [
+            1,
+            38,
+            15
+          ],
+          "turn_draws": [
+            15,
+            602,
+            187,
+            1
+          ],
+          "turn1_play": [
+            1
+          ],
+          "current_hand": [
+            38,
+            15,
+            15,
+            602,
+            187,
+            1
+          ],
+          "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+        }
+      },
+      "economy": {
+        "turn": 4,
+        "seat": "second",
+        "soul": "INTEGRITY",
+        "history": [
+          {
+            "turn": 1,
+            "income": 2,
+            "before": 3,
+            "actual_spent": 1,
+            "end_bonus": 0,
+            "after": 2
+          },
+          {
+            "turn": 2,
+            "income": 2,
+            "before": 4,
+            "actual_spent": 0,
+            "end_bonus": 0,
+            "after": 4
+          },
+          {
+            "turn": 3,
+            "income": 4,
+            "before": 8,
+            "actual_spent": 0,
+            "end_bonus": 0,
+            "after": 8
+          }
+        ],
+        "previous_spent": 0,
+        "cash": 12,
+        "initial_cash": 1,
+        "scope": "Budget reachability only; prior board and draw history are conditioned, not simulated"
+      },
+      "prices": {
+        "cash": 0.5,
+        "hand": 0.0
+      },
+      "best_by_shared_setting": {
+        "central": {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "play_order": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "value": 6.111122353126891,
+          "paid": 11,
+          "refund": 1,
+          "cash_after": 2,
+          "cards_used": 4,
+          "remaining_hand": [
+            38,
+            15
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 3,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_000": {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "play_order": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "value": 6.442107400355011,
+          "paid": 11,
+          "refund": 1,
+          "cash_after": 2,
+          "cards_used": 4,
+          "remaining_hand": [
+            38,
+            15
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 3,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_001": {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "play_order": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "value": 6.442107400355011,
+          "paid": 11,
+          "refund": 1,
+          "cash_after": 2,
+          "cards_used": 4,
+          "remaining_hand": [
+            38,
+            15
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 3,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_010": {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "play_order": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "value": 5.881817753642721,
+          "paid": 11,
+          "refund": 1,
+          "cash_after": 2,
+          "cards_used": 4,
+          "remaining_hand": [
+            38,
+            15
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 3,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_011": {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "play_order": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "value": 5.881817753642721,
+          "paid": 11,
+          "refund": 1,
+          "cash_after": 2,
+          "cards_used": 4,
+          "remaining_hand": [
+            38,
+            15
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 3,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_100": {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "play_order": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "value": 6.3068580216276295,
+          "paid": 11,
+          "refund": 1,
+          "cash_after": 2,
+          "cards_used": 4,
+          "remaining_hand": [
+            38,
+            15
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 3,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_101": {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "play_order": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "value": 6.3068580216276295,
+          "paid": 11,
+          "refund": 1,
+          "cash_after": 2,
+          "cards_used": 4,
+          "remaining_hand": [
+            38,
+            15
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 3,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_110": {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "play_order": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "value": 5.768027356882847,
+          "paid": 11,
+          "refund": 1,
+          "cash_after": 2,
+          "cards_used": 4,
+          "remaining_hand": [
+            38,
+            15
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 3,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_111": {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "play_order": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "value": 5.768027356882847,
+          "paid": 11,
+          "refund": 1,
+          "cash_after": 2,
+          "cards_used": 4,
+          "remaining_hand": [
+            38,
+            15
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 3,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        }
+      },
+      "scope": "Budget ledger plus one deployment and complete ordinary-enemy attack phase; not an opening trajectory or match",
+      "producer_source_commit": "394dab03f1938ea244e812f8ff7035d1ea708f03",
+      "hand_price_warning": "Unidentified homogeneous per-card opportunity price; sensitivity, not measured card value",
+      "witness_warning": "HP, body and asset minima can have different witnesses; do not splice them",
+      "comparison": {
+        "left_feasible": false,
+        "right_feasible": true,
+        "numeric_difference": null
+      }
+    }
+  },
+  {
+    "command": [
+      "python",
+      "analysis/card-comparison/2026-10-20/compare_packages.py",
+      "--case",
+      "guard/KINDNESS/one_large_hit/keep1",
+      "--left",
+      "38",
+      "--right",
+      "15",
+      "15",
+      "--hand-price",
+      "3"
+    ],
+    "output": {
+      "assessment_kind": "heuristic",
+      "empirically_calibrated": false,
+      "case": "guard/KINDNESS/one_large_hit/keep1",
+      "condition": {
+        "hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "soul": "KINDNESS",
+        "seat": "second",
+        "previous_spends": [
+          1,
+          0,
+          0
+        ],
+        "enemy": [
+          [
+            10,
+            1
+          ]
+        ],
+        "own_hp": 30,
+        "minimum_hp": 1,
+        "minimum_bodies": 1,
+        "enemy_cash": 0,
+        "enemy_soul": "INTEGRITY",
+        "enemy_previous_spent": 0,
+        "arrival_witness": {
+          "initial_hand": [
+            1,
+            38,
+            15
+          ],
+          "turn_draws": [
+            15,
+            602,
+            187,
+            1
+          ],
+          "turn1_play": [
+            1
+          ],
+          "current_hand": [
+            38,
+            15,
+            15,
+            602,
+            187,
+            1
+          ],
+          "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+        }
+      },
+      "economy": {
+        "turn": 4,
+        "seat": "second",
+        "soul": "KINDNESS",
+        "history": [
+          {
+            "turn": 1,
+            "income": 2,
+            "before": 3,
+            "actual_spent": 1,
+            "end_bonus": 0,
+            "after": 2
+          },
+          {
+            "turn": 2,
+            "income": 2,
+            "before": 4,
+            "actual_spent": 0,
+            "end_bonus": 0,
+            "after": 4
+          },
+          {
+            "turn": 3,
+            "income": 4,
+            "before": 8,
+            "actual_spent": 0,
+            "end_bonus": 0,
+            "after": 8
+          }
+        ],
+        "previous_spent": 0,
+        "cash": 12,
+        "initial_cash": 1,
+        "scope": "Budget reachability only; prior board and draw history are conditioned, not simulated"
+      },
+      "prices": {
+        "cash": 0.5,
+        "hand": 3.0
+      },
+      "best_by_shared_setting": {
+        "central": {
+          "package": [
+            38
+          ],
+          "play_order": [
+            38
+          ],
+          "value": -2.671861263235286,
+          "paid": 9,
+          "refund": 0,
+          "cash_after": 3,
+          "cards_used": 1,
+          "remaining_hand": [
+            15,
+            15,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 20,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_000": {
+          "package": [
+            38
+          ],
+          "play_order": [
+            38
+          ],
+          "value": -2.7945302718936427,
+          "paid": 9,
+          "refund": 0,
+          "cash_after": 3,
+          "cards_used": 1,
+          "remaining_hand": [
+            15,
+            15,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 20,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_001": {
+          "package": [
+            1,
+            38
+          ],
+          "play_order": [
+            1,
+            38
+          ],
+          "value": -3.3739176934074635,
+          "paid": 10,
+          "refund": 0,
+          "cash_after": 2,
+          "cards_used": 2,
+          "remaining_hand": [
+            15,
+            15,
+            602,
+            187
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_010": {
+          "package": [
+            38
+          ],
+          "play_order": [
+            38
+          ],
+          "value": -2.687366436050519,
+          "paid": 9,
+          "refund": 0,
+          "cash_after": 3,
+          "cards_used": 1,
+          "remaining_hand": [
+            15,
+            15,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 20,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_011": {
+          "package": [
+            1,
+            38
+          ],
+          "play_order": [
+            1,
+            38
+          ],
+          "value": -3.3238514176317935,
+          "paid": 10,
+          "refund": 0,
+          "cash_after": 2,
+          "cards_used": 2,
+          "remaining_hand": [
+            15,
+            15,
+            602,
+            187
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_100": {
+          "package": [
+            38
+          ],
+          "play_order": [
+            38
+          ],
+          "value": -2.6149179737808925,
+          "paid": 9,
+          "refund": 0,
+          "cash_after": 3,
+          "cards_used": 1,
+          "remaining_hand": [
+            15,
+            15,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 20,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_101": {
+          "package": [
+            1,
+            38
+          ],
+          "play_order": [
+            1,
+            38
+          ],
+          "value": -3.2673638933739237,
+          "paid": 10,
+          "refund": 0,
+          "cash_after": 2,
+          "cards_used": 2,
+          "remaining_hand": [
+            15,
+            15,
+            602,
+            187
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_110": {
+          "package": [
+            38
+          ],
+          "play_order": [
+            38
+          ],
+          "value": -2.536251844194245,
+          "paid": 9,
+          "refund": 0,
+          "cash_after": 3,
+          "cards_used": 1,
+          "remaining_hand": [
+            15,
+            15,
+            602,
+            187,
+            1
+          ],
+          "guaranteed_hp": 20,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_111": {
+          "package": [
+            1,
+            38
+          ],
+          "play_order": [
+            1,
+            38
+          ],
+          "value": -3.2342036921030255,
+          "paid": 10,
+          "refund": 0,
+          "cash_after": 2,
+          "cards_used": 2,
+          "remaining_hand": [
+            15,
+            15,
+            602,
+            187
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        }
+      },
+      "scope": "Budget ledger plus one deployment and complete ordinary-enemy attack phase; not an opening trajectory or match",
+      "producer_source_commit": "394dab03f1938ea244e812f8ff7035d1ea708f03",
+      "hand_price_warning": "Unidentified homogeneous per-card opportunity price; sensitivity, not measured card value",
+      "witness_warning": "HP, body and asset minima can have different witnesses; do not splice them",
+      "comparison": {
+        "left_feasible": true,
+        "right_feasible": true,
+        "minimum": 0.5169293690673147,
+        "maximum": 0.893728372592494,
+        "planes": [
+          {
+            "setting": "central",
+            "coefficients": [
+              -2.646057867040021,
+              1,
+              1
+            ],
+            "left_minus_right": 0.853942132959979,
+            "left_order": [
+              38
+            ],
+            "right_order": [
+              15,
+              15
+            ]
+          },
+          {
+            "setting": "corner_000",
+            "coefficients": [
+              -2.6832321078514427,
+              1,
+              1
+            ],
+            "left_minus_right": 0.8167678921485573,
+            "left_order": [
+              38
+            ],
+            "right_order": [
+              15,
+              15
+            ]
+          },
+          {
+            "setting": "corner_001",
+            "coefficients": [
+              -2.9118078145422004,
+              1,
+              1
+            ],
+            "left_minus_right": 0.5881921854577996,
+            "left_order": [
+              38
+            ],
+            "right_order": [
+              15,
+              15
+            ]
+          },
+          {
+            "setting": "corner_010",
+            "coefficients": [
+              -2.633301433670024,
+              1,
+              1
+            ],
+            "left_minus_right": 0.8666985663299762,
+            "left_order": [
+              38
+            ],
+            "right_order": [
+              15,
+              15
+            ]
+          },
+          {
+            "setting": "corner_011",
+            "coefficients": [
+              -2.9830706309326853,
+              1,
+              1
+            ],
+            "left_minus_right": 0.5169293690673147,
+            "left_order": [
+              38
+            ],
+            "right_order": [
+              15,
+              15
+            ]
+          },
+          {
+            "setting": "corner_100",
+            "coefficients": [
+              -2.65110492833346,
+              1,
+              1
+            ],
+            "left_minus_right": 0.84889507166654,
+            "left_order": [
+              38
+            ],
+            "right_order": [
+              15,
+              15
+            ]
+          },
+          {
+            "setting": "corner_101",
+            "coefficients": [
+              -2.8052540145086606,
+              1,
+              1
+            ],
+            "left_minus_right": 0.6947459854913394,
+            "left_order": [
+              38
+            ],
+            "right_order": [
+              15,
+              15
+            ]
+          },
+          {
+            "setting": "corner_110",
+            "coefficients": [
+              -2.606271627407506,
+              1,
+              1
+            ],
+            "left_minus_right": 0.893728372592494,
+            "left_order": [
+              38
+            ],
+            "right_order": [
+              15,
+              15
+            ]
+          },
+          {
+            "setting": "corner_111",
+            "coefficients": [
+              -2.8934229054039156,
+              1,
+              1
+            ],
+            "left_minus_right": 0.6065770945960844,
+            "left_order": [
+              38
+            ],
+            "right_order": [
+              15,
+              15
+            ]
+          }
+        ],
+        "interpretation": "a+b*cash_price+c*hand_price; no empirical probability over settings",
+        "left_weakly_preferred_all_settings_polygon": [
+          [
+            1.0,
+            1.9830706309326853
+          ],
+          [
+            1.0,
+            3.0
+          ],
+          [
+            0.0,
+            3.0
+          ],
+          [
+            0.0,
+            2.9830706309326853
+          ]
+        ],
+        "right_weakly_preferred_all_settings_polygon": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.606271627407506
+          ],
+          [
+            0.0,
+            2.606271627407506
+          ]
+        ],
+        "polygon_domain": {
+          "cash_price": [
+            0,
+            1
+          ],
+          "hand_price": [
+            0,
+            3
+          ]
+        }
+      }
+    }
+  },
+  {
+    "command": [
+      "python",
+      "analysis/card-comparison/2026-10-20/compare_packages.py",
+      "--case",
+      "guard/KINDNESS/kindness_taunt/keep1",
+      "--left",
+      "1",
+      "38",
+      "--right",
+      "38"
+    ],
+    "output": {
+      "assessment_kind": "heuristic",
+      "empirically_calibrated": false,
+      "case": "guard/KINDNESS/kindness_taunt/keep1",
+      "condition": {
+        "hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "soul": "KINDNESS",
+        "seat": "second",
+        "previous_spends": [
+          1,
+          0,
+          0
+        ],
+        "enemy": [
+          [
+            4,
+            1
+          ]
+        ],
+        "own_hp": 30,
+        "minimum_hp": 1,
+        "minimum_bodies": 1,
+        "enemy_cash": 0,
+        "enemy_soul": "INTEGRITY",
+        "enemy_previous_spent": 0,
+        "arrival_witness": {
+          "initial_hand": [
+            1,
+            38,
+            15
+          ],
+          "turn_draws": [
+            15,
+            602,
+            187,
+            1
+          ],
+          "turn1_play": [
+            1
+          ],
+          "current_hand": [
+            38,
+            15,
+            15,
+            602,
+            187,
+            1
+          ],
+          "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+        }
+      },
+      "economy": {
+        "turn": 4,
+        "seat": "second",
+        "soul": "KINDNESS",
+        "history": [
+          {
+            "turn": 1,
+            "income": 2,
+            "before": 3,
+            "actual_spent": 1,
+            "end_bonus": 0,
+            "after": 2
+          },
+          {
+            "turn": 2,
+            "income": 2,
+            "before": 4,
+            "actual_spent": 0,
+            "end_bonus": 0,
+            "after": 4
+          },
+          {
+            "turn": 3,
+            "income": 4,
+            "before": 8,
+            "actual_spent": 0,
+            "end_bonus": 0,
+            "after": 8
+          }
+        ],
+        "previous_spent": 0,
+        "cash": 12,
+        "initial_cash": 1,
+        "scope": "Budget reachability only; prior board and draw history are conditioned, not simulated"
+      },
+      "prices": {
+        "cash": 0.5,
+        "hand": 0.0
+      },
+      "best_by_shared_setting": {
+        "central": {
+          "package": [
+            15,
+            15,
+            602
+          ],
+          "play_order": [
+            15,
+            602,
+            15
+          ],
+          "value": 6.260478082481047,
+          "paid": 12,
+          "refund": 0,
+          "cash_after": 0,
+          "cards_used": 3,
+          "remaining_hand": [
+            38,
+            187,
+            1
+          ],
+          "guaranteed_hp": 26,
+          "guaranteed_bodies": 2,
+          "minimum_hp_reply": [
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 1
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ]
+        },
+        "corner_000": {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "play_order": [
+            15,
+            187,
+            602,
+            1
+          ],
+          "value": 6.563918085112535,
+          "paid": 11,
+          "refund": 0,
+          "cash_after": 1,
+          "cards_used": 4,
+          "remaining_hand": [
+            38,
+            15
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 4,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 3
+            }
+          ]
+        },
+        "corner_001": {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "play_order": [
+            15,
+            187,
+            602,
+            1
+          ],
+          "value": 6.563918085112535,
+          "paid": 11,
+          "refund": 0,
+          "cash_after": 1,
+          "cards_used": 4,
+          "remaining_hand": [
+            38,
+            15
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 4,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 3
+            }
+          ]
+        },
+        "corner_010": {
+          "package": [
+            15,
+            15,
+            602
+          ],
+          "play_order": [
+            15,
+            602,
+            15
+          ],
+          "value": 6.121879867851488,
+          "paid": 12,
+          "refund": 0,
+          "cash_after": 0,
+          "cards_used": 3,
+          "remaining_hand": [
+            38,
+            187,
+            1
+          ],
+          "guaranteed_hp": 26,
+          "guaranteed_bodies": 2,
+          "minimum_hp_reply": [
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 1
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_011": {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "play_order": [
+            1,
+            187,
+            602,
+            15
+          ],
+          "value": 6.041036966943615,
+          "paid": 11,
+          "refund": 0,
+          "cash_after": 1,
+          "cards_used": 4,
+          "remaining_hand": [
+            38,
+            15
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 3,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_100": {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "play_order": [
+            15,
+            187,
+            602,
+            1
+          ],
+          "value": 6.414737100591957,
+          "paid": 11,
+          "refund": 0,
+          "cash_after": 1,
+          "cards_used": 4,
+          "remaining_hand": [
+            38,
+            15
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 4,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 3
+            }
+          ]
+        },
+        "corner_101": {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "play_order": [
+            15,
+            187,
+            602,
+            1
+          ],
+          "value": 6.414737100591957,
+          "paid": 11,
+          "refund": 0,
+          "cash_after": 1,
+          "cards_used": 4,
+          "remaining_hand": [
+            38,
+            15
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 4,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 3
+            }
+          ]
+        },
+        "corner_110": {
+          "package": [
+            15,
+            15,
+            602
+          ],
+          "play_order": [
+            15,
+            602,
+            15
+          ],
+          "value": 6.041830676432996,
+          "paid": 12,
+          "refund": 0,
+          "cash_after": 0,
+          "cards_used": 3,
+          "remaining_hand": [
+            38,
+            187,
+            1
+          ],
+          "guaranteed_hp": 26,
+          "guaranteed_bodies": 2,
+          "minimum_hp_reply": [
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 1
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_111": {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "play_order": [
+            1,
+            187,
+            602,
+            15
+          ],
+          "value": 5.9272465701837405,
+          "paid": 11,
+          "refund": 0,
+          "cash_after": 1,
+          "cards_used": 4,
+          "remaining_hand": [
+            38,
+            15
+          ],
+          "guaranteed_hp": 30,
+          "guaranteed_bodies": 3,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        }
+      },
+      "scope": "Budget ledger plus one deployment and complete ordinary-enemy attack phase; not an opening trajectory or match",
+      "producer_source_commit": "394dab03f1938ea244e812f8ff7035d1ea708f03",
+      "hand_price_warning": "Unidentified homogeneous per-card opportunity price; sensitivity, not measured card value",
+      "witness_warning": "HP, body and asset minima can have different witnesses; do not splice them",
+      "comparison": {
+        "left_feasible": true,
+        "right_feasible": true,
+        "minimum": 0.33377377564579547,
+        "maximum": 1.3940770305230012,
+        "planes": [
+          {
+            "setting": "central",
+            "coefficients": [
+              1.264751820173844,
+              -1,
+              -1
+            ],
+            "left_minus_right": 0.7647518201738439,
+            "left_order": [
+              38,
+              1
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_000",
+            "coefficients": [
+              0.8940770305230004,
+              -1,
+              -1
+            ],
+            "left_minus_right": 0.39407703052300036,
+            "left_order": [
+              38,
+              1
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_001",
+            "coefficients": [
+              1.8940770305230012,
+              -1,
+              -1
+            ],
+            "left_minus_right": 1.3940770305230012,
+            "left_order": [
+              38,
+              1
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_010",
+            "coefficients": [
+              0.8496669333873506,
+              -1,
+              -1
+            ],
+            "left_minus_right": 0.34966693338735055,
+            "left_order": [
+              38,
+              1
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_011",
+            "coefficients": [
+              1.8496669333873506,
+              -1,
+              -1
+            ],
+            "left_minus_right": 1.3496669333873506,
+            "left_order": [
+              38,
+              1
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_100",
+            "coefficients": [
+              0.8751866867701974,
+              -1,
+              -1
+            ],
+            "left_minus_right": 0.3751866867701974,
+            "left_order": [
+              38,
+              1
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_101",
+            "coefficients": [
+              1.8751866867701974,
+              -1,
+              -1
+            ],
+            "left_minus_right": 1.3751866867701974,
+            "left_order": [
+              38,
+              1
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_110",
+            "coefficients": [
+              0.8337737756457955,
+              -1,
+              -1
+            ],
+            "left_minus_right": 0.33377377564579547,
+            "left_order": [
+              38,
+              1
+            ],
+            "right_order": [
+              38
+            ]
+          },
+          {
+            "setting": "corner_111",
+            "coefficients": [
+              1.8337737756457955,
+              -1,
+              -1
+            ],
+            "left_minus_right": 1.3337737756457955,
+            "left_order": [
+              38,
+              1
+            ],
+            "right_order": [
+              38
+            ]
+          }
+        ],
+        "interpretation": "a+b*cash_price+c*hand_price; no empirical probability over settings",
+        "left_weakly_preferred_all_settings_polygon": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.8337737756457955,
+            0.0
+          ],
+          [
+            0.0,
+            0.8337737756457955
+          ]
+        ],
+        "right_weakly_preferred_all_settings_polygon": [
+          [
+            1.0,
+            0.8940770305230012
+          ],
+          [
+            1.0,
+            3.0
+          ],
+          [
+            0.0,
+            3.0
+          ],
+          [
+            0.0,
+            1.8940770305230012
+          ]
+        ],
+        "polygon_domain": {
+          "cash_price": [
+            0,
+            1
+          ],
+          "hand_price": [
+            0,
+            3
+          ]
+        }
+      }
+    }
+  },
+  {
+    "command": [
+      "python",
+      "analysis/card-comparison/2026-10-20/compare_packages.py",
+      "--case",
+      "guard/INTEGRITY/two_durable/keep1",
+      "--hand-price",
+      "2"
+    ],
+    "output": {
+      "assessment_kind": "heuristic",
+      "empirically_calibrated": false,
+      "case": "guard/INTEGRITY/two_durable/keep1",
+      "condition": {
+        "hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "soul": "INTEGRITY",
+        "seat": "second",
+        "previous_spends": [
+          1,
+          0,
+          0
+        ],
+        "enemy": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "own_hp": 30,
+        "minimum_hp": 1,
+        "minimum_bodies": 1,
+        "enemy_cash": 0,
+        "enemy_soul": "INTEGRITY",
+        "enemy_previous_spent": 0,
+        "arrival_witness": {
+          "initial_hand": [
+            1,
+            38,
+            15
+          ],
+          "turn_draws": [
+            15,
+            602,
+            187,
+            1
+          ],
+          "turn1_play": [
+            1
+          ],
+          "current_hand": [
+            38,
+            15,
+            15,
+            602,
+            187,
+            1
+          ],
+          "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+        }
+      },
+      "economy": {
+        "turn": 4,
+        "seat": "second",
+        "soul": "INTEGRITY",
+        "history": [
+          {
+            "turn": 1,
+            "income": 2,
+            "before": 3,
+            "actual_spent": 1,
+            "end_bonus": 0,
+            "after": 2
+          },
+          {
+            "turn": 2,
+            "income": 2,
+            "before": 4,
+            "actual_spent": 0,
+            "end_bonus": 0,
+            "after": 4
+          },
+          {
+            "turn": 3,
+            "income": 4,
+            "before": 8,
+            "actual_spent": 0,
+            "end_bonus": 0,
+            "after": 8
+          }
+        ],
+        "previous_spent": 0,
+        "cash": 12,
+        "initial_cash": 1,
+        "scope": "Budget reachability only; prior board and draw history are conditioned, not simulated"
+      },
+      "prices": {
+        "cash": 0.5,
+        "hand": 2.0
+      },
+      "best_by_shared_setting": {
+        "central": {
+          "package": [
+            38,
+            187
+          ],
+          "play_order": [
+            38,
+            187
+          ],
+          "value": -1.162811835305403,
+          "paid": 12,
+          "refund": 1,
+          "cash_after": 1,
+          "cards_used": 2,
+          "remaining_hand": [
+            15,
+            15,
+            602,
+            1
+          ],
+          "guaranteed_hp": 20,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 1
+            },
+            {
+              "attacker": 0,
+              "target": 1
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ]
+        },
+        "corner_000": {
+          "package": [
+            38,
+            187
+          ],
+          "play_order": [
+            38,
+            187
+          ],
+          "value": -0.6274805577404567,
+          "paid": 12,
+          "refund": 1,
+          "cash_after": 1,
+          "cards_used": 2,
+          "remaining_hand": [
+            15,
+            15,
+            602,
+            1
+          ],
+          "guaranteed_hp": 20,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 1
+            },
+            {
+              "attacker": 0,
+              "target": 1
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": 1
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ]
+        },
+        "corner_001": {
+          "package": [
+            15,
+            15,
+            602
+          ],
+          "play_order": [
+            15,
+            15,
+            602
+          ],
+          "value": -2.6291513916583806,
+          "paid": 12,
+          "refund": 1,
+          "cash_after": 1,
+          "cards_used": 3,
+          "remaining_hand": [
+            38,
+            187,
+            1
+          ],
+          "guaranteed_hp": 20,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 2
+            },
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ]
+        },
+        "corner_010": {
+          "package": [
+            38,
+            602
+          ],
+          "play_order": [
+            38,
+            602
+          ],
+          "value": -0.6013045924784102,
+          "paid": 11,
+          "refund": 1,
+          "cash_after": 2,
+          "cards_used": 2,
+          "remaining_hand": [
+            15,
+            15,
+            187,
+            1
+          ],
+          "guaranteed_hp": 20,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 1
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ]
+        },
+        "corner_011": {
+          "package": [
+            38,
+            187
+          ],
+          "play_order": [
+            38,
+            187
+          ],
+          "value": -2.7160498252357534,
+          "paid": 12,
+          "refund": 1,
+          "cash_after": 1,
+          "cards_used": 2,
+          "remaining_hand": [
+            15,
+            15,
+            602,
+            1
+          ],
+          "guaranteed_hp": 20,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 1
+            },
+            {
+              "attacker": 0,
+              "target": 1
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ]
+        },
+        "corner_100": {
+          "package": [
+            38,
+            187
+          ],
+          "play_order": [
+            38,
+            187
+          ],
+          "value": -0.5663223654964504,
+          "paid": 12,
+          "refund": 1,
+          "cash_after": 1,
+          "cards_used": 2,
+          "remaining_hand": [
+            15,
+            15,
+            602,
+            1
+          ],
+          "guaranteed_hp": 20,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 1
+            },
+            {
+              "attacker": 0,
+              "target": 1
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": 1
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ]
+        },
+        "corner_101": {
+          "package": [
+            38,
+            187
+          ],
+          "play_order": [
+            38,
+            187
+          ],
+          "value": -2.6038220961207053,
+          "paid": 12,
+          "refund": 1,
+          "cash_after": 1,
+          "cards_used": 2,
+          "remaining_hand": [
+            15,
+            15,
+            602,
+            1
+          ],
+          "guaranteed_hp": 20,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 1
+            },
+            {
+              "attacker": 0,
+              "target": 1
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ]
+        },
+        "corner_110": {
+          "package": [
+            38,
+            602
+          ],
+          "play_order": [
+            38,
+            602
+          ],
+          "value": -0.5664982126461311,
+          "paid": 11,
+          "refund": 1,
+          "cash_after": 2,
+          "cards_used": 2,
+          "remaining_hand": [
+            15,
+            15,
+            187,
+            1
+          ],
+          "guaranteed_hp": 20,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 1
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ]
+        },
+        "corner_111": {
+          "package": [
+            38,
+            187
+          ],
+          "play_order": [
+            38,
+            187
+          ],
+          "value": -2.69369509682263,
+          "paid": 12,
+          "refund": 1,
+          "cash_after": 1,
+          "cards_used": 2,
+          "remaining_hand": [
+            15,
+            15,
+            602,
+            1
+          ],
+          "guaranteed_hp": 20,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 1
+            },
+            {
+              "attacker": 0,
+              "target": 1
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ]
+        }
+      },
+      "scope": "Budget ledger plus one deployment and complete ordinary-enemy attack phase; not an opening trajectory or match",
+      "producer_source_commit": "394dab03f1938ea244e812f8ff7035d1ea708f03",
+      "hand_price_warning": "Unidentified homogeneous per-card opportunity price; sensitivity, not measured card value",
+      "witness_warning": "HP, body and asset minima can have different witnesses; do not splice them"
+    }
+  },
+  {
+    "command": [
+      "python",
+      "analysis/card-comparison/2026-10-20/compare_packages.py",
+      "--case",
+      "ex/INTEGRITY/two_durable/keep1",
+      "--hand-price",
+      "2"
+    ],
+    "output": {
+      "assessment_kind": "heuristic",
+      "empirically_calibrated": false,
+      "case": "ex/INTEGRITY/two_durable/keep1",
+      "condition": {
+        "hand": [
+          64,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "soul": "INTEGRITY",
+        "seat": "second",
+        "previous_spends": [
+          1,
+          0,
+          0
+        ],
+        "enemy": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "own_hp": 30,
+        "minimum_hp": 1,
+        "minimum_bodies": 1,
+        "enemy_cash": 0,
+        "enemy_soul": "INTEGRITY",
+        "enemy_previous_spent": 0,
+        "arrival_witness": {
+          "initial_hand": [
+            1,
+            64,
+            15
+          ],
+          "turn_draws": [
+            15,
+            602,
+            187,
+            1
+          ],
+          "turn1_play": [
+            1
+          ],
+          "current_hand": [
+            64,
+            15,
+            15,
+            602,
+            187,
+            1
+          ],
+          "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+        }
+      },
+      "economy": {
+        "turn": 4,
+        "seat": "second",
+        "soul": "INTEGRITY",
+        "history": [
+          {
+            "turn": 1,
+            "income": 2,
+            "before": 3,
+            "actual_spent": 1,
+            "end_bonus": 0,
+            "after": 2
+          },
+          {
+            "turn": 2,
+            "income": 2,
+            "before": 4,
+            "actual_spent": 0,
+            "end_bonus": 0,
+            "after": 4
+          },
+          {
+            "turn": 3,
+            "income": 4,
+            "before": 8,
+            "actual_spent": 0,
+            "end_bonus": 0,
+            "after": 8
+          }
+        ],
+        "previous_spent": 0,
+        "cash": 12,
+        "initial_cash": 1,
+        "scope": "Budget reachability only; prior board and draw history are conditioned, not simulated"
+      },
+      "prices": {
+        "cash": 0.5,
+        "hand": 2.0
+      },
+      "best_by_shared_setting": {
+        "central": {
+          "package": [
+            15,
+            15,
+            602
+          ],
+          "play_order": [
+            15,
+            15,
+            602
+          ],
+          "value": -1.6243186682263406,
+          "paid": 12,
+          "refund": 1,
+          "cash_after": 1,
+          "cards_used": 3,
+          "remaining_hand": [
+            64,
+            187,
+            1
+          ],
+          "guaranteed_hp": 20,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 2
+            },
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": 1
+            },
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_000": {
+          "package": [
+            15,
+            15,
+            602
+          ],
+          "play_order": [
+            15,
+            15,
+            602
+          ],
+          "value": -1.4831229115623188,
+          "paid": 12,
+          "refund": 1,
+          "cash_after": 1,
+          "cards_used": 3,
+          "remaining_hand": [
+            64,
+            187,
+            1
+          ],
+          "guaranteed_hp": 20,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 2
+            },
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": 1
+            },
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_001": {
+          "package": [
+            15,
+            15,
+            602
+          ],
+          "play_order": [
+            15,
+            15,
+            602
+          ],
+          "value": -2.6291513916583806,
+          "paid": 12,
+          "refund": 1,
+          "cash_after": 1,
+          "cards_used": 3,
+          "remaining_hand": [
+            64,
+            187,
+            1
+          ],
+          "guaranteed_hp": 20,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 2
+            },
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ]
+        },
+        "corner_010": {
+          "package": [
+            15,
+            187
+          ],
+          "play_order": [
+            15,
+            187
+          ],
+          "value": -1.6042279826015324,
+          "paid": 8,
+          "refund": 1,
+          "cash_after": 5,
+          "cards_used": 2,
+          "remaining_hand": [
+            64,
+            15,
+            602,
+            1
+          ],
+          "guaranteed_hp": 20,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": 1
+            },
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_011": {
+          "package": [
+            1,
+            15,
+            15
+          ],
+          "play_order": [
+            1,
+            15,
+            15
+          ],
+          "value": -3.0,
+          "paid": 11,
+          "refund": 1,
+          "cash_after": 2,
+          "cards_used": 3,
+          "remaining_hand": [
+            64,
+            602,
+            187
+          ],
+          "guaranteed_hp": 25,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": 0
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 0
+            },
+            {
+              "attacker": 0,
+              "target": 1
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": 0
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ]
+        },
+        "corner_100": {
+          "package": [
+            15,
+            15,
+            602
+          ],
+          "play_order": [
+            15,
+            15,
+            602
+          ],
+          "value": -1.6221493543631311,
+          "paid": 12,
+          "refund": 1,
+          "cash_after": 1,
+          "cards_used": 3,
+          "remaining_hand": [
+            64,
+            187,
+            1
+          ],
+          "guaranteed_hp": 20,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 2
+            },
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": 1
+            },
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_101": {
+          "package": [
+            15,
+            15,
+            602
+          ],
+          "play_order": [
+            15,
+            15,
+            602
+          ],
+          "value": -2.6893761678197166,
+          "paid": 12,
+          "refund": 1,
+          "cash_after": 1,
+          "cards_used": 3,
+          "remaining_hand": [
+            64,
+            187,
+            1
+          ],
+          "guaranteed_hp": 20,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 2
+            },
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ]
+        },
+        "corner_110": {
+          "package": [
+            15,
+            187
+          ],
+          "play_order": [
+            15,
+            187
+          ],
+          "value": -1.6713984495070395,
+          "paid": 8,
+          "refund": 1,
+          "cash_after": 5,
+          "cards_used": 2,
+          "remaining_hand": [
+            64,
+            15,
+            602,
+            1
+          ],
+          "guaranteed_hp": 20,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": 1
+            },
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ]
+        },
+        "corner_111": {
+          "package": [
+            1,
+            15,
+            15
+          ],
+          "play_order": [
+            1,
+            15,
+            15
+          ],
+          "value": -3.0,
+          "paid": 11,
+          "refund": 1,
+          "cash_after": 2,
+          "cards_used": 3,
+          "remaining_hand": [
+            64,
+            602,
+            187
+          ],
+          "guaranteed_hp": 25,
+          "guaranteed_bodies": 1,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": 0
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 0
+            },
+            {
+              "attacker": 0,
+              "target": 1
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": 0
+            },
+            {
+              "attacker": 0,
+              "target": "hero"
+            }
+          ]
+        }
+      },
+      "scope": "Budget ledger plus one deployment and complete ordinary-enemy attack phase; not an opening trajectory or match",
+      "producer_source_commit": "394dab03f1938ea244e812f8ff7035d1ea708f03",
+      "hand_price_warning": "Unidentified homogeneous per-card opportunity price; sensitivity, not measured card value",
+      "witness_warning": "HP, body and asset minima can have different witnesses; do not splice them"
+    }
+  },
+  {
+    "command": [
+      "python",
+      "analysis/card-comparison/2026-10-20/compare_packages.py",
+      "--case",
+      "guard/JUSTICE/justice_emergency/keep1",
+      "--left",
+      "38",
+      "--right",
+      "15",
+      "15"
+    ],
+    "output": {
+      "assessment_kind": "heuristic",
+      "empirically_calibrated": false,
+      "case": "guard/JUSTICE/justice_emergency/keep1",
+      "condition": {
+        "hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "soul": "JUSTICE",
+        "seat": "second",
+        "previous_spends": [
+          1,
+          0,
+          0
+        ],
+        "enemy": [
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "own_hp": 6,
+        "minimum_hp": 1,
+        "minimum_bodies": 1,
+        "enemy_cash": 0,
+        "enemy_soul": "INTEGRITY",
+        "enemy_previous_spent": 0,
+        "arrival_witness": {
+          "initial_hand": [
+            1,
+            38,
+            15
+          ],
+          "turn_draws": [
+            15,
+            602,
+            187,
+            1
+          ],
+          "turn1_play": [
+            1
+          ],
+          "current_hand": [
+            38,
+            15,
+            15,
+            602,
+            187,
+            1
+          ],
+          "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+        }
+      },
+      "economy": {
+        "turn": 4,
+        "seat": "second",
+        "soul": "JUSTICE",
+        "history": [
+          {
+            "turn": 1,
+            "income": 2,
+            "before": 3,
+            "actual_spent": 1,
+            "end_bonus": 0,
+            "after": 2
+          },
+          {
+            "turn": 2,
+            "income": 2,
+            "before": 4,
+            "actual_spent": 0,
+            "end_bonus": 0,
+            "after": 4
+          },
+          {
+            "turn": 3,
+            "income": 4,
+            "before": 8,
+            "actual_spent": 0,
+            "end_bonus": 0,
+            "after": 8
+          }
+        ],
+        "previous_spent": 0,
+        "cash": 12,
+        "initial_cash": 1,
+        "scope": "Budget reachability only; prior board and draw history are conditioned, not simulated"
+      },
+      "prices": {
+        "cash": 0.5,
+        "hand": 0.0
+      },
+      "best_by_shared_setting": {
+        "central": {
+          "package": [
+            15,
+            15,
+            602
+          ],
+          "play_order": [
+            15,
+            15,
+            602
+          ],
+          "value": 7.468696908811863,
+          "paid": 12,
+          "refund": 0,
+          "cash_after": 0,
+          "cards_used": 3,
+          "remaining_hand": [
+            38,
+            187,
+            1
+          ],
+          "guaranteed_hp": 2,
+          "guaranteed_bodies": 2,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 2
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            }
+          ]
+        },
+        "corner_000": {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "play_order": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "value": 7.8445192489975994,
+          "paid": 11,
+          "refund": 0,
+          "cash_after": 1,
+          "cards_used": 4,
+          "remaining_hand": [
+            38,
+            15
+          ],
+          "guaranteed_hp": 6,
+          "guaranteed_bodies": 3,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": 0
+            }
+          ]
+        },
+        "corner_001": {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "play_order": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "value": 7.8445192489975994,
+          "paid": 11,
+          "refund": 0,
+          "cash_after": 1,
+          "cards_used": 4,
+          "remaining_hand": [
+            38,
+            15
+          ],
+          "guaranteed_hp": 6,
+          "guaranteed_bodies": 3,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": 0
+            }
+          ]
+        },
+        "corner_010": {
+          "package": [
+            15,
+            15,
+            602
+          ],
+          "play_order": [
+            15,
+            15,
+            602
+          ],
+          "value": 7.491540780941545,
+          "paid": 12,
+          "refund": 0,
+          "cash_after": 0,
+          "cards_used": 3,
+          "remaining_hand": [
+            38,
+            187,
+            1
+          ],
+          "guaranteed_hp": 2,
+          "guaranteed_bodies": 2,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 2
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": 2
+            }
+          ]
+        },
+        "corner_011": {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "play_order": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "value": 7.119227659240073,
+          "paid": 11,
+          "refund": 0,
+          "cash_after": 1,
+          "cards_used": 4,
+          "remaining_hand": [
+            38,
+            15
+          ],
+          "guaranteed_hp": 6,
+          "guaranteed_bodies": 3,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": 0
+            }
+          ]
+        },
+        "corner_100": {
+          "package": [
+            15,
+            15,
+            602
+          ],
+          "play_order": [
+            15,
+            15,
+            602
+          ],
+          "value": 7.740556623086055,
+          "paid": 12,
+          "refund": 0,
+          "cash_after": 0,
+          "cards_used": 3,
+          "remaining_hand": [
+            38,
+            187,
+            1
+          ],
+          "guaranteed_hp": 2,
+          "guaranteed_bodies": 2,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 2
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": 2
+            }
+          ]
+        },
+        "corner_101": {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "play_order": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "value": 7.674349504879517,
+          "paid": 11,
+          "refund": 0,
+          "cash_after": 1,
+          "cards_used": 4,
+          "remaining_hand": [
+            38,
+            15
+          ],
+          "guaranteed_hp": 6,
+          "guaranteed_bodies": 3,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": 0
+            }
+          ]
+        },
+        "corner_110": {
+          "package": [
+            15,
+            15,
+            602
+          ],
+          "play_order": [
+            15,
+            15,
+            602
+          ],
+          "value": 7.432781143445286,
+          "paid": 12,
+          "refund": 0,
+          "cash_after": 0,
+          "cards_used": 3,
+          "remaining_hand": [
+            38,
+            187,
+            1
+          ],
+          "guaranteed_hp": 2,
+          "guaranteed_bodies": 2,
+          "minimum_hp_reply": [
+            {
+              "attacker": 1,
+              "target": "hero"
+            }
+          ],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 2
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": 2
+            }
+          ]
+        },
+        "corner_111": {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "play_order": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "value": 6.976057443732071,
+          "paid": 11,
+          "refund": 0,
+          "cash_after": 1,
+          "cards_used": 4,
+          "remaining_hand": [
+            38,
+            15
+          ],
+          "guaranteed_hp": 6,
+          "guaranteed_bodies": 3,
+          "minimum_hp_reply": [],
+          "minimum_body_reply": [
+            {
+              "attacker": 1,
+              "target": 0
+            }
+          ],
+          "asset_worst_reply": [
+            {
+              "attacker": 1,
+              "target": 0
+            }
+          ]
+        }
+      },
+      "scope": "Budget ledger plus one deployment and complete ordinary-enemy attack phase; not an opening trajectory or match",
+      "producer_source_commit": "394dab03f1938ea244e812f8ff7035d1ea708f03",
+      "hand_price_warning": "Unidentified homogeneous per-card opportunity price; sensitivity, not measured card value",
+      "witness_warning": "HP, body and asset minima can have different witnesses; do not splice them",
+      "comparison": {
+        "left_feasible": true,
+        "right_feasible": true,
+        "minimum": -2.2016513476419863,
+        "maximum": -2.0141103331758075,
+        "planes": [
+          {
+            "setting": "central",
+            "coefficients": [
+              -2.612010773169061,
+              1,
+              1
+            ],
+            "left_minus_right": -2.112010773169061,
+            "left_order": [
+              38
+            ],
+            "right_order": [
+              15,
+              15
+            ]
+          },
+          {
+            "setting": "corner_000",
+            "coefficients": [
+              -2.7016513476419863,
+              1,
+              1
+            ],
+            "left_minus_right": -2.2016513476419863,
+            "left_order": [
+              38
+            ],
+            "right_order": [
+              15,
+              15
+            ]
+          },
+          {
+            "setting": "corner_001",
+            "coefficients": [
+              -2.7016513476419863,
+              1,
+              1
+            ],
+            "left_minus_right": -2.2016513476419863,
+            "left_order": [
+              38
+            ],
+            "right_order": [
+              15,
+              15
+            ]
+          },
+          {
+            "setting": "corner_010",
+            "coefficients": [
+              -2.5995860856784425,
+              1,
+              1
+            ],
+            "left_minus_right": -2.0995860856784425,
+            "left_order": [
+              38
+            ],
+            "right_order": [
+              15,
+              15
+            ]
+          },
+          {
+            "setting": "corner_011",
+            "coefficients": [
+              -2.5995860856784425,
+              1,
+              1
+            ],
+            "left_minus_right": -2.0995860856784425,
+            "left_order": [
+              38
+            ],
+            "right_order": [
+              15,
+              15
+            ]
+          },
+          {
+            "setting": "corner_100",
+            "coefficients": [
+              -2.6000562855680514,
+              1,
+              1
+            ],
+            "left_minus_right": -2.1000562855680514,
+            "left_order": [
+              38
+            ],
+            "right_order": [
+              15,
+              15
+            ]
+          },
+          {
+            "setting": "corner_101",
+            "coefficients": [
+              -2.6000562855680514,
+              1,
+              1
+            ],
+            "left_minus_right": -2.1000562855680514,
+            "left_order": [
+              38
+            ],
+            "right_order": [
+              15,
+              15
+            ]
+          },
+          {
+            "setting": "corner_110",
+            "coefficients": [
+              -2.5141103331758075,
+              1,
+              1
+            ],
+            "left_minus_right": -2.0141103331758075,
+            "left_order": [
+              38
+            ],
+            "right_order": [
+              15,
+              15
+            ]
+          },
+          {
+            "setting": "corner_111",
+            "coefficients": [
+              -2.5141103331758075,
+              1,
+              1
+            ],
+            "left_minus_right": -2.0141103331758075,
+            "left_order": [
+              38
+            ],
+            "right_order": [
+              15,
+              15
+            ]
+          }
+        ],
+        "interpretation": "a+b*cash_price+c*hand_price; no empirical probability over settings",
+        "left_weakly_preferred_all_settings_polygon": [
+          [
+            1.0,
+            1.7016513476419863
+          ],
+          [
+            1.0,
+            3.0
+          ],
+          [
+            0.0,
+            3.0
+          ],
+          [
+            0.0,
+            2.7016513476419863
+          ]
+        ],
+        "right_weakly_preferred_all_settings_polygon": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.5141103331758075
+          ],
+          [
+            0.0,
+            2.5141103331758075
+          ]
+        ],
+        "polygon_domain": {
+          "cash_price": [
+            0,
+            1
+          ],
+          "hand_price": [
+            0,
+            3
+          ]
+        }
+      }
+    }
+  }
+]

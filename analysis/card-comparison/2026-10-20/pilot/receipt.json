@@ -1,0 +1,10 @@
+{
+  "cases": 4,
+  "distinct_physical_windows": 4,
+  "physical_deployment_variants": 256,
+  "distinct_response_endpoints_across_variants": 1341,
+  "price_settings": 1,
+  "old_producers_executed": false,
+  "api_calls": 0,
+  "seconds": 0.10873583200736903
+}

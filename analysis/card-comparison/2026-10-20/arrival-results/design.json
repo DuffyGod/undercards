@@ -1,0 +1,4411 @@
+{
+  "producer_source_commit": "394dab03f1938ea244e812f8ff7035d1ea708f03",
+  "assessment_kind": "heuristic",
+  "empirically_calibrated": false,
+  "cases": {
+    "guard/INTEGRITY/empty/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "INTEGRITY",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/INTEGRITY/empty/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "INTEGRITY",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/INTEGRITY/one_large_hit/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "INTEGRITY",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          10,
+          1
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/INTEGRITY/one_large_hit/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "INTEGRITY",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          10,
+          1
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/INTEGRITY/two_durable/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "INTEGRITY",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/INTEGRITY/two_durable/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "INTEGRITY",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/INTEGRITY/order_probe/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "INTEGRITY",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/INTEGRITY/order_probe/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "INTEGRITY",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/INTEGRITY/three_medium/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "INTEGRITY",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/INTEGRITY/three_medium/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "INTEGRITY",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/INTEGRITY/four_small/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "INTEGRITY",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/INTEGRITY/four_small/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "INTEGRITY",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/INTEGRITY/kindness_taunt/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "INTEGRITY",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          1
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/INTEGRITY/kindness_taunt/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "INTEGRITY",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          1
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/INTEGRITY/justice_emergency/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "INTEGRITY",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "own_hp": 6,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/INTEGRITY/justice_emergency/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "INTEGRITY",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "own_hp": 6,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/KINDNESS/empty/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "KINDNESS",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/KINDNESS/empty/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "KINDNESS",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/KINDNESS/one_large_hit/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "KINDNESS",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          10,
+          1
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/KINDNESS/one_large_hit/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "KINDNESS",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          10,
+          1
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/KINDNESS/two_durable/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "KINDNESS",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/KINDNESS/two_durable/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "KINDNESS",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/KINDNESS/order_probe/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "KINDNESS",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/KINDNESS/order_probe/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "KINDNESS",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/KINDNESS/three_medium/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "KINDNESS",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/KINDNESS/three_medium/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "KINDNESS",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/KINDNESS/four_small/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "KINDNESS",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/KINDNESS/four_small/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "KINDNESS",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/KINDNESS/kindness_taunt/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "KINDNESS",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          1
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/KINDNESS/kindness_taunt/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "KINDNESS",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          1
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/KINDNESS/justice_emergency/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "KINDNESS",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "own_hp": 6,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/KINDNESS/justice_emergency/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "KINDNESS",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "own_hp": 6,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/JUSTICE/empty/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "JUSTICE",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/JUSTICE/empty/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "JUSTICE",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/JUSTICE/one_large_hit/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "JUSTICE",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          10,
+          1
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/JUSTICE/one_large_hit/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "JUSTICE",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          10,
+          1
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/JUSTICE/two_durable/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "JUSTICE",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/JUSTICE/two_durable/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "JUSTICE",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/JUSTICE/order_probe/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "JUSTICE",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/JUSTICE/order_probe/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "JUSTICE",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/JUSTICE/three_medium/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "JUSTICE",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/JUSTICE/three_medium/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "JUSTICE",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/JUSTICE/four_small/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "JUSTICE",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/JUSTICE/four_small/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "JUSTICE",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/JUSTICE/kindness_taunt/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "JUSTICE",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          1
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/JUSTICE/kindness_taunt/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "JUSTICE",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          1
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/JUSTICE/justice_emergency/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "JUSTICE",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "own_hp": 6,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/JUSTICE/justice_emergency/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "JUSTICE",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "own_hp": 6,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/DISABLED_COUNTERFACTUAL/empty/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "DISABLED_COUNTERFACTUAL",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/DISABLED_COUNTERFACTUAL/empty/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "DISABLED_COUNTERFACTUAL",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/DISABLED_COUNTERFACTUAL/one_large_hit/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "DISABLED_COUNTERFACTUAL",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          10,
+          1
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/DISABLED_COUNTERFACTUAL/one_large_hit/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "DISABLED_COUNTERFACTUAL",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          10,
+          1
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/DISABLED_COUNTERFACTUAL/two_durable/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "DISABLED_COUNTERFACTUAL",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/DISABLED_COUNTERFACTUAL/two_durable/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "DISABLED_COUNTERFACTUAL",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/DISABLED_COUNTERFACTUAL/order_probe/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "DISABLED_COUNTERFACTUAL",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/DISABLED_COUNTERFACTUAL/order_probe/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "DISABLED_COUNTERFACTUAL",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/DISABLED_COUNTERFACTUAL/three_medium/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "DISABLED_COUNTERFACTUAL",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/DISABLED_COUNTERFACTUAL/three_medium/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "DISABLED_COUNTERFACTUAL",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/DISABLED_COUNTERFACTUAL/four_small/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "DISABLED_COUNTERFACTUAL",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/DISABLED_COUNTERFACTUAL/four_small/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "DISABLED_COUNTERFACTUAL",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/DISABLED_COUNTERFACTUAL/kindness_taunt/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "DISABLED_COUNTERFACTUAL",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          1
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/DISABLED_COUNTERFACTUAL/kindness_taunt/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "DISABLED_COUNTERFACTUAL",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          1
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/DISABLED_COUNTERFACTUAL/justice_emergency/keep0": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "DISABLED_COUNTERFACTUAL",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "own_hp": 6,
+      "minimum_hp": 1,
+      "minimum_bodies": 0,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "guard/DISABLED_COUNTERFACTUAL/justice_emergency/keep1": {
+      "hand": [
+        38,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "DISABLED_COUNTERFACTUAL",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "own_hp": 6,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          38,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          38,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "ex/INTEGRITY/empty/keep1": {
+      "hand": [
+        64,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "INTEGRITY",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          64,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          64,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "ex/INTEGRITY/two_durable/keep1": {
+      "hand": [
+        64,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "INTEGRITY",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          64,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          64,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "ex/INTEGRITY/three_medium/keep1": {
+      "hand": [
+        64,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "INTEGRITY",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          64,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          64,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "ex/KINDNESS/empty/keep1": {
+      "hand": [
+        64,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "KINDNESS",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          64,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          64,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "ex/KINDNESS/two_durable/keep1": {
+      "hand": [
+        64,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "KINDNESS",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          64,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          64,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "ex/KINDNESS/three_medium/keep1": {
+      "hand": [
+        64,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "KINDNESS",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          64,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          64,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "ex/JUSTICE/empty/keep1": {
+      "hand": [
+        64,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "JUSTICE",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          64,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          64,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "ex/JUSTICE/two_durable/keep1": {
+      "hand": [
+        64,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "JUSTICE",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          64,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          64,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    },
+    "ex/JUSTICE/three_medium/keep1": {
+      "hand": [
+        64,
+        15,
+        15,
+        602,
+        187,
+        1
+      ],
+      "soul": "JUSTICE",
+      "seat": "second",
+      "previous_spends": [
+        1,
+        0,
+        0
+      ],
+      "enemy": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "own_hp": 30,
+      "minimum_hp": 1,
+      "minimum_bodies": 1,
+      "enemy_cash": 0,
+      "enemy_soul": "INTEGRITY",
+      "enemy_previous_spent": 0,
+      "arrival_witness": {
+        "initial_hand": [
+          1,
+          64,
+          15
+        ],
+        "turn_draws": [
+          15,
+          602,
+          187,
+          1
+        ],
+        "turn1_play": [
+          1
+        ],
+        "current_hand": [
+          64,
+          15,
+          15,
+          602,
+          187,
+          1
+        ],
+        "assumptions": "Three initial cards, one draw at each own turn including t1, no extra draw/generation; early Dummy is absent at this conditional root"
+      }
+    }
+  },
+  "price_settings": {
+    "central": {
+      "face_share": 0.2,
+      "threshold": 0.4,
+      "face_price": 0.25
+    },
+    "corner_000": {
+      "face_share": 0.1,
+      "threshold": 0.2,
+      "face_price": 0.15
+    },
+    "corner_001": {
+      "face_share": 0.1,
+      "threshold": 0.2,
+      "face_price": 0.4
+    },
+    "corner_010": {
+      "face_share": 0.1,
+      "threshold": 0.6,
+      "face_price": 0.15
+    },
+    "corner_011": {
+      "face_share": 0.1,
+      "threshold": 0.6,
+      "face_price": 0.4
+    },
+    "corner_100": {
+      "face_share": 0.35,
+      "threshold": 0.2,
+      "face_price": 0.15
+    },
+    "corner_101": {
+      "face_share": 0.35,
+      "threshold": 0.2,
+      "face_price": 0.4
+    },
+    "corner_110": {
+      "face_share": 0.35,
+      "threshold": 0.6,
+      "face_price": 0.15
+    },
+    "corner_111": {
+      "face_share": 0.35,
+      "threshold": 0.6,
+      "face_price": 0.4
+    }
+  },
+  "cash_price_domain": [
+    0,
+    1
+  ],
+  "hand_price_display_domain": [
+    0,
+    3
+  ],
+  "hand_price_interpretation": "Unidentified homogeneous per-card opportunity price; sensitivity, not measured card value",
+  "source": "skills/undercards/references/snapshot.json; compiled 2026-10-05",
+  "used_cards": {
+    "1": {
+      "id": 1,
+      "name": "Dummy",
+      "metadata_name": "Dummy",
+      "cost": 1,
+      "attack": 0,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}.",
+      "effect_readable": "Taunt.",
+      "keyword_mentions": [
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-1",
+      "source_line": 283
+    },
+    "15": {
+      "id": 15,
+      "name": "Aaron",
+      "metadata_name": "Aaron",
+      "cost": 5,
+      "attack": 6,
+      "health": 5,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": " ",
+      "effect_readable": "",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-15",
+      "source_line": 297
+    },
+    "38": {
+      "id": 38,
+      "name": "Royal Guard 1",
+      "metadata_name": "Royal Guard 1",
+      "cost": 9,
+      "attack": 7,
+      "health": 10,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "ROYAL_GUARD"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Give all ally {{TRIBE:ROYAL_GUARD|2}} {{KW:ARMOR}}.",
+      "effect_readable": "Dust: Give all ally Royal Guard Armor.",
+      "keyword_mentions": [
+        "ARMOR",
+        "DUST"
+      ],
+      "tribe_mentions": [
+        "ROYAL_GUARD"
+      ],
+      "card_references": [],
+      "source_key": "card-38",
+      "source_line": 320
+    },
+    "64": {
+      "id": 64,
+      "name": "Mettaton EX",
+      "metadata_name": "Mettaton Ex",
+      "cost": 10,
+      "attack": 6,
+      "health": 8,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: If either player has 10+ {{GOLD}} (after spending {{GOLD}} on this), set both players' {{GOLD}} to 0.",
+      "effect_readable": "Magic: If either player has 10+ GOLD (after spending GOLD on this), set both players' GOLD to 0.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-64",
+      "source_line": 346
+    },
+    "187": {
+      "id": 187,
+      "name": "Candy Dish",
+      "metadata_name": "Candy Dish",
+      "cost": 3,
+      "attack": 2,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": " ",
+      "effect_readable": "",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-187",
+      "source_line": 464
+    },
+    "602": {
+      "id": 602,
+      "name": "Rock Pet",
+      "metadata_name": "Rock Pet",
+      "cost": 2,
+      "attack": 3,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": " ",
+      "effect_readable": "",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-602",
+      "source_line": 1985
+    }
+  },
+  "conditional_scope": "Budget ledger plus one deployment and complete ordinary-enemy attack phase; not an opening trajectory or match",
+  "enemy_soul": "INTEGRITY; no cards played or expenditures, previous spend zero, end rebate zero",
+  "inactive_guard_dust": "Only one Royal Guard available; no other ally Royal Guard, future hand/deck effects unpriced",
+  "inactive_ex_magic": "Action cash below20 and enemy cash below10, so no reset after paying10",
+  "unknown": "Prior field/draw trajectory, real opportunity correlations, future SOUL/card effects and resource prices uncalibrated",
+  "source_results": "/workspace/undercards/analysis/card-comparison/2026-10-20/results",
+  "derivation": "Remove unavailable Ranger Rudinn; filter hand-independent menus and rederive price regions, without physical search",
+  "derivation_source_commit": "013e423d4bb879688d3e8e83ed7e881ae53494f7",
+  "opening_limit": "Arrival witness and natural balance only; early Dummy death, full prior fields and opponent draw/actions not simulated"
+}

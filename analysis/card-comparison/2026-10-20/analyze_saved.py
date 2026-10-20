@@ -66,6 +66,8 @@ def main():
         fig.suptitle('Fixed 12G hand window, empty enemy board, INTEGRITY; heuristic assets')
         fig.tight_layout(rect=(0,.14,1,.93))
         fig.savefig(args.output/'resource-regions.svg')
+        svg=args.output/'resource-regions.svg'
+        svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
         fig.savefig(args.output/'resource-regions.png',dpi=150)
         plt.close(fig)
     print(json.dumps(dict(pair_thresholds=len(pairs),winner_rows=len(winners),physical_search_executed=False)))

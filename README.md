@@ -1,6 +1,6 @@
 # Undercards 通用 Value 建模
 
-当前入口：[单卡条件比较程序与研究结果](analysis/card-comparison/2026-10-19/README.md)。按用户要求暂停组卡，研究共同价格、同槽替代、手牌兑现条件及未识别的时机成本。最新加入[单普通敌体回应下的保命与留体比较](analysis/card-comparison/2026-10-19/RESPONSE-REPORT.md)：先检查共同用途，再报价；不满足用途不补数值。
+当前入口：[自然金币、SOUL与大小怪组合比较](analysis/card-comparison/2026-10-20/README.md)。按用户要求暂停组卡，先检查共同用途，再比较合法部署菜单。最新交付多普通敌体顺序攻击与三个局部SOUL被动；后手t4的12G及六张到牌见证下，给出单大怪、多小怪、混合保护的资源价格优势区间。它是条件部署研究，尚未模拟完整开局的等待损失，不输出胜率。此前[单卡共同价格/手牌/单敌研究](analysis/card-comparison/2026-10-19/README.md)保留，不重做。
 
 低成本、可解释、对数值差异敏感的随从评价研究。主智能体负责数值模型；DeepSeek承担批量机制拆解、跨批检查、反例提案和代码审查。当前模型是有明确边界的启发式报价程序，仍不是完整卡池强度榜。
 
@@ -8,7 +8,7 @@
 
 同日补传 `1a50ed9` 已接入：三份旧内核及测试的历史快照、原始变更和未应用补丁已归档，见 [补传说明](analysis/recovery-supplement-2026-10-19.md)。它们不覆盖当前模型，不代表完整旧实验已恢复。
 
-先读 [CONTINUATION.md](CONTINUATION.md) 接续研究；云端配置见 [CLOUD_SETUP.md](CLOUD_SETUP.md)。规则在 `skills/undercards/`，当前工具与报告在 `analysis/monster-value-heuristic/`。
+先读 [CURRENT_CHECKPOINT.md](CURRENT_CHECKPOINT.md) 接续研究；云端配置见 [CLOUD_SETUP.md](CLOUD_SETUP.md)。规则在 `skills/undercards/`，最新工具与报告在 `analysis/card-comparison/`，早期启发式成果在 `analysis/monster-value-heuristic/`。
 
 Python 3.11+，离线工具只需标准库。克隆后的首次启动：
 

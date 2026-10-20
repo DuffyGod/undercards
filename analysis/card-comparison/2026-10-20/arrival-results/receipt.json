@@ -1,0 +1,9 @@
+{
+  "cases": 73,
+  "kept_records": 35235,
+  "removed_records": 23967,
+  "arrival_inventory_checks": 73,
+  "physical_search_executed": false,
+  "api_calls": 0,
+  "source_results": "/workspace/undercards/analysis/card-comparison/2026-10-20/results"
+}

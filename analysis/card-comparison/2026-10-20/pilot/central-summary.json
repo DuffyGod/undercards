@@ -1,0 +1,188 @@
+[
+  {
+    "case": "guard/KINDNESS/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 6.2096770203447065
+  },
+  {
+    "case": "guard/KINDNESS/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 2.2096770203447065
+  },
+  {
+    "case": "guard/KINDNESS/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      15
+    ],
+    "value": -0.9014453327821847
+  },
+  {
+    "case": "guard/KINDNESS/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -2.671861263235286
+  },
+  {
+    "case": "guard/KINDNESS/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 6.778047410911158
+  },
+  {
+    "case": "guard/KINDNESS/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 3.510478082481047
+  },
+  {
+    "case": "guard/KINDNESS/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 0.8485546672178153
+  },
+  {
+    "case": "guard/KINDNESS/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": -0.558392202776453
+  },
+  {
+    "case": "guard/JUSTICE/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 9.319797299179179
+  },
+  {
+    "case": "guard/JUSTICE/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 6.136120019067967
+  },
+  {
+    "case": "guard/JUSTICE/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 3.474196603804735
+  },
+  {
+    "case": "guard/JUSTICE/one_large_hit/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": 2.362185830635674
+  },
+  {
+    "case": "guard/JUSTICE/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 0.0,
+    "cash_price": 0.5,
+    "package": [
+      1,
+      15,
+      187,
+      602
+    ],
+    "value": 7.408593445413473
+  },
+  {
+    "case": "guard/JUSTICE/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 1.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15,
+      602
+    ],
+    "value": 4.147691456083084
+  },
+  {
+    "case": "guard/JUSTICE/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 2.0,
+    "cash_price": 0.5,
+    "package": [
+      15,
+      15
+    ],
+    "value": 1.4857680408198526
+  },
+  {
+    "case": "guard/JUSTICE/order_probe/keep1",
+    "cash": 12,
+    "hand_price": 3.0,
+    "cash_price": 0.5,
+    "package": [
+      38
+    ],
+    "value": 0.37375726765079165
+  }
+]

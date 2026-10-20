@@ -1,0 +1,17 @@
+{
+  "combat": {
+    "initial_windows": 3999,
+    "full_physical_endpoints": 22350,
+    "mismatches": 0,
+    "range": "0..2 friends, 0..2 enemies; hero HP 1/4/10; five friend and six enemy types"
+  },
+  "deployment": {
+    "deployment_variants": 206,
+    "souls": 4,
+    "mismatches": 0,
+    "checks": "multiset subsets, Kindness last-cid classes, hand conservation, stage snapshots, 12G ledger/refund"
+  },
+  "old_experiments_executed": false,
+  "api_calls": 0,
+  "limitations": "Tuple oracle covers ordinary attacks only; same declared rules, not independent server validation. No proof for >2 enemies/friends, clipping, F calibration, or real opening reachability."
+}

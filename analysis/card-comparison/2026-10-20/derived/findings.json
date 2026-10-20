@@ -1,0 +1,1160 @@
+{
+  "pairs": [
+    {
+      "label": "two_aaron",
+      "case": "guard/INTEGRITY/empty/keep1",
+      "left": [
+        15,
+        15
+      ],
+      "right": [
+        38
+      ],
+      "hand_price_roots_at_cash_half": [
+        2.014110333175805,
+        2.2016513476419863
+      ],
+      "left_feasible": true,
+      "right_feasible": true,
+      "minimum": 1.0141103331758048,
+      "maximum": 1.2016513476419863,
+      "planes": [
+        {
+          "setting": "central",
+          "coefficients": [
+            2.612010773169061,
+            -1,
+            -1
+          ],
+          "left_minus_right": 1.112010773169061,
+          "left_order": [
+            15,
+            15
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_000",
+          "coefficients": [
+            2.7016513476419863,
+            -1,
+            -1
+          ],
+          "left_minus_right": 1.2016513476419863,
+          "left_order": [
+            15,
+            15
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_001",
+          "coefficients": [
+            2.7016513476419863,
+            -1,
+            -1
+          ],
+          "left_minus_right": 1.2016513476419863,
+          "left_order": [
+            15,
+            15
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_010",
+          "coefficients": [
+            2.5995860856784425,
+            -1,
+            -1
+          ],
+          "left_minus_right": 1.0995860856784425,
+          "left_order": [
+            15,
+            15
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_011",
+          "coefficients": [
+            2.5995860856784425,
+            -1,
+            -1
+          ],
+          "left_minus_right": 1.0995860856784425,
+          "left_order": [
+            15,
+            15
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_100",
+          "coefficients": [
+            2.6000562855680514,
+            -1,
+            -1
+          ],
+          "left_minus_right": 1.1000562855680514,
+          "left_order": [
+            15,
+            15
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_101",
+          "coefficients": [
+            2.6000562855680514,
+            -1,
+            -1
+          ],
+          "left_minus_right": 1.1000562855680514,
+          "left_order": [
+            15,
+            15
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_110",
+          "coefficients": [
+            2.514110333175805,
+            -1,
+            -1
+          ],
+          "left_minus_right": 1.0141103331758048,
+          "left_order": [
+            15,
+            15
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_111",
+          "coefficients": [
+            2.514110333175805,
+            -1,
+            -1
+          ],
+          "left_minus_right": 1.0141103331758048,
+          "left_order": [
+            15,
+            15
+          ],
+          "right_order": [
+            38
+          ]
+        }
+      ],
+      "interpretation": "a+b*cash_price+c*hand_price; no empirical probability over settings",
+      "left_weakly_preferred_all_settings_polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.5141103331758048
+        ],
+        [
+          0.0,
+          2.514110333175805
+        ]
+      ],
+      "right_weakly_preferred_all_settings_polygon": [
+        [
+          1.0,
+          1.7016513476419863
+        ],
+        [
+          1.0,
+          3.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          2.7016513476419863
+        ]
+      ],
+      "polygon_domain": {
+        "cash_price": [
+          0,
+          1
+        ],
+        "hand_price": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "label": "three_small",
+      "case": "guard/INTEGRITY/empty/keep1",
+      "left": [
+        187,
+        377,
+        602
+      ],
+      "right": [
+        38
+      ],
+      "hand_price_roots_at_cash_half": [
+        0.3801726024745382,
+        0.990521841707972
+      ],
+      "left_feasible": true,
+      "right_feasible": true,
+      "minimum": -1.2396547950509236,
+      "maximum": -0.018956316584056054,
+      "planes": [
+        {
+          "setting": "central",
+          "coefficients": [
+            0.8830782182436252,
+            1,
+            -2
+          ],
+          "left_minus_right": -0.6169217817563748,
+          "left_order": [
+            187,
+            377,
+            602
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_000",
+          "coefficients": [
+            1.481043683415944,
+            1,
+            -2
+          ],
+          "left_minus_right": -0.018956316584056054,
+          "left_order": [
+            187,
+            377,
+            602
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_001",
+          "coefficients": [
+            1.481043683415944,
+            1,
+            -2
+          ],
+          "left_minus_right": -0.018956316584056054,
+          "left_order": [
+            187,
+            377,
+            602
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_010",
+          "coefficients": [
+            0.5009827237546922,
+            1,
+            -2
+          ],
+          "left_minus_right": -0.9990172762453078,
+          "left_order": [
+            187,
+            377,
+            602
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_011",
+          "coefficients": [
+            0.5009827237546922,
+            1,
+            -2
+          ],
+          "left_minus_right": -0.9990172762453078,
+          "left_order": [
+            187,
+            377,
+            602
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_100",
+          "coefficients": [
+            1.195025918791762,
+            1,
+            -2
+          ],
+          "left_minus_right": -0.304974081208238,
+          "left_order": [
+            187,
+            377,
+            602
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_101",
+          "coefficients": [
+            1.195025918791762,
+            1,
+            -2
+          ],
+          "left_minus_right": -0.304974081208238,
+          "left_order": [
+            187,
+            377,
+            602
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_110",
+          "coefficients": [
+            0.2603452049490764,
+            1,
+            -2
+          ],
+          "left_minus_right": -1.2396547950509236,
+          "left_order": [
+            187,
+            377,
+            602
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_111",
+          "coefficients": [
+            0.2603452049490764,
+            1,
+            -2
+          ],
+          "left_minus_right": -1.2396547950509236,
+          "left_order": [
+            187,
+            377,
+            602
+          ],
+          "right_order": [
+            38
+          ]
+        }
+      ],
+      "interpretation": "a+b*cash_price+c*hand_price; no empirical probability over settings",
+      "left_weakly_preferred_all_settings_polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.6301726024745382
+        ],
+        [
+          0.0,
+          0.1301726024745382
+        ]
+      ],
+      "right_weakly_preferred_all_settings_polygon": [
+        [
+          1.0,
+          1.240521841707972
+        ],
+        [
+          1.0,
+          3.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          0.740521841707972
+        ]
+      ],
+      "polygon_domain": {
+        "cash_price": [
+          0,
+          1
+        ],
+        "hand_price": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "label": "spent_twelve",
+      "case": "guard/INTEGRITY/empty/keep1",
+      "left": [
+        15,
+        15,
+        602
+      ],
+      "right": [
+        38
+      ],
+      "hand_price_roots_at_cash_half": [
+        1.730861226852738,
+        2.036249977991802
+      ],
+      "left_feasible": true,
+      "right_feasible": true,
+      "minimum": 1.4617224537054758,
+      "maximum": 2.072499955983604,
+      "planes": [
+        {
+          "setting": "central",
+          "coefficients": [
+            5.273934188432293,
+            -3,
+            -2
+          ],
+          "left_minus_right": 1.7739341884322926,
+          "left_order": [
+            15,
+            15,
+            602
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_000",
+          "coefficients": [
+            5.572499955983604,
+            -3,
+            -2
+          ],
+          "left_minus_right": 2.072499955983604,
+          "left_order": [
+            15,
+            15,
+            602
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_001",
+          "coefficients": [
+            5.572499955983604,
+            -3,
+            -2
+          ],
+          "left_minus_right": 2.072499955983604,
+          "left_order": [
+            15,
+            15,
+            602
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_010",
+          "coefficients": [
+            5.097867578878477,
+            -3,
+            -2
+          ],
+          "left_minus_right": 1.5978675788784766,
+          "left_order": [
+            15,
+            15,
+            602
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_011",
+          "coefficients": [
+            5.097867578878477,
+            -3,
+            -2
+          ],
+          "left_minus_right": 1.5978675788784766,
+          "left_order": [
+            15,
+            15,
+            602
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_100",
+          "coefficients": [
+            5.410680117748335,
+            -3,
+            -2
+          ],
+          "left_minus_right": 1.9106801177483348,
+          "left_order": [
+            15,
+            15,
+            602
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_101",
+          "coefficients": [
+            5.410680117748335,
+            -3,
+            -2
+          ],
+          "left_minus_right": 1.9106801177483348,
+          "left_order": [
+            15,
+            15,
+            602
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_110",
+          "coefficients": [
+            4.961722453705476,
+            -3,
+            -2
+          ],
+          "left_minus_right": 1.4617224537054758,
+          "left_order": [
+            15,
+            15,
+            602
+          ],
+          "right_order": [
+            38
+          ]
+        },
+        {
+          "setting": "corner_111",
+          "coefficients": [
+            4.961722453705476,
+            -3,
+            -2
+          ],
+          "left_minus_right": 1.4617224537054758,
+          "left_order": [
+            15,
+            15,
+            602
+          ],
+          "right_order": [
+            38
+          ]
+        }
+      ],
+      "interpretation": "a+b*cash_price+c*hand_price; no empirical probability over settings",
+      "left_weakly_preferred_all_settings_polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.9808612268527379
+        ],
+        [
+          0.0,
+          2.480861226852738
+        ]
+      ],
+      "right_weakly_preferred_all_settings_polygon": [
+        [
+          1.0,
+          1.286249977991802
+        ],
+        [
+          1.0,
+          3.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          2.786249977991802
+        ]
+      ],
+      "polygon_domain": {
+        "cash_price": [
+          0,
+          1
+        ],
+        "hand_price": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "label": "mixed_after_attacks",
+      "case": "guard/INTEGRITY/two_durable/keep1",
+      "left": [
+        38,
+        187
+      ],
+      "right": [
+        15,
+        15,
+        602
+      ],
+      "hand_price_roots_at_cash_half": [
+        0.7950262803478605,
+        2.0012411639702137
+      ],
+      "left_feasible": true,
+      "right_feasible": true,
+      "minimum": -1.0012411639702137,
+      "maximum": 0.2049737196521395,
+      "planes": [
+        {
+          "setting": "central",
+          "coefficients": [
+            -1.5384931670790625,
+            0,
+            1
+          ],
+          "left_minus_right": -0.5384931670790625,
+          "left_order": [
+            38,
+            187
+          ],
+          "right_order": [
+            15,
+            15,
+            602
+          ]
+        },
+        {
+          "setting": "corner_000",
+          "coefficients": [
+            -1.144357646178138,
+            0,
+            1
+          ],
+          "left_minus_right": -0.14435764617813795,
+          "left_order": [
+            38,
+            187
+          ],
+          "right_order": [
+            15,
+            15,
+            602
+          ]
+        },
+        {
+          "setting": "corner_001",
+          "coefficients": [
+            -2.0012411639702137,
+            0,
+            1
+          ],
+          "left_minus_right": -1.0012411639702137,
+          "left_order": [
+            38,
+            187
+          ],
+          "right_order": [
+            15,
+            15,
+            602
+          ]
+        },
+        {
+          "setting": "corner_010",
+          "coefficients": [
+            -0.963449154163019,
+            0,
+            1
+          ],
+          "left_minus_right": 0.03655084583698098,
+          "left_order": [
+            38,
+            187
+          ],
+          "right_order": [
+            15,
+            15,
+            602
+          ]
+        },
+        {
+          "setting": "corner_011",
+          "coefficients": [
+            -1.7143313184357893,
+            0,
+            1
+          ],
+          "left_minus_right": -0.7143313184357893,
+          "left_order": [
+            38,
+            187
+          ],
+          "right_order": [
+            15,
+            15,
+            602
+          ]
+        },
+        {
+          "setting": "corner_100",
+          "coefficients": [
+            -0.9441730111333193,
+            0,
+            1
+          ],
+          "left_minus_right": 0.055826988866680693,
+          "left_order": [
+            38,
+            187
+          ],
+          "right_order": [
+            15,
+            15,
+            602
+          ]
+        },
+        {
+          "setting": "corner_101",
+          "coefficients": [
+            -1.9144459283009887,
+            0,
+            1
+          ],
+          "left_minus_right": -0.9144459283009887,
+          "left_order": [
+            38,
+            187
+          ],
+          "right_order": [
+            15,
+            15,
+            602
+          ]
+        },
+        {
+          "setting": "corner_110",
+          "coefficients": [
+            -0.7950262803478605,
+            0,
+            1
+          ],
+          "left_minus_right": 0.2049737196521395,
+          "left_order": [
+            38,
+            187
+          ],
+          "right_order": [
+            15,
+            15,
+            602
+          ]
+        },
+        {
+          "setting": "corner_111",
+          "coefficients": [
+            -1.6413072173522991,
+            0,
+            1
+          ],
+          "left_minus_right": -0.6413072173522991,
+          "left_order": [
+            38,
+            187
+          ],
+          "right_order": [
+            15,
+            15,
+            602
+          ]
+        }
+      ],
+      "interpretation": "a+b*cash_price+c*hand_price; no empirical probability over settings",
+      "left_weakly_preferred_all_settings_polygon": [
+        [
+          1.0,
+          2.0012411639702137
+        ],
+        [
+          1.0,
+          3.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          2.0012411639702137
+        ]
+      ],
+      "right_weakly_preferred_all_settings_polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.7950262803478605
+        ],
+        [
+          0.0,
+          0.7950262803478605
+        ]
+      ],
+      "polygon_domain": {
+        "cash_price": [
+          0,
+          1
+        ],
+        "hand_price": [
+          0,
+          3
+        ]
+      }
+    }
+  ],
+  "winners": [
+    {
+      "case": "guard/INTEGRITY/empty/keep1",
+      "cash_price": 0.5,
+      "hand_price": 0.0,
+      "winners": [
+        {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "settings": 7
+        },
+        {
+          "package": [
+            15,
+            15,
+            602
+          ],
+          "settings": 2
+        }
+      ],
+      "count_warning": "Settings count is sensitivity coverage, not votes or probability"
+    },
+    {
+      "case": "guard/INTEGRITY/empty/keep1",
+      "cash_price": 0.5,
+      "hand_price": 1.0,
+      "winners": [
+        {
+          "package": [
+            15,
+            15,
+            602
+          ],
+          "settings": 9
+        }
+      ],
+      "count_warning": "Settings count is sensitivity coverage, not votes or probability"
+    },
+    {
+      "case": "guard/INTEGRITY/empty/keep1",
+      "cash_price": 0.5,
+      "hand_price": 2.0,
+      "winners": [
+        {
+          "package": [
+            15,
+            15
+          ],
+          "settings": 9
+        }
+      ],
+      "count_warning": "Settings count is sensitivity coverage, not votes or probability"
+    },
+    {
+      "case": "guard/INTEGRITY/empty/keep1",
+      "cash_price": 0.5,
+      "hand_price": 3.0,
+      "winners": [
+        {
+          "package": [
+            38
+          ],
+          "settings": 9
+        }
+      ],
+      "count_warning": "Settings count is sensitivity coverage, not votes or probability"
+    },
+    {
+      "case": "guard/INTEGRITY/two_durable/keep1",
+      "cash_price": 0.5,
+      "hand_price": 0.0,
+      "winners": [
+        {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "settings": 9
+        }
+      ],
+      "count_warning": "Settings count is sensitivity coverage, not votes or probability"
+    },
+    {
+      "case": "guard/INTEGRITY/two_durable/keep1",
+      "cash_price": 0.5,
+      "hand_price": 1.0,
+      "winners": [
+        {
+          "package": [
+            15,
+            15,
+            602
+          ],
+          "settings": 3
+        },
+        {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "settings": 1
+        },
+        {
+          "package": [
+            38,
+            602
+          ],
+          "settings": 2
+        },
+        {
+          "package": [
+            1,
+            15,
+            15
+          ],
+          "settings": 2
+        },
+        {
+          "package": [
+            38,
+            187
+          ],
+          "settings": 1
+        }
+      ],
+      "count_warning": "Settings count is sensitivity coverage, not votes or probability"
+    },
+    {
+      "case": "guard/INTEGRITY/two_durable/keep1",
+      "cash_price": 0.5,
+      "hand_price": 2.0,
+      "winners": [
+        {
+          "package": [
+            38,
+            187
+          ],
+          "settings": 6
+        },
+        {
+          "package": [
+            15,
+            15,
+            602
+          ],
+          "settings": 1
+        },
+        {
+          "package": [
+            38,
+            602
+          ],
+          "settings": 2
+        }
+      ],
+      "count_warning": "Settings count is sensitivity coverage, not votes or probability"
+    },
+    {
+      "case": "guard/INTEGRITY/two_durable/keep1",
+      "cash_price": 0.5,
+      "hand_price": 3.0,
+      "winners": [
+        {
+          "package": [
+            38,
+            187
+          ],
+          "settings": 7
+        },
+        {
+          "package": [
+            38,
+            602
+          ],
+          "settings": 2
+        }
+      ],
+      "count_warning": "Settings count is sensitivity coverage, not votes or probability"
+    },
+    {
+      "case": "guard/KINDNESS/one_large_hit/keep1",
+      "cash_price": 0.5,
+      "hand_price": 0.0,
+      "winners": [
+        {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "settings": 9
+        }
+      ],
+      "count_warning": "Settings count is sensitivity coverage, not votes or probability"
+    },
+    {
+      "case": "guard/KINDNESS/one_large_hit/keep1",
+      "cash_price": 0.5,
+      "hand_price": 1.0,
+      "winners": [
+        {
+          "package": [
+            1,
+            15,
+            187,
+            602
+          ],
+          "settings": 5
+        },
+        {
+          "package": [
+            1,
+            15,
+            15
+          ],
+          "settings": 4
+        }
+      ],
+      "count_warning": "Settings count is sensitivity coverage, not votes or probability"
+    },
+    {
+      "case": "guard/KINDNESS/one_large_hit/keep1",
+      "cash_price": 0.5,
+      "hand_price": 2.0,
+      "winners": [
+        {
+          "package": [
+            1,
+            15,
+            15
+          ],
+          "settings": 9
+        }
+      ],
+      "count_warning": "Settings count is sensitivity coverage, not votes or probability"
+    },
+    {
+      "case": "guard/KINDNESS/one_large_hit/keep1",
+      "cash_price": 0.5,
+      "hand_price": 3.0,
+      "winners": [
+        {
+          "package": [
+            38
+          ],
+          "settings": 5
+        },
+        {
+          "package": [
+            1,
+            38
+          ],
+          "settings": 4
+        }
+      ],
+      "count_warning": "Settings count is sensitivity coverage, not votes or probability"
+    }
+  ],
+  "physical_search_executed": false
+}

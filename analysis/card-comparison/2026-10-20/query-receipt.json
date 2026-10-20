@@ -1,0 +1,8 @@
+{
+  "saved_cli_examples": 8,
+  "invalid_price_and_unavailable_package_rejections": 2,
+  "physical_search_executed": false,
+  "api_calls": 0,
+  "later_arrival_cli_examples": 8,
+  "arrival_physical_search_executed": false
+}
