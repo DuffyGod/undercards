@@ -29,6 +29,10 @@ def groups(stage):
         return [dict(composition=c,policy=p,soul='KINDNESS',opponent='large_reply',seat=s,intervention=i)
                 for c,p,s,i in product(('small_draw','middle_draw'),('balanced','reserve_slot'),(0,1),
                     ('base','no_bonus_draw','extra_natural','hand10','slots6','no_foe_hero_heal','hp_loss','soul_first','no_t1_draw'))]
+    if stage in ('tactics','extension'):
+        comps=('small_draw','middle_draw','heavy') if stage=='tactics' else ('small_anchor','small_reach')
+        return [dict(composition=c,policy='balanced',soul='KINDNESS',opponent=o,seat=s,intervention='public_tactics')
+                for c,o,s in product(comps,('mid','large_reply'),(0,1))]
     if stage=='heal':
         return [dict(composition=c,policy='balanced',soul='KINDNESS',opponent=o,seat=s,intervention='base')
                 for c,o,s in product(('middle_draw','middle_heal'),('mid','large_reply','draw_reply'),(0,1))]
@@ -42,7 +46,7 @@ def configuration(g,horizon):
         'hand10':dict(hand_cap=10),'slots6':dict(slots=6),
         'no_foe_hero_heal':dict(hero_healing=tuple(s==g['seat'] for s in (0,1))),
         'hp_loss':dict(knight_damage='hp_loss'),'soul_first':dict(end_order='soul_then_draw'),
-        'no_t1_draw':dict(first_turn_draw=False)}[i]
+        'public_tactics':dict(public_tactics=True),'no_t1_draw':dict(first_turn_draw=False)}[i]
     return replace(cfg,**kw)
 
 
@@ -56,7 +60,7 @@ def trial(g,seed,horizon,trace=False):
 
 def main():
     a=argparse.ArgumentParser(description=__doc__)
-    a.add_argument('--stage',choices=('pilot','main','counterfactual','heal'),required=True)
+    a.add_argument('--stage',choices=('pilot','main','counterfactual','heal','tactics','extension'),required=True)
     a.add_argument('--output',type=Path,required=True);a.add_argument('--samples',type=int,default=128)
     a.add_argument('--horizon',type=int,default=8);a.add_argument('--seed-start',type=int,default=0)
     a.add_argument('--resume',action='store_true');args=a.parse_args()
@@ -83,6 +87,7 @@ def main():
             'no artifacts','restricted implemented card pool','ordinary attacks chosen by declared one-turn heuristic, not future minimax',
             'Kindness/turn-end draw ordering unverified if fatigue occurs','Knight overkill packet default, alternate hp_loss',
             'global cutoff after both nth turns; seats must remain separate'])
+    spec=json.loads(json.dumps(spec))  # canonical tuple/list form for resume
     if (out/'design.json').exists():
         old=json.loads((out/'design.json').read_text())
         # A resume cannot silently change source/model/spec.

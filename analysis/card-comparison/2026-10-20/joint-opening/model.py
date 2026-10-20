@@ -14,7 +14,7 @@ HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[3]
 sys.path.insert(0,str(ROOT/'analysis/method-lab/2026-10-18'))
 from value_model import BodyScale
-VERSION='joint-opening-0.2'
+VERSION='joint-opening-0.3'
 SNAPSHOT=json.loads((ROOT/'skills/undercards/references/snapshot.json').read_text())
 CARDS={c['id']:c for c in SNAPSHOT['cards']}
 REFERENCE=json.loads((ROOT/'analysis/method-lab/2026-10-18/statistical_inputs.json').read_text())['reference']
@@ -30,6 +30,8 @@ for i,c in zip(range(3,9),(17,17,44,44,21,21)):HEAVY[i]=c
 COMPOSITIONS={'small':SMALL,'small_draw':tuple(225 if c==187 else c for c in SMALL),
               'middle':MIDDLE,'middle_draw':DRAW_MIDDLE,'heavy':tuple(HEAVY),
               'middle_heal':tuple(91 if c==4 else c for c in DRAW_MIDDLE)}
+COMPOSITIONS['small_anchor']=tuple(243 if c==196 else c for c in COMPOSITIONS['small_draw'])
+COMPOSITIONS['small_reach']=tuple(([21,21,168]+list(COMPOSITIONS['small_draw'][3:])))
 POLICIES=('pressure','balanced','reserve_slot')
 
 @dataclass(frozen=True)
@@ -44,6 +46,7 @@ class Config:
     hero_healing:tuple=(True,True)
     knight_damage:str='packet'  # alternate 'hp_loss' for unresolved overkill ruling.
     end_order:str='draw_then_soul'  # alternate 'soul_then_draw' for fatigue sensitivity.
+    public_tactics:bool=False
     combat_cap:int=25000
 
 @dataclass(frozen=True)
@@ -368,6 +371,12 @@ class Match:
             steps+=1
             if steps>45:raise RuntimeError('Turn policy guard exceeded')
             blocked=blocked or self.full_slot_candidate(side)
+            if self.config.public_tactics:
+                from tactical import precombat_choice
+                early=precombat_choice(self.view(side),self.policies[side],self.config)
+                if early is not None:
+                    paid+=self.deploy(side,early)
+                    continue
             plan,_=choose_combat(self.view(side),self.policies[side],self.config)
             if plan:
                 for a,target in plan:
