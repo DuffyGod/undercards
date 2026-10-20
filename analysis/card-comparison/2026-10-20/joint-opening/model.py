@@ -257,7 +257,7 @@ class Match:
             for _ in range(3):self.draw(side,'initial')
 
     def event(self,kind,**kwargs):
-        if self.keep_trace:self.trace.append(dict(turn=self.turn,actor=self.actor,kind=kind,**kwargs))
+        if self.keep_trace:self.trace.append(dict(turn=self.turn,turn_actor=self.actor,kind=kind,**kwargs))
 
     def alive(self):return all(p.hp>0 for p in self.players)
 

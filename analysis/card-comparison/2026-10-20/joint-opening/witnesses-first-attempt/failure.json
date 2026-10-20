@@ -1,0 +1,6 @@
+{
+  "action": "selected action replay with trace=True",
+  "error": "TypeError: dict() got multiple values for keyword argument actor",
+  "cause": "turn actor and attacking unit ID used same event key; trace=False formal results unaffected",
+  "resolution": "Use turn_actor for turn owner; preserve actor for attacking unit; replay selected frozen endpoints without new samples"
+}
