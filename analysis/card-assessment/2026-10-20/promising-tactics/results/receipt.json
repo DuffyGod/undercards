@@ -1,0 +1,13 @@
+{
+  "new_focal_cards": 29,
+  "total_curated_cards": 78,
+  "new_records": 183,
+  "new_comparisons": 16,
+  "source_commit": "b1928c382322c86e8ce7f956cd76fed6e728e7ec",
+  "source_dirty": false,
+  "new_http_requests": 0,
+  "credential_state": "skipped; normal client credential_error",
+  "empirical_calibration": false,
+  "all_cards_globally_scored": false,
+  "note": "Records are explicitly chosen counterfactuals, not independent match experiments or coverage accuracy"
+}

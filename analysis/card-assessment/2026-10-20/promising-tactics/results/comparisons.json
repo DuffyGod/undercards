@@ -1,0 +1,332 @@
+{
+  "comparisons": [
+    {
+      "left": "tactics/437/agent_setup/loox_then_agent",
+      "right": "tactics/437/agent_setup/loox_only",
+      "reason": "8G two-card conversion vs legal1G fallback; charges extra Agent card/Gold",
+      "coefficients": {
+        "body": 10.279380482703335,
+        "face": 0,
+        "card": -1,
+        "gold": 0,
+        "paid_gold": 7
+      },
+      "central_net_difference": 2.279380482703335,
+      "card_price_tie_at_central_other_prices": 3.279380482703335,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        1.2793804827033348,
+        6.779380482703335
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred"
+    },
+    {
+      "left": "tactics/868/pancakes_order/trade_then_heal",
+      "right": "tactics/868/pancakes_order/heal_then_trade",
+      "reason": "Order alone preserves5 monster HP and heals5 hero HP; same fee/card",
+      "coefficients": {
+        "body": 2.7470415705580953,
+        "face": 5,
+        "card": 0,
+        "gold": 0,
+        "paid_gold": 0
+      },
+      "central_net_difference": 3.9970415705580953,
+      "card_price_tie_at_central_other_prices": null,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        3.4970415705580953,
+        4.747041570558095
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred"
+    },
+    {
+      "left": "tactics/391/sheary_order/loox_then_sheary",
+      "right": "tactics/391/sheary_order/sheary_then_loox",
+      "reason": "Same two cards; order changes total2 to5 damage",
+      "coefficients": {
+        "body": 3.441328580585549,
+        "face": 0,
+        "card": 0,
+        "gold": 0,
+        "paid_gold": 0
+      },
+      "central_net_difference": 3.441328580585549,
+      "card_price_tie_at_central_other_prices": null,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        3.441328580585549,
+        3.441328580585549
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred"
+    },
+    {
+      "left": "tactics/391/sheary_order/loox_then_sheary",
+      "right": "tactics/391/sheary_order/sheary_only",
+      "reason": "Clearing5HP costs an additional1G and Loox; body plus kill vs keep setup",
+      "coefficients": {
+        "body": 5.442077222434279,
+        "face": 0,
+        "card": -1,
+        "gold": 0,
+        "paid_gold": 1
+      },
+      "central_net_difference": 3.4420772224342793,
+      "card_price_tie_at_central_other_prices": 4.442077222434279,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        2.4420772224342793,
+        4.942077222434279
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred"
+    },
+    {
+      "left": "tactics/852/searby_order/loox_then_searby",
+      "right": "tactics/852/searby_order/searby_then_loox",
+      "reason": "Both kill; only correct order draws1 (-2 future discount not current cash)",
+      "coefficients": {
+        "body": 0.0,
+        "face": 0,
+        "card": 1,
+        "gold": 0,
+        "paid_gold": 0
+      },
+      "central_net_difference": 1.0,
+      "card_price_tie_at_central_other_prices": -0.0,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        0.0,
+        2.0
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred"
+    },
+    {
+      "left": "tactics/201/dancer_setup/loox_then_dancer",
+      "right": "tactics/201/dancer_setup/dancer_only",
+      "reason": "Charge Loox1G/onecard, include all resulting bodies and real heal; setup unlocks a kill",
+      "coefficients": {
+        "body": 4.573242218342266,
+        "face": 4,
+        "card": -1,
+        "gold": 0,
+        "paid_gold": 1
+      },
+      "central_net_difference": 3.5732422183422656,
+      "card_price_tie_at_central_other_prices": 4.573242218342266,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        2.1732422183422653,
+        5.673242218342265
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred"
+    },
+    {
+      "left": "tactics/852/one_5_5/magic_0",
+      "right": "tactics/506/one_5_5/loox_then_soul_cage",
+      "reason": "Both clear ordinary5/5:7G onecard+draw versus5G two-card Haste/chip; future discount/Knife not priced",
+      "coefficients": {
+        "body": 0.829510135594858,
+        "face": 0,
+        "card": 2,
+        "gold": 0,
+        "paid_gold": 2
+      },
+      "central_net_difference": 0.829510135594858,
+      "card_price_tie_at_central_other_prices": 0.585244932202571,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        -1.170489864405142,
+        3.829510135594858
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred"
+    },
+    {
+      "left": "tactics/201/one_5_5/loox_then_dancer",
+      "right": "tactics/852/one_5_5/magic_0",
+      "reason": "Both clear same5/5; compare paid8G/two cards+heal+bot with7G/onecard+draw",
+      "coefficients": {
+        "body": 0.8629859332619265,
+        "face": 4,
+        "card": -2,
+        "gold": 0,
+        "paid_gold": 1
+      },
+      "central_net_difference": -1.1370140667380735,
+      "card_price_tie_at_central_other_prices": 0.43149296663096326,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        -3.537014066738074,
+        1.9629859332619262
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred"
+    },
+    {
+      "left": "tactics/201/one_3_4/attack_0",
+      "right": "tactics/506/one_3_4/attack_0",
+      "reason": "Both single-card clear3/4: Dancer pays3G more for extra bodyHP, token and4 hero healing; Soul enemy-turn Dust liability outside current endpoint",
+      "coefficients": {
+        "body": 1.5302326522581842,
+        "face": 4,
+        "card": 0,
+        "gold": 0,
+        "paid_gold": 3
+      },
+      "central_net_difference": -0.46976734774181583,
+      "card_price_tie_at_central_other_prices": null,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        -0.8697673477418153,
+        1.6302326522581847
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred"
+    },
+    {
+      "left": "tactics/964/carousel_target/kill_0",
+      "right": "tactics/964/carousel_target/kill_1",
+      "reason": "Kill3HP to keep a1HP death seed; killing1HP stops Carousel after one wave",
+      "coefficients": {
+        "body": 2.9868261189309315,
+        "face": 0,
+        "card": 0,
+        "gold": 0,
+        "paid_gold": 0
+      },
+      "central_net_difference": 2.9868261189309315,
+      "card_price_tie_at_central_other_prices": null,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        2.9868261189309315,
+        2.9868261189309315
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred"
+    },
+    {
+      "left": "tactics/964/carousel_target/ready_ally_attacks_first",
+      "right": "tactics/964/carousel_target/kill_0",
+      "reason": "An ally that will die to known friendly AoE may first use its legal attack; no extra card/Gold",
+      "coefficients": {
+        "body": 0.0,
+        "face": 2,
+        "card": 0,
+        "gold": 0,
+        "paid_gold": 0
+      },
+      "central_net_difference": 0.5,
+      "card_price_tie_at_central_other_prices": null,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        0.2999999999999998,
+        0.8000000000000007
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred"
+    },
+    {
+      "left": "tactics/197/elder_ready/wait_for_end",
+      "right": "tactics/197/elder_ready/attack",
+      "reason": "With one4HP ordinary foe and no immediate urgency, not attacking avoids5HP loss",
+      "coefficients": {
+        "body": 2.747041570558093,
+        "face": 0,
+        "card": 0,
+        "gold": 0,
+        "paid_gold": 0
+      },
+      "central_net_difference": 2.747041570558093,
+      "card_price_tie_at_central_other_prices": null,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        2.747041570558093,
+        2.747041570558093
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred"
+    },
+    {
+      "left": "tactics/154/river_same_two_cards/froggit_then_river",
+      "right": "tactics/154/river_same_two_cards/river_then_froggit",
+      "reason": "Same paid cards, gold and bodies: playing already-held Froggit before the refill retains exactly one additional ordinary card.",
+      "coefficients": {
+        "body": 0.0,
+        "face": 0,
+        "card": 1,
+        "gold": 0,
+        "paid_gold": 0
+      },
+      "central_net_difference": 1.0,
+      "card_price_tie_at_central_other_prices": -0.0,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        0.0,
+        2.0
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred"
+    },
+    {
+      "left": "tactics/624/tasque_same_two_cards/froggit_then_tasque",
+      "right": "tactics/624/tasque_same_two_cards/tasque_then_froggit",
+      "reason": "Identical hand consumption and8G: already-planned Froggit first gives Tasque one additional +1/+1 without a fabricated extra card.",
+      "coefficients": {
+        "body": 0.9068980416457135,
+        "face": 0,
+        "card": 0,
+        "gold": 0,
+        "paid_gold": 0
+      },
+      "central_net_difference": 0.9068980416457135,
+      "card_price_tie_at_central_other_prices": null,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        0.9068980416457135,
+        0.9068980416457135
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred"
+    },
+    {
+      "left": "tactics/743/guard_same_two_cards/knight_then_guard",
+      "right": "tactics/743/guard_same_two_cards/guard_then_knight",
+      "reason": "Same two hand cards and final bodies, high-base-cost trigger first saves3 actualG; unlike merely holding a discount, payment is realized.",
+      "coefficients": {
+        "body": 0.0,
+        "face": 0,
+        "card": 0,
+        "gold": 0,
+        "paid_gold": -3
+      },
+      "central_net_difference": 3.0,
+      "card_price_tie_at_central_other_prices": null,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        1.5,
+        3.0
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred"
+    },
+    {
+      "left": "tactics/509/sink_hero27_tiny/decline_attack_heal3",
+      "right": "tactics/509/sink_hero27_tiny/haste_kill_tiny",
+      "reason": "Same held card/payment/own-end exposure: retaining1HP of Sink plus real3 hero healing competes with removing one enemy Tiny.",
+      "coefficients": {
+        "body": -0.5027121798817804,
+        "face": 3,
+        "card": 0,
+        "gold": 0,
+        "paid_gold": 0
+      },
+      "central_net_difference": 0.2472878201182196,
+      "card_price_tie_at_central_other_prices": null,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        -0.05271217988178023,
+        0.6972878201182198
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred"
+    }
+  ],
+  "notes": [
+    "Nine candidates are outside the existing49 profiles:29,226,113,154,546,624,743,812,509. All routes are local conditional endpoints.",
+    "J includes all played/erased cards and usable own/enemy gains. A generated/drawn card then played has +1gain and -1play, not both a battlefield asset and a retained inventory reward.",
+    "J>0 is NOT a universal deployment/carry gate: with F(6/5)=5, gold=1 and hand=1, vanilla Aaron J=-1. A pass without future exposure does not prove refusing all board development is sound.",
+    "Previous-turn qualification for Sadmobile is a conditional root, not a free strategy. Charge any incremental prior action cost separately before making a recommendation.",
+    "Haste is monster-only on entry. Existing ready Aaron may attack hero in these empty-enemy roots; no generated Haste hero hits used.",
+    "Entry requires a real free slot BEFORE Igloo/Flameguy Magic returns or kills an ally. Full-board entry is not made legal by its payoff."
+  ]
+}

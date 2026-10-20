@@ -1,0 +1,23 @@
+{
+  "source_commit": "b1928c382322c86e8ce7f956cd76fed6e728e7ec",
+  "new_targeted_tests": 13,
+  "test_process_exit": 0,
+  "source_texts_matched": 29,
+  "merged_catalog_cards": 755,
+  "merged_dossiers": 78,
+  "new_records": 183,
+  "paired_comparisons": 16,
+  "old_simulations_rerun": 0,
+  "new_http_requests": 0,
+  "unconditional_global_scores": 0,
+  "query_checks": [
+    "new dossier",
+    "existing dossier",
+    "pending card",
+    "merged755 catalog",
+    "price threshold",
+    "mixed accounting rejection",
+    "J carry rejection"
+  ],
+  "evidence_limit": "Targeted accounting/counterexample checks and literal-source matching; not independent server rules proof or empirical strength calibration"
+}

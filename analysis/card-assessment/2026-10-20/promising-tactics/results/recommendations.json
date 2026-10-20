@@ -1,0 +1,1102 @@
+{
+  "source_commit": "b1928c382322c86e8ce7f956cd76fed6e728e7ec",
+  "source_dirty": false,
+  "comparisons": [
+    {
+      "left": "tactics/437/agent_setup/loox_then_agent",
+      "right": "tactics/437/agent_setup/loox_only",
+      "reason": "8G two-card conversion vs legal1G fallback; charges extra Agent card/Gold",
+      "coefficients": {
+        "body": 10.279380482703335,
+        "face": 0,
+        "card": -1,
+        "gold": 0,
+        "paid_gold": 7
+      },
+      "central_net_difference": 2.279380482703335,
+      "card_price_tie_at_central_other_prices": 3.279380482703335,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        1.2793804827033348,
+        6.779380482703335
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred",
+      "body_corner_difference": [
+        2.0879132857412532,
+        2.4575503759668473
+      ]
+    },
+    {
+      "left": "tactics/868/pancakes_order/trade_then_heal",
+      "right": "tactics/868/pancakes_order/heal_then_trade",
+      "reason": "Order alone preserves5 monster HP and heals5 hero HP; same fee/card",
+      "coefficients": {
+        "body": 2.7470415705580953,
+        "face": 5,
+        "card": 0,
+        "gold": 0,
+        "paid_gold": 0
+      },
+      "central_net_difference": 3.9970415705580953,
+      "card_price_tie_at_central_other_prices": null,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        3.4970415705580953,
+        4.747041570558095
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred",
+      "body_corner_difference": [
+        3.8493067723437155,
+        4.144776368772469
+      ]
+    },
+    {
+      "left": "tactics/391/sheary_order/loox_then_sheary",
+      "right": "tactics/391/sheary_order/sheary_then_loox",
+      "reason": "Same two cards; order changes total2 to5 damage",
+      "coefficients": {
+        "body": 3.441328580585549,
+        "face": 0,
+        "card": 0,
+        "gold": 0,
+        "paid_gold": 0
+      },
+      "central_net_difference": 3.441328580585549,
+      "card_price_tie_at_central_other_prices": null,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        3.441328580585549,
+        3.441328580585549
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred",
+      "body_corner_difference": [
+        3.296003221551313,
+        3.5830315708772673
+      ]
+    },
+    {
+      "left": "tactics/391/sheary_order/loox_then_sheary",
+      "right": "tactics/391/sheary_order/sheary_only",
+      "reason": "Clearing5HP costs an additional1G and Loox; body plus kill vs keep setup",
+      "coefficients": {
+        "body": 5.442077222434279,
+        "face": 0,
+        "card": -1,
+        "gold": 0,
+        "paid_gold": 1
+      },
+      "central_net_difference": 3.4420772224342793,
+      "card_price_tie_at_central_other_prices": 4.442077222434279,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        2.4420772224342793,
+        4.942077222434279
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred",
+      "body_corner_difference": [
+        3.178385330092855,
+        3.698525286137399
+      ]
+    },
+    {
+      "left": "tactics/852/searby_order/loox_then_searby",
+      "right": "tactics/852/searby_order/searby_then_loox",
+      "reason": "Both kill; only correct order draws1 (-2 future discount not current cash)",
+      "coefficients": {
+        "body": 0.0,
+        "face": 0,
+        "card": 1,
+        "gold": 0,
+        "paid_gold": 0
+      },
+      "central_net_difference": 1.0,
+      "card_price_tie_at_central_other_prices": -0.0,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        0.0,
+        2.0
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred",
+      "body_corner_difference": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "left": "tactics/201/dancer_setup/loox_then_dancer",
+      "right": "tactics/201/dancer_setup/dancer_only",
+      "reason": "Charge Loox1G/onecard, include all resulting bodies and real heal; setup unlocks a kill",
+      "coefficients": {
+        "body": 4.573242218342266,
+        "face": 4,
+        "card": -1,
+        "gold": 0,
+        "paid_gold": 1
+      },
+      "central_net_difference": 3.5732422183422656,
+      "card_price_tie_at_central_other_prices": 4.573242218342266,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        2.1732422183422653,
+        5.673242218342265
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred",
+      "body_corner_difference": [
+        3.095031058912536,
+        4.041279455420092
+      ]
+    },
+    {
+      "left": "tactics/852/one_5_5/magic_0",
+      "right": "tactics/506/one_5_5/loox_then_soul_cage",
+      "reason": "Both clear ordinary5/5:7G onecard+draw versus5G two-card Haste/chip; future discount/Knife not priced",
+      "coefficients": {
+        "body": 0.829510135594858,
+        "face": 0,
+        "card": 2,
+        "gold": 0,
+        "paid_gold": 2
+      },
+      "central_net_difference": 0.829510135594858,
+      "card_price_tie_at_central_other_prices": 0.585244932202571,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        -1.170489864405142,
+        3.829510135594858
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred",
+      "body_corner_difference": [
+        0.7391962941105277,
+        0.9218073550485499
+      ]
+    },
+    {
+      "left": "tactics/201/one_5_5/loox_then_dancer",
+      "right": "tactics/852/one_5_5/magic_0",
+      "reason": "Both clear same5/5; compare paid8G/two cards+heal+bot with7G/onecard+draw",
+      "coefficients": {
+        "body": 0.8629859332619265,
+        "face": 4,
+        "card": -2,
+        "gold": 0,
+        "paid_gold": 1
+      },
+      "central_net_difference": -1.1370140667380735,
+      "card_price_tie_at_central_other_prices": 0.43149296663096326,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        -3.537014066738074,
+        1.9629859332619262
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred",
+      "body_corner_difference": [
+        -1.385108162953788,
+        -0.8943540116373381
+      ]
+    },
+    {
+      "left": "tactics/201/one_3_4/attack_0",
+      "right": "tactics/506/one_3_4/attack_0",
+      "reason": "Both single-card clear3/4: Dancer pays3G more for extra bodyHP, token and4 hero healing; Soul enemy-turn Dust liability outside current endpoint",
+      "coefficients": {
+        "body": 1.5302326522581842,
+        "face": 4,
+        "card": 0,
+        "gold": 0,
+        "paid_gold": 3
+      },
+      "central_net_difference": -0.46976734774181583,
+      "card_price_tie_at_central_other_prices": null,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        -0.8697673477418153,
+        1.6302326522581847
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred",
+      "body_corner_difference": [
+        -0.5601199973054509,
+        -0.38241120290708697
+      ]
+    },
+    {
+      "left": "tactics/964/carousel_target/kill_0",
+      "right": "tactics/964/carousel_target/kill_1",
+      "reason": "Kill3HP to keep a1HP death seed; killing1HP stops Carousel after one wave",
+      "coefficients": {
+        "body": 2.9868261189309315,
+        "face": 0,
+        "card": 0,
+        "gold": 0,
+        "paid_gold": 0
+      },
+      "central_net_difference": 2.9868261189309315,
+      "card_price_tie_at_central_other_prices": null,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        2.9868261189309315,
+        2.9868261189309315
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred",
+      "body_corner_difference": [
+        2.6110675367573872,
+        3.356607248311688
+      ]
+    },
+    {
+      "left": "tactics/964/carousel_target/ready_ally_attacks_first",
+      "right": "tactics/964/carousel_target/kill_0",
+      "reason": "An ally that will die to known friendly AoE may first use its legal attack; no extra card/Gold",
+      "coefficients": {
+        "body": 0.0,
+        "face": 2,
+        "card": 0,
+        "gold": 0,
+        "paid_gold": 0
+      },
+      "central_net_difference": 0.5,
+      "card_price_tie_at_central_other_prices": null,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        0.2999999999999998,
+        0.8000000000000007
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred",
+      "body_corner_difference": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "left": "tactics/197/elder_ready/wait_for_end",
+      "right": "tactics/197/elder_ready/attack",
+      "reason": "With one4HP ordinary foe and no immediate urgency, not attacking avoids5HP loss",
+      "coefficients": {
+        "body": 2.747041570558093,
+        "face": 0,
+        "card": 0,
+        "gold": 0,
+        "paid_gold": 0
+      },
+      "central_net_difference": 2.747041570558093,
+      "card_price_tie_at_central_other_prices": null,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        2.747041570558093,
+        2.747041570558093
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred",
+      "body_corner_difference": [
+        2.5993067723437164,
+        2.8947763687724697
+      ]
+    },
+    {
+      "left": "tactics/154/river_same_two_cards/froggit_then_river",
+      "right": "tactics/154/river_same_two_cards/river_then_froggit",
+      "reason": "Same paid cards, gold and bodies: playing already-held Froggit before the refill retains exactly one additional ordinary card.",
+      "coefficients": {
+        "body": 0.0,
+        "face": 0,
+        "card": 1,
+        "gold": 0,
+        "paid_gold": 0
+      },
+      "central_net_difference": 1.0,
+      "card_price_tie_at_central_other_prices": -0.0,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        0.0,
+        2.0
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred",
+      "body_corner_difference": [
+        1.0,
+        1.0000000000000009
+      ]
+    },
+    {
+      "left": "tactics/624/tasque_same_two_cards/froggit_then_tasque",
+      "right": "tactics/624/tasque_same_two_cards/tasque_then_froggit",
+      "reason": "Identical hand consumption and8G: already-planned Froggit first gives Tasque one additional +1/+1 without a fabricated extra card.",
+      "coefficients": {
+        "body": 0.9068980416457135,
+        "face": 0,
+        "card": 0,
+        "gold": 0,
+        "paid_gold": 0
+      },
+      "central_net_difference": 0.9068980416457135,
+      "card_price_tie_at_central_other_prices": null,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        0.9068980416457135,
+        0.9068980416457135
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred",
+      "body_corner_difference": [
+        0.8865593026513601,
+        0.9257719242235174
+      ]
+    },
+    {
+      "left": "tactics/743/guard_same_two_cards/knight_then_guard",
+      "right": "tactics/743/guard_same_two_cards/guard_then_knight",
+      "reason": "Same two hand cards and final bodies, high-base-cost trigger first saves3 actualG; unlike merely holding a discount, payment is realized.",
+      "coefficients": {
+        "body": 0.0,
+        "face": 0,
+        "card": 0,
+        "gold": 0,
+        "paid_gold": -3
+      },
+      "central_net_difference": 3.0,
+      "card_price_tie_at_central_other_prices": null,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        1.5,
+        3.0
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred",
+      "body_corner_difference": [
+        3.0,
+        3.0
+      ]
+    },
+    {
+      "left": "tactics/509/sink_hero27_tiny/decline_attack_heal3",
+      "right": "tactics/509/sink_hero27_tiny/haste_kill_tiny",
+      "reason": "Same held card/payment/own-end exposure: retaining1HP of Sink plus real3 hero healing competes with removing one enemy Tiny.",
+      "coefficients": {
+        "body": -0.5027121798817804,
+        "face": 3,
+        "card": 0,
+        "gold": 0,
+        "paid_gold": 0
+      },
+      "central_net_difference": 0.2472878201182196,
+      "card_price_tie_at_central_other_prices": null,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        -0.05271217988178023,
+        0.6972878201182198
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred",
+      "body_corner_difference": [
+        0.12707310916245973,
+        0.3690043541378243
+      ]
+    }
+  ],
+  "long_sink": {
+    "face_price_tie": 0.16757072662726014,
+    "slices": [
+      {
+        "face_price": 0,
+        "idle_minus_attack": -0.5027121798817804
+      },
+      {
+        "face_price": 0.15,
+        "idle_minus_attack": -0.05271217988178023
+      },
+      {
+        "face_price": 0.16757072662726014,
+        "idle_minus_attack": 0.0
+      },
+      {
+        "face_price": 0.25,
+        "idle_minus_attack": 0.2472878201182196
+      },
+      {
+        "face_price": 0.4,
+        "idle_minus_attack": 0.6972878201182198
+      }
+    ],
+    "warning": "At full heroHP actual heal=0; at27HP leaving Tiny may threaten another attack. This is a price-sensitive local choice, not a default instruction."
+  },
+  "survival_counterexample": {
+    "toriel_bridge": {
+      "id": "tactics/8/one_8_8/existing_toriel_bridge",
+      "card_id": 8,
+      "root": "one_8_8",
+      "action": "existing_toriel_bridge",
+      "path": [
+        "Reuse known Toriel formula; charge its one played card for matched accounting"
+      ],
+      "ledger": {
+        "own_before": [],
+        "enemy_before": [
+          {
+            "a": 8,
+            "h": 8,
+            "cost": 10
+          }
+        ],
+        "own_after": [
+          {
+            "a": 6,
+            "h": 11
+          }
+        ],
+        "enemy_after": [
+          {
+            "a": 1,
+            "h": 8,
+            "cost": 10
+          }
+        ],
+        "paid_gold": 8,
+        "events": {
+          "usable_cards": -1,
+          "hero_damage": 0,
+          "hero_heal": 0,
+          "self_damage": 0
+        },
+        "valuation_stage": "after_current_turn_actions",
+        "condition": "Ordinary8ATK; Toriel removes7ATK and gains7HP; source remains1/8",
+        "scope": "Explicit conditional action endpoint; all played/erased cards charged; symmetric marginal card price assumption",
+        "unpriced": []
+      },
+      "valuation": {
+        "central": {
+          "absolute_gross": 10.036265239458595,
+          "net_payment_margin": 2.0362652394585954,
+          "decline_or_play_surplus": 2.0362652394585954,
+          "coefficients": {
+            "body": 11.036265239458595,
+            "face": 0,
+            "card": -1,
+            "gold": 0,
+            "paid_gold": 8
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 8,
+            "usable_extra_cards": -1
+          },
+          "prices": {
+            "face": 0.25,
+            "card": 1.0,
+            "gold": 1.0
+          },
+          "unpriced": [],
+          "quote_scope": "Explicit conditional action endpoint; all played/erased cards charged; symmetric marginal card price assumption",
+          "full_card_unconditional_value": null
+        },
+        "price_sensitivity": {
+          "gross": [
+            9.036265239458595,
+            11.036265239458595
+          ],
+          "net": [
+            1.0362652394585954,
+            7.036265239458595
+          ]
+        },
+        "body_sensitivity": {
+          "gross": [
+            9.812669198584313,
+            10.28149536897683
+          ]
+        }
+      },
+      "conditional_gross_before_played_cards": 11.036265239458595,
+      "payment_margin_before_played_cards": 3.0362652394585954,
+      "inventory_adjusted_action_margin": 2.0362652394585954,
+      "inventory": {
+        "cards_played": [
+          8
+        ],
+        "usable_gained": 0,
+        "erased": 0,
+        "enemy_usable_gained": 0,
+        "net_relative_cards": -1
+      },
+      "features": {}
+    },
+    "replies": [
+      {
+        "record": "tactics/151/one_8_8/copy_0",
+        "hero_hp_before": 4,
+        "enemy_face_damage": 8,
+        "hero_hp_after_legal_reply": -4,
+        "fails_no_immediate_lethal": true,
+        "J": 1.845572174846355,
+        "interpretation": "No enemy hand plays, SOUL, end effects or Taunt. This is a legal lethal witness, not a full survival guarantee."
+      },
+      {
+        "record": "tactics/443/one_8_8/magic_0",
+        "hero_hp_before": 4,
+        "enemy_face_damage": 8,
+        "hero_hp_after_legal_reply": -4,
+        "fails_no_immediate_lethal": true,
+        "J": -0.8662767605416022,
+        "interpretation": "No enemy hand plays, SOUL, end effects or Taunt. This is a legal lethal witness, not a full survival guarantee."
+      },
+      {
+        "record": "tactics/443/one_8_8/magic_0_attack_0",
+        "hero_hp_before": 4,
+        "enemy_face_damage": 0,
+        "hero_hp_after_legal_reply": 4,
+        "fails_no_immediate_lethal": false,
+        "J": -2.347654331605016,
+        "interpretation": "No enemy hand plays, SOUL, end effects or Taunt. This is a legal lethal witness, not a full survival guarantee."
+      },
+      {
+        "record": "tactics/8/one_8_8/existing_toriel_bridge",
+        "hero_hp_before": 4,
+        "enemy_face_damage": 1,
+        "hero_hp_after_legal_reply": 3,
+        "fails_no_immediate_lethal": false,
+        "J": 2.0362652394585954,
+        "interpretation": "No enemy hand plays, SOUL, end effects or Taunt. This is a legal lethal witness, not a full survival guarantee."
+      },
+      {
+        "record": "tactics/151/one_8_8/copy_0",
+        "hero_hp_before": 8,
+        "enemy_face_damage": 8,
+        "hero_hp_after_legal_reply": 0,
+        "fails_no_immediate_lethal": true,
+        "J": 1.845572174846355,
+        "interpretation": "No enemy hand plays, SOUL, end effects or Taunt. This is a legal lethal witness, not a full survival guarantee."
+      },
+      {
+        "record": "tactics/443/one_8_8/magic_0",
+        "hero_hp_before": 8,
+        "enemy_face_damage": 8,
+        "hero_hp_after_legal_reply": 0,
+        "fails_no_immediate_lethal": true,
+        "J": -0.8662767605416022,
+        "interpretation": "No enemy hand plays, SOUL, end effects or Taunt. This is a legal lethal witness, not a full survival guarantee."
+      },
+      {
+        "record": "tactics/443/one_8_8/magic_0_attack_0",
+        "hero_hp_before": 8,
+        "enemy_face_damage": 0,
+        "hero_hp_after_legal_reply": 8,
+        "fails_no_immediate_lethal": false,
+        "J": -2.347654331605016,
+        "interpretation": "No enemy hand plays, SOUL, end effects or Taunt. This is a legal lethal witness, not a full survival guarantee."
+      },
+      {
+        "record": "tactics/8/one_8_8/existing_toriel_bridge",
+        "hero_hp_before": 8,
+        "enemy_face_damage": 1,
+        "hero_hp_after_legal_reply": 7,
+        "fails_no_immediate_lethal": false,
+        "J": 2.0362652394585954,
+        "interpretation": "No enemy hand plays, SOUL, end effects or Taunt. This is a legal lethal witness, not a full survival guarantee."
+      },
+      {
+        "record": "tactics/151/one_8_8/copy_0",
+        "hero_hp_before": 9,
+        "enemy_face_damage": 8,
+        "hero_hp_after_legal_reply": 1,
+        "fails_no_immediate_lethal": false,
+        "J": 1.845572174846355,
+        "interpretation": "No enemy hand plays, SOUL, end effects or Taunt. This is a legal lethal witness, not a full survival guarantee."
+      },
+      {
+        "record": "tactics/443/one_8_8/magic_0",
+        "hero_hp_before": 9,
+        "enemy_face_damage": 8,
+        "hero_hp_after_legal_reply": 1,
+        "fails_no_immediate_lethal": false,
+        "J": -0.8662767605416022,
+        "interpretation": "No enemy hand plays, SOUL, end effects or Taunt. This is a legal lethal witness, not a full survival guarantee."
+      },
+      {
+        "record": "tactics/443/one_8_8/magic_0_attack_0",
+        "hero_hp_before": 9,
+        "enemy_face_damage": 0,
+        "hero_hp_after_legal_reply": 9,
+        "fails_no_immediate_lethal": false,
+        "J": -2.347654331605016,
+        "interpretation": "No enemy hand plays, SOUL, end effects or Taunt. This is a legal lethal witness, not a full survival guarantee."
+      },
+      {
+        "record": "tactics/8/one_8_8/existing_toriel_bridge",
+        "hero_hp_before": 9,
+        "enemy_face_damage": 1,
+        "hero_hp_after_legal_reply": 8,
+        "fails_no_immediate_lethal": false,
+        "J": 2.0362652394585954,
+        "interpretation": "No enemy hand plays, SOUL, end effects or Taunt. This is a legal lethal witness, not a full survival guarantee."
+      },
+      {
+        "record": "tactics/151/one_8_8/copy_0",
+        "hero_hp_before": 12,
+        "enemy_face_damage": 8,
+        "hero_hp_after_legal_reply": 4,
+        "fails_no_immediate_lethal": false,
+        "J": 1.845572174846355,
+        "interpretation": "No enemy hand plays, SOUL, end effects or Taunt. This is a legal lethal witness, not a full survival guarantee."
+      },
+      {
+        "record": "tactics/443/one_8_8/magic_0",
+        "hero_hp_before": 12,
+        "enemy_face_damage": 8,
+        "hero_hp_after_legal_reply": 4,
+        "fails_no_immediate_lethal": false,
+        "J": -0.8662767605416022,
+        "interpretation": "No enemy hand plays, SOUL, end effects or Taunt. This is a legal lethal witness, not a full survival guarantee."
+      },
+      {
+        "record": "tactics/443/one_8_8/magic_0_attack_0",
+        "hero_hp_before": 12,
+        "enemy_face_damage": 0,
+        "hero_hp_after_legal_reply": 12,
+        "fails_no_immediate_lethal": false,
+        "J": -2.347654331605016,
+        "interpretation": "No enemy hand plays, SOUL, end effects or Taunt. This is a legal lethal witness, not a full survival guarantee."
+      },
+      {
+        "record": "tactics/8/one_8_8/existing_toriel_bridge",
+        "hero_hp_before": 12,
+        "enemy_face_damage": 1,
+        "hero_hp_after_legal_reply": 11,
+        "fails_no_immediate_lethal": false,
+        "J": 2.0362652394585954,
+        "interpretation": "No enemy hand plays, SOUL, end effects or Taunt. This is a legal lethal witness, not a full survival guarantee."
+      }
+    ],
+    "finding": "Pure endpoint J may prefer keeping Spade4/9 and leaving enemy8/1, but hero8HP loses to the legal8face reply. Clear it or use another response before ranking by J."
+  },
+  "bomb_card_identity_counterexample": {
+    "left": "tactics/29/bomb_cheapest_replacement/tiny_then_bomb_erase_aaron",
+    "right": "tactics/29/bomb_cheapest_replacement/bomb_erase_tiny",
+    "reason": "Uniform marginal-card approximation hides erased-card identity",
+    "coefficients": {
+      "body": 0.9857680408198508,
+      "face": 0,
+      "card": -1,
+      "gold": 0,
+      "paid_gold": 0
+    },
+    "central_net_difference": -0.01423195918014919,
+    "card_price_tie_at_central_other_prices": 0.9857680408198508,
+    "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+    "price_corner_difference": [
+      -1.0142319591801492,
+      0.9857680408198508
+    ],
+    "interpretation": "Both routes already consume Tiny. Only the early-Tiny route additionally loses Aaron. Uniform rho givesΔ=F(Tiny)-rho; replace rho by value(retain Aaron), not by Aaron-minus-Tiny. No global winner claimed.",
+    "predeploy_tiny_preferred_iff": "value(retain Aaron) < F(Tiny1/1)",
+    "body_gain": 0.9857680408198515,
+    "uniform_price_tie": 0.9857680408198515
+  },
+  "clear_5_5_frontier": {
+    "affordable_price_slices": [
+      {
+        "cash": 5,
+        "prices": {
+          "face": 0.15,
+          "card": 0.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": 2.894633741654258
+      },
+      {
+        "cash": 5,
+        "prices": {
+          "face": 0.15,
+          "card": 0.5,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": 1.8946337416542578
+      },
+      {
+        "cash": 5,
+        "prices": {
+          "face": 0.15,
+          "card": 1.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": 0.8946337416542578
+      },
+      {
+        "cash": 5,
+        "prices": {
+          "face": 0.15,
+          "card": 2.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": -1.1053662583457422
+      },
+      {
+        "cash": 5,
+        "prices": {
+          "face": 0.25,
+          "card": 0.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": 2.894633741654258
+      },
+      {
+        "cash": 5,
+        "prices": {
+          "face": 0.25,
+          "card": 0.5,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": 1.8946337416542578
+      },
+      {
+        "cash": 5,
+        "prices": {
+          "face": 0.25,
+          "card": 1.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": 0.8946337416542578
+      },
+      {
+        "cash": 5,
+        "prices": {
+          "face": 0.25,
+          "card": 2.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": -1.1053662583457422
+      },
+      {
+        "cash": 5,
+        "prices": {
+          "face": 0.4,
+          "card": 0.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": 2.894633741654258
+      },
+      {
+        "cash": 5,
+        "prices": {
+          "face": 0.4,
+          "card": 0.5,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": 1.8946337416542578
+      },
+      {
+        "cash": 5,
+        "prices": {
+          "face": 0.4,
+          "card": 1.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": 0.8946337416542578
+      },
+      {
+        "cash": 5,
+        "prices": {
+          "face": 0.4,
+          "card": 2.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": -1.1053662583457422
+      },
+      {
+        "cash": 7,
+        "prices": {
+          "face": 0.15,
+          "card": 0.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": 2.894633741654258
+      },
+      {
+        "cash": 7,
+        "prices": {
+          "face": 0.15,
+          "card": 0.5,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": 1.8946337416542578
+      },
+      {
+        "cash": 7,
+        "prices": {
+          "face": 0.15,
+          "card": 1.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/852/one_5_5/magic_0",
+        "J": 1.7241438772491158
+      },
+      {
+        "cash": 7,
+        "prices": {
+          "face": 0.15,
+          "card": 2.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/852/one_5_5/magic_0",
+        "J": 1.7241438772491158
+      },
+      {
+        "cash": 7,
+        "prices": {
+          "face": 0.25,
+          "card": 0.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": 2.894633741654258
+      },
+      {
+        "cash": 7,
+        "prices": {
+          "face": 0.25,
+          "card": 0.5,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": 1.8946337416542578
+      },
+      {
+        "cash": 7,
+        "prices": {
+          "face": 0.25,
+          "card": 1.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/852/one_5_5/magic_0",
+        "J": 1.7241438772491158
+      },
+      {
+        "cash": 7,
+        "prices": {
+          "face": 0.25,
+          "card": 2.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/852/one_5_5/magic_0",
+        "J": 1.7241438772491158
+      },
+      {
+        "cash": 7,
+        "prices": {
+          "face": 0.4,
+          "card": 0.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": 2.894633741654258
+      },
+      {
+        "cash": 7,
+        "prices": {
+          "face": 0.4,
+          "card": 0.5,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": 1.8946337416542578
+      },
+      {
+        "cash": 7,
+        "prices": {
+          "face": 0.4,
+          "card": 1.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/852/one_5_5/magic_0",
+        "J": 1.7241438772491158
+      },
+      {
+        "cash": 7,
+        "prices": {
+          "face": 0.4,
+          "card": 2.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/852/one_5_5/magic_0",
+        "J": 1.7241438772491158
+      },
+      {
+        "cash": 8,
+        "prices": {
+          "face": 0.15,
+          "card": 0.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": 2.894633741654258
+      },
+      {
+        "cash": 8,
+        "prices": {
+          "face": 0.15,
+          "card": 0.5,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": 1.8946337416542578
+      },
+      {
+        "cash": 8,
+        "prices": {
+          "face": 0.15,
+          "card": 1.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/852/one_5_5/magic_0",
+        "J": 1.7241438772491158
+      },
+      {
+        "cash": 8,
+        "prices": {
+          "face": 0.15,
+          "card": 2.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/852/one_5_5/magic_0",
+        "J": 1.7241438772491158
+      },
+      {
+        "cash": 8,
+        "prices": {
+          "face": 0.25,
+          "card": 0.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": 2.894633741654258
+      },
+      {
+        "cash": 8,
+        "prices": {
+          "face": 0.25,
+          "card": 0.5,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/506/one_5_5/loox_then_soul_cage",
+        "J": 1.8946337416542578
+      },
+      {
+        "cash": 8,
+        "prices": {
+          "face": 0.25,
+          "card": 1.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/852/one_5_5/magic_0",
+        "J": 1.7241438772491158
+      },
+      {
+        "cash": 8,
+        "prices": {
+          "face": 0.25,
+          "card": 2.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/852/one_5_5/magic_0",
+        "J": 1.7241438772491158
+      },
+      {
+        "cash": 8,
+        "prices": {
+          "face": 0.4,
+          "card": 0.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/201/one_5_5/loox_then_dancer",
+        "J": 3.187129810511042
+      },
+      {
+        "cash": 8,
+        "prices": {
+          "face": 0.4,
+          "card": 0.5,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/201/one_5_5/loox_then_dancer",
+        "J": 2.187129810511042
+      },
+      {
+        "cash": 8,
+        "prices": {
+          "face": 0.4,
+          "card": 1.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/852/one_5_5/magic_0",
+        "J": 1.7241438772491158
+      },
+      {
+        "cash": 8,
+        "prices": {
+          "face": 0.4,
+          "card": 2.0,
+          "gold": 1.0
+        },
+        "best_declared_action": "tactics/852/one_5_5/magic_0",
+        "J": 1.7241438772491158
+      }
+    ],
+    "condition": "All listed required cards are initially held, enough slots, ordinary5/5, missing heroHP>=4, current-turn clearing goal; only these three plans are searched",
+    "scope": "Action selection if cards held. Does not infer how often held or recommend a whole deck."
+  },
+  "dancer_vs_soul_3_4": {
+    "comparison": {
+      "left": "tactics/201/one_3_4/attack_0",
+      "right": "tactics/506/one_3_4/attack_0",
+      "reason": "Both single-card clear3/4: Dancer pays3G more for extra bodyHP, token and4 hero healing; Soul enemy-turn Dust liability outside current endpoint",
+      "coefficients": {
+        "body": 1.5302326522581842,
+        "face": 4,
+        "card": 0,
+        "gold": 0,
+        "paid_gold": 3
+      },
+      "central_net_difference": -0.46976734774181583,
+      "card_price_tie_at_central_other_prices": null,
+      "scope": "Same-root deployment difference, not a carrying or optimal-play ranking",
+      "price_corner_difference": [
+        -0.8697673477418153,
+        1.6302326522581847
+      ],
+      "interpretation": "Exact same-root endpoint comparison under stated prices; no future reply or occurrence frequency inferred",
+      "body_corner_difference": [
+        -0.5601199973054509,
+        -0.38241120290708697
+      ]
+    },
+    "hero_heal_price_tie_at_gold1": 0.36744183693545396,
+    "enemy_turn_knife_transfer_q": null,
+    "warning": "Current advantage can be reversed by SoulCage handing Knife to the enemy on a later enemy-turn death. No death probability guessed."
+  },
+  "calibration_counterexample": {
+    "aaron_J": -1.0,
+    "rock_pet_J": -0.33807658473676794,
+    "finding": "These normal board-building cards can have negative instantaneous J. Do not convert max(0,J) into a pass/carry policy without a matched waiting horizon."
+  },
+  "opportunity_model": {
+    "variables": [
+      "joint executable use-window q under a causal policy",
+      "holding friction H",
+      "foregone best alternative R"
+    ],
+    "unknown": [
+      "actual joint frequencies",
+      "future survival and hand quality",
+      "metagame response mix"
+    ],
+    "rule": "For current tactics compare matched feasible actions. For carrying retain existing conditional q/H/R framework but do not plug tacticalJ into an unvalidated zero-pass threshold."
+  }
+}

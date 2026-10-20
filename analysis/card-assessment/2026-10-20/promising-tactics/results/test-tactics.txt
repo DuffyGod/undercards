@@ -1,0 +1,18 @@
+test_copy_does_not_remove_enemy_or_grant_haste (__main__.TacticalCounterexamples.test_copy_does_not_remove_enemy_or_grant_haste) ... ok
+test_g_machine_dead_body_removed_before_delay_reward (__main__.TacticalCounterexamples.test_g_machine_dead_body_removed_before_delay_reward) ... ok
+test_guard_order_realizes_gold_and_changes_funding (__main__.TacticalCounterexamples.test_guard_order_realizes_gold_and_changes_funding) ... ok
+test_hydra_hand_cap_realized_inventory (__main__.TacticalCounterexamples.test_hydra_hand_cap_realized_inventory) ... ok
+test_knightdyne_kills_not_unused_packets (__main__.TacticalCounterexamples.test_knightdyne_kills_not_unused_packets) ... ok
+test_mantis_target_changes_actual_death_chain (__main__.TacticalCounterexamples.test_mantis_target_changes_actual_death_chain) ... ok
+test_microwave_both_play_and_erasure_cost_inventory (__main__.TacticalCounterexamples.test_microwave_both_play_and_erasure_cost_inventory) ... ok
+test_pancakes_actual_healing_after_surviving_trade (__main__.TacticalCounterexamples.test_pancakes_actual_healing_after_surviving_trade) ... ok
+test_sadmobile_generated_then_played_card_not_retained (__main__.TacticalCounterexamples.test_sadmobile_generated_then_played_card_not_retained) ... ok
+test_searby_bullseye_not_cash_discount (__main__.TacticalCounterexamples.test_searby_bullseye_not_cash_discount) ... ok
+test_setup_full_payment_and_ally_loox_growth (__main__.TacticalCounterexamples.test_setup_full_payment_and_ally_loox_growth) ... ok
+test_sheary_damaged_check_is_not_extra_four_after_initial_one (__main__.TacticalCounterexamples.test_sheary_damaged_check_is_not_extra_four_after_initial_one) ... ok
+test_sink_choice_reverses_with_hp_price (__main__.TacticalCounterexamples.test_sink_choice_reverses_with_hp_price) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.060s
+
+OK

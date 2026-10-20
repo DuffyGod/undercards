@@ -1,0 +1,574 @@
+[
+  {
+    "root": "one_3_4",
+    "ranked_actions": [
+      {
+        "record": "tactics/506/one_3_4/attack_0",
+        "name": "Soul Cage",
+        "J": 1.2253427080245842,
+        "paid": 4,
+        "cards_played": [
+          506
+        ],
+        "unpriced": [
+          "Unexposed future abilities and opponent reply are not priced",
+          "If killed on enemy turn, enemy receives Knife; not credited now"
+        ]
+      },
+      {
+        "record": "tactics/201/one_3_4/attack_0",
+        "name": "Dancer Mettaton",
+        "J": 0.7555753602827684,
+        "paid": 7,
+        "cards_played": [
+          201
+        ],
+        "unpriced": [
+          "Unexposed future abilities and opponent reply are not priced"
+        ]
+      },
+      {
+        "record": "tactics/254/one_3_4/attack_0",
+        "name": "Cool Papyrus",
+        "J": -0.2563323135810851,
+        "paid": 9,
+        "cards_played": [
+          254
+        ],
+        "unpriced": [
+          "Unexposed future abilities and opponent reply are not priced"
+        ]
+      },
+      {
+        "record": "tactics/852/one_3_4/magic_0",
+        "name": "Searby",
+        "J": -0.815706555010018,
+        "paid": 7,
+        "cards_played": [
+          852
+        ],
+        "unpriced": []
+      },
+      {
+        "record": "tactics/609/one_3_4/attack_0",
+        "name": "G Machine",
+        "J": -1.0294595786906244,
+        "paid": 6,
+        "cards_played": [
+          609
+        ],
+        "unpriced": [
+          "Unexposed future abilities and opponent reply are not priced"
+        ]
+      },
+      {
+        "record": "tactics/523/one_3_4/magic_0",
+        "name": "Snoring Monsters",
+        "J": -1.302281207749278,
+        "paid": 10,
+        "cards_played": [
+          523
+        ],
+        "unpriced": []
+      },
+      {
+        "record": "tactics/391/one_3_4/magic_0",
+        "name": "Sheary",
+        "J": -1.8318469446018995,
+        "paid": 6,
+        "cards_played": [
+          391
+        ],
+        "unpriced": [
+          "Damage check uses target damaged before Magic; this row target starts full"
+        ]
+      },
+      {
+        "record": "tactics/151/one_3_4/copy_0",
+        "name": "Echo Fish",
+        "J": -1.8548869807989004,
+        "paid": 4,
+        "cards_played": [
+          151
+        ],
+        "unpriced": [
+          "Copied named statuses and future reply vary with actual source"
+        ]
+      },
+      {
+        "record": "tactics/632/one_3_4/deployment_only",
+        "name": "Trashy",
+        "J": -1.9231719526005007,
+        "paid": 4,
+        "cards_played": [
+          632
+        ],
+        "unpriced": [
+          "Enemy-turn +2ATK is a response feature, not an extra current attack"
+        ]
+      },
+      {
+        "record": "tactics/266/one_3_4/magic_0",
+        "name": "Clover Hydra",
+        "J": -1.9738413224541231,
+        "paid": 9,
+        "cards_played": [
+          266
+        ],
+        "unpriced": []
+      },
+      {
+        "record": "tactics/443/one_3_4/magic_0",
+        "name": "Spade Chain",
+        "J": -2.1655150586903034,
+        "paid": 10,
+        "cards_played": [
+          443
+        ],
+        "unpriced": []
+      },
+      {
+        "record": "tactics/163/one_3_4/attack_0",
+        "name": "MTT Fountain",
+        "J": -2.4526169384154586,
+        "paid": 5,
+        "cards_played": [
+          163
+        ],
+        "unpriced": [
+          "Unexposed future abilities and opponent reply are not priced"
+        ]
+      }
+    ],
+    "interpretation": "Only if alternatives available/affordable; no response or SOUL benefit; cannot rank across stages or infer strongest whole card"
+  },
+  {
+    "root": "one_5_5",
+    "ranked_actions": [
+      {
+        "record": "tactics/852/one_5_5/magic_0",
+        "name": "Searby",
+        "J": 1.7241438772491158,
+        "paid": 7,
+        "cards_played": [
+          852
+        ],
+        "unpriced": [
+          "Drawn card -2 COST unpriced until actually redeemed; a future feature, not current cash"
+        ]
+      },
+      {
+        "record": "tactics/506/one_5_5/loox_then_soul_cage",
+        "name": "Soul Cage",
+        "J": 0.8946337416542578,
+        "paid": 5,
+        "cards_played": [
+          7,
+          506
+        ],
+        "unpriced": [
+          "If Soul Cage dies during enemy turn, enemy gets Knife, not us"
+        ]
+      },
+      {
+        "record": "tactics/201/one_5_5/loox_then_dancer",
+        "name": "Dancer Mettaton",
+        "J": 0.5871298105110423,
+        "paid": 8,
+        "cards_played": [
+          7,
+          201
+        ],
+        "unpriced": []
+      },
+      {
+        "record": "tactics/254/one_5_5/attack_0",
+        "name": "Cool Papyrus",
+        "J": -0.0033665997902012634,
+        "paid": 9,
+        "cards_played": [
+          254
+        ],
+        "unpriced": [
+          "Unexposed future abilities and opponent reply are not priced"
+        ]
+      },
+      {
+        "record": "tactics/151/one_5_5/copy_0",
+        "name": "Echo Fish",
+        "J": -0.3150365485397675,
+        "paid": 4,
+        "cards_played": [
+          151
+        ],
+        "unpriced": [
+          "Copied named statuses and future reply vary with actual source"
+        ]
+      },
+      {
+        "record": "tactics/443/one_5_5/magic_0",
+        "name": "Spade Chain",
+        "J": -0.6256646264311705,
+        "paid": 10,
+        "cards_played": [
+          443
+        ],
+        "unpriced": []
+      },
+      {
+        "record": "tactics/266/one_5_5/magic_0_attack_0",
+        "name": "Clover Hydra",
+        "J": -1.5650365485397675,
+        "paid": 9,
+        "cards_played": [
+          266
+        ],
+        "unpriced": []
+      },
+      {
+        "record": "tactics/391/one_5_5/magic_0",
+        "name": "Sheary",
+        "J": -1.6692535228684173,
+        "paid": 6,
+        "cards_played": [
+          391
+        ],
+        "unpriced": [
+          "Damage check uses target damaged before Magic; this row target starts full"
+        ]
+      },
+      {
+        "record": "tactics/632/one_5_5/deployment_only",
+        "name": "Trashy",
+        "J": -1.9231719526005007,
+        "paid": 4,
+        "cards_played": [
+          632
+        ],
+        "unpriced": [
+          "Enemy-turn +2ATK is a response feature, not an extra current attack"
+        ]
+      },
+      {
+        "record": "tactics/609/one_5_5/deploy_hold",
+        "name": "G Machine",
+        "J": -2.3150365485397675,
+        "paid": 6,
+        "cards_played": [
+          609
+        ],
+        "unpriced": [
+          "Unexposed future abilities and opponent reply are not priced"
+        ]
+      },
+      {
+        "record": "tactics/523/one_5_5/magic_0",
+        "name": "Snoring Monsters",
+        "J": -2.3152637827156894,
+        "paid": 10,
+        "cards_played": [
+          523
+        ],
+        "unpriced": []
+      },
+      {
+        "record": "tactics/163/one_5_5/deploy_hold",
+        "name": "MTT Fountain",
+        "J": -2.9231719526005007,
+        "paid": 5,
+        "cards_played": [
+          163
+        ],
+        "unpriced": [
+          "Unexposed future abilities and opponent reply are not priced"
+        ]
+      }
+    ],
+    "interpretation": "Only if alternatives available/affordable; no response or SOUL benefit; cannot rank across stages or infer strongest whole card"
+  },
+  {
+    "root": "one_8_8",
+    "ranked_actions": [
+      {
+        "record": "tactics/151/one_8_8/copy_0",
+        "name": "Echo Fish",
+        "J": 1.845572174846355,
+        "paid": 4,
+        "cards_played": [
+          151
+        ],
+        "unpriced": [
+          "Copied named statuses and future reply vary with actual source"
+        ]
+      },
+      {
+        "record": "tactics/506/one_8_8/deploy_hold",
+        "name": "Soul Cage",
+        "J": -0.31392174217023516,
+        "paid": 4,
+        "cards_played": [
+          506
+        ],
+        "unpriced": [
+          "Unexposed future abilities and opponent reply are not priced"
+        ]
+      },
+      {
+        "record": "tactics/443/one_8_8/magic_0",
+        "name": "Spade Chain",
+        "J": -0.8662767605416022,
+        "paid": 10,
+        "cards_played": [
+          443
+        ],
+        "unpriced": []
+      },
+      {
+        "record": "tactics/852/one_8_8/magic_0",
+        "name": "Searby",
+        "J": -1.0438237964558041,
+        "paid": 7,
+        "cards_played": [
+          852
+        ],
+        "unpriced": []
+      },
+      {
+        "record": "tactics/391/one_8_8/magic_0",
+        "name": "Sheary",
+        "J": -1.9193928980012318,
+        "paid": 6,
+        "cards_played": [
+          391
+        ],
+        "unpriced": [
+          "Damage check uses target damaged before Magic; this row target starts full"
+        ]
+      },
+      {
+        "record": "tactics/632/one_8_8/deployment_only",
+        "name": "Trashy",
+        "J": -1.9231719526004998,
+        "paid": 4,
+        "cards_played": [
+          632
+        ],
+        "unpriced": [
+          "Enemy-turn +2ATK is a response feature, not an extra current attack"
+        ]
+      },
+      {
+        "record": "tactics/266/one_8_8/magic_0",
+        "name": "Clover Hydra",
+        "J": -2.07060321144694,
+        "paid": 9,
+        "cards_played": [
+          266
+        ],
+        "unpriced": []
+      },
+      {
+        "record": "tactics/609/one_8_8/deploy_hold",
+        "name": "G Machine",
+        "J": -2.3150365485397675,
+        "paid": 6,
+        "cards_played": [
+          609
+        ],
+        "unpriced": [
+          "Unexposed future abilities and opponent reply are not priced"
+        ]
+      },
+      {
+        "record": "tactics/523/one_8_8/magic_0",
+        "name": "Snoring Monsters",
+        "J": -2.698176666055069,
+        "paid": 10,
+        "cards_played": [
+          523
+        ],
+        "unpriced": []
+      },
+      {
+        "record": "tactics/163/one_8_8/deploy_hold",
+        "name": "MTT Fountain",
+        "J": -2.9231719526005,
+        "paid": 5,
+        "cards_played": [
+          163
+        ],
+        "unpriced": [
+          "Unexposed future abilities and opponent reply are not priced"
+        ]
+      },
+      {
+        "record": "tactics/201/one_8_8/deploy_hold",
+        "name": "Dancer Mettaton",
+        "J": -2.9265534383927676,
+        "paid": 7,
+        "cards_played": [
+          201
+        ],
+        "unpriced": [
+          "Unexposed future abilities and opponent reply are not priced"
+        ]
+      },
+      {
+        "record": "tactics/254/one_8_8/deploy_hold",
+        "name": "Cool Papyrus",
+        "J": -3.2388600134863914,
+        "paid": 9,
+        "cards_played": [
+          254
+        ],
+        "unpriced": [
+          "Unexposed future abilities and opponent reply are not priced"
+        ]
+      }
+    ],
+    "interpretation": "Only if alternatives available/affordable; no response or SOUL benefit; cannot rank across stages or infer strongest whole card"
+  },
+  {
+    "root": "spread",
+    "ranked_actions": [
+      {
+        "record": "tactics/201/spread/attack_2_bot_0",
+        "name": "Dancer Mettaton",
+        "J": 0.9527477479284014,
+        "paid": 7,
+        "cards_played": [
+          201
+        ],
+        "unpriced": [
+          "Unexposed future abilities and opponent reply are not priced"
+        ]
+      },
+      {
+        "record": "tactics/506/spread/attack_2",
+        "name": "Soul Cage",
+        "J": 0.9388141300718758,
+        "paid": 4,
+        "cards_played": [
+          506
+        ],
+        "unpriced": [
+          "Unexposed future abilities and opponent reply are not priced",
+          "If killed on enemy turn, enemy receives Knife; not credited now"
+        ]
+      },
+      {
+        "record": "tactics/266/spread/magic_1_attack_1",
+        "name": "Clover Hydra",
+        "J": -0.542048040541026,
+        "paid": 9,
+        "cards_played": [
+          266
+        ],
+        "unpriced": []
+      },
+      {
+        "record": "tactics/391/spread/magic_0",
+        "name": "Sheary",
+        "J": -0.7841587916213131,
+        "paid": 6,
+        "cards_played": [
+          391
+        ],
+        "unpriced": [
+          "Damage check uses target damaged before Magic; this row target starts full"
+        ]
+      },
+      {
+        "record": "tactics/254/spread/attack_2",
+        "name": "Cool Papyrus",
+        "J": -0.8377277222993005,
+        "paid": 9,
+        "cards_played": [
+          254
+        ],
+        "unpriced": [
+          "Unexposed future abilities and opponent reply are not priced"
+        ]
+      },
+      {
+        "record": "tactics/609/spread/attack_2",
+        "name": "G Machine",
+        "J": -1.2250278410309345,
+        "paid": 6,
+        "cards_played": [
+          609
+        ],
+        "unpriced": [
+          "Unexposed future abilities and opponent reply are not priced"
+        ]
+      },
+      {
+        "record": "tactics/163/spread/attack_1",
+        "name": "MTT Fountain",
+        "J": -1.4495698881134977,
+        "paid": 5,
+        "cards_played": [
+          163
+        ],
+        "unpriced": [
+          "Unexposed future abilities and opponent reply are not priced"
+        ]
+      },
+      {
+        "record": "tactics/632/spread/deployment_only",
+        "name": "Trashy",
+        "J": -1.9231719526004998,
+        "paid": 4,
+        "cards_played": [
+          632
+        ],
+        "unpriced": [
+          "Enemy-turn +2ATK is a response feature, not an extra current attack"
+        ]
+      },
+      {
+        "record": "tactics/443/spread/magic_1_attack_1",
+        "name": "Spade Chain",
+        "J": -2.056417833016429,
+        "paid": 10,
+        "cards_played": [
+          443
+        ],
+        "unpriced": []
+      },
+      {
+        "record": "tactics/852/spread/magic_1",
+        "name": "Searby",
+        "J": -2.1486044398800015,
+        "paid": 7,
+        "cards_played": [
+          852
+        ],
+        "unpriced": []
+      },
+      {
+        "record": "tactics/523/spread/magic_1",
+        "name": "Snoring Monsters",
+        "J": -2.6351790926192624,
+        "paid": 10,
+        "cards_played": [
+          523
+        ],
+        "unpriced": []
+      },
+      {
+        "record": "tactics/151/spread/copy_1",
+        "name": "Echo Fish",
+        "J": -3.187784865668884,
+        "paid": 4,
+        "cards_played": [
+          151
+        ],
+        "unpriced": [
+          "Copied named statuses and future reply vary with actual source"
+        ]
+      }
+    ],
+    "interpretation": "Only if alternatives available/affordable; no response or SOUL benefit; cannot rank across stages or infer strongest whole card"
+  }
+]
