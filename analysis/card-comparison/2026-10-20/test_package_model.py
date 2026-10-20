@@ -1,9 +1,15 @@
 import unittest
 from dataclasses import replace
-from package_model import Body,Enemy,State,all_replies,kindness,justice,ledger,clip,score
+from package_model import Body,Enemy,State,all_replies,kindness,justice,ledger,clip,score,package_endpoints
 
 
 class NewMechanismTests(unittest.TestCase):
+    def test_unsupported_enemy_soul_is_rejected(self):
+        for case in ({'enemy_soul':'KINDNESS','enemy_previous_spent':0},
+                     {'enemy_soul':'INTEGRITY','enemy_previous_spent':1},{}):
+            with self.assertRaisesRegex(ValueError,'Enemy SOUL'):
+                package_endpoints({},case)
+
     def test_income_and_integrity_sequence(self):
         self.assertEqual(ledger('first','KINDNESS',[0,0,0])['cash'],11)
         self.assertEqual(ledger('second','KINDNESS',[0,0,0])['cash'],13)

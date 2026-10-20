@@ -160,6 +160,8 @@ def package_endpoints(cards,case):
     Only Kindness's rightmost full-health bonus depends on play order here.
     Empty hand subsets are legal; no invented access to absent cards.
     """
+    if case.get('enemy_soul')!='INTEGRITY' or case.get('enemy_previous_spent')!=0:
+        raise ValueError('Enemy SOUL must be declared INTEGRITY with previous actual spend zero; other passives are not implemented')
     hand=case['hand'];validate_hand(cards,hand)
     soul=case['soul']
     if soul not in SOULS:raise ValueError('Unsupported SOUL')
