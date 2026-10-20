@@ -66,6 +66,7 @@ def quote(ledger,prices=None,body_parameters=None):
     gross=c['body']+sum(c[k]*prices[k] for k in ('face','card','gold'))
     net=gross-c['paid_gold']*prices['gold']
     return dict(absolute_gross=gross,net_payment_margin=net,decline_or_play_surplus=max(0.,net),coefficients=c,
+                physical_features=dict(own_slots_before=len(ledger['own_before']),own_slots_after=len(ledger['own_after']),slot_delta=len(ledger['own_after'])-len(ledger['own_before']),paid_gold=c['paid_gold'],usable_extra_cards=c['card']),
                 prices=prices,unpriced=ledger.get('unpriced',[]),
                 quote_scope=ledger.get('scope','declared conditional endpoint'),
                 full_card_unconditional_value=None)
@@ -90,11 +91,13 @@ def carrying(good_ledger,bad_ledger=None,*,q,holding_cost,replacement_surplus=0.
     if finite(holding_cost)<0 or finite(replacement_surplus)<0:raise ValueError('Nonnegative opportunity costs')
     good=quote(good_ledger,prices)['decline_or_play_surplus']
     bad=0. if bad_ledger is None else quote(bad_ledger,prices)['decline_or_play_surplus']
-    threshold=None if good<=bad else (replacement_surplus+holding_cost-bad)/(good-bad)
+    if good<bad:raise ValueError('Good-window optional surplus must not be below fallback; relabel the branches')
+    threshold=None if good==bad else (replacement_surplus+holding_cost-bad)/(good-bad)
     return dict(good_optional_surplus=good,fallback_optional_surplus=bad,q=q,holding_cost=holding_cost,
                 replacement_surplus=replacement_surplus,carrying_margin=q*good+(1-q)*bad-holding_cost-replacement_surplus,
-                required_q=threshold,threshold_feasible=threshold is not None and 0<=threshold<=1,
-                boundary='q and costs are assumptions, not inferred frequencies. q=within-horizon joint executable opportunity under a declared causal use policy, including arrival only if stated; not a future-aware best-window oracle.')
+                required_q=threshold,threshold_feasible=threshold is not None and threshold<=1,
+                adequacy_state=('independent_of_q_adequate' if bad>=replacement_surplus+holding_cost else 'unattainable' if threshold is None or threshold>1 else 'requires_joint_q_threshold'),
+                boundary='q and costs are assumptions, not inferred frequencies. H and replacement_surplus must be disjoint; use replacement=0 if H already includes the lost alternative value. q=within-horizon joint executable opportunity under a declared causal use policy, including arrival only if stated; not a future-aware best-window oracle.')
 
 
 def extra_burns(initial_hand,draws,other_plays):

@@ -8,13 +8,19 @@ from pathlib import Path
 from copy import deepcopy
 from collections import Counter
 from itertools import product
-import json,csv
+import json,csv,subprocess
+from math import comb
 from value_ledger import *
 SNAPSHOT=json.loads((ROOT/'skills/undercards/references/snapshot.json').read_text())
 CARDS={c['id']:c for c in SNAPSHOT['cards']}
 
 
 def B(a,h,**kw):return dict(a=a,h=h,**kw)
+def arrival_reference(card):
+    limit={'BASE':3,'COMMON':3,'RARE':3,'EPIC':2,'LEGENDARY':1,'DT':1,'DETERMINATION':1}.get(card['rarity'])
+    if limit is None:return dict(max_copies=None,probabilities=[],unresolved='rarity copy limit unknown')
+    return dict(max_copies=limit,probabilities=[dict(copies=k,seen=s,at_least_one=1-comb(25-k,s)/comb(25,s)) for k in range(1,limit+1) for s in (4,7,11)],scope='Uniform25 no mulligan, known number seen; NOT executable-window chance, do not independently multiply into q')
+
 def payment_windows(cost):
     rows=[]
     for seat in (0,1):
@@ -322,6 +328,7 @@ def packet_dimension(c):
 
 
 def build(out):
+    source_commit=subprocess.check_output(['git','log','-1','--format=%H','--',str(HERE/'value_ledger.py'),str(HERE/'build_assessments.py'),str(ROOT/'analysis/method-lab/2026-10-18/value_model.py'),str(ROOT/'analysis/method-lab/2026-10-18/statistical_inputs.json'),str(ROOT/'skills/undercards/references/snapshot.json')],cwd=ROOT,text=True).strip()
     out.mkdir(parents=True,exist_ok=True);dossiers=[];rows=[]
     for cid,(kind,reason) in PROFILES.items():
         c=CARDS[cid];records=[]
@@ -331,14 +338,14 @@ def build(out):
                 a=record['valuation'];q=a['central'];rows.append(dict(card_id=cid,name=c['name'],kind=kind,root=root,variant=i,
                     gross=q['absolute_gross'],net=q['net_payment_margin'],optional_surplus=q['decline_or_play_surplus'],
                     gross_low=a['price_sensitivity']['gross'][0],gross_high=a['price_sensitivity']['gross'][1],
-                    condition=l.get('condition','current endpoint'),unpriced='; '.join(l['unpriced'])))
+                    condition=l.get('condition','current endpoint'),stage=l['valuation_stage'],unpriced='; '.join(l['unpriced'])))
         if kind=='lesser':
             for n in (0,1,3,5):
                 l=dict(own_before=[],enemy_before=[B(5,5)],own_after=[],enemy_after=[],paid_gold=6,events=dict(usable_gold=n),unpriced=[],
                     valuation_stage='after_active_mutual_trade_and_discount_redemption',condition=f'5/5 Lesser attacks ordinary5/5, both die, then {n}G discount actually redeemed',
                     scope='Complete conditional trade+Dust path; includes enemy removal, no remaining Lesser body; future same other plays cancel except redeemed Gold')
                 rec=dict(id=f'{cid}/mutual_dust/{n}',root='mutual_dust',ledger=l,valuation=analyze(l));records.append(rec)
-                a=rec['valuation'];q=a['central'];rows.append(dict(card_id=cid,name=c['name'],kind=kind,root='mutual_dust',variant=n,gross=q['absolute_gross'],net=q['net_payment_margin'],optional_surplus=q['decline_or_play_surplus'],gross_low=a['price_sensitivity']['gross'][0],gross_high=a['price_sensitivity']['gross'][1],condition=l['condition'],unpriced=''))
+                a=rec['valuation'];q=a['central'];rows.append(dict(card_id=cid,name=c['name'],kind=kind,root='mutual_dust',variant=n,gross=q['absolute_gross'],net=q['net_payment_margin'],optional_surplus=q['decline_or_play_surplus'],gross_low=a['price_sensitivity']['gross'][0],gross_high=a['price_sensitivity']['gross'][1],condition=l['condition'],stage=l['valuation_stage'],unpriced=''))
         dossier=dict(card_id=cid,name=c['name'],cost=c['cost'],source_text=c['effect_readable'],profile_kind=kind,
             assessment_status='Agent conditional mechanism dossier; no empirical calibration',reason=reason,records=records,
             fixed_packet_dimension=packet_dimension(c),global_score=None,
@@ -347,7 +354,7 @@ def build(out):
     catalog=[]
     for c in SNAPSHOT['cards']:
         if c['pool_category']!='ordinary_non_token':continue
-        cid=c['id'];catalog.append(dict(card_id=cid,name=c['name'],cost=c['cost'],type=c['card_type'],soul=c['soul'],
+        cid=c['id'];catalog.append(dict(card_id=cid,name=c['name'],cost=c['cost'],type=c['card_type'],soul=c['soul'],rarity=c['rarity'],tribes=c['tribes'],arrival_reference=arrival_reference(c),
             effect=c['effect_readable'],printed_body_reference=None if c['card_type']!='monster' else F(c['attack'],c['health']),
             absolute_whole_card=None,has_agent_conditional_dossier=cid in PROFILES,
             assessment_status='conditional dossier available' if cid in PROFILES else 'awaiting Agent/DeepSeek opportunity review; body reference is NOT card rating',
@@ -356,11 +363,11 @@ def build(out):
             holding_model=dict(joint_executable_window_q=None,inventory_cost='extra_burns times card shadow price',foregone_tempo_cost=None,replacement_surplus=None,rule='Optional use after observation; no forced bad deployment; no fixed delay penalty'),
             dossier=f'dossiers.json#card-{cid}' if cid in PROFILES else None))
     def dump(n,x):(out/n).write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n')
-    dump('dossiers.json',dict(version=VERSION,prices=CENTRAL,price_corners=PRICE_CORNERS,unweighted_conditional_records=True,cards=dossiers))
+    dump('dossiers.json',dict(version=VERSION,source_commit=source_commit,prices=CENTRAL,price_corners=PRICE_CORNERS,unweighted_conditional_records=True,cards=dossiers))
     dump('catalog.json',dict(version=VERSION,scope='All ordinary non-token cards; no pending card silently treated as plain',cards=catalog))
     with (out/'conditional-values.csv').open('w') as f:
         w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
-    dump('receipt.json',dict(version=VERSION,catalog_cards=len(catalog),agent_dossiers=len(dossiers),conditional_records=len(rows),
+    dump('receipt.json',dict(version=VERSION,source_commit=source_commit,catalog_cards=len(catalog),agent_dossiers=len(dossiers),conditional_records=len(rows),
         profile_types=Counter(p[0] for p in PROFILES.values()),new_api_calls=0,empirically_calibrated=False,
         interpretation='Agent-supplied conditional endpoints and model prices, no weighted meta expectation or global ranking; unpriced fields remain public'))
     return dossiers
