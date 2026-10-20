@@ -21,6 +21,6 @@ def main():
                 ms=[at_turn(r,turn) for r in rs]
                 rows.append(dict(stage=directory.name,**g,turn=turn,n=len(rs),**{k:mean(x[k] for x in ms) for k in ('killed','dead','hp','opponent_hp','pressure_15','hand','cash','field_attack')}))
     with args.output.open('w') as f:
-        w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+        w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
     print(json.dumps(dict(rows=len(rows),interpretation='Saved earlier cutoffs; terminal deaths absorb. Seats separate; last deployment exposure differs.')))
 if __name__=='__main__':main()

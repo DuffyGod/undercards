@@ -128,7 +128,7 @@ def write_derived(directories,out):
     obj=dict(sources=sources,record_count=sum(len(rs) for _,_,rs in allgroups),unique_evaluation_records=len(unique_records),repeated_saved_baselines=duplicate_records,conditional=conditional,interpretation='conditional shuffle outcomes; Wilson for binary levels, paired normal approximation for differences; not ladder win rates',summaries=summ,paired=pairs)
     (out/'summary.json').write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n')
     with (out/'summary.csv').open('w') as f:
-        fields=['stage',*KEYS,'n',*METRICS,*EXTRA];w=csv.DictWriter(f,fieldnames=fields);w.writeheader()
+        fields=['stage',*KEYS,'n',*METRICS,*EXTRA];w=csv.DictWriter(f,fieldnames=fields,lineterminator='\n');w.writeheader()
         for s in summ:w.writerow({k:v for k,v in s.items() if k!='metrics'}|{k:v['mean'] for k,v in s['metrics'].items()})
     return obj
 

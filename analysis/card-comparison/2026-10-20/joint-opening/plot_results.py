@@ -28,5 +28,7 @@ def main():
         axs[0,0].legend(fontsize=8,loc='lower right');fig.suptitle('Kindness / balanced own policy / public tactics both sides\n128 paired shuffles per point; Wilson 95%; restricted compositions, not ladder win rates',fontsize=11)
         fig.tight_layout();args.output.mkdir(exist_ok=True)
         for ext in ('svg','png'):fig.savefig(args.output/f'outcome-plane-{name}.{ext}',dpi=170)
+        svg=args.output/f'outcome-plane-{name}.svg'
+        svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
         plt.close(fig)
 if __name__=='__main__':main()
