@@ -1,0 +1,22 @@
+{
+  "version": "joint-opening-0.2",
+  "source_commit": "50697c711d228989d4800ff1c3c4817956383dd2",
+  "completed_groups": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "trials": 1536,
+  "failed": [],
+  "elapsed_seconds": 61.84701442718506,
+  "complete": true
+}

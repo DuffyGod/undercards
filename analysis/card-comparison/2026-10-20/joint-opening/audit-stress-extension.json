@@ -1,0 +1,26 @@
+{
+  "auditor": "saved-accounting-v1",
+  "created_utc": "2026-10-20T07:34:28.816180+00:00",
+  "scope": "Independent saved accounting/capacity checks only; no simulation rerun and no full rule verification.",
+  "hp_convention": "Final HP is nonnegative. Raw snapshot HP may be negative only at the terminal lethal event.",
+  "runs": [
+    {
+      "directory": "analysis/card-comparison/2026-10-20/joint-opening/stress_extension",
+      "stage": "stress_extension",
+      "version": "joint-opening-0.3",
+      "source_commit": "b22c548491b56f912c053d2be2f4a71f116e2990",
+      "groups": 8,
+      "expected_rows": 1024,
+      "rows_checked": 1024,
+      "passed": true,
+      "violations": {},
+      "examples": [],
+      "default_limits": {
+        "hand_cap": 7,
+        "slots": 4
+      },
+      "intervention_limits": "Saved handN/slotsN names override saved defaults; all other capacity limits retain defaults."
+    }
+  ],
+  "status": "pass"
+}

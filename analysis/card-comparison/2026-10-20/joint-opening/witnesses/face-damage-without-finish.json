@@ -1,0 +1,1894 @@
+{
+  "purpose": "Selected complete action witness; not an additional random sample",
+  "stage": "main",
+  "saved_version": "joint-opening-0.2",
+  "replay_version": "joint-opening-0.3",
+  "replay_source_commit": "ff08cf45e635a7798f5941e4b1dc65e61aa30b55",
+  "endpoint_and_snapshots_equal": true,
+  "group": {
+    "composition": "small_draw",
+    "policy": "pressure",
+    "soul": "KINDNESS",
+    "opponent": "large_reply",
+    "seat": 0,
+    "intervention": "base"
+  },
+  "replay": {
+    "seed": 3,
+    "composition": "small_draw",
+    "policy": "pressure",
+    "soul": "KINDNESS",
+    "opponent": "large_reply",
+    "seat": 0,
+    "intervention": "base",
+    "version": "joint-opening-0.3",
+    "ended_own_turn": 7,
+    "ended_actor": 1,
+    "players": [
+      {
+        "draws": 10,
+        "bonus_draws": 0,
+        "burned": 0,
+        "bonus_burned": 0,
+        "played": 9,
+        "bonus_played": 0,
+        "spent": 27,
+        "damage": 27,
+        "healed": 4,
+        "monster_healed": 2,
+        "fatigue_damage": 0,
+        "slot_blocked_turns": 2,
+        "slot_missed": 2,
+        "reserve_withheld_turns": 0,
+        "empty_hand_turns": 0,
+        "first_turn_no_opener": false,
+        "first_turn_available_but_no_play": false,
+        "first_turn_no_play": false,
+        "first_play": 1,
+        "big_reply": {
+          "turn": 5,
+          "opponent_hp": 11,
+          "small_field": 1,
+          "pressure_below_half": false,
+          "visible_attack": 9
+        },
+        "small_killed_by_big": 1,
+        "small_deployed": 7,
+        "drawn_ids": [
+          377,
+          15,
+          2,
+          196,
+          4,
+          602,
+          17,
+          175,
+          602,
+          377
+        ],
+        "hp": 0,
+        "opponent_hp": 7,
+        "dead": true,
+        "killed": false,
+        "pressure_15": true,
+        "pressure_10": true,
+        "cash": 2,
+        "hand": 1,
+        "field": 2,
+        "field_attack": 6,
+        "field_value": 5.323846830526464,
+        "deck_remaining": 15,
+        "fatigue": 0,
+        "stalled_pressure": false,
+        "small_countered_insufficient": false,
+        "survived_15": false
+      },
+      {
+        "draws": 12,
+        "bonus_draws": 2,
+        "burned": 0,
+        "bonus_burned": 0,
+        "played": 5,
+        "bonus_played": 0,
+        "spent": 25,
+        "damage": 34,
+        "healed": 4,
+        "monster_healed": 9,
+        "fatigue_damage": 0,
+        "slot_blocked_turns": 1,
+        "slot_missed": 0,
+        "reserve_withheld_turns": 0,
+        "empty_hand_turns": 0,
+        "first_turn_no_opener": true,
+        "first_turn_available_but_no_play": false,
+        "first_turn_no_play": true,
+        "first_play": 2,
+        "big_reply": {
+          "turn": 7,
+          "opponent_hp": 7,
+          "small_field": 2,
+          "pressure_below_half": false,
+          "visible_attack": 17
+        },
+        "small_killed_by_big": 1,
+        "small_deployed": 2,
+        "drawn_ids": [
+          17,
+          21,
+          17,
+          15,
+          187,
+          602,
+          168,
+          44,
+          243,
+          15,
+          168,
+          377
+        ],
+        "hp": 7,
+        "opponent_hp": 0,
+        "dead": false,
+        "killed": true,
+        "pressure_15": true,
+        "pressure_10": true,
+        "cash": 8,
+        "hand": 7,
+        "field": 2,
+        "field_attack": 8,
+        "field_value": 8.44919893786366,
+        "deck_remaining": 13,
+        "fatigue": 0,
+        "stalled_pressure": false,
+        "small_countered_insufficient": false,
+        "survived_15": false
+      }
+    ],
+    "snapshots": [
+      {
+        "turn": 1,
+        "actor": 0,
+        "players": [
+          {
+            "hp": 30,
+            "cash": 0,
+            "hand": 2,
+            "deck": 21,
+            "slots": 2,
+            "attack": 3
+          },
+          {
+            "hp": 30,
+            "cash": 1,
+            "hand": 3,
+            "deck": 22,
+            "slots": 0,
+            "attack": 0
+          }
+        ]
+      },
+      {
+        "turn": 1,
+        "actor": 1,
+        "players": [
+          {
+            "hp": 30,
+            "cash": 0,
+            "hand": 2,
+            "deck": 21,
+            "slots": 2,
+            "attack": 3
+          },
+          {
+            "hp": 30,
+            "cash": 3,
+            "hand": 4,
+            "deck": 21,
+            "slots": 0,
+            "attack": 0
+          }
+        ]
+      },
+      {
+        "turn": 2,
+        "actor": 0,
+        "players": [
+          {
+            "hp": 30,
+            "cash": 0,
+            "hand": 2,
+            "deck": 20,
+            "slots": 3,
+            "attack": 6
+          },
+          {
+            "hp": 27,
+            "cash": 3,
+            "hand": 4,
+            "deck": 21,
+            "slots": 0,
+            "attack": 0
+          }
+        ]
+      },
+      {
+        "turn": 2,
+        "actor": 1,
+        "players": [
+          {
+            "hp": 30,
+            "cash": 0,
+            "hand": 2,
+            "deck": 20,
+            "slots": 3,
+            "attack": 6
+          },
+          {
+            "hp": 27,
+            "cash": 0,
+            "hand": 4,
+            "deck": 20,
+            "slots": 1,
+            "attack": 6
+          }
+        ]
+      },
+      {
+        "turn": 3,
+        "actor": 0,
+        "players": [
+          {
+            "hp": 30,
+            "cash": 1,
+            "hand": 2,
+            "deck": 19,
+            "slots": 4,
+            "attack": 9
+          },
+          {
+            "hp": 21,
+            "cash": 0,
+            "hand": 4,
+            "deck": 20,
+            "slots": 1,
+            "attack": 6
+          }
+        ]
+      },
+      {
+        "turn": 3,
+        "actor": 1,
+        "players": [
+          {
+            "hp": 24,
+            "cash": 1,
+            "hand": 2,
+            "deck": 19,
+            "slots": 4,
+            "attack": 9
+          },
+          {
+            "hp": 22,
+            "cash": 1,
+            "hand": 4,
+            "deck": 19,
+            "slots": 2,
+            "attack": 8
+          }
+        ]
+      },
+      {
+        "turn": 4,
+        "actor": 0,
+        "players": [
+          {
+            "hp": 25,
+            "cash": 5,
+            "hand": 3,
+            "deck": 18,
+            "slots": 4,
+            "attack": 9
+          },
+          {
+            "hp": 13,
+            "cash": 1,
+            "hand": 4,
+            "deck": 19,
+            "slots": 2,
+            "attack": 8
+          }
+        ]
+      },
+      {
+        "turn": 4,
+        "actor": 1,
+        "players": [
+          {
+            "hp": 25,
+            "cash": 5,
+            "hand": 3,
+            "deck": 18,
+            "slots": 2,
+            "attack": 3
+          },
+          {
+            "hp": 14,
+            "cash": 3,
+            "hand": 4,
+            "deck": 18,
+            "slots": 3,
+            "attack": 11
+          }
+        ]
+      },
+      {
+        "turn": 5,
+        "actor": 0,
+        "players": [
+          {
+            "hp": 26,
+            "cash": 2,
+            "hand": 2,
+            "deck": 17,
+            "slots": 4,
+            "attack": 12
+          },
+          {
+            "hp": 11,
+            "cash": 3,
+            "hand": 4,
+            "deck": 18,
+            "slots": 3,
+            "attack": 11
+          }
+        ]
+      },
+      {
+        "turn": 5,
+        "actor": 1,
+        "players": [
+          {
+            "hp": 20,
+            "cash": 2,
+            "hand": 2,
+            "deck": 17,
+            "slots": 2,
+            "attack": 9
+          },
+          {
+            "hp": 12,
+            "cash": 1,
+            "hand": 6,
+            "deck": 15,
+            "slots": 4,
+            "attack": 17
+          }
+        ]
+      },
+      {
+        "turn": 6,
+        "actor": 0,
+        "players": [
+          {
+            "hp": 21,
+            "cash": 4,
+            "hand": 1,
+            "deck": 16,
+            "slots": 3,
+            "attack": 9
+          },
+          {
+            "hp": 12,
+            "cash": 1,
+            "hand": 6,
+            "deck": 15,
+            "slots": 3,
+            "attack": 11
+          }
+        ]
+      },
+      {
+        "turn": 6,
+        "actor": 1,
+        "players": [
+          {
+            "hp": 7,
+            "cash": 4,
+            "hand": 1,
+            "deck": 16,
+            "slots": 2,
+            "attack": 6
+          },
+          {
+            "hp": 13,
+            "cash": 0,
+            "hand": 6,
+            "deck": 14,
+            "slots": 4,
+            "attack": 17
+          }
+        ]
+      },
+      {
+        "turn": 7,
+        "actor": 0,
+        "players": [
+          {
+            "hp": 8,
+            "cash": 2,
+            "hand": 1,
+            "deck": 15,
+            "slots": 3,
+            "attack": 11
+          },
+          {
+            "hp": 7,
+            "cash": 0,
+            "hand": 6,
+            "deck": 14,
+            "slots": 4,
+            "attack": 17
+          }
+        ]
+      },
+      {
+        "turn": 7,
+        "actor": 1,
+        "players": [
+          {
+            "hp": 0,
+            "cash": 2,
+            "hand": 1,
+            "deck": 15,
+            "slots": 2,
+            "attack": 6
+          },
+          {
+            "hp": 7,
+            "cash": 8,
+            "hand": 7,
+            "deck": 13,
+            "slots": 2,
+            "attack": 8
+          }
+        ]
+      }
+    ],
+    "trace": [
+      {
+        "turn": 0,
+        "turn_actor": 0,
+        "kind": "draw",
+        "side": 0,
+        "card": 377,
+        "uid": 17,
+        "source": "initial",
+        "burned": false
+      },
+      {
+        "turn": 0,
+        "turn_actor": 0,
+        "kind": "draw",
+        "side": 0,
+        "card": 15,
+        "uid": 22,
+        "source": "initial",
+        "burned": false
+      },
+      {
+        "turn": 0,
+        "turn_actor": 0,
+        "kind": "draw",
+        "side": 0,
+        "card": 2,
+        "uid": 4,
+        "source": "initial",
+        "burned": false
+      },
+      {
+        "turn": 0,
+        "turn_actor": 0,
+        "kind": "draw",
+        "side": 1,
+        "card": 17,
+        "uid": 24,
+        "source": "initial",
+        "burned": false
+      },
+      {
+        "turn": 0,
+        "turn_actor": 0,
+        "kind": "draw",
+        "side": 1,
+        "card": 21,
+        "uid": 8,
+        "source": "initial",
+        "burned": false
+      },
+      {
+        "turn": 0,
+        "turn_actor": 0,
+        "kind": "draw",
+        "side": 1,
+        "card": 17,
+        "uid": 3,
+        "source": "initial",
+        "burned": false
+      },
+      {
+        "turn": 1,
+        "turn_actor": 0,
+        "kind": "start",
+        "side": 0,
+        "hp": 30,
+        "cash": 2,
+        "hand": [
+          377,
+          15,
+          2
+        ],
+        "field": []
+      },
+      {
+        "turn": 1,
+        "turn_actor": 0,
+        "kind": "draw",
+        "side": 0,
+        "card": 196,
+        "uid": 1,
+        "source": "normal",
+        "burned": false
+      },
+      {
+        "turn": 1,
+        "turn_actor": 0,
+        "kind": "play",
+        "side": 0,
+        "card": 2,
+        "uid": 4,
+        "cost": 2,
+        "source": "initial"
+      },
+      {
+        "turn": 1,
+        "turn_actor": 0,
+        "kind": "play",
+        "side": 0,
+        "card": 196,
+        "uid": 1,
+        "cost": 0,
+        "source": "normal"
+      },
+      {
+        "turn": 1,
+        "turn_actor": 0,
+        "kind": "end",
+        "side": 0,
+        "hp": 30,
+        "cash": 0,
+        "hand": 2,
+        "slots": 2
+      },
+      {
+        "turn": 1,
+        "turn_actor": 1,
+        "kind": "start",
+        "side": 1,
+        "hp": 30,
+        "cash": 3,
+        "hand": [
+          17,
+          21,
+          17
+        ],
+        "field": []
+      },
+      {
+        "turn": 1,
+        "turn_actor": 1,
+        "kind": "draw",
+        "side": 1,
+        "card": 15,
+        "uid": 22,
+        "source": "normal",
+        "burned": false
+      },
+      {
+        "turn": 1,
+        "turn_actor": 1,
+        "kind": "end",
+        "side": 1,
+        "hp": 30,
+        "cash": 3,
+        "hand": 4,
+        "slots": 0
+      },
+      {
+        "turn": 2,
+        "turn_actor": 0,
+        "kind": "start",
+        "side": 0,
+        "hp": 30,
+        "cash": 2,
+        "hand": [
+          377,
+          15
+        ],
+        "field": [
+          {
+            "uid": 4,
+            "cid": 2,
+            "a": 2,
+            "h": 3,
+            "max_h": 3,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          },
+          {
+            "uid": 1,
+            "cid": 196,
+            "a": 1,
+            "h": 1,
+            "max_h": 1,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          }
+        ]
+      },
+      {
+        "turn": 2,
+        "turn_actor": 0,
+        "kind": "draw",
+        "side": 0,
+        "card": 4,
+        "uid": 8,
+        "source": "normal",
+        "burned": false
+      },
+      {
+        "turn": 2,
+        "turn_actor": 0,
+        "kind": "attack",
+        "side": 0,
+        "actor": 1,
+        "target": "hero",
+        "hero_damage": 1,
+        "monster_heal": 0
+      },
+      {
+        "turn": 2,
+        "turn_actor": 0,
+        "kind": "attack",
+        "side": 0,
+        "actor": 4,
+        "target": "hero",
+        "hero_damage": 2,
+        "monster_heal": 0
+      },
+      {
+        "turn": 2,
+        "turn_actor": 0,
+        "kind": "play",
+        "side": 0,
+        "card": 4,
+        "uid": 8,
+        "cost": 2,
+        "source": "normal"
+      },
+      {
+        "turn": 2,
+        "turn_actor": 0,
+        "kind": "end",
+        "side": 0,
+        "hp": 30,
+        "cash": 0,
+        "hand": 2,
+        "slots": 3
+      },
+      {
+        "turn": 2,
+        "turn_actor": 1,
+        "kind": "start",
+        "side": 1,
+        "hp": 27,
+        "cash": 5,
+        "hand": [
+          17,
+          21,
+          17,
+          15
+        ],
+        "field": []
+      },
+      {
+        "turn": 2,
+        "turn_actor": 1,
+        "kind": "draw",
+        "side": 1,
+        "card": 187,
+        "uid": 19,
+        "source": "normal",
+        "burned": false
+      },
+      {
+        "turn": 2,
+        "turn_actor": 1,
+        "kind": "play",
+        "side": 1,
+        "card": 15,
+        "uid": 22,
+        "cost": 5,
+        "source": "normal"
+      },
+      {
+        "turn": 2,
+        "turn_actor": 1,
+        "kind": "end",
+        "side": 1,
+        "hp": 27,
+        "cash": 0,
+        "hand": 4,
+        "slots": 1
+      },
+      {
+        "turn": 3,
+        "turn_actor": 0,
+        "kind": "start",
+        "side": 0,
+        "hp": 30,
+        "cash": 3,
+        "hand": [
+          377,
+          15
+        ],
+        "field": [
+          {
+            "uid": 4,
+            "cid": 2,
+            "a": 2,
+            "h": 3,
+            "max_h": 3,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          },
+          {
+            "uid": 1,
+            "cid": 196,
+            "a": 1,
+            "h": 1,
+            "max_h": 1,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          },
+          {
+            "uid": 8,
+            "cid": 4,
+            "a": 3,
+            "h": 2,
+            "max_h": 2,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          }
+        ]
+      },
+      {
+        "turn": 3,
+        "turn_actor": 0,
+        "kind": "draw",
+        "side": 0,
+        "card": 602,
+        "uid": 9,
+        "source": "normal",
+        "burned": false
+      },
+      {
+        "turn": 3,
+        "turn_actor": 0,
+        "kind": "attack",
+        "side": 0,
+        "actor": 8,
+        "target": "hero",
+        "hero_damage": 3,
+        "monster_heal": 0
+      },
+      {
+        "turn": 3,
+        "turn_actor": 0,
+        "kind": "attack",
+        "side": 0,
+        "actor": 1,
+        "target": "hero",
+        "hero_damage": 1,
+        "monster_heal": 0
+      },
+      {
+        "turn": 3,
+        "turn_actor": 0,
+        "kind": "attack",
+        "side": 0,
+        "actor": 4,
+        "target": "hero",
+        "hero_damage": 2,
+        "monster_heal": 0
+      },
+      {
+        "turn": 3,
+        "turn_actor": 0,
+        "kind": "play",
+        "side": 0,
+        "card": 602,
+        "uid": 9,
+        "cost": 2,
+        "source": "normal"
+      },
+      {
+        "turn": 3,
+        "turn_actor": 0,
+        "kind": "heal",
+        "side": 0,
+        "actual": 0
+      },
+      {
+        "turn": 3,
+        "turn_actor": 0,
+        "kind": "end",
+        "side": 0,
+        "hp": 30,
+        "cash": 1,
+        "hand": 2,
+        "slots": 4
+      },
+      {
+        "turn": 3,
+        "turn_actor": 1,
+        "kind": "start",
+        "side": 1,
+        "hp": 21,
+        "cash": 4,
+        "hand": [
+          17,
+          21,
+          17,
+          187
+        ],
+        "field": [
+          {
+            "uid": 22,
+            "cid": 15,
+            "a": 6,
+            "h": 5,
+            "max_h": 5,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          }
+        ]
+      },
+      {
+        "turn": 3,
+        "turn_actor": 1,
+        "kind": "draw",
+        "side": 1,
+        "card": 602,
+        "uid": 9,
+        "source": "normal",
+        "burned": false
+      },
+      {
+        "turn": 3,
+        "turn_actor": 1,
+        "kind": "attack",
+        "side": 1,
+        "actor": 22,
+        "target": "hero",
+        "hero_damage": 6,
+        "monster_heal": 0
+      },
+      {
+        "turn": 3,
+        "turn_actor": 1,
+        "kind": "play",
+        "side": 1,
+        "card": 187,
+        "uid": 19,
+        "cost": 3,
+        "source": "normal"
+      },
+      {
+        "turn": 3,
+        "turn_actor": 1,
+        "kind": "heal",
+        "side": 1,
+        "actual": 1
+      },
+      {
+        "turn": 3,
+        "turn_actor": 1,
+        "kind": "end",
+        "side": 1,
+        "hp": 22,
+        "cash": 1,
+        "hand": 4,
+        "slots": 2
+      },
+      {
+        "turn": 4,
+        "turn_actor": 0,
+        "kind": "start",
+        "side": 0,
+        "hp": 24,
+        "cash": 5,
+        "hand": [
+          377,
+          15
+        ],
+        "field": [
+          {
+            "uid": 4,
+            "cid": 2,
+            "a": 2,
+            "h": 3,
+            "max_h": 3,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          },
+          {
+            "uid": 1,
+            "cid": 196,
+            "a": 1,
+            "h": 1,
+            "max_h": 1,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          },
+          {
+            "uid": 8,
+            "cid": 4,
+            "a": 3,
+            "h": 2,
+            "max_h": 2,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          },
+          {
+            "uid": 9,
+            "cid": 602,
+            "a": 3,
+            "h": 4,
+            "max_h": 4,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          }
+        ]
+      },
+      {
+        "turn": 4,
+        "turn_actor": 0,
+        "kind": "draw",
+        "side": 0,
+        "card": 17,
+        "uid": 24,
+        "source": "normal",
+        "burned": false
+      },
+      {
+        "turn": 4,
+        "turn_actor": 0,
+        "kind": "attack",
+        "side": 0,
+        "actor": 9,
+        "target": "hero",
+        "hero_damage": 3,
+        "monster_heal": 0
+      },
+      {
+        "turn": 4,
+        "turn_actor": 0,
+        "kind": "attack",
+        "side": 0,
+        "actor": 8,
+        "target": "hero",
+        "hero_damage": 3,
+        "monster_heal": 0
+      },
+      {
+        "turn": 4,
+        "turn_actor": 0,
+        "kind": "attack",
+        "side": 0,
+        "actor": 1,
+        "target": "hero",
+        "hero_damage": 1,
+        "monster_heal": 0
+      },
+      {
+        "turn": 4,
+        "turn_actor": 0,
+        "kind": "attack",
+        "side": 0,
+        "actor": 4,
+        "target": "hero",
+        "hero_damage": 2,
+        "monster_heal": 0
+      },
+      {
+        "turn": 4,
+        "turn_actor": 0,
+        "kind": "heal",
+        "side": 0,
+        "actual": 1
+      },
+      {
+        "turn": 4,
+        "turn_actor": 0,
+        "kind": "end",
+        "side": 0,
+        "hp": 25,
+        "cash": 5,
+        "hand": 3,
+        "slots": 4
+      },
+      {
+        "turn": 4,
+        "turn_actor": 1,
+        "kind": "start",
+        "side": 1,
+        "hp": 13,
+        "cash": 5,
+        "hand": [
+          17,
+          21,
+          17,
+          602
+        ],
+        "field": [
+          {
+            "uid": 22,
+            "cid": 15,
+            "a": 6,
+            "h": 5,
+            "max_h": 5,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          },
+          {
+            "uid": 19,
+            "cid": 187,
+            "a": 2,
+            "h": 7,
+            "max_h": 7,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          }
+        ]
+      },
+      {
+        "turn": 4,
+        "turn_actor": 1,
+        "kind": "draw",
+        "side": 1,
+        "card": 168,
+        "uid": 14,
+        "source": "normal",
+        "burned": false
+      },
+      {
+        "turn": 4,
+        "turn_actor": 1,
+        "kind": "attack",
+        "side": 1,
+        "actor": 19,
+        "target": 8,
+        "packet": 2,
+        "hp_loss": 2,
+        "monster_heal": 0,
+        "killed": true,
+        "lost": false
+      },
+      {
+        "turn": 4,
+        "turn_actor": 1,
+        "kind": "attack",
+        "side": 1,
+        "actor": 22,
+        "target": 9,
+        "packet": 6,
+        "hp_loss": 5,
+        "monster_heal": 0,
+        "killed": true,
+        "lost": false
+      },
+      {
+        "turn": 4,
+        "turn_actor": 1,
+        "kind": "play",
+        "side": 1,
+        "card": 602,
+        "uid": 9,
+        "cost": 2,
+        "source": "normal"
+      },
+      {
+        "turn": 4,
+        "turn_actor": 1,
+        "kind": "heal",
+        "side": 1,
+        "actual": 1
+      },
+      {
+        "turn": 4,
+        "turn_actor": 1,
+        "kind": "end",
+        "side": 1,
+        "hp": 14,
+        "cash": 3,
+        "hand": 4,
+        "slots": 3
+      },
+      {
+        "turn": 5,
+        "turn_actor": 0,
+        "kind": "start",
+        "side": 0,
+        "hp": 25,
+        "cash": 10,
+        "hand": [
+          377,
+          15,
+          17
+        ],
+        "field": [
+          {
+            "uid": 4,
+            "cid": 2,
+            "a": 2,
+            "h": 3,
+            "max_h": 3,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          },
+          {
+            "uid": 1,
+            "cid": 196,
+            "a": 1,
+            "h": 1,
+            "max_h": 1,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          }
+        ]
+      },
+      {
+        "turn": 5,
+        "turn_actor": 0,
+        "kind": "draw",
+        "side": 0,
+        "card": 175,
+        "uid": 12,
+        "source": "normal",
+        "burned": false
+      },
+      {
+        "turn": 5,
+        "turn_actor": 0,
+        "kind": "attack",
+        "side": 0,
+        "actor": 1,
+        "target": "hero",
+        "hero_damage": 1,
+        "monster_heal": 0
+      },
+      {
+        "turn": 5,
+        "turn_actor": 0,
+        "kind": "attack",
+        "side": 0,
+        "actor": 4,
+        "target": "hero",
+        "hero_damage": 2,
+        "monster_heal": 0
+      },
+      {
+        "turn": 5,
+        "turn_actor": 0,
+        "kind": "play",
+        "side": 0,
+        "card": 15,
+        "uid": 22,
+        "cost": 5,
+        "source": "initial"
+      },
+      {
+        "turn": 5,
+        "turn_actor": 0,
+        "kind": "play",
+        "side": 0,
+        "card": 377,
+        "uid": 17,
+        "cost": 3,
+        "source": "initial"
+      },
+      {
+        "turn": 5,
+        "turn_actor": 0,
+        "kind": "heal",
+        "side": 0,
+        "actual": 1
+      },
+      {
+        "turn": 5,
+        "turn_actor": 0,
+        "kind": "end",
+        "side": 0,
+        "hp": 26,
+        "cash": 2,
+        "hand": 2,
+        "slots": 4
+      },
+      {
+        "turn": 5,
+        "turn_actor": 1,
+        "kind": "start",
+        "side": 1,
+        "hp": 11,
+        "cash": 9,
+        "hand": [
+          17,
+          21,
+          17,
+          168
+        ],
+        "field": [
+          {
+            "uid": 22,
+            "cid": 15,
+            "a": 6,
+            "h": 3,
+            "max_h": 5,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          },
+          {
+            "uid": 19,
+            "cid": 187,
+            "a": 2,
+            "h": 5,
+            "max_h": 7,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          },
+          {
+            "uid": 9,
+            "cid": 602,
+            "a": 3,
+            "h": 3,
+            "max_h": 3,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          }
+        ]
+      },
+      {
+        "turn": 5,
+        "turn_actor": 1,
+        "kind": "draw",
+        "side": 1,
+        "card": 44,
+        "uid": 6,
+        "source": "normal",
+        "burned": false
+      },
+      {
+        "turn": 5,
+        "turn_actor": 1,
+        "kind": "attack",
+        "side": 1,
+        "actor": 9,
+        "target": 4,
+        "packet": 3,
+        "hp_loss": 3,
+        "monster_heal": 0,
+        "killed": true,
+        "lost": false
+      },
+      {
+        "turn": 5,
+        "turn_actor": 1,
+        "kind": "attack",
+        "side": 1,
+        "actor": 19,
+        "target": 1,
+        "packet": 2,
+        "hp_loss": 1,
+        "monster_heal": 0,
+        "killed": true,
+        "lost": false
+      },
+      {
+        "turn": 5,
+        "turn_actor": 1,
+        "kind": "attack",
+        "side": 1,
+        "actor": 22,
+        "target": "hero",
+        "hero_damage": 6,
+        "monster_heal": 0
+      },
+      {
+        "turn": 5,
+        "turn_actor": 1,
+        "kind": "play",
+        "side": 1,
+        "card": 44,
+        "uid": 6,
+        "cost": 8,
+        "source": "normal"
+      },
+      {
+        "turn": 5,
+        "turn_actor": 1,
+        "kind": "draw",
+        "side": 1,
+        "card": 243,
+        "uid": 2,
+        "source": "bonus",
+        "burned": false
+      },
+      {
+        "turn": 5,
+        "turn_actor": 1,
+        "kind": "draw",
+        "side": 1,
+        "card": 15,
+        "uid": 21,
+        "source": "bonus",
+        "burned": false
+      },
+      {
+        "turn": 5,
+        "turn_actor": 1,
+        "kind": "heal",
+        "side": 1,
+        "actual": 1
+      },
+      {
+        "turn": 5,
+        "turn_actor": 1,
+        "kind": "end",
+        "side": 1,
+        "hp": 12,
+        "cash": 1,
+        "hand": 6,
+        "slots": 4
+      },
+      {
+        "turn": 6,
+        "turn_actor": 0,
+        "kind": "start",
+        "side": 0,
+        "hp": 20,
+        "cash": 8,
+        "hand": [
+          17,
+          175
+        ],
+        "field": [
+          {
+            "uid": 22,
+            "cid": 15,
+            "a": 6,
+            "h": 5,
+            "max_h": 5,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          },
+          {
+            "uid": 17,
+            "cid": 377,
+            "a": 3,
+            "h": 3,
+            "max_h": 3,
+            "ready": true,
+            "dodge": 1,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          }
+        ]
+      },
+      {
+        "turn": 6,
+        "turn_actor": 0,
+        "kind": "draw",
+        "side": 0,
+        "card": 602,
+        "uid": 11,
+        "source": "normal",
+        "burned": false
+      },
+      {
+        "turn": 6,
+        "turn_actor": 0,
+        "kind": "attack",
+        "side": 0,
+        "actor": 17,
+        "target": 6,
+        "packet": 3,
+        "hp_loss": 3,
+        "monster_heal": 0,
+        "killed": false,
+        "lost": false
+      },
+      {
+        "turn": 6,
+        "turn_actor": 0,
+        "kind": "play",
+        "side": 0,
+        "card": 602,
+        "uid": 11,
+        "cost": 2,
+        "source": "normal"
+      },
+      {
+        "turn": 6,
+        "turn_actor": 0,
+        "kind": "attack",
+        "side": 0,
+        "actor": 22,
+        "target": 6,
+        "packet": 6,
+        "hp_loss": 5,
+        "monster_heal": 0,
+        "killed": true,
+        "lost": true
+      },
+      {
+        "turn": 6,
+        "turn_actor": 0,
+        "kind": "play",
+        "side": 0,
+        "card": 175,
+        "uid": 12,
+        "cost": 2,
+        "source": "normal"
+      },
+      {
+        "turn": 6,
+        "turn_actor": 0,
+        "kind": "heal",
+        "side": 0,
+        "actual": 1
+      },
+      {
+        "turn": 6,
+        "turn_actor": 0,
+        "kind": "end",
+        "side": 0,
+        "hp": 21,
+        "cash": 4,
+        "hand": 1,
+        "slots": 3
+      },
+      {
+        "turn": 6,
+        "turn_actor": 1,
+        "kind": "start",
+        "side": 1,
+        "hp": 12,
+        "cash": 7,
+        "hand": [
+          17,
+          21,
+          17,
+          168,
+          243,
+          15
+        ],
+        "field": [
+          {
+            "uid": 22,
+            "cid": 15,
+            "a": 6,
+            "h": 4,
+            "max_h": 5,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          },
+          {
+            "uid": 19,
+            "cid": 187,
+            "a": 2,
+            "h": 5,
+            "max_h": 7,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          },
+          {
+            "uid": 9,
+            "cid": 602,
+            "a": 3,
+            "h": 2,
+            "max_h": 3,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          }
+        ]
+      },
+      {
+        "turn": 6,
+        "turn_actor": 1,
+        "kind": "draw",
+        "side": 1,
+        "card": 168,
+        "uid": 12,
+        "source": "normal",
+        "burned": false
+      },
+      {
+        "turn": 6,
+        "turn_actor": 1,
+        "kind": "attack",
+        "side": 1,
+        "actor": 9,
+        "target": "hero",
+        "hero_damage": 3,
+        "monster_heal": 0
+      },
+      {
+        "turn": 6,
+        "turn_actor": 1,
+        "kind": "attack",
+        "side": 1,
+        "actor": 19,
+        "target": "hero",
+        "hero_damage": 2,
+        "monster_heal": 0
+      },
+      {
+        "turn": 6,
+        "turn_actor": 1,
+        "kind": "attack",
+        "side": 1,
+        "actor": 22,
+        "target": "hero",
+        "hero_damage": 6,
+        "monster_heal": 0
+      },
+      {
+        "turn": 6,
+        "turn_actor": 1,
+        "kind": "play",
+        "side": 1,
+        "card": 21,
+        "uid": 8,
+        "cost": 7,
+        "source": "initial"
+      },
+      {
+        "turn": 6,
+        "turn_actor": 1,
+        "kind": "magic_damage",
+        "side": 1,
+        "hero_damage": 3
+      },
+      {
+        "turn": 6,
+        "turn_actor": 1,
+        "kind": "attack",
+        "side": 1,
+        "actor": 8,
+        "target": 12,
+        "packet": 5,
+        "hp_loss": 2,
+        "monster_heal": 0,
+        "killed": true,
+        "lost": false
+      },
+      {
+        "turn": 6,
+        "turn_actor": 1,
+        "kind": "heal",
+        "side": 1,
+        "actual": 1
+      },
+      {
+        "turn": 6,
+        "turn_actor": 1,
+        "kind": "end",
+        "side": 1,
+        "hp": 13,
+        "cash": 0,
+        "hand": 6,
+        "slots": 4
+      },
+      {
+        "turn": 7,
+        "turn_actor": 0,
+        "kind": "start",
+        "side": 0,
+        "hp": 7,
+        "cash": 11,
+        "hand": [
+          17
+        ],
+        "field": [
+          {
+            "uid": 17,
+            "cid": 377,
+            "a": 3,
+            "h": 2,
+            "max_h": 3,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          },
+          {
+            "uid": 11,
+            "cid": 602,
+            "a": 3,
+            "h": 2,
+            "max_h": 3,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          }
+        ]
+      },
+      {
+        "turn": 7,
+        "turn_actor": 0,
+        "kind": "draw",
+        "side": 0,
+        "card": 377,
+        "uid": 16,
+        "source": "normal",
+        "burned": false
+      },
+      {
+        "turn": 7,
+        "turn_actor": 0,
+        "kind": "attack",
+        "side": 0,
+        "actor": 11,
+        "target": "hero",
+        "hero_damage": 3,
+        "monster_heal": 0
+      },
+      {
+        "turn": 7,
+        "turn_actor": 0,
+        "kind": "attack",
+        "side": 0,
+        "actor": 17,
+        "target": "hero",
+        "hero_damage": 3,
+        "monster_heal": 0
+      },
+      {
+        "turn": 7,
+        "turn_actor": 0,
+        "kind": "play",
+        "side": 0,
+        "card": 17,
+        "uid": 24,
+        "cost": 9,
+        "source": "normal"
+      },
+      {
+        "turn": 7,
+        "turn_actor": 0,
+        "kind": "heal",
+        "side": 0,
+        "actual": 1
+      },
+      {
+        "turn": 7,
+        "turn_actor": 0,
+        "kind": "end",
+        "side": 0,
+        "hp": 8,
+        "cash": 2,
+        "hand": 1,
+        "slots": 3
+      },
+      {
+        "turn": 7,
+        "turn_actor": 1,
+        "kind": "start",
+        "side": 1,
+        "hp": 7,
+        "cash": 8,
+        "hand": [
+          17,
+          17,
+          168,
+          243,
+          15,
+          168
+        ],
+        "field": [
+          {
+            "uid": 22,
+            "cid": 15,
+            "a": 6,
+            "h": 5,
+            "max_h": 5,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          },
+          {
+            "uid": 19,
+            "cid": 187,
+            "a": 2,
+            "h": 6,
+            "max_h": 7,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          },
+          {
+            "uid": 9,
+            "cid": 602,
+            "a": 3,
+            "h": 3,
+            "max_h": 3,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          },
+          {
+            "uid": 8,
+            "cid": 21,
+            "a": 6,
+            "h": 2,
+            "max_h": 4,
+            "ready": true,
+            "dodge": 0,
+            "armor": false,
+            "taunt": false,
+            "face_allowed": true
+          }
+        ]
+      },
+      {
+        "turn": 7,
+        "turn_actor": 1,
+        "kind": "draw",
+        "side": 1,
+        "card": 377,
+        "uid": 17,
+        "source": "normal",
+        "burned": false
+      },
+      {
+        "turn": 7,
+        "turn_actor": 1,
+        "kind": "attack",
+        "side": 1,
+        "actor": 8,
+        "target": 24,
+        "packet": 6,
+        "hp_loss": 6,
+        "monster_heal": 0,
+        "killed": false,
+        "lost": true
+      },
+      {
+        "turn": 7,
+        "turn_actor": 1,
+        "kind": "attack",
+        "side": 1,
+        "actor": 9,
+        "target": 24,
+        "packet": 3,
+        "hp_loss": 3,
+        "monster_heal": 0,
+        "killed": true,
+        "lost": true
+      },
+      {
+        "turn": 7,
+        "turn_actor": 1,
+        "kind": "attack",
+        "side": 1,
+        "actor": 19,
+        "target": "hero",
+        "hero_damage": 2,
+        "monster_heal": 0
+      },
+      {
+        "turn": 7,
+        "turn_actor": 1,
+        "kind": "attack",
+        "side": 1,
+        "actor": 22,
+        "target": "hero",
+        "hero_damage": 6,
+        "monster_heal": 0
+      },
+      {
+        "turn": 7,
+        "turn_actor": 1,
+        "kind": "end",
+        "side": 1,
+        "hp": 7,
+        "cash": 8,
+        "hand": 7,
+        "slots": 2
+      }
+    ]
+  }
+}

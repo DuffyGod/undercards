@@ -1,0 +1,342 @@
+{
+  "rows": [
+    {
+      "composition": "small",
+      "seat": 0,
+      "seen": 4,
+      "effective_openers": 15,
+      "n": 128,
+      "missed": 2,
+      "observed": 0.015625,
+      "expected": 0.016600790513833993,
+      "wilson95": [
+        0.004295359707748747,
+        0.055182073818543405
+      ]
+    },
+    {
+      "composition": "small",
+      "seat": 1,
+      "seen": 4,
+      "effective_openers": 21,
+      "n": 128,
+      "missed": 0,
+      "observed": 0.0,
+      "expected": 7.905138339920949e-05,
+      "wilson95": [
+        0.0,
+        0.02913799589810803
+      ]
+    },
+    {
+      "composition": "small_draw",
+      "seat": 0,
+      "seen": 4,
+      "effective_openers": 15,
+      "n": 128,
+      "missed": 2,
+      "observed": 0.015625,
+      "expected": 0.016600790513833993,
+      "wilson95": [
+        0.004295359707748747,
+        0.055182073818543405
+      ]
+    },
+    {
+      "composition": "small_draw",
+      "seat": 1,
+      "seen": 4,
+      "effective_openers": 21,
+      "n": 128,
+      "missed": 0,
+      "observed": 0.0,
+      "expected": 7.905138339920949e-05,
+      "wilson95": [
+        0.0,
+        0.02913799589810803
+      ]
+    },
+    {
+      "composition": "middle",
+      "seat": 0,
+      "seen": 4,
+      "effective_openers": 9,
+      "n": 128,
+      "missed": 16,
+      "observed": 0.125,
+      "expected": 0.14387351778656127,
+      "wilson95": [
+        0.07842577339785958,
+        0.19342772352572143
+      ]
+    },
+    {
+      "composition": "middle",
+      "seat": 1,
+      "seen": 4,
+      "effective_openers": 15,
+      "n": 128,
+      "missed": 1,
+      "observed": 0.0078125,
+      "expected": 0.016600790513833993,
+      "wilson95": [
+        0.0013803963628788857,
+        0.04292731834932121
+      ]
+    },
+    {
+      "composition": "middle_draw",
+      "seat": 0,
+      "seen": 4,
+      "effective_openers": 9,
+      "n": 128,
+      "missed": 16,
+      "observed": 0.125,
+      "expected": 0.14387351778656127,
+      "wilson95": [
+        0.07842577339785958,
+        0.19342772352572143
+      ]
+    },
+    {
+      "composition": "middle_draw",
+      "seat": 1,
+      "seen": 4,
+      "effective_openers": 15,
+      "n": 128,
+      "missed": 1,
+      "observed": 0.0078125,
+      "expected": 0.016600790513833993,
+      "wilson95": [
+        0.0013803963628788857,
+        0.04292731834932121
+      ]
+    },
+    {
+      "composition": "heavy",
+      "seat": 0,
+      "seen": 4,
+      "effective_openers": 3,
+      "n": 128,
+      "missed": 68,
+      "observed": 0.53125,
+      "expected": 0.5782608695652174,
+      "wilson95": [
+        0.4451521555712906,
+        0.6155267196850777
+      ]
+    },
+    {
+      "composition": "heavy",
+      "seat": 1,
+      "seen": 4,
+      "effective_openers": 9,
+      "n": 128,
+      "missed": 18,
+      "observed": 0.140625,
+      "expected": 0.14387351778656127,
+      "wilson95": [
+        0.09083896111136737,
+        0.2113539734403978
+      ]
+    },
+    {
+      "composition": "small_draw",
+      "seat": 0,
+      "seen": 5,
+      "effective_openers": 15,
+      "n": 128,
+      "missed": 1,
+      "observed": 0.0078125,
+      "expected": 0.0047430830039525695,
+      "wilson95": [
+        0.0013803963628788857,
+        0.04292731834932121
+      ]
+    },
+    {
+      "composition": "small_draw",
+      "seat": 0,
+      "seen": 3,
+      "effective_openers": 15,
+      "n": 128,
+      "missed": 4,
+      "observed": 0.03125,
+      "expected": 0.05217391304347826,
+      "wilson95": [
+        0.012218067575115642,
+        0.07759880357936064
+      ]
+    },
+    {
+      "composition": "small_draw",
+      "seat": 1,
+      "seen": 5,
+      "effective_openers": 21,
+      "n": 128,
+      "missed": 0,
+      "observed": 0.0,
+      "expected": 0,
+      "wilson95": [
+        0.0,
+        0.02913799589810803
+      ]
+    },
+    {
+      "composition": "small_draw",
+      "seat": 1,
+      "seen": 3,
+      "effective_openers": 21,
+      "n": 128,
+      "missed": 1,
+      "observed": 0.0078125,
+      "expected": 0.0017391304347826088,
+      "wilson95": [
+        0.0013803963628788857,
+        0.04292731834932121
+      ]
+    },
+    {
+      "composition": "middle_draw",
+      "seat": 0,
+      "seen": 5,
+      "effective_openers": 9,
+      "n": 128,
+      "missed": 13,
+      "observed": 0.1015625,
+      "expected": 0.08221343873517786,
+      "wilson95": [
+        0.060318074551540965,
+        0.16602626592976388
+      ]
+    },
+    {
+      "composition": "middle_draw",
+      "seat": 0,
+      "seen": 3,
+      "effective_openers": 9,
+      "n": 128,
+      "missed": 27,
+      "observed": 0.2109375,
+      "expected": 0.24347826086956523,
+      "wilson95": [
+        0.1492121185502459,
+        0.28950828532834777
+      ]
+    },
+    {
+      "composition": "middle_draw",
+      "seat": 1,
+      "seen": 5,
+      "effective_openers": 15,
+      "n": 128,
+      "missed": 0,
+      "observed": 0.0,
+      "expected": 0.0047430830039525695,
+      "wilson95": [
+        0.0,
+        0.02913799589810803
+      ]
+    },
+    {
+      "composition": "middle_draw",
+      "seat": 1,
+      "seen": 3,
+      "effective_openers": 15,
+      "n": 128,
+      "missed": 5,
+      "observed": 0.0390625,
+      "expected": 0.05217391304347826,
+      "wilson95": [
+        0.0167983630559502,
+        0.08818822691261814
+      ]
+    },
+    {
+      "composition": "middle_heal",
+      "seat": 0,
+      "seen": 4,
+      "effective_openers": 6,
+      "n": 128,
+      "missed": 31,
+      "observed": 0.2421875,
+      "expected": 0.30640316205533596,
+      "wilson95": [
+        0.17618632286113767,
+        0.3232129562738243
+      ]
+    },
+    {
+      "composition": "middle_heal",
+      "seat": 1,
+      "seen": 4,
+      "effective_openers": 12,
+      "n": 128,
+      "missed": 7,
+      "observed": 0.0546875,
+      "expected": 0.05652173913043478,
+      "wilson95": [
+        0.02673986088319332,
+        0.10858616671355914
+      ]
+    },
+    {
+      "composition": "small_anchor",
+      "seat": 0,
+      "seen": 4,
+      "effective_openers": 12,
+      "n": 128,
+      "missed": 6,
+      "observed": 0.046875,
+      "expected": 0.05652173913043478,
+      "wilson95": [
+        0.021657548893279907,
+        0.09849875988938049
+      ]
+    },
+    {
+      "composition": "small_anchor",
+      "seat": 1,
+      "seen": 4,
+      "effective_openers": 18,
+      "n": 128,
+      "missed": 0,
+      "observed": 0.0,
+      "expected": 0.002766798418972332,
+      "wilson95": [
+        0.0,
+        0.02913799589810803
+      ]
+    },
+    {
+      "composition": "small_reach",
+      "seat": 0,
+      "seen": 4,
+      "effective_openers": 12,
+      "n": 128,
+      "missed": 6,
+      "observed": 0.046875,
+      "expected": 0.05652173913043478,
+      "wilson95": [
+        0.021657548893279907,
+        0.09849875988938049
+      ]
+    },
+    {
+      "composition": "small_reach",
+      "seat": 1,
+      "seen": 4,
+      "effective_openers": 18,
+      "n": 128,
+      "missed": 0,
+      "observed": 0.0,
+      "expected": 0.002766798418972332,
+      "wilson95": [
+        0.0,
+        0.02913799589810803
+      ]
+    }
+  ],
+  "scope": "New composition shuffle/event checks only; repeated contexts deduplicated; no mulligan; first decision excludes subsequent Heal cycling",
+  "all_expected_inside_marginal_wilson": true
+}

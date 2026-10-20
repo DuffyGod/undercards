@@ -1,0 +1,60 @@
+{
+  "auditor": "saved-accounting-v1",
+  "created_utc": "2026-10-20T07:29:54.025732+00:00",
+  "scope": "Retained passing v0.2 rows from initial audit; no simulation rerun.",
+  "hp_convention": "Final HP is nonnegative. Raw snapshot HP may be negative only at the terminal lethal event.",
+  "runs": [
+    {
+      "directory": "analysis/card-comparison/2026-10-20/joint-opening/main",
+      "stage": "main",
+      "version": "joint-opening-0.2",
+      "source_commit": "50697c711d228989d4800ff1c3c4817956383dd2",
+      "groups": 80,
+      "expected_rows": 10240,
+      "rows_checked": 10240,
+      "passed": true,
+      "violations": {},
+      "examples": [],
+      "default_limits": {
+        "hand_cap": 7,
+        "slots": 4
+      },
+      "intervention_limits": "Saved handN/slotsN names override saved defaults; all other capacity limits retain defaults."
+    },
+    {
+      "directory": "analysis/card-comparison/2026-10-20/joint-opening/counterfactual",
+      "stage": "counterfactual",
+      "version": "joint-opening-0.2",
+      "source_commit": "50697c711d228989d4800ff1c3c4817956383dd2",
+      "groups": 72,
+      "expected_rows": 9216,
+      "rows_checked": 9216,
+      "passed": true,
+      "violations": {},
+      "examples": [],
+      "default_limits": {
+        "hand_cap": 7,
+        "slots": 4
+      },
+      "intervention_limits": "Saved handN/slotsN names override saved defaults; all other capacity limits retain defaults."
+    },
+    {
+      "directory": "analysis/card-comparison/2026-10-20/joint-opening/heal",
+      "stage": "heal",
+      "version": "joint-opening-0.2",
+      "source_commit": "50697c711d228989d4800ff1c3c4817956383dd2",
+      "groups": 12,
+      "expected_rows": 1536,
+      "rows_checked": 1536,
+      "passed": true,
+      "violations": {},
+      "examples": [],
+      "default_limits": {
+        "hand_cap": 7,
+        "slots": 4
+      },
+      "intervention_limits": "Saved handN/slotsN names override saved defaults; all other capacity limits retain defaults."
+    }
+  ],
+  "status": "pass"
+}

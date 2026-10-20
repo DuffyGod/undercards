@@ -1,0 +1,130 @@
+{
+  "status": "pass",
+  "rows_checked": 26112,
+  "runs": [
+    {
+      "directory": "analysis/card-comparison/2026-10-20/joint-opening/main",
+      "stage": "main",
+      "version": "joint-opening-0.2",
+      "source_commit": "50697c711d228989d4800ff1c3c4817956383dd2",
+      "groups": 80,
+      "expected_rows": 10240,
+      "rows_checked": 10240,
+      "passed": true,
+      "violations": {},
+      "examples": [],
+      "default_limits": {
+        "hand_cap": 7,
+        "slots": 4
+      },
+      "intervention_limits": "Saved handN/slotsN names override saved defaults; all other capacity limits retain defaults."
+    },
+    {
+      "directory": "analysis/card-comparison/2026-10-20/joint-opening/counterfactual",
+      "stage": "counterfactual",
+      "version": "joint-opening-0.2",
+      "source_commit": "50697c711d228989d4800ff1c3c4817956383dd2",
+      "groups": 72,
+      "expected_rows": 9216,
+      "rows_checked": 9216,
+      "passed": true,
+      "violations": {},
+      "examples": [],
+      "default_limits": {
+        "hand_cap": 7,
+        "slots": 4
+      },
+      "intervention_limits": "Saved handN/slotsN names override saved defaults; all other capacity limits retain defaults."
+    },
+    {
+      "directory": "analysis/card-comparison/2026-10-20/joint-opening/heal",
+      "stage": "heal",
+      "version": "joint-opening-0.2",
+      "source_commit": "50697c711d228989d4800ff1c3c4817956383dd2",
+      "groups": 12,
+      "expected_rows": 1536,
+      "rows_checked": 1536,
+      "passed": true,
+      "violations": {},
+      "examples": [],
+      "default_limits": {
+        "hand_cap": 7,
+        "slots": 4
+      },
+      "intervention_limits": "Saved handN/slotsN names override saved defaults; all other capacity limits retain defaults."
+    },
+    {
+      "directory": "analysis/card-comparison/2026-10-20/joint-opening/tactics",
+      "stage": "tactics",
+      "version": "joint-opening-0.3",
+      "source_commit": "ff2f0fb74f6659d2d4f212df3cca0cbf5487399e",
+      "groups": 12,
+      "expected_rows": 1536,
+      "rows_checked": 1536,
+      "passed": true,
+      "violations": {},
+      "examples": [],
+      "default_limits": {
+        "hand_cap": 7,
+        "slots": 4
+      },
+      "intervention_limits": "Saved handN/slotsN names override saved defaults; all other capacity limits retain defaults."
+    },
+    {
+      "directory": "analysis/card-comparison/2026-10-20/joint-opening/extension",
+      "stage": "extension",
+      "version": "joint-opening-0.3",
+      "source_commit": "ff2f0fb74f6659d2d4f212df3cca0cbf5487399e",
+      "groups": 8,
+      "expected_rows": 1024,
+      "rows_checked": 1024,
+      "passed": true,
+      "violations": {},
+      "examples": [],
+      "default_limits": {
+        "hand_cap": 7,
+        "slots": 4
+      },
+      "intervention_limits": "Saved handN/slotsN names override saved defaults; all other capacity limits retain defaults."
+    },
+    {
+      "directory": "analysis/card-comparison/2026-10-20/joint-opening/stress",
+      "stage": "stress",
+      "version": "joint-opening-0.3",
+      "source_commit": "539a33120998b998330217281ad6b4819a42e93e",
+      "groups": 12,
+      "expected_rows": 1536,
+      "rows_checked": 1536,
+      "passed": true,
+      "violations": {},
+      "examples": [],
+      "default_limits": {
+        "hand_cap": 7,
+        "slots": 4
+      },
+      "intervention_limits": "Saved handN/slotsN names override saved defaults; all other capacity limits retain defaults."
+    },
+    {
+      "directory": "analysis/card-comparison/2026-10-20/joint-opening/stress_extension",
+      "stage": "stress_extension",
+      "version": "joint-opening-0.3",
+      "source_commit": "b22c548491b56f912c053d2be2f4a71f116e2990",
+      "groups": 8,
+      "expected_rows": 1024,
+      "rows_checked": 1024,
+      "passed": true,
+      "violations": {},
+      "examples": [],
+      "default_limits": {
+        "hand_cap": 7,
+        "slots": 4
+      },
+      "intervention_limits": "Saved handN/slotsN names override saved defaults; all other capacity limits retain defaults."
+    }
+  ],
+  "notes": [
+    "v0.2 passing accounting retained without recheck",
+    "v0.3 label initially rejected by auditor registry; schema updated, only new stages audited; initial strict rejection retained",
+    "Accounting checks are not independent rule-transition or strategic verification"
+  ]
+}

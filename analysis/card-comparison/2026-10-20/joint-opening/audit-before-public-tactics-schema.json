@@ -1,0 +1,720 @@
+{
+  "auditor": "saved-accounting-v1",
+  "created_utc": "2026-10-20T07:29:54.025732+00:00",
+  "scope": "Independent saved accounting/capacity checks only; no simulation rerun and no full rule verification.",
+  "hp_convention": "Final HP is nonnegative. Raw snapshot HP may be negative only at the terminal lethal event.",
+  "runs": [
+    {
+      "directory": "analysis/card-comparison/2026-10-20/joint-opening/main",
+      "stage": "main",
+      "version": "joint-opening-0.2",
+      "source_commit": "50697c711d228989d4800ff1c3c4817956383dd2",
+      "groups": 80,
+      "expected_rows": 10240,
+      "rows_checked": 10240,
+      "passed": true,
+      "violations": {},
+      "examples": [],
+      "default_limits": {
+        "hand_cap": 7,
+        "slots": 4
+      },
+      "intervention_limits": "Saved handN/slotsN names override saved defaults; all other capacity limits retain defaults."
+    },
+    {
+      "directory": "analysis/card-comparison/2026-10-20/joint-opening/counterfactual",
+      "stage": "counterfactual",
+      "version": "joint-opening-0.2",
+      "source_commit": "50697c711d228989d4800ff1c3c4817956383dd2",
+      "groups": 72,
+      "expected_rows": 9216,
+      "rows_checked": 9216,
+      "passed": true,
+      "violations": {},
+      "examples": [],
+      "default_limits": {
+        "hand_cap": 7,
+        "slots": 4
+      },
+      "intervention_limits": "Saved handN/slotsN names override saved defaults; all other capacity limits retain defaults."
+    },
+    {
+      "directory": "analysis/card-comparison/2026-10-20/joint-opening/heal",
+      "stage": "heal",
+      "version": "joint-opening-0.2",
+      "source_commit": "50697c711d228989d4800ff1c3c4817956383dd2",
+      "groups": 12,
+      "expected_rows": 1536,
+      "rows_checked": 1536,
+      "passed": true,
+      "violations": {},
+      "examples": [],
+      "default_limits": {
+        "hand_cap": 7,
+        "slots": 4
+      },
+      "intervention_limits": "Saved handN/slotsN names override saved defaults; all other capacity limits retain defaults."
+    },
+    {
+      "directory": "analysis/card-comparison/2026-10-20/joint-opening/tactics",
+      "stage": "tactics",
+      "version": "joint-opening-0.3",
+      "source_commit": "ff2f0fb74f6659d2d4f212df3cca0cbf5487399e",
+      "groups": 12,
+      "expected_rows": 1536,
+      "rows_checked": 1536,
+      "passed": false,
+      "violations": {
+        "schema_or_config.Unrecognized saved intervention: public_tactics": 1536
+      },
+      "examples": [
+        {
+          "group": 0,
+          "seed": 0,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 1,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 2,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 3,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 4,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 5,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 6,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 7,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 8,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 9,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 10,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 11,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 12,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 13,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 14,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 15,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 16,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 17,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 18,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 19,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 20,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 21,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 22,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 23,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 24,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 25,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 26,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 27,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 28,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 29,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 30,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 31,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 32,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 33,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 34,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 35,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 36,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 37,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 38,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 39,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        }
+      ],
+      "default_limits": {
+        "hand_cap": 7,
+        "slots": 4
+      },
+      "intervention_limits": "Saved handN/slotsN names override saved defaults; all other capacity limits retain defaults."
+    },
+    {
+      "directory": "analysis/card-comparison/2026-10-20/joint-opening/extension",
+      "stage": "extension",
+      "version": "joint-opening-0.3",
+      "source_commit": "ff2f0fb74f6659d2d4f212df3cca0cbf5487399e",
+      "groups": 8,
+      "expected_rows": 1024,
+      "rows_checked": 1024,
+      "passed": false,
+      "violations": {
+        "schema_or_config.Unrecognized saved intervention: public_tactics": 1024
+      },
+      "examples": [
+        {
+          "group": 0,
+          "seed": 0,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 1,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 2,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 3,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 4,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 5,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 6,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 7,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 8,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 9,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 10,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 11,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 12,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 13,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 14,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 15,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 16,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 17,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 18,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 19,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 20,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 21,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 22,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 23,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 24,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 25,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 26,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 27,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 28,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 29,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 30,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 31,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 32,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 33,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 34,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 35,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 36,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 37,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 38,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 39,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        }
+      ],
+      "default_limits": {
+        "hand_cap": 7,
+        "slots": 4
+      },
+      "intervention_limits": "Saved handN/slotsN names override saved defaults; all other capacity limits retain defaults."
+    },
+    {
+      "directory": "analysis/card-comparison/2026-10-20/joint-opening/stress",
+      "stage": "stress",
+      "version": "joint-opening-0.3",
+      "source_commit": "539a33120998b998330217281ad6b4819a42e93e",
+      "groups": 12,
+      "expected_rows": 1536,
+      "rows_checked": 1536,
+      "passed": false,
+      "violations": {
+        "schema_or_config.Unrecognized saved intervention: public_tactics": 1536
+      },
+      "examples": [
+        {
+          "group": 0,
+          "seed": 0,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 1,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 2,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 3,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 4,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 5,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 6,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 7,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 8,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 9,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 10,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 11,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 12,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 13,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 14,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 15,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 16,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 17,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 18,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 19,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 20,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 21,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 22,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 23,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 24,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 25,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 26,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 27,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 28,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 29,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 30,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 31,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 32,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 33,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 34,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 35,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 36,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 37,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 38,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        },
+        {
+          "group": 0,
+          "seed": 39,
+          "error": "schema_or_config.Unrecognized saved intervention: public_tactics"
+        }
+      ],
+      "default_limits": {
+        "hand_cap": 7,
+        "slots": 4
+      },
+      "intervention_limits": "Saved handN/slotsN names override saved defaults; all other capacity limits retain defaults."
+    }
+  ],
+  "status": "fail"
+}

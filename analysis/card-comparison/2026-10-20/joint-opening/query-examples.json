@@ -1,0 +1,400 @@
+[
+  {
+    "command": [
+      "python",
+      "analysis/card-comparison/2026-10-20/joint-opening/query.py",
+      "--stage",
+      "extension",
+      "--composition",
+      "small_reach",
+      "--compare-stage",
+      "tactics",
+      "--compare-composition",
+      "small_draw",
+      "--intervention",
+      "public_tactics",
+      "--seat",
+      "second",
+      "--metrics",
+      "killed",
+      "dead",
+      "first_turn_no_opener"
+    ],
+    "output": {
+      "left": {
+        "composition": "small_reach",
+        "policy": "balanced",
+        "soul": "KINDNESS",
+        "opponent": "large_reply",
+        "seat": 1,
+        "intervention": "public_tactics"
+      },
+      "right": {
+        "composition": "small_draw",
+        "policy": "balanced",
+        "soul": "KINDNESS",
+        "opponent": "large_reply",
+        "seat": 1,
+        "intervention": "public_tactics"
+      },
+      "difference": "left minus right",
+      "reference_stage": "tactics",
+      "reference_version": "joint-opening-0.3",
+      "reference_commit": "ff2f0fb74f6659d2d4f212df3cca0cbf5487399e",
+      "version": "joint-opening-0.3",
+      "source_commit": "ff2f0fb74f6659d2d4f212df3cca0cbf5487399e",
+      "metrics": {
+        "killed": {
+          "n": 128,
+          "mean": 0.2734375,
+          "se": 0.03955156442885269,
+          "normal95": [
+            0.19591643371944872,
+            0.3509585662805513
+          ]
+        },
+        "dead": {
+          "n": 128,
+          "mean": -0.1875,
+          "se": 0.041130075016539196,
+          "normal95": [
+            -0.26811494703241684,
+            -0.10688505296758317
+          ]
+        },
+        "first_turn_no_opener": {
+          "n": 128,
+          "mean": 0,
+          "se": 0.0,
+          "normal95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "interpretation": "These composition/shuffle/policy assumptions only; not real win probability."
+    }
+  },
+  {
+    "command": [
+      "python",
+      "analysis/card-comparison/2026-10-20/joint-opening/query.py",
+      "--stage",
+      "counterfactual",
+      "--composition",
+      "small_draw",
+      "--intervention",
+      "no_foe_hero_heal",
+      "--compare-intervention",
+      "base",
+      "--metrics",
+      "killed",
+      "opponent_hp"
+    ],
+    "output": {
+      "left": {
+        "composition": "small_draw",
+        "policy": "balanced",
+        "soul": "KINDNESS",
+        "opponent": "large_reply",
+        "seat": 0,
+        "intervention": "no_foe_hero_heal"
+      },
+      "right": {
+        "composition": "small_draw",
+        "policy": "balanced",
+        "soul": "KINDNESS",
+        "opponent": "large_reply",
+        "seat": 0,
+        "intervention": "base"
+      },
+      "difference": "left minus right",
+      "reference_stage": "counterfactual",
+      "reference_version": "joint-opening-0.2",
+      "reference_commit": "50697c711d228989d4800ff1c3c4817956383dd2",
+      "version": "joint-opening-0.2",
+      "source_commit": "50697c711d228989d4800ff1c3c4817956383dd2",
+      "metrics": {
+        "killed": {
+          "n": 128,
+          "mean": 0.2421875,
+          "se": 0.03960013867427301,
+          "normal95": [
+            0.1645712281984249,
+            0.3198037718015751
+          ]
+        },
+        "opponent_hp": {
+          "n": 128,
+          "mean": -4.5546875,
+          "se": 0.28513202187818976,
+          "normal95": [
+            -5.113546262881252,
+            -3.995828737118748
+          ]
+        }
+      },
+      "interpretation": "These composition/shuffle/policy assumptions only; not real win probability."
+    }
+  },
+  {
+    "command": "prioritize.py; actual conditions in output",
+    "output": {
+      "conditions": {
+        "opponent": "large_reply",
+        "seat": "first",
+        "turn": 8,
+        "objective": "kill",
+        "min_objective": 0,
+        "max_death": 0.25,
+        "conservative": true
+      },
+      "own_soul": "KINDNESS",
+      "own_policy": "balanced",
+      "both_public_tactics": true,
+      "interpretation": "Finite composition/causal-policy shuffle outcomes only. Empirical Pareto ignores sampling uncertainty; conservative screening uses marginal 95% Wilson bounds, not a simultaneous or real-match guarantee.",
+      "options": [
+        {
+          "composition": "heavy",
+          "stage": "tactics",
+          "n": 128,
+          "objective_count": 28,
+          "objective_rate": 0.21875,
+          "objective_wilson95": [
+            0.1559042491230976,
+            0.29798587356958817
+          ],
+          "death_count": 19,
+          "death_rate": 0.1484375,
+          "death_wilson95": [
+            0.09713386823483508,
+            0.22022878513102215
+          ],
+          "accepted": true,
+          "meets_objective": true,
+          "meets_risk": true,
+          "empirical_pareto": true
+        },
+        {
+          "composition": "small_reach",
+          "stage": "extension",
+          "n": 128,
+          "objective_count": 47,
+          "objective_rate": 0.3671875,
+          "objective_wilson95": [
+            0.28868321179915,
+            0.45343156836128495
+          ],
+          "death_count": 23,
+          "death_rate": 0.1796875,
+          "death_wilson95": [
+            0.12282372833083033,
+            0.2552178002913951
+          ],
+          "accepted": false,
+          "meets_objective": true,
+          "meets_risk": false,
+          "empirical_pareto": true
+        },
+        {
+          "composition": "small_draw",
+          "stage": "tactics",
+          "n": 128,
+          "objective_count": 22,
+          "objective_rate": 0.171875,
+          "objective_wilson95": [
+            0.11633031408834081,
+            0.24654149571979256
+          ],
+          "death_count": 40,
+          "death_rate": 0.3125,
+          "death_wilson95": [
+            0.23865407613652956,
+            0.397272672325261
+          ],
+          "accepted": false,
+          "meets_objective": true,
+          "meets_risk": false,
+          "empirical_pareto": false
+        },
+        {
+          "composition": "middle_draw",
+          "stage": "tactics",
+          "n": 128,
+          "objective_count": 16,
+          "objective_rate": 0.125,
+          "objective_wilson95": [
+            0.07842577339785958,
+            0.19342772352572143
+          ],
+          "death_count": 54,
+          "death_rate": 0.421875,
+          "death_wilson95": [
+            0.3398196990498745,
+            0.5084831128092049
+          ],
+          "accepted": false,
+          "meets_objective": true,
+          "meets_risk": false,
+          "empirical_pareto": false
+        },
+        {
+          "composition": "small_anchor",
+          "stage": "extension",
+          "n": 128,
+          "objective_count": 14,
+          "objective_rate": 0.109375,
+          "objective_wilson95": [
+            0.0662781874950252,
+            0.1752358718003717
+          ],
+          "death_count": 50,
+          "death_rate": 0.390625,
+          "death_wilson95": [
+            0.3104688157120751,
+            0.47715512089063605
+          ],
+          "accepted": false,
+          "meets_objective": true,
+          "meets_risk": false,
+          "empirical_pareto": false
+        }
+      ]
+    }
+  },
+  {
+    "command": "prioritize.py; actual conditions in output",
+    "output": {
+      "conditions": {
+        "opponent": "large_reply",
+        "seat": "first",
+        "turn": 8,
+        "objective": "kill",
+        "min_objective": 0.25,
+        "max_death": 0.35,
+        "conservative": true
+      },
+      "own_soul": "KINDNESS",
+      "own_policy": "balanced",
+      "both_public_tactics": true,
+      "interpretation": "Finite composition/causal-policy shuffle outcomes only. Empirical Pareto ignores sampling uncertainty; conservative screening uses marginal 95% Wilson bounds, not a simultaneous or real-match guarantee.",
+      "options": [
+        {
+          "composition": "small_reach",
+          "stage": "extension",
+          "n": 128,
+          "objective_count": 47,
+          "objective_rate": 0.3671875,
+          "objective_wilson95": [
+            0.28868321179915,
+            0.45343156836128495
+          ],
+          "death_count": 23,
+          "death_rate": 0.1796875,
+          "death_wilson95": [
+            0.12282372833083033,
+            0.2552178002913951
+          ],
+          "accepted": true,
+          "meets_objective": true,
+          "meets_risk": true,
+          "empirical_pareto": true
+        },
+        {
+          "composition": "heavy",
+          "stage": "tactics",
+          "n": 128,
+          "objective_count": 28,
+          "objective_rate": 0.21875,
+          "objective_wilson95": [
+            0.1559042491230976,
+            0.29798587356958817
+          ],
+          "death_count": 19,
+          "death_rate": 0.1484375,
+          "death_wilson95": [
+            0.09713386823483508,
+            0.22022878513102215
+          ],
+          "accepted": false,
+          "meets_objective": false,
+          "meets_risk": true,
+          "empirical_pareto": true
+        },
+        {
+          "composition": "small_draw",
+          "stage": "tactics",
+          "n": 128,
+          "objective_count": 22,
+          "objective_rate": 0.171875,
+          "objective_wilson95": [
+            0.11633031408834081,
+            0.24654149571979256
+          ],
+          "death_count": 40,
+          "death_rate": 0.3125,
+          "death_wilson95": [
+            0.23865407613652956,
+            0.397272672325261
+          ],
+          "accepted": false,
+          "meets_objective": false,
+          "meets_risk": false,
+          "empirical_pareto": false
+        },
+        {
+          "composition": "middle_draw",
+          "stage": "tactics",
+          "n": 128,
+          "objective_count": 16,
+          "objective_rate": 0.125,
+          "objective_wilson95": [
+            0.07842577339785958,
+            0.19342772352572143
+          ],
+          "death_count": 54,
+          "death_rate": 0.421875,
+          "death_wilson95": [
+            0.3398196990498745,
+            0.5084831128092049
+          ],
+          "accepted": false,
+          "meets_objective": false,
+          "meets_risk": false,
+          "empirical_pareto": false
+        },
+        {
+          "composition": "small_anchor",
+          "stage": "extension",
+          "n": 128,
+          "objective_count": 14,
+          "objective_rate": 0.109375,
+          "objective_wilson95": [
+            0.0662781874950252,
+            0.1752358718003717
+          ],
+          "death_count": 50,
+          "death_rate": 0.390625,
+          "death_wilson95": [
+            0.3104688157120751,
+            0.47715512089063605
+          ],
+          "accepted": false,
+          "meets_objective": false,
+          "meets_risk": false,
+          "empirical_pareto": false
+        }
+      ]
+    }
+  },
+  {
+    "command": [
+      "python",
+      "analysis/card-comparison/2026-10-20/joint-opening/query.py",
+      "--composition",
+      "unsupported_card"
+    ],
+    "expected_rejection": true,
+    "message": "ValueError: Requested cell absent/ambiguous; no interpolation"
+  }
+]

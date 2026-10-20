@@ -1,0 +1,100 @@
+[
+  {
+    "name": "reach-success",
+    "stage": "extension",
+    "seed": 1,
+    "group": {
+      "composition": "small_reach",
+      "policy": "balanced",
+      "soul": "KINDNESS",
+      "opponent": "large_reply",
+      "seat": 1,
+      "intervention": "public_tactics"
+    },
+    "endpoint_equal": true
+  },
+  {
+    "name": "same-shuffle-small-fails",
+    "stage": "tactics",
+    "seed": 1,
+    "group": {
+      "composition": "small_draw",
+      "policy": "balanced",
+      "soul": "KINDNESS",
+      "opponent": "large_reply",
+      "seat": 1,
+      "intervention": "public_tactics"
+    },
+    "endpoint_equal": true
+  },
+  {
+    "name": "bench-is-not-automatic-fix",
+    "stage": "extension",
+    "seed": 6,
+    "group": {
+      "composition": "small_anchor",
+      "policy": "balanced",
+      "soul": "KINDNESS",
+      "opponent": "large_reply",
+      "seat": 0,
+      "intervention": "public_tactics"
+    },
+    "endpoint_equal": true
+  },
+  {
+    "name": "same-shuffle-small-baseline",
+    "stage": "tactics",
+    "seed": 6,
+    "group": {
+      "composition": "small_draw",
+      "policy": "balanced",
+      "soul": "KINDNESS",
+      "opponent": "large_reply",
+      "seat": 0,
+      "intervention": "public_tactics"
+    },
+    "endpoint_equal": true
+  },
+  {
+    "name": "face-damage-without-finish",
+    "stage": "main",
+    "seed": 3,
+    "group": {
+      "composition": "small_draw",
+      "policy": "pressure",
+      "soul": "KINDNESS",
+      "opponent": "large_reply",
+      "seat": 0,
+      "intervention": "base"
+    },
+    "endpoint_equal": true
+  },
+  {
+    "name": "no-opener-but-recovered",
+    "stage": "tactics",
+    "seed": 0,
+    "group": {
+      "composition": "heavy",
+      "policy": "balanced",
+      "soul": "KINDNESS",
+      "opponent": "mid",
+      "seat": 0,
+      "intervention": "public_tactics"
+    },
+    "endpoint_equal": true
+  },
+  {
+    "name": "extra-draw-capacity-and-fatigue",
+    "stage": "counterfactual",
+    "seed": 3,
+    "group": {
+      "composition": "middle_draw",
+      "policy": "balanced",
+      "soul": "KINDNESS",
+      "opponent": "large_reply",
+      "seat": 1,
+      "intervention": "extra_natural"
+    },
+    "endpoint_equal": true
+  }
+]

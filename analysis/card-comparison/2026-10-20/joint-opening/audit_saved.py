@@ -16,7 +16,7 @@ HERE = Path(__file__).resolve().parent
 GROUP_KEYS = ('composition', 'policy', 'soul', 'opponent', 'seat', 'intervention')
 KNOWN_INTERVENTIONS = {
     'base', 'no_bonus_draw', 'extra_natural', 'hand10', 'slots6',
-    'no_foe_hero_heal', 'hp_loss', 'soul_first', 'no_t1_draw',
+    'no_foe_hero_heal', 'hp_loss', 'soul_first', 'no_t1_draw', 'public_tactics',
 }
 
 

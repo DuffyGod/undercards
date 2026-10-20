@@ -1,0 +1,12 @@
+{
+  "new_tests_before_trace_only_fix": 17,
+  "selected_complete_replays_after_trace_fix": 7,
+  "all_selected_endpoints_and_snapshots_match": true,
+  "independent_saved_accounting_records": 26112,
+  "query_examples": 5,
+  "scope": "Only this new study; no claim of full repository tests or real-world calibration",
+  "failures_retained": [
+    "audit-before-public-tactics-schema.json",
+    "witnesses-first-attempt/failure.json"
+  ]
+}

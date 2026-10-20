@@ -1,0 +1,1378 @@
+{
+  "version": "joint-opening-0.3",
+  "source_commit": "ff2f0fb74f6659d2d4f212df3cca0cbf5487399e",
+  "stage": "tactics",
+  "samples": 128,
+  "horizon": 8,
+  "seed_start": 0,
+  "groups": [
+    {
+      "composition": "small_draw",
+      "policy": "balanced",
+      "soul": "KINDNESS",
+      "opponent": "mid",
+      "seat": 0,
+      "intervention": "public_tactics"
+    },
+    {
+      "composition": "small_draw",
+      "policy": "balanced",
+      "soul": "KINDNESS",
+      "opponent": "mid",
+      "seat": 1,
+      "intervention": "public_tactics"
+    },
+    {
+      "composition": "small_draw",
+      "policy": "balanced",
+      "soul": "KINDNESS",
+      "opponent": "large_reply",
+      "seat": 0,
+      "intervention": "public_tactics"
+    },
+    {
+      "composition": "small_draw",
+      "policy": "balanced",
+      "soul": "KINDNESS",
+      "opponent": "large_reply",
+      "seat": 1,
+      "intervention": "public_tactics"
+    },
+    {
+      "composition": "middle_draw",
+      "policy": "balanced",
+      "soul": "KINDNESS",
+      "opponent": "mid",
+      "seat": 0,
+      "intervention": "public_tactics"
+    },
+    {
+      "composition": "middle_draw",
+      "policy": "balanced",
+      "soul": "KINDNESS",
+      "opponent": "mid",
+      "seat": 1,
+      "intervention": "public_tactics"
+    },
+    {
+      "composition": "middle_draw",
+      "policy": "balanced",
+      "soul": "KINDNESS",
+      "opponent": "large_reply",
+      "seat": 0,
+      "intervention": "public_tactics"
+    },
+    {
+      "composition": "middle_draw",
+      "policy": "balanced",
+      "soul": "KINDNESS",
+      "opponent": "large_reply",
+      "seat": 1,
+      "intervention": "public_tactics"
+    },
+    {
+      "composition": "heavy",
+      "policy": "balanced",
+      "soul": "KINDNESS",
+      "opponent": "mid",
+      "seat": 0,
+      "intervention": "public_tactics"
+    },
+    {
+      "composition": "heavy",
+      "policy": "balanced",
+      "soul": "KINDNESS",
+      "opponent": "mid",
+      "seat": 1,
+      "intervention": "public_tactics"
+    },
+    {
+      "composition": "heavy",
+      "policy": "balanced",
+      "soul": "KINDNESS",
+      "opponent": "large_reply",
+      "seat": 0,
+      "intervention": "public_tactics"
+    },
+    {
+      "composition": "heavy",
+      "policy": "balanced",
+      "soul": "KINDNESS",
+      "opponent": "large_reply",
+      "seat": 1,
+      "intervention": "public_tactics"
+    }
+  ],
+  "compositions": {
+    "small": [
+      {
+        "slot": 0,
+        "cid": 196,
+        "name": "Tiny Froggit",
+        "cost": 0
+      },
+      {
+        "slot": 1,
+        "cid": 196,
+        "name": "Tiny Froggit",
+        "cost": 0
+      },
+      {
+        "slot": 2,
+        "cid": 196,
+        "name": "Tiny Froggit",
+        "cost": 0
+      },
+      {
+        "slot": 3,
+        "cid": 2,
+        "name": "Froggit",
+        "cost": 2
+      },
+      {
+        "slot": 4,
+        "cid": 2,
+        "name": "Froggit",
+        "cost": 2
+      },
+      {
+        "slot": 5,
+        "cid": 2,
+        "name": "Froggit",
+        "cost": 2
+      },
+      {
+        "slot": 6,
+        "cid": 4,
+        "name": "Moldsmal",
+        "cost": 2
+      },
+      {
+        "slot": 7,
+        "cid": 4,
+        "name": "Moldsmal",
+        "cost": 2
+      },
+      {
+        "slot": 8,
+        "cid": 4,
+        "name": "Moldsmal",
+        "cost": 2
+      },
+      {
+        "slot": 9,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 10,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 11,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 12,
+        "cid": 175,
+        "name": "Charles",
+        "cost": 2
+      },
+      {
+        "slot": 13,
+        "cid": 175,
+        "name": "Charles",
+        "cost": 2
+      },
+      {
+        "slot": 14,
+        "cid": 175,
+        "name": "Charles",
+        "cost": 2
+      },
+      {
+        "slot": 15,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 16,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 17,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 18,
+        "cid": 187,
+        "name": "Candy Dish",
+        "cost": 3
+      },
+      {
+        "slot": 19,
+        "cid": 187,
+        "name": "Candy Dish",
+        "cost": 3
+      },
+      {
+        "slot": 20,
+        "cid": 187,
+        "name": "Candy Dish",
+        "cost": 3
+      },
+      {
+        "slot": 21,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 22,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 23,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 24,
+        "cid": 17,
+        "name": "Knight Knight",
+        "cost": 9
+      }
+    ],
+    "small_draw": [
+      {
+        "slot": 0,
+        "cid": 196,
+        "name": "Tiny Froggit",
+        "cost": 0
+      },
+      {
+        "slot": 1,
+        "cid": 196,
+        "name": "Tiny Froggit",
+        "cost": 0
+      },
+      {
+        "slot": 2,
+        "cid": 196,
+        "name": "Tiny Froggit",
+        "cost": 0
+      },
+      {
+        "slot": 3,
+        "cid": 2,
+        "name": "Froggit",
+        "cost": 2
+      },
+      {
+        "slot": 4,
+        "cid": 2,
+        "name": "Froggit",
+        "cost": 2
+      },
+      {
+        "slot": 5,
+        "cid": 2,
+        "name": "Froggit",
+        "cost": 2
+      },
+      {
+        "slot": 6,
+        "cid": 4,
+        "name": "Moldsmal",
+        "cost": 2
+      },
+      {
+        "slot": 7,
+        "cid": 4,
+        "name": "Moldsmal",
+        "cost": 2
+      },
+      {
+        "slot": 8,
+        "cid": 4,
+        "name": "Moldsmal",
+        "cost": 2
+      },
+      {
+        "slot": 9,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 10,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 11,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 12,
+        "cid": 175,
+        "name": "Charles",
+        "cost": 2
+      },
+      {
+        "slot": 13,
+        "cid": 175,
+        "name": "Charles",
+        "cost": 2
+      },
+      {
+        "slot": 14,
+        "cid": 175,
+        "name": "Charles",
+        "cost": 2
+      },
+      {
+        "slot": 15,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 16,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 17,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 18,
+        "cid": 225,
+        "name": "Fishing Rod",
+        "cost": 3
+      },
+      {
+        "slot": 19,
+        "cid": 225,
+        "name": "Fishing Rod",
+        "cost": 3
+      },
+      {
+        "slot": 20,
+        "cid": 225,
+        "name": "Fishing Rod",
+        "cost": 3
+      },
+      {
+        "slot": 21,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 22,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 23,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 24,
+        "cid": 17,
+        "name": "Knight Knight",
+        "cost": 9
+      }
+    ],
+    "middle": [
+      {
+        "slot": 0,
+        "cid": 243,
+        "name": "Bench",
+        "cost": 5
+      },
+      {
+        "slot": 1,
+        "cid": 243,
+        "name": "Bench",
+        "cost": 5
+      },
+      {
+        "slot": 2,
+        "cid": 243,
+        "name": "Bench",
+        "cost": 5
+      },
+      {
+        "slot": 3,
+        "cid": 2,
+        "name": "Froggit",
+        "cost": 2
+      },
+      {
+        "slot": 4,
+        "cid": 2,
+        "name": "Froggit",
+        "cost": 2
+      },
+      {
+        "slot": 5,
+        "cid": 2,
+        "name": "Froggit",
+        "cost": 2
+      },
+      {
+        "slot": 6,
+        "cid": 4,
+        "name": "Moldsmal",
+        "cost": 2
+      },
+      {
+        "slot": 7,
+        "cid": 4,
+        "name": "Moldsmal",
+        "cost": 2
+      },
+      {
+        "slot": 8,
+        "cid": 4,
+        "name": "Moldsmal",
+        "cost": 2
+      },
+      {
+        "slot": 9,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 10,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 11,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 12,
+        "cid": 168,
+        "name": "Sad Dragon",
+        "cost": 6
+      },
+      {
+        "slot": 13,
+        "cid": 168,
+        "name": "Sad Dragon",
+        "cost": 6
+      },
+      {
+        "slot": 14,
+        "cid": 168,
+        "name": "Sad Dragon",
+        "cost": 6
+      },
+      {
+        "slot": 15,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 16,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 17,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 18,
+        "cid": 187,
+        "name": "Candy Dish",
+        "cost": 3
+      },
+      {
+        "slot": 19,
+        "cid": 187,
+        "name": "Candy Dish",
+        "cost": 3
+      },
+      {
+        "slot": 20,
+        "cid": 187,
+        "name": "Candy Dish",
+        "cost": 3
+      },
+      {
+        "slot": 21,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 22,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 23,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 24,
+        "cid": 17,
+        "name": "Knight Knight",
+        "cost": 9
+      }
+    ],
+    "middle_draw": [
+      {
+        "slot": 0,
+        "cid": 243,
+        "name": "Bench",
+        "cost": 5
+      },
+      {
+        "slot": 1,
+        "cid": 243,
+        "name": "Bench",
+        "cost": 5
+      },
+      {
+        "slot": 2,
+        "cid": 243,
+        "name": "Bench",
+        "cost": 5
+      },
+      {
+        "slot": 3,
+        "cid": 2,
+        "name": "Froggit",
+        "cost": 2
+      },
+      {
+        "slot": 4,
+        "cid": 2,
+        "name": "Froggit",
+        "cost": 2
+      },
+      {
+        "slot": 5,
+        "cid": 2,
+        "name": "Froggit",
+        "cost": 2
+      },
+      {
+        "slot": 6,
+        "cid": 4,
+        "name": "Moldsmal",
+        "cost": 2
+      },
+      {
+        "slot": 7,
+        "cid": 4,
+        "name": "Moldsmal",
+        "cost": 2
+      },
+      {
+        "slot": 8,
+        "cid": 4,
+        "name": "Moldsmal",
+        "cost": 2
+      },
+      {
+        "slot": 9,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 10,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 11,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 12,
+        "cid": 168,
+        "name": "Sad Dragon",
+        "cost": 6
+      },
+      {
+        "slot": 13,
+        "cid": 168,
+        "name": "Sad Dragon",
+        "cost": 6
+      },
+      {
+        "slot": 14,
+        "cid": 168,
+        "name": "Sad Dragon",
+        "cost": 6
+      },
+      {
+        "slot": 15,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 16,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 17,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 18,
+        "cid": 225,
+        "name": "Fishing Rod",
+        "cost": 3
+      },
+      {
+        "slot": 19,
+        "cid": 225,
+        "name": "Fishing Rod",
+        "cost": 3
+      },
+      {
+        "slot": 20,
+        "cid": 225,
+        "name": "Fishing Rod",
+        "cost": 3
+      },
+      {
+        "slot": 21,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 22,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 23,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 24,
+        "cid": 17,
+        "name": "Knight Knight",
+        "cost": 9
+      }
+    ],
+    "heavy": [
+      {
+        "slot": 0,
+        "cid": 243,
+        "name": "Bench",
+        "cost": 5
+      },
+      {
+        "slot": 1,
+        "cid": 243,
+        "name": "Bench",
+        "cost": 5
+      },
+      {
+        "slot": 2,
+        "cid": 243,
+        "name": "Bench",
+        "cost": 5
+      },
+      {
+        "slot": 3,
+        "cid": 17,
+        "name": "Knight Knight",
+        "cost": 9
+      },
+      {
+        "slot": 4,
+        "cid": 17,
+        "name": "Knight Knight",
+        "cost": 9
+      },
+      {
+        "slot": 5,
+        "cid": 44,
+        "name": "Gyftrot",
+        "cost": 8
+      },
+      {
+        "slot": 6,
+        "cid": 44,
+        "name": "Gyftrot",
+        "cost": 8
+      },
+      {
+        "slot": 7,
+        "cid": 21,
+        "name": "Tsunderplane",
+        "cost": 7
+      },
+      {
+        "slot": 8,
+        "cid": 21,
+        "name": "Tsunderplane",
+        "cost": 7
+      },
+      {
+        "slot": 9,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 10,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 11,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 12,
+        "cid": 168,
+        "name": "Sad Dragon",
+        "cost": 6
+      },
+      {
+        "slot": 13,
+        "cid": 168,
+        "name": "Sad Dragon",
+        "cost": 6
+      },
+      {
+        "slot": 14,
+        "cid": 168,
+        "name": "Sad Dragon",
+        "cost": 6
+      },
+      {
+        "slot": 15,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 16,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 17,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 18,
+        "cid": 187,
+        "name": "Candy Dish",
+        "cost": 3
+      },
+      {
+        "slot": 19,
+        "cid": 187,
+        "name": "Candy Dish",
+        "cost": 3
+      },
+      {
+        "slot": 20,
+        "cid": 187,
+        "name": "Candy Dish",
+        "cost": 3
+      },
+      {
+        "slot": 21,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 22,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 23,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 24,
+        "cid": 17,
+        "name": "Knight Knight",
+        "cost": 9
+      }
+    ],
+    "middle_heal": [
+      {
+        "slot": 0,
+        "cid": 243,
+        "name": "Bench",
+        "cost": 5
+      },
+      {
+        "slot": 1,
+        "cid": 243,
+        "name": "Bench",
+        "cost": 5
+      },
+      {
+        "slot": 2,
+        "cid": 243,
+        "name": "Bench",
+        "cost": 5
+      },
+      {
+        "slot": 3,
+        "cid": 2,
+        "name": "Froggit",
+        "cost": 2
+      },
+      {
+        "slot": 4,
+        "cid": 2,
+        "name": "Froggit",
+        "cost": 2
+      },
+      {
+        "slot": 5,
+        "cid": 2,
+        "name": "Froggit",
+        "cost": 2
+      },
+      {
+        "slot": 6,
+        "cid": 91,
+        "name": "Heal",
+        "cost": 1
+      },
+      {
+        "slot": 7,
+        "cid": 91,
+        "name": "Heal",
+        "cost": 1
+      },
+      {
+        "slot": 8,
+        "cid": 91,
+        "name": "Heal",
+        "cost": 1
+      },
+      {
+        "slot": 9,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 10,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 11,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 12,
+        "cid": 168,
+        "name": "Sad Dragon",
+        "cost": 6
+      },
+      {
+        "slot": 13,
+        "cid": 168,
+        "name": "Sad Dragon",
+        "cost": 6
+      },
+      {
+        "slot": 14,
+        "cid": 168,
+        "name": "Sad Dragon",
+        "cost": 6
+      },
+      {
+        "slot": 15,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 16,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 17,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 18,
+        "cid": 225,
+        "name": "Fishing Rod",
+        "cost": 3
+      },
+      {
+        "slot": 19,
+        "cid": 225,
+        "name": "Fishing Rod",
+        "cost": 3
+      },
+      {
+        "slot": 20,
+        "cid": 225,
+        "name": "Fishing Rod",
+        "cost": 3
+      },
+      {
+        "slot": 21,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 22,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 23,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 24,
+        "cid": 17,
+        "name": "Knight Knight",
+        "cost": 9
+      }
+    ],
+    "small_anchor": [
+      {
+        "slot": 0,
+        "cid": 243,
+        "name": "Bench",
+        "cost": 5
+      },
+      {
+        "slot": 1,
+        "cid": 243,
+        "name": "Bench",
+        "cost": 5
+      },
+      {
+        "slot": 2,
+        "cid": 243,
+        "name": "Bench",
+        "cost": 5
+      },
+      {
+        "slot": 3,
+        "cid": 2,
+        "name": "Froggit",
+        "cost": 2
+      },
+      {
+        "slot": 4,
+        "cid": 2,
+        "name": "Froggit",
+        "cost": 2
+      },
+      {
+        "slot": 5,
+        "cid": 2,
+        "name": "Froggit",
+        "cost": 2
+      },
+      {
+        "slot": 6,
+        "cid": 4,
+        "name": "Moldsmal",
+        "cost": 2
+      },
+      {
+        "slot": 7,
+        "cid": 4,
+        "name": "Moldsmal",
+        "cost": 2
+      },
+      {
+        "slot": 8,
+        "cid": 4,
+        "name": "Moldsmal",
+        "cost": 2
+      },
+      {
+        "slot": 9,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 10,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 11,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 12,
+        "cid": 175,
+        "name": "Charles",
+        "cost": 2
+      },
+      {
+        "slot": 13,
+        "cid": 175,
+        "name": "Charles",
+        "cost": 2
+      },
+      {
+        "slot": 14,
+        "cid": 175,
+        "name": "Charles",
+        "cost": 2
+      },
+      {
+        "slot": 15,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 16,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 17,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 18,
+        "cid": 225,
+        "name": "Fishing Rod",
+        "cost": 3
+      },
+      {
+        "slot": 19,
+        "cid": 225,
+        "name": "Fishing Rod",
+        "cost": 3
+      },
+      {
+        "slot": 20,
+        "cid": 225,
+        "name": "Fishing Rod",
+        "cost": 3
+      },
+      {
+        "slot": 21,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 22,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 23,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 24,
+        "cid": 17,
+        "name": "Knight Knight",
+        "cost": 9
+      }
+    ],
+    "small_reach": [
+      {
+        "slot": 0,
+        "cid": 21,
+        "name": "Tsunderplane",
+        "cost": 7
+      },
+      {
+        "slot": 1,
+        "cid": 21,
+        "name": "Tsunderplane",
+        "cost": 7
+      },
+      {
+        "slot": 2,
+        "cid": 168,
+        "name": "Sad Dragon",
+        "cost": 6
+      },
+      {
+        "slot": 3,
+        "cid": 2,
+        "name": "Froggit",
+        "cost": 2
+      },
+      {
+        "slot": 4,
+        "cid": 2,
+        "name": "Froggit",
+        "cost": 2
+      },
+      {
+        "slot": 5,
+        "cid": 2,
+        "name": "Froggit",
+        "cost": 2
+      },
+      {
+        "slot": 6,
+        "cid": 4,
+        "name": "Moldsmal",
+        "cost": 2
+      },
+      {
+        "slot": 7,
+        "cid": 4,
+        "name": "Moldsmal",
+        "cost": 2
+      },
+      {
+        "slot": 8,
+        "cid": 4,
+        "name": "Moldsmal",
+        "cost": 2
+      },
+      {
+        "slot": 9,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 10,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 11,
+        "cid": 602,
+        "name": "Rock Pet",
+        "cost": 2
+      },
+      {
+        "slot": 12,
+        "cid": 175,
+        "name": "Charles",
+        "cost": 2
+      },
+      {
+        "slot": 13,
+        "cid": 175,
+        "name": "Charles",
+        "cost": 2
+      },
+      {
+        "slot": 14,
+        "cid": 175,
+        "name": "Charles",
+        "cost": 2
+      },
+      {
+        "slot": 15,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 16,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 17,
+        "cid": 377,
+        "name": "Ranger Rudinn",
+        "cost": 3
+      },
+      {
+        "slot": 18,
+        "cid": 225,
+        "name": "Fishing Rod",
+        "cost": 3
+      },
+      {
+        "slot": 19,
+        "cid": 225,
+        "name": "Fishing Rod",
+        "cost": 3
+      },
+      {
+        "slot": 20,
+        "cid": 225,
+        "name": "Fishing Rod",
+        "cost": 3
+      },
+      {
+        "slot": 21,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 22,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 23,
+        "cid": 15,
+        "name": "Aaron",
+        "cost": 5
+      },
+      {
+        "slot": 24,
+        "cid": 17,
+        "name": "Knight Knight",
+        "cost": 9
+      }
+    ]
+  },
+  "opponents": {
+    "mid": [
+      "middle",
+      "INTEGRITY",
+      "balanced"
+    ],
+    "large_reply": [
+      "heavy",
+      "KINDNESS",
+      "balanced"
+    ],
+    "draw_reply": [
+      "middle_draw",
+      "KINDNESS",
+      "balanced"
+    ]
+  },
+  "policy_parameters": {
+    "face_price_pressure": 1,
+    "face_price_balanced": 0.25,
+    "gold_price_pressure": 0.25,
+    "gold_price_balanced": 0.5,
+    "hand_price_low": 0.5,
+    "hand_price_other": 0.1,
+    "draw_price": 0.6
+  },
+  "default_config": {
+    "horizon": 8,
+    "hand_cap": 7,
+    "slots": 4,
+    "first_turn_draw": true,
+    "extra_natural_draw": 0,
+    "bonus_draw": true,
+    "healing": true,
+    "hero_healing": [
+      true,
+      true
+    ],
+    "knight_damage": "packet",
+    "end_order": "draw_then_soul",
+    "public_tactics": false,
+    "combat_cap": 25000
+  },
+  "interpretation": "Uniform shuffles of these legal compositions and causal heuristics only; no real ladder frequencies, no optimized decks.",
+  "assumptions": [
+    "no mulligan",
+    "initial 3; t1 draw is unverified convention",
+    "no artifacts",
+    "restricted implemented card pool",
+    "ordinary attacks chosen by declared one-turn heuristic, not future minimax",
+    "Kindness/turn-end draw ordering unverified if fatigue occurs",
+    "Knight overkill packet default, alternate hp_loss",
+    "global cutoff after both nth turns; seats must remain separate"
+  ]
+}
