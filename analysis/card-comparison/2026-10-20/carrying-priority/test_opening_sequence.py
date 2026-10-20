@@ -50,5 +50,17 @@ class SequenceChecks(unittest.TestCase):
         lethal=Game((Player(field=(Unit(0,15,6,5,5,ready=True),Unit(1,15,6,5,5,ready=True))),Player(hp=3)))
         self.assertTrue(all(len(path)<=1 for g,path in attack_endpoints(lethal,0)))
 
+    def test_draw_can_enable_a_real_earlier_deployment(self):
+        early=OpeningGraph(CARDS,'draw_accelerates_two','empty',seat='second').evaluate(SCALE,.25,.5,1.)
+        later=OpeningGraph(CARDS,'normal_two_later','empty',seat='second').evaluate(SCALE,.25,.5,1.)
+        frog_turns=[]
+        for r in (early,later):
+            frog_turns.append([event['own_turn'] for event in r['witness'] if event['actor']==0
+                               for play in event['plays'] if play['cid']==2])
+        self.assertEqual(frog_turns,[[3],[4]])
+        self.assertEqual(early['final']['players'][0]['cash'],later['final']['players'][0]['cash'])
+        self.assertEqual(early['final']['players'][1]['hp'],later['final']['players'][1]['hp']-1)
+        self.assertAlmostEqual(early['value']-later['value'],SCALE.value(5,5)-SCALE.value(6,5)+.25+1.)
+
 
 if __name__=='__main__':unittest.main()

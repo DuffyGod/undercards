@@ -34,6 +34,8 @@ def main():
                 for horizon in horizons:
                     key=f'{seat}/{soul}/{enemy}/t{horizon}';out[key]={}
                     for policy in policies:
+                        if seat=='first' and policy in ('draw_accelerates_two','normal_two_later'):
+                            continue  # These exact 12G scripts are affordable only second.
                         try:g=OpeningGraph(cards,policy,enemy,seat,soul,horizon)
                         except ValueError as error:
                             failures.append(dict(case=key,policy=policy,error=str(error)));continue
@@ -50,6 +52,7 @@ def main():
                 initial_board='Both empty; both30HP and1G',enemy_soul='INTEGRITY',
                 arrival_assumption='Three initial cards, one known draw each own turn including t1; no mulligan; Bench draws from SAME sequence',
                 search_scope='Perfect-information optimal ordinary combat, with prescribed deployments BEFORE combat; no alternative plays, spells, artifacts or hidden hands',
+                second_only_policies=['draw_accelerates_two','normal_two_later'],
                 objective='Lexicographic match result then F own minus F enemy, nonlethal HP difference, own cash and homogeneous remaining-hand price',
                 interpretation='Conditional mechanisms and carrying heuristics, not match win rates or optimized deck curves',
                 raw_record_scope='Each evaluated price saves its selected complete minimax witness and endpoint; full game DAGs are counted but not archived')

@@ -30,6 +30,8 @@ POLICIES={
     'bridge_draw_5':{1:(602,),3:(243,)},
     'staggered_three':{1:(602,),3:(15,),4:(187,)},
     'late_same_three':{4:(602,15,187)},
+    'draw_accelerates_two':{1:(602,),3:(243,2),4:(187,)},
+    'normal_two_later':{1:(602,),3:(15,),4:(2,187)},
 }
 ENEMY_SCRIPTS={'empty':{},'two_low':{1:(602,),2:(4,)},
                'mid_pressure':{1:(602,),3:(15,)},'save_heavy':{4:(38,)}}
