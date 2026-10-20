@@ -187,7 +187,8 @@ class OpeningGraph:
         self.edges[g]=tuple(children.items())
         for child in children:self._build(child)
 
-    def evaluate(self,scale,face_price,cash_price,hand_price):
+    def evaluate(self,scale,face_price,cash_price,hand_price,minimum_hp=1):
+        integer(minimum_hp,'endpoint hero HP floor',1,30)
         @lru_cache(None)
         def solve(g):
             if self.edges[g] is None:
@@ -195,12 +196,13 @@ class OpeningGraph:
                 rank=1 if b.hp<=0<a.hp else -1 if a.hp<=0 else 0
                 asset=(sum(scale.value(u.a,u.h) for u in a.field)-sum(scale.value(u.a,u.h) for u in b.field)+
                        face_price*(a.hp-b.hp)+cash_price*a.cash+hand_price*len(a.hand))
-                return (rank,asset),g,None
+                return (rank,int(a.hp>=minimum_hp),asset),g,None
             choose=max if phase_actor(g.phase,self.seat)==0 else min
             candidate=choose(((solve(child)[0],child,event) for child,event in self.edges[g]),key=lambda r:r[0])
             return candidate
         value,_,_=solve(self.root);path=[];node=self.root
         while self.edges[node] is not None:
             _,child,event=solve(node);path.append(event);node=child
-        return dict(terminal_result=value[0],value=value[1],final=asdict(node),witness=path,
+        return dict(terminal_result=value[0],goal_guaranteed=bool(value[1]),minimum_hp=minimum_hp,
+                    value=value[2] if value[1] else None,final=asdict(node),witness=path,
                     meaning='One worst-value witness of optimal ordinary combat under FIXED known deployment scripts; not separate HP/body guarantees')
