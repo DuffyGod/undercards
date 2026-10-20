@@ -1,0 +1,26 @@
+{
+  "own_before": [],
+  "own_after": [
+    {
+      "a": 6,
+      "h": 10
+    }
+  ],
+  "enemy_before": [
+    {
+      "a": 7,
+      "h": 4
+    }
+  ],
+  "enemy_after": [
+    {
+      "a": 1,
+      "h": 4
+    }
+  ],
+  "paid_gold": 8,
+  "events": {},
+  "valuation_stage": "deployment",
+  "scope": "Agent Toriel derivation for arbitrary7/4 target outside the frozen example roots; no simulation needed",
+  "unpriced": []
+}

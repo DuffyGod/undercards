@@ -1,6 +1,6 @@
 # Undercards 通用 Value 建模
 
-当前入口：[联合开局携带指南](analysis/card-comparison/2026-10-20/joint-opening/GUIDE.md)与[程序/证据](analysis/card-comparison/2026-10-20/joint-opening/README.md)。现已连接25张组成、随机上手、自由部署、金币、手牌/格子上限、生命回复和补牌，比较15种真实卡的有限开局。新结果撤销“3–6G主体”的普遍默认，改按早场覆盖、回场/收尾用途和风险目标选择；不优化推荐完整卡组，不将模拟频率当实战胜率。[此前固定计划](analysis/card-comparison/2026-10-20/carrying-priority/README.md)、[12G部署](analysis/card-comparison/2026-10-20/README.md)和[19日单卡研究](analysis/card-comparison/2026-10-19/README.md)保留，不重做。
+当前入口：[Agent主导逐卡多维模型](analysis/card-assessment/2026-10-20/README.md)与[数值标准/携带门槛](analysis/card-assessment/2026-10-20/MODEL.md)。研究流程已纠正为从全卡池读卡、推演用途和替代候选，再由通用端点账本定价/反证；不要求先实现对局机制。已有755卡目录、49卡条件档案和197卡旧DeepSeek材料索引，未审阅项不冒充裸体整卡分。DeepSeek新用途协议已备，当前凭据缺失，未发新请求。[联合开局](analysis/card-comparison/2026-10-20/joint-opening/README.md)及此前研究保留为辅助证据；暂停搜索推荐完整卡组。
 
 低成本、可解释、对数值差异敏感的随从评价研究。主智能体负责数值模型；DeepSeek承担批量机制拆解、跨批检查、反例提案和代码审查。当前模型是有明确边界的启发式报价程序，仍不是完整卡池强度榜。
 

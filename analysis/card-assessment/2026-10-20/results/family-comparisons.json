@@ -1,0 +1,2272 @@
+{
+  "plane_hotdog": [
+    {
+      "prices": {
+        "face": 0.25,
+        "card": 1.0,
+        "gold": 1.0
+      },
+      "wide_plane": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 1
+            },
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 4,
+              "source": "focal",
+              "armor": false
+            }
+          ],
+          "enemy_after": [],
+          "paid_gold": 7,
+          "events": {
+            "hero_damage": 3
+          },
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 8.855775624282726,
+          "net_payment_margin": 1.8557756242827264,
+          "decline_or_play_surplus": 1.8557756242827264,
+          "coefficients": {
+            "body": 8.105775624282726,
+            "face": 3,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.25,
+            "card": 1.0,
+            "gold": 1.0
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "wide_hotdog": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 1
+            },
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 7,
+              "source": "focal"
+            }
+          ],
+          "enemy_after": [
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "paid_gold": 7,
+          "events": {},
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 7.59081131261324,
+          "net_payment_margin": 0.5908113126132397,
+          "decline_or_play_surplus": 0.5908113126132397,
+          "coefficients": {
+            "body": 7.59081131261324,
+            "face": 0,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.25,
+            "card": 1.0,
+            "gold": 1.0
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "single_plane": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 5
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 1,
+              "source": "focal",
+              "armor": false
+            }
+          ],
+          "enemy_after": [],
+          "paid_gold": 7,
+          "events": {
+            "hero_damage": 3
+          },
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "action": "attack ordinary monster"
+        },
+        "quote": {
+          "absolute_gross": 6.613331805224502,
+          "net_payment_margin": -0.3866681947754982,
+          "decline_or_play_surplus": 0.0,
+          "coefficients": {
+            "body": 5.863331805224502,
+            "face": 3,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.25,
+            "card": 1.0,
+            "gold": 1.0
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "single_hotdog": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 5
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 7,
+              "source": "focal"
+            }
+          ],
+          "enemy_after": [
+            {
+              "a": 3,
+              "h": 2
+            }
+          ],
+          "paid_gold": 7,
+          "events": {},
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 7.533318105969542,
+          "net_payment_margin": 0.533318105969542,
+          "decline_or_play_surplus": 0.533318105969542,
+          "coefficients": {
+            "body": 7.533318105969542,
+            "face": 0,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.25,
+            "card": 1.0,
+            "gold": 1.0
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "optional_delta_wide": 1.2649643116694866,
+      "optional_delta_single": -0.533318105969542,
+      "required_wide_fraction": 0.2965708282182602,
+      "scope": "Only two specified ordinary target conditions, current causal action choices, equal extra holding/replacement cost. Fraction unknown; not real meta frequency."
+    },
+    {
+      "prices": {
+        "face": 0.15,
+        "card": 0.0,
+        "gold": 0.5
+      },
+      "wide_plane": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 1
+            },
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 4,
+              "source": "focal",
+              "armor": false
+            }
+          ],
+          "enemy_after": [],
+          "paid_gold": 7,
+          "events": {
+            "hero_damage": 3
+          },
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 8.555775624282726,
+          "net_payment_margin": 5.055775624282726,
+          "decline_or_play_surplus": 5.055775624282726,
+          "coefficients": {
+            "body": 8.105775624282726,
+            "face": 3,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.15,
+            "card": 0.0,
+            "gold": 0.5
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "wide_hotdog": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 1
+            },
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 7,
+              "source": "focal"
+            }
+          ],
+          "enemy_after": [
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "paid_gold": 7,
+          "events": {},
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 7.59081131261324,
+          "net_payment_margin": 4.09081131261324,
+          "decline_or_play_surplus": 4.09081131261324,
+          "coefficients": {
+            "body": 7.59081131261324,
+            "face": 0,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.15,
+            "card": 0.0,
+            "gold": 0.5
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "single_plane": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 5
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 1,
+              "source": "focal",
+              "armor": false
+            }
+          ],
+          "enemy_after": [],
+          "paid_gold": 7,
+          "events": {
+            "hero_damage": 3
+          },
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "action": "attack ordinary monster"
+        },
+        "quote": {
+          "absolute_gross": 6.313331805224502,
+          "net_payment_margin": 2.813331805224502,
+          "decline_or_play_surplus": 2.813331805224502,
+          "coefficients": {
+            "body": 5.863331805224502,
+            "face": 3,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.15,
+            "card": 0.0,
+            "gold": 0.5
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "single_hotdog": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 5
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 7,
+              "source": "focal"
+            }
+          ],
+          "enemy_after": [
+            {
+              "a": 3,
+              "h": 2
+            }
+          ],
+          "paid_gold": 7,
+          "events": {},
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 7.533318105969542,
+          "net_payment_margin": 4.033318105969542,
+          "decline_or_play_surplus": 4.033318105969542,
+          "coefficients": {
+            "body": 7.533318105969542,
+            "face": 0,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.15,
+            "card": 0.0,
+            "gold": 0.5
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "optional_delta_wide": 0.9649643116694859,
+      "optional_delta_single": -1.21998630074504,
+      "required_wide_fraction": 0.5583587536547878,
+      "scope": "Only two specified ordinary target conditions, current causal action choices, equal extra holding/replacement cost. Fraction unknown; not real meta frequency."
+    },
+    {
+      "prices": {
+        "face": 0.15,
+        "card": 0.0,
+        "gold": 1.0
+      },
+      "wide_plane": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 1
+            },
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 4,
+              "source": "focal",
+              "armor": false
+            }
+          ],
+          "enemy_after": [],
+          "paid_gold": 7,
+          "events": {
+            "hero_damage": 3
+          },
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 8.555775624282726,
+          "net_payment_margin": 1.5557756242827256,
+          "decline_or_play_surplus": 1.5557756242827256,
+          "coefficients": {
+            "body": 8.105775624282726,
+            "face": 3,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.15,
+            "card": 0.0,
+            "gold": 1.0
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "wide_hotdog": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 1
+            },
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 7,
+              "source": "focal"
+            }
+          ],
+          "enemy_after": [
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "paid_gold": 7,
+          "events": {},
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 7.59081131261324,
+          "net_payment_margin": 0.5908113126132397,
+          "decline_or_play_surplus": 0.5908113126132397,
+          "coefficients": {
+            "body": 7.59081131261324,
+            "face": 0,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.15,
+            "card": 0.0,
+            "gold": 1.0
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "single_plane": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 5
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 1,
+              "source": "focal",
+              "armor": false
+            }
+          ],
+          "enemy_after": [],
+          "paid_gold": 7,
+          "events": {
+            "hero_damage": 3
+          },
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "action": "attack ordinary monster"
+        },
+        "quote": {
+          "absolute_gross": 6.313331805224502,
+          "net_payment_margin": -0.686668194775498,
+          "decline_or_play_surplus": 0.0,
+          "coefficients": {
+            "body": 5.863331805224502,
+            "face": 3,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.15,
+            "card": 0.0,
+            "gold": 1.0
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "single_hotdog": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 5
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 7,
+              "source": "focal"
+            }
+          ],
+          "enemy_after": [
+            {
+              "a": 3,
+              "h": 2
+            }
+          ],
+          "paid_gold": 7,
+          "events": {},
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 7.533318105969542,
+          "net_payment_margin": 0.533318105969542,
+          "decline_or_play_surplus": 0.533318105969542,
+          "coefficients": {
+            "body": 7.533318105969542,
+            "face": 0,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.15,
+            "card": 0.0,
+            "gold": 1.0
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "optional_delta_wide": 0.9649643116694859,
+      "optional_delta_single": -0.533318105969542,
+      "required_wide_fraction": 0.3559529896973209,
+      "scope": "Only two specified ordinary target conditions, current causal action choices, equal extra holding/replacement cost. Fraction unknown; not real meta frequency."
+    },
+    {
+      "prices": {
+        "face": 0.15,
+        "card": 2.0,
+        "gold": 0.5
+      },
+      "wide_plane": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 1
+            },
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 4,
+              "source": "focal",
+              "armor": false
+            }
+          ],
+          "enemy_after": [],
+          "paid_gold": 7,
+          "events": {
+            "hero_damage": 3
+          },
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 8.555775624282726,
+          "net_payment_margin": 5.055775624282726,
+          "decline_or_play_surplus": 5.055775624282726,
+          "coefficients": {
+            "body": 8.105775624282726,
+            "face": 3,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.15,
+            "card": 2.0,
+            "gold": 0.5
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "wide_hotdog": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 1
+            },
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 7,
+              "source": "focal"
+            }
+          ],
+          "enemy_after": [
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "paid_gold": 7,
+          "events": {},
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 7.59081131261324,
+          "net_payment_margin": 4.09081131261324,
+          "decline_or_play_surplus": 4.09081131261324,
+          "coefficients": {
+            "body": 7.59081131261324,
+            "face": 0,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.15,
+            "card": 2.0,
+            "gold": 0.5
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "single_plane": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 5
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 1,
+              "source": "focal",
+              "armor": false
+            }
+          ],
+          "enemy_after": [],
+          "paid_gold": 7,
+          "events": {
+            "hero_damage": 3
+          },
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "action": "attack ordinary monster"
+        },
+        "quote": {
+          "absolute_gross": 6.313331805224502,
+          "net_payment_margin": 2.813331805224502,
+          "decline_or_play_surplus": 2.813331805224502,
+          "coefficients": {
+            "body": 5.863331805224502,
+            "face": 3,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.15,
+            "card": 2.0,
+            "gold": 0.5
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "single_hotdog": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 5
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 7,
+              "source": "focal"
+            }
+          ],
+          "enemy_after": [
+            {
+              "a": 3,
+              "h": 2
+            }
+          ],
+          "paid_gold": 7,
+          "events": {},
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 7.533318105969542,
+          "net_payment_margin": 4.033318105969542,
+          "decline_or_play_surplus": 4.033318105969542,
+          "coefficients": {
+            "body": 7.533318105969542,
+            "face": 0,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.15,
+            "card": 2.0,
+            "gold": 0.5
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "optional_delta_wide": 0.9649643116694859,
+      "optional_delta_single": -1.21998630074504,
+      "required_wide_fraction": 0.5583587536547878,
+      "scope": "Only two specified ordinary target conditions, current causal action choices, equal extra holding/replacement cost. Fraction unknown; not real meta frequency."
+    },
+    {
+      "prices": {
+        "face": 0.15,
+        "card": 2.0,
+        "gold": 1.0
+      },
+      "wide_plane": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 1
+            },
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 4,
+              "source": "focal",
+              "armor": false
+            }
+          ],
+          "enemy_after": [],
+          "paid_gold": 7,
+          "events": {
+            "hero_damage": 3
+          },
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 8.555775624282726,
+          "net_payment_margin": 1.5557756242827256,
+          "decline_or_play_surplus": 1.5557756242827256,
+          "coefficients": {
+            "body": 8.105775624282726,
+            "face": 3,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.15,
+            "card": 2.0,
+            "gold": 1.0
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "wide_hotdog": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 1
+            },
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 7,
+              "source": "focal"
+            }
+          ],
+          "enemy_after": [
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "paid_gold": 7,
+          "events": {},
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 7.59081131261324,
+          "net_payment_margin": 0.5908113126132397,
+          "decline_or_play_surplus": 0.5908113126132397,
+          "coefficients": {
+            "body": 7.59081131261324,
+            "face": 0,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.15,
+            "card": 2.0,
+            "gold": 1.0
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "single_plane": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 5
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 1,
+              "source": "focal",
+              "armor": false
+            }
+          ],
+          "enemy_after": [],
+          "paid_gold": 7,
+          "events": {
+            "hero_damage": 3
+          },
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "action": "attack ordinary monster"
+        },
+        "quote": {
+          "absolute_gross": 6.313331805224502,
+          "net_payment_margin": -0.686668194775498,
+          "decline_or_play_surplus": 0.0,
+          "coefficients": {
+            "body": 5.863331805224502,
+            "face": 3,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.15,
+            "card": 2.0,
+            "gold": 1.0
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "single_hotdog": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 5
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 7,
+              "source": "focal"
+            }
+          ],
+          "enemy_after": [
+            {
+              "a": 3,
+              "h": 2
+            }
+          ],
+          "paid_gold": 7,
+          "events": {},
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 7.533318105969542,
+          "net_payment_margin": 0.533318105969542,
+          "decline_or_play_surplus": 0.533318105969542,
+          "coefficients": {
+            "body": 7.533318105969542,
+            "face": 0,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.15,
+            "card": 2.0,
+            "gold": 1.0
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "optional_delta_wide": 0.9649643116694859,
+      "optional_delta_single": -0.533318105969542,
+      "required_wide_fraction": 0.3559529896973209,
+      "scope": "Only two specified ordinary target conditions, current causal action choices, equal extra holding/replacement cost. Fraction unknown; not real meta frequency."
+    },
+    {
+      "prices": {
+        "face": 0.4,
+        "card": 0.0,
+        "gold": 0.5
+      },
+      "wide_plane": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 1
+            },
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 4,
+              "source": "focal",
+              "armor": false
+            }
+          ],
+          "enemy_after": [],
+          "paid_gold": 7,
+          "events": {
+            "hero_damage": 3
+          },
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 9.305775624282727,
+          "net_payment_margin": 5.805775624282727,
+          "decline_or_play_surplus": 5.805775624282727,
+          "coefficients": {
+            "body": 8.105775624282726,
+            "face": 3,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.4,
+            "card": 0.0,
+            "gold": 0.5
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "wide_hotdog": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 1
+            },
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 7,
+              "source": "focal"
+            }
+          ],
+          "enemy_after": [
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "paid_gold": 7,
+          "events": {},
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 7.59081131261324,
+          "net_payment_margin": 4.09081131261324,
+          "decline_or_play_surplus": 4.09081131261324,
+          "coefficients": {
+            "body": 7.59081131261324,
+            "face": 0,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.4,
+            "card": 0.0,
+            "gold": 0.5
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "single_plane": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 5
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 1,
+              "source": "focal",
+              "armor": false
+            }
+          ],
+          "enemy_after": [],
+          "paid_gold": 7,
+          "events": {
+            "hero_damage": 3
+          },
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "action": "attack ordinary monster"
+        },
+        "quote": {
+          "absolute_gross": 7.063331805224502,
+          "net_payment_margin": 3.563331805224502,
+          "decline_or_play_surplus": 3.563331805224502,
+          "coefficients": {
+            "body": 5.863331805224502,
+            "face": 3,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.4,
+            "card": 0.0,
+            "gold": 0.5
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "single_hotdog": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 5
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 7,
+              "source": "focal"
+            }
+          ],
+          "enemy_after": [
+            {
+              "a": 3,
+              "h": 2
+            }
+          ],
+          "paid_gold": 7,
+          "events": {},
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 7.533318105969542,
+          "net_payment_margin": 4.033318105969542,
+          "decline_or_play_surplus": 4.033318105969542,
+          "coefficients": {
+            "body": 7.533318105969542,
+            "face": 0,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.4,
+            "card": 0.0,
+            "gold": 0.5
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "optional_delta_wide": 1.7149643116694877,
+      "optional_delta_single": -0.46998630074504,
+      "required_wide_fraction": 0.21510156709019218,
+      "scope": "Only two specified ordinary target conditions, current causal action choices, equal extra holding/replacement cost. Fraction unknown; not real meta frequency."
+    },
+    {
+      "prices": {
+        "face": 0.4,
+        "card": 0.0,
+        "gold": 1.0
+      },
+      "wide_plane": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 1
+            },
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 4,
+              "source": "focal",
+              "armor": false
+            }
+          ],
+          "enemy_after": [],
+          "paid_gold": 7,
+          "events": {
+            "hero_damage": 3
+          },
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 9.305775624282727,
+          "net_payment_margin": 2.3057756242827274,
+          "decline_or_play_surplus": 2.3057756242827274,
+          "coefficients": {
+            "body": 8.105775624282726,
+            "face": 3,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.4,
+            "card": 0.0,
+            "gold": 1.0
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "wide_hotdog": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 1
+            },
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 7,
+              "source": "focal"
+            }
+          ],
+          "enemy_after": [
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "paid_gold": 7,
+          "events": {},
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 7.59081131261324,
+          "net_payment_margin": 0.5908113126132397,
+          "decline_or_play_surplus": 0.5908113126132397,
+          "coefficients": {
+            "body": 7.59081131261324,
+            "face": 0,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.4,
+            "card": 0.0,
+            "gold": 1.0
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "single_plane": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 5
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 1,
+              "source": "focal",
+              "armor": false
+            }
+          ],
+          "enemy_after": [],
+          "paid_gold": 7,
+          "events": {
+            "hero_damage": 3
+          },
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "action": "attack ordinary monster"
+        },
+        "quote": {
+          "absolute_gross": 7.063331805224502,
+          "net_payment_margin": 0.06333180522450199,
+          "decline_or_play_surplus": 0.06333180522450199,
+          "coefficients": {
+            "body": 5.863331805224502,
+            "face": 3,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.4,
+            "card": 0.0,
+            "gold": 1.0
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "single_hotdog": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 5
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 7,
+              "source": "focal"
+            }
+          ],
+          "enemy_after": [
+            {
+              "a": 3,
+              "h": 2
+            }
+          ],
+          "paid_gold": 7,
+          "events": {},
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 7.533318105969542,
+          "net_payment_margin": 0.533318105969542,
+          "decline_or_play_surplus": 0.533318105969542,
+          "coefficients": {
+            "body": 7.533318105969542,
+            "face": 0,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.4,
+            "card": 0.0,
+            "gold": 1.0
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "optional_delta_wide": 1.7149643116694877,
+      "optional_delta_single": -0.46998630074504,
+      "required_wide_fraction": 0.21510156709019218,
+      "scope": "Only two specified ordinary target conditions, current causal action choices, equal extra holding/replacement cost. Fraction unknown; not real meta frequency."
+    },
+    {
+      "prices": {
+        "face": 0.4,
+        "card": 2.0,
+        "gold": 0.5
+      },
+      "wide_plane": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 1
+            },
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 4,
+              "source": "focal",
+              "armor": false
+            }
+          ],
+          "enemy_after": [],
+          "paid_gold": 7,
+          "events": {
+            "hero_damage": 3
+          },
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 9.305775624282727,
+          "net_payment_margin": 5.805775624282727,
+          "decline_or_play_surplus": 5.805775624282727,
+          "coefficients": {
+            "body": 8.105775624282726,
+            "face": 3,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.4,
+            "card": 2.0,
+            "gold": 0.5
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "wide_hotdog": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 1
+            },
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 7,
+              "source": "focal"
+            }
+          ],
+          "enemy_after": [
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "paid_gold": 7,
+          "events": {},
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 7.59081131261324,
+          "net_payment_margin": 4.09081131261324,
+          "decline_or_play_surplus": 4.09081131261324,
+          "coefficients": {
+            "body": 7.59081131261324,
+            "face": 0,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.4,
+            "card": 2.0,
+            "gold": 0.5
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "single_plane": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 5
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 1,
+              "source": "focal",
+              "armor": false
+            }
+          ],
+          "enemy_after": [],
+          "paid_gold": 7,
+          "events": {
+            "hero_damage": 3
+          },
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "action": "attack ordinary monster"
+        },
+        "quote": {
+          "absolute_gross": 7.063331805224502,
+          "net_payment_margin": 3.563331805224502,
+          "decline_or_play_surplus": 3.563331805224502,
+          "coefficients": {
+            "body": 5.863331805224502,
+            "face": 3,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.4,
+            "card": 2.0,
+            "gold": 0.5
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "single_hotdog": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 5
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 7,
+              "source": "focal"
+            }
+          ],
+          "enemy_after": [
+            {
+              "a": 3,
+              "h": 2
+            }
+          ],
+          "paid_gold": 7,
+          "events": {},
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 7.533318105969542,
+          "net_payment_margin": 4.033318105969542,
+          "decline_or_play_surplus": 4.033318105969542,
+          "coefficients": {
+            "body": 7.533318105969542,
+            "face": 0,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.4,
+            "card": 2.0,
+            "gold": 0.5
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "optional_delta_wide": 1.7149643116694877,
+      "optional_delta_single": -0.46998630074504,
+      "required_wide_fraction": 0.21510156709019218,
+      "scope": "Only two specified ordinary target conditions, current causal action choices, equal extra holding/replacement cost. Fraction unknown; not real meta frequency."
+    },
+    {
+      "prices": {
+        "face": 0.4,
+        "card": 2.0,
+        "gold": 1.0
+      },
+      "wide_plane": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 1
+            },
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 4,
+              "source": "focal",
+              "armor": false
+            }
+          ],
+          "enemy_after": [],
+          "paid_gold": 7,
+          "events": {
+            "hero_damage": 3
+          },
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 9.305775624282727,
+          "net_payment_margin": 2.3057756242827274,
+          "decline_or_play_surplus": 2.3057756242827274,
+          "coefficients": {
+            "body": 8.105775624282726,
+            "face": 3,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.4,
+            "card": 2.0,
+            "gold": 1.0
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "wide_hotdog": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 1
+            },
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 7,
+              "source": "focal"
+            }
+          ],
+          "enemy_after": [
+            {
+              "a": 2,
+              "h": 1
+            },
+            {
+              "a": 1,
+              "h": 1
+            }
+          ],
+          "paid_gold": 7,
+          "events": {},
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 7.59081131261324,
+          "net_payment_margin": 0.5908113126132397,
+          "decline_or_play_surplus": 0.5908113126132397,
+          "coefficients": {
+            "body": 7.59081131261324,
+            "face": 0,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.4,
+            "card": 2.0,
+            "gold": 1.0
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "single_plane": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 5
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 1,
+              "source": "focal",
+              "armor": false
+            }
+          ],
+          "enemy_after": [],
+          "paid_gold": 7,
+          "events": {
+            "hero_damage": 3
+          },
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "action": "attack ordinary monster"
+        },
+        "quote": {
+          "absolute_gross": 7.063331805224502,
+          "net_payment_margin": 0.06333180522450199,
+          "decline_or_play_surplus": 0.06333180522450199,
+          "coefficients": {
+            "body": 5.863331805224502,
+            "face": 3,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.4,
+            "card": 2.0,
+            "gold": 1.0
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "single_hotdog": {
+        "ledger": {
+          "own_before": [],
+          "enemy_before": [
+            {
+              "a": 3,
+              "h": 5
+            }
+          ],
+          "own_after": [
+            {
+              "a": 6,
+              "h": 7,
+              "source": "focal"
+            }
+          ],
+          "enemy_after": [
+            {
+              "a": 3,
+              "h": 2
+            }
+          ],
+          "paid_gold": 7,
+          "events": {},
+          "unpriced": [],
+          "valuation_stage": "deployment",
+          "scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline"
+        },
+        "quote": {
+          "absolute_gross": 7.533318105969542,
+          "net_payment_margin": 0.533318105969542,
+          "decline_or_play_surplus": 0.533318105969542,
+          "coefficients": {
+            "body": 7.533318105969542,
+            "face": 0,
+            "card": 0,
+            "gold": 0,
+            "paid_gold": 7
+          },
+          "physical_features": {
+            "own_slots_before": 0,
+            "own_slots_after": 1,
+            "slot_delta": 1,
+            "paid_gold": 7,
+            "usable_extra_cards": 0
+          },
+          "prices": {
+            "face": 0.4,
+            "card": 2.0,
+            "gold": 1.0
+          },
+          "unpriced": [],
+          "quote_scope": "Conditional local endpoint with ordinary targets; one ordinary card commitment is common baseline",
+          "full_card_unconditional_value": null
+        }
+      },
+      "optional_delta_wide": 1.7149643116694877,
+      "optional_delta_single": -0.46998630074504,
+      "required_wide_fraction": 0.21510156709019218,
+      "scope": "Only two specified ordinary target conditions, current causal action choices, equal extra holding/replacement cost. Fraction unknown; not real meta frequency."
+    }
+  ]
+}

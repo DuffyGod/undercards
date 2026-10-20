@@ -1,5 +1,6 @@
 {
   "version": "agent-ledger-1.0",
+  "source_commit": "8486ed27755d4eb31506b43f5d976a9370301bb5",
   "catalog_cards": 755,
   "agent_dossiers": 49,
   "conditional_records": 673,
