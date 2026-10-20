@@ -32,6 +32,9 @@ POLICIES={
     'late_same_three':{4:(602,15,187)},
     'draw_accelerates_two':{1:(602,),3:(243,2),4:(187,)},
     'normal_two_later':{1:(602,),3:(15,),4:(2,187)},
+    'save_9_at3':{3:(38,)},
+    'save_5_at2':{2:(15,)},
+    'draw_5_at2':{2:(243,)},
 }
 ENEMY_SCRIPTS={'empty':{},'two_low':{1:(602,),2:(4,)},
                'mid_pressure':{1:(602,),3:(15,)},'save_heavy':{4:(38,)}}

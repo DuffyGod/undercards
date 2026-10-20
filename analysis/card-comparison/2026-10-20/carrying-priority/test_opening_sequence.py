@@ -62,5 +62,12 @@ class SequenceChecks(unittest.TestCase):
         self.assertEqual(early['final']['players'][1]['hp'],later['final']['players'][1]['hp']-1)
         self.assertAlmostEqual(early['value']-later['value'],SCALE.value(5,5)-SCALE.value(6,5)+.25+1.)
 
+    def test_second_can_skip_bridge_to_reach_anchor_earlier(self):
+        for policy,cid,turn in (('save_9_at3',38,3),('save_5_at2',15,2),('draw_5_at2',243,2)):
+            r=OpeningGraph(CARDS,policy,'empty',seat='second').evaluate(SCALE,.25,.5,1.)
+            actual=[event['own_turn'] for event in r['witness'] if event['actor']==0
+                    for play in event['plays'] if play['cid']==cid]
+            self.assertEqual(actual,[turn])
+
 
 if __name__=='__main__':unittest.main()
