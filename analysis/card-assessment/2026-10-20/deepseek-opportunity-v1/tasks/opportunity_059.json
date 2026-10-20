@@ -1,0 +1,315 @@
+{
+  "task_id": "opportunity_059",
+  "kind": "opportunity_review",
+  "requested": [
+    619,
+    620,
+    621,
+    624,
+    625,
+    626,
+    629,
+    630
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 619,
+      "name": "Maus Hole",
+      "metadata_name": "Maus Hole",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at 3 random non-{{RARITY:DETERMINATION}} 1-{{COST}} cards. Choose one to add to your hand.",
+      "effect_readable": "Magic: Look at 3 random non-DT 1-COST cards. Choose one to add to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-619",
+      "source_line": 2030
+    },
+    {
+      "id": 620,
+      "name": "Rotablock",
+      "metadata_name": "Rotablock",
+      "cost": 2,
+      "attack": 3,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Add 3 copies of random non-{{RARITY:DETERMINATION}} monsters costing 1 or less {{GOLD}} from your dustpile to your deck.",
+      "effect_readable": "Magic: Add 3 copies of random non-DT monsters costing 1 or less GOLD from your dustpile to your deck.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-620",
+      "source_line": 2032
+    },
+    {
+      "id": 621,
+      "name": "Maus Cage",
+      "metadata_name": "Maus Cage",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: 6+ non-{{KW:GENERATED}} monsters costing 1 or less {{GOLD}} in your dustpile. {{KW:MAGIC}}: Add a {{CARD:622|1}} to your hand.",
+      "effect_readable": "Need: 6+ non-Generated monsters costing 1 or less GOLD in your dustpile. Magic: Add a Mauswheel [#622] to your hand.",
+      "keyword_mentions": [
+        "GENERATED",
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        622
+      ],
+      "source_key": "card-621",
+      "source_line": 2034
+    },
+    {
+      "id": 624,
+      "name": "Tasque",
+      "metadata_name": "Tasque",
+      "cost": 6,
+      "attack": 2,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: Gain {{STATS:+1|+1}} for each other card with a base {{COST}} of 1+ {{GOLD}} you played this turn.",
+      "effect_readable": "Haste. Magic: Gain ATK +1/HP +1 for each other card with a base COST of 1+ GOLD you played this turn.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-624",
+      "source_line": 2040
+    },
+    {
+      "id": 625,
+      "name": "Stuck Tasque",
+      "metadata_name": "Stuck Tasque",
+      "cost": 2,
+      "attack": 1,
+      "health": 1,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "HAND",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Loop",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:LOOP}} (1). {{KW:MAGIC}}: Give a card and the one to its left in your hand -1 {{COST}}.",
+      "effect_readable": "Loop (1). Magic: Give a card and the one to its left in your hand -1 COST.",
+      "keyword_mentions": [
+        "LOOP",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-625",
+      "source_line": 2042
+    },
+    {
+      "id": 626,
+      "name": "Tasque Manager",
+      "metadata_name": "Tasque Manager",
+      "cost": 6,
+      "attack": 4,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Send the 3 cheapest non-{{RARITY:TOKEN}} cards in your deck to the top of your deck with -1 {{COST}}.",
+      "effect_readable": "Magic: Send the 3 cheapest non-TOKEN cards in your deck to the top of your deck with -1 COST.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-626",
+      "source_line": 2044
+    },
+    {
+      "id": 629,
+      "name": "Tasque Painting",
+      "metadata_name": "Tasque Painting",
+      "cost": 4,
+      "attack": 3,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Loop",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:LOOP}} (1). {{KW:MAGIC}}: Give the copy -1 {{COST}} for each card with a base {{COST}} of 1+ {{GOLD}} played this turn (except {{CARD:629|1}}).",
+      "effect_readable": "Haste. Loop (1). Magic: Give the copy -1 COST for each card with a base COST of 1+ GOLD played this turn (except Tasque Painting [#629]).",
+      "keyword_mentions": [
+        "HASTE",
+        "LOOP",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        629
+      ],
+      "source_key": "card-629",
+      "source_line": 2050
+    },
+    {
+      "id": 630,
+      "name": "Shovels x999",
+      "metadata_name": "Shovels x999",
+      "cost": 6,
+      "attack": 6,
+      "health": 6,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Turn the cheapest non-{{KW:GENERATED}} card in your hand into a {{CARD:631|1}}.",
+      "effect_readable": "Turn end: Turn the cheapest non-Generated card in your hand into a Shovel [#631].",
+      "keyword_mentions": [
+        "GENERATED",
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        631
+      ],
+      "source_key": "card-630",
+      "source_line": 2052
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

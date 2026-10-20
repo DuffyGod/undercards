@@ -1,0 +1,311 @@
+{
+  "task_id": "opportunity_038",
+  "kind": "opportunity_review",
+  "requested": [
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    400,
+    401
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 392,
+      "name": "Ghost Tree",
+      "metadata_name": "Ghost Tree",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After you summon a {{TRIBE:PLANT|1}}, gain +1 {{HP}}.",
+      "effect_readable": "After you summon a Plant, gain +1 HP.",
+      "keyword_mentions": [],
+      "tribe_mentions": [
+        "PLANT"
+      ],
+      "card_references": [],
+      "source_key": "card-392",
+      "source_line": 612
+    },
+    {
+      "id": 393,
+      "name": "Coat Rack",
+      "metadata_name": "Coat Rack",
+      "cost": 6,
+      "attack": 5,
+      "health": 7,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Draw 2 monsters. Give them {{STATS:+1|+1|+2}}.",
+      "effect_readable": "Magic: Draw 2 monsters. Give them COST +1/ATK +1/HP +2.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-393",
+      "source_line": 613
+    },
+    {
+      "id": 394,
+      "name": "Mister Elegance",
+      "metadata_name": "Mister Elegance",
+      "cost": 5,
+      "attack": 3,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PIECE"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:SWITCH}}: {{SWITCH_LEFT:1|Gain {{STATS:+1|+1}} and {{KW:ARMOR}}}} or {{SWITCH_RIGHT:1|Summon a copy of this with {{KW:HASTE}}}}.",
+      "effect_readable": "Magic: Switch: [左侧] Gain ATK +1/HP +1 and Armor or [右侧] Summon a copy of this with Haste.",
+      "keyword_mentions": [
+        "ARMOR",
+        "HASTE",
+        "MAGIC",
+        "SWITCH"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-394",
+      "source_line": 614
+    },
+    {
+      "id": 395,
+      "name": "Toriel's Car",
+      "metadata_name": "Toriel's Car",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After you summon a {{KW:TURBO}} monster, add a copy to your deck. {{KW:TURBO}}: Give 2 random {{KW:TURBO}} monsters in your hand -1 {{COST}}.",
+      "effect_readable": "After you summon a Turbo monster, add a copy to your deck. Turbo: Give 2 random Turbo monsters in your hand -1 COST.",
+      "keyword_mentions": [
+        "TURBO"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-395",
+      "source_line": 615
+    },
+    {
+      "id": 396,
+      "name": "Hathy",
+      "metadata_name": "Hathy",
+      "cost": 4,
+      "attack": 1,
+      "health": 5,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Support",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SUPPORT}}: Give the attacker +1 {{ATK}}.",
+      "effect_readable": "Support: Give the attacker +1 ATK.",
+      "keyword_mentions": [
+        "SUPPORT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-396",
+      "source_line": 616
+    },
+    {
+      "id": 397,
+      "name": "Useless Bird",
+      "metadata_name": "Useless Bird",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Transparency",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TRANSPARENCY}}. {{KW:TAUNT}}.",
+      "effect_readable": "Transparency. Taunt.",
+      "keyword_mentions": [
+        "TAUNT",
+        "TRANSPARENCY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-397",
+      "source_line": 617
+    },
+    {
+      "id": 400,
+      "name": "Cogwheel",
+      "metadata_name": "Cogwheel",
+      "cost": 1,
+      "attack": 1,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Send the most expensive card in your hand to your deck and draw a card.",
+      "effect_readable": "Turn end: Send the most expensive card in your hand to your deck and draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-400",
+      "source_line": 1435
+    },
+    {
+      "id": 401,
+      "name": "Certificate",
+      "metadata_name": "Certificate",
+      "cost": 2,
+      "attack": 1,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Look at 3 random non-{{RARITY:DETERMINATION}} {{KW:TAUNT}} monsters and choose one. Add it to your hand.",
+      "effect_readable": "Taunt. Magic: Look at 3 random non-DT Taunt monsters and choose one. Add it to your hand.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-401",
+      "source_line": 1437
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

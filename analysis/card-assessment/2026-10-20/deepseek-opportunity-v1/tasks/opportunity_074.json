@@ -1,0 +1,353 @@
+{
+  "task_id": "opportunity_074",
+  "kind": "opportunity_review",
+  "requested": [
+    790,
+    791,
+    792,
+    793,
+    794,
+    801,
+    802,
+    803
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 790,
+      "name": "Mettabot Factory",
+      "metadata_name": "Mettabot Factory",
+      "cost": 4,
+      "attack": 3,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "NEUTRAL",
+          "name": "Program",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SHOCK}}: {{KW:PROGRAM}} (1): Fill your board with {{CARD:359|2}}.",
+      "effect_readable": "Shock: Program (1): Fill your board with Mettabot [#359].",
+      "keyword_mentions": [
+        "PROGRAM",
+        "SHOCK"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        359
+      ],
+      "source_key": "card-790",
+      "source_line": 2425
+    },
+    {
+      "id": 791,
+      "name": "Giant Toilet",
+      "metadata_name": "Giant Toilet",
+      "cost": 30,
+      "attack": 9,
+      "health": 9,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:NEED}}: This is non-{{KW:GENERATED}} and you have no other cards in your hand or deck. {{KW:MAGIC}}: Gain {{STATS:+90|+90}} and {{KW:CHARGE}}.",
+      "effect_readable": "Taunt. Need: This is non-Generated and you have no other cards in your hand or deck. Magic: Gain ATK +90/HP +90 and Charge.",
+      "keyword_mentions": [
+        "CHARGE",
+        "GENERATED",
+        "MAGIC",
+        "NEED",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-791",
+      "source_line": 2427
+    },
+    {
+      "id": 792,
+      "name": "Noellecoaster",
+      "metadata_name": "Noellecoaster",
+      "cost": 1,
+      "attack": 0,
+      "health": 1,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "This has +1 {{COST}} in hand for each 2+ {{GOLD}} spell you cast this game. {{KW:MAGIC}}: Look at 3 spells with equal {{COST}} to gain {{STATS:+1|+1}} equal to it. Cast one on the monster in front of this.",
+      "effect_readable": "This has +1 COST in hand for each 2+ GOLD spell you cast this game. Magic: Look at 3 spells with equal COST to gain ATK +1/HP +1 equal to it. Cast one on the monster in front of this.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-792",
+      "source_line": 2429
+    },
+    {
+      "id": 793,
+      "name": "Swatch",
+      "metadata_name": "Swatch",
+      "cost": 5,
+      "attack": 3,
+      "health": 7,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:TURN_END}}: If you spent 5+ {{GOLD}} on spells this turn, add a {{CARD:793|1}} with {{STATS:-1|+1|+1}} base stats to your hand.",
+      "effect_readable": "Taunt. Turn end: If you spent 5+ GOLD on spells this turn, add a Swatch [#793] with COST -1/ATK +1/HP +1 base stats to your hand.",
+      "keyword_mentions": [
+        "TAUNT",
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        793
+      ],
+      "source_key": "card-793",
+      "source_line": 2432
+    },
+    {
+      "id": 794,
+      "name": "GIGA Queen",
+      "metadata_name": "GIGA Queen",
+      "cost": 8,
+      "attack": 5,
+      "health": 5,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Look At All {{TRIBE:GIGA_ATTACK|2}} You Haven't Cast And Add One To Your Hand. Begin Your {{ARTIFACT:63}}!",
+      "effect_readable": "Taunt. Magic: Look At All GIGA Attack You Haven't Cast And Add One To Your Hand. Begin Your Imminent Showdown [#63]!",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [
+        "GIGA_ATTACK"
+      ],
+      "card_references": [],
+      "source_key": "card-794",
+      "source_line": 2434
+    },
+    {
+      "id": 801,
+      "name": "The Barrier",
+      "metadata_name": "The Barrier",
+      "cost": 35,
+      "attack": 30,
+      "health": 30,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Deal {{DMG}} to the opponent equal to half the amount of monsters in both dustpiles (rounded down).",
+      "effect_readable": "Taunt. Magic: Deal DMG to the opponent equal to half the amount of monsters in both dustpiles (rounded down).",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-801",
+      "source_line": 2450
+    },
+    {
+      "id": 802,
+      "name": "Mew Mew Wand",
+      "metadata_name": "Mew Mew Wand",
+      "cost": 7,
+      "attack": 6,
+      "health": 6,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Loop",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:LOOP}} (1). {{KW:MAGIC}}: {{KW:SWITCH}}: Give an enemy monster {{SWITCH_LEFT:1|-2 {{ATK}}}} and the copy {{SWITCH_LEFT:1|+2 {{ATK}}}} or {{SWITCH_RIGHT:1|-2 {{HP}}}} and {{SWITCH_RIGHT:1|+2 {{HP}}}}.",
+      "effect_readable": "Loop (1). Magic: Switch: Give an enemy monster [左侧] -2 ATK and the copy [左侧] +2 ATK or [右侧] -2 HP and [右侧] +2 HP.",
+      "keyword_mentions": [
+        "LOOP",
+        "MAGIC",
+        "SWITCH"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-802",
+      "source_line": 2452
+    },
+    {
+      "id": 803,
+      "name": "Sidewalk Froggit",
+      "metadata_name": "Sidewalk Froggit",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "FROGGIT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Loop",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:LOOP}} (1). {{KW:DELAY}}: Give the copy this card's stat buffs.",
+      "effect_readable": "Loop (1). Delay: Give the copy this card's stat buffs.",
+      "keyword_mentions": [
+        "DELAY",
+        "LOOP"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-803",
+      "source_line": 2454
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

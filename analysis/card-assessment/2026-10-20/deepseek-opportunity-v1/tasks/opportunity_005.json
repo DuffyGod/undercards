@@ -1,0 +1,305 @@
+{
+  "task_id": "opportunity_005",
+  "kind": "opportunity_review",
+  "requested": [
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 26,
+      "name": "Parsnik",
+      "metadata_name": "Parsnik",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:PARALYZE}} a monster. If it was already {{KW:PARALYZE|override=Paralyzed}}, deal 2 {{DMG}} to it.",
+      "effect_readable": "Magic: Paralyze a monster. If it was already Paralyzed, deal 2 DMG to it.",
+      "keyword_mentions": [
+        "MAGIC",
+        "PARALYZE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-26",
+      "source_line": 308
+    },
+    {
+      "id": 27,
+      "name": "Whimsalot",
+      "metadata_name": "Whimsalot",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give all monsters in your hand {{STATS:-1|-1|-1}} (min. {{STATS:1|1}}).",
+      "effect_readable": "Magic: Give all monsters in your hand COST -1/ATK -1/HP -1 (min. ATK 1/HP 1).",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-27",
+      "source_line": 309
+    },
+    {
+      "id": 28,
+      "name": "Chara",
+      "metadata_name": "Chara",
+      "cost": 14,
+      "attack": 9,
+      "health": 9,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:ERASE}} a monster. Start the {{ARTIFACT:25}} route.",
+      "effect_readable": "Magic: Erase a monster. Start the Genocide [#25] route.",
+      "keyword_mentions": [
+        "ERASE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-28",
+      "source_line": 310
+    },
+    {
+      "id": 29,
+      "name": "Bomb",
+      "metadata_name": "Bomb",
+      "cost": 3,
+      "attack": 4,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALL",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:ERASE}} the cheapest non-{{KW:GENERATED}} card in your hand to deal 3 {{DMG}}.",
+      "effect_readable": "Magic: Erase the cheapest non-Generated card in your hand to deal 3 DMG.",
+      "keyword_mentions": [
+        "ERASE",
+        "GENERATED",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-29",
+      "source_line": 311
+    },
+    {
+      "id": 30,
+      "name": "Burgerpants",
+      "metadata_name": "Burgerpants",
+      "cost": 3,
+      "attack": 4,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:TURN_END}}: Both players earn 5 {{GOLD}}.",
+      "effect_readable": "Taunt. Turn end: Both players earn 5 GOLD.",
+      "keyword_mentions": [
+        "TAUNT",
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-30",
+      "source_line": 312
+    },
+    {
+      "id": 31,
+      "name": "Snowman",
+      "metadata_name": "Snowman",
+      "cost": 3,
+      "attack": 4,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Add a copy of this to your hand with -1 base {{COST}} and {{HP}}.",
+      "effect_readable": "Dust: Add a copy of this to your hand with -1 base COST and HP.",
+      "keyword_mentions": [
+        "DUST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-31",
+      "source_line": 313
+    },
+    {
+      "id": 32,
+      "name": "Memoryhead",
+      "metadata_name": "Memory Head",
+      "cost": 2,
+      "attack": 2,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "AMALGAMATE"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Loop",
+          "statusBehavior": "STACKABLE",
+          "counter": 2,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:LOOP}} (2). {{KW:MAGIC}}: Set the copy's stats to {{STATS:2|3|3}}.",
+      "effect_readable": "Loop (2). Magic: Set the copy's stats to COST 2/ATK 3/HP 3.",
+      "keyword_mentions": [
+        "LOOP",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-32",
+      "source_line": 314
+    },
+    {
+      "id": 33,
+      "name": "Endogeny",
+      "metadata_name": "Endogeny",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "AMALGAMATE",
+        "DOG"
+      ],
+      "target": "HAND",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give a {{TRIBE:DOG|1}} in your hand +1 {{ATK}} and {{KW:HASTE}} or an {{TRIBE:AMALGAMATE|1}} in your hand +1 {{HP}} and {{KW:TAUNT}}.",
+      "effect_readable": "Magic: Give a Dog in your hand +1 ATK and Haste or an Amalgamate in your hand +1 HP and Taunt.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [
+        "AMALGAMATE",
+        "DOG"
+      ],
+      "card_references": [],
+      "source_key": "card-33",
+      "source_line": 315
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

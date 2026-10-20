@@ -1,0 +1,312 @@
+{
+  "task_id": "opportunity_047",
+  "kind": "opportunity_review",
+  "requested": [
+    494,
+    495,
+    496,
+    497,
+    498,
+    499,
+    500,
+    501
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 494,
+      "name": "Jumping Frog",
+      "metadata_name": "Jumping Frog",
+      "cost": 3,
+      "attack": 1,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "FROGGIT"
+      ],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal its {{ATK}} as {{DMG}} to an enemy monster.",
+      "effect_readable": "Magic: Deal its ATK as DMG to an enemy monster.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-494",
+      "source_line": 1741
+    },
+    {
+      "id": 495,
+      "name": "Cross Bomb",
+      "metadata_name": "Cross Bomb",
+      "cost": 4,
+      "attack": 3,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Dodge",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DODGE}} (1). {{KW:TURN_START}}: If there is a monster in front of this, kill this to deal 5 {{DMG}} to it and excess to the opponent.",
+      "effect_readable": "Dodge (1). Turn start: If there is a monster in front of this, kill this to deal 5 DMG to it and excess to the opponent.",
+      "keyword_mentions": [
+        "DODGE",
+        "TURN_START"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-495",
+      "source_line": 1743
+    },
+    {
+      "id": 496,
+      "name": "Business Snail",
+      "metadata_name": "Business Snail",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "SNAIL"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After an ally {{TRIBE:SNAIL|1}} dies, draw a card.",
+      "effect_readable": "After an ally Snail dies, draw a card.",
+      "keyword_mentions": [],
+      "tribe_mentions": [
+        "SNAIL"
+      ],
+      "card_references": [],
+      "source_key": "card-496",
+      "source_line": 1745
+    },
+    {
+      "id": 497,
+      "name": "Fire Chimney",
+      "metadata_name": "Fire Chimney",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Loop",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:LOOP}} (1). {{KW:MAGIC}}: If you played a card with a base {{COST}} of 6+ {{GOLD}} this turn, gain {{STATS:+1|+1}} and {{KW:HASTE}}.",
+      "effect_readable": "Loop (1). Magic: If you played a card with a base COST of 6+ GOLD this turn, gain ATK +1/HP +1 and Haste.",
+      "keyword_mentions": [
+        "HASTE",
+        "LOOP",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-497",
+      "source_line": 1747
+    },
+    {
+      "id": 498,
+      "name": "Snail Pen",
+      "metadata_name": "Snail Pen",
+      "cost": 3,
+      "attack": 2,
+      "health": 2,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Add an exact copy of each ally {{TRIBE:SNAIL|1}} to your hand.",
+      "effect_readable": "Magic: Add an exact copy of each ally Snail to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "SNAIL"
+      ],
+      "card_references": [],
+      "source_key": "card-498",
+      "source_line": 1749
+    },
+    {
+      "id": 499,
+      "name": "Anime Sword",
+      "metadata_name": "Anime Sword",
+      "cost": 3,
+      "attack": 2,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DELAY}}: Give its {{ATK}} and max {{HP}} as buffs to a random monster in your hand.",
+      "effect_readable": "Delay: Give its ATK and max HP as buffs to a random monster in your hand.",
+      "keyword_mentions": [
+        "DELAY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-499",
+      "source_line": 1751
+    },
+    {
+      "id": 500,
+      "name": "Ice-E Mascot",
+      "metadata_name": "Ice-E Mascot",
+      "cost": 4,
+      "attack": 3,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Transparency",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TRANSPARENCY}}. After an enemy monster is summoned, {{KW:PARALYZE}} it and give it -1 {{ATK}}. {{KW:SILENCE}} this.",
+      "effect_readable": "Transparency. After an enemy monster is summoned, Paralyze it and give it -1 ATK. Silence this.",
+      "keyword_mentions": [
+        "PARALYZE",
+        "SILENCE",
+        "TRANSPARENCY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-500",
+      "source_line": 1753
+    },
+    {
+      "id": 501,
+      "name": "Cool Bone",
+      "metadata_name": "Cool Bone",
+      "cost": 6,
+      "attack": 5,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give all ally {{TRIBE:DOG|2}} a random effect: {{KW:TAUNT}}, {{KW:DODGE}} (1), {{KW:CANDY}}, or {{KW:ARMOR}}.",
+      "effect_readable": "Magic: Give all ally Dog a random effect: Taunt, Dodge (1), Candy, or Armor.",
+      "keyword_mentions": [
+        "ARMOR",
+        "CANDY",
+        "DODGE",
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [
+        "DOG"
+      ],
+      "card_references": [],
+      "source_key": "card-501",
+      "source_line": 1755
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

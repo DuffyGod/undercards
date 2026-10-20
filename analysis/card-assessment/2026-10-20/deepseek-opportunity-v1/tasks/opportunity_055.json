@@ -1,0 +1,322 @@
+{
+  "task_id": "opportunity_055",
+  "kind": "opportunity_review",
+  "requested": [
+    573,
+    579,
+    580,
+    581,
+    582,
+    583,
+    584,
+    587
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 573,
+      "name": "Elimination Duck",
+      "metadata_name": "Elimination Duck",
+      "cost": 11,
+      "attack": 12,
+      "health": 9,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:HASTE}}. {{KW:MAGIC}}: Turn all other monsters into random other monsters of the same {{COST}} if possible.",
+      "effect_readable": "Taunt. Haste. Magic: Turn all other monsters into random other monsters of the same COST if possible.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-573",
+      "source_line": 1921
+    },
+    {
+      "id": 579,
+      "name": "Baking Queen",
+      "metadata_name": "Baking Queen",
+      "cost": 10,
+      "attack": 6,
+      "health": 6,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Kill a damaged monster. Heal {{HP}} to you equal to its {{ATK}}.",
+      "effect_readable": "Magic: Kill a damaged monster. Heal HP to you equal to its ATK.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-579",
+      "source_line": 1935
+    },
+    {
+      "id": 580,
+      "name": "Totemic Guard",
+      "metadata_name": "Totemic Guard",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:DELAY}}: If you have 3+ 6-{{COST}} monsters in your hand or dustpile, heal 5 {{HP}} to you.",
+      "effect_readable": "Taunt. Delay: If you have 3+ 6-COST monsters in your hand or dustpile, heal 5 HP to you.",
+      "keyword_mentions": [
+        "DELAY",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-580",
+      "source_line": 1937
+    },
+    {
+      "id": 581,
+      "name": "Golden Mascot",
+      "metadata_name": "Golden Mascot",
+      "cost": 7,
+      "attack": 5,
+      "health": 7,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:DUST}}: Add a {{CARD:876|1}} to your hand.",
+      "effect_readable": "Taunt. Dust: Add a Super Pack [#876] to your hand.",
+      "keyword_mentions": [
+        "DUST",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        876
+      ],
+      "source_key": "card-581",
+      "source_line": 1939
+    },
+    {
+      "id": 582,
+      "name": "Tiny Bookshelf",
+      "metadata_name": "Tiny Bookshelf",
+      "cost": 4,
+      "attack": 2,
+      "health": 7,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: You spent {{GOLD}} on spells last turn. {{KW:MAGIC}}: Gain +1 {{ATK}} and {{KW:TAUNT}}.",
+      "effect_readable": "Need: You spent GOLD on spells last turn. Magic: Gain +1 ATK and Taunt.",
+      "keyword_mentions": [
+        "MAGIC",
+        "NEED",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-582",
+      "source_line": 1941
+    },
+    {
+      "id": 583,
+      "name": "Cracked Geode",
+      "metadata_name": "Cracked Geode",
+      "cost": 4,
+      "attack": 3,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:DUST}}: Deal 2 {{DMG}} to all monsters.",
+      "effect_readable": "Taunt. Dust: Deal 2 DMG to all monsters.",
+      "keyword_mentions": [
+        "DUST",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-583",
+      "source_line": 1943
+    },
+    {
+      "id": 584,
+      "name": "Caged Kings",
+      "metadata_name": "Caged Kings",
+      "cost": 5,
+      "attack": 4,
+      "health": 6,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: You spent {{GOLD}} on spells last turn. {{KW:MAGIC}}: Add a {{CARD:585|1}} to your deck and draw a card.",
+      "effect_readable": "Need: You spent GOLD on spells last turn. Magic: Add a Broken Key [#585] to your deck and draw a card.",
+      "keyword_mentions": [
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        585
+      ],
+      "source_key": "card-584",
+      "source_line": 1945
+    },
+    {
+      "id": 587,
+      "name": "Glowing Shroom",
+      "metadata_name": "Glowing Shroom",
+      "cost": 1,
+      "attack": 1,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After you spend {{GOLD}} on spells, gain +1 {{ATK}}. {{KW:MAGIC}}: If played on the left, {{SWITCH_LEFT:1|swap its stats}}.",
+      "effect_readable": "After you spend GOLD on spells, gain +1 ATK. Magic: If played on the left, [左侧] swap its stats.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-587",
+      "source_line": 1951
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

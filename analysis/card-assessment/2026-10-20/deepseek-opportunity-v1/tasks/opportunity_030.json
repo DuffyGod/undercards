@@ -1,0 +1,300 @@
+{
+  "task_id": "opportunity_030",
+  "kind": "opportunity_review",
+  "requested": [
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 254,
+      "name": "Cool Papyrus",
+      "metadata_name": "Cool Papyrus",
+      "cost": 9,
+      "attack": 6,
+      "health": 9,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. After this attacks and kills a non-{{RARITY:DETERMINATION}} monster, add a base {{STATS:3|4|5}} copy of it to your hand.",
+      "effect_readable": "Haste. After this attacks and kills a non-DT monster, add a base COST 3/ATK 4/HP 5 copy of it to your hand.",
+      "keyword_mentions": [
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-254",
+      "source_line": 514
+    },
+    {
+      "id": 255,
+      "name": "Overgrowth",
+      "metadata_name": "Overgrowth",
+      "cost": 3,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "BRAVERY",
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Give all {{KW:GENERATED}} ally monsters {{STATS:+1|+1}} wherever they are. Draw a card.",
+      "effect_readable": "Give all Generated ally monsters ATK +1/HP +1 wherever they are. Draw a card.",
+      "keyword_mentions": [
+        "GENERATED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-255",
+      "source_line": 515
+    },
+    {
+      "id": 256,
+      "name": "Soul Drain",
+      "metadata_name": "Soul Drain",
+      "cost": 3,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "DETERMINATION",
+      "set": "BASE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Loop",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:LOOP}} (1). Deal 3 {{DMG}} to a monster. {{KW:DELAY}}: {{KW:ERASE}} the copy from your hand to heal 4 {{HP}} to you.",
+      "effect_readable": "Loop (1). Deal 3 DMG to a monster. Delay: Erase the copy from your hand to heal 4 HP to you.",
+      "keyword_mentions": [
+        "DELAY",
+        "ERASE",
+        "LOOP"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-256",
+      "source_line": 516
+    },
+    {
+      "id": 257,
+      "name": "Golden Hit",
+      "metadata_name": "Golden Hit",
+      "cost": 0,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "INTEGRITY",
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Loop",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:LOOP}} (1). Spend all your {{GOLD}} to deal {{DMG}} to an enemy monster equal to the {{GOLD}} spent. Earn {{GOLD}} equal to excess {{DMG}} dealt.",
+      "effect_readable": "Loop (1). Spend all your GOLD to deal DMG to an enemy monster equal to the GOLD spent. Earn GOLD equal to excess DMG dealt.",
+      "keyword_mentions": [
+        "LOOP"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-257",
+      "source_line": 517
+    },
+    {
+      "id": 258,
+      "name": "Blitz Quiz",
+      "metadata_name": "Blitz Quiz",
+      "cost": 3,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "JUSTICE",
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Look at {{CARD:463}} and {{CARD:464|1}}. Choose one to add to your hand.",
+      "effect_readable": "Look at Trick Question [#463] and Zap Cannon [#464]. Choose one to add to your hand.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [
+        463,
+        464
+      ],
+      "source_key": "card-258",
+      "source_line": 518
+    },
+    {
+      "id": 259,
+      "name": "Octofriend",
+      "metadata_name": "Octofriend",
+      "cost": 2,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "KINDNESS",
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Give an ally monster {{STATS:+1|+1}}. Add a 1-{{COST}} {{CARD:353|1}} and {{CARD:354|1}} to your hand.",
+      "effect_readable": "Give an ally monster ATK +1/HP +1. Add a 1-COST Left Tentacle [#353] and Right Tentacle [#354] to your hand.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [
+        353,
+        354
+      ],
+      "source_key": "card-259",
+      "source_line": 519
+    },
+    {
+      "id": 260,
+      "name": "Ice Replica",
+      "metadata_name": "Ice Replica",
+      "cost": 2,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "PATIENCE",
+      "set": "BASE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:PARALYZE}} a non-{{RARITY:DETERMINATION}} monster and add a copy of it to your hand. {{KW:DELAY}}: If it was an ally, give it -2 {{COST}}.",
+      "effect_readable": "Paralyze a non-DT monster and add a copy of it to your hand. Delay: If it was an ally, give it -2 COST.",
+      "keyword_mentions": [
+        "DELAY",
+        "PARALYZE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-260",
+      "source_line": 520
+    },
+    {
+      "id": 261,
+      "name": "Siphoning",
+      "metadata_name": "Siphoning",
+      "cost": 3,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "PERSEVERANCE",
+      "set": "BASE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Give a monster -2 {{HP}} to give the monster in front of it +3 {{HP}}. If this killed, add a {{CARD:577|1}} to your deck.",
+      "effect_readable": "Give a monster -2 HP to give the monster in front of it +3 HP. If this killed, add a Draft [#577] to your deck.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [
+        577
+      ],
+      "source_key": "card-261",
+      "source_line": 521
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

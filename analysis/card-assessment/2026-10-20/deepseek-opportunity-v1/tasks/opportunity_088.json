@@ -1,0 +1,284 @@
+{
+  "task_id": "opportunity_088",
+  "kind": "opportunity_review",
+  "requested": [
+    935,
+    940,
+    941,
+    942,
+    943,
+    945,
+    946,
+    948
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 935,
+      "name": "Roaring Knight",
+      "metadata_name": "Roaring Knight",
+      "cost": 20,
+      "attack": 12,
+      "health": 8,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Darkspawn",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DARKSPAWN}}. {{KW:MAGIC}}: Deal 12 {{DMG}} to all enemies. Add a {{CARD:936|1}} to the enemy deck (except the top) for every 10 {{DMG}} not dealt.",
+      "effect_readable": "Darkspawn. Magic: Deal 12 DMG to all enemies. Add a Black Knife [#936] to the enemy deck (except the top) for every 10 DMG not dealt.",
+      "keyword_mentions": [
+        "DARKSPAWN",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        936
+      ],
+      "source_key": "card-935",
+      "source_line": 2914
+    },
+    {
+      "id": 940,
+      "name": "Strange Machine",
+      "metadata_name": "Strange Machine",
+      "cost": 8,
+      "attack": 4,
+      "health": 2,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "This takes 1 less {{DMG}} for each enemy slot enchantment. {{KW:MAGIC}}: Enchant enemy slots with a {{ENCHANT:GREEN_TILE||override=Green}}, {{ENCHANT:YELLOW_TILE||override=Yellow}}, {{ENCHANT:PURPLE_TILE||override=Purple}}, and {{ENCHANT:ORANGE_TILE|1}}.",
+      "effect_readable": "This takes 1 less DMG for each enemy slot enchantment. Magic: Enchant enemy slots with a Green, Yellow, Purple, and Orange Tile.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-940",
+      "source_line": 3022
+    },
+    {
+      "id": 941,
+      "name": "Jogboy Papyrus",
+      "metadata_name": "Jogboy Papyrus",
+      "cost": 10,
+      "attack": 6,
+      "health": 9,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Enchant all enemy slots with {{ENCHANT:BLUE_BONES|2}}.",
+      "effect_readable": "Magic: Enchant all enemy slots with Blue Bones.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-941",
+      "source_line": 3024
+    },
+    {
+      "id": 942,
+      "name": "Wall of Fire",
+      "metadata_name": "Wall of Fire",
+      "cost": 8,
+      "attack": 6,
+      "health": 6,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Enchant all empty and unenchanted enemy slots with {{ENCHANT:THE_FLAME|2}}.",
+      "effect_readable": "Magic: Enchant all empty and unenchanted enemy slots with The Flame.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-942",
+      "source_line": 3026
+    },
+    {
+      "id": 943,
+      "name": "Fire-E",
+      "metadata_name": "Fire-E",
+      "cost": 4,
+      "attack": 5,
+      "health": 3,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALLY_SLOT",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Enchant an ally board slot with {{ENCHANT:INCINERATOR|1}}.",
+      "effect_readable": "Magic: Enchant an ally board slot with Incinerator.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-943",
+      "source_line": 3035
+    },
+    {
+      "id": 945,
+      "name": "Arcade Mew Mew",
+      "metadata_name": "Arcade Mew Mew",
+      "cost": 7,
+      "attack": 5,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Halve the stats of the non-{{RARITY:DETERMINATION}} monster in front of this and summon an exact copy of it.",
+      "effect_readable": "Magic: Halve the stats of the non-DT monster in front of this and summon an exact copy of it.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-945",
+      "source_line": 3076
+    },
+    {
+      "id": 946,
+      "name": "Tall Bloxer",
+      "metadata_name": "Tall Bloxer",
+      "cost": 10,
+      "attack": 5,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Summon 3 random non-{{RARITY:TOKEN}} monsters costing 3 or less {{GOLD}} from your dustpile.",
+      "effect_readable": "Magic: Summon 3 random non-TOKEN monsters costing 3 or less GOLD from your dustpile.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-946",
+      "source_line": 3078
+    },
+    {
+      "id": 948,
+      "name": "Blackjack",
+      "metadata_name": "Blackjack",
+      "cost": 6,
+      "attack": 6,
+      "health": 6,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DELAY}}: Add a {{CARD:947|1}} to the top 6 cards of your deck. If a monster died with exactly 0 {{HP}} remaining this turn, add it to your hand instead.",
+      "effect_readable": "Delay: Add a Wild Revolver [#947] to the top 6 cards of your deck. If a monster died with exactly 0 HP remaining this turn, add it to your hand instead.",
+      "keyword_mentions": [
+        "DELAY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        947
+      ],
+      "source_key": "card-948",
+      "source_line": 3082
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

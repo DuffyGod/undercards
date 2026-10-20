@@ -1,0 +1,300 @@
+{
+  "task_id": "opportunity_051",
+  "kind": "opportunity_review",
+  "requested": [
+    531,
+    532,
+    533,
+    534,
+    538,
+    539,
+    541,
+    542
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 531,
+      "name": "Teacher Toriel",
+      "metadata_name": "Teacher Toriel",
+      "cost": 6,
+      "attack": 6,
+      "health": 5,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at the enemy hand. Choose a card to send to the enemy deck.",
+      "effect_readable": "Magic: Look at the enemy hand. Choose a card to send to the enemy deck.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-531",
+      "source_line": 1821
+    },
+    {
+      "id": 532,
+      "name": "Easy to Draw Bed",
+      "metadata_name": "Easy to Draw Bed",
+      "cost": 5,
+      "attack": 4,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After this attacks and survives, turn it into a random monster with {{STATS:4|6}} base stats.",
+      "effect_readable": "After this attacks and survives, turn it into a random monster with ATK 4/HP 6 base stats.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-532",
+      "source_line": 1823
+    },
+    {
+      "id": 533,
+      "name": "Gerson Tombstone",
+      "metadata_name": "Gerson Tombstone",
+      "cost": 7,
+      "attack": 4,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: Your deck has no non-{{KW:GENERATED}} duplicates. {{KW:MAGIC}}: Summon a copy of a random monster costing 5-7 {{GOLD}} from your dustpile (except {{CARD:533|1}}).",
+      "effect_readable": "Need: Your deck has no non-Generated duplicates. Magic: Summon a copy of a random monster costing 5-7 GOLD from your dustpile (except Gerson Tombstone [#533]).",
+      "keyword_mentions": [
+        "GENERATED",
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        533
+      ],
+      "source_key": "card-533",
+      "source_line": 1825
+    },
+    {
+      "id": 534,
+      "name": "Carbed",
+      "metadata_name": "Carbed",
+      "cost": 5,
+      "attack": 2,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Armor",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:ARMOR}}. {{KW:HASTE}}. This has +3 {{ATK}} while damaged.",
+      "effect_readable": "Armor. Haste. This has +3 ATK while damaged.",
+      "keyword_mentions": [
+        "ARMOR",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-534",
+      "source_line": 1827
+    },
+    {
+      "id": 538,
+      "name": "Wobbly Thing",
+      "metadata_name": "Wobbly Thing",
+      "cost": 1,
+      "attack": 2,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Support",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SUPPORT}}: Kill this to give 2 random monsters in your hand {{STATS:+1|+1}}.",
+      "effect_readable": "Support: Kill this to give 2 random monsters in your hand ATK +1/HP +1.",
+      "keyword_mentions": [
+        "SUPPORT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-538",
+      "source_line": 1847
+    },
+    {
+      "id": 539,
+      "name": "Bone Drawer",
+      "metadata_name": "Bone Drawer",
+      "cost": 3,
+      "attack": 4,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Add a {{CARD:540|1}} to your hand.",
+      "effect_readable": "Dust: Add a Pile of Bones [#540] to your hand.",
+      "keyword_mentions": [
+        "DUST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        540
+      ],
+      "source_key": "card-539",
+      "source_line": 1849
+    },
+    {
+      "id": 541,
+      "name": "Painting",
+      "metadata_name": "Painting",
+      "cost": 3,
+      "attack": 4,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Add a copy of an ally monster (except {{CARD:541|1}}, max. {{RARITY:EPIC}}) to your deck. {{KW:DELAY}}: Draw a card.",
+      "effect_readable": "Magic: Add a copy of an ally monster (except Painting [#541], max. EPIC) to your deck. Delay: Draw a card.",
+      "keyword_mentions": [
+        "DELAY",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        541
+      ],
+      "source_key": "card-541",
+      "source_line": 1853
+    },
+    {
+      "id": 542,
+      "name": "Trash Ball",
+      "metadata_name": "Trash Ball",
+      "cost": 4,
+      "attack": 5,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After you play a monster, deal 1 {{DMG}} to it.",
+      "effect_readable": "After you play a monster, deal 1 DMG to it.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-542",
+      "source_line": 1855
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

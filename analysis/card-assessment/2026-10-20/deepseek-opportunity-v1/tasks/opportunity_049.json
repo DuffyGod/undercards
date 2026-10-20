@@ -1,0 +1,311 @@
+{
+  "task_id": "opportunity_049",
+  "kind": "opportunity_review",
+  "requested": [
+    510,
+    512,
+    514,
+    515,
+    517,
+    518,
+    519,
+    520
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 510,
+      "name": "Cracked Table",
+      "metadata_name": "Cracked Table",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Add a {{CARD:511|1}} to your hand. If you have less {{HP}} than the opponent, give it -1 {{COST}}.",
+      "effect_readable": "Magic: Add a Tea Set [#511] to your hand. If you have less HP than the opponent, give it -1 COST.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        511
+      ],
+      "source_key": "card-510",
+      "source_line": 1777
+    },
+    {
+      "id": 512,
+      "name": "Game Bomb",
+      "metadata_name": "Game Bomb",
+      "cost": 5,
+      "attack": 4,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Armor",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:ARMOR}}. After this takes {{DMG}}, summon a {{CARD:513|1}}.",
+      "effect_readable": "Armor. After this takes DMG, summon a Dynamite Stick [#513].",
+      "keyword_mentions": [
+        "ARMOR"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        513
+      ],
+      "source_key": "card-512",
+      "source_line": 1781
+    },
+    {
+      "id": 514,
+      "name": "Date Alphys",
+      "metadata_name": "Date Alphys",
+      "cost": 4,
+      "attack": 5,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give an ally monster {{KW:HASTE}}. It can attack again.",
+      "effect_readable": "Magic: Give an ally monster Haste. It can attack again.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-514",
+      "source_line": 1785
+    },
+    {
+      "id": 515,
+      "name": "Head Hathy",
+      "metadata_name": "Head Hathy",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: You spent {{GOLD}} on spells last turn. {{KW:MAGIC}}: Add a {{CARD:516|1}} to your hand and deck.",
+      "effect_readable": "Need: You spent GOLD on spells last turn. Magic: Add a Breaking Love [#516] to your hand and deck.",
+      "keyword_mentions": [
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        516
+      ],
+      "source_key": "card-515",
+      "source_line": 1787
+    },
+    {
+      "id": 517,
+      "name": "Stuffed Doll",
+      "metadata_name": "Stuffed Doll",
+      "cost": 6,
+      "attack": 5,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Look at 5 random monsters and choose one. Add it to both players hands and give yours -1 {{COST}}.",
+      "effect_readable": "Taunt. Magic: Look at 5 random monsters and choose one. Add it to both players hands and give yours -1 COST.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-517",
+      "source_line": 1793
+    },
+    {
+      "id": 518,
+      "name": "The Vessel",
+      "metadata_name": "The Vessel",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Loop",
+          "statusBehavior": "STACKABLE",
+          "counter": 3,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:LOOP}} (3). {{KW:MAGIC}}: Send the copy to your deck, turn into {{CARD:553|1}}. Add a copy of the last other non-{{RARITY:TOKEN}} card you played to your hand. If this has no {{KW:LOOP}}, the copy is exact (min. 1 {{HP}}).",
+      "effect_readable": "Loop (3). Magic: Send the copy to your deck, turn into True Vessel [#553]. Add a copy of the last other non-TOKEN card you played to your hand. If this has no Loop, the copy is exact (min. 1 HP).",
+      "keyword_mentions": [
+        "LOOP",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        553
+      ],
+      "source_key": "card-518",
+      "source_line": 1795
+    },
+    {
+      "id": 519,
+      "name": "Ficus",
+      "metadata_name": "Ficus",
+      "cost": 4,
+      "attack": 2,
+      "health": 7,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After an ally {{TRIBE:PLANT|1}} dies, gain +1 {{ATK}}.",
+      "effect_readable": "After an ally Plant dies, gain +1 ATK.",
+      "keyword_mentions": [],
+      "tribe_mentions": [
+        "PLANT"
+      ],
+      "card_references": [],
+      "source_key": "card-519",
+      "source_line": 1797
+    },
+    {
+      "id": 520,
+      "name": "Abstract Art",
+      "metadata_name": "Abstract Art",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give all {{KW:GENERATED}} ally monsters {{KW:HASTE}}.",
+      "effect_readable": "Magic: Give all Generated ally monsters Haste.",
+      "keyword_mentions": [
+        "GENERATED",
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-520",
+      "source_line": 1799
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

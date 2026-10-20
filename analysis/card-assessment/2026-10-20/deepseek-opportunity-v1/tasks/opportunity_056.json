@@ -1,0 +1,339 @@
+{
+  "task_id": "opportunity_056",
+  "kind": "opportunity_review",
+  "requested": [
+    588,
+    589,
+    590,
+    591,
+    592,
+    593,
+    594,
+    597
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 588,
+      "name": "Spaghetti",
+      "metadata_name": "Spaghetti",
+      "cost": 4,
+      "attack": 4,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SHOCK}}: Heal 3 {{HP}} to you.",
+      "effect_readable": "Shock: Heal 3 HP to you.",
+      "keyword_mentions": [
+        "SHOCK"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-588",
+      "source_line": 1953
+    },
+    {
+      "id": 589,
+      "name": "Shrine Mascot",
+      "metadata_name": "The Mascot",
+      "cost": 5,
+      "attack": 5,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SHOCK}}: Add a {{CARD:577|1}} to your hand.",
+      "effect_readable": "Shock: Add a Draft [#577] to your hand.",
+      "keyword_mentions": [
+        "SHOCK"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        577
+      ],
+      "source_key": "card-589",
+      "source_line": 1955
+    },
+    {
+      "id": 590,
+      "name": "Moldmega",
+      "metadata_name": "Moldmega",
+      "cost": 9,
+      "attack": 6,
+      "health": 9,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "MOLD"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}} and {{KW:DUST}}: {{KW:ERASE}} 5 {{TRIBE:MOLD|2}} in your dustpile to summon a {{CARD:19|1}} and trigger its {{KW:MAGIC}}.",
+      "effect_readable": "Taunt. Magic and Dust: Erase 5 Mold in your dustpile to summon a Moldbygg [#19] and trigger its Magic.",
+      "keyword_mentions": [
+        "DUST",
+        "ERASE",
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [
+        "MOLD"
+      ],
+      "card_references": [
+        19
+      ],
+      "source_key": "card-590",
+      "source_line": 1957
+    },
+    {
+      "id": 591,
+      "name": "Memorykeeper",
+      "metadata_name": "Memory Keeper",
+      "cost": 6,
+      "attack": 4,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set a monster's {{HP}} to 2 and give it {{KW:DODGE}} (1). {{KW:SHOCK}}: Deal 2 {{DMG}} to the highest {{HP}} enemy monster.",
+      "effect_readable": "Magic: Set a monster's HP to 2 and give it Dodge (1). Shock: Deal 2 DMG to the highest HP enemy monster.",
+      "keyword_mentions": [
+        "DODGE",
+        "MAGIC",
+        "SHOCK"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-591",
+      "source_line": 1959
+    },
+    {
+      "id": 592,
+      "name": "Mio Mio San",
+      "metadata_name": "Mio Mio San",
+      "cost": 4,
+      "attack": 4,
+      "health": 5,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at all non-{{RARITY:DETERMINATION}} monsters in the enemy hand and choose one. Halve its {{ATK}} and {{HP}} and add an exact copy to your hand.",
+      "effect_readable": "Magic: Look at all non-DT monsters in the enemy hand and choose one. Halve its ATK and HP and add an exact copy to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-592",
+      "source_line": 1961
+    },
+    {
+      "id": 593,
+      "name": "Rapstablook",
+      "metadata_name": "Rapstablook",
+      "cost": 4,
+      "attack": 4,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Dodge",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DODGE}} (1). {{KW:TURN_START}}: Die to deal 3 {{DMG}} to all enemies.",
+      "effect_readable": "Dodge (1). Turn start: Die to deal 3 DMG to all enemies.",
+      "keyword_mentions": [
+        "DODGE",
+        "TURN_START"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-593",
+      "source_line": 1963
+    },
+    {
+      "id": 594,
+      "name": "Toy Bricks",
+      "metadata_name": "Toy Bricks",
+      "cost": 5,
+      "attack": 4,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:NEED}}: 4+ {{CARD:594|4}} in your dustpile. {{KW:MAGIC}}: {{KW:ERASE}} them and add 10 {{CARD:595|10}} to your deck.",
+      "effect_readable": "Taunt. Need: 4+ Toy Bricks [#594] in your dustpile. Magic: Erase them and add 10 Rescue Helicopter [#595] to your deck.",
+      "keyword_mentions": [
+        "ERASE",
+        "MAGIC",
+        "NEED",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        594,
+        595
+      ],
+      "source_key": "card-594",
+      "source_line": 1965
+    },
+    {
+      "id": 597,
+      "name": "DT Extractor",
+      "metadata_name": "DT Extractor",
+      "cost": 10,
+      "attack": 10,
+      "health": 10,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at 4 random {{RARITY:DETERMINATION}} cards. Choose one to add to your hand.",
+      "effect_readable": "Magic: Look at 4 random DT cards. Choose one to add to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-597",
+      "source_line": 1975
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

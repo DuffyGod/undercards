@@ -1,0 +1,336 @@
+{
+  "task_id": "opportunity_077",
+  "kind": "opportunity_review",
+  "requested": [
+    828,
+    829,
+    830,
+    831,
+    832,
+    833,
+    834,
+    835
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 828,
+      "name": "Ceroba",
+      "metadata_name": "Ceroba",
+      "cost": 5,
+      "attack": 4,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. Whenever an enemy monster is played or attacks during the enemy turn, give the opponent -2 {{HP}}. {{KW:MAGIC}}: {{KW:PARALYZE}} an enemy monster.",
+      "effect_readable": "Taunt. Whenever an enemy monster is played or attacks during the enemy turn, give the opponent -2 HP. Magic: Paralyze an enemy monster.",
+      "keyword_mentions": [
+        "MAGIC",
+        "PARALYZE",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-828",
+      "source_line": 2514
+    },
+    {
+      "id": 829,
+      "name": "Chujin",
+      "metadata_name": "Chujin",
+      "cost": 13,
+      "attack": 6,
+      "health": 8,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Take the {{ARTIFACT:64}}! Kill all enemy monsters, give all cards in your hand -1 {{COST}}, and draw up to 7 cards.",
+      "effect_readable": "Magic: Take the Unstable Serum [#64]! Kill all enemy monsters, give all cards in your hand -1 COST, and draw up to 7 cards.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-829",
+      "source_line": 2516
+    },
+    {
+      "id": 830,
+      "name": "Well",
+      "metadata_name": "Well",
+      "cost": 4,
+      "attack": 4,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "NEUTRAL",
+          "name": "Program",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: {{KW:PROGRAM}} (1): Add a random Undertale Yellow {{RARITY:LEGENDARY}} to your hand.",
+      "effect_readable": "Turn end: Program (1): Add a random Undertale Yellow LEGENDARY to your hand.",
+      "keyword_mentions": [
+        "PROGRAM",
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-830",
+      "source_line": 2518
+    },
+    {
+      "id": 831,
+      "name": "TNT Man",
+      "metadata_name": "TNT Man",
+      "cost": 11,
+      "attack": 4,
+      "health": 10,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": "ALL",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Bullseye",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 1 {{DMG}}. {{KW:BULLSEYE}}: Deal 4 {{DMG}} to everything.",
+      "effect_readable": "Magic: Deal 1 DMG. Bullseye: Deal 4 DMG to everything.",
+      "keyword_mentions": [
+        "BULLSEYE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-831",
+      "source_line": 2520
+    },
+    {
+      "id": 832,
+      "name": "Tall Miner",
+      "metadata_name": "Tall Miner",
+      "cost": 5,
+      "attack": 5,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SHOCK}}: Add a 0-{{COST}} {{CARD:578|1}} to your hand and lose this {{KW:SHOCK}}.",
+      "effect_readable": "Shock: Add a 0-COST Crystal Shard [#578] to your hand and lose this Shock.",
+      "keyword_mentions": [
+        "SHOCK"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        578
+      ],
+      "source_key": "card-832",
+      "source_line": 2522
+    },
+    {
+      "id": 833,
+      "name": "Gamer",
+      "metadata_name": "Gamer",
+      "cost": 6,
+      "attack": 4,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Bullseye",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}} and {{KW:BULLSEYE}}: Deal 2 {{DMG}} to the lowest {{HP}} enemy monster and 1 {{DMG}} to the opponent.",
+      "effect_readable": "Magic and Bullseye: Deal 2 DMG to the lowest HP enemy monster and 1 DMG to the opponent.",
+      "keyword_mentions": [
+        "BULLSEYE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-833",
+      "source_line": 2524
+    },
+    {
+      "id": 834,
+      "name": "Drinki",
+      "metadata_name": "Drinki",
+      "cost": 5,
+      "attack": 3,
+      "health": 7,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Bullseye",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:BULLSEYE}}: Fully heal this.",
+      "effect_readable": "Bullseye: Fully heal this.",
+      "keyword_mentions": [
+        "BULLSEYE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-834",
+      "source_line": 2526
+    },
+    {
+      "id": 835,
+      "name": "Rockman",
+      "metadata_name": "Rockman",
+      "cost": 4,
+      "attack": 2,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Bullseye",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:BULLSEYE}}: Summon a {{CARD:352|1}}.",
+      "effect_readable": "Bullseye: Summon a Pebble [#352].",
+      "keyword_mentions": [
+        "BULLSEYE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        352
+      ],
+      "source_key": "card-835",
+      "source_line": 2528
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

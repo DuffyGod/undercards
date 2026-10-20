@@ -1,0 +1,340 @@
+{
+  "task_id": "opportunity_065",
+  "kind": "opportunity_review",
+  "requested": [
+    680,
+    681,
+    682,
+    683,
+    684,
+    685,
+    686,
+    687
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 680,
+      "name": "Pluggirl",
+      "metadata_name": "Pluggirl",
+      "cost": 3,
+      "attack": 2,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLUG"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Dodge",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DODGE}} (1). {{KW:TURN_END}}: If this has {{ATK}} or {{HP}} buffs, gain {{KW:TAUNT}}.",
+      "effect_readable": "Dodge (1). Turn end: If this has ATK or HP buffs, gain Taunt.",
+      "keyword_mentions": [
+        "DODGE",
+        "TAUNT",
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-680",
+      "source_line": 2152
+    },
+    {
+      "id": 681,
+      "name": "Plugboy",
+      "metadata_name": "Plugboy",
+      "cost": 4,
+      "attack": 3,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLUG"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}} and {{KW:DUST}}: Give 2 random {{TRIBE:PLUG|2}} in your hand {{STATS:+1|+1}}.",
+      "effect_readable": "Magic and Dust: Give 2 random Plug in your hand ATK +1/HP +1.",
+      "keyword_mentions": [
+        "DUST",
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "PLUG"
+      ],
+      "card_references": [],
+      "source_key": "card-681",
+      "source_line": 2154
+    },
+    {
+      "id": 682,
+      "name": "Revoltplug",
+      "metadata_name": "Revoltplug",
+      "cost": 4,
+      "attack": 2,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLUG"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal its {{ATK}} as {{DMG}} randomly split among all enemy monsters.",
+      "effect_readable": "Magic: Deal its ATK as DMG randomly split among all enemy monsters.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-682",
+      "source_line": 2156
+    },
+    {
+      "id": 683,
+      "name": "Hatplug",
+      "metadata_name": "Hatplug",
+      "cost": 5,
+      "attack": 2,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLUG"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Dodge",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DODGE}} (1). After this loses a {{KW:DODGE}}, draw a {{TRIBE:PLUG|1}} with {{STATS:+2|+2}}.",
+      "effect_readable": "Dodge (1). After this loses a Dodge, draw a Plug with ATK +2/HP +2.",
+      "keyword_mentions": [
+        "DODGE"
+      ],
+      "tribe_mentions": [
+        "PLUG"
+      ],
+      "card_references": [],
+      "source_key": "card-683",
+      "source_line": 2158
+    },
+    {
+      "id": 684,
+      "name": "Werewire",
+      "metadata_name": "Werewire",
+      "cost": 5,
+      "attack": 4,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLUG"
+      ],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: If this has no monster caught, {{KW:CATCH}} an ally {{TRIBE:PLUG|1}}. {{KW:DUST}}: Release it with this card's {{ATK}} and {{HP}} buffs.",
+      "effect_readable": "Haste. Magic: If this has no monster caught, Catch an ally Plug. Dust: Release it with this card's ATK and HP buffs.",
+      "keyword_mentions": [
+        "CATCH",
+        "DUST",
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "PLUG"
+      ],
+      "card_references": [],
+      "source_key": "card-684",
+      "source_line": 2160
+    },
+    {
+      "id": 685,
+      "name": "Businessplug",
+      "metadata_name": "Businessplug",
+      "cost": 6,
+      "attack": 4,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLUG"
+      ],
+      "target": "HAND",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Summon a base {{STATS:1|1}} exact copy of a {{TRIBE:PLUG|1}} in your hand with its {{ATK}} and {{HP}} buffs.",
+      "effect_readable": "Magic: Summon a base ATK 1/HP 1 exact copy of a Plug in your hand with its ATK and HP buffs.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "PLUG"
+      ],
+      "card_references": [],
+      "source_key": "card-685",
+      "source_line": 2162
+    },
+    {
+      "id": 686,
+      "name": "Hanging Plug",
+      "metadata_name": "Hanging Plug",
+      "cost": 3,
+      "attack": 3,
+      "health": 2,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Choose an ally monster costing 3 or less. Turn it into a {{STATS:2|1}} {{CARD:684|1}} that {{KW:CATCH|override=Catches}} it.",
+      "effect_readable": "Magic: Choose an ally monster costing 3 or less. Turn it into a ATK 2/HP 1 Werewire [#684] that Catches it.",
+      "keyword_mentions": [
+        "CATCH",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        684
+      ],
+      "source_key": "card-686",
+      "source_line": 2164
+    },
+    {
+      "id": 687,
+      "name": "Werewerewire",
+      "metadata_name": "Werewerewire",
+      "cost": 10,
+      "attack": 5,
+      "health": 6,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLUG"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: Turn all other ally {{TRIBE:PLUG|2}} into {{CARD:684|2}} that {{KW:CATCH}} the {{TRIBE:PLUG|2}} and gain their {{ATK}} and {{HP}} buffs.",
+      "effect_readable": "Haste. Magic: Turn all other ally Plug into Werewire [#684] that Catch the Plug and gain their ATK and HP buffs.",
+      "keyword_mentions": [
+        "CATCH",
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "PLUG"
+      ],
+      "card_references": [
+        684
+      ],
+      "source_key": "card-687",
+      "source_line": 2166
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

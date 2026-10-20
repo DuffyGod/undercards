@@ -1,0 +1,231 @@
+{
+  "task_id": "opportunity_002",
+  "kind": "opportunity_review",
+  "requested": [
+    8,
+    225,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    },
+    {
+      "id": 1,
+      "name": "Dummy",
+      "metadata_name": "Dummy",
+      "cost": 1,
+      "attack": 0,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}.",
+      "effect_readable": "Taunt.",
+      "keyword_mentions": [
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-1",
+      "source_line": 283
+    },
+    {
+      "id": 2,
+      "name": "Froggit",
+      "metadata_name": "Froggit",
+      "cost": 2,
+      "attack": 2,
+      "health": 3,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "FROGGIT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": " ",
+      "effect_readable": "",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-2",
+      "source_line": 284
+    },
+    {
+      "id": 3,
+      "name": "Whimsun",
+      "metadata_name": "Whimsun",
+      "cost": 3,
+      "attack": 2,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Gain +{{ATK:1}} for each other ally monster.",
+      "effect_readable": "Magic: Gain +ATK 1 for each other ally monster.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-3",
+      "source_line": 285
+    },
+    {
+      "id": 4,
+      "name": "Moldsmal",
+      "metadata_name": "Moldsmal",
+      "cost": 2,
+      "attack": 3,
+      "health": 2,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "MOLD"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": " ",
+      "effect_readable": "",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-4",
+      "source_line": 286
+    },
+    {
+      "id": 5,
+      "name": "Migosp",
+      "metadata_name": "Migosp",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give adjacent monsters +1 {{HP}}.",
+      "effect_readable": "Magic: Give adjacent monsters +1 HP.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-5",
+      "source_line": 287
+    },
+    {
+      "id": 6,
+      "name": "Vegetoid",
+      "metadata_name": "Vegetoid",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_START}}: Heal 5 {{HP}} to you.",
+      "effect_readable": "Turn start: Heal 5 HP to you.",
+      "keyword_mentions": [
+        "TURN_START"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-6",
+      "source_line": 288
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

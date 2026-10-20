@@ -1,0 +1,406 @@
+{
+  "task_id": "opportunity_061",
+  "kind": "opportunity_review",
+  "requested": [
+    640,
+    641,
+    642,
+    644,
+    645,
+    646,
+    647,
+    649
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 640,
+      "name": "Aesthetic Aaron",
+      "metadata_name": "Aesthetic Aaron",
+      "cost": 6,
+      "attack": 7,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "HAND",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Choose a card in your hand to send to the enemy hand to draw a card.",
+      "effect_readable": "Magic: Choose a card in your hand to send to the enemy hand to draw a card.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-640",
+      "source_line": 2072
+    },
+    {
+      "id": 641,
+      "name": "Cafe Table",
+      "metadata_name": "Cafe Table",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Remove an ally monster's negative effects and give it {{KW:TAUNT}}.",
+      "effect_readable": "Magic: Remove an ally monster's negative effects and give it Taunt.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-641",
+      "source_line": 2074
+    },
+    {
+      "id": 642,
+      "name": "Policeblook",
+      "metadata_name": "Policeblook",
+      "cost": 4,
+      "attack": 6,
+      "health": 3,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Add {{CARD:643|1}} to your hand.",
+      "effect_readable": "Dust: Add Prison Bars [#643] to your hand.",
+      "keyword_mentions": [
+        "DUST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        643
+      ],
+      "source_key": "card-642",
+      "source_line": 2076
+    },
+    {
+      "id": 644,
+      "name": "Carnival Tent",
+      "metadata_name": "Carnival Tent",
+      "cost": 6,
+      "attack": 4,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Cast all {{KW:GENERATED}} spells from your hand on random targets.",
+      "effect_readable": "Magic: Cast all Generated spells from your hand on random targets.",
+      "keyword_mentions": [
+        "GENERATED",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-644",
+      "source_line": 2080
+    },
+    {
+      "id": 645,
+      "name": "Arcade Machine",
+      "metadata_name": "Arcade Machine",
+      "cost": 8,
+      "attack": 4,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: Your hand has no cards of the same rarity. {{KW:MAGIC}}: Give all cards in your hand -3 {{COST}}.",
+      "effect_readable": "Need: Your hand has no cards of the same rarity. Magic: Give all cards in your hand -3 COST.",
+      "keyword_mentions": [
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-645",
+      "source_line": 2082
+    },
+    {
+      "id": 646,
+      "name": "Glitch",
+      "metadata_name": "Glitch",
+      "cost": 4,
+      "attack": 5,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "NEGATIVE",
+          "name": "KR",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "NEGATIVE",
+          "name": "MoldSpore",
+          "statusBehavior": "STACKABLE",
+          "counter": 0,
+          "displayCounter": true
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "FloweryPower",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Invulnerable",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Dodge",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Charge",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Armor",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "NEGATIVE",
+          "name": "Disarmed",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Transparency",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Candy",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "NEGATIVE",
+          "name": "Wanted",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Darkspawn",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KR}}. {{KW:MOLD_SPORE}} (0). {{KW:CHARGE}}. {{KW:HASTE}}. {{KW:ARMOR}}. {{KW:DISARMED}}. {{KW:CANDY}}. {{KW:TRANSPARENCY}}. {{KW:TAUNT}}. {{KW:DODGE}} (1). {{KW:WANTED}}. {{KW:DARKSPAWN}}. {{KW:FLOWERY_POWER}}. {{KW:INVULNERABLE}} for one turn.",
+      "effect_readable": "KR. Mold Spore (0). Charge. Haste. Armor. Disarmed. Candy. Transparency. Taunt. Dodge (1). Wanted. Darkspawn. Flowery Power. Invulnerable for one turn.",
+      "keyword_mentions": [
+        "ARMOR",
+        "CANDY",
+        "CHARGE",
+        "DARKSPAWN",
+        "DISARMED",
+        "DODGE",
+        "FLOWERY_POWER",
+        "HASTE",
+        "INVULNERABLE",
+        "MOLD_SPORE",
+        "TAUNT",
+        "TRANSPARENCY",
+        "WANTED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-646",
+      "source_line": 2084
+    },
+    {
+      "id": 647,
+      "name": "Queen Painting",
+      "metadata_name": "Queen Painting",
+      "cost": 10,
+      "attack": 5,
+      "health": 7,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Support",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:SUPPORT}}: Turn Into A {{CARD:648|1}} With The Same Base Stats As This.",
+      "effect_readable": "Haste. Support: Turn Into A Spamton Painting [#648] With The Same Base Stats As This.",
+      "keyword_mentions": [
+        "HASTE",
+        "SUPPORT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        648
+      ],
+      "source_key": "card-647",
+      "source_line": 2086
+    },
+    {
+      "id": 649,
+      "name": "Broken Car",
+      "metadata_name": "Broken Car",
+      "cost": 6,
+      "attack": 3,
+      "health": 7,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 1 {{DMG}} to a monster for each other monster. If this deals 3 or less {{DMG}}, gain {{KW:HASTE}}.",
+      "effect_readable": "Magic: Deal 1 DMG to a monster for each other monster. If this deals 3 or less DMG, gain Haste.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-649",
+      "source_line": 2090
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

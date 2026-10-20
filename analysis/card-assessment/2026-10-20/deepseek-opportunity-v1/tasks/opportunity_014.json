@@ -1,0 +1,292 @@
+{
+  "task_id": "opportunity_014",
+  "kind": "opportunity_review",
+  "requested": [
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 98,
+      "name": "Undyne's Spears",
+      "metadata_name": "Undyne's Spears",
+      "cost": 5,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "JUSTICE",
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "NEUTRAL",
+          "name": "Program",
+          "statusBehavior": "STACKABLE",
+          "counter": 5,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Summon 2 {{CARD:574|2}}. They attack the lowest-{{ATK}} enemy monsters. {{KW:PROGRAM}} (5): Set their stats to {{STATS:5|7}} first.",
+      "effect_readable": "Summon 2 Spear [#574]. They attack the lowest-ATK enemy monsters. Program (5): Set their stats to ATK 5/HP 7 first.",
+      "keyword_mentions": [
+        "PROGRAM"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        574
+      ],
+      "source_key": "card-98",
+      "source_line": 380
+    },
+    {
+      "id": 99,
+      "name": "Reload",
+      "metadata_name": "Reload",
+      "cost": 4,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "JUSTICE",
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Give all non-{{RARITY:TOKEN}} spells in your hand (except {{CARD:99|1}}) +1 {{KW:LOOP}}.",
+      "effect_readable": "Give all non-TOKEN spells in your hand (except Reload [#99]) +1 Loop.",
+      "keyword_mentions": [
+        "LOOP"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        99
+      ],
+      "source_key": "card-99",
+      "source_line": 381
+    },
+    {
+      "id": 100,
+      "name": "Headshot",
+      "metadata_name": "Headshot",
+      "cost": 6,
+      "attack": null,
+      "health": null,
+      "rarity": "EPIC",
+      "card_type": "spell",
+      "soul": "JUSTICE",
+      "set": "BASE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SILENCE}} and kill a monster.",
+      "effect_readable": "Silence and kill a monster.",
+      "keyword_mentions": [
+        "SILENCE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-100",
+      "source_line": 382
+    },
+    {
+      "id": 101,
+      "name": "Nacarat Jester",
+      "metadata_name": "Nacarat Jester",
+      "cost": 5,
+      "attack": 6,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:SILENCE}} a monster.",
+      "effect_readable": "Magic: Silence a monster.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SILENCE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-101",
+      "source_line": 383
+    },
+    {
+      "id": 102,
+      "name": "Sad Customer",
+      "metadata_name": "Sad Customer",
+      "cost": 4,
+      "attack": 2,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at the 2 most expensive monsters in your dustpile costing 5 or less {{GOLD}} (except {{CARD:102|1}}) and {{KW:CATCH}} one. {{KW:DUST}}: Release it.",
+      "effect_readable": "Magic: Look at the 2 most expensive monsters in your dustpile costing 5 or less GOLD (except Sad Customer [#102]) and Catch one. Dust: Release it.",
+      "keyword_mentions": [
+        "CATCH",
+        "DUST",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        102
+      ],
+      "source_key": "card-102",
+      "source_line": 384
+    },
+    {
+      "id": 103,
+      "name": "Muffet's Pet",
+      "metadata_name": "Muffet's Pet",
+      "cost": 5,
+      "attack": 4,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "ARACHNID"
+      ],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give an enemy monster -2 {{ATK}}. If it has 0 {{ATK}}, kill it.",
+      "effect_readable": "Magic: Give an enemy monster -2 ATK. If it has 0 ATK, kill it.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-103",
+      "source_line": 385
+    },
+    {
+      "id": 104,
+      "name": "Grillby",
+      "metadata_name": "Grillby",
+      "cost": 5,
+      "attack": 4,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give all other ally monsters {{STATS:+1|+1}}.",
+      "effect_readable": "Magic: Give all other ally monsters ATK +1/HP +1.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-104",
+      "source_line": 386
+    },
+    {
+      "id": 105,
+      "name": "Echo Flower",
+      "metadata_name": "Echo Flower",
+      "cost": 3,
+      "attack": 2,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Add an exact copy of a random card in the enemy hand to your hand. Give it -1 {{COST}}.",
+      "effect_readable": "Magic: Add an exact copy of a random card in the enemy hand to your hand. Give it -1 COST.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-105",
+      "source_line": 387
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

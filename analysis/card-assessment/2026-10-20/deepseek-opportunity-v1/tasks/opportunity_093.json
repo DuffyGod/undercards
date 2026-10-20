@@ -1,0 +1,328 @@
+{
+  "task_id": "opportunity_093",
+  "kind": "opportunity_review",
+  "requested": [
+    985,
+    986,
+    987,
+    988,
+    989,
+    990,
+    991,
+    992
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 985,
+      "name": "Giant Shrubbery",
+      "metadata_name": "Giant Shrubbery",
+      "cost": 7,
+      "attack": 5,
+      "health": 7,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. Adjacent {{TRIBE:PLANT|2}} have {{STATS:+2|+2}}.",
+      "effect_readable": "Taunt. Adjacent Plant have ATK +2/HP +2.",
+      "keyword_mentions": [
+        "TAUNT"
+      ],
+      "tribe_mentions": [
+        "PLANT"
+      ],
+      "card_references": [],
+      "source_key": "card-985",
+      "source_line": 3196
+    },
+    {
+      "id": 986,
+      "name": "Flowery",
+      "metadata_name": "Flowery",
+      "cost": 10,
+      "attack": 9,
+      "health": 9,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:QUEST}}: Obtain the {{QUEST:77}}. After this attacks and kills a monster and {{KW:MAGIC}}: Add an {{CARD:983|1}} to your hand.",
+      "effect_readable": "Haste. Quest: Obtain the Quest [#77]. After this attacks and kills a monster and Magic: Add an Our OMEGA! [#983] to your hand.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC",
+        "QUEST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        983
+      ],
+      "source_key": "card-986",
+      "source_line": 3198
+    },
+    {
+      "id": 987,
+      "name": "Spikery",
+      "metadata_name": "Spikery",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:NEED}}: You spent {{GOLD}} on a spell and a monster last turn. {{KW:MAGIC}}: Add 3 {{CARD:576|3}} to your hand.",
+      "effect_readable": "Taunt. Need: You spent GOLD on a spell and a monster last turn. Magic: Add 3 Shield [#576] to your hand.",
+      "keyword_mentions": [
+        "MAGIC",
+        "NEED",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        576
+      ],
+      "source_key": "card-987",
+      "source_line": 3247
+    },
+    {
+      "id": 988,
+      "name": "Wind Struggler",
+      "metadata_name": "Wind Struggler",
+      "cost": 3,
+      "attack": 2,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "All other monsters take +1 {{DMG}}.",
+      "effect_readable": "All other monsters take +1 DMG.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-988",
+      "source_line": 3249
+    },
+    {
+      "id": 989,
+      "name": "Vampire Alvin",
+      "metadata_name": "Vampire Alvin",
+      "cost": 8,
+      "attack": 5,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Give a non-{{RARITY:DETERMINATION}} monster {{STATS:-3|-3|-3}} (min. 1 {{HP}}). {{KW:DELAY}}: If it's alive, add an exact copy of it to your hand.",
+      "effect_readable": "Taunt. Magic: Give a non-DT monster COST -3/ATK -3/HP -3 (min. 1 HP). Delay: If it's alive, add an exact copy of it to your hand.",
+      "keyword_mentions": [
+        "DELAY",
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-989",
+      "source_line": 3251
+    },
+    {
+      "id": 990,
+      "name": "Kawkaw",
+      "metadata_name": "Kawkaw",
+      "cost": 1,
+      "attack": 1,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give a monster {{STATS:+1|+3}} and {{KW:PARALYZE}} it.",
+      "effect_readable": "Magic: Give a monster ATK +1/HP +3 and Paralyze it.",
+      "keyword_mentions": [
+        "MAGIC",
+        "PARALYZE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-990",
+      "source_line": 3253
+    },
+    {
+      "id": 991,
+      "name": "Raincoat Spider",
+      "metadata_name": "Raincoat Spider",
+      "cost": 2,
+      "attack": 1,
+      "health": 3,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [
+        "ARACHNID"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After you play an {{TRIBE:ARACHNID|1}} not {{KW:GENERATED}} by {{CARD:991|1}}, add a {{CARD:115|1}} to your hand.",
+      "effect_readable": "After you play an Arachnid not Generated by Raincoat Spider [#991], add a Spider [#115] to your hand.",
+      "keyword_mentions": [
+        "GENERATED"
+      ],
+      "tribe_mentions": [
+        "ARACHNID"
+      ],
+      "card_references": [
+        115,
+        991
+      ],
+      "source_key": "card-991",
+      "source_line": 3255
+    },
+    {
+      "id": 992,
+      "name": "Ice-E Banner",
+      "metadata_name": "Ice-E Banner",
+      "cost": 6,
+      "attack": 4,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:SILENCE}} a monster. Then {{KW:PARALYZE}} it, give it {{KR}}, and make it {{KW:WANTED}}.",
+      "effect_readable": "Magic: Silence a monster. Then Paralyze it, give it KR, and make it Wanted.",
+      "keyword_mentions": [
+        "MAGIC",
+        "PARALYZE",
+        "SILENCE",
+        "WANTED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-992",
+      "source_line": 3257
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

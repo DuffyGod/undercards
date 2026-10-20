@@ -1,0 +1,301 @@
+{
+  "task_id": "opportunity_057",
+  "kind": "opportunity_review",
+  "requested": [
+    599,
+    600,
+    601,
+    602,
+    603,
+    604,
+    606,
+    607
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 599,
+      "name": "Stalagmite",
+      "metadata_name": "Stalagmite",
+      "cost": 4,
+      "attack": 3,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Enemy monsters take +2 {{DMG}} from {{CARD:598|2}}. {{KW:MAGIC}} and {{KW:DUST}}: Add a {{CARD:598|1}} to your hand.",
+      "effect_readable": "Enemy monsters take +2 DMG from Gemstone [#598]. Magic and Dust: Add a Gemstone [#598] to your hand.",
+      "keyword_mentions": [
+        "DUST",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        598
+      ],
+      "source_key": "card-599",
+      "source_line": 1979
+    },
+    {
+      "id": 600,
+      "name": "Bag o' Goodies",
+      "metadata_name": "Bag o' Goodies",
+      "cost": 3,
+      "attack": 2,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at 3 random spells costing 2+ {{GOLD}}. Choose one to add to your hand with -1 {{COST}} for each {{CARD:598|1}} you cast this turn. {{KW:SHOCK}}: Add a {{CARD:598|1}} to your hand.",
+      "effect_readable": "Magic: Look at 3 random spells costing 2+ GOLD. Choose one to add to your hand with -1 COST for each Gemstone [#598] you cast this turn. Shock: Add a Gemstone [#598] to your hand.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SHOCK"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        598
+      ],
+      "source_key": "card-600",
+      "source_line": 1981
+    },
+    {
+      "id": 601,
+      "name": "Pickaxe",
+      "metadata_name": "Pickaxe",
+      "cost": 2,
+      "attack": 1,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. Before this attacks, add a {{CARD:598|1}} to your hand.",
+      "effect_readable": "Haste. Before this attacks, add a Gemstone [#598] to your hand.",
+      "keyword_mentions": [
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        598
+      ],
+      "source_key": "card-601",
+      "source_line": 1983
+    },
+    {
+      "id": 602,
+      "name": "Rock Pet",
+      "metadata_name": "Rock Pet",
+      "cost": 2,
+      "attack": 3,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": " ",
+      "effect_readable": "",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-602",
+      "source_line": 1985
+    },
+    {
+      "id": 603,
+      "name": "Pink Crystals",
+      "metadata_name": "Pink Crystals",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After you cast a {{CARD:598|1}}, give the monster in front of this {{STATS:-1|-1}}. {{KW:MAGIC}}: Add a {{CARD:598|1}} to your hand.",
+      "effect_readable": "After you cast a Gemstone [#598], give the monster in front of this ATK -1/HP -1. Magic: Add a Gemstone [#598] to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        598
+      ],
+      "source_key": "card-603",
+      "source_line": 1987
+    },
+    {
+      "id": 604,
+      "name": "Waterfall Sign",
+      "metadata_name": "Waterfall Sign",
+      "cost": 5,
+      "attack": 4,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After you cast a {{CARD:598|1}} not {{KW:GENERATED}} by {{CARD:604|1}}, add another to your hand. {{KW:DUST}}: Add 2 {{CARD:598|2}} to your hand.",
+      "effect_readable": "After you cast a Gemstone [#598] not Generated by Waterfall Sign [#604], add another to your hand. Dust: Add 2 Gemstone [#598] to your hand.",
+      "keyword_mentions": [
+        "DUST",
+        "GENERATED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        598,
+        604
+      ],
+      "source_key": "card-604",
+      "source_line": 1989
+    },
+    {
+      "id": 606,
+      "name": "Librarby Sign",
+      "metadata_name": "Librarby Sign",
+      "cost": 6,
+      "attack": 6,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Draw a {{RARITY:COMMON}}, {{RARITY:RARE}}, and {{RARITY:EPIC}} card.",
+      "effect_readable": "Magic: Draw a COMMON, RARE, and EPIC card.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-606",
+      "source_line": 1993
+    },
+    {
+      "id": 607,
+      "name": "Seat of Gods",
+      "metadata_name": "Seat of Gods",
+      "cost": 4,
+      "attack": 3,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:SWITCH}}: Give all monsters costing 9+ {{GOLD}} in your {{SWITCH_LEFT:1|hand}} or {{SWITCH_RIGHT:1|deck}} -1 {{COST}}. {{KW:DELAY}}: Draw a card.",
+      "effect_readable": "Magic: Switch: Give all monsters costing 9+ GOLD in your [左侧] hand or [右侧] deck -1 COST. Delay: Draw a card.",
+      "keyword_mentions": [
+        "DELAY",
+        "MAGIC",
+        "SWITCH"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-607",
+      "source_line": 1995
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

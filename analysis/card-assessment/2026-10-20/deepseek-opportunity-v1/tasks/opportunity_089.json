@@ -1,0 +1,331 @@
+{
+  "task_id": "opportunity_089",
+  "kind": "opportunity_review",
+  "requested": [
+    949,
+    950,
+    951,
+    952,
+    953,
+    954,
+    955,
+    956
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 949,
+      "name": "Moray",
+      "metadata_name": "Moray",
+      "cost": 7,
+      "attack": 4,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After a {{KW:WANTED}} monster dies, deal 1 {{DMG}} to all enemy monsters. {{KW:MAGIC}}: Deal 2 {{DMG}} to all enemy monsters.",
+      "effect_readable": "After a Wanted monster dies, deal 1 DMG to all enemy monsters. Magic: Deal 2 DMG to all enemy monsters.",
+      "keyword_mentions": [
+        "MAGIC",
+        "WANTED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-949",
+      "source_line": 3086
+    },
+    {
+      "id": 950,
+      "name": "Plague Doctor",
+      "metadata_name": "Plague Doctor",
+      "cost": 6,
+      "attack": 6,
+      "health": 7,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": "ALLY_SLOT",
+      "base_statuses": [
+        {
+          "statusType": "NEGATIVE",
+          "name": "KR",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KR}}. {{KW:MAGIC}}: Enchant an ally slot with {{ENCHANT:THE_CURE|1}}.",
+      "effect_readable": "KR. Magic: Enchant an ally slot with The Cure.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-950",
+      "source_line": 3088
+    },
+    {
+      "id": 951,
+      "name": "Fire Fountain",
+      "metadata_name": "Fire Fountain",
+      "cost": 5,
+      "attack": 5,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:DUST}}: Enchant this slot with {{ENCHANT:THE_FLAME|1}}.",
+      "effect_readable": "Haste. Dust: Enchant this slot with The Flame.",
+      "keyword_mentions": [
+        "DUST",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-951",
+      "source_line": 3096
+    },
+    {
+      "id": 952,
+      "name": "Miss Mizzle",
+      "metadata_name": "Miss Mizzle",
+      "cost": 7,
+      "attack": 4,
+      "health": 7,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. Monsters heal 2 more {{HP}} to allies. {{KW:MAGIC}} and {{KW:DUST}}: Summon a {{STATS:1|1}} {{CARD:924|1}}.",
+      "effect_readable": "Haste. Monsters heal 2 more HP to allies. Magic and Dust: Summon a ATK 1/HP 1 Mizzle [#924].",
+      "keyword_mentions": [
+        "DUST",
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        924
+      ],
+      "source_key": "card-952",
+      "source_line": 3098
+    },
+    {
+      "id": 953,
+      "name": "Maus Hand",
+      "metadata_name": "Maus Hand",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Summon a copy of a monster with a base {{COST}} of 2 or less {{GOLD}}.",
+      "effect_readable": "Magic: Summon a copy of a monster with a base COST of 2 or less GOLD.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-953",
+      "source_line": 3100
+    },
+    {
+      "id": 954,
+      "name": "Violetta",
+      "metadata_name": "Violetta",
+      "cost": 5,
+      "attack": 4,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: Add a {{CARD:462|1}} to your hand. Give it -1 {{COST}} for each other ally monster.",
+      "effect_readable": "Haste. Magic: Add a Blue Rose [#462] to your hand. Give it -1 COST for each other ally monster.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        462
+      ],
+      "source_key": "card-954",
+      "source_line": 3102
+    },
+    {
+      "id": 955,
+      "name": "Hammer of Justice",
+      "metadata_name": "Hammer of Justice",
+      "cost": 11,
+      "attack": 6,
+      "health": 5,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Dodge",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DODGE}} (1). {{KW:MAGIC}}: Give an ally monster {{STATS:+3|+3}} and {{KW:HASTE}}. Enchant its slot with {{ENCHANT:GERSONS_HAMMER|1}}.",
+      "effect_readable": "Dodge (1). Magic: Give an ally monster ATK +3/HP +3 and Haste. Enchant its slot with Gerson's Hammer.",
+      "keyword_mentions": [
+        "DODGE",
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-955",
+      "source_line": 3104
+    },
+    {
+      "id": 956,
+      "name": "Tuning Fork",
+      "metadata_name": "Tuning Fork",
+      "cost": 5,
+      "attack": 3,
+      "health": 7,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:DELAY}}: If this monster's {{HP}} equals the amount of cards in your hand, gain {{STATS:+1|+1}} and draw 2 cards.",
+      "effect_readable": "Haste. Delay: If this monster's HP equals the amount of cards in your hand, gain ATK +1/HP +1 and draw 2 cards.",
+      "keyword_mentions": [
+        "DELAY",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-956",
+      "source_line": 3106
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

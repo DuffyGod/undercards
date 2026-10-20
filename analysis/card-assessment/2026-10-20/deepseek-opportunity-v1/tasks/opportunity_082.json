@@ -1,0 +1,352 @@
+{
+  "task_id": "opportunity_082",
+  "kind": "opportunity_review",
+  "requested": [
+    873,
+    874,
+    878,
+    880,
+    881,
+    882,
+    883,
+    884
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 873,
+      "name": "Mo",
+      "metadata_name": "Mo",
+      "cost": 6,
+      "attack": 4,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Add 3 random non-{{RARITY:DETERMINATION}} cards costing 5+ {{GOLD}} to your hand and give them -3 {{COST}}. {{KW:DELAY}}: {{KW:ERASE}} them from your hand.",
+      "effect_readable": "Taunt. Magic: Add 3 random non-DT cards costing 5+ GOLD to your hand and give them -3 COST. Delay: Erase them from your hand.",
+      "keyword_mentions": [
+        "DELAY",
+        "ERASE",
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-873",
+      "source_line": 2611
+    },
+    {
+      "id": 874,
+      "name": "El Undercardio",
+      "metadata_name": "El Undercardio",
+      "cost": 7,
+      "attack": 5,
+      "health": 5,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Fill your hand with random {{TRIBE:PACK|2}} {{KW:PACK_ODDS|override=(The better, the rarer!)}}.",
+      "effect_readable": "Magic: Fill your hand with random Pack (The better, the rarer!).",
+      "keyword_mentions": [
+        "MAGIC",
+        "PACK_ODDS"
+      ],
+      "tribe_mentions": [
+        "PACK"
+      ],
+      "card_references": [],
+      "source_key": "card-874",
+      "source_line": 2620
+    },
+    {
+      "id": 878,
+      "name": "Ceroba Ketsukane",
+      "metadata_name": "Ceroba Ketsukane",
+      "cost": 12,
+      "attack": 8,
+      "health": 5,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Dodge",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DODGE}} (1). {{KW:MAGIC}}: Summon 2 {{CARD:879|2}} adjacent to this. They {{KW:CATCH}} the monsters in front of them. {{KW:TURN_START}}: Gain +1 {{KW:DODGE}}.",
+      "effect_readable": "Dodge (1). Magic: Summon 2 Golden Mirror [#879] adjacent to this. They Catch the monsters in front of them. Turn start: Gain +1 Dodge.",
+      "keyword_mentions": [
+        "CATCH",
+        "DODGE",
+        "MAGIC",
+        "TURN_START"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        879
+      ],
+      "source_key": "card-878",
+      "source_line": 2628
+    },
+    {
+      "id": 880,
+      "name": "Martlet",
+      "metadata_name": "Martlet",
+      "cost": 8,
+      "attack": 5,
+      "health": 7,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [
+        "ROYAL_GUARD"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Bullseye",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:SWITCH}}: Deal {{SWITCH_LEFT:1|7 {{DMG}} to the monster in front}} or {{SWITCH_RIGHT:1|1 {{DMG}} to all enemies and gain {{KW:HASTE}}}}. {{KW:BULLSEYE}}: If this is alive, return to your hand with -1 base {{COST}}.",
+      "effect_readable": "Magic: Switch: Deal [左侧] 7 DMG to the monster in front or [右侧] 1 DMG to all enemies and gain Haste. Bullseye: If this is alive, return to your hand with -1 base COST.",
+      "keyword_mentions": [
+        "BULLSEYE",
+        "HASTE",
+        "MAGIC",
+        "SWITCH"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-880",
+      "source_line": 2637
+    },
+    {
+      "id": 881,
+      "name": "Cuptain",
+      "metadata_name": "Cuptain",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Loop",
+          "statusBehavior": "STACKABLE",
+          "counter": 2,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:LOOP}} (2). {{CARD:881|2}} in your hand have +1 {{COST}}. This has {{STATS:+1|+1}} for each other ally {{CARD:881|1}}.",
+      "effect_readable": "Loop (2). Cuptain [#881] in your hand have +1 COST. This has ATK +1/HP +1 for each other ally Cuptain [#881].",
+      "keyword_mentions": [
+        "LOOP"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        881
+      ],
+      "source_key": "card-881",
+      "source_line": 2645
+    },
+    {
+      "id": 882,
+      "name": "Ramb",
+      "metadata_name": "Ramb",
+      "cost": 8,
+      "attack": 4,
+      "health": 8,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLUG"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Equip the {{ARTIFACT:70}}.",
+      "effect_readable": "Taunt. Magic: Equip the Odd Controller [#70].",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-882",
+      "source_line": 2647
+    },
+    {
+      "id": 883,
+      "name": "Pixel Lancer",
+      "metadata_name": "Pixel Lancer",
+      "cost": 6,
+      "attack": 2,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:DELAY}}: Cast {{CARD:371|1}} on the lowest {{HP}} enemy monster.",
+      "effect_readable": "Haste. Delay: Cast Spade [#371] on the lowest HP enemy monster.",
+      "keyword_mentions": [
+        "DELAY",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        371
+      ],
+      "source_key": "card-883",
+      "source_line": 2649
+    },
+    {
+      "id": 884,
+      "name": "Pixel Susie",
+      "metadata_name": "Pixel Susie",
+      "cost": 4,
+      "attack": 4,
+      "health": 3,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Set an ally monster’s stats to {{STATS:3|3}}.",
+      "effect_readable": "Taunt. Magic: Set an ally monster’s stats to ATK 3/HP 3.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-884",
+      "source_line": 2651
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

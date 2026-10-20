@@ -1,0 +1,303 @@
+{
+  "task_id": "opportunity_069",
+  "kind": "opportunity_review",
+  "requested": [
+    740,
+    741,
+    742,
+    743,
+    744,
+    745,
+    751,
+    752
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 740,
+      "name": "Frisk Laser",
+      "metadata_name": "Frisk Laser",
+      "cost": 4,
+      "attack": 1,
+      "health": 7,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After you draw a card, turn it into a random Undertale {{RARITY:LEGENDARY}} with -2 {{COST}}.",
+      "effect_readable": "After you draw a card, turn it into a random Undertale LEGENDARY with -2 COST.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-740",
+      "source_line": 2287
+    },
+    {
+      "id": 741,
+      "name": "The Reflection",
+      "metadata_name": "The Reflection",
+      "cost": 7,
+      "attack": 5,
+      "health": 5,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Add a copy of all non-{{RARITY:DETERMINATION}} enemy monsters (except {{CARD:741|1}}) to your hand with -2 {{COST}}.",
+      "effect_readable": "Magic: Add a copy of all non-DT enemy monsters (except The Reflection [#741]) to your hand with -2 COST.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        741
+      ],
+      "source_key": "card-741",
+      "source_line": 2289
+    },
+    {
+      "id": 742,
+      "name": "Casual Guard 1",
+      "metadata_name": "Casual Guard 1",
+      "cost": 5,
+      "attack": 4,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "ROYAL_GUARD"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Draw a {{TRIBE:ROYAL_GUARD|1}} with {{KW:DUST}}. Trigger it. If this is your only monster, gain {{KW:HASTE}}.",
+      "effect_readable": "Magic: Draw a Royal Guard with Dust. Trigger it. If this is your only monster, gain Haste.",
+      "keyword_mentions": [
+        "DUST",
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "ROYAL_GUARD"
+      ],
+      "card_references": [],
+      "source_key": "card-742",
+      "source_line": 2295
+    },
+    {
+      "id": 743,
+      "name": "Casual Guard 2",
+      "metadata_name": "Casual Guard 2",
+      "cost": 5,
+      "attack": 4,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "ROYAL_GUARD"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Transparency",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TRANSPARENCY}}. In your hand, this has -3 {{COST}} if you played a card with a base {{COST}} of 9+ {{GOLD}} this turn.",
+      "effect_readable": "Transparency. In your hand, this has -3 COST if you played a card with a base COST of 9+ GOLD this turn.",
+      "keyword_mentions": [
+        "TRANSPARENCY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-743",
+      "source_line": 2297
+    },
+    {
+      "id": 744,
+      "name": "Hanging Spider",
+      "metadata_name": "Hanging Spider",
+      "cost": 3,
+      "attack": 1,
+      "health": 2,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "ARACHNID"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DELAY}}: If this died to a monster, summon a {{CARD:476|1}} and add a {{CARD:475|1}} to your hand.",
+      "effect_readable": "Delay: If this died to a monster, summon a Spider Croissant [#476] and add a Spider Donut [#475] to your hand.",
+      "keyword_mentions": [
+        "DELAY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        475,
+        476
+      ],
+      "source_key": "card-744",
+      "source_line": 2299
+    },
+    {
+      "id": 745,
+      "name": "Stage Lights",
+      "metadata_name": "Stage Lights",
+      "cost": 5,
+      "attack": 5,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Add a copy of the most expensive non-{{RARITY:DETERMINATION}} monster in the enemy hand (except {{CARD:745|1}}) to your hand.",
+      "effect_readable": "Magic: Add a copy of the most expensive non-DT monster in the enemy hand (except Stage Lights [#745]) to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        745
+      ],
+      "source_key": "card-745",
+      "source_line": 2302
+    },
+    {
+      "id": 751,
+      "name": "Ruins Tree",
+      "metadata_name": "Ruins Tree",
+      "cost": 7,
+      "attack": 3,
+      "health": 7,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Candy",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:CANDY}}. {{KW:TURN_END}}: Heal this card's {{HP}} to you.",
+      "effect_readable": "Candy. Turn end: Heal this card's HP to you.",
+      "keyword_mentions": [
+        "CANDY",
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-751",
+      "source_line": 2328
+    },
+    {
+      "id": 752,
+      "name": "Lancer's Bike Bed",
+      "metadata_name": "Lancer's Bike Bed",
+      "cost": 2,
+      "attack": 2,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After you draw a monster, give it +1 {{ATK}}.",
+      "effect_readable": "After you draw a monster, give it +1 ATK.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-752",
+      "source_line": 2330
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

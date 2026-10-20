@@ -1,0 +1,340 @@
+{
+  "task_id": "opportunity_006",
+  "kind": "opportunity_review",
+  "requested": [
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 34,
+      "name": "Reaper Bird",
+      "metadata_name": "Reaper Bird",
+      "cost": 5,
+      "attack": 5,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "AMALGAMATE",
+        "FROGGIT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Draw the most expensive {{TRIBE:AMALGAMATE|1}} or {{TRIBE:FROGGIT|1}} in your deck. {{KW:SYNERGY}}: Give it {{STATS:+2|+1}}.",
+      "effect_readable": "Magic: Draw the most expensive Amalgamate or Frog in your deck. Synergy: Give it ATK +2/HP +1.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SYNERGY"
+      ],
+      "tribe_mentions": [
+        "AMALGAMATE",
+        "FROGGIT"
+      ],
+      "card_references": [],
+      "source_key": "card-34",
+      "source_line": 316
+    },
+    {
+      "id": 35,
+      "name": "Lemon Bread",
+      "metadata_name": "Lemon Bread",
+      "cost": 7,
+      "attack": 5,
+      "health": 7,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "AMALGAMATE",
+        "MOLD"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Give all enemy monsters +1 {{KW:MOLD_SPORE}} for every {{TRIBE:MOLD|1}} or {{TRIBE:AMALGAMATE|1}} you played this turn.",
+      "effect_readable": "Taunt. Magic: Give all enemy monsters +1 Mold Spore for every Mold or Amalgamate you played this turn.",
+      "keyword_mentions": [
+        "MAGIC",
+        "MOLD_SPORE",
+        "TAUNT"
+      ],
+      "tribe_mentions": [
+        "AMALGAMATE",
+        "MOLD"
+      ],
+      "card_references": [],
+      "source_key": "card-35",
+      "source_line": 317
+    },
+    {
+      "id": 36,
+      "name": "Snowdrake's Mom",
+      "metadata_name": "Snowdrake's Mom",
+      "cost": 7,
+      "attack": 4,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "AMALGAMATE",
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:DELAY}}: Summon a {{CARD:6|1}}. Give it {{STATS:+1|+1}} and {{KW:TRANSPARENCY}} if this has any {{ATK}} buffs.",
+      "effect_readable": "Taunt. Delay: Summon a Vegetoid [#6]. Give it ATK +1/HP +1 and Transparency if this has any ATK buffs.",
+      "keyword_mentions": [
+        "DELAY",
+        "TAUNT",
+        "TRANSPARENCY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        6
+      ],
+      "source_key": "card-36",
+      "source_line": 318
+    },
+    {
+      "id": 37,
+      "name": "Moldessa",
+      "metadata_name": "Moldessa",
+      "cost": 4,
+      "attack": 4,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "MOLD"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}} and {{KW:DUST}}: Draw a {{TRIBE:MOLD|1}} (except {{CARD:37|1}}) and give it +1 {{ATK}}.",
+      "effect_readable": "Magic and Dust: Draw a Mold (except Moldessa [#37]) and give it +1 ATK.",
+      "keyword_mentions": [
+        "DUST",
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "MOLD"
+      ],
+      "card_references": [
+        37
+      ],
+      "source_key": "card-37",
+      "source_line": 319
+    },
+    {
+      "id": 38,
+      "name": "Royal Guard 1",
+      "metadata_name": "Royal Guard 1",
+      "cost": 9,
+      "attack": 7,
+      "health": 10,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "ROYAL_GUARD"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Give all ally {{TRIBE:ROYAL_GUARD|2}} {{KW:ARMOR}}.",
+      "effect_readable": "Dust: Give all ally Royal Guard Armor.",
+      "keyword_mentions": [
+        "ARMOR",
+        "DUST"
+      ],
+      "tribe_mentions": [
+        "ROYAL_GUARD"
+      ],
+      "card_references": [],
+      "source_key": "card-38",
+      "source_line": 320
+    },
+    {
+      "id": 39,
+      "name": "Royal Guard 2",
+      "metadata_name": "Royal Guard 2",
+      "cost": 9,
+      "attack": 10,
+      "health": 7,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "ROYAL_GUARD"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Give {{KW:HASTE}} to 4 random {{TRIBE:ROYAL_GUARD|4}} in your hand.",
+      "effect_readable": "Dust: Give Haste to 4 random Royal Guard in your hand.",
+      "keyword_mentions": [
+        "DUST",
+        "HASTE"
+      ],
+      "tribe_mentions": [
+        "ROYAL_GUARD"
+      ],
+      "card_references": [],
+      "source_key": "card-39",
+      "source_line": 321
+    },
+    {
+      "id": 40,
+      "name": "Annoying Dog",
+      "metadata_name": "Annoying Dog",
+      "cost": 3,
+      "attack": 2,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "DOG"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Add a {{CARD:349|1}} to your hand. {{KW:DELAY}}: If this has {{ATK}} buffs, add another.",
+      "effect_readable": "Taunt. Magic: Add a Dog Residue [#349] to your hand. Delay: If this has ATK buffs, add another.",
+      "keyword_mentions": [
+        "DELAY",
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        349
+      ],
+      "source_key": "card-40",
+      "source_line": 322
+    },
+    {
+      "id": 41,
+      "name": "Mad Dummy",
+      "metadata_name": "Mad Dummy",
+      "cost": 10,
+      "attack": 7,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Can only be damaged by 4+ {{DMG}}. {{KW:MAGIC}}: Deal 3 {{DMG}} to all monsters and the opponent. Excess {{DMG}} is healed as {{HP}} to you.",
+      "effect_readable": "Can only be damaged by 4+ DMG. Magic: Deal 3 DMG to all monsters and the opponent. Excess DMG is healed as HP to you.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-41",
+      "source_line": 323
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

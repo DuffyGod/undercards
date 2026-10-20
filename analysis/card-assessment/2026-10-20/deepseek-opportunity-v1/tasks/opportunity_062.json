@@ -1,0 +1,302 @@
+{
+  "task_id": "opportunity_062",
+  "kind": "opportunity_review",
+  "requested": [
+    650,
+    651,
+    652,
+    653,
+    654,
+    655,
+    656,
+    657
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 650,
+      "name": "Walk Sign",
+      "metadata_name": "Walk Sign",
+      "cost": 5,
+      "attack": 4,
+      "health": 5,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 3 {{DMG}} to a monster and you.",
+      "effect_readable": "Magic: Deal 3 DMG to a monster and you.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-650",
+      "source_line": 2092
+    },
+    {
+      "id": 651,
+      "name": "Traffic Car",
+      "metadata_name": "Traffic Car",
+      "cost": 6,
+      "attack": 5,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. After this kills a monster, deal 1 {{DMG}} to all enemy monsters.",
+      "effect_readable": "Taunt. After this kills a monster, deal 1 DMG to all enemy monsters.",
+      "keyword_mentions": [
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-651",
+      "source_line": 2094
+    },
+    {
+      "id": 652,
+      "name": "Susie Plush",
+      "metadata_name": "Susie Plush",
+      "cost": 4,
+      "attack": 3,
+      "health": 7,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 2 {{DMG}} to you. If you have 10 or less {{HP}}, deal 2 {{DMG}} to all enemies instead.",
+      "effect_readable": "Magic: Deal 2 DMG to you. If you have 10 or less HP, deal 2 DMG to all enemies instead.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-652",
+      "source_line": 2096
+    },
+    {
+      "id": 653,
+      "name": "Virovirokun",
+      "metadata_name": "Virovirokun",
+      "cost": 4,
+      "attack": 3,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Transparency",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TRANSPARENCY}}. After you take {{DMG}} during your turn, gain {{STATS:+1|+1}}.",
+      "effect_readable": "Transparency. After you take DMG during your turn, gain ATK +1/HP +1.",
+      "keyword_mentions": [
+        "TRANSPARENCY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-653",
+      "source_line": 2098
+    },
+    {
+      "id": 654,
+      "name": "Ambyu-Lance",
+      "metadata_name": "Ambyu-Lance",
+      "cost": 6,
+      "attack": 5,
+      "health": 7,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: If you have less than 15 {{HP}}, gain +1 {{ATK}} and {{KW:HASTE}}. If you have less than 10 {{HP}}, gain {{KW:CANDY}} and {{KW:TAUNT}}.",
+      "effect_readable": "Magic: If you have less than 15 HP, gain +1 ATK and Haste. If you have less than 10 HP, gain Candy and Taunt.",
+      "keyword_mentions": [
+        "CANDY",
+        "HASTE",
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-654",
+      "source_line": 2100
+    },
+    {
+      "id": 655,
+      "name": "Nubert",
+      "metadata_name": "Nubert",
+      "cost": 6,
+      "attack": 4,
+      "health": 6,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Give a random monster in your hand {{STATS:+1|+1}} for each unique Tribe in your dustpile.",
+      "effect_readable": "Taunt. Magic: Give a random monster in your hand ATK +1/HP +1 for each unique Tribe in your dustpile.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-655",
+      "source_line": 2102
+    },
+    {
+      "id": 656,
+      "name": "Cybershelf",
+      "metadata_name": "Cybershelf",
+      "cost": 4,
+      "attack": 3,
+      "health": 6,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at all spells of the enemy SOUL. Choose one to add to your hand.",
+      "effect_readable": "Magic: Look at all spells of the enemy SOUL. Choose one to add to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-656",
+      "source_line": 2104
+    },
+    {
+      "id": 657,
+      "name": "Iconman",
+      "metadata_name": "Iconman",
+      "cost": 5,
+      "attack": 4,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "HAND",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Choose a card in your hand. {{KW:ERASE}} it to add 2 {{CARD:452|2}} to your hand.",
+      "effect_readable": "Magic: Choose a card in your hand. Erase it to add 2 Recruitment [#452] to your hand.",
+      "keyword_mentions": [
+        "ERASE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        452
+      ],
+      "source_key": "card-657",
+      "source_line": 2106
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

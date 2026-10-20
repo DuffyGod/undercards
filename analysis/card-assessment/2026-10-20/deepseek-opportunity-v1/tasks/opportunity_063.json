@@ -1,0 +1,332 @@
+{
+  "task_id": "opportunity_063",
+  "kind": "opportunity_review",
+  "requested": [
+    658,
+    659,
+    660,
+    661,
+    662,
+    663,
+    664,
+    666
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 658,
+      "name": "Cyber Balloon",
+      "metadata_name": "Cyber Balloon",
+      "cost": 4,
+      "attack": 4,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: Earn 1 {{GOLD}} for each {{KW:GENERATED}} ally monster.",
+      "effect_readable": "Haste. Magic: Earn 1 GOLD for each Generated ally monster.",
+      "keyword_mentions": [
+        "GENERATED",
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-658",
+      "source_line": 2108
+    },
+    {
+      "id": 659,
+      "name": "Cyber Trash",
+      "metadata_name": "Cyber Trash",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "NEUTRAL",
+          "name": "Program",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: {{KW:PROGRAM}} (1): Add a copy of 2 random {{RARITY:BASE}} monsters from your dustpile to your hand with -1 {{COST}}.",
+      "effect_readable": "Taunt. Magic: Program (1): Add a copy of 2 random BASE monsters from your dustpile to your hand with -1 COST.",
+      "keyword_mentions": [
+        "MAGIC",
+        "PROGRAM",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-659",
+      "source_line": 2110
+    },
+    {
+      "id": 660,
+      "name": "Cyber Tree",
+      "metadata_name": "Cyber Tree",
+      "cost": 4,
+      "attack": 3,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "NEUTRAL",
+          "name": "Program",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DELAY}}: Give {{STATS:+1|+1}} to all other {{KW:GENERATED}} ally monsters. {{KW:PROGRAM}} (1): Repeat.",
+      "effect_readable": "Delay: Give ATK +1/HP +1 to all other Generated ally monsters. Program (1): Repeat.",
+      "keyword_mentions": [
+        "DELAY",
+        "GENERATED",
+        "PROGRAM"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-660",
+      "source_line": 2112
+    },
+    {
+      "id": 661,
+      "name": "Cyber World Sign",
+      "metadata_name": "Cyber World Sign",
+      "cost": 6,
+      "attack": 6,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Add 3 random {{KW:PROGRAM}} monsters from your dustpile to your hand.",
+      "effect_readable": "Magic: Add 3 random Program monsters from your dustpile to your hand.",
+      "keyword_mentions": [
+        "MAGIC",
+        "PROGRAM"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-661",
+      "source_line": 2114
+    },
+    {
+      "id": 662,
+      "name": "Eggplant Trashbag",
+      "metadata_name": "Eggplant Trashbag",
+      "cost": 3,
+      "attack": 2,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Look at 4 {{RARITY:BASE}} spells and choose one. Add it to your hand.",
+      "effect_readable": "Taunt. Magic: Look at 4 BASE spells and choose one. Add it to your hand.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-662",
+      "source_line": 2116
+    },
+    {
+      "id": 663,
+      "name": "Sad Bunbun",
+      "metadata_name": "Sad Bunbun",
+      "cost": 4,
+      "attack": 3,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at all 0-{{COST}} monsters in your dustpile. Choose one to summon to gain +2 {{ATK}}.",
+      "effect_readable": "Magic: Look at all 0-COST monsters in your dustpile. Choose one to summon to gain +2 ATK.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-663",
+      "source_line": 2118
+    },
+    {
+      "id": 664,
+      "name": "Spamton",
+      "metadata_name": "Spamton",
+      "cost": 7,
+      "attack": 8,
+      "health": 6,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:ERASE}} all {{CARD:753|2}} in your dustpile. Add a {{CARD:753|1}} with {{KW:HASTE}} to your hand for each one {{KW:ERASE|override=Erased}}. Give them {{STATS:+1|+1}} for each one not added.",
+      "effect_readable": "Magic: Erase all Pipis [#753] in your dustpile. Add a Pipis [#753] with Haste to your hand for each one Erased. Give them ATK +1/HP +1 for each one not added.",
+      "keyword_mentions": [
+        "ERASE",
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        753
+      ],
+      "source_key": "card-664",
+      "source_line": 2120
+    },
+    {
+      "id": 666,
+      "name": "Stoned Lancer",
+      "metadata_name": "Stoned Lancer",
+      "cost": 4,
+      "attack": 4,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Candy",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:CANDY}}. {{KW:MAGIC}}: {{KW:PARALYZE}} this.",
+      "effect_readable": "Candy. Magic: Paralyze this.",
+      "keyword_mentions": [
+        "CANDY",
+        "MAGIC",
+        "PARALYZE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-666",
+      "source_line": 2124
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

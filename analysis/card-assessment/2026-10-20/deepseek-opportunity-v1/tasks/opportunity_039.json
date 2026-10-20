@@ -1,0 +1,290 @@
+{
+  "task_id": "opportunity_039",
+  "kind": "opportunity_review",
+  "requested": [
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 402,
+      "name": "Bone Box",
+      "metadata_name": "Bone Box",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at 3 random spells costing 3 or less {{GOLD}} and choose one. Add it to your hand.",
+      "effect_readable": "Magic: Look at 3 random spells costing 3 or less GOLD and choose one. Add it to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-402",
+      "source_line": 1439
+    },
+    {
+      "id": 403,
+      "name": "Jukebox",
+      "metadata_name": "Jukebox",
+      "cost": 6,
+      "attack": 6,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Look at 3 random monsters in your dustpile (except {{CARD:403|1}}) and add a copy of one to your deck with {{STATS:+1|+1}}.",
+      "effect_readable": "Taunt. Magic: Look at 3 random monsters in your dustpile (except Jukebox [#403]) and add a copy of one to your deck with ATK +1/HP +1.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        403
+      ],
+      "source_key": "card-403",
+      "source_line": 1441
+    },
+    {
+      "id": 404,
+      "name": "Deflated Mascot",
+      "metadata_name": "Deflated Mascot",
+      "cost": 3,
+      "attack": 1,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Earn {{GOLD:1}}.",
+      "effect_readable": "Turn end: Earn GOLD 1.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-404",
+      "source_line": 1443
+    },
+    {
+      "id": 405,
+      "name": "Telescope",
+      "metadata_name": "Telescope",
+      "cost": 4,
+      "attack": 3,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}} and {{KW:TURN_START}}: Add a {{CARD:398|1}} to your hand. {{KW:TURN_END}}: {{KW:ERASE}} all {{CARD:398|2}} in your hand.",
+      "effect_readable": "Magic and Turn start: Add a Scope [#398] to your hand. Turn end: Erase all Scope [#398] in your hand.",
+      "keyword_mentions": [
+        "ERASE",
+        "MAGIC",
+        "TURN_END",
+        "TURN_START"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        398
+      ],
+      "source_key": "card-405",
+      "source_line": 1445
+    },
+    {
+      "id": 406,
+      "name": "Sugar Pot",
+      "metadata_name": "Sugar Pot",
+      "cost": 4,
+      "attack": 3,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "HAND_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give a monster in your hand {{STATS:+2|+2}}.",
+      "effect_readable": "Magic: Give a monster in your hand ATK +2/HP +2.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-406",
+      "source_line": 1447
+    },
+    {
+      "id": 407,
+      "name": "Cash Register",
+      "metadata_name": "Cash Register",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "HAND",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Trigger the {{KW:TURBO}} effect of a monster in your hand. If played on the left, {{SWITCH_LEFT:1|send it to your deck and draw a card}}.",
+      "effect_readable": "Magic: Trigger the Turbo effect of a monster in your hand. If played on the left, [左侧] send it to your deck and draw a card.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TURBO"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-407",
+      "source_line": 1449
+    },
+    {
+      "id": 408,
+      "name": "Space Cooler",
+      "metadata_name": "Space Cooler",
+      "cost": 6,
+      "attack": 5,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DELAY}} and {{KW:TURN_END}}: Give a random monster in your hand {{STATS:+1|+1}}.",
+      "effect_readable": "Delay and Turn end: Give a random monster in your hand ATK +1/HP +1.",
+      "keyword_mentions": [
+        "DELAY",
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-408",
+      "source_line": 1451
+    },
+    {
+      "id": 409,
+      "name": "Action Figures",
+      "metadata_name": "Action Figures",
+      "cost": 4,
+      "attack": 4,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:SILENCE}} a non-{{RARITY:DETERMINATION}} ally monster and add a {{KW:SILENCE|override=Silenced}} copy of it to your hand.",
+      "effect_readable": "Magic: Silence a non-DT ally monster and add a Silenced copy of it to your hand.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SILENCE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-409",
+      "source_line": 1453
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

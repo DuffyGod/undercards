@@ -1,0 +1,322 @@
+{
+  "task_id": "opportunity_073",
+  "kind": "opportunity_review",
+  "requested": [
+    780,
+    781,
+    782,
+    784,
+    785,
+    786,
+    787,
+    788
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 780,
+      "name": "Wheelvil",
+      "metadata_name": "Wheelvil",
+      "cost": 6,
+      "attack": 0,
+      "health": 5,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Cast a random {{TRIBE:CHAOS_WEAPON|1}} for every 8 {{HP}} you are missing.",
+      "effect_readable": "Taunt. Magic: Cast a random Chaos Weapon for every 8 HP you are missing.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [
+        "CHAOS_WEAPON"
+      ],
+      "card_references": [],
+      "source_key": "card-780",
+      "source_line": 2401
+    },
+    {
+      "id": 781,
+      "name": "Gift Bomb",
+      "metadata_name": "Gift Bomb",
+      "cost": 4,
+      "attack": 2,
+      "health": 2,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Summon 2 random monsters from your hand with a base {{COST}} of 3 or less {{GOLD}}.",
+      "effect_readable": "Dust: Summon 2 random monsters from your hand with a base COST of 3 or less GOLD.",
+      "keyword_mentions": [
+        "DUST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-781",
+      "source_line": 2403
+    },
+    {
+      "id": 782,
+      "name": "Teacher Alphys",
+      "metadata_name": "Teacher Alphys",
+      "cost": 6,
+      "attack": 6,
+      "health": 7,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: Your dustpile has a monster of each {{COST}} from 1 to 10 {{GOLD}}. {{KW:MAGIC}}: {{KW:ERASE}} them and add 3 {{CARD:783|3}} to your deck.",
+      "effect_readable": "Need: Your dustpile has a monster of each COST from 1 to 10 GOLD. Magic: Erase them and add 3 Chalk [#783] to your deck.",
+      "keyword_mentions": [
+        "ERASE",
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        783
+      ],
+      "source_key": "card-782",
+      "source_line": 2405
+    },
+    {
+      "id": 784,
+      "name": "Lab Sign",
+      "metadata_name": "Lab Sign",
+      "cost": 9,
+      "attack": 9,
+      "health": 9,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Send your hand to your deck. Add a copy of each different {{TRIBE:AMALGAMATE}} in your dustpile to your hand with {{STATS:-1|+1|+1}}.",
+      "effect_readable": "Magic: Send your hand to your deck. Add a copy of each different Amalgamate in your dustpile to your hand with COST -1/ATK +1/HP +1.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "AMALGAMATE"
+      ],
+      "card_references": [],
+      "source_key": "card-784",
+      "source_line": 2409
+    },
+    {
+      "id": 785,
+      "name": "Temmie Egg",
+      "metadata_name": "Temmie Egg",
+      "cost": 1,
+      "attack": 1,
+      "health": 2,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "TEMMIE"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DELAY}} and {{KW:DUST}}: Add a {{CARD:356|1}} to your hand.",
+      "effect_readable": "Delay and Dust: Add a Temmie 2 [#356] to your hand.",
+      "keyword_mentions": [
+        "DELAY",
+        "DUST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        356
+      ],
+      "source_key": "card-785",
+      "source_line": 2413
+    },
+    {
+      "id": 786,
+      "name": "Dusty Chest",
+      "metadata_name": "Dusty Chest",
+      "cost": 4,
+      "attack": 3,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:ERASE}} up to 9 monsters in your dustpile. Draw a card for every 3 {{KW:ERASE|override=Erased}}.",
+      "effect_readable": "Magic: Erase up to 9 monsters in your dustpile. Draw a card for every 3 Erased.",
+      "keyword_mentions": [
+        "ERASE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-786",
+      "source_line": 2415
+    },
+    {
+      "id": 787,
+      "name": "Cyber Timer",
+      "metadata_name": "Cyber Timer",
+      "cost": 3,
+      "attack": 1,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}} and {{KW:TURN_START}}: Cast {{CARD:575|1}}.",
+      "effect_readable": "Taunt. Magic and Turn start: Cast Time Warp [#575].",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT",
+        "TURN_START"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        575
+      ],
+      "source_key": "card-787",
+      "source_line": 2417
+    },
+    {
+      "id": 788,
+      "name": "Ralsei Dummy",
+      "metadata_name": "Ralsei Dummy",
+      "cost": 2,
+      "attack": 3,
+      "health": 2,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:SHOCK}}: Gain +2 {{HP}} and lose this {{KW:SHOCK}}.",
+      "effect_readable": "Taunt. Shock: Gain +2 HP and lose this Shock.",
+      "keyword_mentions": [
+        "SHOCK",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-788",
+      "source_line": 2419
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

@@ -1,0 +1,299 @@
+{
+  "task_id": "opportunity_037",
+  "kind": "opportunity_review",
+  "requested": [
+    378,
+    381,
+    384,
+    385,
+    386,
+    389,
+    390,
+    391
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 378,
+      "name": "C-Round",
+      "metadata_name": "C-Round",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: If this isn't {{KW:GENERATED}}, add 2 {{CARD:379|2}} to your deck and a {{CARD:378|1}} to your hand.",
+      "effect_readable": "Dust: If this isn't Generated, add 2 Crown [#379] to your deck and a C-Round [#378] to your hand.",
+      "keyword_mentions": [
+        "DUST",
+        "GENERATED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        378,
+        379
+      ],
+      "source_key": "card-378",
+      "source_line": 602
+    },
+    {
+      "id": 381,
+      "name": "Catti",
+      "metadata_name": "Catti",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After you summon a monster, deal 1 {{DMG}} to a random enemy monster.",
+      "effect_readable": "After you summon a monster, deal 1 DMG to a random enemy monster.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-381",
+      "source_line": 605
+    },
+    {
+      "id": 384,
+      "name": "Clover Head",
+      "metadata_name": "Clover Head",
+      "cost": 3,
+      "attack": 4,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Add a copy of an ally {{KW:TURBO}} monster to the top of your deck.",
+      "effect_readable": "Magic: Add a copy of an ally Turbo monster to the top of your deck.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TURBO"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-384",
+      "source_line": 606
+    },
+    {
+      "id": 385,
+      "name": "Evil Eye",
+      "metadata_name": "Evil Eye",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}} and {{KW:TURN_START}}: Add a {{CARD:488}} to your hand.",
+      "effect_readable": "Magic and Turn start: Add a Spying [#488] to your hand.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TURN_START"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        488
+      ],
+      "source_key": "card-385",
+      "source_line": 607
+    },
+    {
+      "id": 386,
+      "name": "Pizzapants",
+      "metadata_name": "Pizzapants",
+      "cost": 4,
+      "attack": 3,
+      "health": 2,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: Gain {{STATS:+1|+1}} for each other ally {{CARD:386|1}} you played this game.",
+      "effect_readable": "Haste. Magic: Gain ATK +1/HP +1 for each other ally Pizzapants [#386] you played this game.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        386
+      ],
+      "source_key": "card-386",
+      "source_line": 608
+    },
+    {
+      "id": 389,
+      "name": "Mirror",
+      "metadata_name": "Mirror",
+      "cost": 9,
+      "attack": 5,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. After this attacks and kills a monster, {{KW:CATCH}} it. {{KW:DUST}}: Release an ally copy of it with the same base stats as this.",
+      "effect_readable": "Haste. After this attacks and kills a monster, Catch it. Dust: Release an ally copy of it with the same base stats as this.",
+      "keyword_mentions": [
+        "CATCH",
+        "DUST",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-389",
+      "source_line": 609
+    },
+    {
+      "id": 390,
+      "name": "Ball Person",
+      "metadata_name": "Ball Person",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:SILENCE}} all other ally monsters.",
+      "effect_readable": "Magic: Silence all other ally monsters.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SILENCE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-390",
+      "source_line": 610
+    },
+    {
+      "id": 391,
+      "name": "Sheary",
+      "metadata_name": "Sheary",
+      "cost": 6,
+      "attack": 5,
+      "health": 5,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 1 {{DMG}} to a monster. If it's damaged, deal 4 {{DMG}} instead.",
+      "effect_readable": "Magic: Deal 1 DMG to a monster. If it's damaged, deal 4 DMG instead.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-391",
+      "source_line": 611
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

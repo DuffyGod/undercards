@@ -1,0 +1,300 @@
+{
+  "task_id": "opportunity_025",
+  "kind": "opportunity_review",
+  "requested": [
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 196,
+      "name": "Tiny Froggit",
+      "metadata_name": "Tiny Froggit",
+      "cost": 0,
+      "attack": 1,
+      "health": 1,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "FROGGIT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": " ",
+      "effect_readable": "",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-196",
+      "source_line": 471
+    },
+    {
+      "id": 197,
+      "name": "Elder Puzzler",
+      "metadata_name": "Elder Puzzler",
+      "cost": 8,
+      "attack": 6,
+      "health": 8,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: If this didn't attack this turn, deal 4 {{DMG}} to a random enemy monster.",
+      "effect_readable": "Turn end: If this didn't attack this turn, deal 4 DMG to a random enemy monster.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-197",
+      "source_line": 472
+    },
+    {
+      "id": 198,
+      "name": "Red Bird",
+      "metadata_name": "Red Bird",
+      "cost": 5,
+      "attack": 4,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Turn a monster into a random other monster of the same {{COST}}.",
+      "effect_readable": "Magic: Turn a monster into a random other monster of the same COST.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-198",
+      "source_line": 473
+    },
+    {
+      "id": 199,
+      "name": "Manticore",
+      "metadata_name": "Manticore",
+      "cost": 5,
+      "attack": 4,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Both players draw 2 cards.",
+      "effect_readable": "Magic: Both players draw 2 cards.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-199",
+      "source_line": 474
+    },
+    {
+      "id": 200,
+      "name": "Bob",
+      "metadata_name": "Bob",
+      "cost": 5,
+      "attack": 2,
+      "health": 2,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "TEMMIE"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Charge",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:CHARGE}}. {{KW:MAGIC}}: Add a copy of every different {{TRIBE:TEMMIE|1}} in your dustpile (except {{CARD:200|1}}) to your hand (from cheapest to most expensive).",
+      "effect_readable": "Charge. Magic: Add a copy of every different Tem in your dustpile (except Bob [#200]) to your hand (from cheapest to most expensive).",
+      "keyword_mentions": [
+        "CHARGE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "TEMMIE"
+      ],
+      "card_references": [
+        200
+      ],
+      "source_key": "card-200",
+      "source_line": 475
+    },
+    {
+      "id": 201,
+      "name": "Dancer Mettaton",
+      "metadata_name": "Dancer Mettaton",
+      "cost": 7,
+      "attack": 4,
+      "health": 7,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. After this attacks and kills a monster, heal 4 {{HP}} to you and summon a {{CARD:359|1}}.",
+      "effect_readable": "Haste. After this attacks and kills a monster, heal 4 HP to you and summon a Mettabot [#359].",
+      "keyword_mentions": [
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        359
+      ],
+      "source_key": "card-201",
+      "source_line": 476
+    },
+    {
+      "id": 202,
+      "name": "Innkeeper",
+      "metadata_name": "Innkeeper",
+      "cost": 6,
+      "attack": 5,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give yourself +5 {{HP}}.",
+      "effect_readable": "Magic: Give yourself +5 HP.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-202",
+      "source_line": 477
+    },
+    {
+      "id": 203,
+      "name": "Angel of Death",
+      "metadata_name": "Angel of Death",
+      "cost": 13,
+      "attack": 9,
+      "health": 11,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Summon an exact copy of a monster. Give it {{KW:HASTE}}. {{KW:DUST}}: Fill your board with random {{TRIBE:LOST_SOUL|2}}.",
+      "effect_readable": "Magic: Summon an exact copy of a monster. Give it Haste. Dust: Fill your board with random Lost Soul.",
+      "keyword_mentions": [
+        "DUST",
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "LOST_SOUL"
+      ],
+      "card_references": [],
+      "source_key": "card-203",
+      "source_line": 478
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

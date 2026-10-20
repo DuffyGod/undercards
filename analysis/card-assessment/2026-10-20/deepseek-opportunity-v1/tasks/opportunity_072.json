@@ -1,0 +1,344 @@
+{
+  "task_id": "opportunity_072",
+  "kind": "opportunity_review",
+  "requested": [
+    769,
+    770,
+    773,
+    774,
+    775,
+    776,
+    777,
+    779
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 769,
+      "name": "Mane Ax",
+      "metadata_name": "Mane Ax",
+      "cost": 9,
+      "attack": 5,
+      "health": 6,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: {{KW:SILENCE}} a monster, then give it {{STATS:-2|-1}}.",
+      "effect_readable": "Haste. Magic: Silence a monster, then give it ATK -2/HP -1.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC",
+        "SILENCE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-769",
+      "source_line": 2364
+    },
+    {
+      "id": 770,
+      "name": "MTT Reporter",
+      "metadata_name": "Reporter MTT",
+      "cost": 7,
+      "attack": 5,
+      "health": 6,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Return a non-{{RARITY:DETERMINATION}} ally monster to your hand (except {{CARD:770|1}}) with -8 {{COST}}. {{KW:DELAY}}: {{KW:ERASE}} it from your hand or deck.",
+      "effect_readable": "Magic: Return a non-DT ally monster to your hand (except MTT Reporter [#770]) with -8 COST. Delay: Erase it from your hand or deck.",
+      "keyword_mentions": [
+        "DELAY",
+        "ERASE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        770
+      ],
+      "source_key": "card-770",
+      "source_line": 2366
+    },
+    {
+      "id": 773,
+      "name": "Shyra Tombstone",
+      "metadata_name": "Shyra Tombstone",
+      "cost": 5,
+      "attack": 6,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:NEED}}: 7+ monsters in your dustpile. {{KW:MAGIC}}: Gain +3 {{HP}}.",
+      "effect_readable": "Taunt. Need: 7+ monsters in your dustpile. Magic: Gain +3 HP.",
+      "keyword_mentions": [
+        "MAGIC",
+        "NEED",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-773",
+      "source_line": 2372
+    },
+    {
+      "id": 774,
+      "name": "Disguised Lancer",
+      "metadata_name": "Disguised Lancer",
+      "cost": 6,
+      "attack": 5,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Return all other non-{{RARITY:DETERMINATION}} ally monsters to your hand. Summon {{CARD:270|2}} with their stats in their places.",
+      "effect_readable": "Magic: Return all other non-DT ally monsters to your hand. Summon Thrashing Machine [#270] with their stats in their places.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        270
+      ],
+      "source_key": "card-774",
+      "source_line": 2386
+    },
+    {
+      "id": 775,
+      "name": "Crimeter",
+      "metadata_name": "Crimeter",
+      "cost": 4,
+      "attack": 6,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "NEGATIVE",
+          "name": "Disarmed",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Candy",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:CANDY}}. {{KW:DISARMED}}. {{KW:SHOCK}}: Attack the lowest {{HP}} enemy monster.",
+      "effect_readable": "Candy. Disarmed. Shock: Attack the lowest HP enemy monster.",
+      "keyword_mentions": [
+        "CANDY",
+        "DISARMED",
+        "SHOCK"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-775",
+      "source_line": 2388
+    },
+    {
+      "id": 776,
+      "name": "Traffic Light",
+      "metadata_name": "Traffic Light",
+      "cost": 6,
+      "attack": 3,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Give a random {{RARITY:DETERMINATION}}, {{RARITY:LEGENDARY}}, and {{RARITY:TOKEN}} card in your hand or deck -2 {{cost}}.",
+      "effect_readable": "Taunt. Magic: Give a random DT, LEGENDARY, and TOKEN card in your hand or deck -2 cost.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-776",
+      "source_line": 2390
+    },
+    {
+      "id": 777,
+      "name": "Dog Slots",
+      "metadata_name": "Dog Slots",
+      "cost": 7,
+      "attack": 7,
+      "health": 7,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Send your hand to your deck. Add 7 {{CARD:614|7}} to your hand.",
+      "effect_readable": "Magic: Send your hand to your deck. Add 7 Arcane Codes [#614] to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        614
+      ],
+      "source_key": "card-777",
+      "source_line": 2394
+    },
+    {
+      "id": 779,
+      "name": "Sans Deltarune",
+      "metadata_name": "Sans Deltarune",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Dodge",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DODGE}} (1). {{KW:MAGIC}}: {{KW:SWITCH}}: Reveal a random spell costing 1+ {{GOLD}} in {{SWITCH_LEFT:1|your}} or {{SWITCH_RIGHT:1|the enemy}} hand. Turn it into a {{CARD:351|1}}.",
+      "effect_readable": "Dodge (1). Magic: Switch: Reveal a random spell costing 1+ GOLD in [左侧] your or [右侧] the enemy hand. Turn it into a Gaster Blaster [#351].",
+      "keyword_mentions": [
+        "DODGE",
+        "MAGIC",
+        "SWITCH"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        351
+      ],
+      "source_key": "card-779",
+      "source_line": 2399
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

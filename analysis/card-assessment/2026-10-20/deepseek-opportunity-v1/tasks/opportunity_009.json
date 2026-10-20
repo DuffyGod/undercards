@@ -1,0 +1,325 @@
+{
+  "task_id": "opportunity_009",
+  "kind": "opportunity_review",
+  "requested": [
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 58,
+      "name": "Asriel",
+      "metadata_name": "Asriel",
+      "cost": 6,
+      "attack": 5,
+      "health": 5,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Remove negative effects from all other ally monsters and fully heal them.",
+      "effect_readable": "Magic: Remove negative effects from all other ally monsters and fully heal them.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-58",
+      "source_line": 340
+    },
+    {
+      "id": 59,
+      "name": "Sans",
+      "metadata_name": "Sans",
+      "cost": 5,
+      "attack": 1,
+      "health": 1,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Dodge",
+          "statusBehavior": "STACKABLE",
+          "counter": 3,
+          "displayCounter": true
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Charge",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:CHARGE}}. {{KW:DODGE}} (3). {{KW:MAGIC}} and {{KW:TURN_START}}: Add a {{CARD:351}} to your hand.",
+      "effect_readable": "Charge. Dodge (3). Magic and Turn start: Add a Gaster Blaster [#351] to your hand.",
+      "keyword_mentions": [
+        "CHARGE",
+        "DODGE",
+        "MAGIC",
+        "TURN_START"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        351
+      ],
+      "source_key": "card-59",
+      "source_line": 341
+    },
+    {
+      "id": 60,
+      "name": "Papyrus",
+      "metadata_name": "Papyrus",
+      "cost": 11,
+      "attack": 6,
+      "health": 9,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "NEUTRAL",
+          "name": "Program",
+          "statusBehavior": "STACKABLE",
+          "counter": 2,
+          "displayCounter": true
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Charge",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:CHARGE}}. After this attacks and kills a monster, this can attack another monster. {{KW:MAGIC}}: {{KW:PROGRAM}} (2): Gain {{KW:ARMOR}}.",
+      "effect_readable": "Charge. After this attacks and kills a monster, this can attack another monster. Magic: Program (2): Gain Armor.",
+      "keyword_mentions": [
+        "ARMOR",
+        "CHARGE",
+        "MAGIC",
+        "PROGRAM"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-60",
+      "source_line": 342
+    },
+    {
+      "id": 61,
+      "name": "Asgore",
+      "metadata_name": "Asgore",
+      "cost": 11,
+      "attack": 5,
+      "health": 8,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Kill all damaged monsters.",
+      "effect_readable": "Magic: Kill all damaged monsters.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-61",
+      "source_line": 343
+    },
+    {
+      "id": 62,
+      "name": "Undyne",
+      "metadata_name": "Undyne",
+      "cost": 12,
+      "attack": 7,
+      "health": 8,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "ROYAL_GUARD"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 1 {{DMG}} to the lowest {{HP}} enemy monster 10 times. Summon a {{CARD:574|1}} with base stats equal to {{DMG}} not dealt.",
+      "effect_readable": "Magic: Deal 1 DMG to the lowest HP enemy monster 10 times. Summon a Spear [#574] with base stats equal to DMG not dealt.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        574
+      ],
+      "source_key": "card-62",
+      "source_line": 344
+    },
+    {
+      "id": 63,
+      "name": "Asriel Dreemurr",
+      "metadata_name": "Asriel Dreemurr",
+      "cost": 15,
+      "attack": 11,
+      "health": 9,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Heal 30 {{HP}} to you.",
+      "effect_readable": "Magic: Heal 30 HP to you.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-63",
+      "source_line": 345
+    },
+    {
+      "id": 64,
+      "name": "Mettaton EX",
+      "metadata_name": "Mettaton Ex",
+      "cost": 10,
+      "attack": 6,
+      "health": 8,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: If either player has 10+ {{GOLD}} (after spending {{GOLD}} on this), set both players' {{GOLD}} to 0.",
+      "effect_readable": "Magic: If either player has 10+ GOLD (after spending GOLD on this), set both players' GOLD to 0.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-64",
+      "source_line": 346
+    },
+    {
+      "id": 65,
+      "name": "Frisk",
+      "metadata_name": "Frisk",
+      "cost": 11,
+      "attack": 7,
+      "health": 8,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Gain an {{KW:UPGRADED_SOULS|override=upgraded version}} of the enemy SOUL. Add an {{CARD:771|1}} to your hand.",
+      "effect_readable": "Taunt. Magic: Gain an upgraded version of the enemy SOUL. Add an ACT Button [#771] to your hand.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT",
+        "UPGRADED_SOULS"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        771
+      ],
+      "source_key": "card-65",
+      "source_line": 347
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

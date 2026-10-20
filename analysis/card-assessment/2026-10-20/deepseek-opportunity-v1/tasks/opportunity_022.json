@@ -1,0 +1,298 @@
+{
+  "task_id": "opportunity_022",
+  "kind": "opportunity_review",
+  "requested": [
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 169,
+      "name": "Bunbun",
+      "metadata_name": "Bunbun",
+      "cost": 4,
+      "attack": 2,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Summon a {{CARD:357|1}}.",
+      "effect_readable": "Magic: Summon a Bun [#357].",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        357
+      ],
+      "source_key": "card-169",
+      "source_line": 446
+    },
+    {
+      "id": 170,
+      "name": "Loren",
+      "metadata_name": "Loren",
+      "cost": 5,
+      "attack": 4,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Summon 3 {{CARD:706|3}}.",
+      "effect_readable": "Magic: Summon 3 Star [#706].",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        706
+      ],
+      "source_key": "card-170",
+      "source_line": 447
+    },
+    {
+      "id": 171,
+      "name": "Dimensional Box",
+      "metadata_name": "Dimensional Box",
+      "cost": 5,
+      "attack": 4,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:CATCH}} an enemy monster. {{KW:DUST}}: Release it.",
+      "effect_readable": "Magic: Catch an enemy monster. Dust: Release it.",
+      "keyword_mentions": [
+        "CATCH",
+        "DUST",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-171",
+      "source_line": 448
+    },
+    {
+      "id": 172,
+      "name": "Allergic Temmie",
+      "metadata_name": "Allergic Temmie",
+      "cost": 3,
+      "attack": 2,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "TEMMIE"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 1 {{DMG}} to this and all enemy monsters for each other ally {{TRIBE:TEMMIE|1}}.",
+      "effect_readable": "Magic: Deal 1 DMG to this and all enemy monsters for each other ally Tem.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "TEMMIE"
+      ],
+      "card_references": [],
+      "source_key": "card-172",
+      "source_line": 449
+    },
+    {
+      "id": 173,
+      "name": "Temmie Statue",
+      "metadata_name": "Temmie Statue",
+      "cost": 4,
+      "attack": 1,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After you summon a {{TRIBE:TEMMIE|1}}, give it {{STATS:+1|+1}}.",
+      "effect_readable": "After you summon a Tem, give it ATK +1/HP +1.",
+      "keyword_mentions": [],
+      "tribe_mentions": [
+        "TEMMIE"
+      ],
+      "card_references": [],
+      "source_key": "card-173",
+      "source_line": 450
+    },
+    {
+      "id": 174,
+      "name": "Diamond Receptionist",
+      "metadata_name": "Diamond Receptionist",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Gain +1 {{HP}} for each enemy monster.",
+      "effect_readable": "Taunt. Magic: Gain +1 HP for each enemy monster.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-174",
+      "source_line": 451
+    },
+    {
+      "id": 175,
+      "name": "Charles",
+      "metadata_name": "Charles",
+      "cost": 2,
+      "attack": 3,
+      "health": 1,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Armor",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:ARMOR}}.",
+      "effect_readable": "Armor.",
+      "keyword_mentions": [
+        "ARMOR"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-175",
+      "source_line": 452
+    },
+    {
+      "id": 176,
+      "name": "Ugly Fish",
+      "metadata_name": "Ugly Fish",
+      "cost": 9,
+      "attack": 5,
+      "health": 6,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Send an enemy monster to the enemy hand. If it's full, kill it instead.",
+      "effect_readable": "Magic: Send an enemy monster to the enemy hand. If it's full, kill it instead.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-176",
+      "source_line": 453
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

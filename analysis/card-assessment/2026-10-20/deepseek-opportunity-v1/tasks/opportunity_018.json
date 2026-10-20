@@ -1,0 +1,303 @@
+{
+  "task_id": "opportunity_018",
+  "kind": "opportunity_review",
+  "requested": [
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 132,
+      "name": "Pie",
+      "metadata_name": "Pie",
+      "cost": 2,
+      "attack": null,
+      "health": null,
+      "rarity": "BASE",
+      "card_type": "spell",
+      "soul": "KINDNESS",
+      "set": "BASE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Loop",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:LOOP}} (1). Fully heal a monster. If it was already full, give it +2 {{HP}} instead.",
+      "effect_readable": "Loop (1). Fully heal a monster. If it was already full, give it +2 HP instead.",
+      "keyword_mentions": [
+        "LOOP"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-132",
+      "source_line": 414
+    },
+    {
+      "id": 133,
+      "name": "Fridge",
+      "metadata_name": "Fridge",
+      "cost": 1,
+      "attack": null,
+      "health": null,
+      "rarity": "COMMON",
+      "card_type": "spell",
+      "soul": "PATIENCE",
+      "set": "BASE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Give a monster +1 {{HP}} and {{KW:TAUNT}}. Draw a card.",
+      "effect_readable": "Give a monster +1 HP and Taunt. Draw a card.",
+      "keyword_mentions": [
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-133",
+      "source_line": 415
+    },
+    {
+      "id": 134,
+      "name": "Spider Web",
+      "metadata_name": "Spider Web",
+      "cost": 3,
+      "attack": null,
+      "health": null,
+      "rarity": "COMMON",
+      "card_type": "spell",
+      "soul": "PERSEVERANCE",
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Give an enemy monster {{KR}} and {{STATS:-1|-1}}. {{KW:DELAY}}: If it's dead, summon 3 {{CARD:115|3}}.",
+      "effect_readable": "Give an enemy monster KR and ATK -1/HP -1. Delay: If it's dead, summon 3 Spider [#115].",
+      "keyword_mentions": [
+        "DELAY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        115
+      ],
+      "source_key": "card-134",
+      "source_line": 416
+    },
+    {
+      "id": 135,
+      "name": "Big Mouth",
+      "metadata_name": "Big Mouth",
+      "cost": 5,
+      "attack": 3,
+      "health": 7,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}} and {{KW:TURN_START}}: Kill a random enemy monster costing 2 or less {{GOLD}} to heal 2 {{HP}} to you.",
+      "effect_readable": "Magic and Turn start: Kill a random enemy monster costing 2 or less GOLD to heal 2 HP to you.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TURN_START"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-135",
+      "source_line": 417
+    },
+    {
+      "id": 136,
+      "name": "Cactus",
+      "metadata_name": "Cactus",
+      "cost": 3,
+      "attack": 1,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After this deals {{DMG}} to a monster, kill it.",
+      "effect_readable": "After this deals DMG to a monster, kill it.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-136",
+      "source_line": 418
+    },
+    {
+      "id": 137,
+      "name": "Big Bob",
+      "metadata_name": "Big Bob",
+      "cost": 4,
+      "attack": 3,
+      "health": 2,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Armor",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:ARMOR}}. After this survives {{DMG}} during your turn, summon a 0-{{COST}} {{CARD:137|1}}.",
+      "effect_readable": "Armor. After this survives DMG during your turn, summon a 0-COST Big Bob [#137].",
+      "keyword_mentions": [
+        "ARMOR"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        137
+      ],
+      "source_key": "card-137",
+      "source_line": 419
+    },
+    {
+      "id": 138,
+      "name": "Ferry",
+      "metadata_name": "Ferry",
+      "cost": 6,
+      "attack": 6,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Earn {{GOLD:2}}.",
+      "effect_readable": "Dust: Earn GOLD 2.",
+      "keyword_mentions": [
+        "DUST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-138",
+      "source_line": 420
+    },
+    {
+      "id": 139,
+      "name": "Trader Temmie",
+      "metadata_name": "Trader Temmie",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "TEMMIE"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Transparency",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TRANSPARENCY}}. {{KW:TURN_END}}: If you have 5 or less cards in your hand, add a random spell costing 1 or less {{GOLD}} to your hand.",
+      "effect_readable": "Transparency. Turn end: If you have 5 or less cards in your hand, add a random spell costing 1 or less GOLD to your hand.",
+      "keyword_mentions": [
+        "TRANSPARENCY",
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-139",
+      "source_line": 421
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

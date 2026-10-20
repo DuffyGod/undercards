@@ -1,0 +1,316 @@
+{
+  "task_id": "opportunity_035",
+  "kind": "opportunity_review",
+  "requested": [
+    301,
+    302,
+    303,
+    306,
+    307,
+    308,
+    309,
+    310
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 301,
+      "name": "Toy Block",
+      "metadata_name": "Toy Block",
+      "cost": 4,
+      "attack": 6,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_START}} and {{KW:TURN_END}}: Swap its {{ATK}} and {{HP}}.",
+      "effect_readable": "Turn start and Turn end: Swap its ATK and HP.",
+      "keyword_mentions": [
+        "TURN_END",
+        "TURN_START"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-301",
+      "source_line": 557
+    },
+    {
+      "id": 302,
+      "name": "Big Hat Charles",
+      "metadata_name": "Big Hat Charles",
+      "cost": 6,
+      "attack": 5,
+      "health": 5,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Armor",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Transparency",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TRANSPARENCY}}. {{KW:ARMOR}}.",
+      "effect_readable": "Transparency. Armor.",
+      "keyword_mentions": [
+        "ARMOR",
+        "TRANSPARENCY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-302",
+      "source_line": 558
+    },
+    {
+      "id": 303,
+      "name": "Red Bush",
+      "metadata_name": "Red Bush",
+      "cost": 3,
+      "attack": 1,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Transparency",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TRANSPARENCY}}. This has +1 {{ATK}} for each other ally {{TRIBE:PLANT|1}}.",
+      "effect_readable": "Transparency. This has +1 ATK for each other ally Plant.",
+      "keyword_mentions": [
+        "TRANSPARENCY"
+      ],
+      "tribe_mentions": [
+        "PLANT"
+      ],
+      "card_references": [],
+      "source_key": "card-303",
+      "source_line": 559
+    },
+    {
+      "id": 306,
+      "name": "Smolder Cake",
+      "metadata_name": "Smolder Cake",
+      "cost": 6,
+      "attack": 3,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Candy",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:CANDY}}. {{KW:MAGIC}}: Give a monster {{KW:CANDY}}.",
+      "effect_readable": "Candy. Magic: Give a monster Candy.",
+      "keyword_mentions": [
+        "CANDY",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-306",
+      "source_line": 560
+    },
+    {
+      "id": 307,
+      "name": "Bloody Tree",
+      "metadata_name": "Bloody Tree",
+      "cost": 4,
+      "attack": 4,
+      "health": 5,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_START}}: Gain +1 {{ATK}}.",
+      "effect_readable": "Turn start: Gain +1 ATK.",
+      "keyword_mentions": [
+        "TURN_START"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-307",
+      "source_line": 561
+    },
+    {
+      "id": 308,
+      "name": "Donation Stump",
+      "metadata_name": "Donation Stump",
+      "cost": 4,
+      "attack": 5,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 2 {{DMG}} to you. {{KW:SYNERGY}}: Deal 2 {{DMG}} to the opponent.",
+      "effect_readable": "Magic: Deal 2 DMG to you. Synergy: Deal 2 DMG to the opponent.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SYNERGY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-308",
+      "source_line": 562
+    },
+    {
+      "id": 309,
+      "name": "Lancer Painting",
+      "metadata_name": "Lancer Painting",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Add a {{CARD:371|1}} to your hand.",
+      "effect_readable": "Dust: Add a Spade [#371] to your hand.",
+      "keyword_mentions": [
+        "DUST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        371
+      ],
+      "source_key": "card-309",
+      "source_line": 563
+    },
+    {
+      "id": 310,
+      "name": "Green Fire",
+      "metadata_name": "Green Fire",
+      "cost": 4,
+      "attack": 4,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 2 {{DMG}} to adjacent monsters and the monster in front of this.",
+      "effect_readable": "Magic: Deal 2 DMG to adjacent monsters and the monster in front of this.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-310",
+      "source_line": 564
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

@@ -1,0 +1,323 @@
+{
+  "task_id": "opportunity_092",
+  "kind": "opportunity_review",
+  "requested": [
+    975,
+    976,
+    977,
+    979,
+    980,
+    981,
+    982,
+    984
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 975,
+      "name": "Trial Ralsei",
+      "metadata_name": "Trial Ralsei",
+      "cost": 7,
+      "attack": 5,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DELAY}}: Summon a {{STATS:3|3}} copy of all non-{{RARITY:DETERMINATION}} ally monsters that died this turn.",
+      "effect_readable": "Delay: Summon a ATK 3/HP 3 copy of all non-DT ally monsters that died this turn.",
+      "keyword_mentions": [
+        "DELAY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-975",
+      "source_line": 3176
+    },
+    {
+      "id": 976,
+      "name": "Leafling",
+      "metadata_name": "Leafling",
+      "cost": 3,
+      "attack": 1,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Support",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SUPPORT}}: If this wasn't triggered by a {{CARD:375|1}}, {{KW:ERASE}} 2 non-{{RARITY:TOKEN}} monsters in your dustpile to summon a {{STATS:2|2}} {{CARD:375|1}} that attacks the target.",
+      "effect_readable": "Support: If this wasn't triggered by a Green Clover [#375], Erase 2 non-TOKEN monsters in your dustpile to summon a ATK 2/HP 2 Green Clover [#375] that attacks the target.",
+      "keyword_mentions": [
+        "ERASE",
+        "SUPPORT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        375
+      ],
+      "source_key": "card-976",
+      "source_line": 3178
+    },
+    {
+      "id": 977,
+      "name": "Pink",
+      "metadata_name": "Pink",
+      "cost": 9,
+      "attack": 7,
+      "health": 6,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{CARD:969|1}} can be used on enemy monsters. {{KW:QUEST}}: Let's fill the {{QUEST:76}}, mew!",
+      "effect_readable": "Mew Mew Magic [#969] can be used on enemy monsters. Quest: Let's fill the Quest [#76], mew!",
+      "keyword_mentions": [
+        "QUEST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        969
+      ],
+      "source_key": "card-977",
+      "source_line": 3180
+    },
+    {
+      "id": 979,
+      "name": "Green",
+      "metadata_name": "Green",
+      "cost": 5,
+      "attack": 0,
+      "health": 8,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:NEED}}: Allies healed 12+ {{HP}} this game. {{KW:MAGIC}}: Give all other ally monsters {{STATS:+1|+1}} and {{KW:CANDY}}.",
+      "effect_readable": "Taunt. Need: Allies healed 12+ HP this game. Magic: Give all other ally monsters ATK +1/HP +1 and Candy.",
+      "keyword_mentions": [
+        "CANDY",
+        "MAGIC",
+        "NEED",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-979",
+      "source_line": 3184
+    },
+    {
+      "id": 980,
+      "name": "Seth",
+      "metadata_name": "Seth",
+      "cost": 6,
+      "attack": 5,
+      "health": 5,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: 3+ other monsters with negative effects. {{KW:MAGIC}}: Give all enemy monsters {{STATS:-2|-2}}.",
+      "effect_readable": "Need: 3+ other monsters with negative effects. Magic: Give all enemy monsters ATK -2/HP -2.",
+      "keyword_mentions": [
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-980",
+      "source_line": 3186
+    },
+    {
+      "id": 981,
+      "name": "Orange",
+      "metadata_name": "Orange",
+      "cost": 3,
+      "attack": 2,
+      "health": 1,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: Your monsters attacked 3+ times this turn. {{KW:MAGIC}}: Give all ally monsters +1 {{ATK}} and {{KW:HASTE}}. They can attack again.",
+      "effect_readable": "Need: Your monsters attacked 3+ times this turn. Magic: Give all ally monsters +1 ATK and Haste. They can attack again.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-981",
+      "source_line": 3188
+    },
+    {
+      "id": 982,
+      "name": "Yellow",
+      "metadata_name": "Yellow",
+      "cost": 6,
+      "attack": 4,
+      "health": 3,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: 2+ monsters were killed by spells or effects this turn. {{KW:MAGIC}}: Add a {{CARD:855|1}} with {{KW:LOOP}} (2) to your hand.",
+      "effect_readable": "Need: 2+ monsters were killed by spells or effects this turn. Magic: Add a Quick Draw [#855] with Loop (2) to your hand.",
+      "keyword_mentions": [
+        "LOOP",
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        855
+      ],
+      "source_key": "card-982",
+      "source_line": 3190
+    },
+    {
+      "id": 984,
+      "name": "Terakota Archer",
+      "metadata_name": "Terakota Archer",
+      "cost": 6,
+      "attack": 3,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Bullseye",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal {{DMG}} to an enemy monster equal to the number of cards in your hand. {{KW:BULLSEYE}}: Summon a {{STATS:2|3}} {{CARD:375|1}}.",
+      "effect_readable": "Magic: Deal DMG to an enemy monster equal to the number of cards in your hand. Bullseye: Summon a ATK 2/HP 3 Green Clover [#375].",
+      "keyword_mentions": [
+        "BULLSEYE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        375
+      ],
+      "source_key": "card-984",
+      "source_line": 3194
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

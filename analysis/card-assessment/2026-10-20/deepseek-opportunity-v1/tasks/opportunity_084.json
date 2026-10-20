@@ -1,0 +1,369 @@
+{
+  "task_id": "opportunity_084",
+  "kind": "opportunity_review",
+  "requested": [
+    895,
+    896,
+    897,
+    898,
+    899,
+    901,
+    902,
+    903
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 895,
+      "name": "Organikk",
+      "metadata_name": "Organikk",
+      "cost": 3,
+      "attack": 2,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Support",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SUPPORT}}: Copy the {{ATK}} of the attacker.",
+      "effect_readable": "Support: Copy the ATK of the attacker.",
+      "keyword_mentions": [
+        "SUPPORT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-895",
+      "source_line": 2673
+    },
+    {
+      "id": 896,
+      "name": "Longanikk",
+      "metadata_name": "Longanikk",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Support",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:SUPPORT}}: Copy the {{HP}} of the attacker.",
+      "effect_readable": "Haste. Support: Copy the HP of the attacker.",
+      "keyword_mentions": [
+        "HASTE",
+        "SUPPORT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-896",
+      "source_line": 2675
+    },
+    {
+      "id": 897,
+      "name": "Titan Spawn",
+      "metadata_name": "Titan Spawn",
+      "cost": 5,
+      "attack": 5,
+      "health": 6,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Darkspawn",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DARKSPAWN}}.",
+      "effect_readable": "Darkspawn.",
+      "keyword_mentions": [
+        "DARKSPAWN"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-897",
+      "source_line": 2677
+    },
+    {
+      "id": 898,
+      "name": "Titan Serpent",
+      "metadata_name": "Titan Serpent",
+      "cost": 8,
+      "attack": 5,
+      "health": 6,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Darkspawn",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DARKSPAWN}}. {{KW:HASTE}}. After this attacks a monster and survives, summon an exact copy of this with {{KW:HASTE}} and halve its stats.",
+      "effect_readable": "Darkspawn. Haste. After this attacks a monster and survives, summon an exact copy of this with Haste and halve its stats.",
+      "keyword_mentions": [
+        "DARKSPAWN",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-898",
+      "source_line": 2679
+    },
+    {
+      "id": 899,
+      "name": "Friendogeny",
+      "metadata_name": "Friendogeny",
+      "cost": 5,
+      "attack": 4,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "AMALGAMATE",
+        "DOG"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Draw a card. If this has {{ATK}} buffs, draw another. If this has {{HP}} buffs, gain {{KW:DARKSPAWN}}.",
+      "effect_readable": "Magic: Draw a card. If this has ATK buffs, draw another. If this has HP buffs, gain Darkspawn.",
+      "keyword_mentions": [
+        "DARKSPAWN",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-899",
+      "source_line": 2681
+    },
+    {
+      "id": 901,
+      "name": "Titan",
+      "metadata_name": "Titan",
+      "cost": 15,
+      "attack": 10,
+      "health": 10,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Darkspawn",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DARKSPAWN}}. {{KW:TAUNT}}. {{KW:HASTE}}. {{KW:MAGIC}}: {{ARTIFACT:67|override=Darkness}} constricts you.",
+      "effect_readable": "Darkspawn. Taunt. Haste. Magic: Darkness constricts you.",
+      "keyword_mentions": [
+        "DARKSPAWN",
+        "HASTE",
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-901",
+      "source_line": 2702
+    },
+    {
+      "id": 902,
+      "name": "Shadowguy",
+      "metadata_name": "Shadowguy",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Loop",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:LOOP}} (1). {{KW:MAGIC}}: Make a monster {{KW:WANTED}}. If it’s already {{KW:WANTED}}, reveal 3 random monsters in the enemy hand and make them {{KW:WANTED}}.",
+      "effect_readable": "Loop (1). Magic: Make a monster Wanted. If it’s already Wanted, reveal 3 random monsters in the enemy hand and make them Wanted.",
+      "keyword_mentions": [
+        "LOOP",
+        "MAGIC",
+        "WANTED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-902",
+      "source_line": 2704
+    },
+    {
+      "id": 903,
+      "name": "Zoot Susie",
+      "metadata_name": "Zoot Susie",
+      "cost": 8,
+      "attack": 5,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Bullseye",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 4 {{DMG}} to a monster. {{KW:BULLSEYE}}: Deal 3 {{DMG}} to its adjacent monsters and add a {{CARD:452|1}} to your hand.",
+      "effect_readable": "Magic: Deal 4 DMG to a monster. Bullseye: Deal 3 DMG to its adjacent monsters and add a Recruitment [#452] to your hand.",
+      "keyword_mentions": [
+        "BULLSEYE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        452
+      ],
+      "source_key": "card-903",
+      "source_line": 2706
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

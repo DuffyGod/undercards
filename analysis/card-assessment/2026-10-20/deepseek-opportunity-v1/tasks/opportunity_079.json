@@ -1,0 +1,311 @@
+{
+  "task_id": "opportunity_079",
+  "kind": "opportunity_review",
+  "requested": [
+    845,
+    846,
+    847,
+    848,
+    849,
+    850,
+    851,
+    852
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 845,
+      "name": "Spider Workers",
+      "metadata_name": "Spider Workers",
+      "cost": 6,
+      "attack": 4,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [
+        "ARACHNID"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Summon a {{CARD:115|1}}. {{KW:SYNERGY}}: Summon a {{CARD:476|1}} instead.",
+      "effect_readable": "Magic: Summon a Spider [#115]. Synergy: Summon a Spider Croissant [#476] instead.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SYNERGY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        115,
+        476
+      ],
+      "source_key": "card-845",
+      "source_line": 2549
+    },
+    {
+      "id": 846,
+      "name": "Giftshopper",
+      "metadata_name": "Giftshopper",
+      "cost": 6,
+      "attack": 6,
+      "health": 6,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Give -4 {{COST}} to the most expensive card in both players' hands.",
+      "effect_readable": "Dust: Give -4 COST to the most expensive card in both players' hands.",
+      "keyword_mentions": [
+        "DUST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-846",
+      "source_line": 2551
+    },
+    {
+      "id": 847,
+      "name": "Fortune Teller",
+      "metadata_name": "Fortune Teller",
+      "cost": 6,
+      "attack": 6,
+      "health": 7,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at the top 3 cards in the enemy deck. Give one +2 {{COST}}.",
+      "effect_readable": "Magic: Look at the top 3 cards in the enemy deck. Give one +2 COST.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-847",
+      "source_line": 2553
+    },
+    {
+      "id": 848,
+      "name": "Casino Sans",
+      "metadata_name": "Casino Sans",
+      "cost": 6,
+      "attack": 1,
+      "health": 1,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Dodge",
+          "statusBehavior": "STACKABLE",
+          "counter": 3,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DODGE}} (3). {{KW:MAGIC}}: Summon/Cast a random {{RARITY:TOKEN}} card. ",
+      "effect_readable": "Dodge (3). Magic: Summon/Cast a random TOKEN card.",
+      "keyword_mentions": [
+        "DODGE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-848",
+      "source_line": 2555
+    },
+    {
+      "id": 849,
+      "name": "Snake Miner",
+      "metadata_name": "Snake Miner",
+      "cost": 3,
+      "attack": 4,
+      "health": 2,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Bullseye",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DELAY}} and {{KW:BULLSEYE}}: Add a {{CARD:578|1}} to your hand.",
+      "effect_readable": "Delay and Bullseye: Add a Crystal Shard [#578] to your hand.",
+      "keyword_mentions": [
+        "BULLSEYE",
+        "DELAY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        578
+      ],
+      "source_key": "card-849",
+      "source_line": 2557
+    },
+    {
+      "id": 850,
+      "name": "Mines Sign",
+      "metadata_name": "Mines Sign",
+      "cost": 4,
+      "attack": 4,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Add a {{CARD:367|1}} to the enemy deck.",
+      "effect_readable": "Turn end: Add a Explosion [#367] to the enemy deck.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        367
+      ],
+      "source_key": "card-850",
+      "source_line": 2559
+    },
+    {
+      "id": 851,
+      "name": "Minecart",
+      "metadata_name": "Minecart",
+      "cost": 7,
+      "attack": 7,
+      "health": 7,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}} and {{KW:TURN_START}}: Add a {{CARD:578|1}} to your hand.",
+      "effect_readable": "Dust and Turn start: Add a Crystal Shard [#578] to your hand.",
+      "keyword_mentions": [
+        "DUST",
+        "TURN_START"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        578
+      ],
+      "source_key": "card-851",
+      "source_line": 2561
+    },
+    {
+      "id": 852,
+      "name": "Searby",
+      "metadata_name": "Searby",
+      "cost": 7,
+      "attack": 5,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Bullseye",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 5 {{DMG}} to the monster in front of this. {{KW:BULLSEYE}}: Draw a card with -2 {{COST}}.",
+      "effect_readable": "Magic: Deal 5 DMG to the monster in front of this. Bullseye: Draw a card with -2 COST.",
+      "keyword_mentions": [
+        "BULLSEYE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-852",
+      "source_line": 2563
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

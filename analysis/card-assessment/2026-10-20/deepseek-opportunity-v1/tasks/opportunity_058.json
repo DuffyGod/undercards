@@ -1,0 +1,317 @@
+{
+  "task_id": "opportunity_058",
+  "kind": "opportunity_review",
+  "requested": [
+    608,
+    609,
+    610,
+    611,
+    612,
+    616,
+    617,
+    618
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 608,
+      "name": "Void Laser",
+      "metadata_name": "Void Laser",
+      "cost": 5,
+      "attack": 1,
+      "health": 7,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Add 2 {{CARD:351|2}} to your deck. {{KW:TURN_END}}: Give 2 random {{CARD:351|2}} in your deck -1 {{COST}}.",
+      "effect_readable": "Magic: Add 2 Gaster Blaster [#351] to your deck. Turn end: Give 2 random Gaster Blaster [#351] in your deck -1 COST.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        351
+      ],
+      "source_key": "card-608",
+      "source_line": 1997
+    },
+    {
+      "id": 609,
+      "name": "G Machine",
+      "metadata_name": "G Machine",
+      "cost": 6,
+      "attack": 5,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:HASTE}}. {{KW:DELAY}}: If this is dead, add a {{CARD:351}} to your hand.",
+      "effect_readable": "Taunt. Haste. Delay: If this is dead, add a Gaster Blaster [#351] to your hand.",
+      "keyword_mentions": [
+        "DELAY",
+        "HASTE",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        351
+      ],
+      "source_key": "card-609",
+      "source_line": 1999
+    },
+    {
+      "id": 610,
+      "name": "Trophy",
+      "metadata_name": "Trophy",
+      "cost": 1,
+      "attack": 2,
+      "health": 1,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Equip the {{ARTIFACT:38}} artifact. Give it 3 counters.",
+      "effect_readable": "Dust: Equip the Economics [#38] artifact. Give it 3 counters.",
+      "keyword_mentions": [
+        "DUST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-610",
+      "source_line": 2001
+    },
+    {
+      "id": 611,
+      "name": "Dog Treats",
+      "metadata_name": "Dog Treats",
+      "cost": 3,
+      "attack": 3,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:DUST}}: Give all ally {{TRIBE:DOG|2}} {{STATS:+1|+1}}.",
+      "effect_readable": "Haste. Dust: Give all ally Dog ATK +1/HP +1.",
+      "keyword_mentions": [
+        "DUST",
+        "HASTE"
+      ],
+      "tribe_mentions": [
+        "DOG"
+      ],
+      "card_references": [],
+      "source_key": "card-611",
+      "source_line": 2003
+    },
+    {
+      "id": 612,
+      "name": "Angel Doll",
+      "metadata_name": "Angel Doll",
+      "cost": 5,
+      "attack": 5,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:DUST}}: Give all allies +2 {{HP}}.",
+      "effect_readable": "Taunt. Dust: Give all allies +2 HP.",
+      "keyword_mentions": [
+        "DUST",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-612",
+      "source_line": 2005
+    },
+    {
+      "id": 616,
+      "name": "Banana",
+      "metadata_name": "Banana",
+      "cost": 9,
+      "attack": 10,
+      "health": 10,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "POTASSIUM",
+      "effect_readable": "POTASSIUM",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-616",
+      "source_line": 2015
+    },
+    {
+      "id": 617,
+      "name": "Maus",
+      "metadata_name": "Maus",
+      "cost": 1,
+      "attack": 1,
+      "health": 2,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Add a {{CARD:623|1}} to your hand.",
+      "effect_readable": "Dust: Add a Cursor [#623] to your hand.",
+      "keyword_mentions": [
+        "DUST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        623
+      ],
+      "source_key": "card-617",
+      "source_line": 2026
+    },
+    {
+      "id": 618,
+      "name": "Cheese Block",
+      "metadata_name": "Cheese Block",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Summon a {{STATS:1|1}} copy of a monster costing 1 or less {{GOLD}} from your deck (except {{CARD:618|1}}).",
+      "effect_readable": "Dust: Summon a ATK 1/HP 1 copy of a monster costing 1 or less GOLD from your deck (except Cheese Block [#618]).",
+      "keyword_mentions": [
+        "DUST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        618
+      ],
+      "source_key": "card-618",
+      "source_line": 2028
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

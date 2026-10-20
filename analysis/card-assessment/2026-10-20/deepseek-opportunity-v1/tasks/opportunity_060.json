@@ -1,0 +1,315 @@
+{
+  "task_id": "opportunity_060",
+  "kind": "opportunity_review",
+  "requested": [
+    632,
+    633,
+    634,
+    635,
+    636,
+    637,
+    638,
+    639
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 632,
+      "name": "Trashy",
+      "metadata_name": "Trashy",
+      "cost": 4,
+      "attack": 2,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "This has +2 {{ATK}} on the enemy turn and takes no {{DMG}} while attacking.",
+      "effect_readable": "This has +2 ATK on the enemy turn and takes no DMG while attacking.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-632",
+      "source_line": 2056
+    },
+    {
+      "id": 633,
+      "name": "Wig Person",
+      "metadata_name": "Wig Person",
+      "cost": 3,
+      "attack": 4,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Swap an ally monster's {{ATK}} and {{HP}}. {{KW:SILENCE}} it.",
+      "effect_readable": "Magic: Swap an ally monster's ATK and HP. Silence it.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SILENCE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-633",
+      "source_line": 2058
+    },
+    {
+      "id": 634,
+      "name": "Pizzasimp",
+      "metadata_name": "Pizzasimp",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "NEUTRAL",
+          "name": "Program",
+          "statusBehavior": "STACKABLE",
+          "counter": 6,
+          "displayCounter": true
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: {{KW:PROGRAM}} (6): Earn 8 {{GOLD}}.",
+      "effect_readable": "Taunt. Magic: Program (6): Earn 8 GOLD.",
+      "keyword_mentions": [
+        "MAGIC",
+        "PROGRAM",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-634",
+      "source_line": 2060
+    },
+    {
+      "id": 635,
+      "name": "Susie Statue",
+      "metadata_name": "Susie Statue",
+      "cost": 7,
+      "attack": 8,
+      "health": 8,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_START}}: Attack a random enemy monster if there are any.",
+      "effect_readable": "Turn start: Attack a random enemy monster if there are any.",
+      "keyword_mentions": [
+        "TURN_START"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-635",
+      "source_line": 2062
+    },
+    {
+      "id": 636,
+      "name": "Dumpster",
+      "metadata_name": "Dumpster",
+      "cost": 5,
+      "attack": 5,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Draw a {{RARITY:BASE}} card.",
+      "effect_readable": "Magic: Draw a BASE card.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-636",
+      "source_line": 2064
+    },
+    {
+      "id": 637,
+      "name": "Cafe Jukebox",
+      "metadata_name": "Cafe Jukebox",
+      "cost": 6,
+      "attack": 6,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Look at 3 random non-{{RARITY:DETERMINATION}} monsters in the enemy dustpile. Add one to your deck with {{STATS:+1|+1}}.",
+      "effect_readable": "Taunt. Magic: Look at 3 random non-DT monsters in the enemy dustpile. Add one to your deck with ATK +1/HP +1.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-637",
+      "source_line": 2066
+    },
+    {
+      "id": 638,
+      "name": "Dog Cone",
+      "metadata_name": "Dog Cone",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ALL",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Loop",
+          "statusBehavior": "STACKABLE",
+          "counter": 2,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:LOOP}} (2). {{KW:MAGIC}}: Heal 2 {{HP}}.",
+      "effect_readable": "Loop (2). Magic: Heal 2 HP.",
+      "keyword_mentions": [
+        "LOOP",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-638",
+      "source_line": 2068
+    },
+    {
+      "id": 639,
+      "name": "Alterman",
+      "metadata_name": "Alterman",
+      "cost": 3,
+      "attack": 4,
+      "health": 2,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: {{KW:SILENCE}} and kill an ally monster to gain +3 {{HP}}.",
+      "effect_readable": "Taunt. Magic: Silence and kill an ally monster to gain +3 HP.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SILENCE",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-639",
+      "source_line": 2070
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

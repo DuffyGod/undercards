@@ -1,0 +1,330 @@
+{
+  "task_id": "opportunity_024",
+  "kind": "opportunity_review",
+  "requested": [
+    186,
+    187,
+    188,
+    191,
+    192,
+    193,
+    194,
+    195
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 186,
+      "name": "Trash Tornado",
+      "metadata_name": "Trash Tornado",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Loop",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:LOOP}} (1). {{KW:DELAY}}: Send the copy from your hand to your deck with {{STATS:+1|+1}}.",
+      "effect_readable": "Taunt. Loop (1). Delay: Send the copy from your hand to your deck with ATK +1/HP +1.",
+      "keyword_mentions": [
+        "DELAY",
+        "LOOP",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-186",
+      "source_line": 463
+    },
+    {
+      "id": 187,
+      "name": "Candy Dish",
+      "metadata_name": "Candy Dish",
+      "cost": 3,
+      "attack": 2,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": " ",
+      "effect_readable": "",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-187",
+      "source_line": 464
+    },
+    {
+      "id": 188,
+      "name": "Bridge Seed",
+      "metadata_name": "Bridge Seed",
+      "cost": 2,
+      "attack": 1,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Draw a card and gain +1 {{HP}} for each ally {{CARD:188|1}}.",
+      "effect_readable": "Taunt. Magic: Draw a card and gain +1 HP for each ally Bridge Seed [#188].",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        188
+      ],
+      "source_key": "card-188",
+      "source_line": 465
+    },
+    {
+      "id": 191,
+      "name": "Vulkin's Cloud",
+      "metadata_name": "Vulkin's Cloud",
+      "cost": 4,
+      "attack": 2,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Transparency",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TRANSPARENCY}}. {{KW:TURN_START}}: Deal its {{ATK}} as {{DMG}} to a random enemy monster.",
+      "effect_readable": "Transparency. Turn start: Deal its ATK as DMG to a random enemy monster.",
+      "keyword_mentions": [
+        "TRANSPARENCY",
+        "TURN_START"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-191",
+      "source_line": 466
+    },
+    {
+      "id": 192,
+      "name": "Big Bomb",
+      "metadata_name": "Big Bomb",
+      "cost": 6,
+      "attack": 6,
+      "health": 6,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Add 3 {{CARD:367|3}} to the enemy deck.",
+      "effect_readable": "Magic: Add 3 Explosion [#367] to the enemy deck.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        367
+      ],
+      "source_key": "card-192",
+      "source_line": 467
+    },
+    {
+      "id": 193,
+      "name": "Disco Ball",
+      "metadata_name": "Disco Ball",
+      "cost": 4,
+      "attack": 5,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Turn all spells in your hand into other random spells. Give them -1 {{COST}}.",
+      "effect_readable": "Magic: Turn all spells in your hand into other random spells. Give them -1 COST.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-193",
+      "source_line": 468
+    },
+    {
+      "id": 194,
+      "name": "Shambling Mass",
+      "metadata_name": "Shambling Mass",
+      "cost": 5,
+      "attack": 4,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:DUST}}: Deal 5 {{DMG}} randomly split among all enemy monsters.",
+      "effect_readable": "Taunt. Dust: Deal 5 DMG randomly split among all enemy monsters.",
+      "keyword_mentions": [
+        "DUST",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-194",
+      "source_line": 469
+    },
+    {
+      "id": 195,
+      "name": "Dog Food",
+      "metadata_name": "Dog Food",
+      "cost": 4,
+      "attack": 2,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Give all {{TRIBE:DOG|2}} in your hand {{STATS:+1|+1}}.",
+      "effect_readable": "Taunt. Magic: Give all Dog in your hand ATK +1/HP +1.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [
+        "DOG"
+      ],
+      "card_references": [],
+      "source_key": "card-195",
+      "source_line": 470
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

@@ -1,0 +1,310 @@
+{
+  "task_id": "opportunity_031",
+  "kind": "opportunity_review",
+  "requested": [
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    271,
+    272
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 262,
+      "name": "Mad Mew Mew",
+      "metadata_name": "Mad Mew Mew",
+      "cost": 4,
+      "attack": 4,
+      "health": 5,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "NEUTRAL",
+          "name": "Program",
+          "statusBehavior": "STACKABLE",
+          "counter": 3,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Halve a non-{{RARITY:DETERMINATION}} ally monster's stats and summon an exact copy of it. {{KW:PROGRAM}} (3): Summon another.",
+      "effect_readable": "Magic: Halve a non-DT ally monster's stats and summon an exact copy of it. Program (3): Summon another.",
+      "keyword_mentions": [
+        "MAGIC",
+        "PROGRAM"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-262",
+      "source_line": 522
+    },
+    {
+      "id": 263,
+      "name": "Kris",
+      "metadata_name": "Kris",
+      "cost": 9,
+      "attack": 4,
+      "health": 10,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. Before this attacks a monster, {{KW:SILENCE}} it. If the attack killed, gain {{STATS:+1|+1}}. {{KW:TURN_END}}: Draw a monster. Give it this card's stat buffs.",
+      "effect_readable": "Haste. Before this attacks a monster, Silence it. If the attack killed, gain ATK +1/HP +1. Turn end: Draw a monster. Give it this card's stat buffs.",
+      "keyword_mentions": [
+        "HASTE",
+        "SILENCE",
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-263",
+      "source_line": 523
+    },
+    {
+      "id": 264,
+      "name": "Ralsei",
+      "metadata_name": "Ralsei",
+      "cost": 8,
+      "attack": 6,
+      "health": 5,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "HAND",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Choose a non-{{RARITY:DETERMINATION}} monster in your hand. Summon a base {{STATS:3|3}} copy of it.",
+      "effect_readable": "Magic: Choose a non-DT monster in your hand. Summon a base ATK 3/HP 3 copy of it.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-264",
+      "source_line": 524
+    },
+    {
+      "id": 265,
+      "name": "Lancer",
+      "metadata_name": "Lancer",
+      "cost": 7,
+      "attack": 5,
+      "health": 5,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Enemy monsters take +2 {{DMG}} from spells. {{KW:MAGIC}}: Add 2 {{CARD:371|2}} to your hand with -1 {{COST}}.",
+      "effect_readable": "Enemy monsters take +2 DMG from spells. Magic: Add 2 Spade [#371] to your hand with -1 COST.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        371
+      ],
+      "source_key": "card-265",
+      "source_line": 525
+    },
+    {
+      "id": 266,
+      "name": "Clover Hydra",
+      "metadata_name": "Clover Hydra",
+      "cost": 9,
+      "attack": 3,
+      "health": 3,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ALL",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: Deal 3 {{DMG}}, draw 3 cards, and heal 3 {{HP}} to you.",
+      "effect_readable": "Haste. Magic: Deal 3 DMG, draw 3 cards, and heal 3 HP to you.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-266",
+      "source_line": 526
+    },
+    {
+      "id": 267,
+      "name": "Crystal Tombstone",
+      "metadata_name": "Crystal Tombstone",
+      "cost": 11,
+      "attack": 4,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Summon 2 random non-{{KW:GENERATED}} {{KW:DUST}} monsters costing 7 or less {{GOLD}} from your dustpile.",
+      "effect_readable": "Magic: Summon 2 random non-Generated Dust monsters costing 7 or less GOLD from your dustpile.",
+      "keyword_mentions": [
+        "DUST",
+        "GENERATED",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-267",
+      "source_line": 527
+    },
+    {
+      "id": 271,
+      "name": "Chaos Duck",
+      "metadata_name": "Chaos Duck",
+      "cost": 7,
+      "attack": 5,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Turn a monster into an {{CARD:372|1}} with {{KW:HASTE}}.",
+      "effect_readable": "Magic: Turn a monster into an Apoca Duck [#372] with Haste.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        372
+      ],
+      "source_key": "card-271",
+      "source_line": 529
+    },
+    {
+      "id": 272,
+      "name": "Gardener Asgore",
+      "metadata_name": "Gardener Asgore",
+      "cost": 6,
+      "attack": 4,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Summon a {{CARD:451|1}} and give it {{STATS:+1|+1}} for each 4 {{TRIBE:PLANT|4}} in your dustpile.",
+      "effect_readable": "Magic: Summon a Red Flower [#451] and give it ATK +1/HP +1 for each 4 Plant in your dustpile.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "PLANT"
+      ],
+      "card_references": [
+        451
+      ],
+      "source_key": "card-272",
+      "source_line": 530
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

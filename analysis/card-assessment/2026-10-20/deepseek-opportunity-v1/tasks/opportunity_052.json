@@ -1,0 +1,304 @@
+{
+  "task_id": "opportunity_052",
+  "kind": "opportunity_review",
+  "requested": [
+    543,
+    545,
+    546,
+    547,
+    548,
+    549,
+    550,
+    555
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 543,
+      "name": "Vending Machine",
+      "metadata_name": "Vending Machine",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Add {{CARD:544|1}} to your hand. Give it -1 {{COST}} for each ally monster with a Tribe.",
+      "effect_readable": "Magic: Add Popato Chisps [#544] to your hand. Give it -1 COST for each ally monster with a Tribe.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        544
+      ],
+      "source_key": "card-543",
+      "source_line": 1857
+    },
+    {
+      "id": 545,
+      "name": "Totem",
+      "metadata_name": "Totem",
+      "cost": 7,
+      "attack": 7,
+      "health": 7,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: 7+ 7-{{COST}} or 7-{{HP}} monsters in your dustpile. {{KW:MAGIC}}: {{KW:ERASE}} up to 5 of them and add {{CARD:613|1}} to your hand.",
+      "effect_readable": "Need: 7+ 7-COST or 7-HP monsters in your dustpile. Magic: Erase up to 5 of them and add Totemic Carvings [#613] to your hand.",
+      "keyword_mentions": [
+        "ERASE",
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        613
+      ],
+      "source_key": "card-545",
+      "source_line": 1861
+    },
+    {
+      "id": 546,
+      "name": "Sadmobile",
+      "metadata_name": "Sadmobile",
+      "cost": 6,
+      "attack": 5,
+      "health": 7,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Draw a card. If you spent 7+ {{GOLD}} last turn, give it -2 {{COST}}.",
+      "effect_readable": "Magic: Draw a card. If you spent 7+ GOLD last turn, give it -2 COST.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-546",
+      "source_line": 1863
+    },
+    {
+      "id": 547,
+      "name": "Magic Lantern",
+      "metadata_name": "Magic Lantern",
+      "cost": 6,
+      "attack": 4,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALL",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: If you have 6+ monsters in your dustpile, {{KW:ERASE}} 6 of them to deal 4 {{DMG}}.",
+      "effect_readable": "Magic: If you have 6+ monsters in your dustpile, Erase 6 of them to deal 4 DMG.",
+      "keyword_mentions": [
+        "ERASE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-547",
+      "source_line": 1865
+    },
+    {
+      "id": 548,
+      "name": "Magic Crystal",
+      "metadata_name": "Magic Crystal",
+      "cost": 7,
+      "attack": 5,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Cast 4 {{CARD:598|2}} on random alive enemy monsters. If you spent {{GOLD}} on spells last turn, add a {{CARD:713|1}} to your hand.",
+      "effect_readable": "Magic: Cast 4 Gemstone [#598] on random alive enemy monsters. If you spent GOLD on spells last turn, add a Crystal Downpour [#713] to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        598,
+        713
+      ],
+      "source_key": "card-548",
+      "source_line": 1867
+    },
+    {
+      "id": 549,
+      "name": "Cop Undyne",
+      "metadata_name": "Cop Undyne",
+      "cost": 7,
+      "attack": 4,
+      "health": 7,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Charge",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:CHARGE}}. Before this attacks a monster, deal 2 {{DMG}} to its adjacent monsters.",
+      "effect_readable": "Charge. Before this attacks a monster, deal 2 DMG to its adjacent monsters.",
+      "keyword_mentions": [
+        "CHARGE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-549",
+      "source_line": 1869
+    },
+    {
+      "id": 550,
+      "name": "Demon Flowey",
+      "metadata_name": "Demon Flowey",
+      "cost": 3,
+      "attack": 2,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:DUST}}: Add a {{KW:SILENCE|override=Silenced}} {{CARD:550|1}} with {{STATS:+3|+3|+3}} base stats and {{KW:HASTE}} to your deck.",
+      "effect_readable": "Haste. Dust: Add a Silenced Demon Flowey [#550] with COST +3/ATK +3/HP +3 base stats and Haste to your deck.",
+      "keyword_mentions": [
+        "DUST",
+        "HASTE",
+        "SILENCE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        550
+      ],
+      "source_key": "card-550",
+      "source_line": 1871
+    },
+    {
+      "id": 555,
+      "name": "Cool Vulkin",
+      "metadata_name": "Cool Vulkin",
+      "cost": 5,
+      "attack": 4,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give an ally monster +2 {{HP}} and {{KW:TAUNT}} and deal 2 {{DMG}} to the monster in front of it.",
+      "effect_readable": "Magic: Give an ally monster +2 HP and Taunt and deal 2 DMG to the monster in front of it.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-555",
+      "source_line": 1885
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

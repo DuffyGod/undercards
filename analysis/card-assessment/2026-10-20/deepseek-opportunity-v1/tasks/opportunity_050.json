@@ -1,0 +1,324 @@
+{
+  "task_id": "opportunity_050",
+  "kind": "opportunity_review",
+  "requested": [
+    521,
+    523,
+    524,
+    526,
+    527,
+    528,
+    529,
+    530
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 521,
+      "name": "Pillar",
+      "metadata_name": "Pillar",
+      "cost": 5,
+      "attack": 2,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Give an ally monster {{STATS:+2|+1}}. {{KW:DUST}}: Add a {{CARD:522|1}} to your hand.",
+      "effect_readable": "Taunt. Magic: Give an ally monster ATK +2/HP +1. Dust: Add a Broken Pillar [#522] to your hand.",
+      "keyword_mentions": [
+        "DUST",
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        522
+      ],
+      "source_key": "card-521",
+      "source_line": 1801
+    },
+    {
+      "id": 523,
+      "name": "Snoring Monsters",
+      "metadata_name": "Snoring Monsters",
+      "cost": 10,
+      "attack": 6,
+      "health": 7,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After this kills a monster, gain +3 {{ATK}}. {{KW:MAGIC}}: Deal 4 {{DMG}} to a monster.",
+      "effect_readable": "After this kills a monster, gain +3 ATK. Magic: Deal 4 DMG to a monster.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-523",
+      "source_line": 1805
+    },
+    {
+      "id": 524,
+      "name": "Legendary Artifact",
+      "metadata_name": "Legendary Artifact",
+      "cost": 5,
+      "attack": 4,
+      "health": 6,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Fill your hand with {{CARD:525|2}}.",
+      "effect_readable": "Taunt. Magic: Fill your hand with Too Many Dogs [#525].",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        525
+      ],
+      "source_key": "card-524",
+      "source_line": 1807
+    },
+    {
+      "id": 526,
+      "name": "Plated Pipe",
+      "metadata_name": "Plated Pipe",
+      "cost": 6,
+      "attack": 5,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Armor",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:ARMOR}}. After this takes {{DMG}}, deal 1 {{DMG}} to the opponent.",
+      "effect_readable": "Armor. After this takes DMG, deal 1 DMG to the opponent.",
+      "keyword_mentions": [
+        "ARMOR"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-526",
+      "source_line": 1811
+    },
+    {
+      "id": 527,
+      "name": "Devil Doll",
+      "metadata_name": "Devil Doll",
+      "cost": 5,
+      "attack": 3,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURBO}}: Deal 1 {{DMG}} to a random enemy monster. {{KW:MAGIC}}: Deal 2 {{DMG}} to all damaged enemy monsters.",
+      "effect_readable": "Turbo: Deal 1 DMG to a random enemy monster. Magic: Deal 2 DMG to all damaged enemy monsters.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TURBO"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-527",
+      "source_line": 1813
+    },
+    {
+      "id": 528,
+      "name": "Rope Dog",
+      "metadata_name": "Rope Dog",
+      "cost": 5,
+      "attack": 3,
+      "health": 7,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "DOG"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "The first time this attacks a monster each turn, this can attack a monster again. {{KW:SYNERGY}}: Gain +2 {{ATK}} and {{KW:HASTE}}.",
+      "effect_readable": "The first time this attacks a monster each turn, this can attack a monster again. Synergy: Gain +2 ATK and Haste.",
+      "keyword_mentions": [
+        "HASTE",
+        "SYNERGY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-528",
+      "source_line": 1815
+    },
+    {
+      "id": 529,
+      "name": "Vine",
+      "metadata_name": "Vine",
+      "cost": 12,
+      "attack": 7,
+      "health": 7,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "In your hand, this has -1 {{COST}} for each {{TRIBE:PLANT|1}} you've played this game (max. -9 {{COST}}).",
+      "effect_readable": "In your hand, this has -1 COST for each Plant you've played this game (max. -9 COST).",
+      "keyword_mentions": [],
+      "tribe_mentions": [
+        "PLANT"
+      ],
+      "card_references": [],
+      "source_key": "card-529",
+      "source_line": 1817
+    },
+    {
+      "id": 530,
+      "name": "Piranhas",
+      "metadata_name": "Piranhas",
+      "cost": 6,
+      "attack": 4,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Dodge",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:DODGE}} (1). After this attacks and kills a monster, deal 1 {{DMG}} to a random enemy monster. If it died, repeat.",
+      "effect_readable": "Haste. Dodge (1). After this attacks and kills a monster, deal 1 DMG to a random enemy monster. If it died, repeat.",
+      "keyword_mentions": [
+        "DODGE",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-530",
+      "source_line": 1819
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

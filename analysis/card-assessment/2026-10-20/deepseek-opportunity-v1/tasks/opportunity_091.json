@@ -1,0 +1,328 @@
+{
+  "task_id": "opportunity_091",
+  "kind": "opportunity_review",
+  "requested": [
+    966,
+    967,
+    968,
+    970,
+    971,
+    972,
+    973,
+    974
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 966,
+      "name": "Hopschef",
+      "metadata_name": "Hopschef",
+      "cost": 3,
+      "attack": 4,
+      "health": 2,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Summon a {{STATS:1|2}} {{CARD:959|1}} for the opponent. {{KW:DELAY}}: If it's dead, summon a {{CARD:959|1}} for you. Otherwise, kill it.",
+      "effect_readable": "Magic: Summon a ATK 1/HP 2 Sauerdough [#959] for the opponent. Delay: If it's dead, summon a Sauerdough [#959] for you. Otherwise, kill it.",
+      "keyword_mentions": [
+        "DELAY",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        959
+      ],
+      "source_key": "card-966",
+      "source_line": 3158
+    },
+    {
+      "id": 967,
+      "name": "Floradinn",
+      "metadata_name": "Floradinn",
+      "cost": 4,
+      "attack": 3,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_START}}: Add 2 {{CARD:375|2}} to your hand.",
+      "effect_readable": "Turn start: Add 2 Green Clover [#375] to your hand.",
+      "keyword_mentions": [
+        "TURN_START"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        375
+      ],
+      "source_key": "card-967",
+      "source_line": 3160
+    },
+    {
+      "id": 968,
+      "name": "Cherry Tree",
+      "metadata_name": "Cherry Tree",
+      "cost": 4,
+      "attack": 4,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_START}}: Give yourself +3 {{HP}}.",
+      "effect_readable": "Turn start: Give yourself +3 HP.",
+      "keyword_mentions": [
+        "TURN_START"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-968",
+      "source_line": 3162
+    },
+    {
+      "id": 970,
+      "name": "Aqua",
+      "metadata_name": "Aqua",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: You've drawn 3+ cards this turn. {{KW:MAGIC}}: Deal 1 {{DMG}} to all enemies and draw a card.",
+      "effect_readable": "Need: You've drawn 3+ cards this turn. Magic: Deal 1 DMG to all enemies and draw a card.",
+      "keyword_mentions": [
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-970",
+      "source_line": 3166
+    },
+    {
+      "id": 971,
+      "name": "Duck of Doom",
+      "metadata_name": "Duck of Doom",
+      "cost": 9,
+      "attack": 1,
+      "health": 1,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Bullseye",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:BULLSEYE}}: Kill all other monsters.",
+      "effect_readable": "Haste. Bullseye: Kill all other monsters.",
+      "keyword_mentions": [
+        "BULLSEYE",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-971",
+      "source_line": 3168
+    },
+    {
+      "id": 972,
+      "name": "Terakota",
+      "metadata_name": "Terakota",
+      "cost": 9,
+      "attack": 6,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ALLY_SLOT",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Armor",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:ARMOR}}. {{KW:HASTE}}. {{KW:MAGIC}}: Enchant an ally slot with {{ENCHANT:SOIL|1}}.",
+      "effect_readable": "Armor. Haste. Magic: Enchant an ally slot with Soil.",
+      "keyword_mentions": [
+        "ARMOR",
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-972",
+      "source_line": 3170
+    },
+    {
+      "id": 973,
+      "name": "Trial Susie",
+      "metadata_name": "Trial Susie",
+      "cost": 7,
+      "attack": 3,
+      "health": 7,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. After this attacks and survives, set all monsters' {{HP}} to this card's {{HP}} and {{KW:SILENCE}} this.",
+      "effect_readable": "Haste. After this attacks and survives, set all monsters' HP to this card's HP and Silence this.",
+      "keyword_mentions": [
+        "HASTE",
+        "SILENCE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-973",
+      "source_line": 3172
+    },
+    {
+      "id": 974,
+      "name": "Mr Butterfly",
+      "metadata_name": "Mr Butterfly",
+      "cost": 5,
+      "attack": 3,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: You played another card costing 6+ {{GOLD}} this turn. {{KW:MAGIC}}: Summon a {{CARD:462|1}}.",
+      "effect_readable": "Need: You played another card costing 6+ GOLD this turn. Magic: Summon a Blue Rose [#462].",
+      "keyword_mentions": [
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        462
+      ],
+      "source_key": "card-974",
+      "source_line": 3174
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

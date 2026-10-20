@@ -1,0 +1,293 @@
+{
+  "task_id": "opportunity_028",
+  "kind": "opportunity_review",
+  "requested": [
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 238,
+      "name": "Script Bomb",
+      "metadata_name": "Script Bomb",
+      "cost": 3,
+      "attack": 1,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Draw a card and give it -2 {{COST}}. {{KW:TURN_START}}: Trigger its {{KW:DUST}} effect and kill this.",
+      "effect_readable": "Dust: Draw a card and give it -2 COST. Turn start: Trigger its Dust effect and kill this.",
+      "keyword_mentions": [
+        "DUST",
+        "TURN_START"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-238",
+      "source_line": 498
+    },
+    {
+      "id": 239,
+      "name": "Snowdin Sign",
+      "metadata_name": "Snowdin Sign",
+      "cost": 4,
+      "attack": 4,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: You spent {{GOLD}} on spells last turn. {{KW:MAGIC}}: Look at 3 random {{RARITY:RARE}} spells. Add one to your hand with -1 {{COST}}.",
+      "effect_readable": "Need: You spent GOLD on spells last turn. Magic: Look at 3 random RARE spells. Add one to your hand with -1 COST.",
+      "keyword_mentions": [
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-239",
+      "source_line": 499
+    },
+    {
+      "id": 240,
+      "name": "TV",
+      "metadata_name": "TV",
+      "cost": 6,
+      "attack": 6,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURBO}}: Add the same random card to the top of both players' decks. Give yours -1 {{COST}}.",
+      "effect_readable": "Turbo: Add the same random card to the top of both players' decks. Give yours -1 COST.",
+      "keyword_mentions": [
+        "TURBO"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-240",
+      "source_line": 500
+    },
+    {
+      "id": 241,
+      "name": "Eye",
+      "metadata_name": "Eye",
+      "cost": 2,
+      "attack": 3,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "AMALGAMATE"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at the 3 top different {{TRIBE:AMALGAMATE|2}} in your deck (except {{CARD:241|1}}). Add a copy of one to the top of your deck with {{STATS:+1|+1}}.",
+      "effect_readable": "Magic: Look at the 3 top different Amalgamate in your deck (except Eye [#241]). Add a copy of one to the top of your deck with ATK +1/HP +1.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "AMALGAMATE"
+      ],
+      "card_references": [
+        241
+      ],
+      "source_key": "card-241",
+      "source_line": 501
+    },
+    {
+      "id": 242,
+      "name": "Burger Bush",
+      "metadata_name": "Burger Bush",
+      "cost": 4,
+      "attack": 3,
+      "health": 2,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Transparency",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TRANSPARENCY}}. {{KW:TURN_START}}: Earn 1 {{GOLD}} for each ally {{TRIBE:PLANT|1}}.",
+      "effect_readable": "Transparency. Turn start: Earn 1 GOLD for each ally Plant.",
+      "keyword_mentions": [
+        "TRANSPARENCY",
+        "TURN_START"
+      ],
+      "tribe_mentions": [
+        "PLANT"
+      ],
+      "card_references": [],
+      "source_key": "card-242",
+      "source_line": 502
+    },
+    {
+      "id": 243,
+      "name": "Bench",
+      "metadata_name": "Bench",
+      "cost": 5,
+      "attack": 5,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Draw a card.",
+      "effect_readable": "Magic: Draw a card.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-243",
+      "source_line": 503
+    },
+    {
+      "id": 244,
+      "name": "Fox Head",
+      "metadata_name": "Fox Head",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 1 {{DMG}} to the leftmost and rightmost living enemy monsters.",
+      "effect_readable": "Magic: Deal 1 DMG to the leftmost and rightmost living enemy monsters.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-244",
+      "source_line": 504
+    },
+    {
+      "id": 245,
+      "name": "Scarf Lady",
+      "metadata_name": "Scarf Lady",
+      "cost": 4,
+      "attack": 3,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at all {{KW:TURBO}} monsters in your deck and choose one. Add it to the top of your deck with -1 {{COST}}.",
+      "effect_readable": "Magic: Look at all Turbo monsters in your deck and choose one. Add it to the top of your deck with -1 COST.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TURBO"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-245",
+      "source_line": 505
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

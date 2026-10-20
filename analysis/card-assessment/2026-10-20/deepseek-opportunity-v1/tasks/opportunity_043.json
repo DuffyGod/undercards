@@ -1,0 +1,321 @@
+{
+  "task_id": "opportunity_043",
+  "kind": "opportunity_review",
+  "requested": [
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    450,
+    453
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 439,
+      "name": "Candle",
+      "metadata_name": "Candle",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Summon a {{KW:SILENCE|override=Silenced}} copy of this with 1 base {{HP}}.",
+      "effect_readable": "Dust: Summon a Silenced copy of this with 1 base HP.",
+      "keyword_mentions": [
+        "DUST",
+        "SILENCE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-439",
+      "source_line": 1545
+    },
+    {
+      "id": 440,
+      "name": "Crystal Cheese",
+      "metadata_name": "Crystal Cheese",
+      "cost": 3,
+      "attack": 2,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at 2 random {{TRIBE:LOST_SOUL|2}} and choose one to {{KW:CATCH}}. {{KW:DUST}}: Release it with {{STATS:1|1}} base stats.",
+      "effect_readable": "Magic: Look at 2 random Lost Soul and choose one to Catch. Dust: Release it with ATK 1/HP 1 base stats.",
+      "keyword_mentions": [
+        "CATCH",
+        "DUST",
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "LOST_SOUL"
+      ],
+      "card_references": [],
+      "source_key": "card-440",
+      "source_line": 1547
+    },
+    {
+      "id": 441,
+      "name": "Sword Emblem",
+      "metadata_name": "Sword Emblem",
+      "cost": 7,
+      "attack": 6,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After this takes {{DMG}}, {{KW:SWITCH}}: Gain {{SWITCH_LEFT:1|+1 {{KW:DODGE}}}} or {{SWITCH_RIGHT:1|{{KW:TRANSPARENCY}}}}.",
+      "effect_readable": "After this takes DMG, Switch: Gain [左侧] +1 Dodge or [右侧] Transparency.",
+      "keyword_mentions": [
+        "DODGE",
+        "SWITCH",
+        "TRANSPARENCY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-441",
+      "source_line": 1549
+    },
+    {
+      "id": 442,
+      "name": "Sand Dog",
+      "metadata_name": "Sand Dog",
+      "cost": 10,
+      "attack": 4,
+      "health": 8,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "DOG"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Summon an exact copy of this.",
+      "effect_readable": "Magic: Summon an exact copy of this.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-442",
+      "source_line": 1551
+    },
+    {
+      "id": 443,
+      "name": "Spade Chain",
+      "metadata_name": "Spade Chain",
+      "cost": 10,
+      "attack": 4,
+      "health": 9,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: Deal 4 {{DMG}} to a monster. Deal 1 extra {{DMG}} for every 3 {{GOLD}} it costs.",
+      "effect_readable": "Haste. Magic: Deal 4 DMG to a monster. Deal 1 extra DMG for every 3 GOLD it costs.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-443",
+      "source_line": 1553
+    },
+    {
+      "id": 444,
+      "name": "Jevil",
+      "metadata_name": "Jevil",
+      "cost": 11,
+      "attack": 7,
+      "health": 7,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at all {{TRIBE:CHAOS_WEAPON|2}} and choose one to cast.",
+      "effect_readable": "Magic: Look at all Chaos Weapon and choose one to cast.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "CHAOS_WEAPON"
+      ],
+      "card_references": [],
+      "source_key": "card-444",
+      "source_line": 1555
+    },
+    {
+      "id": 450,
+      "name": "Desk Lamp",
+      "metadata_name": "Desk Lamp",
+      "cost": 4,
+      "attack": 2,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Dodge",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:DODGE}} (1). {{KW:DUST}}: Add a {{CARD:536}} to your hand.",
+      "effect_readable": "Taunt. Dodge (1). Dust: Add a Dream [#536] to your hand.",
+      "keyword_mentions": [
+        "DODGE",
+        "DUST",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        536
+      ],
+      "source_key": "card-450",
+      "source_line": 1567
+    },
+    {
+      "id": 453,
+      "name": "Call of the Grave",
+      "metadata_name": "Call of the Grave",
+      "cost": 2,
+      "attack": null,
+      "health": null,
+      "rarity": "COMMON",
+      "card_type": "spell",
+      "soul": "DETERMINATION",
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "NEUTRAL",
+          "name": "Program",
+          "statusBehavior": "STACKABLE",
+          "counter": 2,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Summon the next base {{STATS:1|1}} {{TRIBE:LOST_SOUL|1}} with {{KW:HASTE}}. {{KW:PROGRAM}} (2): Spend all counters on your {{ARTIFACT:33}} artifact to give it {{STATS:+1|+1}} for every 4 spent.",
+      "effect_readable": "Summon the next base ATK 1/HP 1 Lost Soul with Haste. Program (2): Spend all counters on your Save [#33] artifact to give it ATK +1/HP +1 for every 4 spent.",
+      "keyword_mentions": [
+        "HASTE",
+        "PROGRAM"
+      ],
+      "tribe_mentions": [
+        "LOST_SOUL"
+      ],
+      "card_references": [],
+      "source_key": "card-453",
+      "source_line": 1593
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

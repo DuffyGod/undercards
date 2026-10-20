@@ -1,0 +1,296 @@
+{
+  "task_id": "opportunity_015",
+  "kind": "opportunity_review",
+  "requested": [
+    106,
+    107,
+    108,
+    109,
+    110,
+    112,
+    113,
+    114
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 106,
+      "name": "The Heroine",
+      "metadata_name": "The Heroine",
+      "cost": 9,
+      "attack": 7,
+      "health": 8,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "ROYAL_GUARD"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Instead of dying, {{KW:ERASE}} 5 monsters in your dustpile to return with {{STATS:-1|-2}} base stats. {{KW:MAGIC}}: Gain {{KW:TAUNT}}.",
+      "effect_readable": "Instead of dying, Erase 5 monsters in your dustpile to return with ATK -1/HP -2 base stats. Magic: Gain Taunt.",
+      "keyword_mentions": [
+        "ERASE",
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-106",
+      "source_line": 388
+    },
+    {
+      "id": 107,
+      "name": "Water Cooler",
+      "metadata_name": "Water Cooler",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Heal 2 {{HP}} to all allies.",
+      "effect_readable": "Turn end: Heal 2 HP to all allies.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-107",
+      "source_line": 389
+    },
+    {
+      "id": 108,
+      "name": "Rock",
+      "metadata_name": "Rock",
+      "cost": 6,
+      "attack": 3,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:DUST}}: Summon a {{CARD:352|1}}.",
+      "effect_readable": "Taunt. Dust: Summon a Pebble [#352].",
+      "keyword_mentions": [
+        "DUST",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        352
+      ],
+      "source_key": "card-108",
+      "source_line": 390
+    },
+    {
+      "id": 109,
+      "name": "Everyman",
+      "metadata_name": "Everyman",
+      "cost": 5,
+      "attack": 4,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "AMALGAMATE"
+      ],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give an ally {{TRIBE:AMALGAMATE|1}} (except {{CARD:109|1}}) {{STATS:+1|+1}} and add a copy of it to your hand. {{KW:SYNERGY}}: Give both {{STATS:+1|+1}}.",
+      "effect_readable": "Magic: Give an ally Amalgamate (except Everyman [#109]) ATK +1/HP +1 and add a copy of it to your hand. Synergy: Give both ATK +1/HP +1.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SYNERGY"
+      ],
+      "tribe_mentions": [
+        "AMALGAMATE"
+      ],
+      "card_references": [
+        109
+      ],
+      "source_key": "card-109",
+      "source_line": 391
+    },
+    {
+      "id": 110,
+      "name": "Mettaton NEO",
+      "metadata_name": "Mettaton NEO",
+      "cost": 10,
+      "attack": 13,
+      "health": 1,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Deal its {{ATK}} as {{DMG}} to all enemy monsters.",
+      "effect_readable": "Dust: Deal its ATK as DMG to all enemy monsters.",
+      "keyword_mentions": [
+        "DUST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-110",
+      "source_line": 392
+    },
+    {
+      "id": 112,
+      "name": "Ice Wolf",
+      "metadata_name": "Ice Wolf",
+      "cost": 6,
+      "attack": 6,
+      "health": 9,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Summon an {{CARD:10}} for the opponent.",
+      "effect_readable": "Dust: Summon an Ice [#10] for the opponent.",
+      "keyword_mentions": [
+        "DUST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        10
+      ],
+      "source_key": "card-112",
+      "source_line": 394
+    },
+    {
+      "id": 113,
+      "name": "Igloo",
+      "metadata_name": "Igloo",
+      "cost": 4,
+      "attack": 5,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Return an ally monster to your hand.",
+      "effect_readable": "Magic: Return an ally monster to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-113",
+      "source_line": 395
+    },
+    {
+      "id": 114,
+      "name": "Glad Dummy",
+      "metadata_name": "Glad Dummy",
+      "cost": 3,
+      "attack": 4,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give adjacent monsters {{KW:TAUNT}}.",
+      "effect_readable": "Magic: Give adjacent monsters Taunt.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-114",
+      "source_line": 396
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

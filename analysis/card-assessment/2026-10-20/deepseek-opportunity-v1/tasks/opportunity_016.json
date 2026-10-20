@@ -1,0 +1,313 @@
+{
+  "task_id": "opportunity_016",
+  "kind": "opportunity_review",
+  "requested": [
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 116,
+      "name": "Small Bird",
+      "metadata_name": "Small Bird",
+      "cost": 4,
+      "attack": 4,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: If there is a {{KW:TAUNT}} monster, gain {{KW:CHARGE}}.",
+      "effect_readable": "Magic: If there is a Taunt monster, gain Charge.",
+      "keyword_mentions": [
+        "CHARGE",
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-116",
+      "source_line": 398
+    },
+    {
+      "id": 117,
+      "name": "Omega Flowey",
+      "metadata_name": "Omega Flowey",
+      "cost": 10,
+      "attack": 9,
+      "health": 9,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: Save the board and add a {{CARD:358|1}} to your hand.",
+      "effect_readable": "Haste. Magic: Save the board and add a Load [#358] to your hand.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        358
+      ],
+      "source_key": "card-117",
+      "source_line": 399
+    },
+    {
+      "id": 118,
+      "name": "G Follower 1",
+      "metadata_name": "G Follower 1",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "G_FOLLOWER"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Draw a {{KW:SYNERGY}} card.",
+      "effect_readable": "Magic: Draw a Synergy card.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SYNERGY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-118",
+      "source_line": 400
+    },
+    {
+      "id": 119,
+      "name": "G Follower 2",
+      "metadata_name": "G Follower 2",
+      "cost": 6,
+      "attack": 4,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "G_FOLLOWER"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:SYNERGY}}: Summon a {{CARD:119|1}}.",
+      "effect_readable": "Haste. Synergy: Summon a G Follower 2 [#119].",
+      "keyword_mentions": [
+        "HASTE",
+        "SYNERGY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        119
+      ],
+      "source_key": "card-119",
+      "source_line": 401
+    },
+    {
+      "id": 120,
+      "name": "G Follower 3",
+      "metadata_name": "G Follower 3",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "G_FOLLOWER"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at all other {{TRIBE:G_FOLLOWER|2}} and add one to your hand. {{KW:SYNERGY}}: Add it to your hand with -1 {{COST}} instead.",
+      "effect_readable": "Magic: Look at all other G Follower and add one to your hand. Synergy: Add it to your hand with -1 COST instead.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SYNERGY"
+      ],
+      "tribe_mentions": [
+        "G_FOLLOWER"
+      ],
+      "card_references": [],
+      "source_key": "card-120",
+      "source_line": 402
+    },
+    {
+      "id": 121,
+      "name": "Goner Kid",
+      "metadata_name": "Goner Kid",
+      "cost": 7,
+      "attack": 4,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "G_FOLLOWER"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Kill a random other monster. {{KW:SYNERGY}}: Kill a random enemy monster instead.",
+      "effect_readable": "Magic: Kill a random other monster. Synergy: Kill a random enemy monster instead.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SYNERGY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-121",
+      "source_line": 403
+    },
+    {
+      "id": 122,
+      "name": "Janitor",
+      "metadata_name": "Janitor",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give +1 {{HP}} to monsters left of this and +1 {{ATK}} to monsters right of this.",
+      "effect_readable": "Magic: Give +1 HP to monsters left of this and +1 ATK to monsters right of this.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-122",
+      "source_line": 404
+    },
+    {
+      "id": 123,
+      "name": "Onionsan",
+      "metadata_name": "Onionsan",
+      "cost": 11,
+      "attack": 9,
+      "health": 7,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Summon a {{CARD:353|1}} and a {{CARD:354|1}} with {{STATS:+2|+2}} adjacent to this.",
+      "effect_readable": "Magic: Summon a Left Tentacle [#353] and a Right Tentacle [#354] with ATK +2/HP +2 adjacent to this.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        353,
+        354
+      ],
+      "source_key": "card-123",
+      "source_line": 405
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

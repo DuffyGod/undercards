@@ -1,0 +1,319 @@
+{
+  "task_id": "opportunity_067",
+  "kind": "opportunity_review",
+  "requested": [
+    705,
+    707,
+    710,
+    714,
+    716,
+    717,
+    726,
+    729
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 705,
+      "name": "Knight's Shield",
+      "metadata_name": "Knight's Shield",
+      "cost": 1,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "BRAVERY",
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Give an ally monster {{KW:TAUNT}} and +1 {{HP}} for each empty ally board slot.",
+      "effect_readable": "Give an ally monster Taunt and +1 HP for each empty ally board slot.",
+      "keyword_mentions": [
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-705",
+      "source_line": 2206
+    },
+    {
+      "id": 707,
+      "name": "Captain Rouxls",
+      "metadata_name": "Captain Rouxls",
+      "cost": 6,
+      "attack": 5,
+      "health": 6,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Fillst thy board with {{CARD:708|2}} and enemy board with {{CARD:709|2}}. {{KW:DELAY}}: Killeth all {{CARD:708|2}}.",
+      "effect_readable": "Magic: Fillst thy board with Blue House [#708] and enemy board with Red House [#709]. Delay: Killeth all Blue House [#708].",
+      "keyword_mentions": [
+        "DELAY",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        708,
+        709
+      ],
+      "source_key": "card-707",
+      "source_line": 2210
+    },
+    {
+      "id": 710,
+      "name": "Snoelle",
+      "metadata_name": "Snoelle",
+      "cost": 3,
+      "attack": 2,
+      "health": 3,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: {{KW:PARALYZE}} a monster. {{KW:DELAY}}: If it's dead and this is alive, return to your deck with +1 base {{ATK}}. At 5, {{KW:ERASE}} this to add {{CARD:711|1}} to your hand.",
+      "effect_readable": "Haste. Magic: Paralyze a monster. Delay: If it's dead and this is alive, return to your deck with +1 base ATK. At 5, Erase this to add Snowgrave [#711] to your hand.",
+      "keyword_mentions": [
+        "DELAY",
+        "ERASE",
+        "HASTE",
+        "MAGIC",
+        "PARALYZE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        711
+      ],
+      "source_key": "card-710",
+      "source_line": 2216
+    },
+    {
+      "id": 714,
+      "name": "Caged Jester",
+      "metadata_name": "Caged Jester",
+      "cost": 7,
+      "attack": 7,
+      "health": 7,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Attain {{ARTIFACT:45}} to give it a counter for every different non-{{RARITY:TOKEN}} spell of another SOUL you cast this game.",
+      "effect_readable": "Magic: Attain Freedom [#45] to give it a counter for every different non-TOKEN spell of another SOUL you cast this game.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-714",
+      "source_line": 2227
+    },
+    {
+      "id": 716,
+      "name": "Royal Papyrus",
+      "metadata_name": "Royal Papyrus",
+      "cost": 10,
+      "attack": 6,
+      "health": 9,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "ROYAL_GUARD"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:NEED}}: 10+ non-{{KW:GENERATED}} monsters costing 9+ {{GOLD}} in your dustpile. {{KW:MAGIC}}: Equip the {{ARTIFACT:62}} artifact.",
+      "effect_readable": "Haste. Need: 10+ non-Generated monsters costing 9+ GOLD in your dustpile. Magic: Equip the Underground Army [#62] artifact.",
+      "keyword_mentions": [
+        "GENERATED",
+        "HASTE",
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-716",
+      "source_line": 2231
+    },
+    {
+      "id": 717,
+      "name": "Spamton NEO",
+      "metadata_name": "Spamton NEO",
+      "cost": 10,
+      "attack": 1,
+      "health": 13,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Give the opponent {{ARTIFACT:46}}.",
+      "effect_readable": "Taunt. Magic: Give the opponent FREE KROMER [#46].",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-717",
+      "source_line": 2233
+    },
+    {
+      "id": 726,
+      "name": "Placeholder Kris",
+      "metadata_name": "Placeholder Kris",
+      "cost": 10,
+      "attack": 4,
+      "health": 9,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Support",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SUPPORT}}: Give the attacker {{STATS:+2|+2}}.",
+      "effect_readable": "Support: Give the attacker ATK +2/HP +2.",
+      "keyword_mentions": [
+        "SUPPORT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-726",
+      "source_line": 2255
+    },
+    {
+      "id": 729,
+      "name": "Book Register",
+      "metadata_name": "Book Register",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: If you have a non-{{RARITY:TOKEN}} spell from another SOUL in your hand, deal 3 {{DMG}} to a monster.",
+      "effect_readable": "Magic: If you have a non-TOKEN spell from another SOUL in your hand, deal 3 DMG to a monster.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-729",
+      "source_line": 2263
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

@@ -1,0 +1,6 @@
+{
+  "status": "blocked_credentials",
+  "requests_sent": 0,
+  "reason": "No configured TENCENT_API_KEY or normal helper credential; do not place secrets in chat",
+  "next_step": "Use preserved outputs and main Agent review; configure environment binding to execute new pilot"
+}

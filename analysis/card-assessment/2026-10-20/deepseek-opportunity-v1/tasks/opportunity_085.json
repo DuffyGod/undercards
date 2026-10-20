@@ -1,0 +1,356 @@
+{
+  "task_id": "opportunity_085",
+  "kind": "opportunity_review",
+  "requested": [
+    904,
+    905,
+    906,
+    907,
+    908,
+    909,
+    910,
+    911
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 904,
+      "name": "Zoot Ralsei",
+      "metadata_name": "Zoot Ralsei",
+      "cost": 5,
+      "attack": 3,
+      "health": 3,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After an enemy {{KW:WANTED}} monster dies, summon a base {{STATS:2|3}} copy of it. {{KW:MAGIC}}: Make an enemy monster {{KW:WANTED}} and deal 1 {{DMG}} to it.",
+      "effect_readable": "After an enemy Wanted monster dies, summon a base ATK 2/HP 3 copy of it. Magic: Make an enemy monster Wanted and deal 1 DMG to it.",
+      "keyword_mentions": [
+        "MAGIC",
+        "WANTED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-904",
+      "source_line": 2708
+    },
+    {
+      "id": 905,
+      "name": "Lawnmower",
+      "metadata_name": "Lawnmower",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Transparency",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TRANSPARENCY}}. {{KW:DUST}}: Give all other ally monsters +1 {{ATK}} and {{KW:HASTE}}.",
+      "effect_readable": "Transparency. Dust: Give all other ally monsters +1 ATK and Haste.",
+      "keyword_mentions": [
+        "DUST",
+        "HASTE",
+        "TRANSPARENCY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-905",
+      "source_line": 2710
+    },
+    {
+      "id": 906,
+      "name": "Pixel Lanino",
+      "metadata_name": "Pixel Lanino",
+      "cost": 6,
+      "attack": 3,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: Summon a {{CARD:907|1}} from your deck or hand.",
+      "effect_readable": "Haste. Magic: Summon a Pixel Elnina [#907] from your deck or hand.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        907
+      ],
+      "source_key": "card-906",
+      "source_line": 2712
+    },
+    {
+      "id": 907,
+      "name": "Pixel Elnina",
+      "metadata_name": "Pixel Elnina",
+      "cost": 6,
+      "attack": 5,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Summon a {{CARD:906|1}} from your deck or hand.",
+      "effect_readable": "Taunt. Magic: Summon a Pixel Lanino [#906] from your deck or hand.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        906
+      ],
+      "source_key": "card-907",
+      "source_line": 2714
+    },
+    {
+      "id": 908,
+      "name": "Rockstar Ralsei",
+      "metadata_name": "Rockstar Ralsei",
+      "cost": 7,
+      "attack": 6,
+      "health": 8,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Support",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SUPPORT}}: Draw up to 1 card. {{KW:SHOCK}}: Give the top monster in your deck -1 {{COST}}.",
+      "effect_readable": "Support: Draw up to 1 card. Shock: Give the top monster in your deck -1 COST.",
+      "keyword_mentions": [
+        "SHOCK",
+        "SUPPORT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-908",
+      "source_line": 2716
+    },
+    {
+      "id": 909,
+      "name": "Rockstar Kris",
+      "metadata_name": "Rockstar Kris",
+      "cost": 7,
+      "attack": 4,
+      "health": 6,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Support",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:SUPPORT}}: Gain {{STATS:+2|+2}} and lose this {{KW:SUPPORT}}. {{KW:SHOCK}}: Regain this {{KW:SUPPORT}}.",
+      "effect_readable": "Haste. Support: Gain ATK +2/HP +2 and lose this Support. Shock: Regain this Support.",
+      "keyword_mentions": [
+        "HASTE",
+        "SHOCK",
+        "SUPPORT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-909",
+      "source_line": 2718
+    },
+    {
+      "id": 910,
+      "name": "Golden Piano",
+      "metadata_name": "Golden Piano",
+      "cost": 5,
+      "attack": 3,
+      "health": 2,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: Gain {{STATS:+1|+1}} for every 2 monsters with a unique {{COST}} in your dustpile.",
+      "effect_readable": "Haste. Magic: Gain ATK +1/HP +1 for every 2 monsters with a unique COST in your dustpile.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-910",
+      "source_line": 2720
+    },
+    {
+      "id": 911,
+      "name": "Crossganikk",
+      "metadata_name": "Crossganikk",
+      "cost": 6,
+      "attack": 4,
+      "health": 8,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: You spent {{GOLD}} on spells last turn. {{KW:MAGIC}}: Add 2 {{CARD:536|2}} to your hand.",
+      "effect_readable": "Need: You spent GOLD on spells last turn. Magic: Add 2 Dream [#536] to your hand.",
+      "keyword_mentions": [
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        536
+      ],
+      "source_key": "card-911",
+      "source_line": 2722
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

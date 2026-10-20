@@ -1,0 +1,293 @@
+{
+  "task_id": "opportunity_003",
+  "kind": "opportunity_review",
+  "requested": [
+    7,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    17
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 7,
+      "name": "Loox",
+      "metadata_name": "Loox",
+      "cost": 1,
+      "attack": 1,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALL",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 1 {{DMG}}. If it targeted an ally, gain +1 {{ATK}}.",
+      "effect_readable": "Magic: Deal 1 DMG. If it targeted an ally, gain +1 ATK.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-7",
+      "source_line": 289
+    },
+    {
+      "id": 9,
+      "name": "Ice Cap",
+      "metadata_name": "Ice Cap",
+      "cost": 3,
+      "attack": 3,
+      "health": 1,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Charge",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:CHARGE}}.",
+      "effect_readable": "Charge.",
+      "keyword_mentions": [
+        "CHARGE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-9",
+      "source_line": 291
+    },
+    {
+      "id": 10,
+      "name": "Ice",
+      "metadata_name": "Ice",
+      "cost": 3,
+      "attack": 2,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:DUST}}: {{KW:PARALYZE}} its killer.",
+      "effect_readable": "Taunt. Dust: Paralyze its killer.",
+      "keyword_mentions": [
+        "DUST",
+        "PARALYZE",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-10",
+      "source_line": 292
+    },
+    {
+      "id": 11,
+      "name": "Snowdrake",
+      "metadata_name": "Snowdrake",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give an ally monster +2 {{ATK}}.",
+      "effect_readable": "Magic: Give an ally monster +2 ATK.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-11",
+      "source_line": 293
+    },
+    {
+      "id": 13,
+      "name": "Woshua",
+      "metadata_name": "Woshua",
+      "cost": 4,
+      "attack": 3,
+      "health": 5,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give all enemy monsters -1 {{ATK}}.",
+      "effect_readable": "Magic: Give all enemy monsters -1 ATK.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-13",
+      "source_line": 295
+    },
+    {
+      "id": 14,
+      "name": "Jerry",
+      "metadata_name": "Jerry",
+      "cost": 5,
+      "attack": 4,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. This takes 1 less {{DMG}} from monsters costing 4 or less {{GOLD}}.",
+      "effect_readable": "Taunt. This takes 1 less DMG from monsters costing 4 or less GOLD.",
+      "keyword_mentions": [
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-14",
+      "source_line": 296
+    },
+    {
+      "id": 15,
+      "name": "Aaron",
+      "metadata_name": "Aaron",
+      "cost": 5,
+      "attack": 6,
+      "health": 5,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": " ",
+      "effect_readable": "",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-15",
+      "source_line": 297
+    },
+    {
+      "id": 17,
+      "name": "Knight Knight",
+      "metadata_name": "Knight Knight",
+      "cost": 9,
+      "attack": 5,
+      "health": 9,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After this attacks and survives, heal {{HP}} to this equal to the {{DMG}} dealt.",
+      "effect_readable": "After this attacks and survives, heal HP to this equal to the DMG dealt.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-17",
+      "source_line": 299
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

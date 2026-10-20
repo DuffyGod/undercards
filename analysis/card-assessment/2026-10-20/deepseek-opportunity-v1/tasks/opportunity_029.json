@@ -1,0 +1,303 @@
+{
+  "task_id": "opportunity_029",
+  "kind": "opportunity_review",
+  "requested": [
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 246,
+      "name": "Lady Garf",
+      "metadata_name": "Lady Garf",
+      "cost": 4,
+      "attack": 3,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at 5 random monsters and choose one. Add it to your hand.",
+      "effect_readable": "Magic: Look at 5 random monsters and choose one. Add it to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-246",
+      "source_line": 506
+    },
+    {
+      "id": 247,
+      "name": "Suit Lion",
+      "metadata_name": "Dress Lion",
+      "cost": 4,
+      "attack": 2,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURBO}}: Gain +1 {{ATK}}. {{KW:MAGIC}}: {{KW:SILENCE}} an enemy monster with as much or less {{ATK}} than this.",
+      "effect_readable": "Turbo: Gain +1 ATK. Magic: Silence an enemy monster with as much or less ATK than this.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SILENCE",
+        "TURBO"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-247",
+      "source_line": 507
+    },
+    {
+      "id": 248,
+      "name": "Business Dude",
+      "metadata_name": "Business Dude",
+      "cost": 5,
+      "attack": 4,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:TURN_END}}: Spend all your {{GOLD}}. Gain {{STATS:+1|+1}} for each {{GOLD}} spent.",
+      "effect_readable": "Taunt. Turn end: Spend all your GOLD. Gain ATK +1/HP +1 for each GOLD spent.",
+      "keyword_mentions": [
+        "TAUNT",
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-248",
+      "source_line": 508
+    },
+    {
+      "id": 249,
+      "name": "Robot 98",
+      "metadata_name": "Robot 98",
+      "cost": 9,
+      "attack": 9,
+      "health": 8,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Dodge",
+          "statusBehavior": "STACKABLE",
+          "counter": 98,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DODGE}} (98). {{KW:TURN_END}}: Lose 97 {{KW:DODGE}}.",
+      "effect_readable": "Dodge (98). Turn end: Lose 97 Dodge.",
+      "keyword_mentions": [
+        "DODGE",
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-249",
+      "source_line": 509
+    },
+    {
+      "id": 250,
+      "name": "Hot Dog Harpy",
+      "metadata_name": "Hot Dog Harpy",
+      "cost": 6,
+      "attack": 5,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:SILENCE}} an enemy monster. If it was already {{KW:SILENCE|override=Silenced}}, kill it instead.",
+      "effect_readable": "Magic: Silence an enemy monster. If it was already Silenced, kill it instead.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SILENCE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-250",
+      "source_line": 510
+    },
+    {
+      "id": 251,
+      "name": "Ragel",
+      "metadata_name": "Ragel",
+      "cost": 3,
+      "attack": 3,
+      "health": 2,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SYNERGY}}: Add a {{CARD:750|1}} to your hand. {{KW:DELAY}}: {{KW:ERASE}} it from your hand.",
+      "effect_readable": "Synergy: Add a Mushroom Dance [#750] to your hand. Delay: Erase it from your hand.",
+      "keyword_mentions": [
+        "DELAY",
+        "ERASE",
+        "SYNERGY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        750
+      ],
+      "source_key": "card-251",
+      "source_line": 511
+    },
+    {
+      "id": 252,
+      "name": "Throne",
+      "metadata_name": "Throne",
+      "cost": 3,
+      "attack": 2,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Draw a non-{{RARITY:DETERMINATION}} highest rarity card (except {{CARD:252|1}}).",
+      "effect_readable": "Magic: Draw a non-DT highest rarity card (except Throne [#252]).",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        252
+      ],
+      "source_key": "card-252",
+      "source_line": 512
+    },
+    {
+      "id": 253,
+      "name": "Bone Painting",
+      "metadata_name": "Bone Painting",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "HAND",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give a {{TRIBE:DOG|1}} in your hand {{STATS:+1|+1}} and {{KW:TAUNT}}.",
+      "effect_readable": "Magic: Give a Dog in your hand ATK +1/HP +1 and Taunt.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [
+        "DOG"
+      ],
+      "card_references": [],
+      "source_key": "card-253",
+      "source_line": 513
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

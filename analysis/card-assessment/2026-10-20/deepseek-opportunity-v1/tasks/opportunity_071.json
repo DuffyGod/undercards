@@ -1,0 +1,319 @@
+{
+  "task_id": "opportunity_071",
+  "kind": "opportunity_review",
+  "requested": [
+    761,
+    762,
+    763,
+    764,
+    765,
+    766,
+    767,
+    768
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 761,
+      "name": "Berdly Statue",
+      "metadata_name": "Berdly Statue",
+      "cost": 11,
+      "attack": 6,
+      "health": 7,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:HASTE}}. In your hand, this has -1 {{COST}} for each {{RARITY:TOKEN}} card costing 1+ {{GOLD}} you played this game (max. -8 {{COST}}).",
+      "effect_readable": "Taunt. Haste. In your hand, this has -1 COST for each TOKEN card costing 1+ GOLD you played this game (max. -8 COST).",
+      "keyword_mentions": [
+        "HASTE",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-761",
+      "source_line": 2348
+    },
+    {
+      "id": 762,
+      "name": "Watching Man",
+      "metadata_name": "Watching Man",
+      "cost": 5,
+      "attack": 4,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "AMALGAMATE"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Transparency",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TRANSPARENCY}}. {{KW:MAGIC}}: Heal 2 {{HP}} to all other ally monsters. {{KW:SYNERGY}}: Give all other ally monsters +2 {{HP}}.",
+      "effect_readable": "Transparency. Magic: Heal 2 HP to all other ally monsters. Synergy: Give all other ally monsters +2 HP.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SYNERGY",
+        "TRANSPARENCY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-762",
+      "source_line": 2350
+    },
+    {
+      "id": 763,
+      "name": "Control Panel",
+      "metadata_name": "Control Panel",
+      "cost": 7,
+      "attack": 7,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}} and {{KW:DUST}}: Add a {{CARD:631|1}} to your hand.",
+      "effect_readable": "Magic and Dust: Add a Shovel [#631] to your hand.",
+      "keyword_mentions": [
+        "DUST",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        631
+      ],
+      "source_key": "card-763",
+      "source_line": 2352
+    },
+    {
+      "id": 764,
+      "name": "Swatchling",
+      "metadata_name": "Swatchling",
+      "cost": 6,
+      "attack": 5,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Summon a {{CARD:701|1}} with {{KW:TAUNT}}. If you have less monsters than the opponent, give it {{KW:DODGE}} (1).",
+      "effect_readable": "Magic: Summon a Vase [#701] with Taunt. If you have less monsters than the opponent, give it Dodge (1).",
+      "keyword_mentions": [
+        "DODGE",
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        701
+      ],
+      "source_key": "card-764",
+      "source_line": 2354
+    },
+    {
+      "id": 765,
+      "name": "Trash Rudinn",
+      "metadata_name": "Trash Rudinn",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Add every {{RARITY:BASE}} Deltarune monster to your hand (from cheapest to most expensive). {{KW:DELAY}}: {{KW:ERASE}} them from your hand.",
+      "effect_readable": "Magic: Add every BASE Deltarune monster to your hand (from cheapest to most expensive). Delay: Erase them from your hand.",
+      "keyword_mentions": [
+        "DELAY",
+        "ERASE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-765",
+      "source_line": 2356
+    },
+    {
+      "id": 766,
+      "name": "Large Chest",
+      "metadata_name": "Large Chest",
+      "cost": 9,
+      "attack": 6,
+      "health": 7,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: 6+ unique rarities in your dustpile. {{KW:MAGIC}}: {{KW:ERASE}} them and add 6 random monsters to your hand with {{STATS:-2|+1|+1}}.",
+      "effect_readable": "Need: 6+ unique rarities in your dustpile. Magic: Erase them and add 6 random monsters to your hand with COST -2/ATK +1/HP +1.",
+      "keyword_mentions": [
+        "ERASE",
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-766",
+      "source_line": 2358
+    },
+    {
+      "id": 767,
+      "name": "Ball Dancer",
+      "metadata_name": "Ball Dancer",
+      "cost": 5,
+      "attack": 5,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give all monsters in your hand and deck with equal or less {{COST}} than this {{STATS:+1|+1|+1}}.",
+      "effect_readable": "Magic: Give all monsters in your hand and deck with equal or less COST than this COST +1/ATK +1/HP +1.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-767",
+      "source_line": 2360
+    },
+    {
+      "id": 768,
+      "name": "Space Stickers",
+      "metadata_name": "Space Stickers",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "HAND",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Loop",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:LOOP}} (1). {{KW:MAGIC}}: Give a monster with a Tribe in your hand {{STATS:+1|+1}}.",
+      "effect_readable": "Loop (1). Magic: Give a monster with a Tribe in your hand ATK +1/HP +1.",
+      "keyword_mentions": [
+        "LOOP",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-768",
+      "source_line": 2362
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

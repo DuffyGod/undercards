@@ -1,0 +1,347 @@
+{
+  "task_id": "opportunity_070",
+  "kind": "opportunity_review",
+  "requested": [
+    753,
+    754,
+    755,
+    756,
+    757,
+    758,
+    759,
+    760
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 753,
+      "name": "Pipis",
+      "metadata_name": "Pipis",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Add 2 {{CARD:665|2}} to the top of the enemy deck.",
+      "effect_readable": "Dust: Add 2 Hyperlink Blocked [#665] to the top of the enemy deck.",
+      "keyword_mentions": [
+        "DUST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        665
+      ],
+      "source_key": "card-753",
+      "source_line": 2332
+    },
+    {
+      "id": 754,
+      "name": "Flying Heads",
+      "metadata_name": "Flying Heads",
+      "cost": 5,
+      "attack": 3,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Charge",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:CHARGE}}. {{KW:DUST}}: Add 3 {{CARD:665|3}} to the enemy deck.",
+      "effect_readable": "Taunt. Charge. Dust: Add 3 Hyperlink Blocked [#665] to the enemy deck.",
+      "keyword_mentions": [
+        "CHARGE",
+        "DUST",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        665
+      ],
+      "source_key": "card-754",
+      "source_line": 2334
+    },
+    {
+      "id": 755,
+      "name": "Spamton Poster",
+      "metadata_name": "Spamton Poster",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Draw a spell. {{KW:SHOCK}}: Add {{CARD:665|1}} to your opponent's deck.",
+      "effect_readable": "Magic: Draw a spell. Shock: Add Hyperlink Blocked [#665] to your opponent's deck.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SHOCK"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        665
+      ],
+      "source_key": "card-755",
+      "source_line": 2336
+    },
+    {
+      "id": 756,
+      "name": "Spamton Shop",
+      "metadata_name": "Spamton Shop",
+      "cost": 3,
+      "attack": 2,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "NEUTRAL",
+          "name": "Program",
+          "statusBehavior": "STACKABLE",
+          "counter": 3,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: {{KW:PROGRAM}} (3): Summon 2 {{CARD:753|2}}.",
+      "effect_readable": "Turn end: Program (3): Summon 2 Pipis [#753].",
+      "keyword_mentions": [
+        "PROGRAM",
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        753
+      ],
+      "source_key": "card-756",
+      "source_line": 2338
+    },
+    {
+      "id": 757,
+      "name": "Pipis Cannon",
+      "metadata_name": "Pipis Cannon",
+      "cost": 7,
+      "attack": 5,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:ERASE}} up to 9 {{CARD:665|2}} in the enemy deck. Summon a {{CARD:753|1}} with {{KW:CHARGE}} for every 3 {{KW:ERASE|override=Erased}}.",
+      "effect_readable": "Magic: Erase up to 9 Hyperlink Blocked [#665] in the enemy deck. Summon a Pipis [#753] with Charge for every 3 Erased.",
+      "keyword_mentions": [
+        "CHARGE",
+        "ERASE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        665,
+        753
+      ],
+      "source_key": "card-757",
+      "source_line": 2340
+    },
+    {
+      "id": 758,
+      "name": "Broken NEO",
+      "metadata_name": "Broken NEO",
+      "cost": 10,
+      "attack": 7,
+      "health": 7,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: 10+ {{CARD:665|2}} in the enemy deck. {{KW:MAGIC}}: {{KW:ERASE}} 10 to deal 10 {{DMG}} to an enemy monster and excess to all enemies.",
+      "effect_readable": "Need: 10+ Hyperlink Blocked [#665] in the enemy deck. Magic: Erase 10 to deal 10 DMG to an enemy monster and excess to all enemies.",
+      "keyword_mentions": [
+        "ERASE",
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        665
+      ],
+      "source_key": "card-758",
+      "source_line": 2342
+    },
+    {
+      "id": 759,
+      "name": "Tasque Singer",
+      "metadata_name": "Tasque Singer",
+      "cost": 7,
+      "attack": 4,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Kill all enemy monsters costing less than or equal to the amount of non-{{RARITY:TOKEN}} cards you played this turn.",
+      "effect_readable": "Magic: Kill all enemy monsters costing less than or equal to the amount of non-TOKEN cards you played this turn.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-759",
+      "source_line": 2344
+    },
+    {
+      "id": 760,
+      "name": "Butler Ralsei",
+      "metadata_name": "Butler Ralsei",
+      "cost": 3,
+      "attack": 2,
+      "health": 5,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Support",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "NEUTRAL",
+          "name": "Program",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SUPPORT}}: {{KW:PROGRAM}} (1): Give the attacker +2 {{HP}} and trigger the {{KW:SHOCK}}. {{KW:SHOCK}}: Give yourself +2 {{HP}}.",
+      "effect_readable": "Support: Program (1): Give the attacker +2 HP and trigger the Shock. Shock: Give yourself +2 HP.",
+      "keyword_mentions": [
+        "PROGRAM",
+        "SHOCK",
+        "SUPPORT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-760",
+      "source_line": 2346
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

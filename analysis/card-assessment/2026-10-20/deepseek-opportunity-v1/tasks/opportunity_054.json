@@ -1,0 +1,295 @@
+{
+  "task_id": "opportunity_054",
+  "kind": "opportunity_review",
+  "requested": [
+    564,
+    565,
+    566,
+    567,
+    568,
+    570,
+    571,
+    572
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 564,
+      "name": "Grilling King",
+      "metadata_name": "Grilling King",
+      "cost": 10,
+      "attack": 5,
+      "health": 5,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Summon 2 base {{STATS:3|3}} {{CARD:459|2}}. If you have 3 or less cards in your deck, turn them into base {{STATS:5|5}} {{CARD:431|2}}.",
+      "effect_readable": "Magic: Summon 2 base ATK 3/HP 3 Spincake [#459]. If you have 3 or less cards in your deck, turn them into base ATK 5/HP 5 Cake [#431].",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        431,
+        459
+      ],
+      "source_key": "card-564",
+      "source_line": 1903
+    },
+    {
+      "id": 565,
+      "name": "Lancer's Bike",
+      "metadata_name": "Lancer's Bike",
+      "cost": 2,
+      "attack": 2,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give 2 random monsters in your hand +1 {{ATK}}.",
+      "effect_readable": "Magic: Give 2 random monsters in your hand +1 ATK.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-565",
+      "source_line": 1905
+    },
+    {
+      "id": 566,
+      "name": "Fox Bodyguard",
+      "metadata_name": "Fox Bodyguard",
+      "cost": 8,
+      "attack": 5,
+      "health": 7,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:DUST}}: Summon a {{CARD:244|1}} and trigger its {{KW:MAGIC}}.",
+      "effect_readable": "Taunt. Dust: Summon a Fox Head [#244] and trigger its Magic.",
+      "keyword_mentions": [
+        "DUST",
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        244
+      ],
+      "source_key": "card-566",
+      "source_line": 1907
+    },
+    {
+      "id": 567,
+      "name": "Blowing Rabbick",
+      "metadata_name": "Blowing Rabbick",
+      "cost": 1,
+      "attack": 1,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After you spend {{GOLD}} on spells, return to your hand with {{STATS:+2|+1}} (keeps {{ATK}} and {{HP}} buffs).",
+      "effect_readable": "After you spend GOLD on spells, return to your hand with ATK +2/HP +1 (keeps ATK and HP buffs).",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-567",
+      "source_line": 1909
+    },
+    {
+      "id": 568,
+      "name": "Sans Dog",
+      "metadata_name": "Sans Dog",
+      "cost": 2,
+      "attack": 1,
+      "health": 1,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Dodge",
+          "statusBehavior": "STACKABLE",
+          "counter": 2,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DODGE}} (2). {{KW:MAGIC}}: Add a {{CARD:569|1}} to the enemy hand.",
+      "effect_readable": "Dodge (2). Magic: Add a Bone [#569] to the enemy hand.",
+      "keyword_mentions": [
+        "DODGE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        569
+      ],
+      "source_key": "card-568",
+      "source_line": 1911
+    },
+    {
+      "id": 570,
+      "name": "The Original",
+      "metadata_name": "The Original",
+      "cost": 6,
+      "attack": 5,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{STYLE:yellow|Starwalker}}. {{KW:NEED}}: Your deck has no non-{{KW:GENERATED}} {{RARITY:COMMON}} cards. {{KW:MAGIC}}: Give all monsters in your hand {{STATS:+1|+1}}.",
+      "effect_readable": "Starwalker. Need: Your deck has no non-Generated COMMON cards. Magic: Give all monsters in your hand ATK +1/HP +1.",
+      "keyword_mentions": [
+        "GENERATED",
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-570",
+      "source_line": 1915
+    },
+    {
+      "id": 571,
+      "name": "Sad Dummy",
+      "metadata_name": "Sad Dummy",
+      "cost": 7,
+      "attack": 6,
+      "health": 9,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "WAITING FOR A NEW EFFECT",
+      "effect_readable": "WAITING FOR A NEW EFFECT",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-571",
+      "source_line": 1917
+    },
+    {
+      "id": 572,
+      "name": "Pink Laser",
+      "metadata_name": "Pink Laser",
+      "cost": 4,
+      "attack": 1,
+      "health": 7,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Gain +1 base {{ATK}} for every monster you played this game with a base {{HP}} of 7.",
+      "effect_readable": "Magic: Gain +1 base ATK for every monster you played this game with a base HP of 7.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-572",
+      "source_line": 1919
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

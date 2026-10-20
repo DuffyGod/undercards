@@ -1,0 +1,338 @@
+{
+  "task_id": "opportunity_078",
+  "kind": "opportunity_review",
+  "requested": [
+    836,
+    837,
+    838,
+    839,
+    840,
+    841,
+    843,
+    844
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 836,
+      "name": "Food Enjoyer",
+      "metadata_name": "Food Enjoyer",
+      "cost": 7,
+      "attack": 5,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": "HAND",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: Choose a card in your hand. {{KW:DELAY}}: {{KW:ERASE}} it from your hand to fully heal this.",
+      "effect_readable": "Haste. Magic: Choose a card in your hand. Delay: Erase it from your hand to fully heal this.",
+      "keyword_mentions": [
+        "DELAY",
+        "ERASE",
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-836",
+      "source_line": 2530
+    },
+    {
+      "id": 837,
+      "name": "El Bailador",
+      "metadata_name": "El Bailador",
+      "cost": 5,
+      "attack": 3,
+      "health": 5,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Dodge",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DODGE}} (1). Before any monster attacks, swap that monster's {{ATK}} and {{HP}}.",
+      "effect_readable": "Dodge (1). Before any monster attacks, swap that monster's ATK and HP.",
+      "keyword_mentions": [
+        "DODGE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-837",
+      "source_line": 2532
+    },
+    {
+      "id": 838,
+      "name": "Zenith Martlet",
+      "metadata_name": "Zenith Martlet",
+      "cost": 11,
+      "attack": 7,
+      "health": 7,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [
+        "ROYAL_GUARD"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Armor",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:ARMOR}}. {{KW:MAGIC}}: Trigger the {{KW:DUST}} effects of all non-{{RARITY:TOKEN}} monsters costing 9 or less in your dustpile (max 3 per unique effect).",
+      "effect_readable": "Armor. Magic: Trigger the Dust effects of all non-TOKEN monsters costing 9 or less in your dustpile (max 3 per unique effect).",
+      "keyword_mentions": [
+        "ARMOR",
+        "DUST",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-838",
+      "source_line": 2535
+    },
+    {
+      "id": 839,
+      "name": "Icemeter",
+      "metadata_name": "Icemeter",
+      "cost": 3,
+      "attack": 4,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:TURN_END}}: Gain +1 {{HP}} for each spell you've spent {{GOLD}} on this turn.",
+      "effect_readable": "Taunt. Turn end: Gain +1 HP for each spell you've spent GOLD on this turn.",
+      "keyword_mentions": [
+        "TAUNT",
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-839",
+      "source_line": 2537
+    },
+    {
+      "id": 840,
+      "name": "Bowll",
+      "metadata_name": "Bowll",
+      "cost": 7,
+      "attack": 8,
+      "health": 9,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Armor",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:ARMOR}}. This takes +2 {{DMG}} from enemy monsters and spells.",
+      "effect_readable": "Armor. This takes +2 DMG from enemy monsters and spells.",
+      "keyword_mentions": [
+        "ARMOR"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-840",
+      "source_line": 2539
+    },
+    {
+      "id": 841,
+      "name": "Frost Igloo",
+      "metadata_name": "Frost Igloo",
+      "cost": 6,
+      "attack": 6,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_START}}: Turn into {{CARD:842|1}} and set its base {{HP}} to this card's remaining {{HP}}.",
+      "effect_readable": "Turn start: Turn into Frostermit [#842] and set its base HP to this card's remaining HP.",
+      "keyword_mentions": [
+        "TURN_START"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        842
+      ],
+      "source_key": "card-841",
+      "source_line": 2541
+    },
+    {
+      "id": 843,
+      "name": "Cardmaster",
+      "metadata_name": "Cardmaster",
+      "cost": 7,
+      "attack": 4,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Earn 2 {{GOLD}} and add a {{CARD:577|1}} to your hand for every 3 {{GOLD}} the opponent has.",
+      "effect_readable": "Taunt. Magic: Earn 2 GOLD and add a Draft [#577] to your hand for every 3 GOLD the opponent has.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        577
+      ],
+      "source_key": "card-843",
+      "source_line": 2545
+    },
+    {
+      "id": 844,
+      "name": "Girlboss Cactus",
+      "metadata_name": "Girlboss Cactus",
+      "cost": 9,
+      "attack": 7,
+      "health": 9,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}} and {{KW:SYNERGY}}: Add a {{CARD:136|1}} to your hand with +2 {{HP}} and {{KW:HASTE}}.",
+      "effect_readable": "Dust and Synergy: Add a Cactus [#136] to your hand with +2 HP and Haste.",
+      "keyword_mentions": [
+        "DUST",
+        "HASTE",
+        "SYNERGY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        136
+      ],
+      "source_key": "card-844",
+      "source_line": 2547
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

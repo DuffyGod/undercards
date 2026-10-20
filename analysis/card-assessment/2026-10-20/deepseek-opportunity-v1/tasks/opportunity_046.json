@@ -1,0 +1,355 @@
+{
+  "task_id": "opportunity_046",
+  "kind": "opportunity_review",
+  "requested": [
+    478,
+    479,
+    480,
+    489,
+    490,
+    491,
+    492,
+    493
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 478,
+      "name": "Spider Bakery",
+      "metadata_name": "Spider Bakery",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "ARACHNID"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Add a {{CARD:115|1}} to your hand and deck. {{KW:SYNERGY}}: Add a {{CARD:475|1}} and a {{CARD:476|1}} instead.",
+      "effect_readable": "Magic: Add a Spider [#115] to your hand and deck. Synergy: Add a Spider Donut [#475] and a Spider Croissant [#476] instead.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SYNERGY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        115,
+        475,
+        476
+      ],
+      "source_key": "card-478",
+      "source_line": 1702
+    },
+    {
+      "id": 479,
+      "name": "Fly",
+      "metadata_name": "Fly",
+      "cost": 4,
+      "attack": 3,
+      "health": 1,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Charge",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:CHARGE}}. {{KW:DELAY}}: Attack the monster in front of this.",
+      "effect_readable": "Charge. Delay: Attack the monster in front of this.",
+      "keyword_mentions": [
+        "CHARGE",
+        "DELAY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-479",
+      "source_line": 1704
+    },
+    {
+      "id": 480,
+      "name": "Chessboard",
+      "metadata_name": "Chessboard",
+      "cost": 4,
+      "attack": 2,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PIECE"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Summon a {{CARD:312|1}} for every 3 {{TRIBE:PIECE|2}} in your dustpile and trigger their {{KW:MAGIC}}.",
+      "effect_readable": "Taunt. Magic: Summon a Ponman [#312] for every 3 Piece in your dustpile and trigger their Magic.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [
+        "PIECE"
+      ],
+      "card_references": [
+        312
+      ],
+      "source_key": "card-480",
+      "source_line": 1706
+    },
+    {
+      "id": 489,
+      "name": "Water Sausage",
+      "metadata_name": "Water Sausage",
+      "cost": 4,
+      "attack": 3,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:TURBO}}: Heal 3 {{HP}} to you.",
+      "effect_readable": "Taunt. Turbo: Heal 3 HP to you.",
+      "keyword_mentions": [
+        "TAUNT",
+        "TURBO"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-489",
+      "source_line": 1731
+    },
+    {
+      "id": 490,
+      "name": "Pile of Dust",
+      "metadata_name": "Pile of Dust",
+      "cost": 1,
+      "attack": 0,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Give its killer {{STATS:+2|+2}}. {{KW:TURN_END}}: Die.",
+      "effect_readable": "Dust: Give its killer ATK +2/HP +2. Turn end: Die.",
+      "keyword_mentions": [
+        "DUST",
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-490",
+      "source_line": 1733
+    },
+    {
+      "id": 491,
+      "name": "Moldstack",
+      "metadata_name": "Moldstack",
+      "cost": 3,
+      "attack": 2,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "MOLD"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:DELAY}}: Add a copy of a random ally {{TRIBE:MOLD|1}} (except {{CARD:491|1}}) to your hand.",
+      "effect_readable": "Taunt. Delay: Add a copy of a random ally Mold (except Moldstack [#491]) to your hand.",
+      "keyword_mentions": [
+        "DELAY",
+        "TAUNT"
+      ],
+      "tribe_mentions": [
+        "MOLD"
+      ],
+      "card_references": [
+        491
+      ],
+      "source_key": "card-491",
+      "source_line": 1735
+    },
+    {
+      "id": 492,
+      "name": "Burning Snail",
+      "metadata_name": "Burning Snail",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "SNAIL"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: Gain +1 {{ATK}} for each adjacent ally {{TRIBE:SNAIL|1}}.",
+      "effect_readable": "Haste. Magic: Gain +1 ATK for each adjacent ally Snail.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "SNAIL"
+      ],
+      "card_references": [],
+      "source_key": "card-492",
+      "source_line": 1737
+    },
+    {
+      "id": 493,
+      "name": "Snail Bucket",
+      "metadata_name": "Snail Bucket",
+      "cost": 3,
+      "attack": 1,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:DUST}}: Summon a {{CARD:224|1}} and a {{CARD:223|1}}. Randomly trigger one of their {{KW:MAGIC}}.",
+      "effect_readable": "Taunt. Dust: Summon a Red Snail [#224] and a Yellow Snail [#223]. Randomly trigger one of their Magic.",
+      "keyword_mentions": [
+        "DUST",
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        223,
+        224
+      ],
+      "source_key": "card-493",
+      "source_line": 1739
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

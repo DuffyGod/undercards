@@ -1,0 +1,358 @@
+{
+  "task_id": "opportunity_081",
+  "kind": "opportunity_review",
+  "requested": [
+    864,
+    865,
+    867,
+    868,
+    869,
+    870,
+    871,
+    872
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 864,
+      "name": "Axis",
+      "metadata_name": "Axis",
+      "cost": 7,
+      "attack": 4,
+      "health": 7,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Armor",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:ARMOR}}. {{KW:HASTE}}. After this survives {{DMG}}, gain +1 base {{ATK}}. At 6+ base {{ATK}}, {{CARD:178|1}}.",
+      "effect_readable": "Armor. Haste. After this survives DMG, gain +1 base ATK. At 6+ base ATK, Overheat [#178].",
+      "keyword_mentions": [
+        "ARMOR",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        178
+      ],
+      "source_key": "card-864",
+      "source_line": 2592
+    },
+    {
+      "id": 865,
+      "name": "Gilbert",
+      "metadata_name": "Gilbert",
+      "cost": 7,
+      "attack": 6,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Bullseye",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Armor",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:ARMOR}}. {{KW:BULLSEYE}} and {{KW:DUST}}: Add a {{CARD:866|1}} to your hand.",
+      "effect_readable": "Armor. Bullseye and Dust: Add a Hard Hat [#866] to your hand.",
+      "keyword_mentions": [
+        "ARMOR",
+        "BULLSEYE",
+        "DUST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        866
+      ],
+      "source_key": "card-865",
+      "source_line": 2594
+    },
+    {
+      "id": 867,
+      "name": "Organ Piano",
+      "metadata_name": "Organ Piano",
+      "cost": 5,
+      "attack": 3,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:DUST}}: Add a {{CARD:825|1}} to your hand.",
+      "effect_readable": "Taunt. Dust: Add a Lightning Bolt [#825] to your hand.",
+      "keyword_mentions": [
+        "DUST",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        825
+      ],
+      "source_key": "card-867",
+      "source_line": 2598
+    },
+    {
+      "id": 868,
+      "name": "Pancakes",
+      "metadata_name": "Pancakes",
+      "cost": 5,
+      "attack": 4,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Fully heal a monster and heal the same amount of {{HP}} to you.",
+      "effect_readable": "Magic: Fully heal a monster and heal the same amount of HP to you.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-868",
+      "source_line": 2600
+    },
+    {
+      "id": 869,
+      "name": "Vengeful Virgil",
+      "metadata_name": "Vengeful Virgil",
+      "cost": 2,
+      "attack": 3,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Bullseye",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "NEGATIVE",
+          "name": "Wanted",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:WANTED}}. {{KW:HASTE}}. {{KW:BULLSEYE}}: Make the target's adjacent monsters {{KW:WANTED}}.",
+      "effect_readable": "Wanted. Haste. Bullseye: Make the target's adjacent monsters Wanted.",
+      "keyword_mentions": [
+        "BULLSEYE",
+        "HASTE",
+        "WANTED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-869",
+      "source_line": 2602
+    },
+    {
+      "id": 870,
+      "name": "Angie",
+      "metadata_name": "Angie",
+      "cost": 9,
+      "attack": 7,
+      "health": 7,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After an enemy monster dies during your turn, set a random enemy monster's {{HP}} to 1. {{KW:SHOCK}}: Add a 0-{{COST}} {{CARD:598|1}} to your hand.",
+      "effect_readable": "After an enemy monster dies during your turn, set a random enemy monster's HP to 1. Shock: Add a 0-COST Gemstone [#598] to your hand.",
+      "keyword_mentions": [
+        "SHOCK"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        598
+      ],
+      "source_key": "card-870",
+      "source_line": 2604
+    },
+    {
+      "id": 871,
+      "name": "Ice-E",
+      "metadata_name": "Ice-E",
+      "cost": 8,
+      "attack": 7,
+      "health": 6,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:PARALYZE}} a monster. If it was an ally monster costing 2+ {{GOLD}}, summon 2 {{CARD:10|2}}.\r\n",
+      "effect_readable": "Magic: Paralyze a monster. If it was an ally monster costing 2+ GOLD, summon 2 Ice [#10].",
+      "keyword_mentions": [
+        "MAGIC",
+        "PARALYZE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        10
+      ],
+      "source_key": "card-871",
+      "source_line": 2606
+    },
+    {
+      "id": 872,
+      "name": "Bryan",
+      "metadata_name": "Bryan",
+      "cost": 8,
+      "attack": 5,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After an enemy monster dies during your turn and {{KW:MAGIC}}: Summon a {{CARD:513|1}}.",
+      "effect_readable": "After an enemy monster dies during your turn and Magic: Summon a Dynamite Stick [#513].",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        513
+      ],
+      "source_key": "card-872",
+      "source_line": 2609
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

@@ -1,0 +1,337 @@
+{
+  "task_id": "opportunity_041",
+  "kind": "opportunity_review",
+  "requested": [
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 419,
+      "name": "Spade King",
+      "metadata_name": "Spade King",
+      "cost": 9,
+      "attack": 6,
+      "health": 9,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: {{KW:SWITCH}}: {{SWITCH_LEFT:1|{{KW:SILENCE}} all enemy monsters}} or {{SWITCH_RIGHT:1|Kill all enemy monsters with 2 {{HP}} or less}}.",
+      "effect_readable": "Taunt. Magic: Switch: [左侧] Silence all enemy monsters or [右侧] Kill all enemy monsters with 2 HP or less.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SILENCE",
+        "SWITCH",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-419",
+      "source_line": 1477
+    },
+    {
+      "id": 420,
+      "name": "Spike Trap",
+      "metadata_name": "Spike Trap",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. After this takes {{DMG}} during the enemy turn, give a random other ally monster {{STATS:+1|+1}}.",
+      "effect_readable": "Taunt. After this takes DMG during the enemy turn, give a random other ally monster ATK +1/HP +1.",
+      "keyword_mentions": [
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-420",
+      "source_line": 1504
+    },
+    {
+      "id": 421,
+      "name": "Asgore's Truck",
+      "metadata_name": "Asgore's Truck",
+      "cost": 2,
+      "attack": 2,
+      "health": 1,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: Add 2 {{CARD:451|2}} to your hand.",
+      "effect_readable": "Haste. Magic: Add 2 Red Flower [#451] to your hand.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        451
+      ],
+      "source_key": "card-421",
+      "source_line": 1506
+    },
+    {
+      "id": 422,
+      "name": "Flower Fingers",
+      "metadata_name": "Flower Fingers",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": "ALL",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 1 {{DMG}} for each ally {{TRIBE:PLANT|1}}.",
+      "effect_readable": "Magic: Deal 1 DMG for each ally Plant.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "PLANT"
+      ],
+      "card_references": [],
+      "source_key": "card-422",
+      "source_line": 1508
+    },
+    {
+      "id": 423,
+      "name": "Ice Drink Wolf",
+      "metadata_name": "Ice Drink Wolf",
+      "cost": 7,
+      "attack": 6,
+      "health": 8,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at {{CARD:10|1}}, {{CARD:9|1}}, and {{CARD:31|1}} and choose one. Add it to your hand.",
+      "effect_readable": "Magic: Look at Ice [#10], Ice Cap [#9], and Snowman [#31] and choose one. Add it to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        9,
+        10,
+        31
+      ],
+      "source_key": "card-423",
+      "source_line": 1510
+    },
+    {
+      "id": 424,
+      "name": "Christmas Tree",
+      "metadata_name": "Christmas Tree",
+      "cost": 7,
+      "attack": 3,
+      "health": 9,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Summon 2 {{CARD:355|2}}. {{KW:SYNERGY}}: Summon 2 base {{STATS:2|2}} {{CARD:355|2}} instead.",
+      "effect_readable": "Taunt. Magic: Summon 2 Gift [#355]. Synergy: Summon 2 base ATK 2/HP 2 Gift [#355] instead.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SYNERGY",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        355
+      ],
+      "source_key": "card-424",
+      "source_line": 1512
+    },
+    {
+      "id": 425,
+      "name": "Dark Throne",
+      "metadata_name": "Dark Throne",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Draw a {{KW:GENERATED}} card.",
+      "effect_readable": "Magic: Draw a Generated card.",
+      "keyword_mentions": [
+        "GENERATED",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-425",
+      "source_line": 1514
+    },
+    {
+      "id": 426,
+      "name": "Rabbick Hole",
+      "metadata_name": "Rabbick Hole",
+      "cost": 6,
+      "attack": 3,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:DUST}}: Summon a {{CARD:298|1}}.",
+      "effect_readable": "Haste. Dust: Summon a Rabbick [#298].",
+      "keyword_mentions": [
+        "DUST",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        298
+      ],
+      "source_key": "card-426",
+      "source_line": 1516
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

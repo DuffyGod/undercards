@@ -1,0 +1,322 @@
+{
+  "task_id": "opportunity_008",
+  "kind": "opportunity_review",
+  "requested": [
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 50,
+      "name": "Temmie",
+      "metadata_name": "Temmie",
+      "cost": 2,
+      "attack": 2,
+      "health": 1,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "TEMMIE"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Charge",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:CHARGE}}. {{KW:DELAY}}: Add a {{CARD:356|1}} to your hand.",
+      "effect_readable": "Charge. Delay: Add a Temmie 2 [#356] to your hand.",
+      "keyword_mentions": [
+        "CHARGE",
+        "DELAY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        356
+      ],
+      "source_key": "card-50",
+      "source_line": 332
+    },
+    {
+      "id": 51,
+      "name": "Monster Kid",
+      "metadata_name": "Monster Kid",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Give all other ally monsters {{STATS:+1|+1}}.",
+      "effect_readable": "Dust: Give all other ally monsters ATK +1/HP +1.",
+      "keyword_mentions": [
+        "DUST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-51",
+      "source_line": 333
+    },
+    {
+      "id": 52,
+      "name": "Alphys",
+      "metadata_name": "Alphys",
+      "cost": 6,
+      "attack": 4,
+      "health": 6,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Add the {{TRIBE:ROYAL_INVENTION}} of your SOUL to your hand.",
+      "effect_readable": "Magic: Add the Royal Invention of your SOUL to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "ROYAL_INVENTION"
+      ],
+      "card_references": [],
+      "source_key": "card-52",
+      "source_line": 334
+    },
+    {
+      "id": 53,
+      "name": "Napstablook",
+      "metadata_name": "Napstablook",
+      "cost": 3,
+      "attack": 5,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Lose 1 {{ATK}}. If this has 0 {{ATK}}, kill this.",
+      "effect_readable": "Turn end: Lose 1 ATK. If this has 0 ATK, kill this.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-53",
+      "source_line": 335
+    },
+    {
+      "id": 54,
+      "name": "Flowey",
+      "metadata_name": "Flowey",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:DUST}}: Add a copy of this to your hand with {{STATS:-1|-1|-1}} base stats. At base 1 {{ATK}} or less, turn it into {{CARD:550|1}}.",
+      "effect_readable": "Haste. Dust: Add a copy of this to your hand with COST -1/ATK -1/HP -1 base stats. At base 1 ATK or less, turn it into Demon Flowey [#550].",
+      "keyword_mentions": [
+        "DUST",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        550
+      ],
+      "source_key": "card-54",
+      "source_line": 336
+    },
+    {
+      "id": 55,
+      "name": "Muffet",
+      "metadata_name": "Muffet",
+      "cost": 9,
+      "attack": 7,
+      "health": 9,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "ARACHNID"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:DELAY}}: Add a {{CARD:475|1}} to your hand and a {{CARD:476|1}} to your deck. {{KW:TURN_END}}: Add another {{CARD:475|1}}.",
+      "effect_readable": "Haste. Delay: Add a Spider Donut [#475] to your hand and a Spider Croissant [#476] to your deck. Turn end: Add another Spider Donut [#475].",
+      "keyword_mentions": [
+        "DELAY",
+        "HASTE",
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        475,
+        476
+      ],
+      "source_key": "card-55",
+      "source_line": 337
+    },
+    {
+      "id": 56,
+      "name": "Mettaton",
+      "metadata_name": "Mettaton",
+      "cost": 3,
+      "attack": 2,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Can only take up to 3 {{DMG}} at a time.",
+      "effect_readable": "Can only take up to 3 DMG at a time.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-56",
+      "source_line": 338
+    },
+    {
+      "id": 57,
+      "name": "Gaster",
+      "metadata_name": "Gaster",
+      "cost": 11,
+      "attack": 7,
+      "health": 7,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: Repeat all {{KW:SYNERGY}} effects you triggered this game (max 2 per unique effect).",
+      "effect_readable": "Haste. Magic: Repeat all Synergy effects you triggered this game (max 2 per unique effect).",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC",
+        "SYNERGY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-57",
+      "source_line": 339
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

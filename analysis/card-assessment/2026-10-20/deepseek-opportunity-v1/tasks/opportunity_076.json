@@ -1,0 +1,332 @@
+{
+  "task_id": "opportunity_076",
+  "kind": "opportunity_review",
+  "requested": [
+    812,
+    813,
+    814,
+    815,
+    817,
+    824,
+    826,
+    827
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 812,
+      "name": "Flameguy",
+      "metadata_name": "Flameguy",
+      "cost": 4,
+      "attack": 5,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Kill an ally monster to draw 2 cards.",
+      "effect_readable": "Magic: Kill an ally monster to draw 2 cards.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-812",
+      "source_line": 2475
+    },
+    {
+      "id": 813,
+      "name": "Sweet Corn",
+      "metadata_name": "Sweet Corn",
+      "cost": 1,
+      "attack": 2,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Give {{KW:CANDY}} to its killer.",
+      "effect_readable": "Dust: Give Candy to its killer.",
+      "keyword_mentions": [
+        "CANDY",
+        "DUST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-813",
+      "source_line": 2477
+    },
+    {
+      "id": 814,
+      "name": "Rorrim",
+      "metadata_name": "Rorrim",
+      "cost": 4,
+      "attack": 4,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "NEUTRAL",
+          "name": "Program",
+          "statusBehavior": "STACKABLE",
+          "counter": 3,
+          "displayCounter": true
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:DUST}}: If this was killed by a monster, {{KW:PROGRAM}} (3): Summon a base {{STATS:4|4}} copy of it with {{KW:TAUNT}}.",
+      "effect_readable": "Taunt. Dust: If this was killed by a monster, Program (3): Summon a base ATK 4/HP 4 copy of it with Taunt.",
+      "keyword_mentions": [
+        "DUST",
+        "PROGRAM",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-814",
+      "source_line": 2479
+    },
+    {
+      "id": 815,
+      "name": "Dalv's Wardrobe",
+      "metadata_name": "Dalv's Wardrobe",
+      "cost": 5,
+      "attack": 3,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:DUST}}: Summon a {{CARD:816|1}}. Give it {{STATS:+1|+1}} for each other non-{{RARITY:TOKEN}} monster that died this turn.",
+      "effect_readable": "Taunt. Dust: Summon a Pops [#816]. Give it ATK +1/HP +1 for each other non-TOKEN monster that died this turn.",
+      "keyword_mentions": [
+        "DUST",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        816
+      ],
+      "source_key": "card-815",
+      "source_line": 2481
+    },
+    {
+      "id": 817,
+      "name": "Giga Froggit",
+      "metadata_name": "Giga Froggit",
+      "cost": 6,
+      "attack": 5,
+      "health": 6,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [
+        "FROGGIT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:SWITCH}}: Give all other ally {{TRIBE:FROGGIT|2}} {{SWITCH_LEFT:1|{{KW:TAUNT}}}} or {{SWITCH_RIGHT:1|{{KW:ARMOR}}}}.",
+      "effect_readable": "Magic: Switch: Give all other ally Frog [左侧] Taunt or [右侧] Armor.",
+      "keyword_mentions": [
+        "ARMOR",
+        "MAGIC",
+        "SWITCH",
+        "TAUNT"
+      ],
+      "tribe_mentions": [
+        "FROGGIT"
+      ],
+      "card_references": [],
+      "source_key": "card-817",
+      "source_line": 2485
+    },
+    {
+      "id": 824,
+      "name": "Dalv",
+      "metadata_name": "Dalv",
+      "cost": 6,
+      "attack": 3,
+      "health": 6,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Transparency",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TRANSPARENCY}}. {{KW:SHOCK}}: Summon a {{CARD:825|1}} and lose this {{KW:SHOCK}}. {{KW:TURN_END}}: Regain this {{KW:SHOCK}}.",
+      "effect_readable": "Transparency. Shock: Summon a Lightning Bolt [#825] and lose this Shock. Turn end: Regain this Shock.",
+      "keyword_mentions": [
+        "SHOCK",
+        "TRANSPARENCY",
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        825
+      ],
+      "source_key": "card-824",
+      "source_line": 2506
+    },
+    {
+      "id": 826,
+      "name": "Starlo",
+      "metadata_name": "Starlo",
+      "cost": 10,
+      "attack": 7,
+      "health": 7,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After a {{KW:WANTED}} monster dies during your turn and {{KW:MAGIC}}: Add a {{CARD:855|1}} to your hand.",
+      "effect_readable": "After a Wanted monster dies during your turn and Magic: Add a Quick Draw [#855] to your hand.",
+      "keyword_mentions": [
+        "MAGIC",
+        "WANTED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        855
+      ],
+      "source_key": "card-826",
+      "source_line": 2510
+    },
+    {
+      "id": 827,
+      "name": "Lasso",
+      "metadata_name": "Lasso",
+      "cost": 2,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "INTEGRITY",
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Summon the cheapest monster from the enemy hand for the opponent. {{KW:PARALYZE}} it and make it {{KW:WANTED}}.",
+      "effect_readable": "Summon the cheapest monster from the enemy hand for the opponent. Paralyze it and make it Wanted.",
+      "keyword_mentions": [
+        "PARALYZE",
+        "WANTED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-827",
+      "source_line": 2512
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

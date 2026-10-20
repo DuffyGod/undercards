@@ -1,0 +1,305 @@
+{
+  "task_id": "opportunity_066",
+  "kind": "opportunity_review",
+  "requested": [
+    688,
+    697,
+    698,
+    699,
+    700,
+    702,
+    703,
+    704
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 688,
+      "name": "Ultimathrash",
+      "metadata_name": "Ultimathrash",
+      "cost": 9,
+      "attack": 6,
+      "health": 9,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Charge",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Candy",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:CANDY}}. {{KW:CHARGE}}. Carefully constructed through a successful {{ARTIFACT:36}}.",
+      "effect_readable": "Candy. Charge. Carefully constructed through a successful Evil Plan [#36].",
+      "keyword_mentions": [
+        "CANDY",
+        "CHARGE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-688",
+      "source_line": 2168
+    },
+    {
+      "id": 697,
+      "name": "Queen",
+      "metadata_name": "Queen",
+      "cost": 10,
+      "attack": 6,
+      "health": 7,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Choose An Enemy Monster. Summon A {{CARD:684|1}} That {{KW:CATCH|override=Catches}} It.",
+      "effect_readable": "Taunt. Magic: Choose An Enemy Monster. Summon A Werewire [#684] That Catches It.",
+      "keyword_mentions": [
+        "CATCH",
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        684
+      ],
+      "source_key": "card-697",
+      "source_line": 2186
+    },
+    {
+      "id": 698,
+      "name": "Snow Warning",
+      "metadata_name": "Snow Warning",
+      "cost": 4,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "PATIENCE",
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Equip the {{ARTIFACT:44}} artifact and give it 4 counters. Deal 1 {{DMG}} to all monsters.",
+      "effect_readable": "Equip the Hail [#44] artifact and give it 4 counters. Deal 1 DMG to all monsters.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-698",
+      "source_line": 2192
+    },
+    {
+      "id": 699,
+      "name": "Wereform",
+      "metadata_name": "Wereform",
+      "cost": 5,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "INTEGRITY",
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Choose an non-{{RARITY:DETERMINATION}} ally monster to summon a {{CARD:684|1}} that {{KW:CATCH|override=Catches}} it.",
+      "effect_readable": "Choose an non-DT ally monster to summon a Werewire [#684] that Catches it.",
+      "keyword_mentions": [
+        "CATCH"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        684
+      ],
+      "source_key": "card-699",
+      "source_line": 2194
+    },
+    {
+      "id": 700,
+      "name": "Vasebreaker",
+      "metadata_name": "Vasebreaker",
+      "cost": 3,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "JUSTICE",
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Loop",
+          "statusBehavior": "STACKABLE",
+          "counter": 2,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:LOOP}} (2). Deal 2 {{DMG}} to a monster. If it killed, summon a {{CARD:701|1}}.",
+      "effect_readable": "Loop (2). Deal 2 DMG to a monster. If it killed, summon a Vase [#701].",
+      "keyword_mentions": [
+        "LOOP"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        701
+      ],
+      "source_key": "card-700",
+      "source_line": 2196
+    },
+    {
+      "id": 702,
+      "name": "Call for Help",
+      "metadata_name": "Call for Help",
+      "cost": 5,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "DETERMINATION",
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Summon a copy of all enemy monsters that died this turn for you.",
+      "effect_readable": "Summon a copy of all enemy monsters that died this turn for you.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-702",
+      "source_line": 2200
+    },
+    {
+      "id": 703,
+      "name": "Proceed",
+      "metadata_name": "Proceed",
+      "cost": 2,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "PERSEVERANCE",
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SILENCE}} a non-{{RARITY:DETERMINATION}} monster. It attacks all of its enemy monsters.",
+      "effect_readable": "Silence a non-DT monster. It attacks all of its enemy monsters.",
+      "keyword_mentions": [
+        "SILENCE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-703",
+      "source_line": 2202
+    },
+    {
+      "id": 704,
+      "name": "Pezza Time",
+      "metadata_name": "Pezza Time",
+      "cost": 2,
+      "attack": null,
+      "health": null,
+      "rarity": "RARE",
+      "card_type": "spell",
+      "soul": "KINDNESS",
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Add a copy of a damaged non-{{RARITY:DETERMINATION}} ally monster to your hand with its current {{HP}}. It costs 1 less per {{HP}} missing.",
+      "effect_readable": "Add a copy of a damaged non-DT ally monster to your hand with its current HP. It costs 1 less per HP missing.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-704",
+      "source_line": 2204
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

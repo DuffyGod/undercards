@@ -1,0 +1,305 @@
+{
+  "task_id": "opportunity_032",
+  "kind": "opportunity_review",
+  "requested": [
+    273,
+    274,
+    275,
+    276,
+    278,
+    279,
+    280,
+    281
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 273,
+      "name": "Noelle",
+      "metadata_name": "Noelle",
+      "cost": 4,
+      "attack": 2,
+      "health": 3,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: You've spent {{GOLD}} on 4 different spells this game. {{KW:MAGIC}}: Look at a random {{RARITY:EPIC}} spell of each SOUL. Add one to your hand with -2 {{COST}}.",
+      "effect_readable": "Need: You've spent GOLD on 4 different spells this game. Magic: Look at a random EPIC spell of each SOUL. Add one to your hand with -2 COST.",
+      "keyword_mentions": [
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-273",
+      "source_line": 531
+    },
+    {
+      "id": 274,
+      "name": "Starwalker",
+      "metadata_name": "Starwalker",
+      "cost": 4,
+      "attack": 4,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "HAND",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: Your deck has no non-{{KW:GENERATED}} {{RARITY:RARE}} or {{RARITY:EPIC}} cards. {{KW:MAGIC}}: Send a card in your hand to your deck with -4 {{COST}}.",
+      "effect_readable": "Need: Your deck has no non-Generated RARE or EPIC cards. Magic: Send a card in your hand to your deck with -4 COST.",
+      "keyword_mentions": [
+        "GENERATED",
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-274",
+      "source_line": 532
+    },
+    {
+      "id": 275,
+      "name": "Mister Society",
+      "metadata_name": "Mister Society",
+      "cost": 3,
+      "attack": 4,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PIECE"
+      ],
+      "target": "HAND",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:SWITCH}}: Choose a non-{{RARITY:TOKEN}} {{TRIBE:PIECE|1}} in your hand (except {{CARD:275|1}}) and {{SWITCH_LEFT:1|add a copy of it to your hand}} or {{SWITCH_RIGHT:1|2 to your deck}}.",
+      "effect_readable": "Magic: Switch: Choose a non-TOKEN Piece in your hand (except Mister Society [#275]) and [左侧] add a copy of it to your hand or [右侧] 2 to your deck.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SWITCH"
+      ],
+      "tribe_mentions": [
+        "PIECE"
+      ],
+      "card_references": [
+        275
+      ],
+      "source_key": "card-275",
+      "source_line": 533
+    },
+    {
+      "id": 276,
+      "name": "Catty's Dad",
+      "metadata_name": "Catty's Dad",
+      "cost": 5,
+      "attack": 3,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After you summon a monster costing 2+ {{GOLD}}, earn 1 {{GOLD}}.",
+      "effect_readable": "After you summon a monster costing 2+ GOLD, earn 1 GOLD.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-276",
+      "source_line": 534
+    },
+    {
+      "id": 278,
+      "name": "Dark Candy Tree",
+      "metadata_name": "Dark Candy Tree",
+      "cost": 5,
+      "attack": 5,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Support",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SUPPORT}}: Give the attacker +1 {{HP}}. If it's a {{TRIBE:PLANT|1}}, give it +1 {{ATK}} as well.",
+      "effect_readable": "Support: Give the attacker +1 HP. If it's a Plant, give it +1 ATK as well.",
+      "keyword_mentions": [
+        "SUPPORT"
+      ],
+      "tribe_mentions": [
+        "PLANT"
+      ],
+      "card_references": [],
+      "source_key": "card-278",
+      "source_line": 536
+    },
+    {
+      "id": 279,
+      "name": "Berdly",
+      "metadata_name": "Berdly",
+      "cost": 5,
+      "attack": 5,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Give 2 random spells in your hand -1 {{COST}}.",
+      "effect_readable": "Turn end: Give 2 random spells in your hand -1 COST.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-279",
+      "source_line": 537
+    },
+    {
+      "id": 280,
+      "name": "Susie",
+      "metadata_name": "Susie",
+      "cost": 8,
+      "attack": 3,
+      "health": 7,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Set the stats of all other ally monsters and the monster in front of this to {{STATS:3|3}}.",
+      "effect_readable": "Taunt. Magic: Set the stats of all other ally monsters and the monster in front of this to ATK 3/HP 3.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-280",
+      "source_line": 538
+    },
+    {
+      "id": 281,
+      "name": "School Tem",
+      "metadata_name": "School Tem",
+      "cost": 3,
+      "attack": 2,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "TEMMIE"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Draw a {{TRIBE:TEMMIE|1}} and give it {{STATS:+1|+1}}. If you can't, gain {{STATS:+1|+1}} and {{KW:HASTE}}.",
+      "effect_readable": "Magic: Draw a Tem and give it ATK +1/HP +1. If you can't, gain ATK +1/HP +1 and Haste.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "TEMMIE"
+      ],
+      "card_references": [],
+      "source_key": "card-281",
+      "source_line": 539
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

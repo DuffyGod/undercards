@@ -1,0 +1,297 @@
+{
+  "task_id": "opportunity_040",
+  "kind": "opportunity_review",
+  "requested": [
+    410,
+    411,
+    412,
+    414,
+    415,
+    416,
+    417,
+    418
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 410,
+      "name": "Bloxer",
+      "metadata_name": "Bloxer",
+      "cost": 7,
+      "attack": 6,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at 3 random monsters costing 3 or less {{GOLD}} in your dustpile and choose one. Summon it.",
+      "effect_readable": "Magic: Look at 3 random monsters costing 3 or less GOLD in your dustpile and choose one. Summon it.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-410",
+      "source_line": 1455
+    },
+    {
+      "id": 411,
+      "name": "Animals",
+      "metadata_name": "Animals",
+      "cost": 6,
+      "attack": 5,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:SWITCH}}: {{SWITCH_LEFT:1|Gain {{KW:HASTE}}}} or {{SWITCH_RIGHT:1|Give the top 3 monsters in your deck {{STATS:+1|+1}}}}.",
+      "effect_readable": "Magic: Switch: [左侧] Gain Haste or [右侧] Give the top 3 monsters in your deck ATK +1/HP +1.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC",
+        "SWITCH"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-411",
+      "source_line": 1457
+    },
+    {
+      "id": 412,
+      "name": "Evil Blueprints",
+      "metadata_name": "Evil Blueprints",
+      "cost": 2,
+      "attack": 2,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Add a {{CARD:270|1}} to your hand.",
+      "effect_readable": "Magic: Add a Thrashing Machine [#270] to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        270
+      ],
+      "source_key": "card-412",
+      "source_line": 1459
+    },
+    {
+      "id": 414,
+      "name": "Purple Mascot",
+      "metadata_name": "Purple Mascot",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "NEUTRAL",
+          "name": "Program",
+          "statusBehavior": "STACKABLE",
+          "counter": 3,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give all enemy monsters {{KR}}. {{KW:PROGRAM}} (3): Also give them {{STATS:-1|-1}} (min. 1 {{HP}}).",
+      "effect_readable": "Magic: Give all enemy monsters KR. Program (3): Also give them ATK -1/HP -1 (min. 1 HP).",
+      "keyword_mentions": [
+        "MAGIC",
+        "PROGRAM"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-414",
+      "source_line": 1463
+    },
+    {
+      "id": 415,
+      "name": "Goner Clam",
+      "metadata_name": "Goner Clam",
+      "cost": 4,
+      "attack": 3,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "G_FOLLOWER"
+      ],
+      "target": "ALL",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Heal 3 {{HP}}. {{KW:SYNERGY}}: Give all other ally {{TRIBE:G_FOLLOWER|2}} {{STATS:+1|+1}}.",
+      "effect_readable": "Magic: Heal 3 HP. Synergy: Give all other ally G Follower ATK +1/HP +1.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SYNERGY"
+      ],
+      "tribe_mentions": [
+        "G_FOLLOWER"
+      ],
+      "card_references": [],
+      "source_key": "card-415",
+      "source_line": 1465
+    },
+    {
+      "id": 416,
+      "name": "Dad Dragon",
+      "metadata_name": "Dad Dragon",
+      "cost": 6,
+      "attack": 5,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After an ally monster dies (except {{CARD:399|1}}), summon a {{CARD:399|1}}.",
+      "effect_readable": "After an ally monster dies (except Dragon Kid [#399]), summon a Dragon Kid [#399].",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [
+        399
+      ],
+      "source_key": "card-416",
+      "source_line": 1467
+    },
+    {
+      "id": 417,
+      "name": "Jockington",
+      "metadata_name": "Jockington",
+      "cost": 2,
+      "attack": 2,
+      "health": 3,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SHOCK}}: Draw a card.",
+      "effect_readable": "Shock: Draw a card.",
+      "keyword_mentions": [
+        "SHOCK"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-417",
+      "source_line": 1469
+    },
+    {
+      "id": 418,
+      "name": "Malius",
+      "metadata_name": "Malius",
+      "cost": 6,
+      "attack": 7,
+      "health": 7,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "HAND",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Choose a card in your hand to send to your deck.",
+      "effect_readable": "Magic: Choose a card in your hand to send to your deck.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-418",
+      "source_line": 1471
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

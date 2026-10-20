@@ -1,0 +1,168 @@
+{
+  "task_id": "opportunity_094",
+  "kind": "opportunity_review",
+  "requested": [
+    993,
+    999,
+    1000
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 993,
+      "name": "Lost Noelle",
+      "metadata_name": "Lost Noelle",
+      "cost": 8,
+      "attack": 8,
+      "health": 8,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:QUEST}}: {{QUEST:80}}. {{KW:MAGIC}}: Kill all other ally monsters. Add a 2-{{COST}} {{CARD:712|1}} to your hand for each.",
+      "effect_readable": "Quest: Quest [#80]. Magic: Kill all other ally monsters. Add a 2-COST Ice Crystal [#712] to your hand for each.",
+      "keyword_mentions": [
+        "MAGIC",
+        "QUEST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        712
+      ],
+      "source_key": "card-993",
+      "source_line": 3259
+    },
+    {
+      "id": 999,
+      "name": "White Flower",
+      "metadata_name": "White Flower",
+      "cost": 1,
+      "attack": 2,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "NEGATIVE",
+          "name": "MoldSpore",
+          "statusBehavior": "STACKABLE",
+          "counter": 0,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MOLD_SPORE}} (0).",
+      "effect_readable": "Mold Spore (0).",
+      "keyword_mentions": [
+        "MOLD_SPORE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-999",
+      "source_line": 3407
+    },
+    {
+      "id": 1000,
+      "name": "Armored Undyne",
+      "metadata_name": "Armored Undyne",
+      "cost": 11,
+      "attack": 7,
+      "health": 7,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "ROYAL_GUARD"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Armor",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:ARMOR}}. {{KW:MAGIC}}: For each unique non-{{KW:GENERATED}} {{TRIBE:ROYAL_GUARD|1}} in your dustpile, summon a {{CARD:574|1}} that attacks the lowest {{HP}} enemy.",
+      "effect_readable": "Armor. Magic: For each unique non-Generated Royal Guard in your dustpile, summon a Spear [#574] that attacks the lowest HP enemy.",
+      "keyword_mentions": [
+        "ARMOR",
+        "GENERATED",
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "ROYAL_GUARD"
+      ],
+      "card_references": [
+        574
+      ],
+      "source_key": "card-1000",
+      "source_line": 3409
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

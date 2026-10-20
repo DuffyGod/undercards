@@ -1,0 +1,351 @@
+{
+  "task_id": "opportunity_064",
+  "kind": "opportunity_review",
+  "requested": [
+    667,
+    671,
+    673,
+    674,
+    675,
+    676,
+    678,
+    679
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 667,
+      "name": "Tiny Tornado",
+      "metadata_name": "Tiny Tornado",
+      "cost": 4,
+      "attack": 3,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. After this attacks and kills a monster, add a {{CARD:668|1}} to your hand.",
+      "effect_readable": "Haste. After this attacks and kills a monster, add a Zephyr [#668] to your hand.",
+      "keyword_mentions": [
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        668
+      ],
+      "source_key": "card-667",
+      "source_line": 2126
+    },
+    {
+      "id": 671,
+      "name": "Berdlycoaster",
+      "metadata_name": "Berdlycoaster",
+      "cost": 6,
+      "attack": 5,
+      "health": 7,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: You have a {{RARITY:TOKEN}} card with a base {{COST}} of 3+ {{GOLD}} in your hand. {{KW:MAGIC}}: Add a {{CARD:672|1}} to your hand.",
+      "effect_readable": "Need: You have a TOKEN card with a base COST of 3+ GOLD in your hand. Magic: Add a Feather Storm [#672] to your hand.",
+      "keyword_mentions": [
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        672
+      ],
+      "source_key": "card-671",
+      "source_line": 2134
+    },
+    {
+      "id": 673,
+      "name": "Berdly Plush",
+      "metadata_name": "Berdly Plush",
+      "cost": 5,
+      "attack": 5,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: You have a {{RARITY:TOKEN}} with a base {{COST}} of 3+ in your hand. {{KW:MAGIC}}: Give 3 random non-{{RARITY:TOKEN}} cards in your hand -1 {{COST}}.",
+      "effect_readable": "Need: You have a TOKEN with a base COST of 3+ in your hand. Magic: Give 3 random non-TOKEN cards in your hand -1 COST.",
+      "keyword_mentions": [
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-673",
+      "source_line": 2138
+    },
+    {
+      "id": 674,
+      "name": "Halberd",
+      "metadata_name": "Halberd",
+      "cost": 6,
+      "attack": 5,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Armor",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:ARMOR}}. {{KW:NEED}}: You played 3+ {{RARITY:TOKEN}} cards with a base {{COST}} of 3+ {{GOLD}} this game. {{KW:MAGIC}}: Summon a {{CARD:674|1}}.",
+      "effect_readable": "Armor. Need: You played 3+ TOKEN cards with a base COST of 3+ GOLD this game. Magic: Summon a Halberd [#674].",
+      "keyword_mentions": [
+        "ARMOR",
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        674
+      ],
+      "source_key": "card-674",
+      "source_line": 2140
+    },
+    {
+      "id": 675,
+      "name": "Cyberdly",
+      "metadata_name": "Cyberdly",
+      "cost": 9,
+      "attack": 5,
+      "health": 5,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. After this attacks and survives, add 2 {{CARD:672|2}} to your hand. {{KW:MAGIC}}: Gain {{STATS:+1|+1}} for each unique Tribe in your dustpile.",
+      "effect_readable": "Haste. After this attacks and survives, add 2 Feather Storm [#672] to your hand. Magic: Gain ATK +1/HP +1 for each unique Tribe in your dustpile.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        672
+      ],
+      "source_key": "card-675",
+      "source_line": 2142
+    },
+    {
+      "id": 676,
+      "name": "Milk Looker",
+      "metadata_name": "Milk Looker",
+      "cost": 5,
+      "attack": 3,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Dodge",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DODGE}} (1). After this loses a {{KW:DODGE}}, add a {{CARD:677|1}} to your hand.",
+      "effect_readable": "Dodge (1). After this loses a Dodge, add a Sans Milk [#677] to your hand.",
+      "keyword_mentions": [
+        "DODGE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        677
+      ],
+      "source_key": "card-676",
+      "source_line": 2144
+    },
+    {
+      "id": 678,
+      "name": "Cauldron",
+      "metadata_name": "Cauldron",
+      "cost": 5,
+      "attack": 4,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SHOCK}}: Add a {{CARD:459|1}} with {{KW:HASTE}} to your hand. Give it {{STATS:+1|+1|+1}} for every 2 {{GOLD}} the spell cost.",
+      "effect_readable": "Shock: Add a Spincake [#459] with Haste to your hand. Give it COST +1/ATK +1/HP +1 for every 2 GOLD the spell cost.",
+      "keyword_mentions": [
+        "HASTE",
+        "SHOCK"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        459
+      ],
+      "source_key": "card-678",
+      "source_line": 2148
+    },
+    {
+      "id": 679,
+      "name": "Small Plug",
+      "metadata_name": "Small Plug",
+      "cost": 3,
+      "attack": 2,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLUG"
+      ],
+      "target": "HAND",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:HASTE}}. {{KW:MAGIC}}: {{KW:SWITCH}}: Give a {{TRIBE:PLUG|1}} in your hand {{SWITCH_LEFT:1|{{KW:HASTE}}}} or {{SWITCH_RIGHT:1|{{KW:TAUNT}}}}.",
+      "effect_readable": "Taunt. Haste. Magic: Switch: Give a Plug in your hand [左侧] Haste or [右侧] Taunt.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC",
+        "SWITCH",
+        "TAUNT"
+      ],
+      "tribe_mentions": [
+        "PLUG"
+      ],
+      "card_references": [],
+      "source_key": "card-679",
+      "source_line": 2150
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

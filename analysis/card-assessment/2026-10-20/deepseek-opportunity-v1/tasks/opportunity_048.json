@@ -1,0 +1,328 @@
+{
+  "task_id": "opportunity_048",
+  "kind": "opportunity_review",
+  "requested": [
+    502,
+    503,
+    504,
+    505,
+    506,
+    507,
+    508,
+    509
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 502,
+      "name": "Mystery Machine",
+      "metadata_name": "Mystery Machine",
+      "cost": 3,
+      "attack": 4,
+      "health": 3,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Kill an ally monster to add a {{CARD:351|1}} to your hand.",
+      "effect_readable": "Magic: Kill an ally monster to add a Gaster Blaster [#351] to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        351
+      ],
+      "source_key": "card-502",
+      "source_line": 1757
+    },
+    {
+      "id": 503,
+      "name": "Library Loox",
+      "metadata_name": "Library Loox",
+      "cost": 5,
+      "attack": 4,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALL",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: Your deck has no non-{{KW:GENERATED}} duplicates. {{KW:MAGIC}}: Deal {{DMG}} equal to the amount of empty spaces in your hand.",
+      "effect_readable": "Need: Your deck has no non-Generated duplicates. Magic: Deal DMG equal to the amount of empty spaces in your hand.",
+      "keyword_mentions": [
+        "GENERATED",
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-503",
+      "source_line": 1759
+    },
+    {
+      "id": 504,
+      "name": "Biker Lancer",
+      "metadata_name": "Biker Lancer",
+      "cost": 5,
+      "attack": 4,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Charge",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:CHARGE}}. Before this attacks the opponent, give 2 random monsters in your hand +1 {{ATK}}.",
+      "effect_readable": "Charge. Before this attacks the opponent, give 2 random monsters in your hand +1 ATK.",
+      "keyword_mentions": [
+        "CHARGE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-504",
+      "source_line": 1761
+    },
+    {
+      "id": 505,
+      "name": "Soulless Kris",
+      "metadata_name": "Soulless Kris",
+      "cost": 9,
+      "attack": 4,
+      "health": 10,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Charge",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:CHARGE}}. {{KW:MAGIC}}: If you have none, open a {{ARTIFACT:34}} and give it a counter for every different non-{{RARITY:TOKEN}} card you played this game.",
+      "effect_readable": "Charge. Magic: If you have none, open a Dark Fountain [#34] and give it a counter for every different non-TOKEN card you played this game.",
+      "keyword_mentions": [
+        "CHARGE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-505",
+      "source_line": 1763
+    },
+    {
+      "id": 506,
+      "name": "Soul Cage",
+      "metadata_name": "Soul Cage",
+      "cost": 4,
+      "attack": 4,
+      "health": 6,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:DUST}}: Add a 1-{{COST}} {{CARD:129|1}} to the current turn player's hand.",
+      "effect_readable": "Haste. Dust: Add a 1-COST Knife [#129] to the current turn player's hand.",
+      "keyword_mentions": [
+        "DUST",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        129
+      ],
+      "source_key": "card-506",
+      "source_line": 1765
+    },
+    {
+      "id": 507,
+      "name": "Fireplace",
+      "metadata_name": "Fireplace",
+      "cost": 6,
+      "attack": 4,
+      "health": 7,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Transparency",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TRANSPARENCY}}. {{KW:SHOCK}}: Heal 3 {{HP}} to this.",
+      "effect_readable": "Transparency. Shock: Heal 3 HP to this.",
+      "keyword_mentions": [
+        "SHOCK",
+        "TRANSPARENCY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-507",
+      "source_line": 1771
+    },
+    {
+      "id": 508,
+      "name": "Hooded Ralsei",
+      "metadata_name": "Hooded Ralsei",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After you cast a non-{{KW:GENERATED}} spell, add a copy of it to your hand.",
+      "effect_readable": "After you cast a non-Generated spell, add a copy of it to your hand.",
+      "keyword_mentions": [
+        "GENERATED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-508",
+      "source_line": 1773
+    },
+    {
+      "id": 509,
+      "name": "Long Sink",
+      "metadata_name": "Long Sink",
+      "cost": 5,
+      "attack": 4,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:TURN_END}}: If this didn't attack this turn, heal 3 {{HP}} to you.",
+      "effect_readable": "Haste. Turn end: If this didn't attack this turn, heal 3 HP to you.",
+      "keyword_mentions": [
+        "HASTE",
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-509",
+      "source_line": 1775
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

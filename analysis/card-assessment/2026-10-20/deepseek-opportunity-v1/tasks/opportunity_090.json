@@ -1,0 +1,331 @@
+{
+  "task_id": "opportunity_090",
+  "kind": "opportunity_review",
+  "requested": [
+    957,
+    958,
+    960,
+    961,
+    962,
+    963,
+    964,
+    965
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 957,
+      "name": "Pixel Lizard",
+      "metadata_name": "Pixel Lizard",
+      "cost": 4,
+      "attack": 3,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: If you spent {{GOLD}} on {{RARITY:TOKEN}} cards (except {{CARD:825|1}}) this turn, add a {{CARD:825|1}} to your hand.",
+      "effect_readable": "Turn end: If you spent GOLD on TOKEN cards (except Lightning Bolt [#825]) this turn, add a Lightning Bolt [#825] to your hand.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        825
+      ],
+      "source_key": "card-957",
+      "source_line": 3108
+    },
+    {
+      "id": 958,
+      "name": "Rockstar Susie",
+      "metadata_name": "Rockstar Susie",
+      "cost": 7,
+      "attack": 3,
+      "health": 7,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Support",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SHOCK}}: Deal 2 {{DMG}} to this and all enemies. Lose this {{KW:SHOCK}}. {{KW:SUPPORT}}: Fully heal this and regain this {{KW:SHOCK}}.",
+      "effect_readable": "Shock: Deal 2 DMG to this and all enemies. Lose this Shock. Support: Fully heal this and regain this Shock.",
+      "keyword_mentions": [
+        "SHOCK",
+        "SUPPORT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-958",
+      "source_line": 3110
+    },
+    {
+      "id": 960,
+      "name": "Shinobeetle",
+      "metadata_name": "Shinobeetle",
+      "cost": 8,
+      "attack": 5,
+      "health": 9,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Bullseye",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. This has -1 {{ATK}} for each other ally monster. {{KW:BULLSEYE}}: This gains +1 {{HP}} and {{KW:HASTE}} and can attack again.",
+      "effect_readable": "Haste. This has -1 ATK for each other ally monster. Bullseye: This gains +1 HP and Haste and can attack again.",
+      "keyword_mentions": [
+        "BULLSEYE",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-960",
+      "source_line": 3146
+    },
+    {
+      "id": 961,
+      "name": "Shi",
+      "metadata_name": "Shi",
+      "cost": 4,
+      "attack": 4,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "NEGATIVE",
+          "name": "Disarmed",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DISARMED}}. {{KW:TURN_START}}: {{KW:SWITCH}}: {{SWITCH_LEFT:1|Give all other ally monsters {{STATS:+1|+1}}}} or {{SWITCH_RIGHT:1|Deal 1 {{DMG}} to all enemies}}.",
+      "effect_readable": "Disarmed. Turn start: Switch: [左侧] Give all other ally monsters ATK +1/HP +1 or [右侧] Deal 1 DMG to all enemies.",
+      "keyword_mentions": [
+        "DISARMED",
+        "SWITCH",
+        "TURN_START"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-961",
+      "source_line": 3148
+    },
+    {
+      "id": 962,
+      "name": "Trial Kris",
+      "metadata_name": "Trial Kris",
+      "cost": 4,
+      "attack": 5,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DELAY}}: Equip the {{ARTIFACT:37}} artifact and give it a counter for every monster that died this turn.",
+      "effect_readable": "Delay: Equip the True Justice [#37] artifact and give it a counter for every monster that died this turn.",
+      "keyword_mentions": [
+        "DELAY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-962",
+      "source_line": 3150
+    },
+    {
+      "id": 963,
+      "name": "Strengthmeter",
+      "metadata_name": "Strengthmeter",
+      "cost": 5,
+      "attack": 1,
+      "health": 7,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Gain the {{ATK}} of adjacent monsters.",
+      "effect_readable": "Magic: Gain the ATK of adjacent monsters.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-963",
+      "source_line": 3152
+    },
+    {
+      "id": 964,
+      "name": "Mantis Dancer",
+      "metadata_name": "Mantis Dancer",
+      "cost": 6,
+      "attack": 3,
+      "health": 7,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ALL",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 3 {{DMG}}. If it kills, cast {{CARD:458|1}}.",
+      "effect_readable": "Magic: Deal 3 DMG. If it kills, cast Carousel [#458].",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        458
+      ],
+      "source_key": "card-964",
+      "source_line": 3154
+    },
+    {
+      "id": 965,
+      "name": "Blue",
+      "metadata_name": "Blue",
+      "cost": 8,
+      "attack": 5,
+      "health": 5,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Transparency",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TRANSPARENCY}}. {{KW:NEED}}: You spent 8+ {{GOLD}} on other cards this turn. {{KW:MAGIC}}: Summon 3 {{CARD:462|3}}.",
+      "effect_readable": "Transparency. Need: You spent 8+ GOLD on other cards this turn. Magic: Summon 3 Blue Rose [#462].",
+      "keyword_mentions": [
+        "MAGIC",
+        "NEED",
+        "TRANSPARENCY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        462
+      ],
+      "source_key": "card-965",
+      "source_line": 3156
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

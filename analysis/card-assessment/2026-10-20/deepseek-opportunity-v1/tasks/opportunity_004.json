@@ -1,0 +1,294 @@
+{
+  "task_id": "opportunity_004",
+  "kind": "opportunity_review",
+  "requested": [
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 18,
+      "name": "Pyrope",
+      "metadata_name": "Pyrope",
+      "cost": 4,
+      "attack": 3,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Before this attacks a monster, deal 3 {{DMG}} to the opponent.",
+      "effect_readable": "Before this attacks a monster, deal 3 DMG to the opponent.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-18",
+      "source_line": 300
+    },
+    {
+      "id": 19,
+      "name": "Moldbygg",
+      "metadata_name": "Moldbygg",
+      "cost": 4,
+      "attack": 4,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "MOLD"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: If you have an ally {{TRIBE:MOLD|1}}, {{KW:CATCH}} a {{CARD:4|1}}. {{KW:DUST}}: Release it.",
+      "effect_readable": "Magic: If you have an ally Mold, Catch a Moldsmal [#4]. Dust: Release it.",
+      "keyword_mentions": [
+        "CATCH",
+        "DUST",
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "MOLD"
+      ],
+      "card_references": [
+        4
+      ],
+      "source_key": "card-19",
+      "source_line": 301
+    },
+    {
+      "id": 20,
+      "name": "Vulkin",
+      "metadata_name": "Vulkin",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALL",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal {{DMG:2}}.",
+      "effect_readable": "Magic: Deal DMG 2.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-20",
+      "source_line": 302
+    },
+    {
+      "id": 21,
+      "name": "Tsunderplane",
+      "metadata_name": "Tsunderplane",
+      "cost": 7,
+      "attack": 6,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: Deal 1 {{DMG}} to all enemy monsters and 3 {{DMG}} to the opponent.",
+      "effect_readable": "Haste. Magic: Deal 1 DMG to all enemy monsters and 3 DMG to the opponent.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-21",
+      "source_line": 303
+    },
+    {
+      "id": 22,
+      "name": "Shyren",
+      "metadata_name": "Shyren",
+      "cost": 3,
+      "attack": 2,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALL",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Heal 4 {{HP}}.",
+      "effect_readable": "Magic: Heal 4 HP.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-22",
+      "source_line": 304
+    },
+    {
+      "id": 23,
+      "name": "Migospel",
+      "metadata_name": "Migospel",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give a monster +3 {{HP}}.",
+      "effect_readable": "Magic: Give a monster +3 HP.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-23",
+      "source_line": 305
+    },
+    {
+      "id": 24,
+      "name": "Final Froggit",
+      "metadata_name": "Final Froggit",
+      "cost": 7,
+      "attack": 5,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "FROGGIT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give all ally {{TRIBE:FROGGIT|2}} (except {{CARD:24|1}}) {{STATS:+1|+1}} wherever they are.",
+      "effect_readable": "Magic: Give all ally Frog (except Final Froggit [#24]) ATK +1/HP +1 wherever they are.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "FROGGIT"
+      ],
+      "card_references": [
+        24
+      ],
+      "source_key": "card-24",
+      "source_line": 306
+    },
+    {
+      "id": 25,
+      "name": "Astigmatism",
+      "metadata_name": "Astigmatism",
+      "cost": 6,
+      "attack": 5,
+      "health": 6,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALL",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After this kills a monster, add a {{CARD:7|1}} to your hand. {{KW:MAGIC}}: Deal 2 {{DMG}}.",
+      "effect_readable": "After this kills a monster, add a Loox [#7] to your hand. Magic: Deal 2 DMG.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        7
+      ],
+      "source_key": "card-25",
+      "source_line": 307
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

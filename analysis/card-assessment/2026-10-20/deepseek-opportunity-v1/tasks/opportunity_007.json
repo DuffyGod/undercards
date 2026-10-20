@@ -1,0 +1,312 @@
+{
+  "task_id": "opportunity_007",
+  "kind": "opportunity_review",
+  "requested": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 42,
+      "name": "So Sorry",
+      "metadata_name": "So Sorry",
+      "cost": 4,
+      "attack": 4,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Add a {{CARD:350|1}} to your hand.",
+      "effect_readable": "Magic: Add a Doodlebog [#350] to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        350
+      ],
+      "source_key": "card-42",
+      "source_line": 324
+    },
+    {
+      "id": 43,
+      "name": "Lesser Dog",
+      "metadata_name": "Lesser Dog",
+      "cost": 6,
+      "attack": 5,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "DOG"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Give all cards in your hand -1 {{COST}}.",
+      "effect_readable": "Dust: Give all cards in your hand -1 COST.",
+      "keyword_mentions": [
+        "DUST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-43",
+      "source_line": 325
+    },
+    {
+      "id": 44,
+      "name": "Gyftrot",
+      "metadata_name": "Gyftrot",
+      "cost": 8,
+      "attack": 6,
+      "health": 8,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Draw up to 2 cards.",
+      "effect_readable": "Taunt. Magic: Draw up to 2 cards.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-44",
+      "source_line": 326
+    },
+    {
+      "id": 45,
+      "name": "Doggo",
+      "metadata_name": "Doggo",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "DOG"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DELAY}}: If this has {{ATK}} buffs, {{KW:PARALYZE}} the monster in front of this.",
+      "effect_readable": "Delay: If this has ATK buffs, Paralyze the monster in front of this.",
+      "keyword_mentions": [
+        "DELAY",
+        "PARALYZE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-45",
+      "source_line": 327
+    },
+    {
+      "id": 46,
+      "name": "Dogamy",
+      "metadata_name": "Dogamy",
+      "cost": 6,
+      "attack": 5,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "DOG"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: If you have an ally {{CARD:47|1}}, give all {{TRIBE:DOG|2}} in your hand {{STATS:+2|+2}}.",
+      "effect_readable": "Magic: If you have an ally Dogaressa [#47], give all Dog in your hand ATK +2/HP +2.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "DOG"
+      ],
+      "card_references": [
+        47
+      ],
+      "source_key": "card-46",
+      "source_line": 328
+    },
+    {
+      "id": 47,
+      "name": "Dogaressa",
+      "metadata_name": "Dogaressa",
+      "cost": 6,
+      "attack": 6,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "DOG"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: If you have an ally {{CARD:46|1}}, gain {{STATS:+2|+3}}, {{KW:TAUNT}}, and +1 {{KW:DODGE}}.",
+      "effect_readable": "Magic: If you have an ally Dogamy [#46], gain ATK +2/HP +3, Taunt, and +1 Dodge.",
+      "keyword_mentions": [
+        "DODGE",
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        46
+      ],
+      "source_key": "card-47",
+      "source_line": 329
+    },
+    {
+      "id": 48,
+      "name": "Greater Dog",
+      "metadata_name": "Greater Dog",
+      "cost": 6,
+      "attack": 5,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "DOG"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: If you have a {{TRIBE:DOG|1}} in your hand, gain +3 {{HP}}.",
+      "effect_readable": "Taunt. Magic: If you have a Dog in your hand, gain +3 HP.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [
+        "DOG"
+      ],
+      "card_references": [],
+      "source_key": "card-48",
+      "source_line": 330
+    },
+    {
+      "id": 49,
+      "name": "Glyde",
+      "metadata_name": "Glyde",
+      "cost": 6,
+      "attack": 2,
+      "health": 2,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Gain {{STATS:+1|+1}} for each card in your hand.",
+      "effect_readable": "Magic: Gain ATK +1/HP +1 for each card in your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-49",
+      "source_line": 331
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

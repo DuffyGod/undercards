@@ -1,0 +1,298 @@
+{
+  "task_id": "opportunity_021",
+  "kind": "opportunity_review",
+  "requested": [
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 161,
+      "name": "Clam Girl",
+      "metadata_name": "Clam Girl",
+      "cost": 5,
+      "attack": 4,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give 2 random spells in your hand -2 {{COST}}.",
+      "effect_readable": "Magic: Give 2 random spells in your hand -2 COST.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-161",
+      "source_line": 438
+    },
+    {
+      "id": 162,
+      "name": "Clam Boy",
+      "metadata_name": "Clam Boy",
+      "cost": 5,
+      "attack": 4,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Transparency",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TRANSPARENCY}}. After this attacks and kills a monster, add a random 2-{{COST}} card to your hand with -1 {{COST}}.",
+      "effect_readable": "Transparency. After this attacks and kills a monster, add a random 2-COST card to your hand with -1 COST.",
+      "keyword_mentions": [
+        "TRANSPARENCY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-162",
+      "source_line": 439
+    },
+    {
+      "id": 163,
+      "name": "MTT Fountain",
+      "metadata_name": "MTT Fountain",
+      "cost": 5,
+      "attack": 2,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. After this takes {{DMG}}, heal the {{DMG}} taken as {{HP}} to you.",
+      "effect_readable": "Haste. After this takes DMG, heal the DMG taken as HP to you.",
+      "keyword_mentions": [
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-163",
+      "source_line": 440
+    },
+    {
+      "id": 164,
+      "name": "Lamp",
+      "metadata_name": "Lamp",
+      "cost": 2,
+      "attack": 1,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Summon a {{CARD:554|1}}.",
+      "effect_readable": "Dust: Summon a Snow Frisk [#554].",
+      "keyword_mentions": [
+        "DUST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        554
+      ],
+      "source_key": "card-164",
+      "source_line": 441
+    },
+    {
+      "id": 165,
+      "name": "Oni",
+      "metadata_name": "Oni",
+      "cost": 4,
+      "attack": 4,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: A non-{{RARITY:TOKEN}} spell of another SOUL in your hand. {{KW:MAGIC}}: Summon a {{CARD:175|1}}.",
+      "effect_readable": "Need: A non-TOKEN spell of another SOUL in your hand. Magic: Summon a Charles [#175].",
+      "keyword_mentions": [
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        175
+      ],
+      "source_key": "card-165",
+      "source_line": 442
+    },
+    {
+      "id": 166,
+      "name": "Crazy Bun",
+      "metadata_name": "Crazy Bun",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 1 {{DMG}} to all other monsters.",
+      "effect_readable": "Magic: Deal 1 DMG to all other monsters.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-166",
+      "source_line": 443
+    },
+    {
+      "id": 167,
+      "name": "Fish Receptionist",
+      "metadata_name": "Fish Receptionist",
+      "cost": 5,
+      "attack": 5,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After this takes {{DMG}}, give a random card in your hand -1 {{COST}}.",
+      "effect_readable": "After this takes DMG, give a random card in your hand -1 COST.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-167",
+      "source_line": 444
+    },
+    {
+      "id": 168,
+      "name": "Sad Dragon",
+      "metadata_name": "Sad Dragon",
+      "cost": 6,
+      "attack": 5,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Dodge",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DODGE}} (1).",
+      "effect_readable": "Dodge (1).",
+      "keyword_mentions": [
+        "DODGE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-168",
+      "source_line": 445
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

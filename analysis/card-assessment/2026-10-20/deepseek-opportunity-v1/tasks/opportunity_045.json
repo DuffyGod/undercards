@@ -1,0 +1,329 @@
+{
+  "task_id": "opportunity_045",
+  "kind": "opportunity_review",
+  "requested": [
+    467,
+    468,
+    469,
+    471,
+    472,
+    473,
+    474,
+    477
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 467,
+      "name": "Top Chef",
+      "metadata_name": "Top Chef",
+      "cost": 3,
+      "attack": 4,
+      "health": 2,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Summon a {{STATS:1|2}} {{CARD:306|1}}. Spend up to 2 {{GOLD}} and give it {{STATS:+1|+1}} for each {{GOLD}} spent.",
+      "effect_readable": "Magic: Summon a ATK 1/HP 2 Smolder Cake [#306]. Spend up to 2 GOLD and give it ATK +1/HP +1 for each GOLD spent.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        306
+      ],
+      "source_key": "card-467",
+      "source_line": 1674
+    },
+    {
+      "id": 468,
+      "name": "Rudolph",
+      "metadata_name": "Rudolph",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: Your deck has no non-{{KW:GENERATED}} spells. {{KW:MAGIC}}: Heal 5 {{HP}} to you.",
+      "effect_readable": "Need: Your deck has no non-Generated spells. Magic: Heal 5 HP to you.",
+      "keyword_mentions": [
+        "GENERATED",
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-468",
+      "source_line": 1676
+    },
+    {
+      "id": 469,
+      "name": "Blockler B",
+      "metadata_name": "Blockler B",
+      "cost": 5,
+      "attack": 3,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:DUST}}: Summon {{CARD:470|1}}.",
+      "effect_readable": "Haste. Dust: Summon Blockler O [#470].",
+      "keyword_mentions": [
+        "DUST",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        470
+      ],
+      "source_key": "card-469",
+      "source_line": 1678
+    },
+    {
+      "id": 471,
+      "name": "Chaos Blaster",
+      "metadata_name": "Chaos Blaster",
+      "cost": 5,
+      "attack": 6,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 5 {{DMG}} to you. Look at 2 random {{TRIBE:LOST_SOUL|2}}. Choose one to add to your hand with {{STATS:+1|+1|+1}} and {{KW:HASTE}}.",
+      "effect_readable": "Magic: Deal 5 DMG to you. Look at 2 random Lost Soul. Choose one to add to your hand with COST +1/ATK +1/HP +1 and Haste.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "LOST_SOUL"
+      ],
+      "card_references": [],
+      "source_key": "card-471",
+      "source_line": 1682
+    },
+    {
+      "id": 472,
+      "name": "Seam",
+      "metadata_name": "Seam",
+      "cost": 6,
+      "attack": 6,
+      "health": 6,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:NEED}}: No non-{{KW:GENERATED}} {{RARITY:LEGENDARY}} monsters in your deck or dustpile. {{KW:MAGIC}}: Add 2 {{CARD:725|2}} to your hand.",
+      "effect_readable": "Taunt. Need: No non-Generated LEGENDARY monsters in your deck or dustpile. Magic: Add 2 Shadow Crystal [#725] to your hand.",
+      "keyword_mentions": [
+        "GENERATED",
+        "MAGIC",
+        "NEED",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        725
+      ],
+      "source_key": "card-472",
+      "source_line": 1684
+    },
+    {
+      "id": 473,
+      "name": "Spider Reporter",
+      "metadata_name": "Spider Reporter",
+      "cost": 4,
+      "attack": 3,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "ARACHNID"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:DUST}}: Add a {{CARD:476|1}} to your deck.",
+      "effect_readable": "Haste. Dust: Add a Spider Croissant [#476] to your deck.",
+      "keyword_mentions": [
+        "DUST",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        476
+      ],
+      "source_key": "card-473",
+      "source_line": 1692
+    },
+    {
+      "id": 474,
+      "name": "Spider Sign",
+      "metadata_name": "Spider Sign",
+      "cost": 8,
+      "attack": 3,
+      "health": 7,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "ARACHNID"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After you summon an {{TRIBE:ARACHNID|1}}, gain +1 {{ATK}}. {{KW:MAGIC}} and {{KW:TURN_START}}: Summon a {{RARITY:TOKEN}} {{TRIBE:ARACHNID|1}} from your deck.",
+      "effect_readable": "After you summon an Arachnid, gain +1 ATK. Magic and Turn start: Summon a TOKEN Arachnid from your deck.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TURN_START"
+      ],
+      "tribe_mentions": [
+        "ARACHNID"
+      ],
+      "card_references": [],
+      "source_key": "card-474",
+      "source_line": 1694
+    },
+    {
+      "id": 477,
+      "name": "Spider Flower",
+      "metadata_name": "Spider Flower",
+      "cost": 3,
+      "attack": 2,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "PLANT",
+        "ARACHNID"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:SWITCH}}: {{KW:CATCH}} {{SWITCH_LEFT:1|a {{CARD:115|1}}}} or {{SWITCH_RIGHT:1|a {{CARD:451|1}}}}. {{KW:DUST}}: Release it to your hand with -1 {{COST}}.",
+      "effect_readable": "Magic: Switch: Catch [左侧] a Spider [#115] or [右侧] a Red Flower [#451]. Dust: Release it to your hand with -1 COST.",
+      "keyword_mentions": [
+        "CATCH",
+        "DUST",
+        "MAGIC",
+        "SWITCH"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        115,
+        451
+      ],
+      "source_key": "card-477",
+      "source_line": 1700
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

@@ -1,0 +1,330 @@
+{
+  "task_id": "opportunity_083",
+  "kind": "opportunity_review",
+  "requested": [
+    885,
+    887,
+    888,
+    889,
+    890,
+    892,
+    893,
+    894
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 885,
+      "name": "Zoot Kris",
+      "metadata_name": "Zoot Kris",
+      "cost": 8,
+      "attack": 6,
+      "health": 6,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Add a {{CARD:886|1}} to your hand.",
+      "effect_readable": "Taunt. Magic: Add a Sharpshoot [#886] to your hand.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        886
+      ],
+      "source_key": "card-885",
+      "source_line": 2653
+    },
+    {
+      "id": 887,
+      "name": "Zapper",
+      "metadata_name": "Zapper",
+      "cost": 10,
+      "attack": 6,
+      "health": 7,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:NEED}}: You spent {{GOLD}} on spells this turn. {{KW:MAGIC}}: {{KW:ERASE}} a monster.",
+      "effect_readable": "Taunt. Need: You spent GOLD on spells this turn. Magic: Erase a monster.",
+      "keyword_mentions": [
+        "ERASE",
+        "MAGIC",
+        "NEED",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-887",
+      "source_line": 2657
+    },
+    {
+      "id": 888,
+      "name": "White Cloak",
+      "metadata_name": "White Cloak",
+      "cost": 8,
+      "attack": 8,
+      "health": 8,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: 7+ {{RARITY:TOKEN}} monsters in your dustpile. {{KW:MAGIC}}: {{KW:ERASE}} them and add a 2-{{COST}} {{CARD:712|1}} to your hand.",
+      "effect_readable": "Need: 7+ TOKEN monsters in your dustpile. Magic: Erase them and add a 2-COST Ice Crystal [#712] to your hand.",
+      "keyword_mentions": [
+        "ERASE",
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        712
+      ],
+      "source_key": "card-888",
+      "source_line": 2659
+    },
+    {
+      "id": 889,
+      "name": "Ribbick",
+      "metadata_name": "Ribbick",
+      "cost": 2,
+      "attack": 2,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "FROGGIT"
+      ],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 2 {{DMG}} to an ally monster and give it +2 {{ATK}} and {{KW:HASTE}}.",
+      "effect_readable": "Magic: Deal 2 DMG to an ally monster and give it +2 ATK and Haste.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-889",
+      "source_line": 2661
+    },
+    {
+      "id": 890,
+      "name": "Tenna",
+      "metadata_name": "Tenna",
+      "cost": 9,
+      "attack": 7,
+      "health": 7,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Choose a non-{{RARITY:DETERMINATION}} monster in the enemy hand. {{KW:DELAY}}: Summon a {{IMAGE:Grand_Prize|Grand Prize|144|22|891}} that {{KW:CATCH|override=Catches}} it.",
+      "effect_readable": "Taunt. Magic: Choose a non-DT monster in the enemy hand. Delay: Summon a Grand Prize that Catches it.",
+      "keyword_mentions": [
+        "CATCH",
+        "DELAY",
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-890",
+      "source_line": 2663
+    },
+    {
+      "id": 892,
+      "name": "Knightdyne",
+      "metadata_name": "Knightdyne",
+      "cost": 9,
+      "attack": 5,
+      "health": 7,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 1 {{DMG}} to the lowest {{HP}} enemy monster 4 times. For each enemy killed, summon a base {{STATS:2|3}} {{CARD:574|1}} with {{KW:TAUNT}}.",
+      "effect_readable": "Magic: Deal 1 DMG to the lowest HP enemy monster 4 times. For each enemy killed, summon a base ATK 2/HP 3 Spear [#574] with Taunt.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        574
+      ],
+      "source_key": "card-892",
+      "source_line": 2667
+    },
+    {
+      "id": 893,
+      "name": "Treat Catcher",
+      "metadata_name": "Treat Catcher",
+      "cost": 6,
+      "attack": 5,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:CATCH}} a non-{{RARITY:TOKEN}} ally monster costing 2+ {{GOLD}} to gain {{KW:HASTE}}, {{KW:CANDY}}, and {{STATS:+1|+1}}. {{KW:DUST}}: Release it to your hand.",
+      "effect_readable": "Magic: Catch a non-TOKEN ally monster costing 2+ GOLD to gain Haste, Candy, and ATK +1/HP +1. Dust: Release it to your hand.",
+      "keyword_mentions": [
+        "CANDY",
+        "CATCH",
+        "DUST",
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-893",
+      "source_line": 2669
+    },
+    {
+      "id": 894,
+      "name": "Winglade",
+      "metadata_name": "Winglade",
+      "cost": 8,
+      "attack": 6,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Armor",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:ARMOR}}. After an enemy monster with {{KW:HASTE}} or {{KW:CHARGE}} is summoned, attack it. {{KW:MAGIC}}: If there's a {{KW:TAUNT}} monster, gain {{KW:HASTE}}.",
+      "effect_readable": "Armor. After an enemy monster with Haste or Charge is summoned, attack it. Magic: If there's a Taunt monster, gain Haste.",
+      "keyword_mentions": [
+        "ARMOR",
+        "CHARGE",
+        "HASTE",
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-894",
+      "source_line": 2671
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

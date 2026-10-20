@@ -1,0 +1,315 @@
+{
+  "task_id": "opportunity_087",
+  "kind": "opportunity_review",
+  "requested": [
+    924,
+    925,
+    926,
+    927,
+    929,
+    931,
+    932,
+    933
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 924,
+      "name": "Mizzle",
+      "metadata_name": "Mizzle",
+      "cost": 2,
+      "attack": 1,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Heal 2 {{HP}} to the lowest {{HP}} damaged ally. If it was fully healed, gain {{STATS:+1|+1}}.",
+      "effect_readable": "Turn end: Heal 2 HP to the lowest HP damaged ally. If it was fully healed, gain ATK +1/HP +1.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-924",
+      "source_line": 2748
+    },
+    {
+      "id": 925,
+      "name": "Guei",
+      "metadata_name": "Guei",
+      "cost": 6,
+      "attack": 6,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at 2 random 1-{{COST}}, 2-{{COST}}, and 3-{{COST}} {{KW:DUST}} monsters. Choose one to summon and kill.",
+      "effect_readable": "Magic: Look at 2 random 1-COST, 2-COST, and 3-COST Dust monsters. Choose one to summon and kill.",
+      "keyword_mentions": [
+        "DUST",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-925",
+      "source_line": 2750
+    },
+    {
+      "id": 926,
+      "name": "Carol",
+      "metadata_name": "Carol",
+      "cost": 9,
+      "attack": 5,
+      "health": 7,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:PARALYZE}} an enemy monster and its adjacent monsters.",
+      "effect_readable": "Magic: Paralyze an enemy monster and its adjacent monsters.",
+      "keyword_mentions": [
+        "MAGIC",
+        "PARALYZE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-926",
+      "source_line": 2752
+    },
+    {
+      "id": 927,
+      "name": "Gachapon Machine",
+      "metadata_name": "Gachapon Machine",
+      "cost": 8,
+      "attack": 6,
+      "health": 6,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at 5 random non-{{RARITY:DETERMINATION}} monsters with a {{COST}} equal to the enemy {{GOLD}} (max. 15 {{GOLD}}). Choose one to summon.",
+      "effect_readable": "Magic: Look at 5 random non-DT monsters with a COST equal to the enemy GOLD (max. 15 GOLD). Choose one to summon.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-927",
+      "source_line": 2754
+    },
+    {
+      "id": 929,
+      "name": "Chef Rouxls",
+      "metadata_name": "Chef Rouxls",
+      "cost": 7,
+      "attack": 5,
+      "health": 6,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Addeth a {{CARD:930|1}} to your hand.",
+      "effect_readable": "Magic: Addeth a Laser Pointere [#930] to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        930
+      ],
+      "source_key": "card-929",
+      "source_line": 2772
+    },
+    {
+      "id": 931,
+      "name": "Titan Fuzzy",
+      "metadata_name": "Titan Fuzzy",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Darkspawn",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DARKSPAWN}}. {{KW:SHOCK}}: Gain {{STATS:+1|+1}} for every 2 {{GOLD}} the spell costs and gain {{KW:HASTE}}. This can attack again.",
+      "effect_readable": "Darkspawn. Shock: Gain ATK +1/HP +1 for every 2 GOLD the spell costs and gain Haste. This can attack again.",
+      "keyword_mentions": [
+        "DARKSPAWN",
+        "HASTE",
+        "SHOCK"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-931",
+      "source_line": 2776
+    },
+    {
+      "id": 932,
+      "name": "Pixel Vase",
+      "metadata_name": "Pixel Vase",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Give an enemy monster {{STATS:-1|-1}}.",
+      "effect_readable": "Taunt. Magic: Give an enemy monster ATK -1/HP -1.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-932",
+      "source_line": 2778
+    },
+    {
+      "id": 933,
+      "name": "Meta Flowey",
+      "metadata_name": "Meta Flowey",
+      "cost": 10,
+      "attack": 4,
+      "health": 4,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. Immune to {{DMG}} if there's a {{CARD:54|1}} and this doesn't have {{KW:TAUNT}}. {{KW:MAGIC}}: Summon a {{CARD:54|1}} in EVERY empty board space.",
+      "effect_readable": "Haste. Immune to DMG if there's a Flowey [#54] and this doesn't have Taunt. Magic: Summon a Flowey [#54] in EVERY empty board space.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        54
+      ],
+      "source_key": "card-933",
+      "source_line": 2807
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

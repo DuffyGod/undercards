@@ -1,0 +1,336 @@
+{
+  "task_id": "opportunity_075",
+  "kind": "opportunity_review",
+  "requested": [
+    804,
+    805,
+    806,
+    807,
+    808,
+    809,
+    810,
+    811
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 804,
+      "name": "Recycle Bin",
+      "metadata_name": "Recycle Bin",
+      "cost": 5,
+      "attack": 3,
+      "health": 7,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Loop",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:LOOP}} (1). {{KW:DELAY}}: {{KW:SWITCH}}: Turn the copy into a spell with a cost equal to this card's {{SWITCH_LEFT:1|{{ATK}}}} or {{SWITCH_RIGHT:1|{{HP}}}}.",
+      "effect_readable": "Haste. Loop (1). Delay: Switch: Turn the copy into a spell with a cost equal to this card's [左侧] ATK or [右侧] HP.",
+      "keyword_mentions": [
+        "DELAY",
+        "HASTE",
+        "LOOP",
+        "SWITCH"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-804",
+      "source_line": 2456
+    },
+    {
+      "id": 805,
+      "name": "Yandereplane",
+      "metadata_name": "Yandereplane",
+      "cost": 7,
+      "attack": 6,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:DELAY}}: If this didn't attack, die and deal 3 {{DMG}} to all enemies.",
+      "effect_readable": "Haste. Delay: If this didn't attack, die and deal 3 DMG to all enemies.",
+      "keyword_mentions": [
+        "DELAY",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-805",
+      "source_line": 2458
+    },
+    {
+      "id": 806,
+      "name": "Torch",
+      "metadata_name": "Torch",
+      "cost": 6,
+      "attack": 5,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After a non-{{KW:GENERATED}} monster dies, deal 1 {{DMG}} to the opponent.",
+      "effect_readable": "After a non-Generated monster dies, deal 1 DMG to the opponent.",
+      "keyword_mentions": [
+        "GENERATED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-806",
+      "source_line": 2460
+    },
+    {
+      "id": 807,
+      "name": "Spamequin",
+      "metadata_name": "Spamequin",
+      "cost": 5,
+      "attack": 5,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}, {{KW:DUST}}, {{KW:SHOCK}}, and {{KW:TURN_START}}: Add a {{CARD:753|1}} with {{KW:HASTE}} to your hand.",
+      "effect_readable": "Magic, Dust, Shock, and Turn start: Add a Pipis [#753] with Haste to your hand.",
+      "keyword_mentions": [
+        "DUST",
+        "HASTE",
+        "MAGIC",
+        "SHOCK",
+        "TURN_START"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        753
+      ],
+      "source_key": "card-807",
+      "source_line": 2465
+    },
+    {
+      "id": 808,
+      "name": "Clover",
+      "metadata_name": "Clover",
+      "cost": 9,
+      "attack": 7,
+      "health": 7,
+      "rarity": "DETERMINATION",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "Your {{TRIBE:ROUND|2}} cost 0. {{KW:MAGIC}}: Add {{CARD:818|1}} to your hand.",
+      "effect_readable": "Your Round cost 0. Magic: Add The First Round [#818] to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "ROUND"
+      ],
+      "card_references": [
+        818
+      ],
+      "source_key": "card-808",
+      "source_line": 2467
+    },
+    {
+      "id": 809,
+      "name": "Penilla",
+      "metadata_name": "Penilla",
+      "cost": 4,
+      "attack": 5,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Both players draw a monster. {{KW:DELAY}}: If yours is still in your hand, swap them!",
+      "effect_readable": "Magic: Both players draw a monster. Delay: If yours is still in your hand, swap them!",
+      "keyword_mentions": [
+        "DELAY",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-809",
+      "source_line": 2469
+    },
+    {
+      "id": 810,
+      "name": "Decibat",
+      "metadata_name": "Decibat",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Transparency",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TRANSPARENCY}}. After a non-{{RARITY:TOKEN}} spell is played, deal 3 {{DMG}} to the spell's owner.",
+      "effect_readable": "Transparency. After a non-TOKEN spell is played, deal 3 DMG to the spell's owner.",
+      "keyword_mentions": [
+        "TRANSPARENCY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-810",
+      "source_line": 2471
+    },
+    {
+      "id": 811,
+      "name": "Dunebud",
+      "metadata_name": "Dunebud",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "UTY",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SHOCK}}: Summon a {{CARD:811|1}}. {{KW:TURN_END}}: Lose this {{KW:SHOCK}}.",
+      "effect_readable": "Shock: Summon a Dunebud [#811]. Turn end: Lose this Shock.",
+      "keyword_mentions": [
+        "SHOCK",
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        811
+      ],
+      "source_key": "card-811",
+      "source_line": 2473
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

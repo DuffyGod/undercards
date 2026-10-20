@@ -1,0 +1,330 @@
+{
+  "task_id": "opportunity_042",
+  "kind": "opportunity_review",
+  "requested": [
+    427,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 427,
+      "name": "Killer Cook",
+      "metadata_name": "Killer Cook",
+      "cost": 3,
+      "attack": 2,
+      "health": 5,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Add {{CARD:429|1}}, {{CARD:428|1}}, and {{CARD:430|1}} to your deck. {{KW:DUST}}: Draw a {{RARITY:TOKEN}} card.",
+      "effect_readable": "Magic: Add Flour [#429], Eggs [#428], and Milk [#430] to your deck. Dust: Draw a TOKEN card.",
+      "keyword_mentions": [
+        "DUST",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        428,
+        429,
+        430
+      ],
+      "source_key": "card-427",
+      "source_line": 1518
+    },
+    {
+      "id": 432,
+      "name": "Popumeter",
+      "metadata_name": "Popumeter",
+      "cost": 5,
+      "attack": 5,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Support",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Armor",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "NEGATIVE",
+          "name": "Disarmed",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DISARMED}}. {{KW:ARMOR}}. {{KW:SUPPORT}}: Attack the rightmost enemy monster.",
+      "effect_readable": "Disarmed. Armor. Support: Attack the rightmost enemy monster.",
+      "keyword_mentions": [
+        "ARMOR",
+        "DISARMED",
+        "SUPPORT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-432",
+      "source_line": 1528
+    },
+    {
+      "id": 433,
+      "name": "Butterflies",
+      "metadata_name": "Butterflies",
+      "cost": 1,
+      "attack": 1,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Draw a spell.",
+      "effect_readable": "Dust: Draw a spell.",
+      "keyword_mentions": [
+        "DUST"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-433",
+      "source_line": 1530
+    },
+    {
+      "id": 434,
+      "name": "Dark Ponman",
+      "metadata_name": "Dark Ponman",
+      "cost": 4,
+      "attack": 3,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PIECE"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:SWITCH}}: {{SWITCH_LEFT:1|Add 3 {{CARD:312|3}} to your hand}} or {{SWITCH_RIGHT:1|Give all {{CARD:312|2}} in your hand and board {{STATS:+1|+1}}}}.",
+      "effect_readable": "Magic: Switch: [左侧] Add 3 Ponman [#312] to your hand or [右侧] Give all Ponman [#312] in your hand and board ATK +1/HP +1.",
+      "keyword_mentions": [
+        "MAGIC",
+        "SWITCH"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        312
+      ],
+      "source_key": "card-434",
+      "source_line": 1532
+    },
+    {
+      "id": 435,
+      "name": "Ficus Licker",
+      "metadata_name": "Ficus Licker",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Draw a {{TRIBE:PLANT|1}} (except {{CARD:435|1}}).",
+      "effect_readable": "Magic: Draw a Plant (except Ficus Licker [#435]).",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "PLANT"
+      ],
+      "card_references": [
+        435
+      ],
+      "source_key": "card-435",
+      "source_line": 1537
+    },
+    {
+      "id": 436,
+      "name": "Town Hall Guy",
+      "metadata_name": "Town Hall Guy",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "HAND",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: Give a {{KW:HASTE}} monster in your hand +1 {{ATK}}.",
+      "effect_readable": "Haste. Magic: Give a Haste monster in your hand +1 ATK.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-436",
+      "source_line": 1539
+    },
+    {
+      "id": 437,
+      "name": "Shyren's Agent",
+      "metadata_name": "Shyren's Agent",
+      "cost": 7,
+      "attack": 5,
+      "health": 7,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALLY",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Heal 7 {{HP}} to a damaged ally monster. Excess healing is dealt as {{DMG}} to the monster in front of this.",
+      "effect_readable": "Magic: Heal 7 HP to a damaged ally monster. Excess healing is dealt as DMG to the monster in front of this.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-437",
+      "source_line": 1541
+    },
+    {
+      "id": 438,
+      "name": "Battleflies",
+      "metadata_name": "Battleflies",
+      "cost": 4,
+      "attack": 3,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:NEED}}: You spent {{GOLD}} on spells last turn. {{KW:MAGIC}}: Gain +2 {{ATK}}.",
+      "effect_readable": "Haste. Need: You spent GOLD on spells last turn. Magic: Gain +2 ATK.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-438",
+      "source_line": 1543
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

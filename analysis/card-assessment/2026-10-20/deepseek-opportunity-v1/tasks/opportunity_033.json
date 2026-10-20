@@ -1,0 +1,294 @@
+{
+  "task_id": "opportunity_033",
+  "kind": "opportunity_review",
+  "requested": [
+    282,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    292
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 282,
+      "name": "Great Door",
+      "metadata_name": "Great Door",
+      "cost": 6,
+      "attack": 5,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Summon a {{CARD:739|1}} for the opponent.",
+      "effect_readable": "Magic: Summon a Petrified Monster [#739] for the opponent.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        739
+      ],
+      "source_key": "card-282",
+      "source_line": 540
+    },
+    {
+      "id": 285,
+      "name": "Tutorial Guy",
+      "metadata_name": "Tutorial Guy",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at 3 random {{RARITY:BASE}} cards and choose one. Add it to your hand with -1 {{COST}}.",
+      "effect_readable": "Magic: Look at 3 random BASE cards and choose one. Add it to your hand with -1 COST.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-285",
+      "source_line": 541
+    },
+    {
+      "id": 286,
+      "name": "Nurse Mouth",
+      "metadata_name": "Nurse Mouth",
+      "cost": 5,
+      "attack": 3,
+      "health": 7,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "After an ally monster costing 2+ {{GOLD}} dies, heal 3 {{HP}} to you.",
+      "effect_readable": "After an ally monster costing 2+ GOLD dies, heal 3 HP to you.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-286",
+      "source_line": 542
+    },
+    {
+      "id": 287,
+      "name": "Rouxls Kaard",
+      "metadata_name": "Rouxls Kaard",
+      "cost": 6,
+      "attack": 5,
+      "health": 6,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Transparency",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TRANSPARENCY}}. Thou art {{KW:INVULNERABLE}}. {{KW:MAGIC}}: Addeth a {{CARD:376|1}} to the enemy hand.",
+      "effect_readable": "Transparency. Thou art Invulnerable. Magic: Addeth a Puzzle Box [#376] to the enemy hand.",
+      "keyword_mentions": [
+        "INVULNERABLE",
+        "MAGIC",
+        "TRANSPARENCY"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        376
+      ],
+      "source_key": "card-287",
+      "source_line": 543
+    },
+    {
+      "id": 288,
+      "name": "Pippins",
+      "metadata_name": "Pippin",
+      "cost": 4,
+      "attack": 5,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURBO}}: If you have 6 or less cards in your hand, draw a card.",
+      "effect_readable": "Turbo: If you have 6 or less cards in your hand, draw a card.",
+      "keyword_mentions": [
+        "TURBO"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-288",
+      "source_line": 544
+    },
+    {
+      "id": 289,
+      "name": "Red Wagon",
+      "metadata_name": "Red Wagon",
+      "cost": 4,
+      "attack": 4,
+      "health": 2,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: {{KW:CATCH}} an ally monster. {{KW:DUST}}: Release it to your deck with {{STATS:+3|+3}}.",
+      "effect_readable": "Haste. Magic: Catch an ally monster. Dust: Release it to your deck with ATK +3/HP +3.",
+      "keyword_mentions": [
+        "CATCH",
+        "DUST",
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-289",
+      "source_line": 545
+    },
+    {
+      "id": 290,
+      "name": "Snowy",
+      "metadata_name": "Snowy",
+      "cost": 6,
+      "attack": 5,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ALL",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 2 {{DMG}}. If the target dies, add a random spell of the same {{COST}} to your hand.",
+      "effect_readable": "Magic: Deal 2 DMG. If the target dies, add a random spell of the same COST to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-290",
+      "source_line": 546
+    },
+    {
+      "id": 292,
+      "name": "The Warrior",
+      "metadata_name": "The Warrior",
+      "cost": 6,
+      "attack": 7,
+      "health": 9,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 5 {{DMG}} to this.",
+      "effect_readable": "Magic: Deal 5 DMG to this.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-292",
+      "source_line": 548
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

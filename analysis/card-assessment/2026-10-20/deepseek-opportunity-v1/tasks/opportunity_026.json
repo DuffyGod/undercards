@@ -1,0 +1,306 @@
+{
+  "task_id": "opportunity_026",
+  "kind": "opportunity_review",
+  "requested": [
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    222
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 214,
+      "name": "Casual Undyne",
+      "metadata_name": "Casual Undyne",
+      "cost": 11,
+      "attack": 8,
+      "health": 9,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Bullseye",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        },
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. Whenever this attacks and kills, deal excess {{DMG}} to the monsters adjacent to the target. {{KW:BULLSEYE}}: Summon a {{CARD:574|1}}. It attacks the opponent.",
+      "effect_readable": "Haste. Whenever this attacks and kills, deal excess DMG to the monsters adjacent to the target. Bullseye: Summon a Spear [#574]. It attacks the opponent.",
+      "keyword_mentions": [
+        "BULLSEYE",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        574
+      ],
+      "source_key": "card-214",
+      "source_line": 479
+    },
+    {
+      "id": 215,
+      "name": "Coffin",
+      "metadata_name": "Coffin",
+      "cost": 5,
+      "attack": 2,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at the 2 cheapest monsters in your dustpile (except {{CARD:215|1}}) and choose one to {{KW:CATCH}}. {{KW:DUST}}: Release it.",
+      "effect_readable": "Magic: Look at the 2 cheapest monsters in your dustpile (except Coffin [#215]) and choose one to Catch. Dust: Release it.",
+      "keyword_mentions": [
+        "CATCH",
+        "DUST",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        215
+      ],
+      "source_key": "card-215",
+      "source_line": 480
+    },
+    {
+      "id": 216,
+      "name": "Fire Trap",
+      "metadata_name": "Fire Trap",
+      "cost": 5,
+      "attack": 4,
+      "health": 6,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_START}}: Enchant a random empty enemy slot with {{ENCHANT:THE_FLAME|1}}.",
+      "effect_readable": "Turn start: Enchant a random empty enemy slot with The Flame.",
+      "keyword_mentions": [
+        "TURN_START"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-216",
+      "source_line": 481
+    },
+    {
+      "id": 217,
+      "name": "Mace",
+      "metadata_name": "Mace",
+      "cost": 4,
+      "attack": 4,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal 3 {{DMG}} to an ally monster to deal 3 {{DMG}} to the opponent.",
+      "effect_readable": "Magic: Deal 3 DMG to an ally monster to deal 3 DMG to the opponent.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-217",
+      "source_line": 482
+    },
+    {
+      "id": 218,
+      "name": "Hand Receptionist",
+      "metadata_name": "Hand Receptionist",
+      "cost": 3,
+      "attack": 4,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Summon a random monster from the enemy hand for the opponent.",
+      "effect_readable": "Taunt. Magic: Summon a random monster from the enemy hand for the opponent.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-218",
+      "source_line": 483
+    },
+    {
+      "id": 219,
+      "name": "Gerson",
+      "metadata_name": "Gerson",
+      "cost": 6,
+      "attack": 5,
+      "health": 6,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Add a {{CARD:772|1}} to your hand.",
+      "effect_readable": "Magic: Add a Junk for Sale [#772] to your hand.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        772
+      ],
+      "source_key": "card-219",
+      "source_line": 484
+    },
+    {
+      "id": 220,
+      "name": "Timer",
+      "metadata_name": "Timer",
+      "cost": 2,
+      "attack": 0,
+      "health": 5,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "At the start of its every 3rd turn, the opponent skips their next turn.",
+      "effect_readable": "At the start of its every 3rd turn, the opponent skips their next turn.",
+      "keyword_mentions": [],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-220",
+      "source_line": 485
+    },
+    {
+      "id": 222,
+      "name": "Blue Snail",
+      "metadata_name": "Blue Snail",
+      "cost": 1,
+      "attack": 1,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [
+        "SNAIL"
+      ],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Give a random {{TRIBE:SNAIL}} in your deck -1 {{COST}}.",
+      "effect_readable": "Magic: Give a random Snail in your deck -1 COST.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [
+        "SNAIL"
+      ],
+      "card_references": [],
+      "source_key": "card-222",
+      "source_line": 487
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

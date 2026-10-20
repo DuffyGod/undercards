@@ -1,0 +1,328 @@
+{
+  "task_id": "opportunity_086",
+  "kind": "opportunity_review",
+  "requested": [
+    912,
+    914,
+    915,
+    917,
+    919,
+    921,
+    922,
+    923
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 912,
+      "name": "Jackenstein",
+      "metadata_name": "Jackenstein",
+      "cost": 6,
+      "attack": 6,
+      "health": 6,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Both players enter a {{ARTIFACT:69}}. Yours starts with 6 less counters.",
+      "effect_readable": "Taunt. Magic: Both players enter a DARK ZONE [#69]. Yours starts with 6 less counters.",
+      "keyword_mentions": [
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-912",
+      "source_line": 2724
+    },
+    {
+      "id": 914,
+      "name": "Cuptower",
+      "metadata_name": "Cuptower",
+      "cost": 9,
+      "attack": 4,
+      "health": 5,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:DUST}}: Summon 3 {{CARD:881|3}} with {{KW:HASTE}}.",
+      "effect_readable": "Haste. Dust: Summon 3 Cuptain [#881] with Haste.",
+      "keyword_mentions": [
+        "DUST",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        881
+      ],
+      "source_key": "card-914",
+      "source_line": 2728
+    },
+    {
+      "id": 915,
+      "name": "Cooking Poster",
+      "metadata_name": "Cooking Poster",
+      "cost": 2,
+      "attack": 2,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:DUST}}: Add a {{CARD:916|1}} to your hand. If you already have a {{CARD:916|1}}, give it +1 {{KW:LOOP}} instead.",
+      "effect_readable": "Dust: Add a Food Stack [#916] to your hand. If you already have a Food Stack [#916], give it +1 Loop instead.",
+      "keyword_mentions": [
+        "DUST",
+        "LOOP"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        916
+      ],
+      "source_key": "card-915",
+      "source_line": 2730
+    },
+    {
+      "id": 917,
+      "name": "Rock Poster",
+      "metadata_name": "Rock Poster",
+      "cost": 2,
+      "attack": 3,
+      "health": 2,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SHOCK}}: Add a random spell of your SOUL that you haven't cast this game to your hand. If you cast them all, add a {{CARD:918|1}} instead.",
+      "effect_readable": "Shock: Add a random spell of your SOUL that you haven't cast this game to your hand. If you cast them all, add a Rock Chord [#918] instead.",
+      "keyword_mentions": [
+        "SHOCK"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        918
+      ],
+      "source_key": "card-917",
+      "source_line": 2734
+    },
+    {
+      "id": 919,
+      "name": "Monster Poster",
+      "metadata_name": "Monster Poster",
+      "cost": 2,
+      "attack": 1,
+      "health": 4,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Add a {{CARD:920|1}} to your hand. Give it {{STATS:+1|+1}} for every 4 monsters in the enemy dustpile.",
+      "effect_readable": "Magic: Add a Susiezilla [#920] to your hand. Give it ATK +1/HP +1 for every 4 monsters in the enemy dustpile.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        920
+      ],
+      "source_key": "card-919",
+      "source_line": 2738
+    },
+    {
+      "id": 921,
+      "name": "Wicabel",
+      "metadata_name": "Wicabel",
+      "cost": 5,
+      "attack": 3,
+      "health": 7,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:DELAY}}: If its {{HP}} is equal to its {{ATK}}, gain +2 {{ATK}} and fully heal this.",
+      "effect_readable": "Haste. Delay: If its HP is equal to its ATK, gain +2 ATK and fully heal this.",
+      "keyword_mentions": [
+        "DELAY",
+        "HASTE"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-921",
+      "source_line": 2742
+    },
+    {
+      "id": 922,
+      "name": "Cooler Cooler",
+      "metadata_name": "Cooler Cooler",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Shock",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:SHOCK}}: Deal 2 {{DMG}} to this to summon a {{CARD:924|1}}.",
+      "effect_readable": "Shock: Deal 2 DMG to this to summon a Mizzle [#924].",
+      "keyword_mentions": [
+        "SHOCK"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        924
+      ],
+      "source_key": "card-922",
+      "source_line": 2744
+    },
+    {
+      "id": 923,
+      "name": "Pixel Kris",
+      "metadata_name": "Pixel Kris",
+      "cost": 5,
+      "attack": 2,
+      "health": 6,
+      "rarity": "EPIC",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: A monster with base {{COST}} of 2+ {{GOLD}} died this turn. {{KW:MAGIC}}: Gain {{ATK}} equal to the {{ATK}} of the monster in front of this. If it's non-{{RARITY:DETERMINATION}}, make it {{CARD:703|1}}.",
+      "effect_readable": "Need: A monster with base COST of 2+ GOLD died this turn. Magic: Gain ATK equal to the ATK of the monster in front of this. If it's non-DT, make it Proceed [#703].",
+      "keyword_mentions": [
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        703
+      ],
+      "source_key": "card-923",
+      "source_line": 2746
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}

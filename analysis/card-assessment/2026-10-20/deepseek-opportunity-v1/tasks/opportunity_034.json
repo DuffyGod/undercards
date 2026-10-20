@@ -1,0 +1,309 @@
+{
+  "task_id": "opportunity_034",
+  "kind": "opportunity_review",
+  "requested": [
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300
+  ],
+  "probe_ids": [
+    8,
+    225
+  ],
+  "cards": [
+    {
+      "id": 293,
+      "name": "Forest Worm",
+      "metadata_name": "Forest Worm",
+      "cost": 6,
+      "attack": 4,
+      "health": 7,
+      "rarity": "RARE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:HASTE}}. {{KW:MAGIC}}: If there are 7+ monsters in the enemy dustpile, gain +2 {{ATK}}.",
+      "effect_readable": "Haste. Magic: If there are 7+ monsters in the enemy dustpile, gain +2 ATK.",
+      "keyword_mentions": [
+        "HASTE",
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-293",
+      "source_line": 549
+    },
+    {
+      "id": 294,
+      "name": "Rudinn",
+      "metadata_name": "Rudinn",
+      "cost": 3,
+      "attack": 4,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Look at 3 random Deltarune monsters costing 2-4 {{GOLD}} and choose one. Add it to your hand with +1 {{ATK}}.",
+      "effect_readable": "Magic: Look at 3 random Deltarune monsters costing 2-4 GOLD and choose one. Add it to your hand with +1 ATK.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-294",
+      "source_line": 550
+    },
+    {
+      "id": 295,
+      "name": "Jigsawry",
+      "metadata_name": "Jigsawry",
+      "cost": 3,
+      "attack": 4,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: If you control 4 {{CARD:295|4}}, give them {{KW:DODGE}} (1), {{KW:TAUNT}}, and {{KW:CHARGE}}.",
+      "effect_readable": "Magic: If you control 4 Jigsawry [#295], give them Dodge (1), Taunt, and Charge.",
+      "keyword_mentions": [
+        "CHARGE",
+        "DODGE",
+        "MAGIC",
+        "TAUNT"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        295
+      ],
+      "source_key": "card-295",
+      "source_line": 551
+    },
+    {
+      "id": 296,
+      "name": "Jar of Worms",
+      "metadata_name": "Jar of Worms",
+      "cost": 5,
+      "attack": 3,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Summon a {{CARD:373|1}}. If you spent {{GOLD}} on spells last turn, summon another.",
+      "effect_readable": "Magic: Summon a Worm [#373]. If you spent GOLD on spells last turn, summon another.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        373
+      ],
+      "source_key": "card-296",
+      "source_line": 552
+    },
+    {
+      "id": 297,
+      "name": "Starwalker Bird",
+      "metadata_name": "Starwalker Bird",
+      "cost": 5,
+      "attack": 5,
+      "health": 5,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:NEED}}: Your deck has no non-{{KW:GENERATED}} {{RARITY:RARE}} or {{RARITY:EPIC}} cards. {{KW:MAGIC}}: Draw 3 cards.",
+      "effect_readable": "Need: Your deck has no non-Generated RARE or EPIC cards. Magic: Draw 3 cards.",
+      "keyword_mentions": [
+        "GENERATED",
+        "MAGIC",
+        "NEED"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-297",
+      "source_line": 553
+    },
+    {
+      "id": 298,
+      "name": "Rabbick",
+      "metadata_name": "Rabbick",
+      "cost": 4,
+      "attack": 4,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURBO}}: Add a {{CARD:374}}\r\n to your hand. {{KW:DUST}}: Summon a {{CARD:374}}.",
+      "effect_readable": "Turbo: Add a Clean Rabbick [#374]  to your hand. Dust: Summon a Clean Rabbick [#374].",
+      "keyword_mentions": [
+        "DUST",
+        "TURBO"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        374
+      ],
+      "source_key": "card-298",
+      "source_line": 554
+    },
+    {
+      "id": 299,
+      "name": "Politician Bear",
+      "metadata_name": "Politician Bear",
+      "cost": 5,
+      "attack": 4,
+      "health": 3,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [],
+      "target": "ALLY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Deal an ally monster's {{ATK}} as {{DMG}} to the monster in front of it.",
+      "effect_readable": "Magic: Deal an ally monster's ATK as DMG to the monster in front of it.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-299",
+      "source_line": 555
+    },
+    {
+      "id": 300,
+      "name": "Flower Jar",
+      "metadata_name": "Flower Jar",
+      "cost": 2,
+      "attack": 3,
+      "health": 2,
+      "rarity": "COMMON",
+      "card_type": "monster",
+      "soul": null,
+      "set": "DELTARUNE",
+      "tribes": [
+        "PLANT"
+      ],
+      "target": null,
+      "base_statuses": [
+        {
+          "statusType": "NEUTRAL",
+          "name": "Program",
+          "statusBehavior": "STACKABLE",
+          "counter": 2,
+          "displayCounter": true
+        }
+      ],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: {{KW:CATCH}} {{CARD:375|1}}. {{KW:PROGRAM}} (2): {{KW:CATCH}} {{CARD:451|1}}, then spend 2 {{GOLD}} to {{KW:CATCH}} {{CARD:462|1}}. {{KW:DUST}}: Release it.",
+      "effect_readable": "Magic: Catch Green Clover [#375]. Program (2): Catch Red Flower [#451], then spend 2 GOLD to Catch Blue Rose [#462]. Dust: Release it.",
+      "keyword_mentions": [
+        "CATCH",
+        "DUST",
+        "MAGIC",
+        "PROGRAM"
+      ],
+      "tribe_mentions": [],
+      "card_references": [
+        375,
+        451,
+        462
+      ],
+      "source_key": "card-300",
+      "source_line": 556
+    },
+    {
+      "id": 8,
+      "name": "Toriel",
+      "metadata_name": "Toriel",
+      "cost": 8,
+      "attack": 6,
+      "health": 4,
+      "rarity": "LEGENDARY",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": "ENEMY_MONSTER",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:MAGIC}}: Set an enemy monster's {{ATK}} to 1 and gain {{HP}} equal to the amount of {{ATK}} decreased. ",
+      "effect_readable": "Magic: Set an enemy monster's ATK to 1 and gain HP equal to the amount of ATK decreased.",
+      "keyword_mentions": [
+        "MAGIC"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-8",
+      "source_line": 290
+    },
+    {
+      "id": 225,
+      "name": "Fishing Rod",
+      "metadata_name": "Fishing Rod",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "rarity": "BASE",
+      "card_type": "monster",
+      "soul": null,
+      "set": "BASE",
+      "tribes": [],
+      "target": null,
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "effect_raw": "{{KW:TURN_END}}: Draw a card.",
+      "effect_readable": "Turn end: Draw a card.",
+      "keyword_mentions": [
+        "TURN_END"
+      ],
+      "tribe_mentions": [],
+      "card_references": [],
+      "source_key": "card-225",
+      "source_line": 490
+    }
+  ],
+  "purpose": "Agent value-driver and timing review; no numeric Gold grades"
+}
