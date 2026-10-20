@@ -1,0 +1,13 @@
+{
+  "saved_cli_queries": 5,
+  "paired_summaries": 131,
+  "unavailable_comparisons": [
+    {
+      "case": "second/KINDNESS/mid_pressure/t5",
+      "question": "use-draw",
+      "error": "No complete paired evidence for the requested conditions"
+    }
+  ],
+  "failed_search_query_rejected": true,
+  "physical_search_executed": false
+}

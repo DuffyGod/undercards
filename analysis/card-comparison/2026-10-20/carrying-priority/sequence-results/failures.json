@@ -1,0 +1,7 @@
+[
+  {
+    "case": "second/KINDNESS/mid_pressure/t5",
+    "policy": "draw_accelerates_two",
+    "error": "Finite opening graph state cap exceeded; no truncated answer"
+  }
+]

@@ -1,0 +1,324 @@
+{
+  "assessment_kind": "heuristic_constraints",
+  "anchors": [
+    {
+      "cost": 2,
+      "seat": "first",
+      "earliest_own_turn": 1,
+      "gross_gold": 2,
+      "earlier_net_spend_without_delaying": 0,
+      "limitation": "Funds only: card must have arrived and board/targets must permit its use; no extra income"
+    },
+    {
+      "cost": 3,
+      "seat": "first",
+      "earliest_own_turn": 2,
+      "gross_gold": 4,
+      "earlier_net_spend_without_delaying": 1,
+      "limitation": "Funds only: card must have arrived and board/targets must permit its use; no extra income"
+    },
+    {
+      "cost": 5,
+      "seat": "first",
+      "earliest_own_turn": 3,
+      "gross_gold": 7,
+      "earlier_net_spend_without_delaying": 2,
+      "limitation": "Funds only: card must have arrived and board/targets must permit its use; no extra income"
+    },
+    {
+      "cost": 6,
+      "seat": "first",
+      "earliest_own_turn": 3,
+      "gross_gold": 7,
+      "earlier_net_spend_without_delaying": 1,
+      "limitation": "Funds only: card must have arrived and board/targets must permit its use; no extra income"
+    },
+    {
+      "cost": 7,
+      "seat": "first",
+      "earliest_own_turn": 3,
+      "gross_gold": 7,
+      "earlier_net_spend_without_delaying": 0,
+      "limitation": "Funds only: card must have arrived and board/targets must permit its use; no extra income"
+    },
+    {
+      "cost": 9,
+      "seat": "first",
+      "earliest_own_turn": 4,
+      "gross_gold": 11,
+      "earlier_net_spend_without_delaying": 2,
+      "limitation": "Funds only: card must have arrived and board/targets must permit its use; no extra income"
+    },
+    {
+      "cost": 11,
+      "seat": "first",
+      "earliest_own_turn": 4,
+      "gross_gold": 11,
+      "earlier_net_spend_without_delaying": 0,
+      "limitation": "Funds only: card must have arrived and board/targets must permit its use; no extra income"
+    },
+    {
+      "cost": 12,
+      "seat": "first",
+      "earliest_own_turn": 5,
+      "gross_gold": 16,
+      "earlier_net_spend_without_delaying": 4,
+      "limitation": "Funds only: card must have arrived and board/targets must permit its use; no extra income"
+    },
+    {
+      "cost": 2,
+      "seat": "second",
+      "earliest_own_turn": 1,
+      "gross_gold": 3,
+      "earlier_net_spend_without_delaying": 1,
+      "limitation": "Funds only: card must have arrived and board/targets must permit its use; no extra income"
+    },
+    {
+      "cost": 3,
+      "seat": "second",
+      "earliest_own_turn": 1,
+      "gross_gold": 3,
+      "earlier_net_spend_without_delaying": 0,
+      "limitation": "Funds only: card must have arrived and board/targets must permit its use; no extra income"
+    },
+    {
+      "cost": 5,
+      "seat": "second",
+      "earliest_own_turn": 2,
+      "gross_gold": 5,
+      "earlier_net_spend_without_delaying": 0,
+      "limitation": "Funds only: card must have arrived and board/targets must permit its use; no extra income"
+    },
+    {
+      "cost": 6,
+      "seat": "second",
+      "earliest_own_turn": 3,
+      "gross_gold": 9,
+      "earlier_net_spend_without_delaying": 3,
+      "limitation": "Funds only: card must have arrived and board/targets must permit its use; no extra income"
+    },
+    {
+      "cost": 7,
+      "seat": "second",
+      "earliest_own_turn": 3,
+      "gross_gold": 9,
+      "earlier_net_spend_without_delaying": 2,
+      "limitation": "Funds only: card must have arrived and board/targets must permit its use; no extra income"
+    },
+    {
+      "cost": 9,
+      "seat": "second",
+      "earliest_own_turn": 3,
+      "gross_gold": 9,
+      "earlier_net_spend_without_delaying": 0,
+      "limitation": "Funds only: card must have arrived and board/targets must permit its use; no extra income"
+    },
+    {
+      "cost": 11,
+      "seat": "second",
+      "earliest_own_turn": 4,
+      "gross_gold": 13,
+      "earlier_net_spend_without_delaying": 2,
+      "limitation": "Funds only: card must have arrived and board/targets must permit its use; no extra income"
+    },
+    {
+      "cost": 12,
+      "seat": "second",
+      "earliest_own_turn": 4,
+      "gross_gold": 13,
+      "earlier_net_spend_without_delaying": 1,
+      "limitation": "Funds only: card must have arrived and board/targets must permit its use; no extra income"
+    }
+  ],
+  "opener_probabilities": [
+    {
+      "effective_openers": 4,
+      "seen": 3,
+      "probability": 0.4217391304347826
+    },
+    {
+      "effective_openers": 6,
+      "seen": 3,
+      "probability": 0.578695652173913
+    },
+    {
+      "effective_openers": 8,
+      "seen": 3,
+      "probability": 0.7043478260869565
+    },
+    {
+      "effective_openers": 10,
+      "seen": 3,
+      "probability": 0.8021739130434783
+    },
+    {
+      "effective_openers": 11,
+      "seen": 3,
+      "probability": 0.8417391304347825
+    },
+    {
+      "effective_openers": 4,
+      "seen": 4,
+      "probability": 0.5268774703557313
+    },
+    {
+      "effective_openers": 6,
+      "seen": 4,
+      "probability": 0.693596837944664
+    },
+    {
+      "effective_openers": 8,
+      "seen": 4,
+      "probability": 0.8118577075098814
+    },
+    {
+      "effective_openers": 10,
+      "seen": 4,
+      "probability": 0.892094861660079
+    },
+    {
+      "effective_openers": 11,
+      "seen": 4,
+      "probability": 0.9208695652173913
+    }
+  ],
+  "opener_count_conditions": [
+    {
+      "seen": 3,
+      "target": 0.7,
+      "minimum_effective_openers": 8
+    },
+    {
+      "seen": 3,
+      "target": 0.8,
+      "minimum_effective_openers": 10
+    },
+    {
+      "seen": 3,
+      "target": 0.9,
+      "minimum_effective_openers": 13
+    },
+    {
+      "seen": 4,
+      "target": 0.7,
+      "minimum_effective_openers": 7
+    },
+    {
+      "seen": 4,
+      "target": 0.8,
+      "minimum_effective_openers": 8
+    },
+    {
+      "seen": 4,
+      "target": 0.9,
+      "minimum_effective_openers": 11
+    }
+  ],
+  "blocked_opening": [
+    {
+      "unavailable_cards": 4,
+      "seen": 4,
+      "probability_at_least_three": 0.0067193675889328066
+    },
+    {
+      "unavailable_cards": 6,
+      "seen": 4,
+      "probability_at_least_three": 0.031225296442687747
+    },
+    {
+      "unavailable_cards": 8,
+      "seen": 4,
+      "probability_at_least_three": 0.08079051383399209
+    },
+    {
+      "unavailable_cards": 10,
+      "seen": 4,
+      "probability_at_least_three": 0.15889328063241107
+    },
+    {
+      "unavailable_cards": 12,
+      "seen": 4,
+      "probability_at_least_three": 0.26521739130434785
+    }
+  ],
+  "long_game_flow": [
+    {
+      "actual_cost_cap": 2,
+      "turn": 10,
+      "seat": "first",
+      "maximum_seen_cards": 13,
+      "maximum_possible_spending": 26,
+      "minimum_unspent_gold": 30,
+      "limitation": "Excludes extra draws/additions/replay/Program/other expenditure; ignores board crowding, so this spending ceiling is generous"
+    },
+    {
+      "actual_cost_cap": 3,
+      "turn": 10,
+      "seat": "first",
+      "maximum_seen_cards": 13,
+      "maximum_possible_spending": 39,
+      "minimum_unspent_gold": 17,
+      "limitation": "Excludes extra draws/additions/replay/Program/other expenditure; ignores board crowding, so this spending ceiling is generous"
+    },
+    {
+      "actual_cost_cap": 4,
+      "turn": 10,
+      "seat": "first",
+      "maximum_seen_cards": 13,
+      "maximum_possible_spending": 52,
+      "minimum_unspent_gold": 4,
+      "limitation": "Excludes extra draws/additions/replay/Program/other expenditure; ignores board crowding, so this spending ceiling is generous"
+    },
+    {
+      "actual_cost_cap": 5,
+      "turn": 10,
+      "seat": "first",
+      "maximum_seen_cards": 13,
+      "maximum_possible_spending": 56,
+      "minimum_unspent_gold": 0,
+      "limitation": "Excludes extra draws/additions/replay/Program/other expenditure; ignores board crowding, so this spending ceiling is generous"
+    },
+    {
+      "actual_cost_cap": 2,
+      "turn": 10,
+      "seat": "second",
+      "maximum_seen_cards": 13,
+      "maximum_possible_spending": 26,
+      "minimum_unspent_gold": 35,
+      "limitation": "Excludes extra draws/additions/replay/Program/other expenditure; ignores board crowding, so this spending ceiling is generous"
+    },
+    {
+      "actual_cost_cap": 3,
+      "turn": 10,
+      "seat": "second",
+      "maximum_seen_cards": 13,
+      "maximum_possible_spending": 39,
+      "minimum_unspent_gold": 22,
+      "limitation": "Excludes extra draws/additions/replay/Program/other expenditure; ignores board crowding, so this spending ceiling is generous"
+    },
+    {
+      "actual_cost_cap": 4,
+      "turn": 10,
+      "seat": "second",
+      "maximum_seen_cards": 13,
+      "maximum_possible_spending": 52,
+      "minimum_unspent_gold": 9,
+      "limitation": "Excludes extra draws/additions/replay/Program/other expenditure; ignores board crowding, so this spending ceiling is generous"
+    },
+    {
+      "actual_cost_cap": 5,
+      "turn": 10,
+      "seat": "second",
+      "maximum_seen_cards": 13,
+      "maximum_possible_spending": 61,
+      "minimum_unspent_gold": 0,
+      "limitation": "Excludes extra draws/additions/replay/Program/other expenditure; ignores board crowding, so this spending ceiling is generous"
+    }
+  ],
+  "assumptions": [
+    "Uniform shuffle without replacement; no mulligan model or measured metagame frequencies",
+    "An effective opener must be useful under the declared target, not merely cheap enough",
+    "Initial hand3; normal draw1 at each own turn including t1 is a disclosed convention",
+    "Counts are conditional constraints, not a recommended final deck composition"
+  ]
+}

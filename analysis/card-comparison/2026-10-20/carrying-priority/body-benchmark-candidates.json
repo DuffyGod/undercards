@@ -1,0 +1,547 @@
+{
+  "scope": "Read-only card-text curation, no old experiment executed, no whole-card quality labels or metagame frequencies",
+  "source": "skills/undercards/references/snapshot.json; compiled 2026-10-05; not server-current guarantee",
+  "cost_counts_0_to_12_all_shared_ordinary_monsters": {
+    "0": 1,
+    "1": 28,
+    "2": 51,
+    "3": 106,
+    "4": 131,
+    "5": 95,
+    "6": 97,
+    "7": 54,
+    "8": 27,
+    "9": 32,
+    "10": 23,
+    "11": 15,
+    "12": 3
+  },
+  "candidates_and_exclusions": [
+    {
+      "id": 196,
+      "name": "Tiny Froggit",
+      "cost": 0,
+      "attack": 1,
+      "health": 1,
+      "rarity": "COMMON",
+      "tribes": [
+        "FROGGIT"
+      ],
+      "base_statuses": [],
+      "effect_raw": " ",
+      "effect_readable": "",
+      "source_key": "card-196",
+      "source_line": 471,
+      "benchmark_tier": "literal_body",
+      "scope_note": "无费用、无卡面机制；仍占1手牌与1格"
+    },
+    {
+      "id": 1,
+      "name": "Dummy",
+      "cost": 1,
+      "attack": 0,
+      "health": 4,
+      "rarity": "BASE",
+      "tribes": [],
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "effect_raw": "{{KW:TAUNT}}.",
+      "effect_readable": "Taunt.",
+      "source_key": "card-1",
+      "source_line": 283,
+      "benchmark_tier": "literal_static_defense",
+      "scope_note": "0/4 Taunt；不能当无作用填充体"
+    },
+    {
+      "id": 2,
+      "name": "Froggit",
+      "cost": 2,
+      "attack": 2,
+      "health": 3,
+      "rarity": "BASE",
+      "tribes": [
+        "FROGGIT"
+      ],
+      "base_statuses": [],
+      "effect_raw": " ",
+      "effect_readable": "",
+      "source_key": "card-2",
+      "source_line": 284,
+      "benchmark_tier": "literal_body",
+      "scope_note": "普通2/3；种族/牌名外部配合不在身体比较内"
+    },
+    {
+      "id": 4,
+      "name": "Moldsmal",
+      "cost": 2,
+      "attack": 3,
+      "health": 2,
+      "rarity": "BASE",
+      "tribes": [
+        "MOLD"
+      ],
+      "base_statuses": [],
+      "effect_raw": " ",
+      "effect_readable": "",
+      "source_key": "card-4",
+      "source_line": 286,
+      "benchmark_tier": "literal_body",
+      "scope_note": "普通3/2；种族/牌名外部配合不在身体比较内"
+    },
+    {
+      "id": 602,
+      "name": "Rock Pet",
+      "cost": 2,
+      "attack": 3,
+      "health": 3,
+      "rarity": "RARE",
+      "tribes": [],
+      "base_statuses": [],
+      "effect_raw": " ",
+      "effect_readable": "",
+      "source_key": "card-602",
+      "source_line": 1985,
+      "benchmark_tier": "literal_body",
+      "scope_note": "普通3/3；同费身体坐标支配2/3、3/2，仅限不涉及外部配合的局部身体比较"
+    },
+    {
+      "id": 175,
+      "name": "Charles",
+      "cost": 2,
+      "attack": 3,
+      "health": 1,
+      "rarity": "BASE",
+      "tribes": [],
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Armor",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "effect_raw": "{{KW:ARMOR}}.",
+      "effect_readable": "Armor.",
+      "source_key": "card-175",
+      "source_line": 452,
+      "benchmark_tier": "literal_static_defense",
+      "scope_note": "3/1 Armor；每次减1，不是额外1HP"
+    },
+    {
+      "id": 187,
+      "name": "Candy Dish",
+      "cost": 3,
+      "attack": 2,
+      "health": 6,
+      "rarity": "COMMON",
+      "tribes": [],
+      "base_statuses": [],
+      "effect_raw": " ",
+      "effect_readable": "",
+      "source_key": "card-187",
+      "source_line": 464,
+      "benchmark_tier": "literal_body",
+      "scope_note": "普通2/6；不能按6HP就当保脸"
+    },
+    {
+      "id": 377,
+      "name": "Ranger Rudinn",
+      "cost": 3,
+      "attack": 3,
+      "health": 2,
+      "rarity": "BASE",
+      "tribes": [],
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Dodge",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "effect_raw": "{{KW:DODGE}} (1).",
+      "effect_readable": "Dodge (1).",
+      "source_key": "card-377",
+      "source_line": 601,
+      "benchmark_tier": "literal_static_defense",
+      "scope_note": "3/2 Dodge1；大攻击/多次攻击与攻击顺序必须区分"
+    },
+    {
+      "id": 15,
+      "name": "Aaron",
+      "cost": 5,
+      "attack": 6,
+      "health": 5,
+      "rarity": "BASE",
+      "tribes": [],
+      "base_statuses": [],
+      "effect_raw": " ",
+      "effect_readable": "",
+      "source_key": "card-15",
+      "source_line": 297,
+      "benchmark_tier": "literal_body",
+      "scope_note": "普通6/5，旧共同锚F(6,5)=5，不是已测强度"
+    },
+    {
+      "id": 168,
+      "name": "Sad Dragon",
+      "cost": 6,
+      "attack": 5,
+      "health": 5,
+      "rarity": "COMMON",
+      "tribes": [],
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Dodge",
+          "statusBehavior": "STACKABLE",
+          "counter": 1,
+          "displayCounter": true
+        }
+      ],
+      "effect_raw": "{{KW:DODGE}} (1).",
+      "effect_readable": "Dodge (1).",
+      "source_key": "card-168",
+      "source_line": 445,
+      "benchmark_tier": "literal_static_defense",
+      "scope_note": "5/5 Dodge1；不可固定加防护分"
+    },
+    {
+      "id": 9,
+      "name": "Ice Cap",
+      "cost": 3,
+      "attack": 3,
+      "health": 1,
+      "rarity": "BASE",
+      "tribes": [],
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Charge",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "effect_raw": "{{KW:CHARGE}}.",
+      "effect_readable": "Charge.",
+      "source_key": "card-9",
+      "source_line": 291,
+      "benchmark_tier": "immediate_attack_operator_required",
+      "scope_note": "3/1 Charge；不能与普通新下3/1等价"
+    },
+    {
+      "id": 115,
+      "name": "Spider",
+      "cost": 1,
+      "attack": 2,
+      "health": 1,
+      "rarity": "COMMON",
+      "tribes": [
+        "ARACHNID"
+      ],
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Haste",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "effect_raw": "{{KW:HASTE}}.",
+      "effect_readable": "Haste.",
+      "source_key": "card-115",
+      "source_line": 397,
+      "benchmark_tier": "immediate_attack_operator_required",
+      "scope_note": "2/1 Haste；不能与普通新下2/1等价"
+    },
+    {
+      "id": 38,
+      "name": "Royal Guard 1",
+      "cost": 9,
+      "attack": 7,
+      "health": 10,
+      "rarity": "COMMON",
+      "tribes": [
+        "ROYAL_GUARD"
+      ],
+      "base_statuses": [],
+      "effect_raw": "{{KW:DUST}}: Give all ally {{TRIBE:ROYAL_GUARD|2}} {{KW:ARMOR}}.",
+      "effect_readable": "Dust: Give all ally Royal Guard Armor.",
+      "source_key": "card-38",
+      "source_line": 320,
+      "benchmark_tier": "conditional_current_body",
+      "scope_note": "本窗口无其他友方RoyalGuard，Dust无受益者；截止后相关价值未知"
+    },
+    {
+      "id": 64,
+      "name": "Mettaton EX",
+      "cost": 10,
+      "attack": 6,
+      "health": 8,
+      "rarity": "LEGENDARY",
+      "tribes": [],
+      "base_statuses": [],
+      "effect_raw": "{{KW:MAGIC}}: If either player has 10+ {{GOLD}} (after spending {{GOLD}} on this), set both players' {{GOLD}} to 0.",
+      "effect_readable": "Magic: If either player has 10+ GOLD (after spending GOLD on this), set both players' GOLD to 0.",
+      "source_key": "card-64",
+      "source_line": 346,
+      "benchmark_tier": "conditional_current_body",
+      "scope_note": "己方支付后及敌方均<10G时Magic不触发；改变余额须重建"
+    },
+    {
+      "id": 13,
+      "name": "Woshua",
+      "cost": 4,
+      "attack": 3,
+      "health": 5,
+      "rarity": "BASE",
+      "tribes": [],
+      "base_statuses": [],
+      "effect_raw": "{{KW:MAGIC}}: Give all enemy monsters -1 {{ATK}}.",
+      "effect_readable": "Magic: Give all enemy monsters -1 ATK.",
+      "source_key": "card-13",
+      "source_line": 295,
+      "benchmark_tier": "instant_effect_operator_required",
+      "scope_note": "3/5只是身体部分，还必须结算敌群降攻"
+    },
+    {
+      "id": 20,
+      "name": "Vulkin",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "rarity": "BASE",
+      "tribes": [],
+      "base_statuses": [],
+      "effect_raw": "{{KW:MAGIC}}: Deal {{DMG:2}}.",
+      "effect_readable": "Magic: Deal DMG 2.",
+      "source_key": "card-20",
+      "source_line": 302,
+      "benchmark_tier": "instant_effect_operator_required",
+      "scope_note": "4/4只是身体部分，Magic2伤可能决定清除/保命"
+    },
+    {
+      "id": 307,
+      "name": "Bloody Tree",
+      "cost": 4,
+      "attack": 4,
+      "health": 5,
+      "rarity": "BASE",
+      "tribes": [
+        "PLANT"
+      ],
+      "base_statuses": [],
+      "effect_raw": "{{KW:TURN_START}}: Gain +1 {{ATK}}.",
+      "effect_readable": "Turn start: Gain +1 ATK.",
+      "source_key": "card-307",
+      "source_line": 561,
+      "benchmark_tier": "time_dependent_positive_body",
+      "scope_note": "当前4/5，留至下次己方开始变5/5；不能把早下与晚抽等价"
+    },
+    {
+      "id": 53,
+      "name": "Napstablook",
+      "cost": 3,
+      "attack": 5,
+      "health": 5,
+      "rarity": "EPIC",
+      "tribes": [],
+      "base_statuses": [],
+      "effect_raw": "{{KW:TURN_END}}: Lose 1 {{ATK}}. If this has 0 {{ATK}}, kill this.",
+      "effect_readable": "Turn end: Lose 1 ATK. If this has 0 ATK, kill this.",
+      "source_key": "card-53",
+      "source_line": 335,
+      "benchmark_tier": "not_a_free_printed_body",
+      "scope_note": "3G印刷5/5不等于第一次敌回应时5/5；己回合末先失1ATK，通常成为4/5，后续继续衰减。"
+    },
+    {
+      "id": 112,
+      "name": "Ice Wolf",
+      "cost": 6,
+      "attack": 6,
+      "health": 9,
+      "rarity": "RARE",
+      "tribes": [],
+      "base_statuses": [],
+      "effect_raw": "{{KW:DUST}}: Summon an {{CARD:10}} for the opponent.",
+      "effect_readable": "Dust: Summon an Ice [#10] for the opponent.",
+      "source_key": "card-112",
+      "source_line": 394,
+      "benchmark_tier": "not_a_free_printed_body",
+      "scope_note": "6G6/9死亡会给敌方召唤Ice：2/4 Taunt，且Dust麻痹击杀者；不能把9HP高效当免费。"
+    },
+    {
+      "id": 218,
+      "name": "Hand Receptionist",
+      "cost": 3,
+      "attack": 4,
+      "health": 5,
+      "rarity": "EPIC",
+      "tribes": [],
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Summon a random monster from the enemy hand for the opponent.",
+      "effect_readable": "Taunt. Magic: Summon a random monster from the enemy hand for the opponent.",
+      "source_key": "card-218",
+      "source_line": 483,
+      "benchmark_tier": "not_a_free_printed_body",
+      "scope_note": "3G4/5 Taunt会给敌方从其手牌随机召唤怪，风险依赖敌手牌/空间与触发。"
+    },
+    {
+      "id": 226,
+      "name": "Microwave",
+      "cost": 1,
+      "attack": 3,
+      "health": 2,
+      "rarity": "COMMON",
+      "tribes": [],
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Taunt",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "effect_raw": "{{KW:TAUNT}}. {{KW:MAGIC}}: Choose a card in your hand to {{KW:ERASE}}.",
+      "effect_readable": "Taunt. Magic: Choose a card in your hand to Erase.",
+      "source_key": "card-226",
+      "source_line": 491,
+      "benchmark_tier": "not_a_free_printed_body",
+      "scope_note": "1G3/2 Taunt需Erase自己手牌一张；不等于只用1张牌的高效低费实体。"
+    },
+    {
+      "id": 228,
+      "name": "Tree",
+      "cost": 4,
+      "attack": 4,
+      "health": 7,
+      "rarity": "COMMON",
+      "tribes": [
+        "PLANT"
+      ],
+      "base_statuses": [],
+      "effect_raw": "{{KW:MAGIC}}: Deal 2 {{DMG}} to this. {{KW:SYNERGY}}: Heal 2 {{HP}} to all allies.",
+      "effect_readable": "Magic: Deal 2 DMG to this. Synergy: Heal 2 HP to all allies.",
+      "source_key": "card-228",
+      "source_line": 493,
+      "benchmark_tier": "not_a_free_printed_body",
+      "scope_note": "4G4/7 Magic先自伤2，普通独立出场为4/5；Synergy可改变伤势，须按实际顺序。"
+    },
+    {
+      "id": 292,
+      "name": "The Warrior",
+      "cost": 6,
+      "attack": 7,
+      "health": 9,
+      "rarity": "RARE",
+      "tribes": [],
+      "base_statuses": [],
+      "effect_raw": "{{KW:MAGIC}}: Deal 5 {{DMG}} to this.",
+      "effect_readable": "Magic: Deal 5 DMG to this.",
+      "source_key": "card-292",
+      "source_line": 548,
+      "benchmark_tier": "not_a_free_printed_body",
+      "scope_note": "6G7/9 Magic先自伤5，普通独立出场为7/4；Kindness后可能治1，不能直接用9HP抗性。"
+    },
+    {
+      "id": 529,
+      "name": "Vine",
+      "cost": 12,
+      "attack": 7,
+      "health": 7,
+      "rarity": "EPIC",
+      "tribes": [
+        "PLANT"
+      ],
+      "base_statuses": [],
+      "effect_raw": "In your hand, this has -1 {{COST}} for each {{TRIBE:PLANT|1}} you've played this game (max. -9 {{COST}}).",
+      "effect_readable": "In your hand, this has -1 COST for each Plant you've played this game (max. -9 COST).",
+      "source_key": "card-529",
+      "source_line": 1817,
+      "benchmark_tier": "not_a_free_printed_body",
+      "scope_note": "12G7/7按本局先前打过Plant减费至最低3G，印刷费用不能当实际卡手区间。"
+    },
+    {
+      "id": 840,
+      "name": "Bowll",
+      "cost": 7,
+      "attack": 8,
+      "health": 9,
+      "rarity": "RARE",
+      "tribes": [],
+      "base_statuses": [
+        {
+          "statusType": "POSITIVE",
+          "name": "Armor",
+          "statusBehavior": "UNIQUE",
+          "counter": 1,
+          "displayCounter": false
+        }
+      ],
+      "effect_raw": "{{KW:ARMOR}}. This takes +2 {{DMG}} from enemy monsters and spells.",
+      "effect_readable": "Armor. This takes +2 DMG from enemy monsters and spells.",
+      "source_key": "card-840",
+      "source_line": 2539,
+      "benchmark_tier": "not_a_free_printed_body",
+      "scope_note": "7G8/9 Armor却额外承受敌怪/法术+2DMG；一般正伤实例净为原伤害+1，而非原伤害-1。"
+    },
+    {
+      "id": 888,
+      "name": "White Cloak",
+      "cost": 8,
+      "attack": 8,
+      "health": 8,
+      "rarity": "EPIC",
+      "tribes": [],
+      "base_statuses": [],
+      "effect_raw": "{{KW:NEED}}: 7+ {{RARITY:TOKEN}} monsters in your dustpile. {{KW:MAGIC}}: {{KW:ERASE}} them and add a 2-{{COST}} {{CARD:712|1}} to your hand.",
+      "effect_readable": "Need: 7+ TOKEN monsters in your dustpile. Magic: Erase them and add a 2-COST Ice Crystal [#712] to your hand.",
+      "source_key": "card-888",
+      "source_line": 2659,
+      "benchmark_tier": "not_a_free_printed_body",
+      "scope_note": "8G8/8有Need驱动的死亡区转换；Need未满足不禁止身体出场，但不能将触发收益或条件都删掉后评整卡。"
+    },
+    {
+      "id": 616,
+      "name": "Banana",
+      "cost": 9,
+      "attack": 10,
+      "health": 10,
+      "rarity": "COMMON",
+      "tribes": [
+        "PLANT"
+      ],
+      "base_statuses": [],
+      "effect_raw": "POTASSIUM",
+      "effect_readable": "POTASSIUM",
+      "source_key": "card-616",
+      "source_line": 2015,
+      "benchmark_tier": "not_a_free_printed_body",
+      "scope_note": "9G10/10文本POTASSIUM，是否纯风味须公开假设；不将解释直接升级为已核实白板。"
+    }
+  ],
+  "important_gap": "Strict body/static-defense exemplars sparse at 4G and >=7G; printed-stat upper envelope over all cards is not a valid body-efficiency frontier",
+  "new_physical_experiments_executed": false,
+  "old_experiments_executed": false,
+  "api_calls": 0
+}

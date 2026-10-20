@@ -1,0 +1,936 @@
+[
+  {
+    "command": [
+      "python",
+      "analysis/card-comparison/2026-10-20/carrying-priority/query_sequences.py",
+      "--question",
+      "bridge-heavy",
+      "--seat",
+      "second",
+      "--enemy",
+      "mid_pressure"
+    ],
+    "output": {
+      "assessment_kind": "heuristic",
+      "empirically_calibrated": false,
+      "question": "bridge-heavy",
+      "case": "second/INTEGRITY/mid_pressure/t4",
+      "left_policy": "bridge_9",
+      "right_policy": "save_9_at3",
+      "cash_price": 0.5,
+      "hand_price": 1,
+      "common_setting_differences": [
+        {
+          "setting": "central",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 0.7810650201875582
+        },
+        {
+          "setting": "corner_000",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -0.46982020159081017
+        },
+        {
+          "setting": "corner_001",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 1.6708486083416174
+        },
+        {
+          "setting": "corner_010",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -0.21694599537605885
+        },
+        {
+          "setting": "corner_011",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 1.298281493200034
+        },
+        {
+          "setting": "corner_100",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -0.492704274714173
+        },
+        {
+          "setting": "corner_101",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 1.6106238321802833
+        },
+        {
+          "setting": "corner_110",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -0.22039999181110304
+        },
+        {
+          "setting": "corner_111",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 1.2476121205296709
+        }
+      ],
+      "range": [
+        -0.492704274714173,
+        1.6708486083416174
+      ],
+      "representative_setting": "central",
+      "left": {
+        "own_hp": 15,
+        "enemy_hp": 21,
+        "own_cash": 3,
+        "remaining_hand": [
+          243,
+          15,
+          1,
+          187,
+          2
+        ],
+        "own_field": [
+          {
+            "key": 0,
+            "cid": 602,
+            "a": 3,
+            "h": 3,
+            "max_h": 3,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          },
+          {
+            "key": 1,
+            "cid": 38,
+            "a": 7,
+            "h": 10,
+            "max_h": 10,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          }
+        ],
+        "enemy_field": [
+          {
+            "key": 0,
+            "cid": 602,
+            "a": 3,
+            "h": 3,
+            "max_h": 3,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          },
+          {
+            "key": 1,
+            "cid": 15,
+            "a": 6,
+            "h": 5,
+            "max_h": 5,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          }
+        ],
+        "own_played": 2,
+        "own_bonus_draws": 0,
+        "own_burned": 0
+      },
+      "right": {
+        "own_hp": 15,
+        "enemy_hp": 30,
+        "own_cash": 5,
+        "remaining_hand": [
+          602,
+          243,
+          15,
+          1,
+          187,
+          2
+        ],
+        "own_field": [
+          {
+            "key": 0,
+            "cid": 38,
+            "a": 7,
+            "h": 4,
+            "max_h": 10,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          }
+        ],
+        "enemy_field": [
+          {
+            "key": 0,
+            "cid": 602,
+            "a": 3,
+            "h": 3,
+            "max_h": 3,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          }
+        ],
+        "own_played": 1,
+        "own_bonus_draws": 0,
+        "own_burned": 0
+      },
+      "source_left": {
+        "folder": "sequence-results",
+        "producer": "fee722fb4078dc00cbb8ae9a4a99c4645cf7e300"
+      },
+      "source_right": {
+        "folder": "sequence-earliest",
+        "producer": "37019d2c6c39b9bb3aabc0f3d3df0a1e1793bbc1"
+      },
+      "scope": "Known-arrival fixed deployments; combat optimized, no metagame frequencies or deck proportions",
+      "deadline_warning": "Ends after both players completed the named own-turn count; a second-player fresh body has not faced the NEXT first-player turn",
+      "witness_warning": "A worst-value continuation, not separate worst HP/body bounds"
+    }
+  },
+  {
+    "command": [
+      "python",
+      "analysis/card-comparison/2026-10-20/carrying-priority/query_sequences.py",
+      "--question",
+      "timing",
+      "--enemy",
+      "mid_pressure"
+    ],
+    "output": {
+      "assessment_kind": "heuristic",
+      "empirically_calibrated": false,
+      "question": "timing",
+      "case": "first/INTEGRITY/mid_pressure/t4",
+      "left_policy": "staggered_three",
+      "right_policy": "late_same_three",
+      "cash_price": 0.5,
+      "hand_price": 1,
+      "common_setting_differences": [
+        {
+          "setting": "central",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 4.378637911826085
+        },
+        {
+          "setting": "corner_000",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 3.697469952098314
+        },
+        {
+          "setting": "corner_001",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 6.0
+        },
+        {
+          "setting": "corner_010",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 3.3162030482826177
+        },
+        {
+          "setting": "corner_011",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 6.000000000000002
+        },
+        {
+          "setting": "corner_100",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 3.622445349532267
+        },
+        {
+          "setting": "corner_101",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 6.000000000000001
+        },
+        {
+          "setting": "corner_110",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 3.253082024193107
+        },
+        {
+          "setting": "corner_111",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 6.0
+        }
+      ],
+      "range": [
+        3.253082024193107,
+        6.000000000000002
+      ],
+      "representative_setting": "central",
+      "left": {
+        "own_hp": 21,
+        "enemy_hp": 21,
+        "own_cash": 2,
+        "remaining_hand": [
+          38,
+          243,
+          1,
+          2
+        ],
+        "own_field": [
+          {
+            "key": 0,
+            "cid": 602,
+            "a": 3,
+            "h": 3,
+            "max_h": 3,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          },
+          {
+            "key": 2,
+            "cid": 187,
+            "a": 2,
+            "h": 6,
+            "max_h": 6,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          }
+        ],
+        "enemy_field": [
+          {
+            "key": 0,
+            "cid": 602,
+            "a": 3,
+            "h": 3,
+            "max_h": 3,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          }
+        ],
+        "own_played": 3,
+        "own_bonus_draws": 0,
+        "own_burned": 0
+      },
+      "right": {
+        "own_hp": 21,
+        "enemy_hp": 30,
+        "own_cash": 2,
+        "remaining_hand": [
+          38,
+          243,
+          1,
+          2
+        ],
+        "own_field": [
+          {
+            "key": 0,
+            "cid": 602,
+            "a": 3,
+            "h": 3,
+            "max_h": 3,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          },
+          {
+            "key": 1,
+            "cid": 15,
+            "a": 6,
+            "h": 5,
+            "max_h": 5,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          }
+        ],
+        "enemy_field": [
+          {
+            "key": 0,
+            "cid": 602,
+            "a": 3,
+            "h": 3,
+            "max_h": 3,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          },
+          {
+            "key": 1,
+            "cid": 15,
+            "a": 6,
+            "h": 3,
+            "max_h": 5,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          }
+        ],
+        "own_played": 3,
+        "own_bonus_draws": 0,
+        "own_burned": 0
+      },
+      "source_left": {
+        "folder": "sequence-results",
+        "producer": "fee722fb4078dc00cbb8ae9a4a99c4645cf7e300"
+      },
+      "source_right": {
+        "folder": "sequence-results",
+        "producer": "fee722fb4078dc00cbb8ae9a4a99c4645cf7e300"
+      },
+      "scope": "Known-arrival fixed deployments; combat optimized, no metagame frequencies or deck proportions",
+      "deadline_warning": "Ends after both players completed the named own-turn count; a second-player fresh body has not faced the NEXT first-player turn",
+      "witness_warning": "A worst-value continuation, not separate worst HP/body bounds"
+    }
+  },
+  {
+    "command": [
+      "python",
+      "analysis/card-comparison/2026-10-20/carrying-priority/query_sequences.py",
+      "--question",
+      "use-draw",
+      "--seat",
+      "second",
+      "--enemy",
+      "empty"
+    ],
+    "output": {
+      "assessment_kind": "heuristic",
+      "empirically_calibrated": false,
+      "question": "use-draw",
+      "case": "second/INTEGRITY/empty/t4",
+      "left_policy": "draw_accelerates_two",
+      "right_policy": "normal_two_later",
+      "cash_price": 0.5,
+      "hand_price": 1,
+      "common_setting_differences": [
+        {
+          "setting": "central",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 0.9349634514602307
+        },
+        {
+          "setting": "corner_000",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 0.8967875464718951
+        },
+        {
+          "setting": "corner_001",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 1.1467875464718986
+        },
+        {
+          "setting": "corner_010",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 0.8135027067147327
+        },
+        {
+          "setting": "corner_011",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 1.0635027067147327
+        },
+        {
+          "setting": "corner_100",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 0.8432539772863556
+        },
+        {
+          "setting": "corner_101",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 1.0932539772863556
+        },
+        {
+          "setting": "corner_110",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 0.7684628985107054
+        },
+        {
+          "setting": "corner_111",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": 1.0184628985107054
+        }
+      ],
+      "range": [
+        0.7684628985107054,
+        1.1467875464718986
+      ],
+      "representative_setting": "central",
+      "left": {
+        "own_hp": 30,
+        "enemy_hp": 14,
+        "own_cash": 2,
+        "remaining_hand": [
+          38,
+          15,
+          1,
+          377
+        ],
+        "own_field": [
+          {
+            "key": 0,
+            "cid": 602,
+            "a": 3,
+            "h": 3,
+            "max_h": 3,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          },
+          {
+            "key": 1,
+            "cid": 243,
+            "a": 5,
+            "h": 5,
+            "max_h": 5,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          },
+          {
+            "key": 2,
+            "cid": 2,
+            "a": 2,
+            "h": 3,
+            "max_h": 3,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          },
+          {
+            "key": 3,
+            "cid": 187,
+            "a": 2,
+            "h": 6,
+            "max_h": 6,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          }
+        ],
+        "enemy_field": [],
+        "own_played": 4,
+        "own_bonus_draws": 1,
+        "own_burned": 0
+      },
+      "right": {
+        "own_hp": 30,
+        "enemy_hp": 15,
+        "own_cash": 2,
+        "remaining_hand": [
+          38,
+          243,
+          1
+        ],
+        "own_field": [
+          {
+            "key": 0,
+            "cid": 602,
+            "a": 3,
+            "h": 3,
+            "max_h": 3,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          },
+          {
+            "key": 1,
+            "cid": 15,
+            "a": 6,
+            "h": 5,
+            "max_h": 5,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          },
+          {
+            "key": 2,
+            "cid": 2,
+            "a": 2,
+            "h": 3,
+            "max_h": 3,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          },
+          {
+            "key": 3,
+            "cid": 187,
+            "a": 2,
+            "h": 6,
+            "max_h": 6,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          }
+        ],
+        "enemy_field": [],
+        "own_played": 4,
+        "own_bonus_draws": 0,
+        "own_burned": 0
+      },
+      "source_left": {
+        "folder": "sequence-results",
+        "producer": "fee722fb4078dc00cbb8ae9a4a99c4645cf7e300"
+      },
+      "source_right": {
+        "folder": "sequence-results",
+        "producer": "fee722fb4078dc00cbb8ae9a4a99c4645cf7e300"
+      },
+      "scope": "Known-arrival fixed deployments; combat optimized, no metagame frequencies or deck proportions",
+      "deadline_warning": "Ends after both players completed the named own-turn count; a second-player fresh body has not faced the NEXT first-player turn",
+      "witness_warning": "A worst-value continuation, not separate worst HP/body bounds"
+    }
+  },
+  {
+    "command": [
+      "python",
+      "analysis/card-comparison/2026-10-20/carrying-priority/query_sequences.py",
+      "--question",
+      "mid-versus-heavy",
+      "--seat",
+      "second",
+      "--soul",
+      "KINDNESS",
+      "--enemy",
+      "mid_pressure",
+      "--horizon",
+      "5"
+    ],
+    "output": {
+      "assessment_kind": "heuristic",
+      "empirically_calibrated": false,
+      "question": "mid-versus-heavy",
+      "case": "second/KINDNESS/mid_pressure/t5",
+      "left_policy": "bridge_5",
+      "right_policy": "save_9_at3",
+      "cash_price": 0.5,
+      "hand_price": 1,
+      "common_setting_differences": [
+        {
+          "setting": "central",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -1.6741838341915152
+        },
+        {
+          "setting": "corner_000",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -2.289017462290442
+        },
+        {
+          "setting": "corner_001",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -0.11282396224562774
+        },
+        {
+          "setting": "corner_010",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -2.725656989070746
+        },
+        {
+          "setting": "corner_011",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -0.725656989070746
+        },
+        {
+          "setting": "corner_100",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -2.3532718213264054
+        },
+        {
+          "setting": "corner_101",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -0.2580492657374691
+        },
+        {
+          "setting": "corner_110",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -2.8478405070979846
+        },
+        {
+          "setting": "corner_111",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -0.8478405070979846
+        }
+      ],
+      "range": [
+        -2.8478405070979846,
+        -0.11282396224562774
+      ],
+      "representative_setting": "central",
+      "left": {
+        "own_hp": 30,
+        "enemy_hp": 30,
+        "own_cash": 12,
+        "remaining_hand": [
+          38,
+          243,
+          1,
+          187,
+          2,
+          377
+        ],
+        "own_field": [],
+        "enemy_field": [],
+        "own_played": 2,
+        "own_bonus_draws": 0,
+        "own_burned": 0
+      },
+      "right": {
+        "own_hp": 15,
+        "enemy_hp": 23,
+        "own_cash": 10,
+        "remaining_hand": [
+          602,
+          243,
+          15,
+          1,
+          187,
+          2,
+          377
+        ],
+        "own_field": [
+          {
+            "key": 0,
+            "cid": 38,
+            "a": 7,
+            "h": 7,
+            "max_h": 11,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          }
+        ],
+        "enemy_field": [
+          {
+            "key": 0,
+            "cid": 602,
+            "a": 3,
+            "h": 3,
+            "max_h": 3,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          }
+        ],
+        "own_played": 1,
+        "own_bonus_draws": 0,
+        "own_burned": 0
+      },
+      "source_left": {
+        "folder": "sequence-results",
+        "producer": "fee722fb4078dc00cbb8ae9a4a99c4645cf7e300"
+      },
+      "source_right": {
+        "folder": "sequence-earliest",
+        "producer": "37019d2c6c39b9bb3aabc0f3d3df0a1e1793bbc1"
+      },
+      "scope": "Known-arrival fixed deployments; combat optimized, no metagame frequencies or deck proportions",
+      "deadline_warning": "Ends after both players completed the named own-turn count; a second-player fresh body has not faced the NEXT first-player turn",
+      "witness_warning": "A worst-value continuation, not separate worst HP/body bounds"
+    }
+  },
+  {
+    "command": [
+      "python",
+      "analysis/card-comparison/2026-10-20/carrying-priority/query_sequences.py",
+      "--question",
+      "self-draw",
+      "--enemy",
+      "empty",
+      "--horizon",
+      "5"
+    ],
+    "output": {
+      "assessment_kind": "heuristic",
+      "empirically_calibrated": false,
+      "question": "self-draw",
+      "case": "first/INTEGRITY/empty/t5",
+      "left_policy": "draw_5",
+      "right_policy": "save_5",
+      "cash_price": 0.5,
+      "hand_price": 1,
+      "common_setting_differences": [
+        {
+          "setting": "central",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -0.8150365485397657
+        },
+        {
+          "setting": "corner_000",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -0.5532124535281042
+        },
+        {
+          "setting": "corner_001",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -1.0532124535281042
+        },
+        {
+          "setting": "corner_010",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -0.6364972932852666
+        },
+        {
+          "setting": "corner_011",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -1.1364972932852666
+        },
+        {
+          "setting": "corner_100",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -0.6067460227136472
+        },
+        {
+          "setting": "corner_101",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -1.1067460227136472
+        },
+        {
+          "setting": "corner_110",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -0.6815371014892939
+        },
+        {
+          "setting": "corner_111",
+          "left_result": 0,
+          "right_result": 0,
+          "difference": -1.181537101489294
+        }
+      ],
+      "range": [
+        -1.181537101489294,
+        -0.5532124535281042
+      ],
+      "representative_setting": "central",
+      "left": {
+        "own_hp": 30,
+        "enemy_hp": 20,
+        "own_cash": 12,
+        "remaining_hand": [
+          602,
+          38,
+          15,
+          1,
+          187,
+          2,
+          377
+        ],
+        "own_field": [
+          {
+            "key": 0,
+            "cid": 243,
+            "a": 5,
+            "h": 5,
+            "max_h": 5,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          }
+        ],
+        "enemy_field": [],
+        "own_played": 1,
+        "own_bonus_draws": 1,
+        "own_burned": 1
+      },
+      "right": {
+        "own_hp": 30,
+        "enemy_hp": 18,
+        "own_cash": 12,
+        "remaining_hand": [
+          602,
+          38,
+          243,
+          1,
+          187,
+          2,
+          377
+        ],
+        "own_field": [
+          {
+            "key": 0,
+            "cid": 15,
+            "a": 6,
+            "h": 5,
+            "max_h": 5,
+            "ready": false,
+            "armor": false,
+            "dodge": 0,
+            "taunt": false
+          }
+        ],
+        "enemy_field": [],
+        "own_played": 1,
+        "own_bonus_draws": 0,
+        "own_burned": 0
+      },
+      "source_left": {
+        "folder": "sequence-results",
+        "producer": "fee722fb4078dc00cbb8ae9a4a99c4645cf7e300"
+      },
+      "source_right": {
+        "folder": "sequence-results",
+        "producer": "fee722fb4078dc00cbb8ae9a4a99c4645cf7e300"
+      },
+      "scope": "Known-arrival fixed deployments; combat optimized, no metagame frequencies or deck proportions",
+      "deadline_warning": "Ends after both players completed the named own-turn count; a second-player fresh body has not faced the NEXT first-player turn",
+      "witness_warning": "A worst-value continuation, not separate worst HP/body bounds"
+    }
+  }
+]

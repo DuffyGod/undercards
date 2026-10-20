@@ -1,0 +1,36 @@
+{
+  "checks": [
+    {
+      "count": 6,
+      "seen": 3,
+      "enumerated_hands": 2300
+    },
+    {
+      "count": 6,
+      "seen": 4,
+      "enumerated_hands": 12650
+    },
+    {
+      "count": 8,
+      "seen": 3,
+      "enumerated_hands": 2300
+    },
+    {
+      "count": 8,
+      "seen": 4,
+      "enumerated_hands": 12650
+    },
+    {
+      "count": 11,
+      "seen": 3,
+      "enumerated_hands": 2300
+    },
+    {
+      "count": 11,
+      "seen": 4,
+      "enumerated_hands": 12650
+    }
+  ],
+  "method": "Direct enumeration of uniformly chosen opening subsets; no battle or old producer",
+  "failures": 0
+}

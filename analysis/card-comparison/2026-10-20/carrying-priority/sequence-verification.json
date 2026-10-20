@@ -1,0 +1,16 @@
+{
+  "initial_new_checks": {
+    "count": 4,
+    "status": "passed"
+  },
+  "incremental_draw_enables_deployment_check": {
+    "count": 1,
+    "status": "passed"
+  },
+  "incremental_earliest_second_player_anchor_check": {
+    "count": 1,
+    "status": "passed"
+  },
+  "old_experiments_executed": false,
+  "note": "Affected new checks ran at their respective development revisions; no claim of one final full-suite rerun"
+}

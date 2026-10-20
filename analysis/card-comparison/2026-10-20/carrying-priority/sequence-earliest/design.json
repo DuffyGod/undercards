@@ -1,0 +1,197 @@
+{
+  "producer_source_commit": "37019d2c6c39b9bb3aabc0f3d3df0a1e1793bbc1",
+  "assessment_kind": "heuristic",
+  "empirically_calibrated": false,
+  "policies": {
+    "save_9_at3": {
+      "3": [
+        38
+      ]
+    },
+    "save_5_at2": {
+      "2": [
+        15
+      ]
+    },
+    "draw_5_at2": {
+      "2": [
+        243
+      ]
+    }
+  },
+  "enemy_scripts": {
+    "empty": {},
+    "two_low": {
+      "1": [
+        602
+      ],
+      "2": [
+        4
+      ]
+    },
+    "mid_pressure": {
+      "1": [
+        602
+      ],
+      "3": [
+        15
+      ]
+    }
+  },
+  "seats": [
+    "first",
+    "second"
+  ],
+  "souls": [
+    "INTEGRITY",
+    "KINDNESS"
+  ],
+  "horizons": [
+    4,
+    5
+  ],
+  "price_settings": {
+    "central": {
+      "face_share": 0.2,
+      "threshold": 0.4,
+      "face_price": 0.25
+    },
+    "corner_000": {
+      "face_share": 0.1,
+      "threshold": 0.2,
+      "face_price": 0.15
+    },
+    "corner_001": {
+      "face_share": 0.1,
+      "threshold": 0.2,
+      "face_price": 0.4
+    },
+    "corner_010": {
+      "face_share": 0.1,
+      "threshold": 0.6,
+      "face_price": 0.15
+    },
+    "corner_011": {
+      "face_share": 0.1,
+      "threshold": 0.6,
+      "face_price": 0.4
+    },
+    "corner_100": {
+      "face_share": 0.35,
+      "threshold": 0.2,
+      "face_price": 0.15
+    },
+    "corner_101": {
+      "face_share": 0.35,
+      "threshold": 0.2,
+      "face_price": 0.4
+    },
+    "corner_110": {
+      "face_share": 0.35,
+      "threshold": 0.6,
+      "face_price": 0.15
+    },
+    "corner_111": {
+      "face_share": 0.35,
+      "threshold": 0.6,
+      "face_price": 0.4
+    }
+  },
+  "price_points": [
+    [
+      "central",
+      0.5,
+      1.0
+    ],
+    [
+      "corner_000",
+      0.5,
+      1.0
+    ],
+    [
+      "corner_001",
+      0.5,
+      1.0
+    ],
+    [
+      "corner_010",
+      0.5,
+      1.0
+    ],
+    [
+      "corner_011",
+      0.5,
+      1.0
+    ],
+    [
+      "corner_100",
+      0.5,
+      1.0
+    ],
+    [
+      "corner_101",
+      0.5,
+      1.0
+    ],
+    [
+      "corner_110",
+      0.5,
+      1.0
+    ],
+    [
+      "corner_111",
+      0.5,
+      1.0
+    ],
+    [
+      "central",
+      0.5,
+      0.0
+    ],
+    [
+      "central",
+      0.5,
+      2.0
+    ]
+  ],
+  "own_initial": [
+    602,
+    38,
+    243
+  ],
+  "own_draw_prefix": [
+    15,
+    1,
+    187,
+    2,
+    377,
+    4
+  ],
+  "enemy_initial": [
+    38,
+    602,
+    15
+  ],
+  "enemy_draw_prefix": [
+    1,
+    4,
+    2,
+    187,
+    377,
+    175
+  ],
+  "initial_board": "Both empty; both30HP and1G",
+  "enemy_soul": "INTEGRITY",
+  "arrival_assumption": "Three initial cards, one known draw each own turn including t1; no mulligan; Bench draws from SAME sequence",
+  "search_scope": "Perfect-information optimal ordinary combat, with prescribed deployments BEFORE combat; no alternative plays, spells, artifacts or hidden hands",
+  "second_only_policies": [
+    "draw_accelerates_two",
+    "normal_two_later",
+    "save_9_at3",
+    "save_5_at2",
+    "draw_5_at2"
+  ],
+  "objective": "Lexicographic match result then F own minus F enemy, nonlethal HP difference, own cash and homogeneous remaining-hand price",
+  "interpretation": "Conditional mechanisms and carrying heuristics, not match win rates or optimized deck curves",
+  "raw_record_scope": "Each evaluated price saves its selected complete minimax witness and endpoint; full game DAGs are counted but not archived"
+}

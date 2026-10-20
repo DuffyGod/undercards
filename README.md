@@ -1,6 +1,6 @@
 # Undercards 通用 Value 建模
 
-当前入口：[自然金币、SOUL与大小怪组合比较](analysis/card-comparison/2026-10-20/README.md)。按用户要求暂停组卡，先检查共同用途，再比较合法部署菜单。最新交付多普通敌体顺序攻击与三个局部SOUL被动；后手t4的12G及六张到牌见证下，给出单大怪、多小怪、混合保护的资源价格优势区间。它是条件部署研究，尚未模拟完整开局的等待损失，不输出胜率。此前[单卡共同价格/手牌/单敌研究](analysis/card-comparison/2026-10-19/README.md)保留，不重做。
+当前入口：[携带优先级指南](analysis/card-comparison/2026-10-20/carrying-priority/GUIDE.md)与[程序/证据](analysis/card-comparison/2026-10-20/carrying-priority/README.md)。按用户要求暂停组卡，说明应优先考虑哪些实际费用、身材与用途，给出早期覆盖、主力付款窗口、到牌瓶颈和保血条件。新增双方真实自然经济/到牌到己t4/t5的固定计划研究，已计入早出怪物的攻击、交换和等待承伤；不优化完整牌组，不将有限资产分当实战胜率。此前[12G部署](analysis/card-comparison/2026-10-20/README.md)和[19日单卡研究](analysis/card-comparison/2026-10-19/README.md)保留，不重做。
 
 低成本、可解释、对数值差异敏感的随从评价研究。主智能体负责数值模型；DeepSeek承担批量机制拆解、跨批检查、反例提案和代码审查。当前模型是有明确边界的启发式报价程序，仍不是完整卡池强度榜。
 

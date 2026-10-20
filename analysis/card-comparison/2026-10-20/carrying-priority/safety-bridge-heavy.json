@@ -1,0 +1,283 @@
+{
+  "producer_source_commit": "4d9cd556d5f1708fcabe12ceb8bf1168fb8ffa43",
+  "case": "second/KINDNESS/mid_pressure/t5",
+  "new_physical_graphs": 1,
+  "new_goals": [
+    20
+  ],
+  "old_goal_one_not_rerun": true,
+  "rows": [
+    {
+      "policy": "bridge_9",
+      "goal": "Own endpoint HP at least 20",
+      "terminal_result": 0,
+      "goal_guaranteed": false,
+      "minimum_hp": 20,
+      "value": null,
+      "final": {
+        "players": [
+          {
+            "hp": 15,
+            "cash": 8,
+            "hand": [
+              243,
+              15,
+              1,
+              187,
+              2,
+              377
+            ],
+            "deck": [
+              4
+            ],
+            "field": [
+              {
+                "key": 1,
+                "cid": 38,
+                "a": 7,
+                "h": 6,
+                "max_h": 11,
+                "ready": false,
+                "armor": false,
+                "dodge": 0,
+                "taunt": false
+              }
+            ],
+            "previous_spent": 0,
+            "next_key": 2,
+            "played": 2,
+            "bonus_draws": 0,
+            "burned": 0
+          },
+          {
+            "hp": 27,
+            "cash": 10,
+            "hand": [
+              38,
+              1,
+              4,
+              2,
+              187,
+              377
+            ],
+            "deck": [
+              175
+            ],
+            "field": [],
+            "previous_spent": 0,
+            "next_key": 2,
+            "played": 2,
+            "bonus_draws": 0,
+            "burned": 0
+          }
+        ],
+        "phase": 10
+      },
+      "witness": [
+        {
+          "actor": 1,
+          "own_turn": 1,
+          "before_cash": 2,
+          "draw": {
+            "card": 1,
+            "burned": false,
+            "bonus": false
+          },
+          "plays": [
+            {
+              "cid": 602,
+              "cost": 2
+            }
+          ],
+          "after_play_cash": 0,
+          "attacks": [],
+          "after_end_cash": 0
+        },
+        {
+          "actor": 0,
+          "own_turn": 1,
+          "before_cash": 3,
+          "draw": {
+            "card": 15,
+            "burned": false,
+            "bonus": false
+          },
+          "plays": [
+            {
+              "cid": 602,
+              "cost": 2
+            }
+          ],
+          "after_play_cash": 1,
+          "attacks": [],
+          "after_end_cash": 1
+        },
+        {
+          "actor": 1,
+          "own_turn": 2,
+          "before_cash": 2,
+          "draw": {
+            "card": 4,
+            "burned": false,
+            "bonus": false
+          },
+          "plays": [],
+          "after_play_cash": 2,
+          "attacks": [
+            {
+              "attacker": 0,
+              "target": "hero",
+              "damage": 3
+            }
+          ],
+          "after_end_cash": 2
+        },
+        {
+          "actor": 0,
+          "own_turn": 2,
+          "before_cash": 3,
+          "draw": {
+            "card": 1,
+            "burned": false,
+            "bonus": false
+          },
+          "plays": [],
+          "after_play_cash": 3,
+          "attacks": [
+            {
+              "attacker": 0,
+              "target": "hero",
+              "damage": 3
+            }
+          ],
+          "after_end_cash": 3
+        },
+        {
+          "actor": 1,
+          "own_turn": 3,
+          "before_cash": 5,
+          "draw": {
+            "card": 2,
+            "burned": false,
+            "bonus": false
+          },
+          "plays": [
+            {
+              "cid": 15,
+              "cost": 5
+            }
+          ],
+          "after_play_cash": 0,
+          "attacks": [
+            {
+              "attacker": 0,
+              "target": "hero",
+              "damage": 3
+            }
+          ],
+          "after_end_cash": 1
+        },
+        {
+          "actor": 0,
+          "own_turn": 3,
+          "before_cash": 7,
+          "draw": {
+            "card": 187,
+            "burned": false,
+            "bonus": false
+          },
+          "plays": [],
+          "after_play_cash": 7,
+          "attacks": [
+            {
+              "attacker": 0,
+              "target": 0
+            }
+          ],
+          "after_end_cash": 7
+        },
+        {
+          "actor": 1,
+          "own_turn": 4,
+          "before_cash": 5,
+          "draw": {
+            "card": 187,
+            "burned": false,
+            "bonus": false
+          },
+          "plays": [],
+          "after_play_cash": 5,
+          "attacks": [
+            {
+              "attacker": 1,
+              "target": "hero",
+              "damage": 6
+            }
+          ],
+          "after_end_cash": 5
+        },
+        {
+          "actor": 0,
+          "own_turn": 4,
+          "before_cash": 11,
+          "draw": {
+            "card": 2,
+            "burned": false,
+            "bonus": false
+          },
+          "plays": [
+            {
+              "cid": 38,
+              "cost": 9
+            }
+          ],
+          "after_play_cash": 2,
+          "attacks": [],
+          "after_end_cash": 2
+        },
+        {
+          "actor": 1,
+          "own_turn": 5,
+          "before_cash": 10,
+          "draw": {
+            "card": 377,
+            "burned": false,
+            "bonus": false
+          },
+          "plays": [],
+          "after_play_cash": 10,
+          "attacks": [
+            {
+              "attacker": 1,
+              "target": "hero",
+              "damage": 6
+            }
+          ],
+          "after_end_cash": 10
+        },
+        {
+          "actor": 0,
+          "own_turn": 5,
+          "before_cash": 8,
+          "draw": {
+            "card": 377,
+            "burned": false,
+            "bonus": false
+          },
+          "plays": [],
+          "after_play_cash": 8,
+          "attacks": [
+            {
+              "attacker": 1,
+              "target": 1
+            }
+          ],
+          "after_end_cash": 8
+        }
+      ],
+      "meaning": "One worst-value witness of optimal ordinary combat under FIXED known deployment scripts; not separate HP/body guarantees"
+    }
+  ],
+  "api_calls": 0,
+  "scope": "Hard HP at cutoff, not a measured acceptable health level; fixed deployment scripts and ordinary combat only"
+}
