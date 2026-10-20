@@ -1,0 +1,23 @@
+{
+  "version": "joint-opening-0.1",
+  "source_commit": "60a47d9e88596a448b08c9a18e725c71544f53f7",
+  "completed_groups": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "trials": 192,
+  "failed": [],
+  "elapsed_seconds": 7.6929426193237305,
+  "complete": true,
+  "source_state": "uncommitted pilot; exact source archived in ../pilot-source; source_commit is base only"
+}
