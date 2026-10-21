@@ -1,0 +1,17 @@
+{
+  "new_simulations": 0,
+  "controls": [
+    {
+      "world": "no_response",
+      "exact_seed_policy_pairs": 7680,
+      "passed": true
+    },
+    {
+      "world": "unfunded_response",
+      "exact_seed_policy_pairs": 7680,
+      "passed": true
+    }
+  ],
+  "exact_horizon_prefixes": 23040,
+  "evidence_limit": "Exact consistency of selected new saved controls and causal prefixes; not external game accuracy or strategic completeness"
+}

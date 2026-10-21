@@ -1,0 +1,3625 @@
+{
+  "source_commit": "2f462384b0ca4bfa61fade03d8f2baaeee3b2858",
+  "new_simulations": 0,
+  "findings": [
+    {
+      "world": "sweep_integrity_seat0",
+      "empirical_completion_value_interval": [
+        0.6875,
+        0.9296875
+      ],
+      "chance_and_completion_value_interval": [
+        0.5361274202564548,
+        0.9831350942711744
+      ],
+      "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
+      "pure_policies_not_excluded": 24,
+      "total_pure_policies": 24,
+      "pure_policy_bounds": [
+        {
+          "row": 0,
+          "structure": "wide",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.8711055834689976
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 1,
+          "structure": "wide",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.8770545348882994
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 2,
+          "structure": "wide",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0002085024674517489,
+            0.8216508874164333
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 3,
+          "structure": "wide",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.21736055733652992,
+            0.8216508874164333
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 4,
+          "structure": "wide",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.1470664855262799,
+            0.6717874083584608
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 5,
+          "structure": "wide",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.1470664855262799,
+            0.6278586264322292
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 6,
+          "structure": "anchor",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.07226760373979925,
+            0.9831350942711744
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 7,
+          "structure": "anchor",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.02460455031064326,
+            0.9753954496893568
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 8,
+          "structure": "anchor",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.05676971776626204,
+            0.9578081481002015
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 9,
+          "structure": "anchor",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.5361274202564548,
+            0.8467730323000383
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 10,
+          "structure": "anchor",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.44817324105311646,
+            0.808817022828971
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 11,
+          "structure": "anchor",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.44040816853818693,
+            0.7958111655638824
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 12,
+          "structure": "refill",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0,
+            0.8770545348882994
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 13,
+          "structure": "refill",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.8529335144737201
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 14,
+          "structure": "refill",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0,
+            0.7625821823658079
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 15,
+          "structure": "refill",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.22400694083284217,
+            0.7892456891631672
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 16,
+          "structure": "refill",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.10545003818460486,
+            0.7214387444602952
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 17,
+          "structure": "refill",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.10545003818460486,
+            0.5750123688729105
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 18,
+          "structure": "recovery",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0,
+            0.9002572190405964
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 19,
+          "structure": "recovery",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.7759930591671578
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 20,
+          "structure": "recovery",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0,
+            0.8829462994606286
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 21,
+          "structure": "recovery",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.17199885787882915,
+            0.8280011421211708
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 22,
+          "structure": "recovery",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.03309405348328774,
+            0.6645532276221358
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 23,
+          "structure": "recovery",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.12294546511170051,
+            0.7958111655638824
+          ],
+          "not_excluded": true
+        }
+      ],
+      "rule": "A pure policy is excluded only if its upper worst-response win bound is below another pure policy lower bound. Retention is uncertainty, not equivalence or strength.",
+      "interpretation": "Finite policy-pool minimax eventual-win envelope, not the deadline-life objective and not real-game win rates. Unknown continuation is adversarial for lower and favorable for upper; this is deliberately an outer bound."
+    },
+    {
+      "world": "sweep_integrity_seat1",
+      "empirical_completion_value_interval": [
+        0.5703125,
+        0.875
+      ],
+      "chance_and_completion_value_interval": [
+        0.4173315983856616,
+        0.9530633012491289
+      ],
+      "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
+      "pure_policies_not_excluded": 24,
+      "total_pure_policies": 24,
+      "pure_policy_bounds": [
+        {
+          "row": 0,
+          "structure": "wide",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.8405633270346029
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 1,
+          "structure": "wide",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.7958111655638824
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 2,
+          "structure": "wide",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0,
+            0.7558187320524757
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 3,
+          "structure": "wide",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.06701012465710438,
+            0.620414945082313
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 4,
+          "structure": "wide",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.007161084945669379,
+            0.5518267589468835
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 5,
+          "structure": "wide",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.04219185189979842,
+            0.5440247200844035
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 6,
+          "structure": "anchor",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.06701012465710438,
+            0.9530633012491289
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 7,
+          "structure": "anchor",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0206298326165338,
+            0.9114692551582864
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 8,
+          "structure": "anchor",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.04219185189979842,
+            0.9114692551582864
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 9,
+          "structure": "anchor",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.4173315983856616,
+            0.7558187320524757
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 10,
+          "structure": "anchor",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.3067206016566307,
+            0.7074306314814304
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 11,
+          "structure": "anchor",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.3573588561802714,
+            0.6932793983433694
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 12,
+          "structure": "refill",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0,
+            0.8467730323000383
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 13,
+          "structure": "refill",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.808817022828971
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 14,
+          "structure": "refill",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0,
+            0.7625821823658079
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 15,
+          "structure": "refill",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.13489869096874618,
+            0.6789865663509815
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 16,
+          "structure": "refill",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.04219185189979842,
+            0.6129362192523787
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 17,
+          "structure": "refill",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.06701012465710438,
+            0.5595918314618131
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 18,
+          "structure": "recovery",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0,
+            0.8829462994606286
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 19,
+          "structure": "recovery",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.7490172354408716
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 20,
+          "structure": "recovery",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0,
+            0.8529335144737201
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 21,
+          "structure": "recovery",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.08853074484171367,
+            0.7625821823658079
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 22,
+          "structure": "recovery",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.0046187916500483005,
+            0.6645532276221358
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 23,
+          "structure": "recovery",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.0997427809594036,
+            0.7353017641545996
+          ],
+          "not_excluded": true
+        }
+      ],
+      "rule": "A pure policy is excluded only if its upper worst-response win bound is below another pure policy lower bound. Retention is uncertainty, not equivalence or strength.",
+      "interpretation": "Finite policy-pool minimax eventual-win envelope, not the deadline-life objective and not real-game win rates. Unknown continuation is adversarial for lower and favorable for upper; this is deliberately an outer bound."
+    },
+    {
+      "world": "sweep_kindness_seat0",
+      "empirical_completion_value_interval": [
+        0.5546875,
+        0.7890625
+      ],
+      "chance_and_completion_value_interval": [
+        0.4021268073141606,
+        0.8945499618153951
+      ],
+      "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
+      "pure_policies_not_excluded": 24,
+      "total_pure_policies": 24,
+      "pure_policy_bounds": [
+        {
+          "row": 0,
+          "structure": "wide",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.7892456891631672
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 1,
+          "structure": "wide",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.7958111655638824
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 2,
+          "structure": "wide",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0010387609970509784,
+            0.808817022828971
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 3,
+          "structure": "wide",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.09410204107241599,
+            0.6352673416476704
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 4,
+          "structure": "wide",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.03757387961902254,
+            0.70037279956102
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 5,
+          "structure": "wide",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.06184229154864069,
+            0.43063913969894085
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 6,
+          "structure": "anchor",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.11705370053937139,
+            0.8770545348882994
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 7,
+          "structure": "anchor",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.07760974938144799,
+            0.8651013090312538
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 8,
+          "structure": "anchor",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.1656943545826936,
+            0.8467730323000383
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 9,
+          "structure": "anchor",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.379585054917687,
+            0.7693071249777933
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 10,
+          "structure": "anchor",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.31384939589490674,
+            0.7283885327067886
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 11,
+          "structure": "anchor",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.4021268073141606,
+            0.7421781166186968
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 12,
+          "structure": "refill",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0002085024674517489,
+            0.8405633270346029
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 13,
+          "structure": "refill",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.7826394426634701
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 14,
+          "structure": "refill",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.70037279956102
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 15,
+          "structure": "refill",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.08303212196592792,
+            0.6426411438197286
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 16,
+          "structure": "refill",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.04693669875087112,
+            0.6278586264322292
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 17,
+          "structure": "refill",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.051798767010480286,
+            0.42221555026772717
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 18,
+          "structure": "recovery",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0025433505596317353,
+            0.8945499618153951
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 19,
+          "structure": "recovery",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.8216508874164333
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 20,
+          "structure": "recovery",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0002085024674517489,
+            0.8651013090312538
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 21,
+          "structure": "recovery",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.12889441653100245,
+            0.8280011421211708
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 22,
+          "structure": "recovery",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.03309405348328774,
+            0.7144526904070945
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 23,
+          "structure": "recovery",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.12294546511170051,
+            0.808817022828971
+          ],
+          "not_excluded": true
+        }
+      ],
+      "rule": "A pure policy is excluded only if its upper worst-response win bound is below another pure policy lower bound. Retention is uncertainty, not equivalence or strength.",
+      "interpretation": "Finite policy-pool minimax eventual-win envelope, not the deadline-life objective and not real-game win rates. Unknown continuation is adversarial for lower and favorable for upper; this is deliberately an outer bound."
+    },
+    {
+      "world": "sweep_kindness_seat1",
+      "empirical_completion_value_interval": [
+        0.4375,
+        0.7421875
+      ],
+      "chance_and_completion_value_interval": [
+        0.29256936851856963,
+        0.8590434260743053
+      ],
+      "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
+      "pure_policies_not_excluded": 24,
+      "total_pure_policies": 24,
+      "pure_policy_bounds": [
+        {
+          "row": 0,
+          "structure": "wide",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0002085024674517489,
+            0.7958111655638824
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 1,
+          "structure": "wide",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.7826394426634701
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 2,
+          "structure": "wide",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0010387609970509784,
+            0.7074306314814304
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 3,
+          "structure": "wide",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.06701012465710438,
+            0.5978731926858394
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 4,
+          "structure": "wide",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.01008845303536534,
+            0.5826684016143384
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 5,
+          "structure": "wide",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.02876566321244501,
+            0.5203929942456584
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 6,
+          "structure": "anchor",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.1594366729653971,
+            0.8023351888839745
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 7,
+          "structure": "anchor",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.07760974938144799,
+            0.8590434260743053
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 8,
+          "structure": "anchor",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.10545003818460486,
+            0.8529335144737201
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 9,
+          "structure": "anchor",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.27856125553970484,
+            0.6572840962021762
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 10,
+          "structure": "anchor",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.2509827645591284,
+            0.6278586264322292
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 11,
+          "structure": "anchor",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.29256936851856963,
+            0.6717874083584608
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 12,
+          "structure": "refill",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0,
+            0.7892456891631672
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 13,
+          "structure": "refill",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.7693071249777933
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 14,
+          "structure": "refill",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0002085024674517489,
+            0.6789865663509815
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 15,
+          "structure": "refill",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.06701012465710438,
+            0.620414945082313
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 16,
+          "structure": "refill",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.0206298326165338,
+            0.5978731926858394
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 17,
+          "structure": "refill",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.051798767010480286,
+            0.4802262715421026
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 18,
+          "structure": "recovery",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0002085024674517489,
+            0.8216508874164333
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 19,
+          "structure": "recovery",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.7144526904070945
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 20,
+          "structure": "recovery",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.8405633270346029
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 21,
+          "structure": "recovery",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.06701012465710438,
+            0.7625821823658079
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 22,
+          "structure": "recovery",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.02460455031064326,
+            0.6572840962021762
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 23,
+          "structure": "recovery",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.08853074484171367,
+            0.8152558739605446
+          ],
+          "not_excluded": true
+        }
+      ],
+      "rule": "A pure policy is excluded only if its upper worst-response win bound is below another pure policy lower bound. Retention is uncertainty, not equivalence or strength.",
+      "interpretation": "Finite policy-pool minimax eventual-win envelope, not the deadline-life objective and not real-game win rates. Unknown continuation is adversarial for lower and favorable for upper; this is deliberately an outer bound."
+    },
+    {
+      "world": "focus_integrity_seat0",
+      "empirical_completion_value_interval": [
+        0.5234375,
+        0.890625
+      ],
+      "chance_and_completion_value_interval": [
+        0.3721413735677708,
+        0.9624261203809774
+      ],
+      "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
+      "pure_policies_not_excluded": 24,
+      "total_pure_policies": 24,
+      "pure_policy_bounds": [
+        {
+          "row": 0,
+          "structure": "wide",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0010387609970509784,
+            0.905897958927584
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 1,
+          "structure": "wide",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0002085024674517489,
+            0.7144526904070945
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 2,
+          "structure": "wide",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.7958111655638824
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 3,
+          "structure": "wide",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.2107543108368328,
+            0.8467730323000383
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 4,
+          "structure": "wide",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.05676971776626204,
+            0.6861506041050933
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 5,
+          "structure": "wide",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.0997427809594036,
+            0.7353017641545996
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 6,
+          "structure": "anchor",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.01333885192557182,
+            0.9624261203809774
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 7,
+          "structure": "anchor",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.007161084945669379,
+            0.9002572190405964
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 8,
+          "structure": "anchor",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0010387609970509784,
+            0.9114692551582864
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 9,
+          "structure": "anchor",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.3721413735677708,
+            0.8343056454173063
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 10,
+          "structure": "anchor",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.3210134336490184,
+            0.7693071249777933
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 11,
+          "structure": "anchor",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.2855473095929055,
+            0.7353017641545996
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 12,
+          "structure": "refill",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0002085024674517489,
+            0.9482012329895197
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 13,
+          "structure": "refill",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.8023351888839745
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 14,
+          "structure": "refill",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0,
+            0.8152558739605446
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 15,
+          "structure": "refill",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.1656943545826936,
+            0.9002572190405964
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 16,
+          "structure": "refill",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.04219185189979842,
+            0.7283885327067886
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 17,
+          "structure": "refill",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.04693669875087112,
+            0.6645532276221358
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 18,
+          "structure": "recovery",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0,
+            0.8829462994606286
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 19,
+          "structure": "recovery",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.70037279956102
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 20,
+          "structure": "recovery",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0,
+            0.8280011421211708
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 21,
+          "structure": "recovery",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.09410204107241599,
+            0.8529335144737201
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 22,
+          "structure": "recovery",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.007161084945669379,
+            0.6645532276221358
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 23,
+          "structure": "recovery",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.0206298326165338,
+            0.7353017641545996
+          ],
+          "not_excluded": true
+        }
+      ],
+      "rule": "A pure policy is excluded only if its upper worst-response win bound is below another pure policy lower bound. Retention is uncertainty, not equivalence or strength.",
+      "interpretation": "Finite policy-pool minimax eventual-win envelope, not the deadline-life objective and not real-game win rates. Unknown continuation is adversarial for lower and favorable for upper; this is deliberately an outer bound."
+    },
+    {
+      "world": "focus_integrity_seat1",
+      "empirical_completion_value_interval": [
+        0.359375,
+        0.765625
+      ],
+      "chance_and_completion_value_interval": [
+        0.22400694083284217,
+        0.8770545348882994
+      ],
+      "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
+      "pure_policies_not_excluded": 24,
+      "total_pure_policies": 24,
+      "pure_policy_bounds": [
+        {
+          "row": 0,
+          "structure": "wide",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0002085024674517489,
+            0.7958111655638824
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 1,
+          "structure": "wide",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0002085024674517489,
+            0.5978731926858394
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 2,
+          "structure": "wide",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0,
+            0.70037279956102
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 3,
+          "structure": "wide",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.051798767010480286,
+            0.6861506041050933
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 4,
+          "structure": "wide",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.0025433505596317353,
+            0.5203929942456584
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 5,
+          "structure": "wide",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.0046187916500483005,
+            0.5750123688729105
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 6,
+          "structure": "anchor",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0010387609970509784,
+            0.8651013090312538
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 7,
+          "structure": "anchor",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.8152558739605446
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 8,
+          "structure": "anchor",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.7759930591671578
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 9,
+          "structure": "anchor",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.22400694083284217,
+            0.6426411438197286
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 10,
+          "structure": "anchor",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.09410204107241599,
+            0.5440247200844035
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 11,
+          "structure": "anchor",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.08303212196592792,
+            0.4720706268451518
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 12,
+          "structure": "refill",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.8770545348882994
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 13,
+          "structure": "refill",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.7625821823658079
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 14,
+          "structure": "refill",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0,
+            0.7625821823658079
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 15,
+          "structure": "refill",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.06184229154864069,
+            0.7826394426634701
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 16,
+          "structure": "refill",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.01008845303536534,
+            0.7490172354408716
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 17,
+          "structure": "refill",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.0010387609970509784,
+            0.6352673416476704
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 18,
+          "structure": "recovery",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0,
+            0.8467730323000383
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 19,
+          "structure": "recovery",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.60542234505612
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 20,
+          "structure": "recovery",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0,
+            0.7421781166186968
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 21,
+          "structure": "recovery",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.02460455031064326,
+            0.7421781166186968
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 22,
+          "structure": "recovery",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.0010387609970509784,
+            0.5826684016143384
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 23,
+          "structure": "recovery",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.0046187916500483005,
+            0.6717874083584608
+          ],
+          "not_excluded": true
+        }
+      ],
+      "rule": "A pure policy is excluded only if its upper worst-response win bound is below another pure policy lower bound. Retention is uncertainty, not equivalence or strength.",
+      "interpretation": "Finite policy-pool minimax eventual-win envelope, not the deadline-life objective and not real-game win rates. Unknown continuation is adversarial for lower and favorable for upper; this is deliberately an outer bound."
+    },
+    {
+      "world": "focus_kindness_seat0",
+      "empirical_completion_value_interval": [
+        0.4296875,
+        0.7421875
+      ],
+      "chance_and_completion_value_interval": [
+        0.2855473095929055,
+        0.8590434260743053
+      ],
+      "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
+      "pure_policies_not_excluded": 24,
+      "total_pure_policies": 24,
+      "pure_policy_bounds": [
+        {
+          "row": 0,
+          "structure": "wide",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0002085024674517489,
+            0.8343056454173063
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 1,
+          "structure": "wide",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.7144526904070945
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 2,
+          "structure": "wide",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.8467730323000383
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 3,
+          "structure": "wide",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.09410204107241599,
+            0.7144526904070945
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 4,
+          "structure": "wide",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.04693669875087112,
+            0.5978731926858394
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 5,
+          "structure": "wide",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.051798767010480286,
+            0.5440247200844035
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 6,
+          "structure": "anchor",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.04219185189979842,
+            0.7625821823658079
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 7,
+          "structure": "anchor",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.01008845303536534,
+            0.7144526904070945
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 8,
+          "structure": "anchor",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.04693669875087112,
+            0.6789865663509815
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 9,
+          "structure": "anchor",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.2855473095929055,
+            0.6717874083584608
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 10,
+          "structure": "anchor",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.2107543108368328,
+            0.6278586264322292
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 11,
+          "structure": "anchor",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.1783491125835667,
+            0.5361853511547074
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 12,
+          "structure": "refill",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0002085024674517489,
+            0.8590434260743053
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 13,
+          "structure": "refill",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.7144526904070945
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 14,
+          "structure": "refill",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0,
+            0.6861506041050933
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 15,
+          "structure": "refill",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.07760974938144799,
+            0.7283885327067886
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 16,
+          "structure": "refill",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.02460455031064326,
+            0.5750123688729105
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 17,
+          "structure": "refill",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.051798767010480286,
+            0.5826684016143384
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 18,
+          "structure": "recovery",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0010387609970509784,
+            0.8343056454173063
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 19,
+          "structure": "recovery",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.7625821823658079
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 20,
+          "structure": "recovery",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.808817022828971
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 21,
+          "structure": "recovery",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.11122115291044102,
+            0.8023351888839745
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 22,
+          "structure": "recovery",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.02876566321244501,
+            0.7759930591671578
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 23,
+          "structure": "recovery",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.0997427809594036,
+            0.808817022828971
+          ],
+          "not_excluded": true
+        }
+      ],
+      "rule": "A pure policy is excluded only if its upper worst-response win bound is below another pure policy lower bound. Retention is uncertainty, not equivalence or strength.",
+      "interpretation": "Finite policy-pool minimax eventual-win envelope, not the deadline-life objective and not real-game win rates. Unknown continuation is adversarial for lower and favorable for upper; this is deliberately an outer bound."
+    },
+    {
+      "world": "focus_kindness_seat1",
+      "empirical_completion_value_interval": [
+        0.328125,
+        0.7578125
+      ],
+      "chance_and_completion_value_interval": [
+        0.1976648111160255,
+        0.8711055834689976
+      ],
+      "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
+      "pure_policies_not_excluded": 24,
+      "total_pure_policies": 24,
+      "pure_policy_bounds": [
+        {
+          "row": 0,
+          "structure": "wide",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.8023351888839745
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 1,
+          "structure": "wide",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.60542234505612
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 2,
+          "structure": "wide",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.6932793983433694
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 3,
+          "structure": "wide",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.04219185189979842,
+            0.6717874083584608
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 4,
+          "structure": "wide",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.01333885192557182,
+            0.5124390996275188
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 5,
+          "structure": "wide",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.02876566321244501,
+            0.60542234505612
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 6,
+          "structure": "anchor",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.02460455031064326,
+            0.620414945082313
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 7,
+          "structure": "anchor",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.01008845303536534,
+            0.60542234505612
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 8,
+          "structure": "anchor",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.02460455031064326,
+            0.5595918314618131
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 9,
+          "structure": "anchor",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.1976648111160255,
+            0.5826684016143384
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 10,
+          "structure": "anchor",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.11122115291044102,
+            0.4883402674902688
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 11,
+          "structure": "anchor",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.11705370053937139,
+            0.44734596546348293
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 12,
+          "structure": "refill",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0,
+            0.8711055834689976
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 13,
+          "structure": "refill",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.7421781166186968
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 14,
+          "structure": "refill",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0,
+            0.6861506041050933
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 15,
+          "structure": "refill",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.04219185189979842,
+            0.7892456891631672
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 16,
+          "structure": "refill",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.01008845303536534,
+            0.6426411438197286
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 17,
+          "structure": "refill",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.0206298326165338,
+            0.5902886059342161
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 18,
+          "structure": "recovery",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0,
+            0.8529335144737201
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 19,
+          "structure": "recovery",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.7283885327067886
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 20,
+          "structure": "recovery",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0,
+            0.7144526904070945
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 21,
+          "structure": "recovery",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.04219185189979842,
+            0.8651013090312538
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 22,
+          "structure": "recovery",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.01008845303536534,
+            0.7958111655638824
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 23,
+          "structure": "recovery",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.04693669875087112,
+            0.8023351888839745
+          ],
+          "not_excluded": true
+        }
+      ],
+      "rule": "A pure policy is excluded only if its upper worst-response win bound is below another pure policy lower bound. Retention is uncertainty, not equivalence or strength.",
+      "interpretation": "Finite policy-pool minimax eventual-win envelope, not the deadline-life objective and not real-game win rates. Unknown continuation is adversarial for lower and favorable for upper; this is deliberately an outer bound."
+    },
+    {
+      "world": "no_response",
+      "empirical_completion_value_interval": [
+        0.953125,
+        0.9921875
+      ],
+      "chance_and_completion_value_interval": [
+        0.855027285573674,
+        0.9999972868590101
+      ],
+      "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
+      "pure_policies_not_excluded": 24,
+      "total_pure_policies": 24,
+      "pure_policy_bounds": [
+        {
+          "row": 0,
+          "structure": "wide",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.9753954496893568
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 1,
+          "structure": "wide",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.9753954496893568
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 2,
+          "structure": "wide",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0002085024674517489,
+            0.9928389150543306
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 3,
+          "structure": "wide",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.6922876261631461,
+            0.9669059465167122
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 4,
+          "structure": "wide",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.6922876261631461,
+            0.9669059465167122
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 5,
+          "structure": "wide",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.8211579893306628,
+            0.9974566494403683
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 6,
+          "structure": "anchor",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.11705370053937139,
+            0.9999972868590101
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 7,
+          "structure": "anchor",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.11705370053937139,
+            0.9999972868590101
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 8,
+          "structure": "anchor",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.1976648111160255,
+            0.9999972868590101
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 9,
+          "structure": "anchor",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.8103765121498128,
+            0.9866611480744282
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 10,
+          "structure": "anchor",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.8103765121498128,
+            0.9866611480744282
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 11,
+          "structure": "anchor",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.7590822738915851,
+            0.9624261203809774
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 12,
+          "structure": "refill",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.998961239002949
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 13,
+          "structure": "refill",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.998961239002949
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 14,
+          "structure": "refill",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0010387609970509784,
+            0.998961239002949
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 15,
+          "structure": "refill",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.7395046160638681,
+            0.9753954496893568
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 16,
+          "structure": "refill",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.7395046160638681,
+            0.9753954496893568
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 17,
+          "structure": "refill",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.855027285573674,
+            0.9953812083499517
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 18,
+          "structure": "recovery",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.9669059465167122
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 19,
+          "structure": "recovery",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.9669059465167122
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 20,
+          "structure": "recovery",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0002085024674517489,
+            0.9793701673834662
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 21,
+          "structure": "recovery",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.6033504643945391,
+            0.9624261203809774
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 22,
+          "structure": "recovery",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.6033504643945391,
+            0.9624261203809774
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 23,
+          "structure": "recovery",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.6922876261631461,
+            0.9793701673834662
+          ],
+          "not_excluded": true
+        }
+      ],
+      "rule": "A pure policy is excluded only if its upper worst-response win bound is below another pure policy lower bound. Retention is uncertainty, not equivalence or strength.",
+      "interpretation": "Finite policy-pool minimax eventual-win envelope, not the deadline-life objective and not real-game win rates. Unknown continuation is adversarial for lower and favorable for upper; this is deliberately an outer bound."
+    },
+    {
+      "world": "unfunded_response",
+      "empirical_completion_value_interval": [
+        0.890625,
+        0.9765625
+      ],
+      "chance_and_completion_value_interval": [
+        0.7690490110460911,
+        0.998961239002949
+      ],
+      "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
+      "pure_policies_not_excluded": 24,
+      "total_pure_policies": 24,
+      "pure_policy_bounds": [
+        {
+          "row": 0,
+          "structure": "wide",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.06184229154864069,
+            0.9831350942711744
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 1,
+          "structure": "wide",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.06184229154864069,
+            0.9831350942711744
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 2,
+          "structure": "wide",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.06701012465710438,
+            0.9831350942711744
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 3,
+          "structure": "wide",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.7109087108110589,
+            0.9578081481002015
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 4,
+          "structure": "wide",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.7109087108110589,
+            0.9578081481002015
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 5,
+          "structure": "wide",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.7690490110460911,
+            0.971234336787555
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 6,
+          "structure": "anchor",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.38706378074762127,
+            0.9974566494403683
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 7,
+          "structure": "anchor",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.38706378074762127,
+            0.9974566494403683
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 8,
+          "structure": "anchor",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.48756090037248123,
+            0.998961239002949
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 9,
+          "structure": "anchor",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.7590822738915851,
+            0.9624261203809774
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 10,
+          "structure": "anchor",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.7590822738915851,
+            0.9624261203809774
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 11,
+          "structure": "anchor",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.7690490110460911,
+            0.9624261203809774
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 12,
+          "structure": "refill",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.04219185189979842,
+            0.9381577084513593
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 13,
+          "structure": "refill",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.04219185189979842,
+            0.9381577084513593
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 14,
+          "structure": "refill",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.06184229154864069,
+            0.9530633012491289
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 15,
+          "structure": "refill",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.6470355572405524,
+            0.9381577084513593
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 16,
+          "structure": "refill",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.6470355572405524,
+            0.9381577084513593
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 17,
+          "structure": "refill",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.7015572183752289,
+            0.9482012329895197
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 18,
+          "structure": "recovery",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.01333885192557182,
+            0.9329898753428956
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 19,
+          "structure": "recovery",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.01333885192557182,
+            0.9329898753428956
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 20,
+          "structure": "recovery",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0206298326165338,
+            0.9530633012491289
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 21,
+          "structure": "recovery",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.5197737284578974,
+            0.8651013090312538
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 22,
+          "structure": "recovery",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.5197737284578974,
+            0.8651013090312538
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 23,
+          "structure": "recovery",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.5862563752413983,
+            0.888778847089559
+          ],
+          "not_excluded": true
+        }
+      ],
+      "rule": "A pure policy is excluded only if its upper worst-response win bound is below another pure policy lower bound. Retention is uncertainty, not equivalence or strength.",
+      "interpretation": "Finite policy-pool minimax eventual-win envelope, not the deadline-life objective and not real-game win rates. Unknown continuation is adversarial for lower and favorable for upper; this is deliberately an outer bound."
+    },
+    {
+      "world": "weak_packet",
+      "empirical_completion_value_interval": [
+        0.9296875,
+        0.9765625
+      ],
+      "chance_and_completion_value_interval": [
+        0.8211579893306628,
+        0.998961239002949
+      ],
+      "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
+      "pure_policies_not_excluded": 19,
+      "total_pure_policies": 24,
+      "pure_policy_bounds": [
+        {
+          "row": 0,
+          "structure": "wide",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.06184229154864069,
+            0.9953812083499517
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 1,
+          "structure": "wide",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0010387609970509784,
+            0.8770545348882994
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 2,
+          "structure": "wide",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.02876566321244501,
+            0.9624261203809774
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 3,
+          "structure": "wide",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.8211579893306628,
+            0.998961239002949
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 4,
+          "structure": "wide",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.4021268073141606,
+            0.8216508874164333
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 5,
+          "structure": "wide",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.5197737284578974,
+            0.8651013090312538
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 6,
+          "structure": "anchor",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.3721413735677708,
+            0.9974566494403683
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 7,
+          "structure": "anchor",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.20418883443611752,
+            0.9866611480744282
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 8,
+          "structure": "anchor",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.22400694083284217,
+            0.9793701673834662
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 9,
+          "structure": "anchor",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.7590822738915851,
+            0.9624261203809774
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 10,
+          "structure": "anchor",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.7015572183752289,
+            0.9329898753428956
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 11,
+          "structure": "anchor",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.5443686821675644,
+            0.8280011421211708
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 12,
+          "structure": "refill",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.03757387961902254,
+            0.9329898753428956
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 13,
+          "structure": "refill",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.007161084945669379,
+            0.7958111655638824
+          ],
+          "not_excluded": false
+        },
+        {
+          "row": 14,
+          "structure": "refill",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.01333885192557182,
+            0.7826394426634701
+          ],
+          "not_excluded": false
+        },
+        {
+          "row": 15,
+          "structure": "refill",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.6649304686230603,
+            0.9329898753428956
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 16,
+          "structure": "refill",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.29962720043897995,
+            0.70037279956102
+          ],
+          "not_excluded": false
+        },
+        {
+          "row": 17,
+          "structure": "refill",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.32821259164153915,
+            0.6932793983433694
+          ],
+          "not_excluded": false
+        },
+        {
+          "row": 18,
+          "structure": "recovery",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.01333885192557182,
+            0.9624261203809774
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 19,
+          "structure": "recovery",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.8216508874164333
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 20,
+          "structure": "recovery",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.01008845303536534,
+            0.9169678780340721
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 21,
+          "structure": "recovery",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.5947779180957153,
+            0.9530633012491289
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 22,
+          "structure": "recovery",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.17199885787882915,
+            0.7214387444602952
+          ],
+          "not_excluded": false
+        },
+        {
+          "row": 23,
+          "structure": "recovery",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.3721413735677708,
+            0.8280011421211708
+          ],
+          "not_excluded": true
+        }
+      ],
+      "rule": "A pure policy is excluded only if its upper worst-response win bound is below another pure policy lower bound. Retention is uncertainty, not equivalence or strength.",
+      "interpretation": "Finite policy-pool minimax eventual-win envelope, not the deadline-life objective and not real-game win rates. Unknown continuation is adversarial for lower and favorable for upper; this is deliberately an outer bound."
+    },
+    {
+      "world": "strong_packet",
+      "empirical_completion_value_interval": [
+        0.234375,
+        0.7369260204081631
+      ],
+      "chance_and_completion_value_interval": [
+        0.1229454651117005,
+        0.8519998201999525
+      ],
+      "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
+      "pure_policies_not_excluded": 21,
+      "total_pure_policies": 24,
+      "pure_policy_bounds": [
+        {
+          "row": 0,
+          "structure": "wide",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0002085024674517489,
+            0.8152558739605446
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 1,
+          "structure": "wide",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.7490172354408716
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 2,
+          "structure": "wide",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0,
+            0.4390155787076988
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 3,
+          "structure": "wide",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.12294546511170051,
+            0.5750123688729105
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 4,
+          "structure": "wide",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.0,
+            0.5595918314618131
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 5,
+          "structure": "wide",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.0,
+            0.10752184312673585
+          ],
+          "not_excluded": false
+        },
+        {
+          "row": 6,
+          "structure": "anchor",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0046187916500483005,
+            0.6717874083584608
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 7,
+          "structure": "anchor",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.6129362192523787
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 8,
+          "structure": "anchor",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0,
+            0.3260221806734587
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 9,
+          "structure": "anchor",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.07226760373979925,
+            0.3793452996490285
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 10,
+          "structure": "anchor",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.016864905728825614,
+            0.36181729310598
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 11,
+          "structure": "anchor",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.0,
+            0.06033403644235957
+          ],
+          "not_excluded": false
+        },
+        {
+          "row": 12,
+          "structure": "refill",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0002085024674517489,
+            0.808817022828971
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 13,
+          "structure": "refill",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.7558187320524757
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 14,
+          "structure": "refill",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0,
+            0.4390155787076988
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 15,
+          "structure": "refill",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.11122115291044102,
+            0.6352673416476704
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 16,
+          "structure": "refill",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.0002085024674517489,
+            0.5595918314618131
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 17,
+          "structure": "refill",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.0,
+            0.12057447867180704
+          ],
+          "not_excluded": false
+        },
+        {
+          "row": 18,
+          "structure": "recovery",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.8216508874164333
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 19,
+          "structure": "recovery",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.7625821823658079
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 20,
+          "structure": "recovery",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0,
+            0.620414945082313
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 21,
+          "structure": "recovery",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.06701012465710438,
+            0.6645532276221358
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 22,
+          "structure": "recovery",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.0002085024674517489,
+            0.6499800609794819
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 23,
+          "structure": "recovery",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.0,
+            0.2507628307298
+          ],
+          "not_excluded": true
+        }
+      ],
+      "rule": "A pure policy is excluded only if its upper worst-response win bound is below another pure policy lower bound. Retention is uncertainty, not equivalence or strength.",
+      "interpretation": "Finite policy-pool minimax eventual-win envelope, not the deadline-life objective and not real-game win rates. Unknown continuation is adversarial for lower and favorable for upper; this is deliberately an outer bound."
+    },
+    {
+      "world": "no_first_draw",
+      "empirical_completion_value_interval": [
+        0.765625,
+        0.9263392857142857
+      ],
+      "chance_and_completion_value_interval": [
+        0.6206547003509715,
+        0.9813356351506805
+      ],
+      "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
+      "pure_policies_not_excluded": 23,
+      "total_pure_policies": 24,
+      "pure_policy_bounds": [
+        {
+          "row": 0,
+          "structure": "wide",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0025433505596317353,
+            0.8529335144737201
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 1,
+          "structure": "wide",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.8529335144737201
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 2,
+          "structure": "wide",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0010387609970509784,
+            0.8590434260743053
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 3,
+          "structure": "wide",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.23741781763419215,
+            0.7693071249777933
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 4,
+          "structure": "wide",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.09410204107241599,
+            0.620414945082313
+          ],
+          "not_excluded": false
+        },
+        {
+          "row": 5,
+          "structure": "wide",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.1470664855262799,
+            0.6932793983433694
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 6,
+          "structure": "anchor",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.15322696769996166,
+            0.9793701673834662
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 7,
+          "structure": "anchor",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.08303212196592792,
+            0.9753954496893568
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 8,
+          "structure": "anchor",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.12294546511170051,
+            0.9793701673834662
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 9,
+          "structure": "anchor",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.6206547003509715,
+            0.9002572190405964
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 10,
+          "structure": "anchor",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.4249876311270895,
+            0.8023351888839745
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 11,
+          "structure": "anchor",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.5279293731548482,
+            0.8467730323000383
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 12,
+          "structure": "refill",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.9624261203809774
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 13,
+          "structure": "refill",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.9381577084513593
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 14,
+          "structure": "refill",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0,
+            0.8216508874164333
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 15,
+          "structure": "refill",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.3067206016566307,
+            0.8280011421211708
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 16,
+          "structure": "refill",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.13489869096874618,
+            0.7826394426634701
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 17,
+          "structure": "refill",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.1656943545826936,
+            0.6789865663509815
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 18,
+          "structure": "recovery",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.8945499618153951
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 19,
+          "structure": "recovery",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.8529335144737201
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 20,
+          "structure": "recovery",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0,
+            0.905897958927584
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 21,
+          "structure": "recovery",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.20418883443611752,
+            0.8023351888839745
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 22,
+          "structure": "recovery",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.05676971776626204,
+            0.6572840962021762
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 23,
+          "structure": "recovery",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.09410204107241599,
+            0.7958111655638824
+          ],
+          "not_excluded": true
+        }
+      ],
+      "rule": "A pure policy is excluded only if its upper worst-response win bound is below another pure policy lower bound. Retention is uncertainty, not equivalence or strength.",
+      "interpretation": "Finite policy-pool minimax eventual-win envelope, not the deadline-life objective and not real-game win rates. Unknown continuation is adversarial for lower and favorable for upper; this is deliberately an outer bound."
+    },
+    {
+      "world": "longer_horizon",
+      "empirical_completion_value_interval": [
+        0.7265625,
+        0.9062500000000001
+      ],
+      "chance_and_completion_value_interval": [
+        0.5777844497322728,
+        0.9712343367875551
+      ],
+      "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
+      "pure_policies_not_excluded": 13,
+      "total_pure_policies": 24,
+      "pure_policy_bounds": [
+        {
+          "row": 0,
+          "structure": "wide",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0025433505596317353,
+            0.6352673416476704
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 1,
+          "structure": "wide",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0025433505596317353,
+            0.6499800609794819
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 2,
+          "structure": "wide",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0010387609970509784,
+            0.6426411438197286
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 3,
+          "structure": "wide",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.2716114672932114,
+            0.5978731926858394
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 4,
+          "structure": "wide",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.18474412603945542,
+            0.4883402674902688
+          ],
+          "not_excluded": false
+        },
+        {
+          "row": 5,
+          "structure": "wide",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.18474412603945542,
+            0.49641331361381336
+          ],
+          "not_excluded": false
+        },
+        {
+          "row": 6,
+          "structure": "anchor",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.5035866863861866,
+            0.971234336787555
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 7,
+          "structure": "anchor",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.40971139406578394,
+            0.9530633012491289
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 8,
+          "structure": "anchor",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.43267973160946893,
+            0.9530633012491289
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 9,
+          "structure": "anchor",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.5777844497322728,
+            0.8467730323000383
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 10,
+          "structure": "anchor",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.5116597325097312,
+            0.808817022828971
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 11,
+          "structure": "anchor",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.5116597325097312,
+            0.7958111655638824
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 12,
+          "structure": "refill",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.01008845303536534,
+            0.42221555026772717
+          ],
+          "not_excluded": false
+        },
+        {
+          "row": 13,
+          "structure": "refill",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0010387609970509784,
+            0.36181729310598
+          ],
+          "not_excluded": false
+        },
+        {
+          "row": 14,
+          "structure": "refill",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            2.7131409898618114e-06,
+            0.5283082539798885
+          ],
+          "not_excluded": false
+        },
+        {
+          "row": 15,
+          "structure": "refill",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.32821259164153915,
+            0.6278586264322292
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 16,
+          "structure": "refill",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.17199885787882915,
+            0.44734596546348293
+          ],
+          "not_excluded": false
+        },
+        {
+          "row": 17,
+          "structure": "refill",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.1656943545826936,
+            0.44734596546348293
+          ],
+          "not_excluded": false
+        },
+        {
+          "row": 18,
+          "structure": "recovery",
+          "policy": "commit",
+          "worst_response_win_interval": [
+            0.0,
+            0.5518267589468835
+          ],
+          "not_excluded": false
+        },
+        {
+          "row": 19,
+          "structure": "recovery",
+          "policy": "guard_two",
+          "worst_response_win_interval": [
+            0.0,
+            0.5902886059342161
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 20,
+          "structure": "recovery",
+          "policy": "bank_rebuild",
+          "worst_response_win_interval": [
+            0.0,
+            0.6932793983433694
+          ],
+          "not_excluded": true
+        },
+        {
+          "row": 21,
+          "structure": "recovery",
+          "policy": "pressure_commit",
+          "worst_response_win_interval": [
+            0.2107543108368328,
+            0.5361853511547074
+          ],
+          "not_excluded": false
+        },
+        {
+          "row": 22,
+          "structure": "recovery",
+          "policy": "pressure_guard",
+          "worst_response_win_interval": [
+            0.04693669875087112,
+            0.3260221806734587
+          ],
+          "not_excluded": false
+        },
+        {
+          "row": 23,
+          "structure": "recovery",
+          "policy": "pressure_bank",
+          "worst_response_win_interval": [
+            0.17199885787882915,
+            0.5595918314618131
+          ],
+          "not_excluded": false
+        }
+      ],
+      "rule": "A pure policy is excluded only if its upper worst-response win bound is below another pure policy lower bound. Retention is uncertainty, not equivalence or strength.",
+      "interpretation": "Finite policy-pool minimax eventual-win envelope, not the deadline-life objective and not real-game win rates. Unknown continuation is adversarial for lower and favorable for upper; this is deliberately an outer bound."
+    }
+  ],
+  "method_revision": "Keep deadline goals explicit. Refuse unique eventual-strength rankings when stochastic/unfinished intervals overlap; do not substitute F/J or fit one arbitrary continuation price.",
+  "assumptions": [
+    "Saved abstract rules and evaluation seeds",
+    "Declared finite row/timing-response pools",
+    "Terminal outcomes stay terminal; unfinished outcomes only known to lie in[0,1]",
+    "Per-world rate confidence; no external model-validity claim"
+  ]
+}
