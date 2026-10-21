@@ -1,0 +1,13 @@
+{
+  "source_commit": "f0a2231df0dbc4f70b1c8435145dcb4dd6915725",
+  "prefix_source_commit": "785ed3b1de06debf58158f12bf970462301808f9",
+  "status": "complete",
+  "purpose": "Resolve unknown tails under unchanged frozen causal policies, without treating finite deadline as the game end",
+  "independent_new_seeds": 0,
+  "maximum_own_rounds": 40,
+  "old_experiments_rerun": 0,
+  "checked_prefixes": 9984,
+  "elapsed_seconds": 11.46844795398647,
+  "continued_trajectories": 9984,
+  "metadata_correction": "Renamed independent_trajectories to continued_trajectories: all continuations reuse existing paired seeds and policies; no numerical results or simulation changed."
+}

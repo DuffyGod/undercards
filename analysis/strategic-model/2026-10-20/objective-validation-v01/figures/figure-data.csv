@@ -1,0 +1,13 @@
+world,objective,phase,win,loss,unfinished
+sweep_integrity_seat0,life,T12,0.1947832661290322,0.10126008064516129,0.7039566532258066
+sweep_integrity_seat0,life,Final,0.8522429435483871,0.14775705645161288,0.0
+sweep_integrity_seat0,win_by_deadline,T12,0.625,0.296875,0.078125
+sweep_integrity_seat0,win_by_deadline,Final,0.703125,0.296875,0.0
+sweep_integrity_seat0,survive_deadline,T12,0.1953125,0.1015625,0.703125
+sweep_integrity_seat0,survive_deadline,Final,0.8515625,0.1484375,0.0
+focus_integrity_seat1,life,T12,0.046875,0.203125,0.75
+focus_integrity_seat1,life,Final,0.734375,0.265625,0.0
+focus_integrity_seat1,win_by_deadline,T12,0.3203125,0.53125,0.1484375
+focus_integrity_seat1,win_by_deadline,Final,0.390625,0.609375,0.0
+focus_integrity_seat1,survive_deadline,T12,0.0,0.2421875,0.7578125
+focus_integrity_seat1,survive_deadline,Final,0.03125,0.96875,0.0

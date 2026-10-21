@@ -69,7 +69,7 @@ def run():
         summaries.append(dict(world=world,goals=goals,effects=effects));total+=checked
         print(json.dumps(dict(world=world,checked_prefixes=total,unresolved=int(data[:,:, :,2].sum()),
             win_gain=[round(e['eventual_win_gain']['mean'],3) for e in effects])),flush=True)
-    status.update(status='complete',checked_prefixes=total,independent_trajectories=total,elapsed_seconds=time.monotonic()-started)
+    status.update(status='complete',checked_prefixes=total,continued_trajectories=total,elapsed_seconds=time.monotonic()-started)
     dump(output/'manifest.json',status)
     dump(output/'summary.json',dict(source_commit=commit,prefix_source_commit=manifest['source_commit'],results=summaries,
         interpretation='Actual termination under this abstract mechanism set and frozen policy supports. No real-card or full-policy-pool claim; ending mainly by fatigue is an adequacy warning, not an Undercards metagame finding.'))

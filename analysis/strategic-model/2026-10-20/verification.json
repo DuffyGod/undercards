@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-21",
+  "new_simulations_by_this_verifier": 0,
+  "observed_new_model_tests": {
+    "unique_cases": 12,
+    "status": "passed before formal run",
+    "source_commit": "2f462384b0ca4bfa61fade03d8f2baaeee3b2858"
+  },
+  "observed_completion_tests": {
+    "unique_cases": 4,
+    "status": "passed"
+  },
+  "independent_matrix_self_checks": {
+    "unique_cases": 4,
+    "status": "reported passed by independent author; finite numerical cases only"
+  },
+  "original_records": 322560,
+  "new_goal_records": 9984,
+  "continued_same_records": 9984,
+  "unique_official_seed_pairs": 320,
+  "new_seeds_for_continuation": 0,
+  "terminal_prefix_outcomes_preserved": 5192,
+  "maximum_terminal_round": 30,
+  "previously_saved_control_pairs": 15360,
+  "previously_saved_horizon_prefixes": 23040,
+  "read_only_query_modes": [
+    "profile",
+    "eventual_bounds",
+    "final_outcomes"
+  ],
+  "local_document_links": "passed",
+  "old_experiments_rerun": 0,
+  "new_api_calls": 0,
+  "scope": "New abstract research receipts and saved outcome consistency; not current-server rules proof, complete strategy search, or externally calibrated card/deck strength"
+}
