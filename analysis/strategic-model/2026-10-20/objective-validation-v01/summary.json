@@ -1,0 +1,1576 @@
+{
+  "source_commit": "785ed3b1de06debf58158f12bf970462301808f9",
+  "base_source_commit": "2f462384b0ca4bfa61fade03d8f2baaeee3b2858",
+  "results": [
+    {
+      "world": "sweep_integrity_seat0",
+      "goals": {
+        "life": {
+          "mixture": [
+            {
+              "structure": "anchor",
+              "policy": "commit",
+              "weight": 0.9903225806451611
+            },
+            {
+              "structure": "anchor",
+              "policy": "bank_rebuild",
+              "weight": 0.009677419354838901
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.24901713709677406,
+              "loss": 0.05498991935483871,
+              "unfinished": 0.6959929435483873,
+              "life": 0.27121135752688164
+            },
+            {
+              "column": "hold_two",
+              "win": 0.1947832661290322,
+              "loss": 0.10126008064516129,
+              "unfinished": 0.7039566532258066,
+              "life": 0.11638440860215055
+            },
+            {
+              "column": "hold_three",
+              "win": 0.2876260080645161,
+              "loss": 0.03936491935483871,
+              "unfinished": 0.6730090725806456,
+              "life": 0.3409685819892471
+            }
+          ]
+        },
+        "win_by_deadline": {
+          "mixture": [
+            {
+              "structure": "anchor",
+              "policy": "pressure_bank",
+              "weight": 1.0
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.703125,
+              "loss": 0.25,
+              "unfinished": 0.046875,
+              "life": 0.11432291666666668
+            },
+            {
+              "column": "hold_two",
+              "win": 0.625,
+              "loss": 0.296875,
+              "unfinished": 0.078125,
+              "life": 0.03541666666666666
+            },
+            {
+              "column": "hold_three",
+              "win": 0.6328125,
+              "loss": 0.2890625,
+              "unfinished": 0.078125,
+              "life": 0.04999999999999998
+            }
+          ]
+        },
+        "survive_deadline": {
+          "mixture": [
+            {
+              "structure": "anchor",
+              "policy": "commit",
+              "weight": 1.0
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.25,
+              "loss": 0.0546875,
+              "unfinished": 0.6953125,
+              "life": 0.2731770833333334
+            },
+            {
+              "column": "hold_two",
+              "win": 0.1953125,
+              "loss": 0.1015625,
+              "unfinished": 0.703125,
+              "life": 0.11588541666666673
+            },
+            {
+              "column": "hold_three",
+              "win": 0.2890625,
+              "loss": 0.0390625,
+              "unfinished": 0.671875,
+              "life": 0.3424479166666665
+            }
+          ]
+        }
+      },
+      "effects": [
+        {
+          "column": "immediate",
+          "win_gain": {
+            "mean": 0.4541078629032258,
+            "approx95": [
+              0.35270694916770745,
+              0.5555087766387442
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.1950100806451613,
+            "approx95": [
+              0.11372454701777153,
+              0.27629561427255106
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": 0.00030241935483871565,
+            "approx95": [
+              -0.00025172802337362725,
+              0.0008565667330510586
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        },
+        {
+          "column": "hold_two",
+          "win_gain": {
+            "mean": 0.4302167338709677,
+            "approx95": [
+              0.33409345549862557,
+              0.5263400122433098
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.1956149193548387,
+            "approx95": [
+              0.11151427988711692,
+              0.2797155588225605
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": -0.00030241935483871565,
+            "approx95": [
+              -0.000931392078716902,
+              0.0003265533690394707
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        },
+        {
+          "column": "hold_three",
+          "win_gain": {
+            "mean": 0.3451864919354839,
+            "approx95": [
+              0.24494637859873866,
+              0.4454266052722291
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.2496975806451613,
+            "approx95": [
+              0.16568679356558122,
+              0.33370836772474133
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": 0.00030241935483871565,
+            "approx95": [
+              -0.0002102361157046577,
+              0.000815074825382089
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat1",
+      "goals": {
+        "life": {
+          "mixture": [
+            {
+              "structure": "anchor",
+              "policy": "commit",
+              "weight": 0.8641509433962267
+            },
+            {
+              "structure": "anchor",
+              "policy": "bank_rebuild",
+              "weight": 0.13584905660377333
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.14843750000000003,
+              "loss": 0.07455778301886792,
+              "unfinished": 0.777004716981132,
+              "life": 0.14271422955974847
+            },
+            {
+              "column": "hold_two",
+              "win": 0.11005306603773583,
+              "loss": 0.13888561320754722,
+              "unfinished": 0.751061320754717,
+              "life": 0.048013954402515706
+            },
+            {
+              "column": "hold_three",
+              "win": 0.17187499999999994,
+              "loss": 0.07137382075471697,
+              "unfinished": 0.756751179245283,
+              "life": 0.279125393081761
+            }
+          ]
+        },
+        "win_by_deadline": {
+          "mixture": [
+            {
+              "structure": "anchor",
+              "policy": "pressure_commit",
+              "weight": 1.0
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.6328125,
+              "loss": 0.25,
+              "unfinished": 0.1171875,
+              "life": 0.06770833333333331
+            },
+            {
+              "column": "hold_two",
+              "win": 0.5078125,
+              "loss": 0.40625,
+              "unfinished": 0.0859375,
+              "life": -0.0861979166666667
+            },
+            {
+              "column": "hold_three",
+              "win": 0.6015625,
+              "loss": 0.328125,
+              "unfinished": 0.0703125,
+              "life": -0.01093749999999999
+            }
+          ]
+        },
+        "survive_deadline": {
+          "mixture": [
+            {
+              "structure": "anchor",
+              "policy": "commit",
+              "weight": 1.0
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.1484375,
+              "loss": 0.0703125,
+              "unfinished": 0.78125,
+              "life": 0.16302083333333325
+            },
+            {
+              "column": "hold_two",
+              "win": 0.1015625,
+              "loss": 0.1484375,
+              "unfinished": 0.75,
+              "life": 0.03619791666666667
+            },
+            {
+              "column": "hold_three",
+              "win": 0.171875,
+              "loss": 0.0703125,
+              "unfinished": 0.7578125,
+              "life": 0.29635416666666664
+            }
+          ]
+        }
+      },
+      "effects": [
+        {
+          "column": "immediate",
+          "win_gain": {
+            "mean": 0.484375,
+            "approx95": [
+              0.3921820678870613,
+              0.5765679321129388
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.17544221698113208,
+            "approx95": [
+              0.09996307473161267,
+              0.2509213592306515
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": 0.004245283018867917,
+            "approx95": [
+              -0.005522137451346191,
+              0.014012703489082024
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        },
+        {
+          "column": "hold_two",
+          "win_gain": {
+            "mean": 0.3977594339622641,
+            "approx95": [
+              0.30655010572818425,
+              0.48896876219634394
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.26736438679245284,
+            "approx95": [
+              0.18109048529300364,
+              0.353638288291902
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": -0.009551886792452812,
+            "approx95": [
+              -0.019860697270809,
+              0.0007569236859033754
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        },
+        {
+          "column": "hold_three",
+          "win_gain": {
+            "mean": 0.4296875,
+            "approx95": [
+              0.33240967594920545,
+              0.5269653240507945
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.256751179245283,
+            "approx95": [
+              0.17537207626384488,
+              0.33813028222672115
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": 0.0010613207547169792,
+            "approx95": [
+              -0.007024765234939145,
+              0.009147406744373103
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        }
+      ]
+    },
+    {
+      "world": "sweep_kindness_seat0",
+      "goals": {
+        "life": {
+          "mixture": [
+            {
+              "structure": "anchor",
+              "policy": "commit",
+              "weight": 0.8157894736842108
+            },
+            {
+              "structure": "anchor",
+              "policy": "bank_rebuild",
+              "weight": 0.18421052631578916
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.3203125,
+              "loss": 0.1554276315789474,
+              "unfinished": 0.5242598684210527,
+              "life": 0.17817982456140352
+            },
+            {
+              "column": "hold_two",
+              "win": 0.28556743421052627,
+              "loss": 0.2245065789473684,
+              "unfinished": 0.48992598684210537,
+              "life": 0.0923314144736842
+            },
+            {
+              "column": "hold_three",
+              "win": 0.30612664473684204,
+              "loss": 0.21525493421052636,
+              "unfinished": 0.47861842105263164,
+              "life": 0.13604714912280702
+            }
+          ]
+        },
+        "win_by_deadline": {
+          "mixture": [
+            {
+              "structure": "anchor",
+              "policy": "pressure_commit",
+              "weight": 1.0
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.6953125,
+              "loss": 0.2578125,
+              "unfinished": 0.046875,
+              "life": 0.09739583333333335
+            },
+            {
+              "column": "hold_two",
+              "win": 0.609375,
+              "loss": 0.3125,
+              "unfinished": 0.078125,
+              "life": 0.020052083333333342
+            },
+            {
+              "column": "hold_three",
+              "win": 0.59375,
+              "loss": 0.3125,
+              "unfinished": 0.09375,
+              "life": 0.03880208333333331
+            }
+          ]
+        },
+        "survive_deadline": {
+          "mixture": [
+            {
+              "structure": "anchor",
+              "policy": "guard_two",
+              "weight": 0.6249999999999997
+            },
+            {
+              "structure": "recovery",
+              "policy": "bank_rebuild",
+              "weight": 0.37500000000000033
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.20019531249999997,
+              "loss": 0.18359375000000003,
+              "unfinished": 0.6162109375,
+              "life": -0.06621093750000023
+            },
+            {
+              "column": "hold_two",
+              "win": 0.13476562499999997,
+              "loss": 0.2216796875,
+              "unfinished": 0.6435546875,
+              "life": -0.12402343750000008
+            },
+            {
+              "column": "hold_three",
+              "win": 0.15917968749999997,
+              "loss": 0.1962890625,
+              "unfinished": 0.64453125,
+              "life": 0.011914062499999828
+            }
+          ]
+        }
+      },
+      "effects": [
+        {
+          "column": "immediate",
+          "win_gain": {
+            "mean": 0.375,
+            "approx95": [
+              0.28200241095458634,
+              0.46799758904541366
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.10238486842105263,
+            "approx95": [
+              0.028566453089995614,
+              0.17620328375210964
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": -0.02816611842105267,
+            "approx95": [
+              -0.07517159631517001,
+              0.018839359473064664
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        },
+        {
+          "column": "hold_two",
+          "win_gain": {
+            "mean": 0.3238075657894737,
+            "approx95": [
+              0.2280843149188201,
+              0.41953081666012726
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.08799342105263158,
+            "approx95": [
+              0.006873673484803944,
+              0.16911316862045922
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": 0.002826891447368387,
+            "approx95": [
+              -0.05423955423346645,
+              0.05989333712820323
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        },
+        {
+          "column": "hold_three",
+          "win_gain": {
+            "mean": 0.28762335526315785,
+            "approx95": [
+              0.1958459395105823,
+              0.37940077101573344
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.0972450657894737,
+            "approx95": [
+              0.015478034649455685,
+              0.17901209692949172
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": 0.01896587171052628,
+            "approx95": [
+              -0.03605202476001418,
+              0.07398376818106674
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        }
+      ]
+    },
+    {
+      "world": "sweep_kindness_seat1",
+      "goals": {
+        "life": {
+          "mixture": [
+            {
+              "structure": "anchor",
+              "policy": "bank_rebuild",
+              "weight": 1.0
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.265625,
+              "loss": 0.15625,
+              "unfinished": 0.578125,
+              "life": 0.09036458333333337
+            },
+            {
+              "column": "hold_two",
+              "win": 0.25,
+              "loss": 0.2421875,
+              "unfinished": 0.5078125,
+              "life": 0.06458333333333331
+            },
+            {
+              "column": "hold_three",
+              "win": 0.28125,
+              "loss": 0.2265625,
+              "unfinished": 0.4921875,
+              "life": 0.11145833333333334
+            }
+          ]
+        },
+        "win_by_deadline": {
+          "mixture": [
+            {
+              "structure": "anchor",
+              "policy": "pressure_commit",
+              "weight": 1.0
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.6875,
+              "loss": 0.265625,
+              "unfinished": 0.046875,
+              "life": 0.06770833333333331
+            },
+            {
+              "column": "hold_two",
+              "win": 0.578125,
+              "loss": 0.3515625,
+              "unfinished": 0.0703125,
+              "life": -0.02552083333333332
+            },
+            {
+              "column": "hold_three",
+              "win": 0.5625,
+              "loss": 0.3671875,
+              "unfinished": 0.0703125,
+              "life": -0.029947916666666654
+            }
+          ]
+        },
+        "survive_deadline": {
+          "mixture": [
+            {
+              "structure": "anchor",
+              "policy": "bank_rebuild",
+              "weight": 0.8333333333333335
+            },
+            {
+              "structure": "refill",
+              "policy": "commit",
+              "weight": 0.16666666666666652
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.2239583333333333,
+              "loss": 0.16145833333333331,
+              "unfinished": 0.6145833333333335,
+              "life": 0.05690104166666671
+            },
+            {
+              "column": "hold_two",
+              "win": 0.21093749999999997,
+              "loss": 0.24609375,
+              "unfinished": 0.5429687499999999,
+              "life": 0.014149305555555606
+            },
+            {
+              "column": "hold_three",
+              "win": 0.23697916666666657,
+              "loss": 0.23958333333333334,
+              "unfinished": 0.5234374999999999,
+              "life": 0.055468750000000025
+            }
+          ]
+        }
+      },
+      "effects": [
+        {
+          "column": "immediate",
+          "win_gain": {
+            "mean": 0.421875,
+            "approx95": [
+              0.32560386327287766,
+              0.5181461367271223
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.109375,
+            "approx95": [
+              0.033332722110823096,
+              0.1854172778891769
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": -0.005208333333333329,
+            "approx95": [
+              -0.0171915112250312,
+              0.006774844558364546
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        },
+        {
+          "column": "hold_two",
+          "win_gain": {
+            "mean": 0.328125,
+            "approx95": [
+              0.2259010974384109,
+              0.4303489025615891
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.109375,
+            "approx95": [
+              0.021779456690553256,
+              0.19697054330944674
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": -0.0039062499999999965,
+            "approx95": [
+              -0.018608770050012845,
+              0.010796270050012852
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        },
+        {
+          "column": "hold_three",
+          "win_gain": {
+            "mean": 0.28125,
+            "approx95": [
+              0.1794242093875119,
+              0.3830757906124881
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.140625,
+            "approx95": [
+              0.051690765279533896,
+              0.2295592347204661
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": -0.013020833333333322,
+            "approx95": [
+              -0.027787743019920402,
+              0.0017460763532537605
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat0",
+      "goals": {
+        "life": {
+          "mixture": [
+            {
+              "structure": "refill",
+              "policy": "pressure_commit",
+              "weight": 1.0
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.6953125,
+              "loss": 0.1328125,
+              "unfinished": 0.171875,
+              "life": 0.3424479166666668
+            },
+            {
+              "column": "hold_two",
+              "win": 0.2421875,
+              "loss": 0.203125,
+              "unfinished": 0.5546875,
+              "life": -0.006770833333333333
+            },
+            {
+              "column": "hold_three",
+              "win": 0.2421875,
+              "loss": 0.203125,
+              "unfinished": 0.5546875,
+              "life": -0.00572916666666667
+            }
+          ]
+        },
+        "win_by_deadline": {
+          "mixture": [
+            {
+              "structure": "anchor",
+              "policy": "pressure_commit",
+              "weight": 1.0
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.796875,
+              "loss": 0.140625,
+              "unfinished": 0.0625,
+              "life": 0.24296875000000004
+            },
+            {
+              "column": "hold_two",
+              "win": 0.5390625,
+              "loss": 0.28125,
+              "unfinished": 0.1796875,
+              "life": -0.0005208333333333293
+            },
+            {
+              "column": "hold_three",
+              "win": 0.5390625,
+              "loss": 0.28125,
+              "unfinished": 0.1796875,
+              "life": -0.0005208333333333293
+            }
+          ]
+        },
+        "survive_deadline": {
+          "mixture": [
+            {
+              "structure": "anchor",
+              "policy": "commit",
+              "weight": 1.0
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.171875,
+              "loss": 0.0390625,
+              "unfinished": 0.7890625,
+              "life": 0.24010416666666665
+            },
+            {
+              "column": "hold_two",
+              "win": 0.09375,
+              "loss": 0.09375,
+              "unfinished": 0.8125,
+              "life": -0.007552083333333338
+            },
+            {
+              "column": "hold_three",
+              "win": 0.1015625,
+              "loss": 0.1015625,
+              "unfinished": 0.796875,
+              "life": -0.009895833333333335
+            }
+          ]
+        }
+      },
+      "effects": [
+        {
+          "column": "immediate",
+          "win_gain": {
+            "mean": 0.1015625,
+            "approx95": [
+              0.036924707180468266,
+              0.16620029281953175
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.0078125,
+            "approx95": [
+              -0.05171007742385769,
+              0.06733507742385769
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": 0.09375,
+            "approx95": [
+              0.02696288153458494,
+              0.16053711846541507
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        },
+        {
+          "column": "hold_two",
+          "win_gain": {
+            "mean": 0.296875,
+            "approx95": [
+              0.2116727633109845,
+              0.3820772366890155
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.078125,
+            "approx95": [
+              -0.004970985404556871,
+              0.16122098540455687
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": 0.109375,
+            "approx95": [
+              0.030286025914793957,
+              0.18846397408520604
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        },
+        {
+          "column": "hold_three",
+          "win_gain": {
+            "mean": 0.296875,
+            "approx95": [
+              0.2116727633109845,
+              0.3820772366890155
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.078125,
+            "approx95": [
+              -0.004970985404556871,
+              0.16122098540455687
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": 0.1015625,
+            "approx95": [
+              0.023661309754387766,
+              0.17946369024561223
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat1",
+      "goals": {
+        "life": {
+          "mixture": [
+            {
+              "structure": "anchor",
+              "policy": "commit",
+              "weight": 1.0
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.125,
+              "loss": 0.0546875,
+              "unfinished": 0.8203125,
+              "life": 0.12473958333333338
+            },
+            {
+              "column": "hold_two",
+              "win": 0.046875,
+              "loss": 0.203125,
+              "unfinished": 0.75,
+              "life": -0.19609374999999993
+            },
+            {
+              "column": "hold_three",
+              "win": 0.0546875,
+              "loss": 0.203125,
+              "unfinished": 0.7421875,
+              "life": -0.19270833333333323
+            }
+          ]
+        },
+        "win_by_deadline": {
+          "mixture": [
+            {
+              "structure": "anchor",
+              "policy": "pressure_commit",
+              "weight": 1.0
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.546875,
+              "loss": 0.3359375,
+              "unfinished": 0.1171875,
+              "life": -0.04036458333333334
+            },
+            {
+              "column": "hold_two",
+              "win": 0.3203125,
+              "loss": 0.53125,
+              "unfinished": 0.1484375,
+              "life": -0.28046875000000004
+            },
+            {
+              "column": "hold_three",
+              "win": 0.3203125,
+              "loss": 0.53125,
+              "unfinished": 0.1484375,
+              "life": -0.2791666666666667
+            }
+          ]
+        },
+        "survive_deadline": {
+          "mixture": [
+            {
+              "structure": "refill",
+              "policy": "commit",
+              "weight": 1.0
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.046875,
+              "loss": 0.046875,
+              "unfinished": 0.90625,
+              "life": 0.13203124999999996
+            },
+            {
+              "column": "hold_two",
+              "win": 0.0,
+              "loss": 0.2421875,
+              "unfinished": 0.7578125,
+              "life": -0.2510416666666667
+            },
+            {
+              "column": "hold_three",
+              "win": 0.0,
+              "loss": 0.2421875,
+              "unfinished": 0.7578125,
+              "life": -0.24401041666666679
+            }
+          ]
+        }
+      },
+      "effects": [
+        {
+          "column": "immediate",
+          "win_gain": {
+            "mean": 0.421875,
+            "approx95": [
+              0.3306453108841146,
+              0.5131046891158855
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.28125,
+            "approx95": [
+              0.20305312361495537,
+              0.35944687638504463
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": 0.0078125,
+            "approx95": [
+              -0.043154760399475585,
+              0.058779760399475585
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        },
+        {
+          "column": "hold_two",
+          "win_gain": {
+            "mean": 0.2734375,
+            "approx95": [
+              0.18725496636875663,
+              0.3596200336312434
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.328125,
+            "approx95": [
+              0.2408673385411475,
+              0.4153826614588525
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": -0.0390625,
+            "approx95": [
+              -0.13726086438787932,
+              0.05913586438787931
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        },
+        {
+          "column": "hold_three",
+          "win_gain": {
+            "mean": 0.265625,
+            "approx95": [
+              0.18007676295667763,
+              0.3511732370433224
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.328125,
+            "approx95": [
+              0.2408673385411475,
+              0.4153826614588525
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": -0.0390625,
+            "approx95": [
+              -0.13726086438787932,
+              0.05913586438787931
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        }
+      ]
+    },
+    {
+      "world": "focus_kindness_seat0",
+      "goals": {
+        "life": {
+          "mixture": [
+            {
+              "structure": "anchor",
+              "policy": "commit",
+              "weight": 1.0
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.390625,
+              "loss": 0.1796875,
+              "unfinished": 0.4296875,
+              "life": 0.15911458333333334
+            },
+            {
+              "column": "hold_two",
+              "win": 0.234375,
+              "loss": 0.3046875,
+              "unfinished": 0.4609375,
+              "life": -0.06328125000000001
+            },
+            {
+              "column": "hold_three",
+              "win": 0.1953125,
+              "loss": 0.3203125,
+              "unfinished": 0.484375,
+              "life": -0.11666666666666668
+            }
+          ]
+        },
+        "win_by_deadline": {
+          "mixture": [
+            {
+              "structure": "anchor",
+              "policy": "pressure_commit",
+              "weight": 1.0
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.765625,
+              "loss": 0.234375,
+              "unfinished": 0.0,
+              "life": 0.14505208333333333
+            },
+            {
+              "column": "hold_two",
+              "win": 0.6484375,
+              "loss": 0.3203125,
+              "unfinished": 0.03125,
+              "life": 0.013541666666666669
+            },
+            {
+              "column": "hold_three",
+              "win": 0.484375,
+              "loss": 0.4296875,
+              "unfinished": 0.0859375,
+              "life": -0.13229166666666672
+            }
+          ]
+        },
+        "survive_deadline": {
+          "mixture": [
+            {
+              "structure": "wide",
+              "policy": "commit",
+              "weight": 1.0
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.078125,
+              "loss": 0.078125,
+              "unfinished": 0.84375,
+              "life": 0.04036458333333333
+            },
+            {
+              "column": "hold_two",
+              "win": 0.0234375,
+              "loss": 0.2265625,
+              "unfinished": 0.75,
+              "life": -0.25859375
+            },
+            {
+              "column": "hold_three",
+              "win": 0.0234375,
+              "loss": 0.2890625,
+              "unfinished": 0.6875,
+              "life": -0.31223958333333335
+            }
+          ]
+        }
+      },
+      "effects": [
+        {
+          "column": "immediate",
+          "win_gain": {
+            "mean": 0.375,
+            "approx95": [
+              0.2707374981532738,
+              0.4792625018467262
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.0546875,
+            "approx95": [
+              -0.015113868341829303,
+              0.1244888683418293
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": 0.1015625,
+            "approx95": [
+              0.02675636625143979,
+              0.1763686337485602
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        },
+        {
+          "column": "hold_two",
+          "win_gain": {
+            "mean": 0.4140625,
+            "approx95": [
+              0.31087687075146875,
+              0.5172481292485313
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.015625,
+            "approx95": [
+              -0.07657096167625482,
+              0.10782096167625482
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": 0.078125,
+            "approx95": [
+              -0.025248329019428653,
+              0.18149832901942864
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        },
+        {
+          "column": "hold_three",
+          "win_gain": {
+            "mean": 0.2890625,
+            "approx95": [
+              0.1964369974152116,
+              0.3816880025847884
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.109375,
+            "approx95": [
+              0.021779456690553256,
+              0.19697054330944674
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": 0.03125,
+            "approx95": [
+              -0.07287074447070506,
+              0.13537074447070507
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        }
+      ]
+    },
+    {
+      "world": "focus_kindness_seat1",
+      "goals": {
+        "life": {
+          "mixture": [
+            {
+              "structure": "anchor",
+              "policy": "commit",
+              "weight": 1.0
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.234375,
+              "loss": 0.2734375,
+              "unfinished": 0.4921875,
+              "life": 0.07994791666666669
+            },
+            {
+              "column": "hold_two",
+              "win": 0.1015625,
+              "loss": 0.4140625,
+              "unfinished": 0.484375,
+              "life": -0.20963541666666663
+            },
+            {
+              "column": "hold_three",
+              "win": 0.09375,
+              "loss": 0.453125,
+              "unfinished": 0.453125,
+              "life": -0.2351562499999999
+            }
+          ]
+        },
+        "win_by_deadline": {
+          "mixture": [
+            {
+              "structure": "anchor",
+              "policy": "pressure_commit",
+              "weight": 1.0
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.5859375,
+              "loss": 0.390625,
+              "unfinished": 0.0234375,
+              "life": -0.030468749999999992
+            },
+            {
+              "column": "hold_two",
+              "win": 0.3671875,
+              "loss": 0.53125,
+              "unfinished": 0.1015625,
+              "life": -0.24869791666666655
+            },
+            {
+              "column": "hold_three",
+              "win": 0.3359375,
+              "loss": 0.5546875,
+              "unfinished": 0.109375,
+              "life": -0.28723958333333316
+            }
+          ]
+        },
+        "survive_deadline": {
+          "mixture": [
+            {
+              "structure": "refill",
+              "policy": "commit",
+              "weight": 1.0
+            }
+          ],
+          "against_timing_policies": [
+            {
+              "column": "immediate",
+              "win": 0.0546875,
+              "loss": 0.140625,
+              "unfinished": 0.8046875,
+              "life": -0.0007812499999999899
+            },
+            {
+              "column": "hold_two",
+              "win": 0.0078125,
+              "loss": 0.2421875,
+              "unfinished": 0.75,
+              "life": -0.29531250000000003
+            },
+            {
+              "column": "hold_three",
+              "win": 0.0078125,
+              "loss": 0.25,
+              "unfinished": 0.7421875,
+              "life": -0.3111979166666667
+            }
+          ]
+        }
+      },
+      "effects": [
+        {
+          "column": "immediate",
+          "win_gain": {
+            "mean": 0.3515625,
+            "approx95": [
+              0.255339319010213,
+              0.447785680989787
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.1171875,
+            "approx95": [
+              0.03405819400916596,
+              0.20031680599083404
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": 0.1328125,
+            "approx95": [
+              0.04484888447488644,
+              0.22077611552511356
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        },
+        {
+          "column": "hold_two",
+          "win_gain": {
+            "mean": 0.265625,
+            "approx95": [
+              0.18007676295667763,
+              0.3511732370433224
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.1171875,
+            "approx95": [
+              0.028554790997798687,
+              0.20582020900220133
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": 0.171875,
+            "approx95": [
+              0.07935919014125804,
+              0.26439080985874197
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        },
+        {
+          "column": "hold_three",
+          "win_gain": {
+            "mean": 0.2421875,
+            "approx95": [
+              0.15591931910922918,
+              0.3284556808907708
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "loss_change": {
+            "mean": 0.1015625,
+            "approx95": [
+              0.015037886001959877,
+              0.18808711399804012
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          },
+          "survival_gain": {
+            "mean": 0.203125,
+            "approx95": [
+              0.10503009639543462,
+              0.3012199036045654
+            ],
+            "n": 128,
+            "scope": "Paired independent evaluation seeds in this abstract world; exploratory normal interval, no external/model/multiple-selection coverage"
+          }
+        }
+      ]
+    }
+  ],
+  "interpretation": "Each policy mixture fit before new seeds. Win and survival are different finite-deadline goals; no scalar optimum for eventual real-game strength inferred."
+}

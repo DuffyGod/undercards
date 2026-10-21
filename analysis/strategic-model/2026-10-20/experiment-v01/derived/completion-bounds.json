@@ -1,5 +1,6 @@
 {
   "source_commit": "2f462384b0ca4bfa61fade03d8f2baaeee3b2858",
+  "analysis_source_commit": "785ed3b1de06debf58158f12bf970462301808f9",
   "new_simulations": 0,
   "findings": [
     {
@@ -15,6 +16,8 @@
       "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
       "pure_policies_not_excluded": 24,
       "total_pure_policies": 24,
+      "empirical_only_pure_policies_not_excluded": 13,
+      "uncertainty_separation": "Empirical-only retains unknown completion, but no sampling box. The larger confidence-retained set includes both completion and finite-sample uncertainty.",
       "pure_policy_bounds": [
         {
           "row": 0,
@@ -273,6 +276,8 @@
       "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
       "pure_policies_not_excluded": 24,
       "total_pure_policies": 24,
+      "empirical_only_pure_policies_not_excluded": 15,
+      "uncertainty_separation": "Empirical-only retains unknown completion, but no sampling box. The larger confidence-retained set includes both completion and finite-sample uncertainty.",
       "pure_policy_bounds": [
         {
           "row": 0,
@@ -531,6 +536,8 @@
       "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
       "pure_policies_not_excluded": 24,
       "total_pure_policies": 24,
+      "empirical_only_pure_policies_not_excluded": 19,
+      "uncertainty_separation": "Empirical-only retains unknown completion, but no sampling box. The larger confidence-retained set includes both completion and finite-sample uncertainty.",
       "pure_policy_bounds": [
         {
           "row": 0,
@@ -789,6 +796,8 @@
       "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
       "pure_policies_not_excluded": 24,
       "total_pure_policies": 24,
+      "empirical_only_pure_policies_not_excluded": 21,
+      "uncertainty_separation": "Empirical-only retains unknown completion, but no sampling box. The larger confidence-retained set includes both completion and finite-sample uncertainty.",
       "pure_policy_bounds": [
         {
           "row": 0,
@@ -1047,6 +1056,8 @@
       "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
       "pure_policies_not_excluded": 24,
       "total_pure_policies": 24,
+      "empirical_only_pure_policies_not_excluded": 22,
+      "uncertainty_separation": "Empirical-only retains unknown completion, but no sampling box. The larger confidence-retained set includes both completion and finite-sample uncertainty.",
       "pure_policy_bounds": [
         {
           "row": 0,
@@ -1305,6 +1316,8 @@
       "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
       "pure_policies_not_excluded": 24,
       "total_pure_policies": 24,
+      "empirical_only_pure_policies_not_excluded": 23,
+      "uncertainty_separation": "Empirical-only retains unknown completion, but no sampling box. The larger confidence-retained set includes both completion and finite-sample uncertainty.",
       "pure_policy_bounds": [
         {
           "row": 0,
@@ -1563,6 +1576,8 @@
       "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
       "pure_policies_not_excluded": 24,
       "total_pure_policies": 24,
+      "empirical_only_pure_policies_not_excluded": 21,
+      "uncertainty_separation": "Empirical-only retains unknown completion, but no sampling box. The larger confidence-retained set includes both completion and finite-sample uncertainty.",
       "pure_policy_bounds": [
         {
           "row": 0,
@@ -1821,6 +1836,8 @@
       "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
       "pure_policies_not_excluded": 24,
       "total_pure_policies": 24,
+      "empirical_only_pure_policies_not_excluded": 23,
+      "uncertainty_separation": "Empirical-only retains unknown completion, but no sampling box. The larger confidence-retained set includes both completion and finite-sample uncertainty.",
       "pure_policy_bounds": [
         {
           "row": 0,
@@ -2079,6 +2096,8 @@
       "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
       "pure_policies_not_excluded": 24,
       "total_pure_policies": 24,
+      "empirical_only_pure_policies_not_excluded": 9,
+      "uncertainty_separation": "Empirical-only retains unknown completion, but no sampling box. The larger confidence-retained set includes both completion and finite-sample uncertainty.",
       "pure_policy_bounds": [
         {
           "row": 0,
@@ -2337,6 +2356,8 @@
       "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
       "pure_policies_not_excluded": 24,
       "total_pure_policies": 24,
+      "empirical_only_pure_policies_not_excluded": 10,
+      "uncertainty_separation": "Empirical-only retains unknown completion, but no sampling box. The larger confidence-retained set includes both completion and finite-sample uncertainty.",
       "pure_policy_bounds": [
         {
           "row": 0,
@@ -2595,6 +2616,8 @@
       "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
       "pure_policies_not_excluded": 19,
       "total_pure_policies": 24,
+      "empirical_only_pure_policies_not_excluded": 4,
+      "uncertainty_separation": "Empirical-only retains unknown completion, but no sampling box. The larger confidence-retained set includes both completion and finite-sample uncertainty.",
       "pure_policy_bounds": [
         {
           "row": 0,
@@ -2853,6 +2876,8 @@
       "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
       "pure_policies_not_excluded": 21,
       "total_pure_policies": 24,
+      "empirical_only_pure_policies_not_excluded": 18,
+      "uncertainty_separation": "Empirical-only retains unknown completion, but no sampling box. The larger confidence-retained set includes both completion and finite-sample uncertainty.",
       "pure_policy_bounds": [
         {
           "row": 0,
@@ -3111,6 +3136,8 @@
       "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
       "pure_policies_not_excluded": 23,
       "total_pure_policies": 24,
+      "empirical_only_pure_policies_not_excluded": 8,
+      "uncertainty_separation": "Empirical-only retains unknown completion, but no sampling box. The larger confidence-retained set includes both completion and finite-sample uncertainty.",
       "pure_policy_bounds": [
         {
           "row": 0,
@@ -3369,6 +3396,8 @@
       "confidence_scope": "Per-world simultaneous95% one-sided exact-binomial boxes for all frozen row/column win and loss rates; includes arbitrary unfinished completions. Does NOT cover wrong game abstraction or omitted policy classes.",
       "pure_policies_not_excluded": 13,
       "total_pure_policies": 24,
+      "empirical_only_pure_policies_not_excluded": 4,
+      "uncertainty_separation": "Empirical-only retains unknown completion, but no sampling box. The larger confidence-retained set includes both completion and finite-sample uncertainty.",
       "pure_policy_bounds": [
         {
           "row": 0,
