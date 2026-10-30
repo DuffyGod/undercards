@@ -1,0 +1,3353 @@
+{
+  "results": [
+    {
+      "world": "focus_integrity_seat0",
+      "structure": "wide",
+      "body": "Froggit",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0,
+          "p_received_never_played": 0.01102941176470588,
+          "p_played": 0.9889705882352942,
+          "mean_first_entry_if_played": 4.324814126394052,
+          "mean_copies_played": 2.3800551470588225
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1282169117647059,
+          "p_received_never_played": 0.05009191176470588,
+          "p_played": 0.8216911764705883,
+          "mean_first_entry_if_played": 3.5151006711409387,
+          "mean_copies_played": 1.4384191176470589
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.07490808823529412,
+          "p_received_never_played": 0.02573529411764706,
+          "p_played": 0.8993566176470588,
+          "mean_first_entry_if_played": 3.8952478283086363,
+          "mean_copies_played": 1.7215073529411766
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat0",
+      "structure": "wide",
+      "body": "Moldsmal",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.984375,
+          "mean_first_entry_if_played": 4.253968253968254,
+          "mean_copies_played": 2.3125
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1328125,
+          "p_received_never_played": 0.0546875,
+          "p_played": 0.8125,
+          "mean_first_entry_if_played": 3.4134615384615383,
+          "mean_copies_played": 1.4375
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0703125,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.90625,
+          "mean_first_entry_if_played": 3.8706896551724137,
+          "mean_copies_played": 1.7890625
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat0",
+      "structure": "wide",
+      "body": "Rock Pet",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0,
+          "p_received_never_played": 0.01116071428571429,
+          "p_played": 0.9888392857142858,
+          "mean_first_entry_if_played": 4.322799097065463,
+          "mean_copies_played": 2.2868303571428568
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1283482142857143,
+          "p_received_never_played": 0.05022321428571429,
+          "p_played": 0.8214285714285715,
+          "mean_first_entry_if_played": 3.512228260869564,
+          "mean_copies_played": 1.4229910714285714
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.07477678571428571,
+          "p_received_never_played": 0.025669642857142856,
+          "p_played": 0.8995535714285714,
+          "mean_first_entry_if_played": 3.894540942928039,
+          "mean_copies_played": 1.6830357142857153
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat0",
+      "structure": "wide",
+      "body": "Candy Dish",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0,
+          "p_received_never_played": 0.0,
+          "p_played": 1.0,
+          "mean_first_entry_if_played": 5.390625,
+          "mean_copies_played": 2.53125
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.0390625,
+          "p_played": 0.84375,
+          "mean_first_entry_if_played": 4.75,
+          "mean_copies_played": 1.4453125
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0859375,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.8828125,
+          "mean_first_entry_if_played": 4.920353982300885,
+          "mean_copies_played": 1.8359375
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat0",
+      "structure": "wide",
+      "body": "Aaron",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0,
+          "p_received_never_played": 0.0,
+          "p_played": 1.0,
+          "mean_first_entry_if_played": 6.3203125,
+          "mean_copies_played": 2.59375
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.0625,
+          "p_played": 0.8203125,
+          "mean_first_entry_if_played": 5.761904761904762,
+          "mean_copies_played": 1.4140625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0859375,
+          "p_received_never_played": 0.0390625,
+          "p_played": 0.875,
+          "mean_first_entry_if_played": 5.964285714285714,
+          "mean_copies_played": 1.671875
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat0",
+      "structure": "wide",
+      "body": "role_2_2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0,
+          "p_received_never_played": 0.011160714285714288,
+          "p_played": 0.9888392857142858,
+          "mean_first_entry_if_played": 4.322799097065463,
+          "mean_copies_played": 2.420758928571428
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1283482142857143,
+          "p_received_never_played": 0.05022321428571429,
+          "p_played": 0.8214285714285715,
+          "mean_first_entry_if_played": 3.512228260869564,
+          "mean_copies_played": 1.4508928571428574
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.07477678571428571,
+          "p_received_never_played": 0.025669642857142856,
+          "p_played": 0.8995535714285714,
+          "mean_first_entry_if_played": 3.894540942928039,
+          "mean_copies_played": 1.7154017857142863
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat0",
+      "structure": "wide",
+      "body": "Aaron_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0,
+          "p_received_never_played": 0.003472222222222227,
+          "p_played": 0.9965277777777777,
+          "mean_first_entry_if_played": 4.439895470383277,
+          "mean_copies_played": 2.0616319444444438
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.12065972222222222,
+          "p_received_never_played": 0.042534722222222224,
+          "p_played": 0.8368055555555555,
+          "mean_first_entry_if_played": 3.677385892116182,
+          "mean_copies_played": 1.3524305555555554
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.08246527777777778,
+          "p_received_never_played": 0.02951388888888888,
+          "p_played": 0.8880208333333334,
+          "mean_first_entry_if_played": 3.9364613880742905,
+          "mean_copies_played": 1.555555555555555
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat0",
+      "structure": "wide",
+      "body": "Candy_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0,
+          "p_received_never_played": 0.0026041666666666735,
+          "p_played": 0.9973958333333333,
+          "mean_first_entry_if_played": 4.453002610966059,
+          "mean_copies_played": 2.359375
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.11979166666666669,
+          "p_received_never_played": 0.04166666666666667,
+          "p_played": 0.8385416666666666,
+          "mean_first_entry_if_played": 3.6956521739130435,
+          "mean_copies_played": 1.4531249999999998
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.08333333333333333,
+          "p_received_never_played": 0.029947916666666664,
+          "p_played": 0.8867187500000001,
+          "mean_first_entry_if_played": 3.941262848751835,
+          "mean_copies_played": 1.7317708333333326
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat0",
+      "structure": "wide",
+      "body": "Rock_health4",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0,
+          "p_received_never_played": 0.003605769230769233,
+          "p_played": 0.9963942307692308,
+          "mean_first_entry_if_played": 4.437876960193002,
+          "mean_copies_played": 2.3906250000000013
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.12079326923076923,
+          "p_received_never_played": 0.04266826923076923,
+          "p_played": 0.8365384615384616,
+          "mean_first_entry_if_played": 3.674568965517241,
+          "mean_copies_played": 1.4681490384615388
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.08233173076923077,
+          "p_received_never_played": 0.02944711538461538,
+          "p_played": 0.8882211538461537,
+          "mean_first_entry_if_played": 3.9357239512855218,
+          "mean_copies_played": 1.7812500000000009
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat0",
+      "structure": "anchor",
+      "body": "Froggit",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.046875,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 4.285714285714286,
+          "mean_copies_played": 2.09375
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1328125,
+          "p_received_never_played": 0.0703125,
+          "p_played": 0.796875,
+          "mean_first_entry_if_played": 3.519607843137255,
+          "mean_copies_played": 1.3359375
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.046875,
+          "p_received_never_played": 0.09375,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 3.963636363636364,
+          "mean_copies_played": 1.6328125
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat0",
+      "structure": "anchor",
+      "body": "Moldsmal",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.046875,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 4.285714285714286,
+          "mean_copies_played": 2.265625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1328125,
+          "p_received_never_played": 0.0703125,
+          "p_played": 0.796875,
+          "mean_first_entry_if_played": 3.519607843137255,
+          "mean_copies_played": 1.2578125
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.046875,
+          "p_received_never_played": 0.09375,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 3.963636363636364,
+          "mean_copies_played": 1.8515625
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat0",
+      "structure": "anchor",
+      "body": "Rock Pet",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.046875,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 4.285714285714286,
+          "mean_copies_played": 2.0390625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1328125,
+          "p_received_never_played": 0.0703125,
+          "p_played": 0.796875,
+          "mean_first_entry_if_played": 3.519607843137255,
+          "mean_copies_played": 1.25
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.046875,
+          "p_received_never_played": 0.09375,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 3.963636363636364,
+          "mean_copies_played": 1.6328125
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat0",
+      "structure": "anchor",
+      "body": "Candy Dish",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.0546875,
+          "p_played": 0.921875,
+          "mean_first_entry_if_played": 5.203389830508475,
+          "mean_copies_played": 1.96875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1328125,
+          "p_received_never_played": 0.109375,
+          "p_played": 0.7578125,
+          "mean_first_entry_if_played": 4.391752577319588,
+          "mean_copies_played": 1.2265625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.046875,
+          "p_received_never_played": 0.1015625,
+          "p_played": 0.8515625,
+          "mean_first_entry_if_played": 4.935779816513762,
+          "mean_copies_played": 1.5703125
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat0",
+      "structure": "anchor",
+      "body": "Aaron",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.109375,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.8671875,
+          "mean_first_entry_if_played": 5.198198198198198,
+          "mean_copies_played": 1.6640625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1640625,
+          "p_received_never_played": 0.0390625,
+          "p_played": 0.796875,
+          "mean_first_entry_if_played": 4.931372549019608,
+          "mean_copies_played": 1.25
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.109375,
+          "p_received_never_played": 0.0703125,
+          "p_played": 0.8203125,
+          "mean_first_entry_if_played": 5.019047619047619,
+          "mean_copies_played": 1.3671875
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat0",
+      "structure": "anchor",
+      "body": "role_2_2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.046875,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 4.285714285714286,
+          "mean_copies_played": 2.3046875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1328125,
+          "p_received_never_played": 0.0703125,
+          "p_played": 0.796875,
+          "mean_first_entry_if_played": 3.519607843137255,
+          "mean_copies_played": 1.3046875
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.046875,
+          "p_received_never_played": 0.09375,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 3.963636363636364,
+          "mean_copies_played": 1.6875
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat0",
+      "structure": "anchor",
+      "body": "Aaron_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.9609375,
+          "mean_first_entry_if_played": 4.373983739837398,
+          "mean_copies_played": 2.015625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.078125,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.890625,
+          "mean_first_entry_if_played": 3.8947368421052633,
+          "mean_copies_played": 1.5859375
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.9609375,
+          "mean_first_entry_if_played": 4.32520325203252,
+          "mean_copies_played": 2.0390625
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat0",
+      "structure": "anchor",
+      "body": "Candy_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.046875,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 4.285714285714286,
+          "mean_copies_played": 1.8203125
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1328125,
+          "p_received_never_played": 0.0703125,
+          "p_played": 0.796875,
+          "mean_first_entry_if_played": 3.519607843137255,
+          "mean_copies_played": 1.25
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.046875,
+          "p_received_never_played": 0.09375,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 3.963636363636364,
+          "mean_copies_played": 1.4921875
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat0",
+      "structure": "anchor",
+      "body": "Rock_health4",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.046875,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 4.285714285714286,
+          "mean_copies_played": 2.015625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1328125,
+          "p_received_never_played": 0.0703125,
+          "p_played": 0.796875,
+          "mean_first_entry_if_played": 3.519607843137255,
+          "mean_copies_played": 1.2421875
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.046875,
+          "p_received_never_played": 0.09375,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 3.963636363636364,
+          "mean_copies_played": 1.6328125
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat1",
+      "structure": "wide",
+      "body": "Froggit",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0078125,
+          "p_received_never_played": 0.0,
+          "p_played": 0.9921875,
+          "mean_first_entry_if_played": 4.291338582677166,
+          "mean_copies_played": 2.5390625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.0390625,
+          "p_played": 0.84375,
+          "mean_first_entry_if_played": 3.6296296296296298,
+          "mean_copies_played": 1.421875
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.0078125,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 4.067226890756302,
+          "mean_copies_played": 1.9765625
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat1",
+      "structure": "wide",
+      "body": "Moldsmal",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.02109375,
+          "p_received_never_played": 0.0023437500000000003,
+          "p_played": 0.9765625,
+          "mean_first_entry_if_played": 4.2711999999999986,
+          "mean_copies_played": 2.4171875000000003
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.11484375000000001,
+          "p_received_never_played": 0.03203125,
+          "p_played": 0.853125,
+          "mean_first_entry_if_played": 3.7216117216117217,
+          "mean_copies_played": 1.5281249999999997
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.05781249999999999,
+          "p_received_never_played": 0.01328125,
+          "p_played": 0.9289062500000002,
+          "mean_first_entry_if_played": 4.134566862910007,
+          "mean_copies_played": 2.0335937499999996
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat1",
+      "structure": "wide",
+      "body": "Rock Pet",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.0078125,
+          "p_played": 0.9765625,
+          "mean_first_entry_if_played": 4.064,
+          "mean_copies_played": 2.28125
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1640625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.8203125,
+          "mean_first_entry_if_played": 3.323809523809524,
+          "mean_copies_played": 1.4453125
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.1015625,
+          "p_received_never_played": 0.0078125,
+          "p_played": 0.890625,
+          "mean_first_entry_if_played": 3.6491228070175437,
+          "mean_copies_played": 1.6875
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat1",
+      "structure": "wide",
+      "body": "Candy Dish",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0107421875,
+          "p_received_never_played": 0.0029296874999999996,
+          "p_played": 0.986328125,
+          "mean_first_entry_if_played": 4.652475247524753,
+          "mean_copies_played": 2.4052734375
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.134765625,
+          "p_received_never_played": 0.033203125,
+          "p_played": 0.83203125,
+          "mean_first_entry_if_played": 4.134976525821596,
+          "mean_copies_played": 1.42578125
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0771484375,
+          "p_received_never_played": 0.016601562499999997,
+          "p_played": 0.90625,
+          "mean_first_entry_if_played": 4.439655172413793,
+          "mean_copies_played": 1.8310546875
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat1",
+      "structure": "wide",
+      "body": "Aaron",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.0,
+          "p_played": 0.9765625,
+          "mean_first_entry_if_played": 4.816,
+          "mean_copies_played": 2.515625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.09375,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.875,
+          "mean_first_entry_if_played": 4.339285714285714,
+          "mean_copies_played": 1.515625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.9453125,
+          "mean_first_entry_if_played": 4.7272727272727275,
+          "mean_copies_played": 2.1015625
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat1",
+      "structure": "wide",
+      "body": "role_2_2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.013020833333333336,
+          "p_received_never_played": 0.0,
+          "p_played": 0.9869791666666666,
+          "mean_first_entry_if_played": 4.313984168865435,
+          "mean_copies_played": 2.518229166666667
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.10937499999999999,
+          "p_received_never_played": 0.0390625,
+          "p_played": 0.8515624999999998,
+          "mean_first_entry_if_played": 3.715596330275231,
+          "mean_copies_played": 1.4427083333333337
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0546875,
+          "p_received_never_played": 0.010416666666666668,
+          "p_played": 0.9348958333333334,
+          "mean_first_entry_if_played": 4.155988857938717,
+          "mean_copies_played": 1.9635416666666674
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat1",
+      "structure": "wide",
+      "body": "Aaron_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0078125,
+          "p_received_never_played": 0.0,
+          "p_played": 0.9921875,
+          "mean_first_entry_if_played": 4.291338582677166,
+          "mean_copies_played": 2.2734375
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.0390625,
+          "p_played": 0.84375,
+          "mean_first_entry_if_played": 3.6296296296296298,
+          "mean_copies_played": 1.4296875
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.0078125,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 4.067226890756302,
+          "mean_copies_played": 1.8671875
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat1",
+      "structure": "wide",
+      "body": "Candy_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0078125,
+          "p_received_never_played": 0.0,
+          "p_played": 0.9921875,
+          "mean_first_entry_if_played": 4.291338582677166,
+          "mean_copies_played": 2.515625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.0390625,
+          "p_played": 0.84375,
+          "mean_first_entry_if_played": 3.6296296296296298,
+          "mean_copies_played": 1.4609375
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.0078125,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 4.067226890756302,
+          "mean_copies_played": 1.96875
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat1",
+      "structure": "wide",
+      "body": "Rock_health4",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.012073863636363636,
+          "p_received_never_played": 0.004261363636363636,
+          "p_played": 0.9836647727272727,
+          "mean_first_entry_if_played": 4.168231046931408,
+          "mean_copies_played": 2.33877840909091
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.14275568181818182,
+          "p_received_never_played": 0.026278409090909092,
+          "p_played": 0.8309659090909091,
+          "mean_first_entry_if_played": 3.4649572649572646,
+          "mean_copies_played": 1.4438920454545452
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.08380681818181818,
+          "p_received_never_played": 0.0078125,
+          "p_played": 0.9083806818181818,
+          "mean_first_entry_if_played": 3.8436278342455044,
+          "mean_copies_played": 1.8686079545454555
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat1",
+      "structure": "anchor",
+      "body": "Froggit",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.9609375,
+          "mean_first_entry_if_played": 4.495934959349594,
+          "mean_copies_played": 2.3671875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1484375,
+          "p_received_never_played": 0.0625,
+          "p_played": 0.7890625,
+          "mean_first_entry_if_played": 3.495049504950495,
+          "mean_copies_played": 1.3515625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.078125,
+          "p_received_never_played": 0.0625,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 3.9545454545454546,
+          "mean_copies_played": 1.734375
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat1",
+      "structure": "anchor",
+      "body": "Moldsmal",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.9609375,
+          "mean_first_entry_if_played": 4.495934959349594,
+          "mean_copies_played": 2.4296875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1484375,
+          "p_received_never_played": 0.0625,
+          "p_played": 0.7890625,
+          "mean_first_entry_if_played": 3.495049504950495,
+          "mean_copies_played": 1.3125
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.078125,
+          "p_received_never_played": 0.0625,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 3.9545454545454546,
+          "mean_copies_played": 1.859375
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat1",
+      "structure": "anchor",
+      "body": "Rock Pet",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.9609375,
+          "mean_first_entry_if_played": 4.495934959349594,
+          "mean_copies_played": 2.3046875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1484375,
+          "p_received_never_played": 0.0625,
+          "p_played": 0.7890625,
+          "mean_first_entry_if_played": 3.495049504950495,
+          "mean_copies_played": 1.2578125
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.078125,
+          "p_received_never_played": 0.0625,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 3.9545454545454546,
+          "mean_copies_played": 1.703125
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat1",
+      "structure": "anchor",
+      "body": "Candy Dish",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.953125,
+          "mean_first_entry_if_played": 4.672131147540983,
+          "mean_copies_played": 2.1171875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1484375,
+          "p_received_never_played": 0.0859375,
+          "p_played": 0.765625,
+          "mean_first_entry_if_played": 3.5714285714285716,
+          "mean_copies_played": 1.2734375
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.078125,
+          "p_received_never_played": 0.0703125,
+          "p_played": 0.8515625,
+          "mean_first_entry_if_played": 4.110091743119266,
+          "mean_copies_played": 1.65625
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat1",
+      "structure": "anchor",
+      "body": "Aaron",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.9453125,
+          "mean_first_entry_if_played": 6.578512396694215,
+          "mean_copies_played": 2.15625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1484375,
+          "p_received_never_played": 0.21875,
+          "p_played": 0.6328125,
+          "mean_first_entry_if_played": 5.222222222222222,
+          "mean_copies_played": 0.9921875
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.078125,
+          "p_received_never_played": 0.125,
+          "p_played": 0.796875,
+          "mean_first_entry_if_played": 6.03921568627451,
+          "mean_copies_played": 1.59375
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat1",
+      "structure": "anchor",
+      "body": "role_2_2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.9140625,
+          "mean_first_entry_if_played": 4.880341880341881,
+          "mean_copies_played": 2.25
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.15625,
+          "p_received_never_played": 0.0546875,
+          "p_played": 0.7890625,
+          "mean_first_entry_if_played": 4.0495049504950495,
+          "mean_copies_played": 1.3359375
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.078125,
+          "p_received_never_played": 0.0625,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 4.636363636363637,
+          "mean_copies_played": 1.7890625
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat1",
+      "structure": "anchor",
+      "body": "Aaron_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.0,
+          "p_played": 0.9375,
+          "mean_first_entry_if_played": 4.216666666666667,
+          "mean_copies_played": 2.046875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.15625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.828125,
+          "mean_first_entry_if_played": 3.509433962264151,
+          "mean_copies_played": 1.28125
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.078125,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.8984375,
+          "mean_first_entry_if_played": 3.965217391304348,
+          "mean_copies_played": 1.7890625
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat1",
+      "structure": "anchor",
+      "body": "Candy_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.9609375,
+          "mean_first_entry_if_played": 4.495934959349594,
+          "mean_copies_played": 2.1171875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1484375,
+          "p_received_never_played": 0.0625,
+          "p_played": 0.7890625,
+          "mean_first_entry_if_played": 3.495049504950495,
+          "mean_copies_played": 1.359375
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.078125,
+          "p_received_never_played": 0.0625,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 3.9545454545454546,
+          "mean_copies_played": 1.6640625
+        }
+      ]
+    },
+    {
+      "world": "focus_integrity_seat1",
+      "structure": "anchor",
+      "body": "Rock_health4",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.9609375,
+          "mean_first_entry_if_played": 4.495934959349594,
+          "mean_copies_played": 2.2734375
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1484375,
+          "p_received_never_played": 0.0625,
+          "p_played": 0.7890625,
+          "mean_first_entry_if_played": 3.495049504950495,
+          "mean_copies_played": 1.2734375
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.078125,
+          "p_received_never_played": 0.0625,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 3.9545454545454546,
+          "mean_copies_played": 1.703125
+        }
+      ]
+    },
+    {
+      "world": "focus_kindness_seat0",
+      "structure": "wide",
+      "body": "Froggit",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.021875000000000006,
+          "p_received_never_played": 0.015104166666666669,
+          "p_played": 0.9630208333333332,
+          "mean_first_entry_if_played": 4.113574905354246,
+          "mean_copies_played": 2.1296874999999984
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.11354166666666668,
+          "p_received_never_played": 0.03749999999999998,
+          "p_played": 0.8489583333333334,
+          "mean_first_entry_if_played": 3.602453987730061,
+          "mean_copies_played": 1.4713541666666663
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.05833333333333335,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.9182291666666664,
+          "mean_first_entry_if_played": 3.8530913216108904,
+          "mean_copies_played": 1.9546874999999988
+        }
+      ]
+    },
+    {
+      "world": "focus_kindness_seat0",
+      "structure": "wide",
+      "body": "Moldsmal",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.9609375,
+          "mean_first_entry_if_played": 4.0894308943089435,
+          "mean_copies_played": 2.1796875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.8515625,
+          "mean_first_entry_if_played": 3.5871559633027523,
+          "mean_copies_played": 1.4140625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.9140625,
+          "mean_first_entry_if_played": 3.8034188034188032,
+          "mean_copies_played": 2.015625
+        }
+      ]
+    },
+    {
+      "world": "focus_kindness_seat0",
+      "structure": "wide",
+      "body": "Rock Pet",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.9609375,
+          "mean_first_entry_if_played": 4.0894308943089435,
+          "mean_copies_played": 2.0
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.8515625,
+          "mean_first_entry_if_played": 3.5871559633027523,
+          "mean_copies_played": 1.4140625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.9140625,
+          "mean_first_entry_if_played": 3.8034188034188032,
+          "mean_copies_played": 1.8671875
+        }
+      ]
+    },
+    {
+      "world": "focus_kindness_seat0",
+      "structure": "wide",
+      "body": "Candy Dish",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.953125,
+          "mean_first_entry_if_played": 5.60655737704918,
+          "mean_copies_played": 1.984375
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.0625,
+          "p_played": 0.8203125,
+          "mean_first_entry_if_played": 6.285714285714286,
+          "mean_copies_played": 1.3125
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.0390625,
+          "p_played": 0.8984375,
+          "mean_first_entry_if_played": 5.739130434782608,
+          "mean_copies_played": 1.84375
+        }
+      ]
+    },
+    {
+      "world": "focus_kindness_seat0",
+      "structure": "wide",
+      "body": "Aaron",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.953125,
+          "mean_first_entry_if_played": 6.237704918032787,
+          "mean_copies_played": 1.8828125
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.0703125,
+          "p_played": 0.8125,
+          "mean_first_entry_if_played": 6.605769230769231,
+          "mean_copies_played": 1.2421875
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.0390625,
+          "p_played": 0.8984375,
+          "mean_first_entry_if_played": 6.226086956521739,
+          "mean_copies_played": 1.828125
+        }
+      ]
+    },
+    {
+      "world": "focus_kindness_seat0",
+      "structure": "wide",
+      "body": "role_2_2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.9609375,
+          "mean_first_entry_if_played": 4.0894308943089435,
+          "mean_copies_played": 2.203125
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.8515625,
+          "mean_first_entry_if_played": 3.5871559633027523,
+          "mean_copies_played": 1.484375
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.9140625,
+          "mean_first_entry_if_played": 3.8034188034188032,
+          "mean_copies_played": 1.921875
+        }
+      ]
+    },
+    {
+      "world": "focus_kindness_seat0",
+      "structure": "wide",
+      "body": "Aaron_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.9609375,
+          "mean_first_entry_if_played": 4.0894308943089435,
+          "mean_copies_played": 1.765625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.8515625,
+          "mean_first_entry_if_played": 3.5871559633027523,
+          "mean_copies_played": 1.3515625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.9140625,
+          "mean_first_entry_if_played": 3.8034188034188032,
+          "mean_copies_played": 1.6171875
+        }
+      ]
+    },
+    {
+      "world": "focus_kindness_seat0",
+      "structure": "wide",
+      "body": "Candy_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.020507812500000007,
+          "p_received_never_played": 0.014648437500000002,
+          "p_played": 0.96484375,
+          "mean_first_entry_if_played": 4.134615384615385,
+          "mean_copies_played": 2.091796875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1103515625,
+          "p_received_never_played": 0.04296874999999997,
+          "p_played": 0.8466796875,
+          "mean_first_entry_if_played": 3.615916955017301,
+          "mean_copies_played": 1.4599609375
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.05468750000000001,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.921875,
+          "mean_first_entry_if_played": 3.8961864406779663,
+          "mean_copies_played": 1.986328125
+        }
+      ]
+    },
+    {
+      "world": "focus_kindness_seat0",
+      "structure": "wide",
+      "body": "Rock_health4",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.020833333333333336,
+          "p_received_never_played": 0.013020833333333334,
+          "p_played": 0.9661458333333334,
+          "mean_first_entry_if_played": 4.1819407008086245,
+          "mean_copies_played": 2.1041666666666665
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.10677083333333334,
+          "p_received_never_played": 0.033854166666666664,
+          "p_played": 0.8593750000000002,
+          "mean_first_entry_if_played": 3.7424242424242418,
+          "mean_copies_played": 1.4947916666666663
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.053385416666666664,
+          "p_received_never_played": 0.020833333333333336,
+          "p_played": 0.92578125,
+          "mean_first_entry_if_played": 3.9732770745428967,
+          "mean_copies_played": 1.9661458333333328
+        }
+      ]
+    },
+    {
+      "world": "focus_kindness_seat0",
+      "structure": "anchor",
+      "body": "Froggit",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.109375,
+          "p_played": 0.8515625,
+          "mean_first_entry_if_played": 4.834862385321101,
+          "mean_copies_played": 1.8671875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.09375,
+          "p_received_never_played": 0.140625,
+          "p_played": 0.765625,
+          "mean_first_entry_if_played": 4.408163265306122,
+          "mean_copies_played": 1.359375
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0078125,
+          "p_received_never_played": 0.109375,
+          "p_played": 0.8828125,
+          "mean_first_entry_if_played": 5.053097345132743,
+          "mean_copies_played": 1.8515625
+        }
+      ]
+    },
+    {
+      "world": "focus_kindness_seat0",
+      "structure": "anchor",
+      "body": "Moldsmal",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.109375,
+          "p_played": 0.8515625,
+          "mean_first_entry_if_played": 4.834862385321101,
+          "mean_copies_played": 1.84375
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.09375,
+          "p_received_never_played": 0.140625,
+          "p_played": 0.765625,
+          "mean_first_entry_if_played": 4.408163265306122,
+          "mean_copies_played": 1.265625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0078125,
+          "p_received_never_played": 0.109375,
+          "p_played": 0.8828125,
+          "mean_first_entry_if_played": 5.053097345132743,
+          "mean_copies_played": 1.8203125
+        }
+      ]
+    },
+    {
+      "world": "focus_kindness_seat0",
+      "structure": "anchor",
+      "body": "Rock Pet",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.109375,
+          "p_played": 0.8515625,
+          "mean_first_entry_if_played": 4.834862385321101,
+          "mean_copies_played": 1.7421875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.09375,
+          "p_received_never_played": 0.140625,
+          "p_played": 0.765625,
+          "mean_first_entry_if_played": 4.408163265306122,
+          "mean_copies_played": 1.2890625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0078125,
+          "p_received_never_played": 0.109375,
+          "p_played": 0.8828125,
+          "mean_first_entry_if_played": 5.053097345132743,
+          "mean_copies_played": 1.734375
+        }
+      ]
+    },
+    {
+      "world": "focus_kindness_seat0",
+      "structure": "anchor",
+      "body": "Candy Dish",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0078125,
+          "p_received_never_played": 0.09375,
+          "p_played": 0.8984375,
+          "mean_first_entry_if_played": 5.147826086956521,
+          "mean_copies_played": 1.78125
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.078125,
+          "p_received_never_played": 0.15625,
+          "p_played": 0.765625,
+          "mean_first_entry_if_played": 4.6020408163265305,
+          "mean_copies_played": 1.28125
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0078125,
+          "p_received_never_played": 0.125,
+          "p_played": 0.8671875,
+          "mean_first_entry_if_played": 5.036036036036036,
+          "mean_copies_played": 1.7265625
+        }
+      ]
+    },
+    {
+      "world": "focus_kindness_seat0",
+      "structure": "anchor",
+      "body": "Aaron",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 5.487394957983193,
+          "mean_copies_played": 2.0078125
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.09375,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.890625,
+          "mean_first_entry_if_played": 5.2631578947368425,
+          "mean_copies_played": 1.6640625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0078125,
+          "p_received_never_played": 0.0390625,
+          "p_played": 0.953125,
+          "mean_first_entry_if_played": 5.680327868852459,
+          "mean_copies_played": 2.09375
+        }
+      ]
+    },
+    {
+      "world": "focus_kindness_seat0",
+      "structure": "anchor",
+      "body": "role_2_2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.109375,
+          "p_played": 0.8515625,
+          "mean_first_entry_if_played": 4.834862385321101,
+          "mean_copies_played": 1.9140625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.09375,
+          "p_received_never_played": 0.140625,
+          "p_played": 0.765625,
+          "mean_first_entry_if_played": 4.408163265306122,
+          "mean_copies_played": 1.40625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0078125,
+          "p_received_never_played": 0.109375,
+          "p_played": 0.8828125,
+          "mean_first_entry_if_played": 5.053097345132743,
+          "mean_copies_played": 1.9375
+        }
+      ]
+    },
+    {
+      "world": "focus_kindness_seat0",
+      "structure": "anchor",
+      "body": "Aaron_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 4.336134453781512,
+          "mean_copies_played": 1.734375
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.09375,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.890625,
+          "mean_first_entry_if_played": 3.991228070175439,
+          "mean_copies_played": 1.4921875
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0078125,
+          "p_received_never_played": 0.0390625,
+          "p_played": 0.953125,
+          "mean_first_entry_if_played": 4.483606557377049,
+          "mean_copies_played": 1.7421875
+        }
+      ]
+    },
+    {
+      "world": "focus_kindness_seat0",
+      "structure": "anchor",
+      "body": "Candy_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.109375,
+          "p_played": 0.8515625,
+          "mean_first_entry_if_played": 4.834862385321101,
+          "mean_copies_played": 1.6875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.09375,
+          "p_received_never_played": 0.140625,
+          "p_played": 0.765625,
+          "mean_first_entry_if_played": 4.408163265306122,
+          "mean_copies_played": 1.3203125
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0078125,
+          "p_received_never_played": 0.109375,
+          "p_played": 0.8828125,
+          "mean_first_entry_if_played": 5.053097345132743,
+          "mean_copies_played": 1.734375
+        }
+      ]
+    },
+    {
+      "world": "focus_kindness_seat0",
+      "structure": "anchor",
+      "body": "Rock_health4",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.109375,
+          "p_played": 0.8515625,
+          "mean_first_entry_if_played": 4.834862385321101,
+          "mean_copies_played": 1.6640625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.09375,
+          "p_received_never_played": 0.140625,
+          "p_played": 0.765625,
+          "mean_first_entry_if_played": 4.408163265306122,
+          "mean_copies_played": 1.2734375
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0078125,
+          "p_received_never_played": 0.109375,
+          "p_played": 0.8828125,
+          "mean_first_entry_if_played": 5.053097345132743,
+          "mean_copies_played": 1.6953125
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat0",
+      "structure": "wide",
+      "body": "Froggit",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.020312500000000004,
+          "p_received_never_played": 0.020833333333333336,
+          "p_played": 0.9588541666666668,
+          "mean_first_entry_if_played": 4.166214014122758,
+          "mean_copies_played": 2.323958333333333
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.08802083333333333,
+          "p_received_never_played": 0.019270833333333334,
+          "p_played": 0.8927083333333334,
+          "mean_first_entry_if_played": 3.9084014002333713,
+          "mean_copies_played": 1.794791666666667
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.028125000000000004,
+          "p_received_never_played": 0.011979166666666667,
+          "p_played": 0.9598958333333334,
+          "mean_first_entry_if_played": 4.290287574606618,
+          "mean_copies_played": 2.1890625
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat0",
+      "structure": "wide",
+      "body": "Moldsmal",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.03125,
+          "p_received_never_played": 0.0390625,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 3.865546218487395,
+          "mean_copies_played": 2.1328125
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.8671875,
+          "mean_first_entry_if_played": 3.5945945945945947,
+          "mean_copies_played": 1.625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.9453125,
+          "mean_first_entry_if_played": 4.082644628099174,
+          "mean_copies_played": 2.0390625
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat0",
+      "structure": "wide",
+      "body": "Rock Pet",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.03125,
+          "p_received_never_played": 0.0390625,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 3.865546218487395,
+          "mean_copies_played": 2.046875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.8671875,
+          "mean_first_entry_if_played": 3.5945945945945947,
+          "mean_copies_played": 1.6171875
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.9453125,
+          "mean_first_entry_if_played": 4.082644628099174,
+          "mean_copies_played": 1.9609375
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat0",
+      "structure": "wide",
+      "body": "Candy Dish",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.03125,
+          "p_received_never_played": 0.0390625,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 5.319327731092437,
+          "mean_copies_played": 1.9765625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.8515625,
+          "mean_first_entry_if_played": 5.284403669724771,
+          "mean_copies_played": 1.5078125
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 5.65546218487395,
+          "mean_copies_played": 1.9921875
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat0",
+      "structure": "wide",
+      "body": "Aaron",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.03125,
+          "p_received_never_played": 0.0390625,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 5.857142857142857,
+          "mean_copies_played": 1.984375
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.8515625,
+          "mean_first_entry_if_played": 5.871559633027523,
+          "mean_copies_played": 1.421875
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 6.201680672268908,
+          "mean_copies_played": 1.921875
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat0",
+      "structure": "wide",
+      "body": "role_2_2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.03125,
+          "p_received_never_played": 0.0390625,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 3.865546218487395,
+          "mean_copies_played": 2.1171875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.8671875,
+          "mean_first_entry_if_played": 3.5945945945945947,
+          "mean_copies_played": 1.6484375
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.9453125,
+          "mean_first_entry_if_played": 4.082644628099174,
+          "mean_copies_played": 1.9765625
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat0",
+      "structure": "wide",
+      "body": "Aaron_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.03125,
+          "p_received_never_played": 0.0390625,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 3.865546218487395,
+          "mean_copies_played": 1.734375
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.8671875,
+          "mean_first_entry_if_played": 3.5945945945945947,
+          "mean_copies_played": 1.390625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.9453125,
+          "mean_first_entry_if_played": 4.082644628099174,
+          "mean_copies_played": 1.8046875
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat0",
+      "structure": "wide",
+      "body": "Candy_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.01806640625,
+          "p_received_never_played": 0.017089843749999997,
+          "p_played": 0.96484375,
+          "mean_first_entry_if_played": 4.2257085020242915,
+          "mean_copies_played": 2.345703125
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.08203125,
+          "p_received_never_played": 0.02001953125,
+          "p_played": 0.89794921875,
+          "mean_first_entry_if_played": 3.970636215334421,
+          "mean_copies_played": 1.78369140625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.02587890625,
+          "p_received_never_played": 0.01123046875,
+          "p_played": 0.962890625,
+          "mean_first_entry_if_played": 4.332150101419878,
+          "mean_copies_played": 2.20849609375
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat0",
+      "structure": "wide",
+      "body": "Rock_health4",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.03125,
+          "p_received_never_played": 0.0390625,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 3.865546218487395,
+          "mean_copies_played": 2.015625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.8671875,
+          "mean_first_entry_if_played": 3.5945945945945947,
+          "mean_copies_played": 1.5546875
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.9453125,
+          "mean_first_entry_if_played": 4.082644628099174,
+          "mean_copies_played": 1.9921875
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat0",
+      "structure": "anchor",
+      "body": "Froggit",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.0625,
+          "p_played": 0.8984375,
+          "mean_first_entry_if_played": 4.930434782608696,
+          "mean_copies_played": 2.2109375
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.078125,
+          "p_received_never_played": 0.078125,
+          "p_played": 0.84375,
+          "mean_first_entry_if_played": 4.592592592592593,
+          "mean_copies_played": 1.5546875
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.03125,
+          "p_received_never_played": 0.0703125,
+          "p_played": 0.8984375,
+          "mean_first_entry_if_played": 4.895652173913043,
+          "mean_copies_played": 2.0234375
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat0",
+      "structure": "anchor",
+      "body": "Moldsmal",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.96875,
+          "mean_first_entry_if_played": 4.556451612903226,
+          "mean_copies_played": 2.421875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.0859375,
+          "p_played": 0.8515625,
+          "mean_first_entry_if_played": 3.889908256880734,
+          "mean_copies_played": 1.546875
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.1015625,
+          "p_played": 0.8828125,
+          "mean_first_entry_if_played": 4.088495575221239,
+          "mean_copies_played": 2.0
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat0",
+      "structure": "anchor",
+      "body": "Rock Pet",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.0625,
+          "p_played": 0.8984375,
+          "mean_first_entry_if_played": 4.930434782608696,
+          "mean_copies_played": 2.1796875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.078125,
+          "p_received_never_played": 0.078125,
+          "p_played": 0.84375,
+          "mean_first_entry_if_played": 4.592592592592593,
+          "mean_copies_played": 1.4921875
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.03125,
+          "p_received_never_played": 0.0703125,
+          "p_played": 0.8984375,
+          "mean_first_entry_if_played": 4.895652173913043,
+          "mean_copies_played": 1.953125
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat0",
+      "structure": "anchor",
+      "body": "Candy Dish",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.96875,
+          "mean_first_entry_if_played": 5.451612903225806,
+          "mean_copies_played": 2.2421875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.09375,
+          "p_played": 0.84375,
+          "mean_first_entry_if_played": 4.888888888888889,
+          "mean_copies_played": 1.5390625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.109375,
+          "p_played": 0.875,
+          "mean_first_entry_if_played": 5.0625,
+          "mean_copies_played": 1.7578125
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat0",
+      "structure": "anchor",
+      "body": "Aaron",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.171875,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.796875,
+          "mean_first_entry_if_played": 4.823529411764706,
+          "mean_copies_played": 1.3515625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1953125,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.7734375,
+          "mean_first_entry_if_played": 4.757575757575758,
+          "mean_copies_played": 1.2265625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.09375,
+          "p_received_never_played": 0.078125,
+          "p_played": 0.828125,
+          "mean_first_entry_if_played": 5.056603773584905,
+          "mean_copies_played": 1.5
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat0",
+      "structure": "anchor",
+      "body": "role_2_2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.0625,
+          "p_played": 0.8984375,
+          "mean_first_entry_if_played": 4.930434782608696,
+          "mean_copies_played": 2.28125
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.078125,
+          "p_received_never_played": 0.078125,
+          "p_played": 0.84375,
+          "mean_first_entry_if_played": 4.592592592592593,
+          "mean_copies_played": 1.5234375
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.03125,
+          "p_received_never_played": 0.0703125,
+          "p_played": 0.8984375,
+          "mean_first_entry_if_played": 4.895652173913043,
+          "mean_copies_played": 2.0234375
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat0",
+      "structure": "anchor",
+      "body": "Aaron_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.9453125,
+          "mean_first_entry_if_played": 4.330578512396694,
+          "mean_copies_played": 2.0078125
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.078125,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.890625,
+          "mean_first_entry_if_played": 3.956140350877193,
+          "mean_copies_played": 1.5390625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.03125,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.9375,
+          "mean_first_entry_if_played": 4.275,
+          "mean_copies_played": 1.90625
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat0",
+      "structure": "anchor",
+      "body": "Candy_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.96875,
+          "mean_first_entry_if_played": 4.556451612903226,
+          "mean_copies_played": 2.1875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.0859375,
+          "p_played": 0.8515625,
+          "mean_first_entry_if_played": 3.889908256880734,
+          "mean_copies_played": 1.5859375
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.1015625,
+          "p_played": 0.8828125,
+          "mean_first_entry_if_played": 4.088495575221239,
+          "mean_copies_played": 1.765625
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat0",
+      "structure": "anchor",
+      "body": "Rock_health4",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.171875,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.8046875,
+          "mean_first_entry_if_played": 3.2524271844660193,
+          "mean_copies_played": 1.3515625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1953125,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.7734375,
+          "mean_first_entry_if_played": 3.0606060606060606,
+          "mean_copies_played": 1.25
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.09375,
+          "p_received_never_played": 0.0546875,
+          "p_played": 0.8515625,
+          "mean_first_entry_if_played": 3.6055045871559632,
+          "mean_copies_played": 1.484375
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat1",
+      "structure": "wide",
+      "body": "Froggit",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.9609375,
+          "mean_first_entry_if_played": 3.9186991869918697,
+          "mean_copies_played": 2.09375
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.8671875,
+          "mean_first_entry_if_played": 3.4414414414414414,
+          "mean_copies_played": 1.5703125
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.0078125,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 3.823529411764706,
+          "mean_copies_played": 1.8671875
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat1",
+      "structure": "wide",
+      "body": "Moldsmal",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.9609375,
+          "mean_first_entry_if_played": 3.9186991869918697,
+          "mean_copies_played": 2.15625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.8671875,
+          "mean_first_entry_if_played": 3.4414414414414414,
+          "mean_copies_played": 1.5390625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.0078125,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 3.823529411764706,
+          "mean_copies_played": 1.9296875
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat1",
+      "structure": "wide",
+      "body": "Rock Pet",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.9609375,
+          "mean_first_entry_if_played": 3.9186991869918697,
+          "mean_copies_played": 2.0703125
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.8671875,
+          "mean_first_entry_if_played": 3.4414414414414414,
+          "mean_copies_played": 1.5390625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.0078125,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 3.823529411764706,
+          "mean_copies_played": 1.875
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat1",
+      "structure": "wide",
+      "body": "Candy Dish",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.008477393617021276,
+          "p_received_never_played": 0.008976063829787233,
+          "p_played": 0.9825465425531915,
+          "mean_first_entry_if_played": 4.384706479445104,
+          "mean_copies_played": 2.565492021276596
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.10920877659574468,
+          "p_received_never_played": 0.011469414893617014,
+          "p_played": 0.8793218085106383,
+          "mean_first_entry_if_played": 3.8359168241965995,
+          "mean_copies_played": 1.7792553191489362
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.05468749999999999,
+          "p_received_never_played": 0.0021609042553191486,
+          "p_played": 0.9431515957446809,
+          "mean_first_entry_if_played": 4.230877687698276,
+          "mean_copies_played": 2.308011968085105
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat1",
+      "structure": "wide",
+      "body": "Aaron",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.9609375,
+          "mean_first_entry_if_played": 5.6016260162601625,
+          "mean_copies_played": 2.0859375
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.0390625,
+          "p_played": 0.84375,
+          "mean_first_entry_if_played": 5.398148148148148,
+          "mean_copies_played": 1.46875
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.9140625,
+          "mean_first_entry_if_played": 5.717948717948718,
+          "mean_copies_played": 1.8359375
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat1",
+      "structure": "wide",
+      "body": "role_2_2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.9609375,
+          "mean_first_entry_if_played": 3.9186991869918697,
+          "mean_copies_played": 2.15625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.8671875,
+          "mean_first_entry_if_played": 3.4414414414414414,
+          "mean_copies_played": 1.5625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.0078125,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 3.823529411764706,
+          "mean_copies_played": 1.875
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat1",
+      "structure": "wide",
+      "body": "Aaron_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.9609375,
+          "mean_first_entry_if_played": 3.9186991869918697,
+          "mean_copies_played": 1.953125
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.8671875,
+          "mean_first_entry_if_played": 3.4414414414414414,
+          "mean_copies_played": 1.4140625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.0078125,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 3.823529411764706,
+          "mean_copies_played": 1.7578125
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat1",
+      "structure": "wide",
+      "body": "Candy_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.008789062499999998,
+          "p_received_never_played": 0.009765624999999997,
+          "p_played": 0.9814453125,
+          "mean_first_entry_if_played": 4.1572139303482585,
+          "mean_copies_played": 2.501953125
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1103515625,
+          "p_received_never_played": 0.0019531249999999976,
+          "p_played": 0.8876953125,
+          "mean_first_entry_if_played": 3.66996699669967,
+          "mean_copies_played": 1.7958984375
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0556640625,
+          "p_received_never_played": 0.0009765624999999988,
+          "p_played": 0.943359375,
+          "mean_first_entry_if_played": 4.028985507246377,
+          "mean_copies_played": 2.2529296875
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat1",
+      "structure": "wide",
+      "body": "Rock_health4",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.9609375,
+          "mean_first_entry_if_played": 3.9186991869918697,
+          "mean_copies_played": 2.0859375
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.8671875,
+          "mean_first_entry_if_played": 3.4414414414414414,
+          "mean_copies_played": 1.515625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.0078125,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 3.823529411764706,
+          "mean_copies_played": 1.875
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat1",
+      "structure": "anchor",
+      "body": "Froggit",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 4.9411764705882355,
+          "mean_copies_played": 2.3515625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.125,
+          "p_received_never_played": 0.1015625,
+          "p_played": 0.7734375,
+          "mean_first_entry_if_played": 3.98989898989899,
+          "mean_copies_played": 1.5546875
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.0703125,
+          "p_played": 0.9140625,
+          "mean_first_entry_if_played": 4.905982905982906,
+          "mean_copies_played": 2.0
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat1",
+      "structure": "anchor",
+      "body": "Moldsmal",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.1640625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.8203125,
+          "mean_first_entry_if_played": 3.2857142857142856,
+          "mean_copies_played": 1.59375
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.203125,
+          "p_received_never_played": 0.0078125,
+          "p_played": 0.7890625,
+          "mean_first_entry_if_played": 3.118811881188119,
+          "mean_copies_played": 1.2890625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.140625,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.828125,
+          "mean_first_entry_if_played": 3.358490566037736,
+          "mean_copies_played": 1.6484375
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat1",
+      "structure": "anchor",
+      "body": "Rock Pet",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.9453125,
+          "mean_first_entry_if_played": 4.347107438016529,
+          "mean_copies_played": 2.40625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1015625,
+          "p_received_never_played": 0.078125,
+          "p_played": 0.8203125,
+          "mean_first_entry_if_played": 3.704761904761905,
+          "mean_copies_played": 1.4921875
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.046875,
+          "p_received_never_played": 0.046875,
+          "p_played": 0.90625,
+          "mean_first_entry_if_played": 4.181034482758621,
+          "mean_copies_played": 2.0390625
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat1",
+      "structure": "anchor",
+      "body": "Candy Dish",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.0390625,
+          "p_played": 0.921875,
+          "mean_first_entry_if_played": 6.271186440677966,
+          "mean_copies_played": 2.25
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.125,
+          "p_received_never_played": 0.1484375,
+          "p_played": 0.7265625,
+          "mean_first_entry_if_played": 5.43010752688172,
+          "mean_copies_played": 1.3828125
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.1015625,
+          "p_played": 0.8828125,
+          "mean_first_entry_if_played": 6.168141592920354,
+          "mean_copies_played": 1.953125
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat1",
+      "structure": "anchor",
+      "body": "Aaron",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.1640625,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.8125,
+          "mean_first_entry_if_played": 4.4423076923076925,
+          "mean_copies_played": 1.5
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.203125,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.78125,
+          "mean_first_entry_if_played": 4.37,
+          "mean_copies_played": 1.2265625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.140625,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.828125,
+          "mean_first_entry_if_played": 4.584905660377358,
+          "mean_copies_played": 1.4921875
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat1",
+      "structure": "anchor",
+      "body": "role_2_2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.1640625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.8203125,
+          "mean_first_entry_if_played": 3.2857142857142856,
+          "mean_copies_played": 1.6015625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.203125,
+          "p_received_never_played": 0.0078125,
+          "p_played": 0.7890625,
+          "mean_first_entry_if_played": 3.118811881188119,
+          "mean_copies_played": 1.3125
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.140625,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.828125,
+          "mean_first_entry_if_played": 3.358490566037736,
+          "mean_copies_played": 1.578125
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat1",
+      "structure": "anchor",
+      "body": "Aaron_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.1640625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.8203125,
+          "mean_first_entry_if_played": 3.2857142857142856,
+          "mean_copies_played": 1.3671875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.203125,
+          "p_received_never_played": 0.0078125,
+          "p_played": 0.7890625,
+          "mean_first_entry_if_played": 3.118811881188119,
+          "mean_copies_played": 1.1953125
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.140625,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.828125,
+          "mean_first_entry_if_played": 3.358490566037736,
+          "mean_copies_played": 1.3984375
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat1",
+      "structure": "anchor",
+      "body": "Candy_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0390625,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.9296875,
+          "mean_first_entry_if_played": 4.9411764705882355,
+          "mean_copies_played": 2.1953125
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.125,
+          "p_received_never_played": 0.1015625,
+          "p_played": 0.7734375,
+          "mean_first_entry_if_played": 3.98989898989899,
+          "mean_copies_played": 1.515625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.0703125,
+          "p_played": 0.9140625,
+          "mean_first_entry_if_played": 4.905982905982906,
+          "mean_copies_played": 1.953125
+        }
+      ]
+    },
+    {
+      "world": "sweep_integrity_seat1",
+      "structure": "anchor",
+      "body": "Rock_health4",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.1640625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.8203125,
+          "mean_first_entry_if_played": 3.2857142857142856,
+          "mean_copies_played": 1.4296875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.203125,
+          "p_received_never_played": 0.0078125,
+          "p_played": 0.7890625,
+          "mean_first_entry_if_played": 3.118811881188119,
+          "mean_copies_played": 1.328125
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.140625,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.828125,
+          "mean_first_entry_if_played": 3.358490566037736,
+          "mean_copies_played": 1.5
+        }
+      ]
+    },
+    {
+      "world": "sweep_kindness_seat0",
+      "structure": "wide",
+      "body": "Froggit",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.953125,
+          "mean_first_entry_if_played": 4.040983606557377,
+          "mean_copies_played": 2.1171875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 3.5454545454545454,
+          "mean_copies_played": 1.59375
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.96875,
+          "mean_first_entry_if_played": 4.145161290322581,
+          "mean_copies_played": 2.1640625
+        }
+      ]
+    },
+    {
+      "world": "sweep_kindness_seat0",
+      "structure": "wide",
+      "body": "Moldsmal",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.953125,
+          "mean_first_entry_if_played": 4.040983606557377,
+          "mean_copies_played": 2.1640625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 3.5454545454545454,
+          "mean_copies_played": 1.625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.96875,
+          "mean_first_entry_if_played": 4.145161290322581,
+          "mean_copies_played": 2.1875
+        }
+      ]
+    },
+    {
+      "world": "sweep_kindness_seat0",
+      "structure": "wide",
+      "body": "Rock Pet",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.953125,
+          "mean_first_entry_if_played": 4.040983606557377,
+          "mean_copies_played": 2.1015625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 3.5454545454545454,
+          "mean_copies_played": 1.609375
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.96875,
+          "mean_first_entry_if_played": 4.145161290322581,
+          "mean_copies_played": 2.1015625
+        }
+      ]
+    },
+    {
+      "world": "sweep_kindness_seat0",
+      "structure": "wide",
+      "body": "Candy Dish",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.03125,
+          "p_played": 0.9453125,
+          "mean_first_entry_if_played": 5.462809917355372,
+          "mean_copies_played": 2.0390625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.0625,
+          "p_played": 0.8203125,
+          "mean_first_entry_if_played": 5.352380952380952,
+          "mean_copies_played": 1.421875
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.9609375,
+          "mean_first_entry_if_played": 5.845528455284553,
+          "mean_copies_played": 2.1640625
+        }
+      ]
+    },
+    {
+      "world": "sweep_kindness_seat0",
+      "structure": "wide",
+      "body": "Aaron",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.012408088235294119,
+          "p_received_never_played": 0.016544117647058824,
+          "p_played": 0.971047794117647,
+          "mean_first_entry_if_played": 6.1334595362044455,
+          "mean_copies_played": 2.3060661764705888
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.08409926470588235,
+          "p_received_never_played": 0.044117647058823525,
+          "p_played": 0.8717830882352939,
+          "mean_first_entry_if_played": 6.01423299947285,
+          "mean_copies_played": 1.6792279411764697
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.008272058823529412,
+          "p_received_never_played": 0.019761029411764705,
+          "p_played": 0.9719669117647058,
+          "mean_first_entry_if_played": 6.271394799054371,
+          "mean_copies_played": 2.354779411764707
+        }
+      ]
+    },
+    {
+      "world": "sweep_kindness_seat0",
+      "structure": "wide",
+      "body": "role_2_2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.953125,
+          "mean_first_entry_if_played": 4.040983606557377,
+          "mean_copies_played": 2.203125
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 3.5454545454545454,
+          "mean_copies_played": 1.6171875
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.96875,
+          "mean_first_entry_if_played": 4.145161290322581,
+          "mean_copies_played": 2.15625
+        }
+      ]
+    },
+    {
+      "world": "sweep_kindness_seat0",
+      "structure": "wide",
+      "body": "Aaron_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.953125,
+          "mean_first_entry_if_played": 4.040983606557377,
+          "mean_copies_played": 1.78125
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 3.5454545454545454,
+          "mean_copies_played": 1.3671875
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.96875,
+          "mean_first_entry_if_played": 4.145161290322581,
+          "mean_copies_played": 1.921875
+        }
+      ]
+    },
+    {
+      "world": "sweep_kindness_seat0",
+      "structure": "wide",
+      "body": "Candy_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.020312499999999997,
+          "p_received_never_played": 0.018749999999999996,
+          "p_played": 0.9609375000000001,
+          "mean_first_entry_if_played": 4.15772357723577,
+          "mean_copies_played": 2.1968749999999986
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1015625,
+          "p_received_never_played": 0.025,
+          "p_played": 0.8734375000000002,
+          "mean_first_entry_if_played": 3.7280858676207496,
+          "mean_copies_played": 1.6781249999999992
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.012499999999999997,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.971875,
+          "mean_first_entry_if_played": 4.247588424437297,
+          "mean_copies_played": 2.223437499999999
+        }
+      ]
+    },
+    {
+      "world": "sweep_kindness_seat0",
+      "structure": "wide",
+      "body": "Rock_health4",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.0234375,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.953125,
+          "mean_first_entry_if_played": 4.040983606557377,
+          "mean_copies_played": 2.0390625
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1171875,
+          "p_received_never_played": 0.0234375,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 3.5454545454545454,
+          "mean_copies_played": 1.5546875
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.015625,
+          "p_played": 0.96875,
+          "mean_first_entry_if_played": 4.145161290322581,
+          "mean_copies_played": 2.078125
+        }
+      ]
+    },
+    {
+      "world": "sweep_kindness_seat0",
+      "structure": "anchor",
+      "body": "Froggit",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.046875,
+          "p_played": 0.9375,
+          "mean_first_entry_if_played": 4.433333333333334,
+          "mean_copies_played": 2.25
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.078125,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 4.009090909090909,
+          "mean_copies_played": 1.7109375
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.03125,
+          "p_received_never_played": 0.0703125,
+          "p_played": 0.8984375,
+          "mean_first_entry_if_played": 4.217391304347826,
+          "mean_copies_played": 1.921875
+        }
+      ]
+    },
+    {
+      "world": "sweep_kindness_seat0",
+      "structure": "anchor",
+      "body": "Moldsmal",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.046875,
+          "p_played": 0.9375,
+          "mean_first_entry_if_played": 4.433333333333334,
+          "mean_copies_played": 2.3046875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.078125,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 4.009090909090909,
+          "mean_copies_played": 1.71875
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.03125,
+          "p_received_never_played": 0.0703125,
+          "p_played": 0.8984375,
+          "mean_first_entry_if_played": 4.217391304347826,
+          "mean_copies_played": 1.9609375
+        }
+      ]
+    },
+    {
+      "world": "sweep_kindness_seat0",
+      "structure": "anchor",
+      "body": "Rock Pet",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.09598214285714286,
+          "p_received_never_played": 0.0669642857142857,
+          "p_played": 0.8370535714285714,
+          "mean_first_entry_if_played": 3.5893333333333337,
+          "mean_copies_played": 1.570312499999999
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1361607142857143,
+          "p_received_never_played": 0.058035714285714295,
+          "p_played": 0.8058035714285712,
+          "mean_first_entry_if_played": 3.3947368421052646,
+          "mean_copies_played": 1.3895089285714282
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.08482142857142858,
+          "p_received_never_played": 0.050223214285714295,
+          "p_played": 0.8649553571428571,
+          "mean_first_entry_if_played": 3.745806451612904,
+          "mean_copies_played": 1.641741071428571
+        }
+      ]
+    },
+    {
+      "world": "sweep_kindness_seat0",
+      "structure": "anchor",
+      "body": "Candy Dish",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.046875,
+          "p_played": 0.9375,
+          "mean_first_entry_if_played": 5.341666666666667,
+          "mean_copies_played": 2.2421875
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.0859375,
+          "p_played": 0.8515625,
+          "mean_first_entry_if_played": 4.935779816513762,
+          "mean_copies_played": 1.65625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.03125,
+          "p_received_never_played": 0.0703125,
+          "p_played": 0.8984375,
+          "mean_first_entry_if_played": 5.173913043478261,
+          "mean_copies_played": 1.84375
+        }
+      ]
+    },
+    {
+      "world": "sweep_kindness_seat0",
+      "structure": "anchor",
+      "body": "Aaron",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.07331730769230771,
+          "p_received_never_played": 0.06189903846153849,
+          "p_played": 0.8647836538461542,
+          "mean_first_entry_if_played": 5.309242529534397,
+          "mean_copies_played": 1.7187500000000013
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.1123798076923077,
+          "p_received_never_played": 0.04867788461538462,
+          "p_played": 0.8389423076923079,
+          "mean_first_entry_if_played": 5.239255014326647,
+          "mean_copies_played": 1.4747596153846163
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.06971153846153849,
+          "p_received_never_played": 0.04266826923076924,
+          "p_played": 0.8876201923076925,
+          "mean_first_entry_if_played": 5.42247799593771,
+          "mean_copies_played": 1.7932692307692315
+        }
+      ]
+    },
+    {
+      "world": "sweep_kindness_seat0",
+      "structure": "anchor",
+      "body": "role_2_2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.046875,
+          "p_played": 0.9375,
+          "mean_first_entry_if_played": 4.433333333333334,
+          "mean_copies_played": 2.34375
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.078125,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 4.009090909090909,
+          "mean_copies_played": 1.75
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.03125,
+          "p_received_never_played": 0.0703125,
+          "p_played": 0.8984375,
+          "mean_first_entry_if_played": 4.217391304347826,
+          "mean_copies_played": 2.0234375
+        }
+      ]
+    },
+    {
+      "world": "sweep_kindness_seat0",
+      "structure": "anchor",
+      "body": "Aaron_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.09375000000000006,
+          "p_received_never_played": 0.06640625000000001,
+          "p_played": 0.8398437500000002,
+          "mean_first_entry_if_played": 3.615503875968991,
+          "mean_copies_played": 1.3906249999999998
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.13411458333333337,
+          "p_received_never_played": 0.058593749999999986,
+          "p_played": 0.807291666666667,
+          "mean_first_entry_if_played": 3.4129032258064496,
+          "mean_copies_played": 1.2539062500000004
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.08333333333333336,
+          "p_received_never_played": 0.050781249999999986,
+          "p_played": 0.8658854166666667,
+          "mean_first_entry_if_played": 3.759398496240602,
+          "mean_copies_played": 1.5390625
+        }
+      ]
+    },
+    {
+      "world": "sweep_kindness_seat0",
+      "structure": "anchor",
+      "body": "Candy_cost2",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.015625,
+          "p_received_never_played": 0.046875,
+          "p_played": 0.9375,
+          "mean_first_entry_if_played": 4.433333333333334,
+          "mean_copies_played": 2.25
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.0625,
+          "p_received_never_played": 0.078125,
+          "p_played": 0.859375,
+          "mean_first_entry_if_played": 4.009090909090909,
+          "mean_copies_played": 1.6640625
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.03125,
+          "p_received_never_played": 0.0703125,
+          "p_played": 0.8984375,
+          "mean_first_entry_if_played": 4.217391304347826,
+          "mean_copies_played": 1.8515625
+        }
+      ]
+    },
+    {
+      "world": "sweep_kindness_seat0",
+      "structure": "anchor",
+      "body": "Rock_health4",
+      "against": [
+        {
+          "column": "trade_hold_two",
+          "p_not_received": 0.08258928571428566,
+          "p_received_never_played": 0.06361607142857141,
+          "p_played": 0.8537946428571432,
+          "mean_first_entry_if_played": 3.743790849673201,
+          "mean_copies_played": 1.6685267857142863
+        },
+        {
+          "column": "face_hold_two",
+          "p_not_received": 0.12388392857142852,
+          "p_received_never_played": 0.06138392857142858,
+          "p_played": 0.8147321428571431,
+          "mean_first_entry_if_played": 3.5027397260273965,
+          "mean_copies_played": 1.4062500000000004
+        },
+        {
+          "column": "frontier_defender",
+          "p_not_received": 0.07589285714285711,
+          "p_received_never_played": 0.05357142857142859,
+          "p_played": 0.8705357142857144,
+          "mean_first_entry_if_played": 3.8269230769230766,
+          "mean_copies_played": 1.6495535714285714
+        }
+      ]
+    }
+  ],
+  "interpretation": "Whole-evaluation probabilities under frozen mixtures; received excludes burned draws. First-entry time conditional on eventual play is descriptive, not causal opportunity cost or a selection score. No added simulations."
+}

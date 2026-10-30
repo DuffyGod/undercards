@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-30",
+  "train_records": 93312,
+  "evaluation_records": 132480,
+  "official_unique_seed_pairs": 176,
+  "maximum_terminal_round": 26,
+  "new_targeted_checks": 10,
+  "new_targeted_check_status": "passed before official run; repeats only followed actual source changes",
+  "independent_probe_status": "author reported54state-mode/118plan engine replays and12oracle-pair/81numeric endpoint sets passed",
+  "old_official_experiments_rerun": 0,
+  "new_simulations_by_verifier": 0,
+  "new_api_calls": 0,
+  "saved_grid_uniqueness_and_terminal_counts": "passed",
+  "receipt_play_partition": "passed",
+  "query_modes": "passed",
+  "old_model_source_unchanged": true,
+  "document_links": "passed",
+  "scope": "Artifact consistency and targeted numeric checks; not external calibration, full-policy optimum or whole real-deck support"
+}

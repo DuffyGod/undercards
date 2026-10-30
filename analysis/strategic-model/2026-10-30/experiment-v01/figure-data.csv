@@ -1,0 +1,73 @@
+candidate,world,host,column,difference_pp,low_pp,high_pp
+Candy Dish,sweep_integrity_seat0,wide,trade_hold_two,10.15625,1.5037886001959877,18.80871139980401
+Candy Dish,sweep_integrity_seat0,wide,face_hold_two,-8.59375,-16.133363539845163,-1.054136460154835
+Candy Dish,sweep_integrity_seat0,wide,frontier_defender,6.25,-1.8114947032416826,14.311494703241683
+Candy Dish,sweep_integrity_seat0,anchor,trade_hold_two,8.59375,3.2563813024411457,13.931118697558853
+Candy Dish,sweep_integrity_seat0,anchor,face_hold_two,4.6875,-3.108541719117494,12.483541719117493
+Candy Dish,sweep_integrity_seat0,anchor,frontier_defender,0.78125,-1.8779048498077173,3.440404849807717
+Candy Dish,sweep_integrity_seat1,wide,trade_hold_two,-0.4820478723404249,-8.567720309332898,7.60362456465205
+Candy Dish,sweep_integrity_seat1,wide,face_hold_two,-0.7646276595744684,-7.642096991245239,6.1128416720963035
+Candy Dish,sweep_integrity_seat1,wide,frontier_defender,9.624335106382977,1.7198715251899463,17.528798687576007
+Candy Dish,sweep_integrity_seat1,anchor,trade_hold_two,-5.46875,-12.779610973693401,1.8421109736934005
+Candy Dish,sweep_integrity_seat1,anchor,face_hold_two,0.78125,-7.776810285709523,9.339310285709523
+Candy Dish,sweep_integrity_seat1,anchor,frontier_defender,5.46875,0.008273975614057905,10.929226024385942
+Candy Dish,sweep_kindness_seat0,wide,trade_hold_two,-1.5625,-10.25434661556925,7.1293466155692515
+Candy Dish,sweep_kindness_seat0,wide,face_hold_two,-16.40625,-23.54332222110521,-9.269177778894791
+Candy Dish,sweep_kindness_seat0,wide,frontier_defender,0.0,-7.531038137804831,7.531038137804831
+Candy Dish,sweep_kindness_seat0,anchor,trade_hold_two,12.834821428571425,6.328744265890986,19.340898591251865
+Candy Dish,sweep_kindness_seat0,anchor,face_hold_two,-6.9196428571428585,-14.469768576360003,0.6304828620742873
+Candy Dish,sweep_kindness_seat0,anchor,frontier_defender,6.696428571428569,2.6957058266841956,10.697151316172944
+Candy Dish,focus_integrity_seat0,wide,trade_hold_two,-9.151785714285717,-18.043853352350624,-0.2597180762208079
+Candy Dish,focus_integrity_seat0,wide,face_hold_two,-8.147321428571427,-15.631359047543224,-0.663283809599631
+Candy Dish,focus_integrity_seat0,wide,frontier_defender,3.4598214285714315,-3.4691714357401704,10.388814292883033
+Candy Dish,focus_integrity_seat0,anchor,trade_hold_two,-1.5625,-3.7194720205056195,0.5944720205056191
+Candy Dish,focus_integrity_seat0,anchor,face_hold_two,1.5625,-2.777046307566242,5.902046307566242
+Candy Dish,focus_integrity_seat0,anchor,frontier_defender,0.0,-3.0745334451769764,3.0745334451769764
+Candy Dish,focus_integrity_seat1,wide,trade_hold_two,5.95703125,-1.6954311343514925,13.609493634351495
+Candy Dish,focus_integrity_seat1,wide,face_hold_two,-0.1953125,-7.612646216062115,7.222021216062115
+Candy Dish,focus_integrity_seat1,wide,frontier_defender,0.0,-8.78060592182172,8.78060592182172
+Candy Dish,focus_integrity_seat1,anchor,trade_hold_two,-1.5625,-3.7194720205056195,0.5944720205056191
+Candy Dish,focus_integrity_seat1,anchor,face_hold_two,1.5625,-4.580559007248377,7.705559007248378
+Candy Dish,focus_integrity_seat1,anchor,frontier_defender,-2.34375,-4.974986440199223,0.2874864401992236
+Candy Dish,focus_kindness_seat0,wide,trade_hold_two,-10.9375,-18.846397408520605,-3.0286025914793955
+Candy Dish,focus_kindness_seat0,wide,face_hold_two,-27.34375,-35.96200336312434,-18.725496636875665
+Candy Dish,focus_kindness_seat0,wide,frontier_defender,-14.84375,-22.40292792833743,-7.284572071662569
+Candy Dish,focus_kindness_seat0,anchor,trade_hold_two,4.6875,-0.10491513896419766,9.479915138964198
+Candy Dish,focus_kindness_seat0,anchor,face_hold_two,-12.5,-20.03103813780483,-4.968961862195169
+Candy Dish,focus_kindness_seat0,anchor,frontier_defender,1.5625,-1.5,4.625
+Aaron,sweep_integrity_seat0,wide,trade_hold_two,16.40625,8.049018897517836,24.763481102482167
+Aaron,sweep_integrity_seat0,wide,face_hold_two,14.0625,5.717428092123006,22.407571907876996
+Aaron,sweep_integrity_seat0,wide,frontier_defender,17.96875,8.63471919385526,27.30278080614474
+Aaron,sweep_integrity_seat0,anchor,trade_hold_two,-7.8125,-16.12209854045569,0.49709854045568713
+Aaron,sweep_integrity_seat0,anchor,face_hold_two,1.5625,-7.1293466155692515,10.25434661556925
+Aaron,sweep_integrity_seat0,anchor,frontier_defender,-10.9375,-17.17599087958974,-4.699009120410257
+Aaron,sweep_integrity_seat1,wide,trade_hold_two,20.3125,12.366340206577872,28.258659793422126
+Aaron,sweep_integrity_seat1,wide,face_hold_two,7.8125,1.4335376872873853,14.191462312712616
+Aaron,sweep_integrity_seat1,wide,frontier_defender,10.9375,3.6506692545392463,18.224330745460755
+Aaron,sweep_integrity_seat1,anchor,trade_hold_two,-19.53125,-28.510412622707072,-10.552087377292931
+Aaron,sweep_integrity_seat1,anchor,face_hold_two,-8.59375,-18.79715883517737,1.6096588351773675
+Aaron,sweep_integrity_seat1,anchor,frontier_defender,-24.21875,-31.66968809738102,-16.76781190261898
+Aaron,sweep_kindness_seat0,wide,trade_hold_two,16.49816176470588,8.64183349539855,24.35449003401321
+Aaron,sweep_kindness_seat0,wide,face_hold_two,13.373161764705882,6.5631700931404025,20.18315343627136
+Aaron,sweep_kindness_seat0,wide,frontier_defender,12.224264705882353,4.155815240406819,20.292714171357883
+Aaron,sweep_kindness_seat0,anchor,trade_hold_two,7.0655906593406534,1.0878080426418018,13.043373276039505
+Aaron,sweep_kindness_seat0,anchor,face_hold_two,-0.9701236263736269,-6.163167558286697,4.222920305539443
+Aaron,sweep_kindness_seat0,anchor,frontier_defender,2.8502747252747227,-1.2481202669310263,6.948669717480471
+Aaron,focus_integrity_seat0,wide,trade_hold_two,-11.495535714285717,-19.001290867550956,-3.9897805610204755
+Aaron,focus_integrity_seat0,wide,face_hold_two,-7.366071428571427,-15.030314303665172,0.2981714465223148
+Aaron,focus_integrity_seat0,wide,frontier_defender,12.83482142857143,5.382063081765474,20.287579775377385
+Aaron,focus_integrity_seat0,anchor,trade_hold_two,-26.5625,-34.54574825535903,-18.579251744640974
+Aaron,focus_integrity_seat0,anchor,face_hold_two,-20.3125,-29.370478100747544,-11.254521899252458
+Aaron,focus_integrity_seat0,anchor,frontier_defender,-21.875,-30.27739672172716,-13.472603278272837
+Aaron,focus_integrity_seat1,wide,trade_hold_two,2.34375,-7.247819650158341,11.935319650158341
+Aaron,focus_integrity_seat1,wide,face_hold_two,8.59375,-1.3753609887000278,18.562860988700027
+Aaron,focus_integrity_seat1,wide,frontier_defender,-8.59375,-20.10321651997003,2.915716519970028
+Aaron,focus_integrity_seat1,anchor,trade_hold_two,-8.59375,-13.468288610055849,-3.719211389944152
+Aaron,focus_integrity_seat1,anchor,face_hold_two,-15.625,-22.977411021878854,-8.272588978121146
+Aaron,focus_integrity_seat1,anchor,frontier_defender,-14.84375,-21.39829324068398,-8.28920675931602
+Aaron,focus_kindness_seat0,wide,trade_hold_two,12.5,6.350933109646048,18.649066890353954
+Aaron,focus_kindness_seat0,wide,face_hold_two,-14.0625,-22.407571907876996,-5.717428092123006
+Aaron,focus_kindness_seat0,wide,frontier_defender,-6.25,-14.012816428181063,1.512816428181063
+Aaron,focus_kindness_seat0,anchor,trade_hold_two,-1.5625,-4.625,1.5
+Aaron,focus_kindness_seat0,anchor,face_hold_two,-3.125,-8.42243986228142,2.1724398622814194
+Aaron,focus_kindness_seat0,anchor,frontier_defender,0.0,-3.0745334451769764,3.0745334451769764
