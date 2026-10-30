@@ -10,6 +10,7 @@
 - 己方候选在原UID0/1/2上替换手与库，未重新洗牌，也不按是否抽到决定替换。对手仍用原角色牌库。候选费用同时用于合法付款与部署选择；入场实际攻防用于战斗与脆弱阈值，未继续误用2/2模板。
 - 基础回合顺序、收入、留存、Integrity奖励、Kindness处理、自然抽牌、疲劳与生命终结代码与旧引擎相同。候选实际付款、手牌移除、格子、累计支出/打出计数均进入原账本。源码复制意味着未来若只改其中一处，仍有漂移风险；目前没有发现这种数值差异。
 - 新增`attack_frontier`保留旧回应决定，再只对攻击做协调搜索；它与完整`frontier_board/race`不同。这个消融可以区分攻击能力与联合施法的一部分影响；攻击改变公开目标后，使旧门槛随后触发是正常的策略路径差异，不是必须强行消除的混杂。
+- 冻结前新增的第六行`frontier_entry/order=window`也已只读复核：目标来自当下真实持有的身体，用公开自然收入判断下一己方回合能否付款；不读未来抽牌。它先偏好最高攻击（再看HP、费用与UID），不代表最优部署。等待条件只排除当前公开攻击已经够斩杀的情形，不包含疲劳、隐藏干预或最佳对手策略；与廉价优先行的差异应单独报告。
 
 ## 对“精确”与强度结论的限制
 
@@ -85,7 +86,7 @@ for case in range(18):
                        for i in range(len(own)))
             bh = tuple(next((u.h for u in b.units if u.uid == 200+11*i), 0)
                        for i in range(len(enemy)))
-            assert (ah, bh, 1000-b.hp, not a.hand) == (oh, eh, damage, cast)
+            assert (ah, bh, 1000-b.hp, bool(spell) and not a.hand) == (oh, eh, damage, cast)
             checked += 1
 assert checked == 118
 

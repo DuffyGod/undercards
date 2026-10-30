@@ -1,0 +1,26 @@
+# 真实白板身体、协调攻击与机会兑现
+
+本目录在20日的机制角色模型上，增加逐卡真实费用/攻防、协调攻击、已知手牌付款等待及训练/评价分离。实卡入口严格限五张无额外能力怪物；host其余部分仍是聚合角色。**不能称现实合法卡组或全卡池强度榜。**
+
+阅读顺序：[冻结协议](PROTOCOL.md)、[卡面与来源](real-body-bridge.md)、[独立反例](policy-challenge.md)、[实现审阅](policy-implementation-review.md)。结论与条件建议在最终REPORT.md，原始结果保存在`experiment-v01/`；尚未生成的文件不代表已完成。
+
+程序分工：
+
+- `tactics.py`：本回合普通攻击/一次已持有且付得起回应的精确可达端点；端点选择偏好是启发式，非全局价值函数。
+- `engine.py`：保留旧规则，三槽实体配对替换；实际候选费用、攻击、HP进入部署/攻击。六政策含只改攻击的消融、联合施法以及存钱等待。
+- `experiment.py`：先训练48个新牌序，再冻结有限池混合，最后评价128个全新牌序至模型内HP终局。不重跑旧数据，不猜未决赢家。
+- `opportunity.py`：只读取保存的评价，分开未收到候选、收到未打出、至少打出一次；诊断不是已定价机会成本。
+- `query.py`：只读条件剖面与预先指定的配对比较，默认不输出全局排序。虚构数值反事实要显式打开。
+- `verify_saved.py`：只读核对原始网格、终局、守恒收据、查询和文档，不再模拟。
+
+查询示例（结果齐备后）：
+
+```sh
+python analysis/strategic-model/2026-10-30/query.py --world sweep_integrity_seat0 --host wide
+python analysis/strategic-model/2026-10-30/query.py --world focus_integrity_seat1 --host anchor --compare Aaron 'Rock Pet'
+python analysis/strategic-model/2026-10-30/query.py --body Rock_health4 --counterfactuals
+```
+
+运行依赖Python3.11+、NumPy、SciPy。正式`train`/`evaluate`拒绝覆盖已有实验，且要求源码/协议与选择先提交。无需启动时重跑。`pilot.json`是288条开发轨迹及运行检查，早于攻击消融/等待行；不混入正式证据或独立样本计数。
+
+周期执行的用户要求与阻塞状态见根目录[RESEARCH_AUTOMATION.md](../../../RESEARCH_AUTOMATION.md)。此文或本地运行本身不会创建持久定时任务。
