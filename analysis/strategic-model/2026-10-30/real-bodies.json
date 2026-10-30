@@ -1,0 +1,158 @@
+{
+  "date": "2026-10-30",
+  "scope": "Five strict ability-free constructible monster records in supplied snapshot, costs2-9 inclusive. Not current-server legality certification, environment prevalence, or deck recommendation.",
+  "source_snapshot": "skills/undercards/references/snapshot.json",
+  "snapshot_compiled_date": "2026-10-05",
+  "snapshot_game_version": null,
+  "filter": {
+    "pool_category": "ordinary_non_token",
+    "card_type": "monster",
+    "minimum_cost": 2,
+    "maximum_cost": 9,
+    "effect_readable_stripped": "",
+    "base_statuses": []
+  },
+  "copy_limit_source": "skills/undercards/references/rules.md:7; BASE/COMMON/RARE three copies",
+  "cards": [
+    {
+      "card_id": 2,
+      "name": "Froggit",
+      "cost": 2,
+      "attack": 2,
+      "health": 3,
+      "rarity": "BASE",
+      "max_copies": 3,
+      "tribes": [
+        "FROGGIT"
+      ],
+      "soul": null,
+      "effect_readable": "",
+      "effect_raw": " ",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "source": {
+        "path": "skills/undercards/references/snapshot.json",
+        "card_id": 2,
+        "original_text_key": "card-2",
+        "original_text_line": 284
+      },
+      "support_status": "ordinary body only: no inherent effect or serialized base status in supplied snapshot"
+    },
+    {
+      "card_id": 4,
+      "name": "Moldsmal",
+      "cost": 2,
+      "attack": 3,
+      "health": 2,
+      "rarity": "BASE",
+      "max_copies": 3,
+      "tribes": [
+        "MOLD"
+      ],
+      "soul": null,
+      "effect_readable": "",
+      "effect_raw": " ",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "source": {
+        "path": "skills/undercards/references/snapshot.json",
+        "card_id": 4,
+        "original_text_key": "card-4",
+        "original_text_line": 286
+      },
+      "support_status": "ordinary body only: no inherent effect or serialized base status in supplied snapshot"
+    },
+    {
+      "card_id": 602,
+      "name": "Rock Pet",
+      "cost": 2,
+      "attack": 3,
+      "health": 3,
+      "rarity": "RARE",
+      "max_copies": 3,
+      "tribes": [],
+      "soul": null,
+      "effect_readable": "",
+      "effect_raw": " ",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "source": {
+        "path": "skills/undercards/references/snapshot.json",
+        "card_id": 602,
+        "original_text_key": "card-602",
+        "original_text_line": 1985
+      },
+      "support_status": "ordinary body only: no inherent effect or serialized base status in supplied snapshot"
+    },
+    {
+      "card_id": 187,
+      "name": "Candy Dish",
+      "cost": 3,
+      "attack": 2,
+      "health": 6,
+      "rarity": "COMMON",
+      "max_copies": 3,
+      "tribes": [],
+      "soul": null,
+      "effect_readable": "",
+      "effect_raw": " ",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "source": {
+        "path": "skills/undercards/references/snapshot.json",
+        "card_id": 187,
+        "original_text_key": "card-187",
+        "original_text_line": 464
+      },
+      "support_status": "ordinary body only: no inherent effect or serialized base status in supplied snapshot"
+    },
+    {
+      "card_id": 15,
+      "name": "Aaron",
+      "cost": 5,
+      "attack": 6,
+      "health": 5,
+      "rarity": "BASE",
+      "max_copies": 3,
+      "tribes": [],
+      "soul": null,
+      "effect_readable": "",
+      "effect_raw": " ",
+      "base_statuses": [],
+      "pool_category": "ordinary_non_token",
+      "source": {
+        "path": "skills/undercards/references/snapshot.json",
+        "card_id": 15,
+        "original_text_key": "card-15",
+        "original_text_line": 297
+      },
+      "support_status": "ordinary body only: no inherent effect or serialized base status in supplied snapshot"
+    }
+  ],
+  "pending_not_mapped": [
+    {
+      "card_id": 571,
+      "name": "Sad Dummy",
+      "cost": 7,
+      "attack": 6,
+      "health": 9,
+      "effect_readable": "WAITING FOR A NEW EFFECT",
+      "reason": "Nonempty placeholder/flavor text; not silently classified as no effect"
+    },
+    {
+      "card_id": 616,
+      "name": "Banana",
+      "cost": 9,
+      "attack": 10,
+      "health": 10,
+      "effect_readable": "POTASSIUM",
+      "reason": "Nonempty placeholder/flavor text; not silently classified as no effect"
+    }
+  ],
+  "constraints": [
+    "Tribe identity retained; compare ordinary body domain only, not tribal synergy or punishment.",
+    "Replace one declared host slot or <=3 same-name copies; aggregate role slots are not distinct real card identities.",
+    "Model public observations and body-threshold decisions must use actual per-card stats, not the default small/anchor template.",
+    "Supporting a card body does not certify the host draw/heal/response roles or the full engine against current server."
+  ]
+}
