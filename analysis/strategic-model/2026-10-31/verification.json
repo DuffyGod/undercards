@@ -1,0 +1,8 @@
+{
+  "source_commit": "12d22f9",
+  "targeted_checks": 20,
+  "status": "passed",
+  "validation": "New-seed old/new engine equality, information isolation, action legality, compositional effects, numeric gradients and dataset contracts",
+  "old_official_experiments_rerun": 0,
+  "server_rules_certified": false
+}
