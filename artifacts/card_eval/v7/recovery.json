@@ -1,0 +1,39 @@
+{
+  "status": "original_files_recovered_and_verified",
+  "raw_files": {
+    "artifacts/card_eval/v7/final-plan.json": {
+      "bytes": 114355,
+      "sha256": "e46c8bf94048ad6ec7814892a36810669793479aad3f62e9b6ee59872782d947"
+    },
+    "artifacts/card_eval/v7/final.json": {
+      "bytes": 85038,
+      "sha256": "c686aa8053187662212c3d6e488e46638a81f6a384a27896db7d0995ee563dbf"
+    },
+    "artifacts/card_eval/v7/final-games.jsonl.gz": {
+      "bytes": 2367118,
+      "sha256": "f1795deda8a6f0837583a49444613db48a9a0c8116b0b59577c4dc1770a71719"
+    },
+    "artifacts/card_eval/v7/final-progress.json": {
+      "bytes": 84882,
+      "sha256": "70600bce0354a00b6a2e59284950ab1b272b03ceefb3fbf1656d7ec476b140f2"
+    },
+    "artifacts/card_eval/v7/validation.json": {
+      "bytes": 273,
+      "sha256": "e6dee673e9619e67bf70c9c30cf7647d0178e60f08acd84eaf576c77c8d79ba3"
+    },
+    "artifacts/card_eval/v7/planner-validation.json": {
+      "bytes": 384,
+      "sha256": "cbe7833b24b79a734b7522d81bd03d92f6850f1e1e73f0511a71668a0ad4f644"
+    },
+    "work/v7-final.log": {
+      "bytes": 2167,
+      "sha256": "0c53e302d15ca3b814f34c3ff8d454b800c5a74d60875a332bed492acdb85c36"
+    }
+  },
+  "original_v1_source_unchanged": true,
+  "experiment_replayed": false,
+  "correction_version": "public-own-turn-proof-first-2",
+  "original_final_slots": 3584,
+  "original_budget_unresolved": 27,
+  "old_interruption_record_preserved": true
+}

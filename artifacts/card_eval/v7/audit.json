@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "source_commit": "e1f77fa2abdfde3f9438f257f95d7fc291d9d67f",
+  "training_counts": {
+    "forks": 768,
+    "end_boundary": 768,
+    "unknown_draw": 176,
+    "root_states": 768,
+    "after_states": 3053,
+    "opening_clusters": 384
+  },
+  "final_slots": 3584,
+  "unresolved_slots": 27,
+  "value_counts": {
+    "forks": 192,
+    "end_boundary": 191,
+    "unknown_draw": 38,
+    "unknown_terminal_label": 1,
+    "root_states": 192,
+    "after_states": 763,
+    "opening_clusters": 96
+  },
+  "actor_unchanged": true,
+  "final_selection": false,
+  "replayed_games": 0,
+  "refitted_models": 0,
+  "representation_alias_checked": true,
+  "scope": "Internal evidence consistency; no server-rule or general-policy certification."
+}

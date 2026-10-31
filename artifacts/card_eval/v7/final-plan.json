@@ -1,0 +1,4989 @@
+{
+  "source_commit": "4e795f50a2a8ab7b78307b83dc408c45756f9bdf",
+  "frozen_policies": {
+    "primary": "774d2ac4b89469e7bcdf347d3d7769ba007b1fd9df4af81c996b3592e1e22591",
+    "proof": "a7ce3cac76bb4756036f2c12c3e016f8a95c9929f936a7c541900fe1ee22fea9",
+    "old_value": "719639e527c4e7393599a77e14458bbd4de60399bff0cd36bf9128730699066e"
+  },
+  "margin": 0.3,
+  "seeds": [
+    2050000,
+    2050001,
+    2050002,
+    2050003,
+    2050004,
+    2050005,
+    2050006,
+    2050007,
+    2050008,
+    2050009,
+    2050010,
+    2050011,
+    2050012,
+    2050013,
+    2050014,
+    2050015,
+    2050016,
+    2050017,
+    2050018,
+    2050019,
+    2050020,
+    2050021,
+    2050022,
+    2050023,
+    2050024,
+    2050025,
+    2050026,
+    2050027,
+    2050028,
+    2050029,
+    2050030,
+    2050031
+  ],
+  "cases": [
+    {
+      "group": "pressure",
+      "decks": [
+        [
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          },
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          },
+          {
+            "name": "Bloody Tree",
+            "cost": 4,
+            "attack": 4,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "buff",
+                "scope": "self",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 307
+          },
+          {
+            "name": "Bloody Tree",
+            "cost": 4,
+            "attack": 4,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "buff",
+                "scope": "self",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 307
+          }
+        ],
+        [
+          {
+            "name": "Ice Cap",
+            "cost": 3,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "charge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 9
+          },
+          {
+            "name": "Ice Cap",
+            "cost": 3,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "charge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 9
+          },
+          {
+            "name": "Ice Cap",
+            "cost": 3,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "charge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 9
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Charles",
+            "cost": 2,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "armor",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 175
+          },
+          {
+            "name": "Charles",
+            "cost": 2,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "armor",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 175
+          },
+          {
+            "name": "Charles",
+            "cost": 2,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "armor",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 175
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          }
+        ]
+      ],
+      "souls": [
+        "INTEGRITY",
+        "INTEGRITY"
+      ],
+      "opponent": "race"
+    },
+    {
+      "group": "defense",
+      "decks": [
+        [
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          },
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          },
+          {
+            "name": "Bloody Tree",
+            "cost": 4,
+            "attack": 4,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "buff",
+                "scope": "self",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 307
+          },
+          {
+            "name": "Bloody Tree",
+            "cost": 4,
+            "attack": 4,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "buff",
+                "scope": "self",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 307
+          }
+        ],
+        [
+          {
+            "name": "Dummy",
+            "cost": 1,
+            "attack": 0,
+            "health": 4,
+            "keywords": [
+              [
+                "taunt",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 1
+          },
+          {
+            "name": "Dummy",
+            "cost": 1,
+            "attack": 0,
+            "health": 4,
+            "keywords": [
+              [
+                "taunt",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 1
+          },
+          {
+            "name": "Dummy",
+            "cost": 1,
+            "attack": 0,
+            "health": 4,
+            "keywords": [
+              [
+                "taunt",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 1
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Charles",
+            "cost": 2,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "armor",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 175
+          },
+          {
+            "name": "Charles",
+            "cost": 2,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "armor",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 175
+          },
+          {
+            "name": "Charles",
+            "cost": 2,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "armor",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 175
+          },
+          {
+            "name": "Sad Dragon",
+            "cost": 6,
+            "attack": 5,
+            "health": 5,
+            "keywords": [
+              [
+                "dodge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 168
+          },
+          {
+            "name": "Sad Dragon",
+            "cost": 6,
+            "attack": 5,
+            "health": 5,
+            "keywords": [
+              [
+                "dodge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 168
+          },
+          {
+            "name": "Sad Dragon",
+            "cost": 6,
+            "attack": 5,
+            "health": 5,
+            "keywords": [
+              [
+                "dodge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 168
+          },
+          {
+            "name": "Vegetoid",
+            "cost": 3,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "heal",
+                "scope": "owner",
+                "amount": 5,
+                "health": 0
+              }
+            ],
+            "card_id": 6
+          },
+          {
+            "name": "Vegetoid",
+            "cost": 3,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "heal",
+                "scope": "owner",
+                "amount": 5,
+                "health": 0
+              }
+            ],
+            "card_id": 6
+          },
+          {
+            "name": "Vegetoid",
+            "cost": 3,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "heal",
+                "scope": "owner",
+                "amount": 5,
+                "health": 0
+              }
+            ],
+            "card_id": 6
+          },
+          {
+            "name": "Scarf Mouse",
+            "cost": 3,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "silence",
+                "scope": "enemy",
+                "amount": 0,
+                "health": 0
+              }
+            ],
+            "card_id": 144
+          },
+          {
+            "name": "Scarf Mouse",
+            "cost": 3,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "silence",
+                "scope": "enemy",
+                "amount": 0,
+                "health": 0
+              }
+            ],
+            "card_id": 144
+          },
+          {
+            "name": "Scarf Mouse",
+            "cost": 3,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "silence",
+                "scope": "enemy",
+                "amount": 0,
+                "health": 0
+              }
+            ],
+            "card_id": 144
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          }
+        ]
+      ],
+      "souls": [
+        "INTEGRITY",
+        "KINDNESS"
+      ],
+      "opponent": "race"
+    },
+    {
+      "group": "refill",
+      "decks": [
+        [
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          },
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          },
+          {
+            "name": "Bloody Tree",
+            "cost": 4,
+            "attack": 4,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "buff",
+                "scope": "self",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 307
+          },
+          {
+            "name": "Bloody Tree",
+            "cost": 4,
+            "attack": 4,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "buff",
+                "scope": "self",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 307
+          }
+        ],
+        [
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          },
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          },
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Bloody Tree",
+            "cost": 4,
+            "attack": 4,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "buff",
+                "scope": "self",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 307
+          },
+          {
+            "name": "Bloody Tree",
+            "cost": 4,
+            "attack": 4,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "buff",
+                "scope": "self",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 307
+          },
+          {
+            "name": "Bloody Tree",
+            "cost": 4,
+            "attack": 4,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "buff",
+                "scope": "self",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 307
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Scarf Mouse",
+            "cost": 3,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "silence",
+                "scope": "enemy",
+                "amount": 0,
+                "health": 0
+              }
+            ],
+            "card_id": 144
+          },
+          {
+            "name": "Scarf Mouse",
+            "cost": 3,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "silence",
+                "scope": "enemy",
+                "amount": 0,
+                "health": 0
+              }
+            ],
+            "card_id": 144
+          },
+          {
+            "name": "Scarf Mouse",
+            "cost": 3,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "silence",
+                "scope": "enemy",
+                "amount": 0,
+                "health": 0
+              }
+            ],
+            "card_id": 144
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Vegetoid",
+            "cost": 3,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "heal",
+                "scope": "owner",
+                "amount": 5,
+                "health": 0
+              }
+            ],
+            "card_id": 6
+          }
+        ]
+      ],
+      "souls": [
+        "KINDNESS",
+        "INTEGRITY"
+      ],
+      "opponent": "race"
+    },
+    {
+      "group": "new_parameters",
+      "decks": [
+        [
+          {
+            "name": "heldout_5G_8_10_charge",
+            "cost": 5,
+            "attack": 8,
+            "health": 10,
+            "keywords": [
+              [
+                "charge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": null
+          },
+          {
+            "name": "heldout_5G_8_10_charge",
+            "cost": 5,
+            "attack": 8,
+            "health": 10,
+            "keywords": [
+              [
+                "charge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": null
+          },
+          {
+            "name": "heldout_5G_8_10_charge",
+            "cost": 5,
+            "attack": 8,
+            "health": 10,
+            "keywords": [
+              [
+                "charge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": null
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          },
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          },
+          {
+            "name": "Bloody Tree",
+            "cost": 4,
+            "attack": 4,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "buff",
+                "scope": "self",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 307
+          },
+          {
+            "name": "Bloody Tree",
+            "cost": 4,
+            "attack": 4,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "buff",
+                "scope": "self",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 307
+          }
+        ],
+        [
+          {
+            "name": "Ice Cap",
+            "cost": 3,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "charge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 9
+          },
+          {
+            "name": "Ice Cap",
+            "cost": 3,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "charge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 9
+          },
+          {
+            "name": "Ice Cap",
+            "cost": 3,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "charge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 9
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Charles",
+            "cost": 2,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "armor",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 175
+          },
+          {
+            "name": "Charles",
+            "cost": 2,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "armor",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 175
+          },
+          {
+            "name": "Charles",
+            "cost": 2,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "armor",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 175
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          }
+        ]
+      ],
+      "souls": [
+        "INTEGRITY",
+        "INTEGRITY"
+      ],
+      "opponent": "race"
+    },
+    {
+      "group": "new_composition",
+      "decks": [
+        [
+          {
+            "name": "heldout_taunt_start_growth",
+            "cost": 5,
+            "attack": 3,
+            "health": 7,
+            "keywords": [
+              [
+                "taunt",
+                1
+              ]
+            ],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "buff",
+                "scope": "self",
+                "amount": 1,
+                "health": 1
+              }
+            ],
+            "card_id": null
+          },
+          {
+            "name": "heldout_taunt_start_growth",
+            "cost": 5,
+            "attack": 3,
+            "health": 7,
+            "keywords": [
+              [
+                "taunt",
+                1
+              ]
+            ],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "buff",
+                "scope": "self",
+                "amount": 1,
+                "health": 1
+              }
+            ],
+            "card_id": null
+          },
+          {
+            "name": "heldout_taunt_start_growth",
+            "cost": 5,
+            "attack": 3,
+            "health": 7,
+            "keywords": [
+              [
+                "taunt",
+                1
+              ]
+            ],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "buff",
+                "scope": "self",
+                "amount": 1,
+                "health": 1
+              }
+            ],
+            "card_id": null
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          },
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          },
+          {
+            "name": "Bloody Tree",
+            "cost": 4,
+            "attack": 4,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "buff",
+                "scope": "self",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 307
+          },
+          {
+            "name": "Bloody Tree",
+            "cost": 4,
+            "attack": 4,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "buff",
+                "scope": "self",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 307
+          }
+        ],
+        [
+          {
+            "name": "Ice Cap",
+            "cost": 3,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "charge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 9
+          },
+          {
+            "name": "Ice Cap",
+            "cost": 3,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "charge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 9
+          },
+          {
+            "name": "Ice Cap",
+            "cost": 3,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "charge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 9
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Charles",
+            "cost": 2,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "armor",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 175
+          },
+          {
+            "name": "Charles",
+            "cost": 2,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "armor",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 175
+          },
+          {
+            "name": "Charles",
+            "cost": 2,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "armor",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 175
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          }
+        ]
+      ],
+      "souls": [
+        "INTEGRITY",
+        "INTEGRITY"
+      ],
+      "opponent": "race"
+    },
+    {
+      "group": "new_mixed_decks",
+      "decks": [
+        [
+          {
+            "name": "Dummy",
+            "cost": 1,
+            "attack": 0,
+            "health": 4,
+            "keywords": [
+              [
+                "taunt",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 1
+          },
+          {
+            "name": "Dummy",
+            "cost": 1,
+            "attack": 0,
+            "health": 4,
+            "keywords": [
+              [
+                "taunt",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 1
+          },
+          {
+            "name": "Dummy",
+            "cost": 1,
+            "attack": 0,
+            "health": 4,
+            "keywords": [
+              [
+                "taunt",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 1
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Charles",
+            "cost": 2,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "armor",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 175
+          },
+          {
+            "name": "Charles",
+            "cost": 2,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "armor",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 175
+          },
+          {
+            "name": "Charles",
+            "cost": 2,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "armor",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 175
+          },
+          {
+            "name": "Sad Dragon",
+            "cost": 6,
+            "attack": 5,
+            "health": 5,
+            "keywords": [
+              [
+                "dodge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 168
+          },
+          {
+            "name": "Sad Dragon",
+            "cost": 6,
+            "attack": 5,
+            "health": 5,
+            "keywords": [
+              [
+                "dodge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 168
+          },
+          {
+            "name": "Sad Dragon",
+            "cost": 6,
+            "attack": 5,
+            "health": 5,
+            "keywords": [
+              [
+                "dodge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 168
+          },
+          {
+            "name": "Ice Cap",
+            "cost": 3,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "charge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 9
+          },
+          {
+            "name": "Ice Cap",
+            "cost": 3,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "charge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 9
+          },
+          {
+            "name": "Ice Cap",
+            "cost": 3,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "charge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 9
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          }
+        ],
+        [
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          },
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          },
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Sad Dragon",
+            "cost": 6,
+            "attack": 5,
+            "health": 5,
+            "keywords": [
+              [
+                "dodge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 168
+          },
+          {
+            "name": "Sad Dragon",
+            "cost": 6,
+            "attack": 5,
+            "health": 5,
+            "keywords": [
+              [
+                "dodge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 168
+          },
+          {
+            "name": "Sad Dragon",
+            "cost": 6,
+            "attack": 5,
+            "health": 5,
+            "keywords": [
+              [
+                "dodge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 168
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          }
+        ]
+      ],
+      "souls": [
+        "KINDNESS",
+        "KINDNESS"
+      ],
+      "opponent": "race"
+    },
+    {
+      "group": "known_delayed_sweep",
+      "decks": [
+        [
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          },
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          },
+          {
+            "name": "Bloody Tree",
+            "cost": 4,
+            "attack": 4,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "buff",
+                "scope": "self",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 307
+          },
+          {
+            "name": "Bloody Tree",
+            "cost": 4,
+            "attack": 4,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "buff",
+                "scope": "self",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 307
+          }
+        ],
+        [
+          {
+            "name": "synthetic_sweeper",
+            "cost": 5,
+            "attack": 0,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "damage",
+                "scope": "all_enemy",
+                "amount": 3,
+                "health": 0
+              }
+            ],
+            "card_id": null
+          },
+          {
+            "name": "synthetic_sweeper",
+            "cost": 5,
+            "attack": 0,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "damage",
+                "scope": "all_enemy",
+                "amount": 3,
+                "health": 0
+              }
+            ],
+            "card_id": null
+          },
+          {
+            "name": "synthetic_sweeper",
+            "cost": 5,
+            "attack": 0,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "damage",
+                "scope": "all_enemy",
+                "amount": 3,
+                "health": 0
+              }
+            ],
+            "card_id": null
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Charles",
+            "cost": 2,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "armor",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 175
+          },
+          {
+            "name": "Charles",
+            "cost": 2,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "armor",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 175
+          },
+          {
+            "name": "Charles",
+            "cost": 2,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "armor",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 175
+          },
+          {
+            "name": "Sad Dragon",
+            "cost": 6,
+            "attack": 5,
+            "health": 5,
+            "keywords": [
+              [
+                "dodge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 168
+          },
+          {
+            "name": "Sad Dragon",
+            "cost": 6,
+            "attack": 5,
+            "health": 5,
+            "keywords": [
+              [
+                "dodge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 168
+          },
+          {
+            "name": "Sad Dragon",
+            "cost": 6,
+            "attack": 5,
+            "health": 5,
+            "keywords": [
+              [
+                "dodge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 168
+          },
+          {
+            "name": "Vegetoid",
+            "cost": 3,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "heal",
+                "scope": "owner",
+                "amount": 5,
+                "health": 0
+              }
+            ],
+            "card_id": 6
+          },
+          {
+            "name": "Vegetoid",
+            "cost": 3,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "heal",
+                "scope": "owner",
+                "amount": 5,
+                "health": 0
+              }
+            ],
+            "card_id": 6
+          },
+          {
+            "name": "Vegetoid",
+            "cost": 3,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "heal",
+                "scope": "owner",
+                "amount": 5,
+                "health": 0
+              }
+            ],
+            "card_id": 6
+          },
+          {
+            "name": "Scarf Mouse",
+            "cost": 3,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "silence",
+                "scope": "enemy",
+                "amount": 0,
+                "health": 0
+              }
+            ],
+            "card_id": 144
+          },
+          {
+            "name": "Scarf Mouse",
+            "cost": 3,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "silence",
+                "scope": "enemy",
+                "amount": 0,
+                "health": 0
+              }
+            ],
+            "card_id": 144
+          },
+          {
+            "name": "Scarf Mouse",
+            "cost": 3,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "silence",
+                "scope": "enemy",
+                "amount": 0,
+                "health": 0
+              }
+            ],
+            "card_id": 144
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          }
+        ]
+      ],
+      "souls": [
+        "INTEGRITY",
+        "KINDNESS"
+      ],
+      "opponent": "delayed"
+    },
+    {
+      "group": "unseen_learned_opponent",
+      "decks": [
+        [
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          },
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          },
+          {
+            "name": "Fishing Rod",
+            "cost": 3,
+            "attack": 3,
+            "health": 4,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "end",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 225
+          },
+          {
+            "name": "Bloody Tree",
+            "cost": 4,
+            "attack": 4,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "buff",
+                "scope": "self",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 307
+          },
+          {
+            "name": "Bloody Tree",
+            "cost": 4,
+            "attack": 4,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "start",
+                "op": "buff",
+                "scope": "self",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 307
+          }
+        ],
+        [
+          {
+            "name": "Ice Cap",
+            "cost": 3,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "charge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 9
+          },
+          {
+            "name": "Ice Cap",
+            "cost": 3,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "charge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 9
+          },
+          {
+            "name": "Ice Cap",
+            "cost": 3,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "charge",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 9
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Spider",
+            "cost": 1,
+            "attack": 2,
+            "health": 1,
+            "keywords": [
+              [
+                "haste",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 115
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Rock Pet",
+            "cost": 2,
+            "attack": 3,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 602
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Moldsmal",
+            "cost": 2,
+            "attack": 3,
+            "health": 2,
+            "keywords": [],
+            "effects": [],
+            "card_id": 4
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Froggit",
+            "cost": 2,
+            "attack": 2,
+            "health": 3,
+            "keywords": [],
+            "effects": [],
+            "card_id": 2
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Aaron",
+            "cost": 5,
+            "attack": 6,
+            "health": 5,
+            "keywords": [],
+            "effects": [],
+            "card_id": 15
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Candy Dish",
+            "cost": 3,
+            "attack": 2,
+            "health": 6,
+            "keywords": [],
+            "effects": [],
+            "card_id": 187
+          },
+          {
+            "name": "Charles",
+            "cost": 2,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "armor",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 175
+          },
+          {
+            "name": "Charles",
+            "cost": 2,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "armor",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 175
+          },
+          {
+            "name": "Charles",
+            "cost": 2,
+            "attack": 3,
+            "health": 1,
+            "keywords": [
+              [
+                "armor",
+                1
+              ]
+            ],
+            "effects": [],
+            "card_id": 175
+          },
+          {
+            "name": "Bench",
+            "cost": 5,
+            "attack": 5,
+            "health": 5,
+            "keywords": [],
+            "effects": [
+              {
+                "trigger": "play",
+                "op": "draw",
+                "scope": "owner",
+                "amount": 1,
+                "health": 0
+              }
+            ],
+            "card_id": 243
+          }
+        ]
+      ],
+      "souls": [
+        "INTEGRITY",
+        "KINDNESS"
+      ],
+      "opponent": "v5"
+    }
+  ]
+}

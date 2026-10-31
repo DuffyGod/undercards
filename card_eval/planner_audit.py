@@ -4,7 +4,7 @@ import argparse,hashlib,json
 from .network import Network
 from .planner_research import rows,samples,BASE,SOURCE
 from .memory_research import read_rows
-from .public_planner import PublicPlanner
+from ._planner_v1 import PublicPlanner
 from .relations import state_features
 from .knowledge import vector
 import numpy as np

@@ -12,6 +12,7 @@ from card_eval.network import Network
 from card_eval.public_planner import PublicGame, PublicPlanner, UnknownDraw, signature
 from card_eval.api import default_request,evaluate,validate
 from card_eval.catalog import InputError
+from card_eval._planner_v1 import PublicPlanner as FrozenPlanner
 
 
 class PublicPlanningChecks(unittest.TestCase):
@@ -105,6 +106,31 @@ class PublicPlanningChecks(unittest.TestCase):
         self.assertNotEqual(result['base_model'],result['frozen_policy'])
         request['planner']['seconds']=.3
         with self.assertRaises(InputError):validate(request)
+
+    def test_proved_four_attack_win_cannot_be_overridden_by_optimistic_value(self):
+        from card_eval.legacy import environment
+        from card_eval.relations import encode as relational_encode
+        class OptimisticCritic:
+            critic=np.zeros(74);fingerprint='test_critic_with_large_prediction_error'
+            def encode(self,obs,actions):return relational_encode(obs,actions)
+            def forward(self,state,actions):
+                p=np.zeros(len(actions));p[1]=1.;return p,-1.,None
+            def predict_value(self,state):return 1.
+        game=self.game();game.players[0].hand=[];game.players[1].hp=12
+        plain=Spec('plain',0,4,2);taunt=Spec('taunt',0,1,1,(('taunt',1),),())
+        game.players[0].units=[environment.Unit(j,'custom',a,2,2,ready=True,spec=plain) for j,a in ((1,4),(2,4),(3,4),(0,1))]
+        game.players[1].units=[environment.Unit(40,'custom',1,1,1,spec=taunt,taunt=True)]
+        obs=game.observation(0);actions=game.legal_actions(0)
+        from card_eval.policies import lethal
+        self.assertEqual(len(lethal(obs)[0]),4)
+        old=FrozenPlanner(OptimisticCritic(),'value',depth=1,margin=.3).choose(obs,actions)
+        self.assertEqual(old['planner_reason'],'base_continuation_value');self.assertNotEqual(old['action'][1],0)
+        fixed=PublicPlanner(OptimisticCritic(),'value',depth=1,margin=.3);first=fixed.choose(obs,actions)
+        self.assertEqual(first['planner_reason'],'base_attack_proof');self.assertEqual(first['action'][1],0)
+        self.assertNotEqual(old['policy'],first['policy']);game.apply(0,first['action'])
+        while game.players[1].hp>0:
+            row=fixed.choose(game.observation(0),game.legal_actions(0));self.assertEqual(row['planner_reason'],'base_attack_proof');game.apply(0,row['action'])
+        self.assertLessEqual(game.players[1].hp,0)
 
 
 if __name__=='__main__':unittest.main()

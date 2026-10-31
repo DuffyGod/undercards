@@ -1,0 +1,151 @@
+{
+  "source_commit": "e1f77fa2abdfde3f9438f257f95d7fc291d9d67f",
+  "counts": {
+    "forks": 192,
+    "end_boundary": 191,
+    "unknown_draw": 38,
+    "unknown_terminal_label": 1,
+    "root_states": 192,
+    "after_states": 763,
+    "opening_clusters": 96
+  },
+  "metrics": {
+    "root": {
+      "states": 192,
+      "opening_clusters": 96,
+      "brier": {
+        "root": {
+          "mean": 0.15676577689396487,
+          "completion_range": [
+            0.15676577689396487,
+            0.15676577689396487
+          ],
+          "low": 0.12998601918233899,
+          "high": 0.18595378025604056,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "afterstate": {
+          "mean": 0.15822470578903447,
+          "completion_range": [
+            0.15822470578903447,
+            0.15822470578903447
+          ],
+          "low": 0.13176580092933854,
+          "high": 0.18652144225188308,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "old": {
+          "mean": 0.16986935579260434,
+          "completion_range": [
+            0.16986935579260434,
+            0.16986935579260434
+          ],
+          "low": 0.14512585679512605,
+          "high": 0.19670742957313395,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        }
+      },
+      "afterstate_error_reduction": {
+        "root": {
+          "mean": -0.0014589288950696286,
+          "completion_range": [
+            -0.0014589288950696286,
+            -0.0014589288950696286
+          ],
+          "low": -0.004750185629005333,
+          "high": 0.0017753089060416026,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "old": {
+          "mean": 0.011644650003569854,
+          "completion_range": [
+            0.011644650003569854,
+            0.011644650003569854
+          ],
+          "low": 0.0022116444792389146,
+          "high": 0.02124482100030055,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        }
+      }
+    },
+    "after": {
+      "states": 763,
+      "opening_clusters": 96,
+      "brier": {
+        "root": {
+          "mean": 0.15415405256335535,
+          "completion_range": [
+            0.15415405256335535,
+            0.15415405256335535
+          ],
+          "low": 0.1304170216496034,
+          "high": 0.1792737696127517,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "afterstate": {
+          "mean": 0.15324736302726857,
+          "completion_range": [
+            0.15324736302726857,
+            0.15324736302726857
+          ],
+          "low": 0.13041192561770598,
+          "high": 0.17782076852009798,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "old": {
+          "mean": 0.1606732031058122,
+          "completion_range": [
+            0.1606732031058122,
+            0.1606732031058122
+          ],
+          "low": 0.13916255415279677,
+          "high": 0.18344181066945844,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        }
+      },
+      "afterstate_error_reduction": {
+        "root": {
+          "mean": 0.0009066895360867956,
+          "completion_range": [
+            0.0009066895360867956,
+            0.0009066895360867956
+          ],
+          "low": -0.0015044168768814767,
+          "high": 0.003281681081452527,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "old": {
+          "mean": 0.00742584007854366,
+          "completion_range": [
+            0.00742584007854366,
+            0.00742584007854366
+          ],
+          "low": 0.00040797618857937054,
+          "high": 0.01432413612608611,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        }
+      }
+    }
+  },
+  "no_selection": true
+}

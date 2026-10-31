@@ -1,8 +1,7 @@
 {
   "qualified": false,
-  "status": "incomplete_validation",
+  "status": "not_qualified",
   "frozen_policy": "279b176854ac3731503520d63cae628addd08668f57d65df050f51ef605d3505",
-  "source": "REPORT.md",
-  "default_model_replaced": false,
-  "reason": "V7 final evidence is not fully accessible; independent final value collection not started. This checkpoint retains the unqualified V5 actor and cannot qualify a planner."
+  "reason": "Checkpoint alone retains V5 actor; planner has a separate configuration and qualification.",
+  "source": "final.json"
 }

@@ -6,7 +6,7 @@ from pathlib import Path
 import argparse,gzip,hashlib,json,time
 import numpy as np
 from .network import Network
-from .public_planner import PublicGame,PublicPlanner,UnknownDraw
+from ._planner_v1 import PublicGame,PublicPlanner,UnknownDraw
 from .policies import LearnedPolicy,ReferencePolicy
 from .relations import state_features
 from .catalog import Spec,Effect,resolve,semantic_key
