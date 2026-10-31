@@ -1,0 +1,30 @@
+{
+  "models": [
+    {
+      "name": "legacy-v3",
+      "file": "shared-policy.npz",
+      "description": "旧显式牌组MLP，保留作复核",
+      "qualified": false,
+      "status": "not_qualified",
+      "fingerprint": "3bf8d2f447b2a4988de643230c9de0f97e416f5d679f63bcf1d98ee5388bdb39",
+      "sha256": "7023e3e23c850278553a404fcac94edd9918c5c57e4d49b3bb60927c6884def5",
+      "source": "card_eval/models/shared-policy.npz",
+      "feature_version": "explicit-decks-policy-value-3",
+      "scope": "Declared simulator rules and evaluated distributions only; no global card rating."
+    },
+    {
+      "name": "paired-v5",
+      "file": "paired-v5.npz",
+      "description": "配对终局行动差；补牌背景有局部证据",
+      "qualified": false,
+      "status": "not_qualified",
+      "fingerprint": "be81cfcbc5c294c9844781a199bf147a3b6e840bd82cea0cd3d4db8a90718457",
+      "sha256": "ae548231ad062327e556a43f58072431eb3b118fd192fd71cb1a9719d234162e",
+      "source": "artifacts/card_eval/v5/primary-value.npz",
+      "feature_version": "paired-continuation-1",
+      "scope": "Declared simulator rules and evaluated distributions only; no global card rating."
+    }
+  ],
+  "default_policy_mode": "declared references",
+  "quality_gate": "Unqualified models require explicit experimental mode."
+}

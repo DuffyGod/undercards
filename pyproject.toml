@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "undercards-card-eval"
-version = "0.2.2"
+version = "0.3.0"
 description = "Shared-policy semantic card replacement evaluation"
 readme = "card_eval/README.md"
 requires-python = ">=3.11"
@@ -20,4 +20,4 @@ card-eval = "card_eval.__main__:main"
 packages = ["card_eval"]
 
 [tool.setuptools.package-data]
-card_eval = ["_engine/*.py", "_engine/*.json", "data/*.json", "models/*.npz", "models/*.json", "README.md", "PROTOCOL.md"]
+card_eval = ["_engine/*.py", "_engine/*.json", "data/*.json", "models/*.npz", "models/*.json", "examples/*.json", "README.md", "PROTOCOL.md"]

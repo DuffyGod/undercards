@@ -25,8 +25,24 @@ def main(argv=None):
     check = commands.add_parser('check', help='只检查牌表、规则覆盖和替换合法性'); check.add_argument('--input', required=True, type=Path)
     inspect = commands.add_parser('inspect', help='查看卡牌是否完整支持'); inspect.add_argument('card')
     listing = commands.add_parser('catalog', help='列出完整支持与拒绝原因'); listing.add_argument('--output', type=Path)
+    commands.add_parser('models', help='列出随包模型、验证状态与适用范围')
+    example_cmd = commands.add_parser('example', help='生成可编辑的完整牌表请求')
+    example_cmd.add_argument('--output', required=True, type=Path)
+    example_cmd.add_argument('--learned', action='store_true', help='生成学习策略请求；运行时仍需显式实验模式')
+    for command in (assess, evaluate_cmd):
+        selection = command.add_mutually_exclusive_group()
+        selection.add_argument('--model', help='选择随包训练模型；用 models 查看名称和验证状态')
     args = parser.parse_args(argv)
     try:
+        if args.command == 'models':
+            from .model_registry import catalog
+            print(json.dumps(dict(models=catalog()),ensure_ascii=False,indent=2));return 0
+        if args.command == 'example':
+            from .model_registry import example
+            if args.output.exists(): raise ValueError('Output exists; preserve it and choose a new path')
+            args.output.parent.mkdir(parents=True,exist_ok=True)
+            args.output.write_text(json.dumps(example(args.learned),ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+            print(str(args.output));return 0
         if args.command == 'catalog':
             data = coverage()
             if args.output:
@@ -50,8 +66,14 @@ def main(argv=None):
                 opponents=[o['name'] for o in plan['opponents']]), ensure_ascii=False, indent=2)); return 0 if not plan['blocked'] else 2
         if args.experimental_model:
             request['allow_unqualified_policy'] = True
-            request.setdefault('policies', ['learned', 'race', 'board', 'guard'])
-        result = evaluate(request, args.output, args.checkpoint,
+            request.setdefault('policies', ['learned'] if args.model else ['learned', 'race', 'board', 'guard'])
+        checkpoint = args.checkpoint
+        if args.model:
+            if checkpoint: raise ValueError('Choose either --model or --checkpoint')
+            from .model_registry import checkpoint as bundled_checkpoint
+            checkpoint = bundled_checkpoint(args.model)
+            request.setdefault('policies', ['learned'])
+        result = evaluate(request, args.output, checkpoint,
                           progress=lambda row: print(json.dumps(row, ensure_ascii=False), file=sys.stderr, flush=True))
         (args.output / 'report.md').write_text(markdown(result), encoding='utf-8')
         for card in result.get('comparisons', []): print(card['card'] + '：' + LABELS[card['recommendation']])

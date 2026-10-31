@@ -122,9 +122,10 @@ def evaluate(request, output=None, checkpoint=None, progress=None):
             issues=[_issue('policies', 'unqualified_policy', 'The learned policy failed qualification. Use reference policies or explicitly enable experimental-model diagnostics.')])
         save('result.json', result); return result
     receipt = dict(status='running', program_version=__version__, frozen_policy=model_fp,
+        model_name=metadata.get('model_name', Path(checkpoint or DEFAULT_MODEL).stem) if net else None,
         policy_validation=validation,
         completed_games=0, rejected_games=0, requested_samples=plan['samples'], seed_start=plan['seed_start'],
-        information='Opponent hand/order/private deck composition are not policy observations',
+        information='Own initial deck multiset and actually public plays are available. Opponent unseen hand/composition/order are not observations.',
         rules=dict(silence=plan['silence_mode'], current_server_certified=False))
     save('receipt.json', receipt); started = time.monotonic()
     def policy(name): return LearnedPolicy(net) if name == 'learned' else ReferencePolicy(name)
@@ -194,6 +195,7 @@ def evaluate(request, output=None, checkpoint=None, progress=None):
         result = dict(status='complete' if comparisons else 'unsupported_input', program_version=__version__,
             reference=asdict(plan['reference']), comparisons=comparisons, unsupported=plan['blocked'],
             policy_validation=receipt['policy_validation'], frozen_policy=model_fp, games=receipt['completed_games'],
+            model_name=receipt['model_name'],
             evidence_level='experimental_model' if needs_model and not validation.get('qualified', False) else 'declared_policy_comparison',
             unresolved=receipt['rejected_games'], samples=plan['samples'], synthetic_descriptors=synthetic,
             scope='Conditional replacement in supplied25-card decks and declared opponents. No real-meta weights or universal Gold score.',

@@ -6,6 +6,8 @@
 
 - Littman、Sutton、Singh，[Predictive Representations of State](https://proceedings.neurips.cc/paper/2001/file/1e4d36177d71bbb3558e43af9577d70e-Paper.pdf)，NIPS2001。有限历史摘要不自动成为足够状态。本轮只增加可核对的已知/已见语义，不声称实现预测状态表示或发现充分状态。
 - Baisero、Amato，[Unbiased Asymmetric Reinforcement Learning under Partial Observability](https://www.ifaamas.org/Proceedings/aamas2022/pdfs/p44.pdf)，AAMAS2022。论文指出使用状态critic替代历史条件价值存在理论问题。本轮不把真实私牌/牌序放入critic或actor，保持目标的策略条件；不复现其梯度算法。
+- Ebi等，[Informed Asymmetric Actor-Critic: Leveraging Privileged Signals Beyond Full-State Access](https://proceedings.mlr.press/v306/ebi26a.html)，ICML2026。论文提出通过价值预测等标准评估信息增益。本轮借鉴同一策略、同数据下比较信息表示的思路；使用的己方已知牌组/已公开机制是执行时合法信息，不是论文的训练特权信号，也没有实现其无偏梯度框架。AAMAS镜像PDF本轮读取超时，论点仅限作者arXiv摘要可核对部分，不引用未核对的证明细节。
+- Ebi等，[Informed Asymmetric Actor-Critic: Leveraging Privileged Signals Beyond Full-State Access](https://proceedings.mlr.press/v306/ebi26a.html)，ICML2026。论文提出通过价值预测等标准评估信息增益。本轮借鉴同一策略、同数据下比较信息表示的思路；使用的己方已知牌组/已公开机制是执行时合法信息，不是论文的训练特权信号，也没有实现其无偏梯度框架。AAMAS镜像PDF本轮读取超时，论点仅限作者arXiv摘要可核对部分，不引用未核对的证明细节。
 - 复用前轮核对的AggreVaTe/LOLS和MC策略评价，区分“冻结当前V5续局”与旧V4/race混合。新训练actor仍会偏离冻结续局策略，单轮近似策略改进没有保证。
 
 ## 预先冻结的设计
