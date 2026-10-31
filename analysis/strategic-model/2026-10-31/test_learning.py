@@ -11,7 +11,7 @@ from learner import Network
 from records import Recorder, load_episodes
 from study import catalog, training_specs, interval, bounded_interval, guarded_game
 
-WORK = Path('/workspace/undercards/work/ml-route')
+WORK = Path(__file__).resolve().parents[3] / 'work' / 'ml-route'
 WORK.mkdir(parents=True, exist_ok=True)
 
 
@@ -206,6 +206,14 @@ class LearningChecks(unittest.TestCase):
         self.assertTrue(plan); self.assertLessEqual(nodes, 8); self.assertEqual(nodes, model.calls)
         for action in plan: g.apply(0, action)
         self.assertLessEqual(b.hp, 0)
+
+    def test_public_search_observation_equals_physical_next_observation(self):
+        g = self.game(); a, b = g.players
+        a.units = [unit(1, 3, 5, dodge=1), unit(2, 2, 4)]; b.units = [unit(9, 2, 4, armor=True)]
+        for action in (('attack', 1, 1, 9), ('attack', 2, 1, -1)):
+            predicted = public_attack(g.observation(0), action)
+            g.apply(0, action)
+            self.assertEqual(predicted, g.observation(0))
 
 
 if __name__ == '__main__': unittest.main(verbosity=2)

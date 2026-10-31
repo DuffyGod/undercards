@@ -8,6 +8,7 @@ from mechanisms import damage_packet
 
 
 def attack_actions(obs):
+    if min(obs['hp'], obs['enemy_hp']) <= 0: return []
     actor = obs['player']; targets = [u for u in obs['enemy'] if u['taunt']] or obs['enemy']
     taunt = any(u['taunt'] for u in obs['enemy'])
     out = []
@@ -31,6 +32,7 @@ def public_attack(obs, action):
         e['h'], e['dodge'] = damage_packet(e['h'], e['dodge'], e['armor'], u['a'])
         child['own'] = [x for x in child['own'] if x['h'] > 0]
         child['enemy'] = [x for x in child['enemy'] if x['h'] > 0]
+    child['history'] = (child['history'] + [dict(side=0, action='attack', amount=u['a'], cost=0)])[-8:]
     return child
 
 

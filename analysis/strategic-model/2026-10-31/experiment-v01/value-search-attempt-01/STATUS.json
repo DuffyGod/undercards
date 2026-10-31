@@ -1,0 +1,7 @@
+{
+  "valid_for_value_search_conclusion": false,
+  "reason": "Public attack transition omitted the new attack history event; child observation did not match the physical engine.",
+  "retained_raw_results": true,
+  "primary_evaluation_changed": false,
+  "affected_ablation_recomputed_with_same_frozen_model": true
+}
