@@ -20,7 +20,7 @@ def _issue(path, code, message): return dict(path=path, code=code, message=messa
 
 def validate(request):
     if not isinstance(request, dict): raise InputError([_issue('', 'input_type', 'Request must be a JSON object')])
-    allowed = {'deck', 'soul', 'opponents', 'slots', 'candidates', 'seed_start', 'samples', 'policies', 'silence_mode', 'decision_seconds', 'allow_unqualified_policy'}
+    allowed = {'deck', 'soul', 'opponents', 'slots', 'candidates', 'seed_start', 'samples', 'policies', 'silence_mode', 'decision_seconds', 'allow_unqualified_policy','planner'}
     if set(request) - allowed: raise InputError([_issue('', 'unknown_fields', 'Unknown input fields: ' + ', '.join(sorted(set(request) - allowed)))])
     own = deck(request.get('deck'), 'deck'); slots = request.get('slots', [0])
     if not isinstance(slots, list) or not slots or len(set(slots)) != len(slots) or any(type(i) is not int or not 0 <= i < 25 for i in slots):
@@ -65,9 +65,21 @@ def validate(request):
                 issues=exc.issues if isinstance(exc, InputError) else [_issue(f'candidates[{i}]', 'candidate', str(exc))]))
     experimental = request.get('allow_unqualified_policy', False)
     if type(experimental) is not bool: raise InputError([_issue('allow_unqualified_policy', 'type', 'Use an explicit boolean')])
+    planner=request.get('planner')
+    if planner is not None:
+        if not isinstance(planner,dict) or set(planner)-{'mode','margin','nodes','depth','width','seconds'}:
+            raise InputError([_issue('planner','configuration','Use a planner object with mode/margin/nodes/depth/width/seconds')])
+        if not ('learned' in policies or any(o['policy']=='learned' for o in opps)):
+            raise InputError([_issue('planner','learned_required','Public planning needs a learned policy')])
+        config=dict(mode='proof',margin=.1,nodes=48,depth=3,width=4,seconds=.18);config.update(planner)
+        if (config['mode'] not in ('proof','value') or any(type(config[k]) is not int or not 1<=config[k]<=128 for k in ('nodes','depth','width'))
+            or any(type(config[k]) not in (int,float) or not np.isfinite(config[k]) for k in ('margin','seconds'))
+            or not 0<=config['margin']<=1 or not 0<config['seconds']<min(.25,float(budget))):
+            raise InputError([_issue('planner','budget','Use bounded positive node/depth/width, margin0..1, and seconds below both .25 and the decision budget')])
+        planner=config
     return dict(own=own, reference=ref, slots=slots, soul=soul, opponents=opps, samples=samples,
                 seed_start=seed_start, policies=policies, silence_mode=mode, decision_seconds=float(budget),
-                candidates=candidates, blocked=blocked, allow_unqualified_policy=experimental)
+                candidates=candidates, blocked=blocked, allow_unqualified_policy=experimental,planner=planner)
 
 
 def default_request(candidates, reference='Rock Pet', copies=1, samples=32):
@@ -117,18 +129,29 @@ def evaluate(request, output=None, checkpoint=None, progress=None):
     if net and certificate.exists():
         cert = json.loads(certificate.read_text(encoding='utf-8'))
         if cert.get('frozen_policy') == model_fp: validation = cert
+    base_model_fp=model_fp
+    if plan['planner']:
+        from .public_planner import PublicPlanner
+        probe=PublicPlanner(net,**plan['planner']);model_fp=probe.fingerprint
+        # A checkpoint's actor certificate cannot certify a changed planner.
+        # All released public-planner configurations remain experimental.
+        validation=dict(qualified=False,status='not_qualified',frozen_policy=model_fp,
+            base_model=base_model_fp,reason='Public planner requires separate qualification; checkpoint-only certificate does not apply.')
     if needs_model and not validation.get('qualified', False) and not plan['allow_unqualified_policy']:
         result = dict(status='unqualified_policy', scores=None, comparisons=[], policy_validation=validation,
             issues=[_issue('policies', 'unqualified_policy', 'The learned policy failed qualification. Use reference policies or explicitly enable experimental-model diagnostics.')])
         save('result.json', result); return result
-    receipt = dict(status='running', program_version=__version__, frozen_policy=model_fp,
+    receipt = dict(status='running', program_version=__version__, frozen_policy=model_fp,base_model=base_model_fp,planner=plan['planner'],
         model_name=metadata.get('model_name', Path(checkpoint or DEFAULT_MODEL).stem) if net else None,
         policy_validation=validation,
         completed_games=0, rejected_games=0, requested_samples=plan['samples'], seed_start=plan['seed_start'],
         information='Own initial deck multiset and actually public plays are available. Opponent unseen hand/composition/order are not observations.',
         rules=dict(silence=plan['silence_mode'], current_server_certified=False))
     save('receipt.json', receipt); started = time.monotonic()
-    def policy(name): return LearnedPolicy(net) if name == 'learned' else ReferencePolicy(name)
+    def policy(name):
+        if name!='learned':return ReferencePolicy(name)
+        if plan['planner']:return PublicPlanner(net,**plan['planner'])
+        return LearnedPolicy(net)
     raw_file = gzip.open(output / 'games.jsonl.gz', 'wt', encoding='utf-8') if output else None
     by_card = {c['spec'].name: [] for c in plan['candidates']}
     alpha = .05 / max(1, len(plan['opponents']) * len(plan['policies']) * len(plan['candidates']))
@@ -188,13 +211,13 @@ def evaluate(request, output=None, checkpoint=None, progress=None):
             comparisons.append(dict(card=candidate['spec'].name, semantics=asdict(candidate['spec']), recommendation=recommendation,
                 positive_conditions=[dict(opponent=r['opponent'], policy=r['policy']) for r in positive],
                 negative_conditions=[dict(opponent=r['opponent'], policy=r['policy']) for r in negative], conditions=cells))
-        if net and net.fingerprint != model_fp: raise ValueError('Model changed across candidate comparisons')
+        if net and net.fingerprint != base_model_fp: raise ValueError('Model changed across candidate comparisons')
         synthetic = sorted({s.name for s in plan['own'] if s.card_id is None} |
                            {s.name for o in plan['opponents'] for s in o['cards'] if s.card_id is None} |
                            {c['spec'].name for c in plan['candidates'] if c['spec'].card_id is None})
         result = dict(status='complete' if comparisons else 'unsupported_input', program_version=__version__,
             reference=asdict(plan['reference']), comparisons=comparisons, unsupported=plan['blocked'],
-            policy_validation=receipt['policy_validation'], frozen_policy=model_fp, games=receipt['completed_games'],
+            policy_validation=receipt['policy_validation'], frozen_policy=model_fp,base_model=base_model_fp,planner=plan['planner'],games=receipt['completed_games'],
             model_name=receipt['model_name'],
             evidence_level='experimental_model' if needs_model and not validation.get('qualified', False) else 'declared_policy_comparison',
             unresolved=receipt['rejected_games'], samples=plan['samples'], synthetic_descriptors=synthetic,

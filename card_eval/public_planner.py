@@ -102,6 +102,8 @@ def signature(obs):
 class PublicPlanner:
     name = 'shared_policy_public_lookahead'
     def __init__(self,network,mode='proof',margin=.1,nodes=48,depth=3,width=4,seconds=.18):
+        if not hasattr(network,'predict_value') or not hasattr(network,'critic'):
+            raise ValueError('Public planning needs a supported relation/paired/memory value model')
         if mode not in ('proof','value'):raise ValueError('Unknown public planner mode')
         if nodes<1 or depth<1 or width<1 or not 0<seconds<.25 or not 0<=margin<=1:raise ValueError('Invalid planning budget')
         self.network=network;self.base=LearnedPolicy(network);self.pending=[]
@@ -166,4 +168,6 @@ class PublicPlanner:
             policy=self.fingerprint,base_policy=self.network.fingerprint,planner=config,
             planner_reason=reason,planner_gain=gain,planner_nodes=nodes,unknown_draw_boundaries=barriers,
             proof_length=len(chosen_path),proof_mismatch=mismatch,seconds=time.perf_counter()-started)
+        selection['search_override']=bool(selection['search_override'] or reason!='base')
+        selection['value_target']='Frozen base-policy continuation; not searched-policy value'
         return selection

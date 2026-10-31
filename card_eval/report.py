@@ -23,6 +23,9 @@ def markdown(result):
     lines = ['# 卡牌替换评估', '', f"参照：{result['reference']['name']}。每项按同种子、双方座次配对，未上手和未出场都保留。", '',
              '这些结果适用于输入牌组、声明对手和已实现规则；没有合成为真实环境总分或Gold价格。', '']
     if result.get('model_name'): lines += ['使用模型：'+result['model_name']+'。验证状态见本报告结尾及 result.json。','']
+    if result.get('planner'):
+        config=result['planner']
+        lines += ['公开搜索：'+config['mode']+'，价值偏离门槛'+str(config['margin'])+'。未知抽牌与非终局回合边界不展开；价值针对基线续局，策略仍属实验。','']
     for card in result['comparisons']:
         lines += [f"## {card['card']}", '', LABELS[card['recommendation']], '',
                   '| 对手 | 我方策略 | 替换差，百分点 | 配对95%区间 | 未收到/收到未出/已出 |',

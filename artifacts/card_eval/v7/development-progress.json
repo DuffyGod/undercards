@@ -1,0 +1,20 @@
+[
+  {
+    "margin": 0.1,
+    "mean_win_lower": 0.625,
+    "unfinished": 2,
+    "games": 80
+  },
+  {
+    "margin": 0.2,
+    "mean_win_lower": 0.6375,
+    "unfinished": 0,
+    "games": 80
+  },
+  {
+    "margin": 0.3,
+    "mean_win_lower": 0.6375,
+    "unfinished": 2,
+    "games": 80
+  }
+]

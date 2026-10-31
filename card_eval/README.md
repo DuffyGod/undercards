@@ -1,16 +1,21 @@
 # 可直接使用的卡牌评估入口
 
-0.3.0 完整运行包已包含模型、规则快照、验证状态和示例。正常比较仍采用声明参考策略；实验默认载入随包 `paired-v5`，可按名称选择 `memory-v6`，无需研究目录或手动下载检查点。随包模型是否合格由各自记录决定，安装成功不改变质量门槛。
+0.4.0 完整运行包包含模型、规则快照、验证状态和示例。正常比较仍采用声明参考策略；实验默认载入随包 `paired-v5`，可按名称选择 `memory-v6` 或 `afterstate-v7`，无需研究目录或手动下载检查点。随包模型是否合格由各自记录决定，安装成功不改变质量门槛。
 
 ```sh
-python -m pip install undercards_card_eval-0.3.0-py3-none-any.whl
+python -m pip install undercards_card_eval-0.4.0-py3-none-any.whl
 card-eval models
 card-eval assess Bench "Fishing Rod" --model paired-v5 --experimental-model --samples 8 --output results/first-run
 card-eval example --learned --output my-decks.json
 card-eval evaluate --input my-decks.json --model memory-v6 --experimental-model --output results/my-decks
+card-eval assess Bench --model afterstate-v7 --planner value --planner-margin .1 --experimental-model --samples 8 --output results/public-search
 ```
 
 生成的请求含完整25张己方牌表、替换位置、候选与对手，可自行编辑。遇到未实现的完整卡面会明确拒绝评分。`--checkpoint` 仍可加载自定义检查点，与 `--model` 二选一；Python API 可用 `card_eval.model_registry.checkpoint(name)` 取得随包模型路径。
+
+`--planner proof` 只接受公开规则证明的同回合斩杀；`--planner value` 也允许动作后价值超过基线门槛时改动行动。JSON可用 `"planner":{"mode":"value","margin":0.1}`，默认48节点、深度3、宽度4、.18秒搜索界限；记录完整配置、搜索政策指纹与基线模型指纹。未知抽牌停止展开，非终局回合边界不估成同回合状态。`afterstate-v7` 的actor与V5相同，差别仅在critic；不加搜索不会产生更强行动器。价值属于冻结V5续局，不能称为新搜索策略的价值。示例门槛是输入示范；冻结主臂门槛见V7的development.json。
+
+所有公开搜索配置目前都需显式实验模式，不能继承检查点本身的质量证明。搜索没有展开对手私手、随机牌序或下一回合，实测耗时与失败见 `artifacts/card_eval/v7/REPORT.md`；默认参考比较与模型未提升为可靠全池评分。
 
 新观察会保留己方已知牌组的无序语义，以及双方实际公开出牌的机制摘要。它不读取敌方未打出牌或牌序，不等于完整信念状态。旧模型仍能使用新观察；`memory-v6` 缺失必要知识字段时会拒绝，不能把缺失历史当成零。
 

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "undercards-card-eval"
-version = "0.3.0"
+version = "0.4.0"
 description = "Shared-policy semantic card replacement evaluation"
 readme = "card_eval/README.md"
 requires-python = ">=3.11"

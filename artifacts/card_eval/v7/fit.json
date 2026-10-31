@@ -1,0 +1,184 @@
+{
+  "source_commit": "d1ec7c4160d6e3da506f972dfc3aa585d47197ab",
+  "counts": {
+    "forks": 768,
+    "end_boundary": 768,
+    "unknown_draw": 176,
+    "root_states": 768,
+    "after_states": 3053,
+    "opening_clusters": 384
+  },
+  "fits": {
+    "root": {
+      "report": {
+        "loss": 0.4963531495823381,
+        "iterations": 21,
+        "converged": true,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "actor_fingerprint": "df34056e80bdbc20811c1e62e3969259862463b76d4cdca5a2d1794a48a7f8a8",
+        "episode_weighted": true
+      },
+      "fingerprint": "d921572cfb0a9d0cdf7d2a634ae86ceddd9750de47c780af1fc1e20fe573e67d",
+      "actor_fingerprint": "df34056e80bdbc20811c1e62e3969259862463b76d4cdca5a2d1794a48a7f8a8"
+    },
+    "afterstate": {
+      "report": {
+        "loss": 0.48837731129079237,
+        "iterations": 19,
+        "converged": true,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "actor_fingerprint": "df34056e80bdbc20811c1e62e3969259862463b76d4cdca5a2d1794a48a7f8a8",
+        "episode_weighted": true
+      },
+      "fingerprint": "279b176854ac3731503520d63cae628addd08668f57d65df050f51ef605d3505",
+      "actor_fingerprint": "df34056e80bdbc20811c1e62e3969259862463b76d4cdca5a2d1794a48a7f8a8"
+    }
+  },
+  "diagnostic_counts": {
+    "forks": 192,
+    "end_boundary": 192,
+    "unknown_draw": 35,
+    "root_states": 192,
+    "after_states": 792,
+    "opening_clusters": 96
+  },
+  "diagnostic_metrics": {
+    "root": {
+      "states": 192,
+      "opening_clusters": 96,
+      "brier": {
+        "root": {
+          "mean": 0.13624102834978588,
+          "completion_range": [
+            0.13624102834978588,
+            0.13624102834978588
+          ],
+          "low": 0.11605326151019535,
+          "high": 0.15732648729182624,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "afterstate": {
+          "mean": 0.13625341913216657,
+          "completion_range": [
+            0.13625341913216657,
+            0.13625341913216657
+          ],
+          "low": 0.11623277807993562,
+          "high": 0.1568074807284152,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "old": {
+          "mean": 0.1429158313914319,
+          "completion_range": [
+            0.1429158313914319,
+            0.1429158313914319
+          ],
+          "low": 0.12354973325722751,
+          "high": 0.16213143515217932,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        }
+      },
+      "afterstate_error_reduction": {
+        "root": {
+          "mean": -1.239078238069347e-05,
+          "completion_range": [
+            -1.239078238069347e-05,
+            -1.239078238069347e-05
+          ],
+          "low": -0.0033557413856828864,
+          "high": 0.0032066975873084594,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "old": {
+          "mean": 0.006662412259265348,
+          "completion_range": [
+            0.006662412259265348,
+            0.006662412259265348
+          ],
+          "low": -0.0027601493230724953,
+          "high": 0.01633982498230279,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        }
+      }
+    },
+    "after": {
+      "states": 792,
+      "opening_clusters": 96,
+      "brier": {
+        "root": {
+          "mean": 0.13493429050206543,
+          "completion_range": [
+            0.13493429050206543,
+            0.13493429050206543
+          ],
+          "low": 0.11557076245718736,
+          "high": 0.1552320605192866,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "afterstate": {
+          "mean": 0.13324190702622388,
+          "completion_range": [
+            0.13324190702622388,
+            0.13324190702622388
+          ],
+          "low": 0.11418991795266475,
+          "high": 0.1528809668873832,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "old": {
+          "mean": 0.14113235724513415,
+          "completion_range": [
+            0.14113235724513415,
+            0.14113235724513415
+          ],
+          "low": 0.12268795978857071,
+          "high": 0.1591936783993674,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        }
+      },
+      "afterstate_error_reduction": {
+        "root": {
+          "mean": 0.0016923834758415218,
+          "completion_range": [
+            0.0016923834758415218,
+            0.0016923834758415218
+          ],
+          "low": -0.0010341181925077735,
+          "high": 0.0043337011984936665,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "old": {
+          "mean": 0.007890450218910234,
+          "completion_range": [
+            0.007890450218910234,
+            0.007890450218910234
+          ],
+          "low": 0.0006152671585079057,
+          "high": 0.015325634297094125,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        }
+      }
+    }
+  },
+  "limits": "Diagnostic is reused, not a new independent final; target belongs to base actor."
+}

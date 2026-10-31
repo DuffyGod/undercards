@@ -10,6 +10,8 @@ from card_eval.profiles import base_deck, opponents
 from card_eval.policies import ReferencePolicy, LearnedPolicy
 from card_eval.network import Network
 from card_eval.public_planner import PublicGame, PublicPlanner, UnknownDraw, signature
+from card_eval.api import default_request,evaluate,validate
+from card_eval.catalog import InputError
 
 
 class PublicPlanningChecks(unittest.TestCase):
@@ -76,6 +78,13 @@ class PublicPlanningChecks(unittest.TestCase):
             else:self.assertTrue(public.child(('play',card.uid,-1,-1)).terminal())
         obs=game.observation(0)
         self.assertIsNone(PublicGame(obs).child(('end',-1,-1,-1)).terminal())
+        from card_eval.legacy import environment
+        ending=Spec('end_damage',2,1,4,(),(Effect('end','damage','opponent',3),))
+        public=PublicGame(obs);public.players[0].units=[environment.Unit(88,'custom',1,4,4,spec=ending)]
+        self.assertTrue(public.child(('end',-1,-1,-1)).terminal())
+        draw_first=replace(ending,effects=(Effect('end','draw','owner',1),)+ending.effects)
+        public.players[0].units=[replace(public.players[0].units[0],spec=draw_first)]
+        with self.assertRaises(UnknownDraw):public.child(('end',-1,-1,-1))
 
     def test_hidden_worlds_do_not_change_planner_action(self):
         a=self.game('pressure');b=self.game('defense');a.players[0].cash=b.players[0].cash=10
@@ -84,6 +93,18 @@ class PublicPlanningChecks(unittest.TestCase):
         pb=PublicPlanner(self.model(),mode='value',nodes=12,seconds=.24)
         x=pa.choose(a.observation(0),a.legal_actions(0));y=pb.choose(b.observation(0),b.legal_actions(0))
         for field in ('action','planner_nodes','planner_reason','unknown_draw_boundaries'):self.assertEqual(x[field],y[field])
+
+    def test_planner_has_separate_quality_gate_and_saved_configuration(self):
+        request=default_request(['Bench'],samples=2);request['policies']=['learned'];request['planner']=dict(mode='value',nodes=4)
+        blocked=evaluate(request);self.assertEqual(blocked['status'],'unqualified_policy')
+        self.assertNotEqual(blocked['policy_validation']['frozen_policy'],blocked['policy_validation']['base_model'])
+        request['allow_unqualified_policy']=True;request['opponents']=request['opponents'][:1]
+        result=evaluate(request)
+        self.assertEqual(result['status'],'complete');self.assertEqual(result['planner']['nodes'],4)
+        self.assertEqual(result['comparisons'][0]['recommendation'],'experimental_only')
+        self.assertNotEqual(result['base_model'],result['frozen_policy'])
+        request['planner']['seconds']=.3
+        with self.assertRaises(InputError):validate(request)
 
 
 if __name__=='__main__':unittest.main()
