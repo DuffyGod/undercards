@@ -1,0 +1,20 @@
+{
+  "source_commit": "88d812e5d9ce3c148611ce0f87aa22e4517cd164",
+  "original_fit_source_commit": "143aff6a99a8783c1579f46e0065bf374140e754",
+  "fit": {
+    "loss": 0.009802112793622636,
+    "gradient_norm": 7.909741634219027e-06,
+    "iterations": null,
+    "converged": null,
+    "paired_groups": 767,
+    "action_labels": 3953,
+    "head_parameters": 4355,
+    "recovered_from_saved_weights": true
+  },
+  "contrast_groups": 229,
+  "flat_groups": 538,
+  "source_forks": 768,
+  "frozen_baseline": "a397566cf1b7db2e5f33f70e8082f2b03511a79b7e322f222cf4d26d9ee2f23b",
+  "checkpoint_fingerprint": "8ee17d4c9023d96a0ce1d48b3dc500f8a96cc322abcbe53a147457f46b1c2b8d",
+  "recovery": "No refit or resampling. Original optimizer iteration/status was lost to report serialization error and remains unknown."
+}
