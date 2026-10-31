@@ -17,9 +17,11 @@ def main(argv=None):
     assess.add_argument('--copies', type=int, default=1); assess.add_argument('--samples', type=int, default=32)
     assess.add_argument('--output', required=True, type=Path); assess.add_argument('--checkpoint', type=Path)
     assess.add_argument('--policies', nargs='+', choices=['learned', 'race', 'board', 'guard'])
+    assess.add_argument('--experimental-model', action='store_true', help='显式启用未通过验证的模型，仅作诊断')
     evaluate_cmd = commands.add_parser('evaluate', help='读取用户自己的25张牌表与对手JSON')
     evaluate_cmd.add_argument('--input', required=True, type=Path); evaluate_cmd.add_argument('--output', required=True, type=Path)
     evaluate_cmd.add_argument('--checkpoint', type=Path)
+    evaluate_cmd.add_argument('--experimental-model', action='store_true')
     check = commands.add_parser('check', help='只检查牌表、规则覆盖和替换合法性'); check.add_argument('--input', required=True, type=Path)
     inspect = commands.add_parser('inspect', help='查看卡牌是否完整支持'); inspect.add_argument('card')
     listing = commands.add_parser('catalog', help='列出完整支持与拒绝原因'); listing.add_argument('--output', type=Path)
@@ -46,6 +48,9 @@ def main(argv=None):
             print(json.dumps(dict(status='valid' if not plan['blocked'] else 'partially_supported',
                 candidates=[c['spec'].name for c in plan['candidates']], blocked=plan['blocked'],
                 opponents=[o['name'] for o in plan['opponents']]), ensure_ascii=False, indent=2)); return 0 if not plan['blocked'] else 2
+        if args.experimental_model:
+            request['allow_unqualified_policy'] = True
+            request.setdefault('policies', ['learned', 'race', 'board', 'guard'])
         result = evaluate(request, args.output, args.checkpoint,
                           progress=lambda row: print(json.dumps(row, ensure_ascii=False), file=sys.stderr, flush=True))
         (args.output / 'report.md').write_text(markdown(result), encoding='utf-8')

@@ -9,7 +9,7 @@ card-eval check --input my-decks.json
 card-eval evaluate --input my-decks.json --output results/my-decks
 ```
 
-`assess`构造共同、合法张数的25张基准牌表和三类显式对手，**不是推荐卡组或现实环境分布**。`evaluate`读取用户自己的完整牌表。每个候选共用同一模型、实体排列和座次，不逐卡重训。默认同时检查学习策略及三种语义规则，展示方向是否随对手或打法变化。
+`assess`构造共同、合法张数的25张基准牌表和三类显式对手，**不是推荐卡组或现实环境分布**。`evaluate`读取用户自己的完整牌表。每个候选共用策略、实体排列和座次，不逐卡重训。默认检查三种语义参考策略，展示方向是否随对手或打法变化。学习模型未通过独立验证，正常入口拒绝把它当可靠评分器；加`--experimental-model`可查看共享模型诊断，结果不会作为方向推荐。
 
 JSON请求包含`deck`（25个名称、ID或语义描述）、`slots`（要替换的实体位置）、`candidates`、`soul`、`opponents`（各含name/deck/soul/policy）、`samples`和`seed_start`。输入示例由`examples/card-eval-request.json`提供。双方SOUL目前支持INTEGRITY/KINDNESS。
 

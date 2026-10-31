@@ -20,7 +20,7 @@ def _issue(path, code, message): return dict(path=path, code=code, message=messa
 
 def validate(request):
     if not isinstance(request, dict): raise InputError([_issue('', 'input_type', 'Request must be a JSON object')])
-    allowed = {'deck', 'soul', 'opponents', 'slots', 'candidates', 'seed_start', 'samples', 'policies', 'silence_mode', 'decision_seconds'}
+    allowed = {'deck', 'soul', 'opponents', 'slots', 'candidates', 'seed_start', 'samples', 'policies', 'silence_mode', 'decision_seconds', 'allow_unqualified_policy'}
     if set(request) - allowed: raise InputError([_issue('', 'unknown_fields', 'Unknown input fields: ' + ', '.join(sorted(set(request) - allowed)))])
     own = deck(request.get('deck'), 'deck'); slots = request.get('slots', [0])
     if not isinstance(slots, list) or not slots or len(set(slots)) != len(slots) or any(type(i) is not int or not 0 <= i < 25 for i in slots):
@@ -43,7 +43,7 @@ def validate(request):
     samples = request.get('samples', 32); seed_start = request.get('seed_start', 1410000)
     if type(samples) is not int or samples < 2 or type(seed_start) is not int or seed_start < 0:
         raise InputError([_issue('samples', 'sampling', 'Use integer samples>=2 and seed_start>=0')])
-    policies = request.get('policies', ['learned', 'race', 'board', 'guard'])
+    policies = request.get('policies', ['race', 'board', 'guard'])
     if not isinstance(policies, list) or not policies or len(set(policies)) != len(policies) or any(p not in ('learned', 'race', 'board', 'guard') for p in policies):
         raise InputError([_issue('policies', 'policy_selection', 'Select unique learned/race/board/guard policies')])
     mode = request.get('silence_mode', 'retain'); budget = request.get('decision_seconds', .25)
@@ -63,9 +63,11 @@ def validate(request):
         except (ValueError, TypeError, KeyError) as exc:
             blocked.append(dict(input=raw, status='unsupported_or_invalid', score=None,
                 issues=exc.issues if isinstance(exc, InputError) else [_issue(f'candidates[{i}]', 'candidate', str(exc))]))
+    experimental = request.get('allow_unqualified_policy', False)
+    if type(experimental) is not bool: raise InputError([_issue('allow_unqualified_policy', 'type', 'Use an explicit boolean')])
     return dict(own=own, reference=ref, slots=slots, soul=soul, opponents=opps, samples=samples,
                 seed_start=seed_start, policies=policies, silence_mode=mode, decision_seconds=float(budget),
-                candidates=candidates, blocked=blocked)
+                candidates=candidates, blocked=blocked, allow_unqualified_policy=experimental)
 
 
 def default_request(candidates, reference='Rock Pet', copies=1, samples=32):
@@ -111,10 +113,14 @@ def evaluate(request, output=None, checkpoint=None, progress=None):
     net, metadata = (Network.load(checkpoint or DEFAULT_MODEL) if needs_model else (None, {}))
     model_fp = net.fingerprint if net else None
     certificate = Path(checkpoint or DEFAULT_MODEL).parent / 'validation.json'
-    validation = metadata.get('validation', dict(status='not_qualified'))
+    validation = metadata.get('validation', dict(status='not_qualified' if needs_model else 'reference_policy_comparison'))
     if net and certificate.exists():
         cert = json.loads(certificate.read_text(encoding='utf-8'))
         if cert.get('frozen_policy') == model_fp: validation = cert
+    if needs_model and not validation.get('qualified', False) and not plan['allow_unqualified_policy']:
+        result = dict(status='unqualified_policy', scores=None, comparisons=[], policy_validation=validation,
+            issues=[_issue('policies', 'unqualified_policy', 'The learned policy failed qualification. Use reference policies or explicitly enable experimental-model diagnostics.')])
+        save('result.json', result); return result
     receipt = dict(status='running', program_version=__version__, frozen_policy=model_fp,
         policy_validation=validation,
         completed_games=0, rejected_games=0, requested_samples=plan['samples'], seed_start=plan['seed_start'],
@@ -173,6 +179,7 @@ def evaluate(request, output=None, checkpoint=None, progress=None):
             negative = [r for r in cells if r['difference']['high'] < 0]
             complete = all(not r['difference']['unresolved_seed_clusters'] for r in cells)
             if semantic_key(candidate['spec']) == semantic_key(plan['reference']): recommendation = 'equivalent_in_supported_rules'
+            elif needs_model and not validation.get('qualified', False): recommendation = 'experimental_only'
             elif cells and complete and plan['samples'] >= 32 and all(r['familywise_difference']['low'] > 0 for r in cells): recommendation = 'conditional_improvement'
             elif cells and complete and plan['samples'] >= 32 and all(r['familywise_difference']['high'] < 0 for r in cells): recommendation = 'conditional_regression'
             elif positive and negative: recommendation = 'policy_or_opponent_sensitive'
@@ -187,6 +194,7 @@ def evaluate(request, output=None, checkpoint=None, progress=None):
         result = dict(status='complete' if comparisons else 'unsupported_input', program_version=__version__,
             reference=asdict(plan['reference']), comparisons=comparisons, unsupported=plan['blocked'],
             policy_validation=receipt['policy_validation'], frozen_policy=model_fp, games=receipt['completed_games'],
+            evidence_level='experimental_model' if needs_model and not validation.get('qualified', False) else 'declared_policy_comparison',
             unresolved=receipt['rejected_games'], samples=plan['samples'], synthetic_descriptors=synthetic,
             scope='Conditional replacement in supplied25-card decks and declared opponents. No real-meta weights or universal Gold score.',
             uncertainty='95% paired seed intervals; cross-condition recommendation uses Bonferroni-adjusted tails. Unknown outcomes remain0/1 completion bounds.',

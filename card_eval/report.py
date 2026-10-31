@@ -1,6 +1,7 @@
 """Human-readable output; full machine-readable data remains in result.json."""
 
 LABELS = {
+    'experimental_only': '学习模型未达标，仅作实验诊断',
     'equivalent_in_supported_rules': '在已支持机制中等价',
     'conditional_improvement': '在全部声明条件下有改善证据',
     'conditional_regression': '在全部声明条件下有退步证据',
@@ -13,8 +14,8 @@ def percentage(value): return f'{value * 100:+.2f}'
 
 
 def markdown(result):
-    if result['status'] == 'unsupported_input':
-        lines = ['# 无法给出完整评估', '', '未实现或无效的输入没有被当作零收益。', '']
+    if result['status'] != 'complete':
+        lines = ['# 暂不能给出完整评估', '', '未实现、无效输入或未达标模型没有被当作可信评分。', '']
         for item in result.get('issues', []): lines.append(f"- {item['path']}: {item['message']}")
         for item in result.get('unsupported', []):
             lines.append(f"- {str(item['input'])}: " + '; '.join(i['message'] for i in item['issues']))
@@ -41,5 +42,6 @@ def markdown(result):
     lines += [f"共{result['games']}个比较槽位，{result['unresolved']}个未决；未决保留0/1完成界，不记作半胜。", '',
               '跨全部条件的方向建议使用更严格的多重比较阈值；单行区间用于查看条件差异。', '',
               '规则边界：' + '；'.join(result['assumptions']) + '。', '',
-              '学习策略验证状态：' + str(result['policy_validation'].get('status', 'not_qualified')) + '。']
+              ('学习模型尚未通过独立验证，上述数值仅作实验诊断。' if result.get('evidence_level') == 'experimental_model'
+               else '本次比较使用声明策略，不代表最优对弈；牌序区间不覆盖规则误差或策略不足。')]
     return '\n'.join(lines) + '\n'

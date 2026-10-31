@@ -2,6 +2,7 @@ from dataclasses import asdict, replace
 from pathlib import Path
 import json, unittest, tempfile, hashlib
 import numpy as np
+from unittest.mock import patch
 from card_eval.catalog import resolve, deck, Spec, Effect, InputError
 from card_eval.game import NativeGame
 from card_eval.network import Network, encode
@@ -120,6 +121,18 @@ class ProductChecks(unittest.TestCase):
         game.candidate_drawn = 0
         result = game.run()
         self.assertFalse(result['unfinished']); self.assertGreater(result['round'], 40); self.assertLessEqual(result['round'], 60)
+
+    def test_unqualified_model_is_blocked_before_games_unless_explicitly_experimental(self):
+        request = dict(deck=list(base_deck()), slots=[0], opponents=[dict(name='pressure', deck=list(opponents()['pressure']))],
+                       candidates=[dict(name='synthetic stronger', cost=1, attack=4, health=4)], samples=2, policies=['learned'])
+        with patch('card_eval.api.Network.load', return_value=(Network(5), {})) as load:
+            blocked = evaluate(request)
+            self.assertEqual(blocked['status'], 'unqualified_policy'); self.assertIsNone(blocked['scores'])
+            self.assertEqual(load.call_count, 1)
+        with patch('card_eval.api.Network.load', return_value=(Network(5), {})):
+            result = evaluate(request | dict(allow_unqualified_policy=True))
+            self.assertEqual(result['evidence_level'], 'experimental_model')
+            self.assertEqual(result['comparisons'][0]['recommendation'], 'experimental_only')
 
 
 if __name__ == '__main__': unittest.main()

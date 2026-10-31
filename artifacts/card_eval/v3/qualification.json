@@ -1,0 +1,863 @@
+{
+  "status": "complete",
+  "source_commit": "514e44bc31730f0402ecaef51c324a3f70d7ab1f",
+  "frozen_policy": "3bf8d2f447b2a4988de643230c9de0f97e416f5d679f63bcf1d98ee5388bdb39",
+  "selected_checkpoint": "ppo-096.npz",
+  "complete_slots": 3200,
+  "test_seeds": [
+    1210000,
+    1210001,
+    1210002,
+    1210003,
+    1210004,
+    1210005,
+    1210006,
+    1210007,
+    1210008,
+    1210009,
+    1210010,
+    1210011,
+    1210012,
+    1210013,
+    1210014,
+    1210015,
+    1210016,
+    1210017,
+    1210018,
+    1210019,
+    1210020,
+    1210021,
+    1210022,
+    1210023,
+    1210024,
+    1210025,
+    1210026,
+    1210027,
+    1210028,
+    1210029,
+    1210030,
+    1210031,
+    1210032,
+    1210033,
+    1210034,
+    1210035,
+    1210036,
+    1210037,
+    1210038,
+    1210039,
+    1210040,
+    1210041,
+    1210042,
+    1210043,
+    1210044,
+    1210045,
+    1210046,
+    1210047,
+    1210048,
+    1210049,
+    1210050,
+    1210051,
+    1210052,
+    1210053,
+    1210054,
+    1210055,
+    1210056,
+    1210057,
+    1210058,
+    1210059,
+    1210060,
+    1210061,
+    1210062,
+    1210063
+  ],
+  "qualified": false,
+  "groups": [
+    {
+      "group": "pressure",
+      "learned_win": {
+        "mean": 0.140625,
+        "completion_range": [
+          0.140625,
+          0.140625
+        ],
+        "low": 0.078125,
+        "high": 0.2109375,
+        "alpha": 0.05,
+        "independent_seed_clusters": 64,
+        "unresolved_seed_clusters": 0
+      },
+      "comparisons": [
+        {
+          "policy": "previous",
+          "win": {
+            "mean": 0.3125,
+            "completion_range": [
+              0.3125,
+              0.3125
+            ],
+            "low": 0.234375,
+            "high": 0.3984375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": -0.171875,
+            "completion_range": [
+              -0.171875,
+              -0.171875
+            ],
+            "low": -0.2421875,
+            "high": -0.10917968750000284,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "race",
+          "win": {
+            "mean": 0.2421875,
+            "completion_range": [
+              0.2421875,
+              0.2421875
+            ],
+            "low": 0.1640625,
+            "high": 0.3203125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": -0.1015625,
+            "completion_range": [
+              -0.1015625,
+              -0.1015625
+            ],
+            "low": -0.1796875,
+            "high": -0.0234375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "board",
+          "win": {
+            "mean": 0.328125,
+            "completion_range": [
+              0.328125,
+              0.328125
+            ],
+            "low": 0.234375,
+            "high": 0.421875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": -0.1875,
+            "completion_range": [
+              -0.1875,
+              -0.1875
+            ],
+            "low": -0.28125,
+            "high": -0.09375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "guard",
+          "win": {
+            "mean": 0.7421875,
+            "completion_range": [
+              0.7421875,
+              0.7421875
+            ],
+            "low": 0.65625,
+            "high": 0.8203125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": -0.6015625,
+            "completion_range": [
+              -0.6015625,
+              -0.6015625
+            ],
+            "low": -0.703125,
+            "high": -0.5,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        }
+      ],
+      "timings": {
+        "learned": {
+          "decisions": 2466,
+          "p95": 0.0009515677506897191,
+          "maximum": 0.01728091600125481
+        },
+        "previous": {
+          "decisions": 2408,
+          "p95": 0.0084144612498676,
+          "maximum": 0.023734067999612307
+        },
+        "race": {
+          "decisions": 3118,
+          "p95": 3.35823494424403e-05,
+          "maximum": 0.010792801000206964
+        },
+        "board": {
+          "decisions": 3593,
+          "p95": 4.398880046210225e-05,
+          "maximum": 0.01040634300079546
+        },
+        "guard": {
+          "decisions": 4707,
+          "p95": 0.00021718819862143985,
+          "maximum": 0.010071976999824983
+        }
+      }
+    },
+    {
+      "group": "defense",
+      "learned_win": {
+        "mean": 0.03125,
+        "completion_range": [
+          0.03125,
+          0.03125
+        ],
+        "low": 0.0,
+        "high": 0.078125,
+        "alpha": 0.05,
+        "independent_seed_clusters": 64,
+        "unresolved_seed_clusters": 0
+      },
+      "comparisons": [
+        {
+          "policy": "previous",
+          "win": {
+            "mean": 0.109375,
+            "completion_range": [
+              0.109375,
+              0.109375
+            ],
+            "low": 0.0546875,
+            "high": 0.171875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": -0.078125,
+            "completion_range": [
+              -0.078125,
+              -0.078125
+            ],
+            "low": -0.125,
+            "high": -0.03125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "race",
+          "win": {
+            "mean": 0.0625,
+            "completion_range": [
+              0.0625,
+              0.0625
+            ],
+            "low": 0.0234375,
+            "high": 0.109375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": -0.03125,
+            "completion_range": [
+              -0.03125,
+              -0.03125
+            ],
+            "low": -0.0859375,
+            "high": 0.0234375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "board",
+          "win": {
+            "mean": 0.0625,
+            "completion_range": [
+              0.0625,
+              0.0625
+            ],
+            "low": 0.0234375,
+            "high": 0.109375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": -0.03125,
+            "completion_range": [
+              -0.03125,
+              -0.03125
+            ],
+            "low": -0.0859375,
+            "high": 0.0234375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "guard",
+          "win": {
+            "mean": 0.359375,
+            "completion_range": [
+              0.359375,
+              0.359375
+            ],
+            "low": 0.2734375,
+            "high": 0.453125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": -0.328125,
+            "completion_range": [
+              -0.328125,
+              -0.328125
+            ],
+            "low": -0.421875,
+            "high": -0.234375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        }
+      ],
+      "timings": {
+        "learned": {
+          "decisions": 2874,
+          "p95": 0.0009378755999023267,
+          "maximum": 0.006354204999297508
+        },
+        "previous": {
+          "decisions": 2809,
+          "p95": 0.011218543799623146,
+          "maximum": 0.04020681899964984
+        },
+        "race": {
+          "decisions": 3665,
+          "p95": 2.1343399203033144e-05,
+          "maximum": 0.011489610998978605
+        },
+        "board": {
+          "decisions": 3843,
+          "p95": 2.1497800298675404e-05,
+          "maximum": 0.011229097000978072
+        },
+        "guard": {
+          "decisions": 4764,
+          "p95": 2.897779950217204e-05,
+          "maximum": 0.0075470209994819015
+        }
+      }
+    },
+    {
+      "group": "refill",
+      "learned_win": {
+        "mean": 0.4921875,
+        "completion_range": [
+          0.4921875,
+          0.4921875
+        ],
+        "low": 0.390625,
+        "high": 0.59375,
+        "alpha": 0.05,
+        "independent_seed_clusters": 64,
+        "unresolved_seed_clusters": 0
+      },
+      "comparisons": [
+        {
+          "policy": "previous",
+          "win": {
+            "mean": null,
+            "completion_range": [
+              0.640625,
+              0.6484375
+            ],
+            "low": 0.5546875,
+            "high": 0.734375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 1
+          },
+          "learned_gain": {
+            "mean": null,
+            "completion_range": [
+              -0.15625,
+              -0.1484375
+            ],
+            "low": -0.234375,
+            "high": -0.0703125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 1
+          }
+        },
+        {
+          "policy": "race",
+          "win": {
+            "mean": 0.59375,
+            "completion_range": [
+              0.59375,
+              0.59375
+            ],
+            "low": 0.4921875,
+            "high": 0.6953125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": -0.1015625,
+            "completion_range": [
+              -0.1015625,
+              -0.1015625
+            ],
+            "low": -0.1796875,
+            "high": -0.03125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "board",
+          "win": {
+            "mean": 0.4921875,
+            "completion_range": [
+              0.4921875,
+              0.4921875
+            ],
+            "low": 0.39824218750000007,
+            "high": 0.59375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": 0.0,
+            "completion_range": [
+              0.0,
+              0.0
+            ],
+            "low": -0.109375,
+            "high": 0.109375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "guard",
+          "win": {
+            "mean": 0.734375,
+            "completion_range": [
+              0.734375,
+              0.734375
+            ],
+            "low": 0.6484375,
+            "high": 0.8126953124999972,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": -0.2421875,
+            "completion_range": [
+              -0.2421875,
+              -0.2421875
+            ],
+            "low": -0.3515625,
+            "high": -0.1328125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        }
+      ],
+      "timings": {
+        "learned": {
+          "decisions": 2862,
+          "p95": 0.0017162467493108105,
+          "maximum": 0.017358565999529674
+        },
+        "previous": {
+          "decisions": 2676,
+          "p95": 0.010966495000502618,
+          "maximum": 0.03219016600087343
+        },
+        "race": {
+          "decisions": 3323,
+          "p95": 0.00010831030103872734,
+          "maximum": 0.019448573999397922
+        },
+        "board": {
+          "decisions": 4037,
+          "p95": 5.6827399748726725e-05,
+          "maximum": 0.01511481000125059
+        },
+        "guard": {
+          "decisions": 4581,
+          "p95": 0.0008081300002231728,
+          "maximum": 0.016344184999979916
+        }
+      }
+    },
+    {
+      "group": "heldout_composition",
+      "learned_win": {
+        "mean": 0.1484375,
+        "completion_range": [
+          0.1484375,
+          0.1484375
+        ],
+        "low": 0.078125,
+        "high": 0.2265625,
+        "alpha": 0.05,
+        "independent_seed_clusters": 64,
+        "unresolved_seed_clusters": 0
+      },
+      "comparisons": [
+        {
+          "policy": "previous",
+          "win": {
+            "mean": 0.3359375,
+            "completion_range": [
+              0.3359375,
+              0.3359375
+            ],
+            "low": 0.25,
+            "high": 0.421875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": -0.1875,
+            "completion_range": [
+              -0.1875,
+              -0.1875
+            ],
+            "low": -0.265625,
+            "high": -0.109375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "race",
+          "win": {
+            "mean": 0.2421875,
+            "completion_range": [
+              0.2421875,
+              0.2421875
+            ],
+            "low": 0.1640625,
+            "high": 0.3203125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": -0.09375,
+            "completion_range": [
+              -0.09375,
+              -0.09375
+            ],
+            "low": -0.171875,
+            "high": -0.0078125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "board",
+          "win": {
+            "mean": 0.2890625,
+            "completion_range": [
+              0.2890625,
+              0.2890625
+            ],
+            "low": 0.2109375,
+            "high": 0.3671875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": -0.140625,
+            "completion_range": [
+              -0.140625,
+              -0.140625
+            ],
+            "low": -0.234375,
+            "high": -0.046875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "guard",
+          "win": {
+            "mean": 0.75,
+            "completion_range": [
+              0.75,
+              0.75
+            ],
+            "low": 0.65625,
+            "high": 0.8359375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": -0.6015625,
+            "completion_range": [
+              -0.6015625,
+              -0.6015625
+            ],
+            "low": -0.7109375,
+            "high": -0.484375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        }
+      ],
+      "timings": {
+        "learned": {
+          "decisions": 2485,
+          "p95": 0.0021538934008276476,
+          "maximum": 0.026639314999556518
+        },
+        "previous": {
+          "decisions": 2469,
+          "p95": 0.012214622199826407,
+          "maximum": 0.050181262000478455
+        },
+        "race": {
+          "decisions": 3156,
+          "p95": 4.8252250508085126e-05,
+          "maximum": 0.011773060999985319
+        },
+        "board": {
+          "decisions": 3608,
+          "p95": 5.180380048841457e-05,
+          "maximum": 0.011310818999845651
+        },
+        "guard": {
+          "decisions": 4678,
+          "p95": 0.0003031270000974441,
+          "maximum": 0.015541400998699828
+        }
+      }
+    },
+    {
+      "group": "heldout_deck_structure",
+      "learned_win": {
+        "mean": null,
+        "completion_range": [
+          0.265625,
+          0.2734375
+        ],
+        "low": 0.1796875,
+        "high": 0.359375,
+        "alpha": 0.05,
+        "independent_seed_clusters": 64,
+        "unresolved_seed_clusters": 1
+      },
+      "comparisons": [
+        {
+          "policy": "previous",
+          "win": {
+            "mean": null,
+            "completion_range": [
+              0.265625,
+              0.2734375
+            ],
+            "low": 0.1796875,
+            "high": 0.3671875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 1
+          },
+          "learned_gain": {
+            "mean": null,
+            "completion_range": [
+              -0.0078125,
+              0.0078125
+            ],
+            "low": -0.1015625,
+            "high": 0.1015625,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 2
+          }
+        },
+        {
+          "policy": "race",
+          "win": {
+            "mean": 0.453125,
+            "completion_range": [
+              0.453125,
+              0.453125
+            ],
+            "low": 0.3515625,
+            "high": 0.5546875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": null,
+            "completion_range": [
+              -0.1875,
+              -0.1796875
+            ],
+            "low": -0.28125,
+            "high": -0.09375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 1
+          }
+        },
+        {
+          "policy": "board",
+          "win": {
+            "mean": 0.3359375,
+            "completion_range": [
+              0.3359375,
+              0.3359375
+            ],
+            "low": 0.234375,
+            "high": 0.4375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": null,
+            "completion_range": [
+              -0.0703125,
+              -0.0625
+            ],
+            "low": -0.1640625,
+            "high": 0.0234375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 1
+          }
+        },
+        {
+          "policy": "guard",
+          "win": {
+            "mean": 0.703125,
+            "completion_range": [
+              0.703125,
+              0.703125
+            ],
+            "low": 0.6015625,
+            "high": 0.796875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": null,
+            "completion_range": [
+              -0.4375,
+              -0.4296875
+            ],
+            "low": -0.5546875,
+            "high": -0.3046875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 1
+          }
+        }
+      ],
+      "timings": {
+        "learned": {
+          "decisions": 2930,
+          "p95": 0.0014885454500472384,
+          "maximum": 0.01290842500020517
+        },
+        "previous": {
+          "decisions": 2626,
+          "p95": 0.011984187500729604,
+          "maximum": 0.025121423001110088
+        },
+        "race": {
+          "decisions": 4015,
+          "p95": 7.279170022229641e-05,
+          "maximum": 0.01405169899953762
+        },
+        "board": {
+          "decisions": 4228,
+          "p95": 5.9204499757469977e-05,
+          "maximum": 0.00963439999941329
+        },
+        "guard": {
+          "decisions": 4628,
+          "p95": 0.00038269880033111583,
+          "maximum": 0.01484706400151481
+        }
+      }
+    }
+  ],
+  "failures": [
+    {
+      "group": "refill",
+      "seed": 1210053,
+      "seat": 1,
+      "policy": "previous",
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=shared_policy_value, seconds=0.372430"
+    },
+    {
+      "group": "heldout_deck_structure",
+      "seed": 1210020,
+      "seat": 0,
+      "policy": "previous",
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=shared_policy_value, seconds=0.317258"
+    },
+    {
+      "group": "heldout_deck_structure",
+      "seed": 1210059,
+      "seat": 0,
+      "policy": "learned",
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=shared_semantic_model, seconds=0.272828"
+    }
+  ],
+  "elapsed_seconds": 101.4112163310001,
+  "decision_seconds": 0.25,
+  "real_server_certified": false,
+  "acceptance": "Positive paired95%lower gain against each causal reference in all five contexts, no rejected games. Previous failed model is a separate improvement diagnostic."
+}
