@@ -1,0 +1,383 @@
+{
+  "source_commit": "2572efb08b892085de24d11d7898100b3dc57087",
+  "frozen_policy": "4ea85080db1a286a119d801133a06752528b27d5a16b8ac0898135bf7f0c5e70",
+  "baseline": "Rock Pet",
+  "cards": [
+    {
+      "card": "Rock Pet",
+      "diagnostics": {
+        "win": {
+          "mean": 0.2421875,
+          "low": 0.15625,
+          "high": 0.3359375,
+          "n": 64,
+          "completion_mean_range": [
+            0.2421875,
+            0.2421875
+          ],
+          "unresolved_seed_clusters": 0
+        },
+        "games": 128,
+        "unfinished": 0,
+        "diagnostic_unknown": 0,
+        "never_received": 17,
+        "received_unplayed": 0,
+        "played": 111,
+        "burned": 0,
+        "wait_turns": 271,
+        "unfunded_turns": 0,
+        "slot_blocked_turns": 1,
+        "first_punished_games": 106
+      },
+      "carrying_win_difference": {
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "n": 64,
+        "completion_mean_range": [
+          0.0,
+          0.0
+        ],
+        "unresolved_seed_clusters": 0
+      }
+    },
+    {
+      "card": "Froggit",
+      "diagnostics": {
+        "win": {
+          "mean": 0.2265625,
+          "low": 0.140625,
+          "high": 0.3203125,
+          "n": 64,
+          "completion_mean_range": [
+            0.2265625,
+            0.2265625
+          ],
+          "unresolved_seed_clusters": 0
+        },
+        "games": 128,
+        "unfinished": 0,
+        "diagnostic_unknown": 0,
+        "never_received": 17,
+        "received_unplayed": 2,
+        "played": 109,
+        "burned": 0,
+        "wait_turns": 293,
+        "unfunded_turns": 0,
+        "slot_blocked_turns": 1,
+        "first_punished_games": 105
+      },
+      "carrying_win_difference": {
+        "mean": -0.015625,
+        "low": -0.0546875,
+        "high": 0.0234375,
+        "n": 64,
+        "completion_mean_range": [
+          -0.015625,
+          -0.015625
+        ],
+        "unresolved_seed_clusters": 0
+      }
+    },
+    {
+      "card": "Aaron",
+      "diagnostics": {
+        "win": {
+          "mean": 0.421875,
+          "low": 0.328125,
+          "high": 0.515625,
+          "n": 64,
+          "completion_mean_range": [
+            0.421875,
+            0.421875
+          ],
+          "unresolved_seed_clusters": 0
+        },
+        "games": 128,
+        "unfinished": 0,
+        "diagnostic_unknown": 0,
+        "never_received": 17,
+        "received_unplayed": 1,
+        "played": 110,
+        "burned": 0,
+        "wait_turns": 378,
+        "unfunded_turns": 155,
+        "slot_blocked_turns": 0,
+        "first_punished_games": 96
+      },
+      "carrying_win_difference": {
+        "mean": 0.1796875,
+        "low": 0.078125,
+        "high": 0.2734375,
+        "n": 64,
+        "completion_mean_range": [
+          0.1796875,
+          0.1796875
+        ],
+        "unresolved_seed_clusters": 0
+      }
+    },
+    {
+      "card": "Spider",
+      "diagnostics": {
+        "win": {
+          "mean": 0.25,
+          "low": 0.1640625,
+          "high": 0.34375,
+          "n": 64,
+          "completion_mean_range": [
+            0.25,
+            0.25
+          ],
+          "unresolved_seed_clusters": 0
+        },
+        "games": 128,
+        "unfinished": 0,
+        "diagnostic_unknown": 0,
+        "never_received": 17,
+        "received_unplayed": 0,
+        "played": 111,
+        "burned": 0,
+        "wait_turns": 177,
+        "unfunded_turns": 0,
+        "slot_blocked_turns": 0,
+        "first_punished_games": 103
+      },
+      "carrying_win_difference": {
+        "mean": 0.0078125,
+        "low": -0.046875,
+        "high": 0.0625,
+        "n": 64,
+        "completion_mean_range": [
+          0.0078125,
+          0.0078125
+        ],
+        "unresolved_seed_clusters": 0
+      }
+    },
+    {
+      "card": "Bench",
+      "diagnostics": {
+        "win": {
+          "mean": 0.3515625,
+          "low": 0.2578125,
+          "high": 0.4453125,
+          "n": 64,
+          "completion_mean_range": [
+            0.3515625,
+            0.3515625
+          ],
+          "unresolved_seed_clusters": 0
+        },
+        "games": 128,
+        "unfinished": 0,
+        "diagnostic_unknown": 0,
+        "never_received": 17,
+        "received_unplayed": 13,
+        "played": 98,
+        "burned": 0,
+        "wait_turns": 601,
+        "unfunded_turns": 155,
+        "slot_blocked_turns": 2,
+        "first_punished_games": 100
+      },
+      "carrying_win_difference": {
+        "mean": 0.109375,
+        "low": 0.03125,
+        "high": 0.1875,
+        "n": 64,
+        "completion_mean_range": [
+          0.109375,
+          0.109375
+        ],
+        "unresolved_seed_clusters": 0
+      }
+    },
+    {
+      "card": "Fishing Rod",
+      "diagnostics": {
+        "win": {
+          "mean": 0.5546875,
+          "low": 0.4453125,
+          "high": 0.6640625,
+          "n": 64,
+          "completion_mean_range": [
+            0.5546875,
+            0.5546875
+          ],
+          "unresolved_seed_clusters": 0
+        },
+        "games": 128,
+        "unfinished": 0,
+        "diagnostic_unknown": 0,
+        "never_received": 17,
+        "received_unplayed": 0,
+        "played": 111,
+        "burned": 8,
+        "wait_turns": 316,
+        "unfunded_turns": 73,
+        "slot_blocked_turns": 1,
+        "first_punished_games": 104
+      },
+      "carrying_win_difference": {
+        "mean": 0.3125,
+        "low": 0.203125,
+        "high": 0.4142578125000007,
+        "n": 64,
+        "completion_mean_range": [
+          0.3125,
+          0.3125
+        ],
+        "unresolved_seed_clusters": 0
+      }
+    },
+    {
+      "card": "Bloody Tree",
+      "diagnostics": {
+        "win": {
+          "mean": 0.4609375,
+          "low": 0.359375,
+          "high": 0.5625,
+          "n": 64,
+          "completion_mean_range": [
+            0.4609375,
+            0.4609375
+          ],
+          "unresolved_seed_clusters": 0
+        },
+        "games": 128,
+        "unfinished": 0,
+        "diagnostic_unknown": 0,
+        "never_received": 17,
+        "received_unplayed": 0,
+        "played": 111,
+        "burned": 0,
+        "wait_turns": 348,
+        "unfunded_turns": 152,
+        "slot_blocked_turns": 0,
+        "first_punished_games": 96
+      },
+      "carrying_win_difference": {
+        "mean": 0.21875,
+        "low": 0.125,
+        "high": 0.3125,
+        "n": 64,
+        "completion_mean_range": [
+          0.21875,
+          0.21875
+        ],
+        "unresolved_seed_clusters": 0
+      }
+    },
+    {
+      "card": "Scarf Mouse",
+      "diagnostics": {
+        "win": {
+          "mean": 0.1953125,
+          "low": 0.1171875,
+          "high": 0.2734375,
+          "n": 64,
+          "completion_mean_range": [
+            0.1953125,
+            0.1953125
+          ],
+          "unresolved_seed_clusters": 0
+        },
+        "games": 128,
+        "unfinished": 0,
+        "diagnostic_unknown": 0,
+        "never_received": 17,
+        "received_unplayed": 4,
+        "played": 107,
+        "burned": 0,
+        "wait_turns": 378,
+        "unfunded_turns": 63,
+        "slot_blocked_turns": 0,
+        "first_punished_games": 103
+      },
+      "carrying_win_difference": {
+        "mean": -0.046875,
+        "low": -0.1171875,
+        "high": 0.015625,
+        "n": 64,
+        "completion_mean_range": [
+          -0.046875,
+          -0.046875
+        ],
+        "unresolved_seed_clusters": 0
+      }
+    }
+  ],
+  "silence_sensitivity": [
+    {
+      "silence_mode": "retain",
+      "scores": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "seed_start": 730000,
+      "win": {
+        "mean": 0.1875,
+        "low": 0.0,
+        "high": 0.375,
+        "n": 16,
+        "completion_mean_range": [
+          0.1875,
+          0.1875
+        ],
+        "unresolved_seed_clusters": 0
+      },
+      "unfinished": 0
+    },
+    {
+      "silence_mode": "reset",
+      "scores": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "seed_start": 730000,
+      "win": {
+        "mean": 0.25,
+        "low": 0.0625,
+        "high": 0.5,
+        "n": 16,
+        "completion_mean_range": [
+          0.25,
+          0.25
+        ],
+        "unresolved_seed_clusters": 0
+      },
+      "unfinished": 0
+    }
+  ],
+  "estimand": "Three predeclared entity slots replaced before shuffle; all shared seeds retained, including no draw/no play. Same frozen policy, no per-card retraining or diagnosis penalties added.",
+  "scope": "Conditional aggregate-role host; primitive interactions only, no tribal synergies or real environment weights."
+}
