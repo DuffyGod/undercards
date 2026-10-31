@@ -7,7 +7,7 @@ from mechanisms import Spec, Effect, compile_text, UnsupportedRule
 from environment import LearningGame, Config, bridge, VERSION as ENGINE_VERSION
 from agents import LearnedAgent, FixedAgent
 from learner import Network
-from records import Recorder
+from records import Recorder, load_episodes
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
@@ -195,7 +195,7 @@ def interval(values, seed=19):
                 high=float(np.quantile(boot, .975)), n=len(values))
 
 
-def evaluate(dest):
+def evaluate(dest, reuse_decisions=None):
     source = source_commit(); design = json.loads((dest / 'design.json').read_text())
     training = json.loads((dest / 'training.json').read_text())
     if training['status'] != 'complete': raise ValueError('Incomplete training')
@@ -203,7 +203,18 @@ def evaluate(dest):
     net, meta = Network.load(dest / 'policy.npz')
     if training['training_seed_end'] >= min(design['evaluation_seeds'] + design['replacement_seeds']):
         raise ValueError('Training/evaluation seed overlap')
-    status = dict(status='running', source_commit=source, frozen_policy=net.fingerprint, records=0)
+    cache = {}
+    if reuse_decisions is not None:
+        for rec in load_episodes(reuse_decisions):
+            if not rec.result['terminated']: continue
+            meta = rec.result['metadata']; key = (meta['group'], meta['seed'], meta['seat'])
+            if any(r['policy'] != net.fingerprint for r in rec.rows if r['observation']['player'] == 0):
+                raise ValueError('Cached episode used a different frozen learner')
+            if rec.result['result']['seed'] != meta['seed']:
+                raise ValueError('Cached episode seed mismatch')
+            cache[key] = rec
+    status = dict(status='running', source_commit=source, frozen_policy=net.fingerprint, records=0,
+                  reused_completed_episodes=len(cache), reused_decision_file=str(reuse_decisions) if reuse_decisions else None)
     dump(dest / 'evaluation.json', status); started = time.monotonic()
     output = []; latencies = []; failures = []
     try:
@@ -218,13 +229,24 @@ def evaluate(dest):
                             agent = LearnedAgent(net, search_nodes=design['search_nodes']) if row == 0 else FixedAgent(bridge.ROWS[row - 1])
                             spec = from_dict(case['spec'])
                             cfg = Config(rounds=40, seat=seat, soul='INTEGRITY', response_kind='sweep')
-                            recorder = Recorder(f"eval-{case['group']}-{seed}-{seat}", decisions,
-                                dict(group=case['group'], seed=seed, seat=seat)) if row == 0 else None
-                            result = run_game(spec, seed, cfg, case['structure'],
-                                (agent, FixedAgent(OPPONENTS[case['opponent']])), recorder=recorder,
-                                silence_mode=design['silence_mode'], decision_seconds=design['decision_seconds'])
-                            record = dict(group=case['group'], seed=seed, seat=seat, policy=agent.name,
-                                          **{k: v for k, v in result.items() if k not in ('trace', 'snapshots', 'decision_seconds')})
+                            cached = cache.get((case['group'], seed, seat)) if row == 0 else None
+                            if cached is not None:
+                                result = dict(cached.result['result'])
+                                if result['config'] != asdict(cfg) or result['structure'] != case['structure']:
+                                    raise ValueError('Cached episode condition mismatch')
+                                if any(cached.rows[0]['observation'][k] != v for k, v in {'silence_mode': design['silence_mode']}.items()):
+                                    raise ValueError('Cached rule assumption mismatch')
+                                result['decision_seconds'] = [[r['seconds'] for r in cached.rows if r['observation']['player'] == a] for a in (0, 1)]
+                                for recrow in cached.rows + [cached.result]:
+                                    decisions.write(json.dumps(recrow, separators=(',', ':')) + '\n')
+                            else:
+                                recorder = Recorder(f"eval-{case['group']}-{seed}-{seat}", decisions,
+                                    dict(group=case['group'], seed=seed, seat=seat)) if row == 0 else None
+                                result = run_game(spec, seed, cfg, case['structure'],
+                                    (agent, FixedAgent(OPPONENTS[case['opponent']])), recorder=recorder,
+                                    silence_mode=design['silence_mode'], decision_seconds=design['decision_seconds'])
+                            record = {**{k: v for k, v in result.items() if k not in ('trace', 'snapshots', 'decision_seconds')},
+                                      'group': case['group'], 'seed': seed, 'seat': seat, 'policy': agent.name}
                             sink.write(json.dumps(record, separators=(',', ':')) + '\n'); status['records'] += 1
                             latencies.extend((agent.name, x) for x in result['decision_seconds'][0])
                             if result['unfinished']:
@@ -353,8 +375,10 @@ def main():
     parser.add_argument('--updates', type=int, default=48)
     parser.add_argument('--rollouts', type=int, default=8)
     parser.add_argument('--eval-seeds', type=int, default=64)
+    parser.add_argument('--reuse-decisions', type=Path)
     args = parser.parse_args()
     if args.mode == 'prepare': prepare(args.output, args)
+    elif args.mode == 'evaluate': evaluate(args.output, args.reuse_decisions)
     else: globals()[args.mode](args.output)
 
 
