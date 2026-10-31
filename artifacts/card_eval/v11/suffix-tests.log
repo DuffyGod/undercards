@@ -1,0 +1,9 @@
+test_fractional_and_masked_objective_gradients (test_suffix_policy.SuffixPolicyChecks.test_fractional_and_masked_objective_gradients) ... ok
+test_future_order_intervention_preserves_both_observations_and_opponent (test_suffix_policy.SuffixPolicyChecks.test_future_order_intervention_preserves_both_observations_and_opponent) ... ok
+test_online_root_selection_never_replaces_a_root_using_later_history (test_suffix_policy.SuffixPolicyChecks.test_online_root_selection_never_replaces_a_root_using_later_history) ... ok
+test_policy_roundtrip_and_critic_cannot_change_logit_choice (test_suffix_policy.SuffixPolicyChecks.test_policy_roundtrip_and_critic_cannot_change_logit_choice) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.425s
+
+OK

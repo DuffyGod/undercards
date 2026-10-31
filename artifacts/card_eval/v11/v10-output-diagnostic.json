@@ -1,0 +1,28 @@
+{
+  "models": {
+    "centered": {
+      "output_l1": 2.5375545559284873,
+      "universal_sigmoid_gap_upper": 0.8534659131737394,
+      "margin": 0.2,
+      "norms": {
+        "W": 0.8736916564823494,
+        "b": 0.14124995379355432,
+        "w": 0.6952312126206375,
+        "c": 0.030258369585204385
+      }
+    },
+    "pointwise": {
+      "output_l1": 17.763352010397934,
+      "universal_sigmoid_gap_upper": 0.999999961407383,
+      "margin": 0.1,
+      "norms": {
+        "W": 5.123187850805177,
+        "b": 0.03715397129608488,
+        "w": 3.1940133709229706,
+        "c": 0.003935484705939261
+      }
+    }
+  },
+  "conclusion": "The universal tanh/sigmoid bound does not prove the V10 head globally inactive; observed zero changes must not be extrapolated to every input.",
+  "no_final_used": true
+}
