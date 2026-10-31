@@ -1,0 +1,4297 @@
+{
+  "source_commit": "4ccf226508e982330609c4a044de3ebb93766392",
+  "selected": "warmup.npz",
+  "candidates": [
+    {
+      "checkpoint": "warmup.npz",
+      "development_score": 0.08333333333333333,
+      "records": [
+        {
+          "profile": "pressure",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110005,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110015,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "dagger-00.npz",
+      "development_score": 0.08333333333333333,
+      "records": [
+        {
+          "profile": "pressure",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110005,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110015,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "dagger-01.npz",
+      "development_score": 0.08333333333333333,
+      "records": [
+        {
+          "profile": "pressure",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110005,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110015,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "dagger-02.npz",
+      "development_score": 0.08333333333333333,
+      "records": [
+        {
+          "profile": "pressure",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110005,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110015,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "dagger-03.npz",
+      "development_score": 0.0625,
+      "records": [
+        {
+          "profile": "pressure",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110005,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110015,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "ppo-016.npz",
+      "development_score": 0.08333333333333333,
+      "records": [
+        {
+          "profile": "pressure",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110005,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110015,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "ppo-032.npz",
+      "development_score": 0.08333333333333333,
+      "records": [
+        {
+          "profile": "pressure",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110005,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110015,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "ppo-048.npz",
+      "development_score": 0.08333333333333333,
+      "records": [
+        {
+          "profile": "pressure",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110005,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110015,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "ppo-064.npz",
+      "development_score": 0.08333333333333333,
+      "records": [
+        {
+          "profile": "pressure",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110005,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110015,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "ppo-080.npz",
+      "development_score": 0.08333333333333333,
+      "records": [
+        {
+          "profile": "pressure",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110005,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110015,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "ppo-096.npz",
+      "development_score": 0.08333333333333333,
+      "records": [
+        {
+          "profile": "pressure",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1110015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110005,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1110015,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        }
+      ]
+    }
+  ],
+  "selection": "Development only, ties retain earlier checkpoint. Test outcome has not been read."
+}

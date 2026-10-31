@@ -45,7 +45,8 @@ def train(folder):
     if (folder / 'training.json').exists(): raise ValueError('Training cannot overwrite previous evidence')
     if subprocess.check_output(['git', 'status', '--porcelain', '--', 'card_eval', str(folder)], cwd=ROOT, text=True).strip():
         raise ValueError('Commit source and design first')
-    rng = random.Random(d['seed']); nrng = np.random.default_rng(d['seed']); net = Network(d['seed'])
+    rng = random.Random(d['seed']); nrng = np.random.default_rng(d['seed'])
+    net = Network.load(folder / 'offline.npz')[0] if (folder / 'offline.npz').exists() else Network(d['seed'])
     status = dict(status='running', source_commit=commit(), games=0, terminal=0, rejected=0, decisions=0,
                   phases=[], checkpoints=[])
     dump(folder / 'training.json', status); replay = []; seen = 0; started = time.monotonic()

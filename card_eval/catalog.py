@@ -2,6 +2,7 @@
 from dataclasses import asdict
 from collections import Counter
 from functools import lru_cache
+from pathlib import Path
 import json, hashlib
 from .legacy import ROOT, rules
 
@@ -10,7 +11,9 @@ Spec, Effect, UnsupportedRule = rules.Spec, rules.Effect, rules.UnsupportedRule
 
 @lru_cache(maxsize=1)
 def snapshot():
-    data = json.loads((ROOT / 'skills/undercards/references/snapshot.json').read_text())
+    bundled = Path(__file__).resolve().parent / 'data/snapshot.json'
+    source = bundled if bundled.exists() else ROOT / 'skills/undercards/references/snapshot.json'
+    data = json.loads(source.read_text())
     return {c['id']: c for c in data['cards']}
 
 

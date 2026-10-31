@@ -4,9 +4,11 @@ import importlib.util, sys
 
 ROOT = Path(__file__).resolve().parents[1]
 OLD = ROOT / 'analysis/strategic-model'
+BUNDLED = Path(__file__).resolve().parent / '_engine'
 
 
 def load(label, path, aliases=None):
+    if (BUNDLED / path.name).exists(): path = BUNDLED / path.name
     name = '_undercards_card_eval_' + label
     if name in sys.modules: return sys.modules[name]
     aliases = aliases or {}
