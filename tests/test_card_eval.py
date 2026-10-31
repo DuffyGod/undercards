@@ -1,12 +1,14 @@
 from dataclasses import asdict, replace
 from pathlib import Path
-import json, unittest
+import json, unittest, tempfile, hashlib
 import numpy as np
 from card_eval.catalog import resolve, deck, Spec, Effect, InputError
 from card_eval.game import NativeGame
 from card_eval.network import Network, encode
 from card_eval.policies import ReferencePolicy, LearnedPolicy
 from card_eval.profiles import base_deck, opponents
+from card_eval.api import evaluate, validate, default_request
+from card_eval.legacy import features, rules, BUNDLED
 
 
 class ProductChecks(unittest.TestCase):
@@ -56,6 +58,47 @@ class ProductChecks(unittest.TestCase):
     def test_native_policy_model_chooses_legal_action(self):
         g = self.game(); obs = g.observation(0); actions = g.legal_actions(0)
         self.assertIn(LearnedPolicy(Network(4)).choose(obs, actions)['action'], actions)
+
+    def test_default_benchmarks_respect_copy_limits_for_each_copy_option(self):
+        for copies in (1, 2, 3):
+            plan = validate(default_request(['Bench', 'Fishing Rod'], copies=copies, samples=2))
+            self.assertEqual(len(plan['own']), 25); self.assertFalse(plan['blocked'])
+
+    def test_unknown_candidate_has_no_numeric_score_and_needs_no_model(self):
+        req = default_request(['Glyde'], samples=2)
+        r = evaluate(req)
+        self.assertEqual(r['status'], 'unsupported_input'); self.assertIsNone(r['scores'])
+        self.assertIsNone(r['unsupported'][0]['score'])
+
+    def test_complete_denom_and_identical_semantic_negative_control(self):
+        request = dict(deck=list(base_deck()), slots=[0], soul='INTEGRITY',
+            opponents=[dict(name='pressure', deck=list(opponents()['pressure']))], samples=2,
+            policies=['race'], candidates=[dict(name='same semantics', cost=2, attack=3, health=3)])
+        r = evaluate(request)
+        row = r['comparisons'][0]; cell = row['conditions'][0]
+        self.assertEqual(r['games'], 8); self.assertEqual(cell['difference']['mean'], 0)
+        self.assertEqual(row['recommendation'], 'equivalent_in_supported_rules')
+        self.assertEqual(sum(cell['opportunities'].get(k, 0) for k in ('not_received', 'received_unplayed', 'played', 'unknown')), 4)
+
+    def test_bundled_verified_sources_are_byte_identical(self):
+        manifest = json.loads((BUNDLED / 'manifest.json').read_text())
+        for name, info in manifest['files'].items():
+            self.assertEqual(hashlib.sha256((BUNDLED / name).read_bytes()).hexdigest(), info['sha256'])
+
+    def test_action_type_channels_and_new_gradient_are_consistent(self):
+        g = self.game(); g.players[0].cash = 20
+        obs = g.observation(0); actions = g.legal_actions(0); s, af = encode(obs, actions)
+        for action, row in zip(actions, af):
+            block = row[features.ACTION_DIM:features.ACTION_DIM + features.CARD_DIM]
+            if action[0] != 'play': self.assertFalse(block.any())
+        net = Network(9, hidden=4); p, _, _ = net.forward(s, af)
+        sample = dict(features=(s, af), chosen=1, old_value=0., behavior_probability=float(p[1]), **{'return': 1.})
+        _, grad = net.loss_grad([sample], imitation=True)
+        index = (4 + features.ACTION_DIM, 1); original = net.p['Wa'][index]; eps = 1e-5
+        net.p['Wa'][index] = original + eps; plus = net.loss_grad([sample], imitation=True)[0]['loss']
+        net.p['Wa'][index] = original - eps; minus = net.loss_grad([sample], imitation=True)[0]['loss']
+        net.p['Wa'][index] = original
+        self.assertAlmostEqual(grad['Wa'][index], (plus - minus) / (2 * eps), places=7)
 
 
 if __name__ == '__main__': unittest.main()

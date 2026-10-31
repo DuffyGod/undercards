@@ -1,0 +1,73 @@
+{
+  "source_commit": "38abab20f19779960841ba7e780a126ef9b92ea7",
+  "input_files": [
+    "artifacts/card_eval/v2/decisions-warmup-0000.jsonl.gz",
+    "artifacts/card_eval/v2/decisions-warmup-0064.jsonl.gz",
+    "artifacts/card_eval/v2/decisions-warmup-0128.jsonl.gz",
+    "artifacts/card_eval/v2/decisions-warmup-0192.jsonl.gz",
+    "artifacts/card_eval/v2/decisions-warmup-0256.jsonl.gz",
+    "artifacts/card_eval/v2/decisions-warmup-0320.jsonl.gz",
+    "artifacts/card_eval/v2/decisions-warmup-0384.jsonl.gz",
+    "artifacts/card_eval/v2/decisions-warmup-0448.jsonl.gz",
+    "artifacts/card_eval/v2/decisions-dagger-00.jsonl.gz",
+    "artifacts/card_eval/v2/decisions-dagger-01.jsonl.gz",
+    "artifacts/card_eval/v2/decisions-dagger-02.jsonl.gz",
+    "artifacts/card_eval/v2/decisions-dagger-03.jsonl.gz"
+  ],
+  "decision_rows_seen": 43627,
+  "retained_samples": 12288,
+  "teacher": "semantic_race",
+  "replayed_games": 0,
+  "epochs": [
+    {
+      "epoch": 0,
+      "loss": 1.2708369664760766,
+      "seconds": 24.883901125000193
+    },
+    {
+      "epoch": 1,
+      "loss": 0.8454027889946909,
+      "seconds": 27.874053202999676
+    },
+    {
+      "epoch": 2,
+      "loss": 0.747682759404606,
+      "seconds": 31.057511230999808
+    },
+    {
+      "epoch": 3,
+      "loss": 0.6990156160997691,
+      "seconds": 35.968895006999446
+    },
+    {
+      "epoch": 4,
+      "loss": 0.6684235844090273,
+      "seconds": 40.11840685799962
+    },
+    {
+      "epoch": 5,
+      "loss": 0.6437897555499064,
+      "seconds": 43.52770160199998
+    },
+    {
+      "epoch": 6,
+      "loss": 0.6223593344974185,
+      "seconds": 46.78121631100021
+    },
+    {
+      "epoch": 7,
+      "loss": 0.6049099451474684,
+      "seconds": 49.75497035399985
+    },
+    {
+      "epoch": 8,
+      "loss": 0.5874230536909839,
+      "seconds": 52.701373300999876
+    },
+    {
+      "epoch": 9,
+      "loss": 0.5715568139676465,
+      "seconds": 55.65075228899968
+    }
+  ]
+}

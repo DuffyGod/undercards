@@ -29,6 +29,7 @@ class InputError(ValueError):
 
 def resolve(value):
     if isinstance(value, Spec): return value
+    if isinstance(value, str) and value.isdecimal(): value = int(value)
     if isinstance(value, (str, int)) and not isinstance(value, bool):
         cards = snapshot()
         card = cards.get(value) if type(value) is int else next((c for c in cards.values() if c['name'].casefold() == value.casefold()), None)

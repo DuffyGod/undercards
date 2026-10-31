@@ -168,8 +168,8 @@ def evaluate(request, output=None, checkpoint=None, progress=None):
             negative = [r for r in cells if r['difference']['high'] < 0]
             complete = all(not r['difference']['unresolved_seed_clusters'] for r in cells)
             if semantic_key(candidate['spec']) == semantic_key(plan['reference']): recommendation = 'equivalent_in_supported_rules'
-            elif cells and complete and all(r['familywise_difference']['low'] > 0 for r in cells): recommendation = 'conditional_improvement'
-            elif cells and complete and all(r['familywise_difference']['high'] < 0 for r in cells): recommendation = 'conditional_regression'
+            elif cells and complete and plan['samples'] >= 32 and all(r['familywise_difference']['low'] > 0 for r in cells): recommendation = 'conditional_improvement'
+            elif cells and complete and plan['samples'] >= 32 and all(r['familywise_difference']['high'] < 0 for r in cells): recommendation = 'conditional_regression'
             elif positive and negative: recommendation = 'policy_or_opponent_sensitive'
             else: recommendation = 'insufficient_evidence'
             comparisons.append(dict(card=candidate['spec'].name, semantics=asdict(candidate['spec']), recommendation=recommendation,

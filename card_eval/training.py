@@ -95,7 +95,8 @@ def train(folder):
         for start in range(0, d['warmup_games'], 64):
             with gzip.open(folder / f'decisions-warmup-{start:04}.jsonl.gz', 'wt', encoding='utf-8') as sink:
                 for _ in range(min(64, d['warmup_games'] - start)):
-                    rec, _ = rollout((ReferencePolicy('race'), ReferencePolicy(rng.choice(('race', 'board', 'guard')))), sink, 'warmup')
+                    rec, _ = rollout((ReferencePolicy('race'), ReferencePolicy(rng.choice(('race', 'board', 'guard')))),
+                                     sink, 'warmup', teacher=ReferencePolicy('race'))
                     add(rec.training_samples(imitation=True))
             print(json.dumps(dict(stage='warmup', games=status['games'], replay=len(replay), seconds=round(time.monotonic() - started, 1))), flush=True)
         fit(replay, 5, True, 7e-4); checkpoint('warmup')
