@@ -4,7 +4,7 @@ from pathlib import Path
 import argparse, gzip, hashlib, json, random, subprocess, time
 import numpy as np
 from mechanisms import Spec, Effect, compile_text, UnsupportedRule
-from environment import LearningGame, Config, bridge, VERSION as ENGINE_VERSION
+from environment import LearningGame, Config, bridge, DecisionBudgetExceeded, VERSION as ENGINE_VERSION
 from agents import LearnedAgent, FixedAgent
 from learner import Network
 from records import Recorder, load_episodes
@@ -195,7 +195,17 @@ def interval(values, seed=19):
                 high=float(np.quantile(boot, .975)), n=len(values))
 
 
-def evaluate(dest, reuse_decisions=None):
+def bounded_interval(lower, upper):
+    """Keep unresolved outcomes in the denominator under both completions."""
+    lower, upper = np.asarray(lower), np.asarray(upper)
+    lo, hi = interval(lower), interval(upper)
+    return dict(mean=float(lower.mean()) if np.array_equal(lower, upper) else None,
+                low=lo['low'], high=hi['high'], n=len(lower),
+                completion_mean_range=[float(lower.mean()), float(upper.mean())],
+                unresolved_seed_clusters=int(np.sum(lower != upper)))
+
+
+def evaluate(dest, reuse_decisions=None, reuse_evaluation=None):
     source = source_commit(); design = json.loads((dest / 'design.json').read_text())
     training = json.loads((dest / 'training.json').read_text())
     if training['status'] != 'complete': raise ValueError('Incomplete training')
@@ -203,7 +213,21 @@ def evaluate(dest, reuse_decisions=None):
     net, meta = Network.load(dest / 'policy.npz')
     if training['training_seed_end'] >= min(design['evaluation_seeds'] + design['replacement_seeds']):
         raise ValueError('Training/evaluation seed overlap')
-    cache = {}
+    cache = {}; cached_records = {}
+    if reuse_evaluation is not None:
+        prior = json.loads((reuse_evaluation / 'evaluation.json').read_text())
+        if prior['frozen_policy'] != net.fingerprint: raise ValueError('Recovery policy mismatch')
+        with gzip.open(reuse_evaluation / 'evaluation-records.jsonl.gz', 'rt') as f:
+            for r in map(json.loads, f): cached_records[(r['group'], r['seed'], r['seat'], r['policy'])] = r
+        if 'common wall-time budget' in prior.get('error', ''):
+            keys = [(c['group'], s, seat, name) for c in design['cases'] for s in design['evaluation_seeds']
+                    for seat in (0, 1) for name in ['shared_policy_value'] + [p.name for p in bridge.ROWS]]
+            failed = next(k for k in keys if k not in cached_records)
+            cached_records[failed] = dict(zip(('group', 'seed', 'seat', 'policy'), failed)) | dict(
+                won=None, lost=None, unfinished=True, error=prior['error'], error_kind='recovered_decision_budget',
+                failure_attribution='Original exception did not record actor/action latency; do not infer it.',
+                preserved_failure_source=str(reuse_evaluation / 'evaluation.json'))
+        reuse_decisions = reuse_evaluation / 'evaluation-decisions.jsonl.gz'
     if reuse_decisions is not None:
         for rec in load_episodes(reuse_decisions):
             if not rec.result['terminated']: continue
@@ -214,14 +238,15 @@ def evaluate(dest, reuse_decisions=None):
                 raise ValueError('Cached episode seed mismatch')
             cache[key] = rec
     status = dict(status='running', source_commit=source, frozen_policy=net.fingerprint, records=0,
-                  reused_completed_episodes=len(cache), reused_decision_file=str(reuse_decisions) if reuse_decisions else None)
+                  reused_completed_episodes=len(cache), reused_rows=len(cached_records),
+                  reused_decision_file=str(reuse_decisions) if reuse_decisions else None)
     dump(dest / 'evaluation.json', status); started = time.monotonic()
-    output = []; latencies = []; failures = []
+    output = []; latencies = []; failures = []; missing_latency_rows = 0
     try:
         with gzip.open(dest / 'evaluation-records.jsonl.gz', 'wt', encoding='utf-8') as sink, \
              gzip.open(dest / 'evaluation-decisions.jsonl.gz', 'wt', encoding='utf-8') as decisions:
             for case in design['cases']:
-                samples = [[] for _ in range(7)]
+                lower = [[] for _ in range(7)]; upper = [[] for _ in range(7)]
                 for seed in design['evaluation_seeds']:
                     seat_scores = [[] for _ in range(7)]
                     for seat in (0, 1):
@@ -229,8 +254,19 @@ def evaluate(dest, reuse_decisions=None):
                             agent = LearnedAgent(net, search_nodes=design['search_nodes']) if row == 0 else FixedAgent(bridge.ROWS[row - 1])
                             spec = from_dict(case['spec'])
                             cfg = Config(rounds=40, seat=seat, soul='INTEGRITY', response_kind='sweep')
+                            key = case['group'], seed, seat, agent.name
                             cached = cache.get((case['group'], seed, seat)) if row == 0 else None
-                            if cached is not None:
+                            if key in cached_records:
+                                result = dict(cached_records[key])
+                                result['decision_seconds'] = result.pop('decision_usage', [[], []])
+                                if row == 0 and cached is not None:
+                                    result['decision_seconds'] = [[r['seconds'] for r in cached.rows if r['observation']['player'] == a] for a in (0, 1)]
+                                    for recrow in cached.rows + [cached.result]: decisions.write(json.dumps(recrow, separators=(',', ':')) + '\n')
+                                elif row == 0:
+                                    rec = Recorder(f"eval-{case['group']}-{seed}-{seat}", decisions, dict(group=case['group'], seed=seed, seat=seat))
+                                    rec.finish(result)
+                                if not result['decision_seconds'][0] and not result['unfinished']: missing_latency_rows += 1
+                            elif cached is not None:
                                 result = dict(cached.result['result'])
                                 if result['config'] != asdict(cfg) or result['structure'] != case['structure']:
                                     raise ValueError('Cached episode condition mismatch')
@@ -242,28 +278,37 @@ def evaluate(dest, reuse_decisions=None):
                             else:
                                 recorder = Recorder(f"eval-{case['group']}-{seed}-{seat}", decisions,
                                     dict(group=case['group'], seed=seed, seat=seat)) if row == 0 else None
-                                result = run_game(spec, seed, cfg, case['structure'],
-                                    (agent, FixedAgent(OPPONENTS[case['opponent']])), recorder=recorder,
-                                    silence_mode=design['silence_mode'], decision_seconds=design['decision_seconds'])
+                                try:
+                                    result = run_game(spec, seed, cfg, case['structure'],
+                                        (agent, FixedAgent(OPPONENTS[case['opponent']])), recorder=recorder,
+                                        silence_mode=design['silence_mode'], decision_seconds=design['decision_seconds'])
+                                except (DecisionBudgetExceeded, UnsupportedRule) as exc:
+                                    result = dict(seed=seed, won=None, lost=None, unfinished=True, error=repr(exc),
+                                        error_kind=type(exc).__name__, decision_seconds=[[], []],
+                                        failure_actor=getattr(exc, 'actor', None), failure_seconds=getattr(exc, 'seconds', None))
+                                    if recorder is not None: recorder.finish(result)
                             record = {**{k: v for k, v in result.items() if k not in ('trace', 'snapshots', 'decision_seconds')},
                                       'group': case['group'], 'seed': seed, 'seat': seat, 'policy': agent.name}
+                            record['decision_usage'] = result['decision_seconds']
                             sink.write(json.dumps(record, separators=(',', ':')) + '\n'); status['records'] += 1
                             latencies.extend((agent.name, x) for x in result['decision_seconds'][0])
                             if result['unfinished']:
-                                failures.append(dict(group=case['group'], seed=seed, seat=seat, policy=agent.name))
+                                failures.append(dict(group=case['group'], seed=seed, seat=seat, policy=agent.name,
+                                    reason=result.get('error', 'HP terminal not reached'), error_kind=result.get('error_kind')))
                                 seat_scores[row].append(None)
                             else: seat_scores[row].append(float(result['won']))
                     for row in range(7):
-                        samples[row].append(None if None in seat_scores[row] else float(np.mean(seat_scores[row])))
-                if any(x is None for xs in samples for x in xs):
-                    output.append(dict(group=case['group'], incomplete=True)); continue
-                learned = np.asarray(samples[0])
+                        lower[row].append(float(np.mean([0 if x is None else x for x in seat_scores[row]])))
+                        upper[row].append(float(np.mean([1 if x is None else x for x in seat_scores[row]])))
+                learned_low, learned_high = np.asarray(lower[0]), np.asarray(upper[0])
                 rows = []
                 for i, policy in enumerate(bridge.ROWS):
-                    rows.append(dict(policy=policy.name, win=interval(samples[i + 1]),
-                                     learned_gain=interval(learned - samples[i + 1])))
-                output.append(dict(group=case['group'], case=case, learned_win=interval(learned), baselines=rows))
-                print(json.dumps(dict(group=case['group'], learned_win=float(learned.mean()),
+                    rows.append(dict(policy=policy.name, win=bounded_interval(lower[i + 1], upper[i + 1]),
+                        learned_gain=bounded_interval(learned_low - np.asarray(upper[i + 1]), learned_high - np.asarray(lower[i + 1]))))
+                incomplete = any(np.any(np.asarray(lo) != np.asarray(hi)) for lo, hi in zip(lower, upper))
+                output.append(dict(group=case['group'], case=case, incomplete=bool(incomplete),
+                    learned_win=bounded_interval(learned_low, learned_high), baselines=rows))
+                print(json.dumps(dict(group=case['group'], learned_win=output[-1]['learned_win'],
                                       records=status['records'], seconds=round(time.monotonic() - started, 1))), flush=True)
         summaries = {}
         for name in sorted({p for p, _ in latencies}):
@@ -275,6 +320,7 @@ def evaluate(dest, reuse_decisions=None):
             all(not g.get('incomplete') and all(r['learned_gain']['low'] > 0 for r in g['baselines']) for g in output))
         status.update(status='complete', elapsed_seconds=time.monotonic() - started, groups=output,
             unfinished=failures, compute=dict(common_seconds_per_decision=design['decision_seconds'], measured=summaries,
+            recovered_successful_rows_without_detailed_timings=missing_latency_rows,
             accounting='Feature extraction, inference and search included. Slow decisions are rejected by the environment.'),
             generalization_gate_passed=passed, gate_requires='At least32 independent seed clusters per group, no unresolved games, positive paired95%lower gain against EACH of six frozen policies in EACH of five groups.',
             real_game_certified=False, frozen_policy_unchanged=net.fingerprint == status['frozen_policy'],
@@ -376,9 +422,10 @@ def main():
     parser.add_argument('--rollouts', type=int, default=8)
     parser.add_argument('--eval-seeds', type=int, default=64)
     parser.add_argument('--reuse-decisions', type=Path)
+    parser.add_argument('--reuse-evaluation', type=Path)
     args = parser.parse_args()
     if args.mode == 'prepare': prepare(args.output, args)
-    elif args.mode == 'evaluate': evaluate(args.output, args.reuse_decisions)
+    elif args.mode == 'evaluate': evaluate(args.output, args.reuse_decisions, args.reuse_evaluation)
     else: globals()[args.mode](args.output)
 
 

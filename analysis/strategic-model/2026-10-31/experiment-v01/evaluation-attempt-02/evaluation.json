@@ -1,0 +1,9 @@
+{
+  "status": "failed",
+  "source_commit": "e566a437372ca6ee26e082f17e7d396a4fe716c9",
+  "frozen_policy": "4ea85080db1a286a119d801133a06752528b27d5a16b8ac0898135bf7f0c5e70",
+  "records": 2093,
+  "reused_completed_episodes": 1,
+  "reused_decision_file": "analysis/strategic-model/2026-10-31/experiment-v01/evaluation-attempt-01/evaluation-decisions.jsonl.gz",
+  "error": "RuntimeError('Decision exceeded the common wall-time budget')"
+}

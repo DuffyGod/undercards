@@ -18,6 +18,12 @@ Action = tuple  # ('end'|'play'|'attack', source UID, target actor, target UID|-
 VERSION = 'shared-action-mechanisms-0.1'
 
 
+class DecisionBudgetExceeded(RuntimeError):
+    def __init__(self, actor, seconds, policy):
+        self.actor = actor; self.seconds = seconds; self.policy = policy
+        super().__init__(f'Decision exceeded the common wall-time budget: actor={actor}, policy={policy}, seconds={seconds:.6f}')
+
+
 @dataclass(frozen=True)
 class Unit(bridge.Unit):
     spec: Spec | None = None
@@ -230,7 +236,7 @@ class LearningGame(bridge.BridgeGame):
             selection = self.agents[actor].choose(obs, actions)
             selection['seconds'] = time.perf_counter() - started
             if selection['seconds'] > self.decision_seconds:
-                raise RuntimeError('Decision exceeded the common wall-time budget')
+                raise DecisionBudgetExceeded(actor, selection['seconds'], self.agents[actor].name)
             action = tuple(selection['action'])
             if action not in actions: raise ValueError('Agent selected an illegal action')
             self.usage[actor].append(selection.get('seconds', 0.0))

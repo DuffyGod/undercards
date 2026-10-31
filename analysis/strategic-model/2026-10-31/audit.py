@@ -44,13 +44,15 @@ def audit(dest):
             key = row['group'], row['seed'], row['seat'], row['policy']
             if key in grid: raise ValueError('Duplicate evaluation row')
             grid.add(key); unfinished += row['unfinished']
-            if row['won'] + row['lost'] != 1: raise ValueError('Nonterminal evaluation row')
+            if row['unfinished']:
+                if row['won'] is not None or row['lost'] is not None: raise ValueError('Rejected run was assigned a winner')
+            elif row['won'] + row['lost'] != 1: raise ValueError('Nonterminal evaluation row')
     if len(grid) != 5 * len(design['evaluation_seeds']) * 2 * 7:
         raise ValueError('Incomplete comparison grid')
     briers = defaultdict(list); phases = defaultdict(list); decisions = 0; episodes = 0
     for rec in load_episodes(dest / 'evaluation-decisions.jsonl.gz'):
         episodes += 1
-        if not rec.result['terminated']: raise ValueError('Evaluation trajectory is unresolved')
+        if not rec.result['terminated']: continue
         episode_scores = []
         for row in rec.rows:
             obs = row['observation']
