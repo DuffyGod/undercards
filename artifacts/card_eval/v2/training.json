@@ -1,0 +1,217 @@
+{
+  "status": "complete",
+  "source_commit": "e501fc16d7a1462ed7fc9c1730261fd654a38962",
+  "games": 2432,
+  "terminal": 2432,
+  "rejected": 0,
+  "decisions": 109594,
+  "phases": [
+    {
+      "stage": "ppo",
+      "update": 3,
+      "games": 960,
+      "samples": 546,
+      "loss": 0.11870633507195892,
+      "seconds": 71.7
+    },
+    {
+      "stage": "ppo",
+      "update": 7,
+      "games": 1024,
+      "samples": 515,
+      "loss": 0.1249092444215934,
+      "seconds": 76.4
+    },
+    {
+      "stage": "ppo",
+      "update": 11,
+      "games": 1088,
+      "samples": 573,
+      "loss": 0.13388173631169145,
+      "seconds": 80.9
+    },
+    {
+      "stage": "ppo",
+      "update": 15,
+      "games": 1152,
+      "samples": 602,
+      "loss": 0.17995001461580692,
+      "seconds": 85.5
+    },
+    {
+      "stage": "ppo",
+      "update": 19,
+      "games": 1216,
+      "samples": 456,
+      "loss": 0.1204981770610929,
+      "seconds": 89.6
+    },
+    {
+      "stage": "ppo",
+      "update": 23,
+      "games": 1280,
+      "samples": 548,
+      "loss": 0.14632501488390376,
+      "seconds": 93.8
+    },
+    {
+      "stage": "ppo",
+      "update": 27,
+      "games": 1344,
+      "samples": 452,
+      "loss": 0.12728976960506078,
+      "seconds": 98.2
+    },
+    {
+      "stage": "ppo",
+      "update": 31,
+      "games": 1408,
+      "samples": 486,
+      "loss": 0.1306177483169755,
+      "seconds": 103.6
+    },
+    {
+      "stage": "ppo",
+      "update": 35,
+      "games": 1472,
+      "samples": 487,
+      "loss": 0.11854685473688628,
+      "seconds": 108.1
+    },
+    {
+      "stage": "ppo",
+      "update": 39,
+      "games": 1536,
+      "samples": 414,
+      "loss": 0.1374709646942826,
+      "seconds": 112.2
+    },
+    {
+      "stage": "ppo",
+      "update": 43,
+      "games": 1600,
+      "samples": 482,
+      "loss": 0.11822166393737918,
+      "seconds": 116.2
+    },
+    {
+      "stage": "ppo",
+      "update": 47,
+      "games": 1664,
+      "samples": 452,
+      "loss": 0.15735435682727567,
+      "seconds": 120.7
+    },
+    {
+      "stage": "ppo",
+      "update": 51,
+      "games": 1728,
+      "samples": 499,
+      "loss": 0.10855321390342204,
+      "seconds": 124.8
+    },
+    {
+      "stage": "ppo",
+      "update": 55,
+      "games": 1792,
+      "samples": 449,
+      "loss": 0.1626585782878064,
+      "seconds": 129.0
+    },
+    {
+      "stage": "ppo",
+      "update": 59,
+      "games": 1856,
+      "samples": 468,
+      "loss": 0.08269996270186925,
+      "seconds": 133.1
+    },
+    {
+      "stage": "ppo",
+      "update": 63,
+      "games": 1920,
+      "samples": 460,
+      "loss": 0.16584853464576874,
+      "seconds": 137.2
+    },
+    {
+      "stage": "ppo",
+      "update": 67,
+      "games": 1984,
+      "samples": 484,
+      "loss": 0.17183810838408875,
+      "seconds": 141.4
+    },
+    {
+      "stage": "ppo",
+      "update": 71,
+      "games": 2048,
+      "samples": 471,
+      "loss": 0.08268409320192399,
+      "seconds": 145.5
+    },
+    {
+      "stage": "ppo",
+      "update": 75,
+      "games": 2112,
+      "samples": 456,
+      "loss": 0.112923706456971,
+      "seconds": 149.7
+    },
+    {
+      "stage": "ppo",
+      "update": 79,
+      "games": 2176,
+      "samples": 482,
+      "loss": 0.13507105224095106,
+      "seconds": 154.0
+    },
+    {
+      "stage": "ppo",
+      "update": 83,
+      "games": 2240,
+      "samples": 423,
+      "loss": 0.14184537373328254,
+      "seconds": 158.3
+    },
+    {
+      "stage": "ppo",
+      "update": 87,
+      "games": 2304,
+      "samples": 444,
+      "loss": 0.08615104217797091,
+      "seconds": 162.5
+    },
+    {
+      "stage": "ppo",
+      "update": 91,
+      "games": 2368,
+      "samples": 476,
+      "loss": 0.1218671413380766,
+      "seconds": 167.3
+    },
+    {
+      "stage": "ppo",
+      "update": 95,
+      "games": 2432,
+      "samples": 416,
+      "loss": 0.1301504450691947,
+      "seconds": 171.4
+    }
+  ],
+  "checkpoints": [
+    "warmup.npz",
+    "dagger-00.npz",
+    "dagger-01.npz",
+    "dagger-02.npz",
+    "dagger-03.npz",
+    "ppo-016.npz",
+    "ppo-032.npz",
+    "ppo-048.npz",
+    "ppo-064.npz",
+    "ppo-080.npz",
+    "ppo-096.npz"
+  ],
+  "seconds": 171.36772638399998,
+  "optimizer_steps": 3226
+}
