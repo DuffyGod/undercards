@@ -1,0 +1,17 @@
+{
+  "qualified": false,
+  "status": "incomplete_validation",
+  "frozen_policy": "774d2ac4b89469e7bcdf347d3d7769ba007b1fd9df4af81c996b3592e1e22591",
+  "base_checkpoint": "279b176854ac3731503520d63cae628addd08668f57d65df050f51ef605d3505",
+  "version": "public-own-turn-1",
+  "config": {
+    "nodes": 48,
+    "depth": 3,
+    "width": 4,
+    "seconds": 0.18,
+    "mode": "value",
+    "margin": 0.3
+  },
+  "source": "REPORT.md",
+  "applies_to_corrective_version": false
+}

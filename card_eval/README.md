@@ -1,6 +1,6 @@
 # 可直接使用的卡牌评估入口
 
-0.4.0 完整运行包包含模型、规则快照、验证状态和示例。正常比较仍采用声明参考策略；实验默认载入随包 `paired-v5`，可按名称选择 `memory-v6` 或 `afterstate-v7`，无需研究目录或手动下载检查点。随包模型是否合格由各自记录决定，安装成功不改变质量门槛。
+**0.4.0尚未发布：执行器断连，完整模型登记、wheel、ZIP和源码外安装尚未完成。** 下方0.4命令是待验收示例，afterstate-v7还不能按随包名称选择；已拟合检查点在artifacts/card_eval/v7/afterstate-value.npz。当前完整发行仍为0.3.0，随包paired-v5/memory-v6，模型均未通过通用验收。恢复与原版搜索风险见artifacts/card_eval/v7/REPORT.md；不要把开发源码当作已发布完整包。
 
 ```sh
 python -m pip install undercards_card_eval-0.4.0-py3-none-any.whl

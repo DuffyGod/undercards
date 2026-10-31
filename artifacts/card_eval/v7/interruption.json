@@ -1,0 +1,206 @@
+{
+  "schema": 1,
+  "status": "execution_access_unavailable",
+  "reported_at_utc": "2026-10-31 12:37:42 UTC",
+  "repository": "DuffyGod/undercards",
+  "branch": "research/local-method-lab-20261018",
+  "verified_remote_source": "dfde91745d297fb8bf72958285835ad71db727bc",
+  "environment_id": "ccarenv_b64_Y2NhcmVudl9hZGExNmFhNzg0NTA4MTkxYWFlNTAzNTEwYmZmMTBiNw",
+  "executor_error": "No usable execution environment is available. Wait for an environment to become available before using this tool.",
+  "management_status": {
+    "observed_phase": "running",
+    "connectivity": "connected",
+    "failure": null,
+    "does_not_establish_executor_readiness": true
+  },
+  "process_status": "unknown; execution-access loss does not establish that the final process or OS lock has stopped",
+  "last_known_lock_pid": 6255,
+  "last_known_final_pid": 6940,
+  "uploaded_completed": [
+    "frozen experiment source/design/method",
+    "root and afterstate critics",
+    "384 reused training opening labels via hashed V6 sources",
+    "complete development games and selection",
+    "executed terminal representation witness",
+    "initial failures"
+  ],
+  "planned_final_slots": 3584,
+  "confirmed_complete_contexts": 4,
+  "confirmed_complete_slots": 1792,
+  "console_evidence_only": true,
+  "raw_final_records_uploaded": false,
+  "other_slots": "Unknown current execution status; no zero/loss/unexecuted imputation",
+  "final_value_status": "Not started; seeds2030000..2030095 reserved, not observed",
+  "frozen_original_method": "public-own-turn-1",
+  "selected_margin": 0.3,
+  "confirmed_console_progress": [
+    {
+      "group": "pressure",
+      "wins": {
+        "primary": [
+          0.859375,
+          0.875
+        ],
+        "proof": [
+          0.84375,
+          0.84375
+        ],
+        "old_value": [
+          0.84375,
+          0.859375
+        ],
+        "v5": [
+          0.84375,
+          0.84375
+        ],
+        "race": [
+          0.328125,
+          0.328125
+        ],
+        "board": [
+          0.28125,
+          0.28125
+        ],
+        "guard": [
+          0.796875,
+          0.796875
+        ]
+      },
+      "elapsed": 190.57525156700285
+    },
+    {
+      "group": "defense",
+      "wins": {
+        "primary": [
+          0.34375,
+          0.375
+        ],
+        "proof": [
+          0.3125,
+          0.34375
+        ],
+        "old_value": [
+          0.28125,
+          0.3125
+        ],
+        "v5": [
+          0.3125,
+          0.3125
+        ],
+        "race": [
+          0.078125,
+          0.078125
+        ],
+        "board": [
+          0.0625,
+          0.0625
+        ],
+        "guard": [
+          0.265625,
+          0.265625
+        ]
+      },
+      "elapsed": 445.80637081700115
+    },
+    {
+      "group": "refill",
+      "wins": {
+        "primary": [
+          0.703125,
+          0.71875
+        ],
+        "proof": [
+          0.65625,
+          0.65625
+        ],
+        "old_value": [
+          0.65625,
+          0.671875
+        ],
+        "v5": [
+          0.65625,
+          0.65625
+        ],
+        "race": [
+          0.5625,
+          0.5625
+        ],
+        "board": [
+          0.53125,
+          0.53125
+        ],
+        "guard": [
+          0.609375,
+          0.609375
+        ]
+      },
+      "elapsed": 665.6922753880026
+    },
+    {
+      "group": "new_parameters",
+      "wins": {
+        "primary": [
+          0.953125,
+          0.96875
+        ],
+        "proof": [
+          0.96875,
+          0.96875
+        ],
+        "old_value": [
+          0.96875,
+          0.96875
+        ],
+        "v5": [
+          0.96875,
+          0.96875
+        ],
+        "race": [
+          0.421875,
+          0.421875
+        ],
+        "board": [
+          0.421875,
+          0.421875
+        ],
+        "guard": [
+          0.9375,
+          0.9375
+        ]
+      },
+      "elapsed": 783.3895524979998
+    }
+  ],
+  "pressure_observed_primary_gain_vs_v5": {
+    "completion_range": [
+      0.015625,
+      0.03125
+    ],
+    "low": -0.03125,
+    "high": 0.078125,
+    "family_alpha": 0.00625,
+    "family_low": -0.05278320312499998,
+    "family_high": 0.09375
+  },
+  "other_paired_intervals": null,
+  "missing_interval_reason": "Not retrieved before executor loss; aggregated means cannot reconstruct seed-cluster intervals",
+  "correction_status": "A proof-first corrective design was identified. Copying the original source to an untracked _planner_v1.py succeeded locally; subsequent patch operations failed during transport loss. No corrective implementation/test is confirmed and none was uploaded.",
+  "release_status": {
+    "last_complete_version": "0.3.0",
+    "v040_wheel_built": false,
+    "v040_bundle_built": false,
+    "model_registration_completed": false,
+    "installed_v040_validation_completed": false
+  },
+  "quality_status": "incomplete; no general-policy or final-value qualification",
+  "verification": {
+    "original_tests_passed": 36,
+    "original_tests_seconds": 4.145,
+    "scope": "Original experiment/product source checks before latest metadata edits; not a new release installation or proof-first correction test"
+  },
+  "retired_final_seeds": {
+    "start": 2050000,
+    "end": 2050031
+  },
+  "next": "Read CORRECTION_AND_RECOVERY.md; do not rerun/overwrite the consumed final range or assume the unavailable process has ended."
+}

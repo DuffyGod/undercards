@@ -1,39 +1,11 @@
-# Undercards 卡牌评估程序 0.4.0
+# V7开发检查点：执行器断连，0.4.0未发布
 
-包含可运行程序、四个命名训练模型、完整牌表示例、源码、必要输入和本轮证据。**通用可靠评估目标尚未完成；完整实卡规则仍为20张及受支持语义组合。** 未知卡面拒绝评分，不当作白板。策略结果与失败见source/artifacts/card_eval/v7/REPORT.md。
+当前可用完整包仍是[0.3.0](../dist/undercards-card-evaluator-0.3.0.zip)，使用指引见[上一版START_HERE](../v6/START_HERE.md)。它包含可安装程序、paired-v5/memory-v6、示例、源码和必要输入；所有模型仍未通过通用策略验收。
 
-## 安装和评估
+本目录已上传原版公开搜索源码、训练/开发协议、两个已拟合critic、完整开发轨迹、失败和实际执行的表示反例。**0.4.0 wheel/ZIP、afterstate-v7随包登记、最终逐局证据恢复及独立价值最终均未完成。** 本轮没有可供安装的0.4.0完整包，不把拟议命令或版本号当成交付完成。
 
-需要Python3.11+，推理仅依赖NumPy；在解压后的顶层目录：
+原版搜索也发现“估值可能覆盖基线已证明斩杀”的风险；证明优先修复未完成和未验证，不能据旧数据宣称修正版通过。保留原版作实验复核，未提升默认质量状态。
 
-```sh
-python -m pip install undercards_card_eval-0.4.0-py3-none-any.whl
-card-eval models
-card-eval assess Bench "Fishing Rod" --model paired-v5 --experimental-model --samples 8 --output results/base
-card-eval assess Bench --model afterstate-v7 --planner value --planner-margin .1 --experimental-model --samples 8 --output results/planner
-card-eval example --learned --output my-decks.json
-card-eval evaluate --input my-decks.json --model memory-v6 --experimental-model --output results/my-decks
-card-eval catalog --output coverage.json
-card-eval inspect Glyde
-```
+先读[中断报告](REPORT.md)、[实际可见摘要](interruption.json)和[恢复/修复说明](CORRECTION_AND_RECOVERY.md)。执行器断连不证明后台进程已停止；恢复后先查AGENTS的flock，保留原件并核对已有槽位，避免并发或整批重跑。2050000段已读最终退休；2030000段独立价值最终尚未执行。
 
-模型均保留未达标状态，只作实验。V7改变价值头，不单独改变V5行动器；必须显式加planner才使用动作后价值选择。示例门槛.1是输入示范，冻结主臂门槛见development.json；任意配置不能叫作该主臂。`proof`只用确杀证明，`value`另用基线续局价值。未知抽牌/非终局回合边界停止展开，不读取实际私手或牌序；没有充分信念或对手行动搜索。搜索需要更长实际用时，仍受共同决策上限约束。
-
-普通参考比较可使用examples/reference-request.json且去掉实验选项。编辑25张牌表、替换位置、候选、SOUL和对手；未知输入返回结构化原因与空评分。Glyde拒绝的非零退出码不是零分。
-
-examples/planner-request.json 使用本轮开发选定门槛，可直接传给evaluate，仍须显式选择afterstate-v7与实验模式。命令行示范的.1并非本轮最终主臂配置。
-
-输出包括report.md、result.json、input.json、receipt.json和逐局games.jsonl.gz。保留未上手、等待、满格、受罚和未决完成界，不合成为全池Gold或现实环境胜率。
-
-## 源码和复核
-
-source/含程序、冻结模型、规则原语、V5/V6复用输入、V7新训练/开发/最终证据，另含V6所需V4模型。源码提交见SOURCE_REVISION.json，文件校验值见顶层MANIFEST.json。完整历史在GitHub研究分支。
-
-在source/执行只读核对，不重放旧局或重训：
-
-```sh
-python -m pip install '.[research]'
-python -m card_eval.planner_audit --folder artifacts/card_eval/v7
-```
-
-原始标签、缺失原因、优化状态、每个最终槽位、运行失败和接续判断均保存。内部核对不是服务器认证。换牌、神器、种族、死亡/生成链、完整事件顺序与沉默裁定仍有限制。
+规则仍仅完整支持20张实卡及声明机制组合，未知效果明确拒绝评分；缺失神器、换牌、种族和死亡/生成链。通用评估目标尚未完成。
