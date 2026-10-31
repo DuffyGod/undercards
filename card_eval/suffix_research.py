@@ -209,10 +209,14 @@ def fit(folder):
 
 
 class BehaviorRecorder:
-    def __init__(self,sink,metadata,baseline):self.sink=sink;self.metadata=metadata;self.baseline=baseline;self.decisions=0;self.changed=0
+    def __init__(self,sink,metadata,baseline):self.sink=sink;self.metadata=metadata;self.baseline=baseline;self.decisions=0;self.changed=0;self.raw_changed=0
     def record(self,obs,actions,selection):
         alt=self.baseline.choose(obs,actions) if obs['player']==0 else None
-        if alt is not None:self.decisions+=1;self.changed+=tuple(selection['action'])!=tuple(alt['action'])
+        if alt is not None:
+            self.decisions+=1;different=tuple(selection['action'])!=tuple(alt['action']);self.raw_changed+=different
+            if different:
+                x=encode(obs,actions)[1][0]
+                self.changed+=not np.array_equal(x[selection['action_index']],x[alt['action_index']])
         self.sink.write(json.dumps(dict(record_type='decision',metadata=self.metadata,observation=obs,legal_actions=actions,selection=selection,baseline=alt),separators=(',',':'))+'\n')
     def finish(self,result):self.sink.write(json.dumps(dict(record_type='outcome',metadata=self.metadata,result=small_result(result)))+'\n')
 
@@ -230,7 +234,7 @@ def development(folder):
                         r=run((a,b),seed,(LearnedPolicy(net),opponent(style)),seat,souls,rec)
                         sink.write(json.dumps(dict(meta,result=small_result(r)))+'\n');results.append(dict(meta,unknown=r['unfinished'],won=r['won']))
                         scores[name].append((0 if r['unfinished'] else int(r['won']),1 if r['unfinished'] else int(r['won'])))
-                        behaviors[name].update(decisions=rec.decisions,changed=rec.changed,unknown=r['unfinished'])
+                        behaviors[name].update(decisions=rec.decisions,changed=rec.changed,raw_changed=rec.raw_changed,unknown=r['unfinished'])
             print(json.dumps(dict(group=group,completed_slots=len(results))),flush=True)
     # Cluster all contexts and both seats by seed; raw completion bounds kept.
     metrics={};perseed={}
