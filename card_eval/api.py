@@ -110,8 +110,13 @@ def evaluate(request, output=None, checkpoint=None, progress=None):
     needs_model = 'learned' in plan['policies'] or any(o['policy'] == 'learned' for o in plan['opponents'])
     net, metadata = (Network.load(checkpoint or DEFAULT_MODEL) if needs_model else (None, {}))
     model_fp = net.fingerprint if net else None
+    certificate = Path(checkpoint or DEFAULT_MODEL).parent / 'validation.json'
+    validation = metadata.get('validation', dict(status='not_qualified'))
+    if net and certificate.exists():
+        cert = json.loads(certificate.read_text(encoding='utf-8'))
+        if cert.get('frozen_policy') == model_fp: validation = cert
     receipt = dict(status='running', program_version=__version__, frozen_policy=model_fp,
-        policy_validation=metadata.get('validation', dict(status='not_qualified')),
+        policy_validation=validation,
         completed_games=0, rejected_games=0, requested_samples=plan['samples'], seed_start=plan['seed_start'],
         information='Opponent hand/order/private deck composition are not policy observations',
         rules=dict(silence=plan['silence_mode'], current_server_certified=False))
@@ -176,10 +181,13 @@ def evaluate(request, output=None, checkpoint=None, progress=None):
                 positive_conditions=[dict(opponent=r['opponent'], policy=r['policy']) for r in positive],
                 negative_conditions=[dict(opponent=r['opponent'], policy=r['policy']) for r in negative], conditions=cells))
         if net and net.fingerprint != model_fp: raise ValueError('Model changed across candidate comparisons')
+        synthetic = sorted({s.name for s in plan['own'] if s.card_id is None} |
+                           {s.name for o in plan['opponents'] for s in o['cards'] if s.card_id is None} |
+                           {c['spec'].name for c in plan['candidates'] if c['spec'].card_id is None})
         result = dict(status='complete' if comparisons else 'unsupported_input', program_version=__version__,
             reference=asdict(plan['reference']), comparisons=comparisons, unsupported=plan['blocked'],
             policy_validation=receipt['policy_validation'], frozen_policy=model_fp, games=receipt['completed_games'],
-            unresolved=receipt['rejected_games'], samples=plan['samples'],
+            unresolved=receipt['rejected_games'], samples=plan['samples'], synthetic_descriptors=synthetic,
             scope='Conditional replacement in supplied25-card decks and declared opponents. No real-meta weights or universal Gold score.',
             uncertainty='95% paired seed intervals; cross-condition recommendation uses Bonferroni-adjusted tails. Unknown outcomes remain0/1 completion bounds.',
             assumptions=['Initial3 cards and first-turn natural draw', 'No artifacts/mulligan/tribal/death chains',

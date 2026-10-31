@@ -36,6 +36,8 @@ def markdown(result):
         lines += ['## 未评分的候选', '']
         for item in result['unsupported']: lines.append('- ' + str(item['input']) + ': ' + '; '.join(i['message'] for i in item['issues']))
         lines.append('')
+    if result.get('synthetic_descriptors'):
+        lines += ['含虚构语义描述：' + '、'.join(result['synthetic_descriptors']) + '；这些数值不代表真实卡面。', '']
     lines += [f"共{result['games']}个比较槽位，{result['unresolved']}个未决；未决保留0/1完成界，不记作半胜。", '',
               '跨全部条件的方向建议使用更严格的多重比较阈值；单行区间用于查看条件差异。', '',
               '规则边界：' + '；'.join(result['assumptions']) + '。', '',

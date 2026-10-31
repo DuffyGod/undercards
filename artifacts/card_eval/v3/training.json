@@ -1,0 +1,213 @@
+{
+  "status": "complete",
+  "source_commit": "910884637f9c0987884137d0eeba3c6a6e8b5d91",
+  "games": 1536,
+  "terminal": 1536,
+  "rejected": 0,
+  "decisions": 66813,
+  "phases": [
+    {
+      "stage": "ppo",
+      "update": 3,
+      "games": 64,
+      "samples": 512,
+      "loss": 0.13499958112129484,
+      "seconds": 5.2
+    },
+    {
+      "stage": "ppo",
+      "update": 7,
+      "games": 128,
+      "samples": 527,
+      "loss": 0.1063449553969466,
+      "seconds": 10.0
+    },
+    {
+      "stage": "ppo",
+      "update": 11,
+      "games": 192,
+      "samples": 473,
+      "loss": 0.1278229954461215,
+      "seconds": 14.7
+    },
+    {
+      "stage": "ppo",
+      "update": 15,
+      "games": 256,
+      "samples": 503,
+      "loss": 0.1807037714347957,
+      "seconds": 19.4
+    },
+    {
+      "stage": "ppo",
+      "update": 19,
+      "games": 320,
+      "samples": 454,
+      "loss": 0.10198932478680695,
+      "seconds": 23.7
+    },
+    {
+      "stage": "ppo",
+      "update": 23,
+      "games": 384,
+      "samples": 533,
+      "loss": 0.1702713110053591,
+      "seconds": 28.0
+    },
+    {
+      "stage": "ppo",
+      "update": 27,
+      "games": 448,
+      "samples": 466,
+      "loss": 0.0593995306739101,
+      "seconds": 32.3
+    },
+    {
+      "stage": "ppo",
+      "update": 31,
+      "games": 512,
+      "samples": 498,
+      "loss": 0.18573199252241718,
+      "seconds": 37.1
+    },
+    {
+      "stage": "ppo",
+      "update": 35,
+      "games": 576,
+      "samples": 488,
+      "loss": 0.1341731678219626,
+      "seconds": 41.4
+    },
+    {
+      "stage": "ppo",
+      "update": 39,
+      "games": 640,
+      "samples": 493,
+      "loss": 0.13985588790229295,
+      "seconds": 45.8
+    },
+    {
+      "stage": "ppo",
+      "update": 43,
+      "games": 704,
+      "samples": 470,
+      "loss": 0.145169257988428,
+      "seconds": 50.0
+    },
+    {
+      "stage": "ppo",
+      "update": 47,
+      "games": 768,
+      "samples": 584,
+      "loss": 0.13688612646660375,
+      "seconds": 54.5
+    },
+    {
+      "stage": "ppo",
+      "update": 51,
+      "games": 832,
+      "samples": 432,
+      "loss": 0.14004570204861055,
+      "seconds": 59.7
+    },
+    {
+      "stage": "ppo",
+      "update": 55,
+      "games": 896,
+      "samples": 488,
+      "loss": 0.1896689081136168,
+      "seconds": 64.8
+    },
+    {
+      "stage": "ppo",
+      "update": 59,
+      "games": 960,
+      "samples": 489,
+      "loss": 0.08580902071374316,
+      "seconds": 69.5
+    },
+    {
+      "stage": "ppo",
+      "update": 63,
+      "games": 1024,
+      "samples": 450,
+      "loss": 0.15001665702888312,
+      "seconds": 74.3
+    },
+    {
+      "stage": "ppo",
+      "update": 67,
+      "games": 1088,
+      "samples": 505,
+      "loss": 0.09295789418957878,
+      "seconds": 78.8
+    },
+    {
+      "stage": "ppo",
+      "update": 71,
+      "games": 1152,
+      "samples": 449,
+      "loss": 0.17295774820675414,
+      "seconds": 83.2
+    },
+    {
+      "stage": "ppo",
+      "update": 75,
+      "games": 1216,
+      "samples": 420,
+      "loss": 0.11703801380449115,
+      "seconds": 87.6
+    },
+    {
+      "stage": "ppo",
+      "update": 79,
+      "games": 1280,
+      "samples": 462,
+      "loss": 0.11493027532320076,
+      "seconds": 92.1
+    },
+    {
+      "stage": "ppo",
+      "update": 83,
+      "games": 1344,
+      "samples": 432,
+      "loss": 0.09121333974716796,
+      "seconds": 96.7
+    },
+    {
+      "stage": "ppo",
+      "update": 87,
+      "games": 1408,
+      "samples": 491,
+      "loss": 0.1481527819421365,
+      "seconds": 101.2
+    },
+    {
+      "stage": "ppo",
+      "update": 91,
+      "games": 1472,
+      "samples": 514,
+      "loss": 0.09095391478624794,
+      "seconds": 105.8
+    },
+    {
+      "stage": "ppo",
+      "update": 95,
+      "games": 1536,
+      "samples": 446,
+      "loss": 0.14466592054544306,
+      "seconds": 110.4
+    }
+  ],
+  "checkpoints": [
+    "warmup.npz",
+    "ppo-016.npz",
+    "ppo-032.npz",
+    "ppo-048.npz",
+    "ppo-064.npz",
+    "ppo-080.npz",
+    "ppo-096.npz"
+  ],
+  "seconds": 110.39680968999983,
+  "optimizer_steps": 3502
+}
