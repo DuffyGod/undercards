@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "version": "0.3.0",
+  "bundle": "artifacts/card_eval/dist/undercards-card-evaluator-0.3.0.zip",
+  "sha256": "c71eceb352b4833659aa6c9f784a62d79ebf37d9f52dc0a0551674c0e97117d9",
+  "bytes": 23073121,
+  "source_commit": "0955f6c8eb71ab4627c4f78c160da0cbbce4d20a",
+  "manifest_files_verified": 243,
+  "extracted_outside_repository": true,
+  "wheel_installed_from_extracted_bundle": true,
+  "named_model_runs_without_repository": true,
+  "actual_memory_games": 24,
+  "unknown_has_no_score": true,
+  "source_and_necessary_inputs_self_contained": true,
+  "archive_source_audit": {
+    "source_revision": "archive:0955f6c8eb71ab4627c4f78c160da0cbbce4d20a",
+    "audit": {
+      "status": "passed",
+      "audit_source_commit": "archive:0955f6c8eb71ab4627c4f78c160da0cbbce4d20a",
+      "final_source_commit": "b53afce4b2d50e93a816a94b12710c668330e63f",
+      "collection": {
+        "train": {
+          "forks": 768,
+          "new_branches": 4073,
+          "new_unresolved": 0,
+          "reused_unresolved": 1
+        },
+        "diagnostic": {
+          "forks": 192,
+          "new_branches": 1045,
+          "new_unresolved": 0,
+          "reused_unresolved": 0
+        }
+      },
+      "same_matched_groups": true,
+      "public_knowledge_reconstructed": true,
+      "reused_input_digests_match": true,
+      "actor_unchanged_by_value": true,
+      "complete_final_slots": 5120,
+      "unresolved_final_slots": 0,
+      "value_metrics_reconstructed": true,
+      "seed_ranges_disjoint": true,
+      "qualified": false,
+      "meaning": "Information and evidence contracts, not server rules or general policy certification."
+    }
+  },
+  "checks": [
+    {
+      "arguments": [
+        "models"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"models\": [\n    {\n      \"name\": \"legacy-v3\",\n      \"file\": \"shared-policy.npz\",\n      \"description\": \"旧显式牌组MLP，保留作复核\",\n      \"qualified\": false,\n      \"status\": \"not_qualified\",\n      \"fingerprint\": \"3bf8d2f447b2a4988de643230c9de0f97e416f5d679f63bcf1d98ee5388bdb39\",\n      \"sha256\": \"7023e3e23c850278553a404fcac94edd9918c5c57e4d49b3bb60927c6884def5\",\n      \"source\": \"card_eval/models/shared-policy.npz\",\n      \"feature_version\": \"explicit-decks-policy-value-3\",\n      \"scope\": \"Declared simulator rules and evaluated distributions only; no global card rating.\"\n    },\n    {\n      \"name\": \"paired-v5\",\n      \"file\": \"paired-v5.npz\",\n      \"description\": \"配对终局行动差；补牌背景有局部证据\",\n      \"qualified\": false,\n      \"status\": \"not_qualified\",\n      \"fingerprint\": \"be81cfcbc5c294c9844781a199bf147a3b6e840bd82cea0cd3d4db8a90718457\",\n      \"sha256\": \"ae548231ad062327e556a43f58072431eb3b118fd192fd71cb1a9719d234162e\",\n      \"source\": \"artifacts/card_eval/v5/primary-value.npz\",\n      \"feature_version\": \"paired-continuation-1\",\n      \"scope\": \"Declared simulator rules and evaluated distributions only; no global card rating.\"\n    },\n    {\n      \"name\": \"memory-v6\",\n      \"file\": \"memory-v6.npz\",\n      \"description\": \"己方已知牌组与公开机制记忆；当前基线续局目标\",\n      \"qualified\": false,\n      \"status\": \"not_qualified\",\n      \"fingerprint\": \"da035df831babb84af83d51f8b63cb329d2d9e2282bd2800ae84203e2769d228\",\n      \"sha256\": \"3fd815bfa3154f95338fb6a354f6700e39ae48fd6e8c19b4039623912c6da75e\",\n      \"source\": \"artifacts/card_eval/v6/primary-value.npz\",\n      \"feature_version\": \"known-seen-action-improvement-1\",\n      \"scope\": \"Declared simulator rules and evaluated distributions only; no global card rating.\"\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "example",
+        "--learned",
+        "--output",
+        "/tmp/undercards-delivery-030-check/run/request.json"
+      ],
+      "returncode": 0,
+      "stdout": "/tmp/undercards-delivery-030-check/run/request.json\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "assess",
+        "Bench",
+        "--model",
+        "memory-v6",
+        "--experimental-model",
+        "--samples",
+        "2",
+        "--output",
+        "/tmp/undercards-delivery-030-check/run/memory"
+      ],
+      "returncode": 0,
+      "stdout": "Bench：学习模型未达标，仅作实验诊断\n报告：/tmp/undercards-delivery-030-check/run/memory/report.md\n",
+      "stderr": "{\"opponent\": \"pressure\", \"policy\": \"learned\", \"card\": \"Rock Pet\", \"completed_games\": 4}\n{\"opponent\": \"pressure\", \"policy\": \"learned\", \"card\": \"Bench\", \"completed_games\": 8}\n{\"opponent\": \"defense\", \"policy\": \"learned\", \"card\": \"Rock Pet\", \"completed_games\": 12}\n{\"opponent\": \"defense\", \"policy\": \"learned\", \"card\": \"Bench\", \"completed_games\": 16}\n{\"opponent\": \"refill\", \"policy\": \"learned\", \"card\": \"Rock Pet\", \"completed_games\": 20}\n{\"opponent\": \"refill\", \"policy\": \"learned\", \"card\": \"Bench\", \"completed_games\": 24}\n"
+    },
+    {
+      "arguments": [
+        "inspect",
+        "Glyde"
+      ],
+      "returncode": 2,
+      "stdout": "{\n  \"status\": \"unsupported\",\n  \"card\": \"Glyde\",\n  \"score\": null,\n  \"reason\": \"Unconsumed card text: Magic: Gain ATK +1/HP +1 for each card in your hand.\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "meaning": "Complete application/source/evidence delivery verification, not general game coverage or policy qualification."
+}
