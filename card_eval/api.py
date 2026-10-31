@@ -132,6 +132,10 @@ def evaluate(request, output=None, checkpoint=None, progress=None):
     base_model_fp=model_fp
     planner_config=None
     if plan['planner']:
+        if plan['planner']['mode']=='value' and metadata.get('value_unfitted') is True:
+            result=dict(status='unsupported_policy_configuration',scores=None,comparisons=[],
+                issues=[_issue('planner','unfitted_value','This checkpoint has no fitted value for its frozen actor. Use the actor directly or proof-only search.')])
+            save('result.json',result);return result
         from .public_planner import PublicPlanner
         try:probe=PublicPlanner(net,**plan['planner'])
         except ValueError as exc:

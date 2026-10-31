@@ -1,6 +1,7 @@
 from copy import deepcopy
 from pathlib import Path
 import io,tempfile,unittest
+from unittest.mock import patch
 import numpy as np
 from card_eval.game import NativeGame
 from card_eval.profiles import base_deck
@@ -9,6 +10,7 @@ from card_eval.suffix_sampling import SuffixController,OnlineForkRecorder,stable
 from card_eval.regret_model import RegretNetwork
 from card_eval.action_value import INPUT,encode
 from card_eval.network import Network
+from card_eval.api import default_request,evaluate
 
 
 class StopAtDecision(Exception):pass
@@ -64,6 +66,14 @@ class SuffixPolicyChecks(unittest.TestCase):
             path=Path(directory)/'policy.npz';net.save(path,dict(validation=dict(qualified=False)))
             loaded,_=Network.load(path);self.assertEqual(net.fingerprint,loaded.fingerprint)
             np.testing.assert_array_equal(p,loaded.forward(*loaded.encode(obs,actions))[0])
+
+    def test_unfitted_actor_value_cannot_be_used_for_value_search(self):
+        net=RegretNetwork(Network.load('card_eval/models/paired-v5.npz')[0]);request=default_request(['Bench'],samples=2)
+        request.update(policies=['learned'],allow_unqualified_policy=True,planner=dict(mode='value'))
+        with patch('card_eval.api.Network.load',return_value=(net,dict(value_unfitted=True,validation=dict(qualified=False)))), patch('card_eval.api.NativeGame') as game:
+            result=evaluate(request);game.assert_not_called()
+        self.assertEqual(result['status'],'unsupported_policy_configuration');self.assertIsNone(result['scores'])
+        self.assertEqual(result['issues'][0]['code'],'unfitted_value')
 
 
 if __name__=='__main__':unittest.main()

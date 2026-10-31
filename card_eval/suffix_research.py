@@ -19,6 +19,9 @@ from .counterfactual_research import sample_inputs,run,value_data
 from .memory_research import read_rows,opponent
 from .relational_research import small_result,value_metrics,paired_value_gain
 from .statistics import interval
+from .relational_model import RelationalNetwork
+from .action_research import suppress_sparse
+from .relational_research import phase_metrics
 from .training import dump,commit,decode
 from .catalog import Spec,Effect,semantic_key
 from .profiles import base_deck,opponents,training_pool
@@ -252,7 +255,70 @@ def development(folder):
     if not proceed:dump(folder/'final-status.json',dict(status='not_executed',reason='Predeclared development gate failed; do not spend a large final on an inactive/degraded policy',final_seeds_unread=True,value_final_unread=True,qualified=False))
 
 
+def require_gate(folder):
+    development=json.loads((folder/'development.json').read_text())
+    if not development['proceed_to_final']:raise ValueError('Predeclared development gate failed; preserve unused final')
+
+
+def value(folder):
+    require_gate(folder)
+    if (folder/'value.json').exists():raise ValueError('Preserve own-policy critic')
+    d=json.loads((folder/'design.json').read_text());net=Network.load(folder/'regret_mean-selected.npz')[0]
+    train=value_data(folder,net,'train',d['value_train_seeds']);x=[];y=[];w=[]
+    for e in train:
+        if not e['terminal']:continue
+        x.extend(e['states']);y.extend([int(e['won'])]*len(e['states']));w.extend([1/len(e['states'])]*len(e['states']))
+    before=net.actor_fingerprint;fit=net.fit_value(x,y,w,l2=.01);prior=float(np.mean([e['won'] for e in train if e['terminal']]))
+    net.save(folder/'primary-value.npz',dict(validation=dict(qualified=False),value_unfitted=False,critic_actor_fingerprint=before,
+        target='Natural full-game continuation of the frozen regret_mean actor; no online hidden-order resampling'))
+    simple=RelationalNetwork();states=np.asarray(x);reduced=np.c_[np.ones(len(states)),states[:,1]-states[:,2],states[:,26]-states[:,39],states[:,27]-states[:,40],states[:,8]-states[:,9]]
+    sf=simple.fit_value(reduced,y,w,l2=.01);beta=simple.critic.copy();simple.critic=np.zeros(74);simple.critic[0]=beta[0]
+    for c,(pos,neg) in zip(beta[1:],((1,2),(26,39),(27,40),(8,9))):simple.critic[pos]=c;simple.critic[neg]=-c
+    simple.save(folder/'value-simple.npz',dict(validation=dict(qualified=False),actor_fingerprint=before))
+    dev=value_data(folder,net,'dev',d['value_dev_seeds'])
+    dump(folder/'value.json',dict(source_commit=commit(),fit=fit,simple_fit=sf,actor_unchanged=net.actor_fingerprint==before,
+        train_prior=prior,train_openings=len(train),train_states=len(x),unknown_train=sum(not e['terminal'] for e in train),
+        development=value_metrics(net,dev,prior),simple_development=value_metrics(simple,dev,prior),gain_vs_simple=paired_value_gain(net,simple,dev)))
+
+
+def final(folder):
+    require_gate(folder)
+    if (folder/'final-games.jsonl.gz').exists():raise ValueError('Final is executed once')
+    d=json.loads((folder/'design.json').read_text());ms={a:Network.load(folder/f'{a}-selected.npz')[0] for a in ARMS};ms['regret_mean']=Network.load(folder/'primary-value.npz')[0];base=Network.load(BASE)[0]
+    def agent(name):return LearnedPolicy(base) if name=='v5' else ReferencePolicy('guard') if name=='guard' else LearnedPolicy(ms[name])
+    def enemy(style):return LearnedPolicy(base) if style=='learned' else opponent(style)
+    dump(folder/'final-plan.json',dict(source_commit=commit(),primary_actor=ms['regret_mean'].actor_fingerprint,
+        models={a:ms[a].fingerprint for a in ARMS},seeds=d['final_seeds'],
+        cases=[dict(group=g,decks=[[asdict(s) for s in ds] for ds in (a,b)],souls=ss,opponent=p) for g,a,b,ss,p in cases(True)]))
+    groups=[];failures=[]
+    with gzip.open(folder/'final-games.jsonl.gz','wt') as sink:
+        for group,a,b,souls,style in cases(True):
+            scores={n:[] for n in d['final_policies']};times={n:[] for n in scores}
+            for seed in d['final_seeds']:
+                seats={n:[] for n in scores}
+                for seat in (0,1):
+                    for name in scores:
+                        r=run((a,b),seed,(agent(name),enemy(style)),seat,souls)
+                        sink.write(json.dumps(dict(group=group,seed=seed,seat=seat,policy=name,result=small_result(r)),separators=(',',':'))+'\n')
+                        seats[name].append(None if r['unfinished'] else int(r['won']));times[name].extend(r['decision_seconds'][0])
+                        if r['unfinished']:failures.append(dict(group=group,seed=seed,seat=seat,policy=name,error=r.get('error')))
+                for name in scores:scores[name].append((np.mean([0 if x is None else x for x in seats[name]]),np.mean([1 if x is None else x for x in seats[name]])))
+            lo,hi=np.asarray(scores['regret_mean']).T;cs=[]
+            for name,(a0,b0) in ((n,np.asarray(rs).T) for n,rs in scores.items()):
+                cs.append(dict(policy=name,win=interval(a0,b0),primary_gain=interval(lo-b0,hi-a0),family_gain=interval(lo-b0,hi-a0,alpha=.05/8)))
+            groups.append(dict(group=group,policies=cs,timings={n:dict(decisions=len(t),p95=float(np.quantile(t,.95)) if t else None,maximum=max(t) if t else None) for n,t in times.items()}))
+            dump(folder/'final-progress.json',dict(groups=groups,failures=failures));print(json.dumps(dict(group=group,wins={c['policy']:c['win']['completion_range'] for c in cs})),flush=True)
+    qualified=not failures and all(c['primary_gain']['low']>0 for g in groups for c in g['policies'] if c['policy']!='regret_mean')
+    dump(folder/'final.json',dict(source_commit=commit(),qualified=qualified,groups=groups,failures=failures,no_final_reselection=True))
+    dump(folder/'validation.json',dict(qualified=qualified,status='qualified' if qualified else 'not_qualified',frozen_policy=ms['regret_mean'].fingerprint,default_model_replaced=False))
+    val=value_data(folder,ms['regret_mean'],'final',d['value_final_seeds']);simple=Network.load(folder/'value-simple.npz')[0];prior=json.loads((folder/'value.json').read_text())['train_prior']
+    dump(folder/'value-final.json',dict(source_commit=commit(),primary=value_metrics(ms['regret_mean'],val,prior),simple=value_metrics(simple,val,prior),previous_v5=value_metrics(base,val,prior),
+        gain_vs_simple=paired_value_gain(ms['regret_mean'],simple,val),gain_vs_previous=paired_value_gain(ms['regret_mean'],base,val),
+        phases=suppress_sparse(phase_metrics(ms['regret_mean'],val,prior)),no_final_selection=True))
+    dump(folder/'final-status.json',dict(status='complete',qualified=qualified,final_seeds_unread=False,value_final_unread=False))
+
+
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('mode',choices=['prepare','collect','fit','development']);p.add_argument('--output',type=Path,required=True);p.add_argument('--stage',choices=['train','diagnostic']);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('mode',choices=['prepare','collect','fit','development','value','final']);p.add_argument('--output',type=Path,required=True);p.add_argument('--stage',choices=['train','diagnostic']);a=p.parse_args()
     if a.mode=='collect':collect(a.output,a.stage)
     else:globals()[a.mode](a.output)

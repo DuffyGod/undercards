@@ -1,0 +1,11 @@
+{
+  "reused_retrospective_openings": 128,
+  "continuations": 7148,
+  "unknown_continuations": 0,
+  "prefix_matches": 7148,
+  "reused_identical_continuations": 0,
+  "forks": 341,
+  "fresh_online_stopping_time_openings": 64,
+  "elapsed_seconds": 464.7084709250048,
+  "source_commit": "043e3b350cad08afdd1d0f81f65e9248409c3a39"
+}

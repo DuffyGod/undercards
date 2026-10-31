@@ -1,0 +1,13 @@
+{
+  "event": "exec-server transport disconnected before diagnostic process creation",
+  "training_completed": true,
+  "train_forks": 341,
+  "continuation_slots": 7148,
+  "train_sha256": "fd17fa771f6de8b804e4d3fe19e0e0e78f53c213b98f7674e392bd0434481e0c",
+  "old_lock_pid": 10521,
+  "old_lock_state": "zombie/OS lock released",
+  "new_lock_pid": 10904,
+  "diagnostic_not_started": true,
+  "previous_results_replayed": false,
+  "parameters_changed": false
+}
