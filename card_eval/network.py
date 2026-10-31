@@ -50,6 +50,9 @@ class Network(learner.Network):
     def load(cls, path):
         with np.load(path, allow_pickle=False) as data:
             meta = json.loads(str(data['metadata']))
+            if meta.get('model_kind') == 'relational_linear':
+                from .relational_model import RelationalNetwork
+                return RelationalNetwork.load(path)
             if meta['feature_version'] not in (VERSION, OLD_VERSION): raise ValueError('Incompatible policy feature version')
             net = cls(hidden=meta['hidden'], feature_version=meta['feature_version']); net.step = meta['step']
             for k in net.p:
