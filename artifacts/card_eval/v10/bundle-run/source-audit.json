@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "source_commit": "archive:d877e064c0367774583203119a45e0a8a88e2eed",
+  "scope": "Read-only input, slot, weighting, policy/target and metric audit; no replay/refit",
+  "final_slots": 2560,
+  "unresolved_slots": 4,
+  "unresolved_by_policy": {
+    "v9_planner": 4
+  },
+  "qualified": false,
+  "actor_fingerprint": "bc7f48d3945e4b6561111c2ed291fe4ef1798da9ae6ef507f1d8fa30d8ceea14",
+  "model_fingerprint": "22188fe16750530f786d23760c5856347e4e889348df1b9a529ad5438d2950f4",
+  "value_final_openings": 96,
+  "value_final_unknown": 0,
+  "no_final_selection": true
+}

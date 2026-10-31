@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "bundle": "/workspace/undercards/artifacts/card_eval/dist/undercards-card-evaluator-0.4.1.zip",
+  "sha256": "cf538501e43446a5e0f3710d001cf60e0eb0b5baeda95b8b555a52ac0ea77eb7",
+  "source_commit": "d877e064c0367774583203119a45e0a8a88e2eed",
+  "manifest_files": 504,
+  "zip_bytes": 46223922,
+  "source_audit": "passed without Git, game replay or refitting",
+  "installed_zip_wheel": true,
+  "scope": "Archive completeness and installed entry contract, not universal policy quality"
+}
