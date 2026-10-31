@@ -1,0 +1,1033 @@
+{
+  "status": "complete",
+  "source_commit": "4c7cb8c66279236cd7ae04176fe228f2cb571549",
+  "frozen_policy": "4ea85080db1a286a119d801133a06752528b27d5a16b8ac0898135bf7f0c5e70",
+  "records": 4480,
+  "reused_completed_episodes": 299,
+  "reused_rows": 2094,
+  "reused_decision_file": "analysis/strategic-model/2026-10-31/experiment-v01/evaluation-attempt-02/evaluation-decisions.jsonl.gz",
+  "elapsed_seconds": 50.74079728799984,
+  "groups": [
+    {
+      "group": "in_distribution",
+      "case": {
+        "group": "in_distribution",
+        "structure": "wide",
+        "spec": {
+          "name": "synthetic_train_0_0",
+          "cost": 4,
+          "attack": 2,
+          "health": 8,
+          "keywords": [],
+          "effects": [],
+          "card_id": null
+        },
+        "opponent": 0
+      },
+      "incomplete": false,
+      "learned_win": {
+        "mean": 0.3359375,
+        "low": 0.2421875,
+        "high": 0.4296875,
+        "n": 64,
+        "completion_mean_range": [
+          0.3359375,
+          0.3359375
+        ],
+        "unresolved_seed_clusters": 0
+      },
+      "baselines": [
+        {
+          "policy": "greedy_trade",
+          "win": {
+            "mean": 0.2734375,
+            "low": 0.1953125,
+            "high": 0.3517578125000007,
+            "n": 64,
+            "completion_mean_range": [
+              0.2734375,
+              0.2734375
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": 0.0625,
+            "low": -0.0546875,
+            "high": 0.1796875,
+            "n": 64,
+            "completion_mean_range": [
+              0.0625,
+              0.0625
+            ],
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "attack_frontier",
+          "win": {
+            "mean": 0.375,
+            "low": 0.28125,
+            "high": 0.46875,
+            "n": 64,
+            "completion_mean_range": [
+              0.375,
+              0.375
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": -0.0390625,
+            "low": -0.171875,
+            "high": 0.1015625,
+            "n": 64,
+            "completion_mean_range": [
+              -0.0390625,
+              -0.0390625
+            ],
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "frontier_board",
+          "win": {
+            "mean": 0.359375,
+            "low": 0.265625,
+            "high": 0.453125,
+            "n": 64,
+            "completion_mean_range": [
+              0.359375,
+              0.359375
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": -0.0234375,
+            "low": -0.15625,
+            "high": 0.1171875,
+            "n": 64,
+            "completion_mean_range": [
+              -0.0234375,
+              -0.0234375
+            ],
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "frontier_race",
+          "win": {
+            "mean": 0.4296875,
+            "low": 0.3359375,
+            "high": 0.5234375,
+            "n": 64,
+            "completion_mean_range": [
+              0.4296875,
+              0.4296875
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": -0.09375,
+            "low": -0.21875,
+            "high": 0.03125,
+            "n": 64,
+            "completion_mean_range": [
+              -0.09375,
+              -0.09375
+            ],
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "frontier_durable",
+          "win": {
+            "mean": 0.3828125,
+            "low": 0.2890625,
+            "high": 0.4765625,
+            "n": 64,
+            "completion_mean_range": [
+              0.3828125,
+              0.3828125
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": -0.046875,
+            "low": -0.171875,
+            "high": 0.078125,
+            "n": 64,
+            "completion_mean_range": [
+              -0.046875,
+              -0.046875
+            ],
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "frontier_entry",
+          "win": {
+            "mean": 0.2421875,
+            "low": 0.1640625,
+            "high": 0.3203125,
+            "n": 64,
+            "completion_mean_range": [
+              0.2421875,
+              0.2421875
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": 0.09375,
+            "low": -0.0234375,
+            "high": 0.21875,
+            "n": 64,
+            "completion_mean_range": [
+              0.09375,
+              0.09375
+            ],
+            "unresolved_seed_clusters": 0
+          }
+        }
+      ]
+    },
+    {
+      "group": "heldout_parameters",
+      "case": {
+        "group": "heldout_parameters",
+        "structure": "wide",
+        "spec": {
+          "name": "Aaron",
+          "cost": 5,
+          "attack": 6,
+          "health": 5,
+          "keywords": [],
+          "effects": [],
+          "card_id": 15
+        },
+        "opponent": 0
+      },
+      "incomplete": false,
+      "learned_win": {
+        "mean": 0.3828125,
+        "low": 0.2890625,
+        "high": 0.484375,
+        "n": 64,
+        "completion_mean_range": [
+          0.3828125,
+          0.3828125
+        ],
+        "unresolved_seed_clusters": 0
+      },
+      "baselines": [
+        {
+          "policy": "greedy_trade",
+          "win": {
+            "mean": 0.21875,
+            "low": 0.140625,
+            "high": 0.296875,
+            "n": 64,
+            "completion_mean_range": [
+              0.21875,
+              0.21875
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": 0.1640625,
+            "low": 0.03125,
+            "high": 0.296875,
+            "n": 64,
+            "completion_mean_range": [
+              0.1640625,
+              0.1640625
+            ],
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "attack_frontier",
+          "win": {
+            "mean": 0.28125,
+            "low": 0.1953125,
+            "high": 0.375,
+            "n": 64,
+            "completion_mean_range": [
+              0.28125,
+              0.28125
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": 0.1015625,
+            "low": -0.0234375,
+            "high": 0.234375,
+            "n": 64,
+            "completion_mean_range": [
+              0.1015625,
+              0.1015625
+            ],
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "frontier_board",
+          "win": {
+            "mean": 0.25,
+            "low": 0.1640625,
+            "high": 0.3359375,
+            "n": 64,
+            "completion_mean_range": [
+              0.25,
+              0.25
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": 0.1328125,
+            "low": 0.0078125,
+            "high": 0.2578125,
+            "n": 64,
+            "completion_mean_range": [
+              0.1328125,
+              0.1328125
+            ],
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "frontier_race",
+          "win": {
+            "mean": 0.53125,
+            "low": 0.4453125,
+            "high": 0.6171875,
+            "n": 64,
+            "completion_mean_range": [
+              0.53125,
+              0.53125
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": -0.1484375,
+            "low": -0.2578125,
+            "high": -0.0234375,
+            "n": 64,
+            "completion_mean_range": [
+              -0.1484375,
+              -0.1484375
+            ],
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "frontier_durable",
+          "win": {
+            "mean": 0.2890625,
+            "low": 0.203125,
+            "high": 0.375,
+            "n": 64,
+            "completion_mean_range": [
+              0.2890625,
+              0.2890625
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": 0.09375,
+            "low": -0.0390625,
+            "high": 0.2265625,
+            "n": 64,
+            "completion_mean_range": [
+              0.09375,
+              0.09375
+            ],
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "frontier_entry",
+          "win": {
+            "mean": 0.25,
+            "low": 0.1640625,
+            "high": 0.34375,
+            "n": 64,
+            "completion_mean_range": [
+              0.25,
+              0.25
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": 0.1328125,
+            "low": 0.0,
+            "high": 0.2658203125000007,
+            "n": 64,
+            "completion_mean_range": [
+              0.1328125,
+              0.1328125
+            ],
+            "unresolved_seed_clusters": 0
+          }
+        }
+      ]
+    },
+    {
+      "group": "heldout_mechanism_composition",
+      "case": {
+        "group": "heldout_mechanism_composition",
+        "structure": "wide",
+        "spec": {
+          "name": "synthetic_haste_plus_draw",
+          "cost": 4,
+          "attack": 2,
+          "health": 8,
+          "keywords": [
+            [
+              "haste",
+              1
+            ]
+          ],
+          "effects": [
+            {
+              "trigger": "play",
+              "op": "draw",
+              "scope": "owner",
+              "amount": 1,
+              "health": 0
+            }
+          ],
+          "card_id": null
+        },
+        "opponent": 0
+      },
+      "incomplete": true,
+      "learned_win": {
+        "mean": null,
+        "low": 0.4609375,
+        "high": 0.6640625,
+        "n": 64,
+        "completion_mean_range": [
+          0.5546875,
+          0.5703125
+        ],
+        "unresolved_seed_clusters": 2
+      },
+      "baselines": [
+        {
+          "policy": "greedy_trade",
+          "win": {
+            "mean": 0.3359375,
+            "low": 0.2421875,
+            "high": 0.4296875,
+            "n": 64,
+            "completion_mean_range": [
+              0.3359375,
+              0.3359375
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": null,
+            "low": 0.0859375,
+            "high": 0.359375,
+            "n": 64,
+            "completion_mean_range": [
+              0.21875,
+              0.234375
+            ],
+            "unresolved_seed_clusters": 2
+          }
+        },
+        {
+          "policy": "attack_frontier",
+          "win": {
+            "mean": 0.5546875,
+            "low": 0.4609375,
+            "high": 0.6484375,
+            "n": 64,
+            "completion_mean_range": [
+              0.5546875,
+              0.5546875
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": null,
+            "low": -0.125,
+            "high": 0.140625,
+            "n": 64,
+            "completion_mean_range": [
+              0.0,
+              0.015625
+            ],
+            "unresolved_seed_clusters": 2
+          }
+        },
+        {
+          "policy": "frontier_board",
+          "win": {
+            "mean": 0.5234375,
+            "low": 0.4296875,
+            "high": 0.625,
+            "n": 64,
+            "completion_mean_range": [
+              0.5234375,
+              0.5234375
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": null,
+            "low": -0.1015625,
+            "high": 0.1796875,
+            "n": 64,
+            "completion_mean_range": [
+              0.03125,
+              0.046875
+            ],
+            "unresolved_seed_clusters": 2
+          }
+        },
+        {
+          "policy": "frontier_race",
+          "win": {
+            "mean": 0.71875,
+            "low": 0.625,
+            "high": 0.8046875,
+            "n": 64,
+            "completion_mean_range": [
+              0.71875,
+              0.71875
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": null,
+            "low": -0.2734375,
+            "high": -0.03125,
+            "n": 64,
+            "completion_mean_range": [
+              -0.1640625,
+              -0.1484375
+            ],
+            "unresolved_seed_clusters": 2
+          }
+        },
+        {
+          "policy": "frontier_durable",
+          "win": {
+            "mean": 0.5546875,
+            "low": 0.4609375,
+            "high": 0.6484375,
+            "n": 64,
+            "completion_mean_range": [
+              0.5546875,
+              0.5546875
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": null,
+            "low": -0.1171875,
+            "high": 0.1328125,
+            "n": 64,
+            "completion_mean_range": [
+              0.0,
+              0.015625
+            ],
+            "unresolved_seed_clusters": 2
+          }
+        },
+        {
+          "policy": "frontier_entry",
+          "win": {
+            "mean": 0.4140625,
+            "low": 0.3203125,
+            "high": 0.515625,
+            "n": 64,
+            "completion_mean_range": [
+              0.4140625,
+              0.4140625
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": null,
+            "low": 0.0078125,
+            "high": 0.2890625,
+            "n": 64,
+            "completion_mean_range": [
+              0.140625,
+              0.15625
+            ],
+            "unresolved_seed_clusters": 2
+          }
+        }
+      ]
+    },
+    {
+      "group": "heldout_deck_structure",
+      "case": {
+        "group": "heldout_deck_structure",
+        "structure": "refill",
+        "spec": {
+          "name": "synthetic_train_0_0",
+          "cost": 4,
+          "attack": 2,
+          "health": 8,
+          "keywords": [],
+          "effects": [],
+          "card_id": null
+        },
+        "opponent": 0
+      },
+      "incomplete": false,
+      "learned_win": {
+        "mean": 0.328125,
+        "low": 0.2421875,
+        "high": 0.421875,
+        "n": 64,
+        "completion_mean_range": [
+          0.328125,
+          0.328125
+        ],
+        "unresolved_seed_clusters": 0
+      },
+      "baselines": [
+        {
+          "policy": "greedy_trade",
+          "win": {
+            "mean": 0.2109375,
+            "low": 0.140625,
+            "high": 0.2890625,
+            "n": 64,
+            "completion_mean_range": [
+              0.2109375,
+              0.2109375
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": 0.1171875,
+            "low": 0.0078125,
+            "high": 0.2265625,
+            "n": 64,
+            "completion_mean_range": [
+              0.1171875,
+              0.1171875
+            ],
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "attack_frontier",
+          "win": {
+            "mean": 0.2734375,
+            "low": 0.1953125,
+            "high": 0.359375,
+            "n": 64,
+            "completion_mean_range": [
+              0.2734375,
+              0.2734375
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": 0.0546875,
+            "low": -0.0625,
+            "high": 0.1796875,
+            "n": 64,
+            "completion_mean_range": [
+              0.0546875,
+              0.0546875
+            ],
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "frontier_board",
+          "win": {
+            "mean": 0.25,
+            "low": 0.171875,
+            "high": 0.3283203125000007,
+            "n": 64,
+            "completion_mean_range": [
+              0.25,
+              0.25
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": 0.078125,
+            "low": -0.0390625,
+            "high": 0.1953125,
+            "n": 64,
+            "completion_mean_range": [
+              0.078125,
+              0.078125
+            ],
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "frontier_race",
+          "win": {
+            "mean": 0.3828125,
+            "low": 0.2890625,
+            "high": 0.4765625,
+            "n": 64,
+            "completion_mean_range": [
+              0.3828125,
+              0.3828125
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": -0.0546875,
+            "low": -0.1484375,
+            "high": 0.0390625,
+            "n": 64,
+            "completion_mean_range": [
+              -0.0546875,
+              -0.0546875
+            ],
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "frontier_durable",
+          "win": {
+            "mean": 0.2421875,
+            "low": 0.1640625,
+            "high": 0.3126953125000007,
+            "n": 64,
+            "completion_mean_range": [
+              0.2421875,
+              0.2421875
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": 0.0859375,
+            "low": -0.03125,
+            "high": 0.203125,
+            "n": 64,
+            "completion_mean_range": [
+              0.0859375,
+              0.0859375
+            ],
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "frontier_entry",
+          "win": {
+            "mean": 0.1953125,
+            "low": 0.1171875,
+            "high": 0.28125,
+            "n": 64,
+            "completion_mean_range": [
+              0.1953125,
+              0.1953125
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": 0.1328125,
+            "low": 0.015625,
+            "high": 0.2578125,
+            "n": 64,
+            "completion_mean_range": [
+              0.1328125,
+              0.1328125
+            ],
+            "unresolved_seed_clusters": 0
+          }
+        }
+      ]
+    },
+    {
+      "group": "heldout_opponent",
+      "case": {
+        "group": "heldout_opponent",
+        "structure": "wide",
+        "spec": {
+          "name": "synthetic_train_0_0",
+          "cost": 4,
+          "attack": 2,
+          "health": 8,
+          "keywords": [],
+          "effects": [],
+          "card_id": null
+        },
+        "opponent": 3
+      },
+      "incomplete": true,
+      "learned_win": {
+        "mean": null,
+        "low": 0.046875,
+        "high": 0.1953125,
+        "n": 64,
+        "completion_mean_range": [
+          0.1015625,
+          0.125
+        ],
+        "unresolved_seed_clusters": 3
+      },
+      "baselines": [
+        {
+          "policy": "greedy_trade",
+          "win": {
+            "mean": 0.140625,
+            "low": 0.078125,
+            "high": 0.21875,
+            "n": 64,
+            "completion_mean_range": [
+              0.140625,
+              0.140625
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": null,
+            "low": -0.125,
+            "high": 0.078125,
+            "n": 64,
+            "completion_mean_range": [
+              -0.0390625,
+              -0.015625
+            ],
+            "unresolved_seed_clusters": 3
+          }
+        },
+        {
+          "policy": "attack_frontier",
+          "win": {
+            "mean": 0.1875,
+            "low": 0.1171875,
+            "high": 0.2734375,
+            "n": 64,
+            "completion_mean_range": [
+              0.1875,
+              0.1875
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": null,
+            "low": -0.1796875,
+            "high": 0.03125,
+            "n": 64,
+            "completion_mean_range": [
+              -0.0859375,
+              -0.0625
+            ],
+            "unresolved_seed_clusters": 3
+          }
+        },
+        {
+          "policy": "frontier_board",
+          "win": {
+            "mean": 0.1484375,
+            "low": 0.0859375,
+            "high": 0.2265625,
+            "n": 64,
+            "completion_mean_range": [
+              0.1484375,
+              0.1484375
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": null,
+            "low": -0.1328125,
+            "high": 0.0703125,
+            "n": 64,
+            "completion_mean_range": [
+              -0.046875,
+              -0.0234375
+            ],
+            "unresolved_seed_clusters": 3
+          }
+        },
+        {
+          "policy": "frontier_race",
+          "win": {
+            "mean": 0.1015625,
+            "low": 0.046875,
+            "high": 0.1640625,
+            "n": 64,
+            "completion_mean_range": [
+              0.1015625,
+              0.1015625
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": null,
+            "low": -0.078125,
+            "high": 0.1015625,
+            "n": 64,
+            "completion_mean_range": [
+              0.0,
+              0.0234375
+            ],
+            "unresolved_seed_clusters": 3
+          }
+        },
+        {
+          "policy": "frontier_durable",
+          "win": {
+            "mean": 0.2109375,
+            "low": 0.140625,
+            "high": 0.2890625,
+            "n": 64,
+            "completion_mean_range": [
+              0.2109375,
+              0.2109375
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": null,
+            "low": -0.203125,
+            "high": 0.0078125,
+            "n": 64,
+            "completion_mean_range": [
+              -0.109375,
+              -0.0859375
+            ],
+            "unresolved_seed_clusters": 3
+          }
+        },
+        {
+          "policy": "frontier_entry",
+          "win": {
+            "mean": 0.203125,
+            "low": 0.125,
+            "high": 0.2890625,
+            "n": 64,
+            "completion_mean_range": [
+              0.203125,
+              0.203125
+            ],
+            "unresolved_seed_clusters": 0
+          },
+          "learned_gain": {
+            "mean": null,
+            "low": -0.1875,
+            "high": 0.0078125,
+            "n": 64,
+            "completion_mean_range": [
+              -0.1015625,
+              -0.078125
+            ],
+            "unresolved_seed_clusters": 3
+          }
+        }
+      ]
+    }
+  ],
+  "unfinished": [
+    {
+      "group": "heldout_mechanism_composition",
+      "seed": 710021,
+      "seat": 1,
+      "policy": "shared_policy_value",
+      "reason": "RuntimeError('Decision exceeded the common wall-time budget')",
+      "error_kind": "recovered_decision_budget"
+    },
+    {
+      "group": "heldout_mechanism_composition",
+      "seed": 710022,
+      "seat": 1,
+      "policy": "shared_policy_value",
+      "reason": "DecisionBudgetExceeded('Decision exceeded the common wall-time budget: actor=1, policy=trade_hold_two, seconds=0.272902')",
+      "error_kind": "DecisionBudgetExceeded"
+    },
+    {
+      "group": "heldout_opponent",
+      "seed": 710001,
+      "seat": 0,
+      "policy": "shared_policy_value",
+      "reason": "DecisionBudgetExceeded('Decision exceeded the common wall-time budget: actor=0, policy=shared_policy_value, seconds=0.323763')",
+      "error_kind": "DecisionBudgetExceeded"
+    },
+    {
+      "group": "heldout_opponent",
+      "seed": 710026,
+      "seat": 1,
+      "policy": "shared_policy_value",
+      "reason": "DecisionBudgetExceeded('Decision exceeded the common wall-time budget: actor=1, policy=heldout_window_race, seconds=0.459553')",
+      "error_kind": "DecisionBudgetExceeded"
+    },
+    {
+      "group": "heldout_opponent",
+      "seed": 710056,
+      "seat": 0,
+      "policy": "shared_policy_value",
+      "reason": "DecisionBudgetExceeded('Decision exceeded the common wall-time budget: actor=1, policy=heldout_window_race, seconds=0.416379')",
+      "error_kind": "DecisionBudgetExceeded"
+    }
+  ],
+  "compute": {
+    "common_seconds_per_decision": 0.25,
+    "measured": {
+      "attack_frontier": {
+        "decisions": 16861,
+        "median": 2.430199992886628e-05,
+        "p95": 0.00015083700009199674,
+        "maximum": 0.02531720199999654,
+        "over_budget": 0
+      },
+      "frontier_board": {
+        "decisions": 16950,
+        "median": 2.3739999960525893e-05,
+        "p95": 0.00010562365001760547,
+        "maximum": 0.007329018000064025,
+        "over_budget": 0
+      },
+      "frontier_durable": {
+        "decisions": 17299,
+        "median": 2.448300006108184e-05,
+        "p95": 0.0001740961001814866,
+        "maximum": 0.008633945999918069,
+        "over_budget": 0
+      },
+      "frontier_entry": {
+        "decisions": 17086,
+        "median": 2.3984499989637698e-05,
+        "p95": 0.00017610175007121143,
+        "maximum": 0.0552491309999823,
+        "over_budget": 0
+      },
+      "frontier_race": {
+        "decisions": 13001,
+        "median": 2.5103999860220938e-05,
+        "p95": 0.0002069580000352289,
+        "maximum": 0.006288199999971766,
+        "over_budget": 0
+      },
+      "greedy_trade": {
+        "decisions": 16366,
+        "median": 2.2417999957724533e-05,
+        "p95": 4.335924990073181e-05,
+        "maximum": 0.0021805370001857227,
+        "over_budget": 0
+      },
+      "shared_policy_value": {
+        "decisions": 17487,
+        "median": 0.0003192780000063067,
+        "p95": 0.004441891199917336,
+        "maximum": 0.02159586700008731,
+        "over_budget": 0
+      }
+    },
+    "recovered_successful_rows_without_detailed_timings": 1794,
+    "accounting": "Feature extraction, inference and search included. Slow decisions are rejected by the environment."
+  },
+  "generalization_gate_passed": false,
+  "gate_requires": "At least32 independent seed clusters per group, no unresolved games, positive paired95%lower gain against EACH of six frozen policies in EACH of five groups.",
+  "real_game_certified": false,
+  "frozen_policy_unchanged": true,
+  "value_validation": "Terminal Monte Carlo training only; independent held-out calibration is reported separately by audit script."
+}

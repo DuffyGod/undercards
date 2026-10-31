@@ -1,0 +1,126 @@
+{
+  "status": "passed",
+  "independent_seed_clusters_per_group": 64,
+  "evaluation_rows": 4480,
+  "evaluation_episodes": 640,
+  "reproduced_value_decisions": 17487,
+  "unfinished": 5,
+  "private_inputs_found": false,
+  "old_sources_and_results_unchanged": true,
+  "frozen_policy": "4ea85080db1a286a119d801133a06752528b27d5a16b8ac0898135bf7f0c5e70",
+  "value": {
+    "in_distribution": {
+      "per_seed_episode_mean_brier": {
+        "mean": 0.21596268600882812,
+        "low": 0.19547807927279745,
+        "high": 0.23601363647884926,
+        "n": 64
+      },
+      "constant_half_probability_brier": 0.25,
+      "phases": {
+        "early_t1_4": {
+          "mean_brier": 0.2549184642065265,
+          "decisions": 1267
+        },
+        "middle_t5_10": {
+          "mean_brier": 0.20214144631909237,
+          "decisions": 2173
+        },
+        "late_t11_plus": {
+          "mean_brier": 0.154688442316638,
+          "decisions": 64
+        }
+      }
+    },
+    "heldout_parameters": {
+      "per_seed_episode_mean_brier": {
+        "mean": 0.19329330791635818,
+        "low": 0.1790608334394722,
+        "high": 0.20765951757271,
+        "n": 64
+      },
+      "constant_half_probability_brier": 0.25,
+      "phases": {
+        "early_t1_4": {
+          "mean_brier": 0.25529390961642906,
+          "decisions": 1267
+        },
+        "middle_t5_10": {
+          "mean_brier": 0.16671407824560577,
+          "decisions": 1984
+        },
+        "late_t11_plus": {
+          "mean_brier": 0.14497369867562082,
+          "decisions": 110
+        }
+      }
+    },
+    "heldout_mechanism_composition": {
+      "per_seed_episode_mean_brier": {
+        "mean": 0.2074324231292508,
+        "low": 0.18591240804118894,
+        "high": 0.23106455910032775,
+        "n": 64
+      },
+      "constant_half_probability_brier": 0.25,
+      "phases": {
+        "early_t1_4": {
+          "mean_brier": 0.23929516977718324,
+          "decisions": 1287
+        },
+        "middle_t5_10": {
+          "mean_brier": 0.1994521728341136,
+          "decisions": 2623
+        },
+        "late_t11_plus": {
+          "mean_brier": 0.17347214673312314,
+          "decisions": 166
+        }
+      }
+    },
+    "heldout_deck_structure": {
+      "per_seed_episode_mean_brier": {
+        "mean": 0.22889155407706235,
+        "low": 0.2073753050995521,
+        "high": 0.2506570074670736,
+        "n": 64
+      },
+      "constant_half_probability_brier": 0.25,
+      "phases": {
+        "early_t1_4": {
+          "mean_brier": 0.26191292794850574,
+          "decisions": 1220
+        },
+        "middle_t5_10": {
+          "mean_brier": 0.21234045596451304,
+          "decisions": 2103
+        },
+        "late_t11_plus": {
+          "mean_brier": 0.14953245067865314,
+          "decisions": 50
+        }
+      }
+    },
+    "heldout_opponent": {
+      "per_seed_episode_mean_brier": {
+        "mean": 0.2554351468029321,
+        "low": 0.23482212810634134,
+        "high": 0.276583390789384,
+        "n": 64
+      },
+      "constant_half_probability_brier": 0.25,
+      "phases": {
+        "early_t1_4": {
+          "mean_brier": 0.26018121606936934,
+          "decisions": 1475
+        },
+        "middle_t5_10": {
+          "mean_brier": 0.2631577885378631,
+          "decisions": 1698
+        }
+      }
+    }
+  },
+  "new_simulations": 0,
+  "meaning": "Saved-data contracts, split non-overlap and reproducibility; no independent server-rule certification."
+}

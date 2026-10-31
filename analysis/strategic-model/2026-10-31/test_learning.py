@@ -5,11 +5,11 @@ import copy, gzip, json, tempfile, unittest
 import numpy as np
 from mechanisms import Spec, Effect, compile_text, silence, UnsupportedRule
 from environment import LearningGame, Unit, Config, bridge
-from agents import LearnedAgent, FixedAgent, public_attack, lethal_plan
+from agents import LearnedAgent, FixedAgent, public_attack, lethal_plan, value_guided_attacks
 from features import encode, STATE_DIM, ACTION_DIM
 from learner import Network
 from records import Recorder, load_episodes
-from study import catalog, training_specs, interval
+from study import catalog, training_specs, interval, bounded_interval, guarded_game
 
 WORK = Path('/workspace/undercards/work/ml-route')
 WORK.mkdir(parents=True, exist_ok=True)
@@ -180,6 +180,32 @@ class LearningChecks(unittest.TestCase):
     def test_pairing_preserves_no_draw_outcomes_in_denominator(self):
         result = interval([0., 0., 1., 0.])
         self.assertEqual((result['n'], result['mean']), (4, .25))
+
+    def test_unresolved_game_has_completion_bounds_not_a_draw(self):
+        result = bounded_interval([0., .5, 1.], [0., 1., 1.])
+        self.assertIsNone(result['mean']); self.assertEqual(result['n'], 3)
+        self.assertEqual(result['completion_mean_range'], [.5, 2 / 3])
+
+    def test_guarded_budget_failure_is_unlabelled(self):
+        r = guarded_game(Spec('fixture', 2, 2, 2), 930050, Config(), 'wide',
+                         (FixedAgent(bridge.ROWS[0]), FixedAgent(bridge.COLS[0])), decision_seconds=0.)
+        self.assertTrue(r['unfinished']); self.assertIsNone(r['won']); self.assertIsNone(r['lost'])
+        self.assertGreater(r['failure_seconds'], 0)
+
+    def test_value_guided_search_uses_neural_prior_and_respects_bound(self):
+        g = self.game(); a, b = g.players
+        a.units = [unit(1, 2, 5), unit(2, 4, 5)]; b.units = [unit(9, 1, 2, taunt=True)]; b.hp = 4
+        class FakeNetwork:
+            calls = 0
+            def forward(self, state, actions):
+                self.calls += 1
+                p = np.arange(1, len(actions) + 1, dtype=float); p /= p.sum()
+                return p, float(1 - state[1]), None
+        model = FakeNetwork(); obs = g.observation(0)
+        plan, nodes = value_guided_attacks(obs, model, 8)
+        self.assertTrue(plan); self.assertLessEqual(nodes, 8); self.assertEqual(nodes, model.calls)
+        for action in plan: g.apply(0, action)
+        self.assertLessEqual(b.hp, 0)
 
 
 if __name__ == '__main__': unittest.main(verbosity=2)

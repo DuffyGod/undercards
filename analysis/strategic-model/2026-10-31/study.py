@@ -110,6 +110,15 @@ def run_game(spec, seed, cfg, structure, agents, recorder=None, **kwargs):
     return result
 
 
+def guarded_game(spec, seed, cfg, structure, agents, **kwargs):
+    try:
+        return run_game(spec, seed, cfg, structure, agents, **kwargs)
+    except (DecisionBudgetExceeded, UnsupportedRule) as exc:
+        return dict(seed=seed, won=None, lost=None, unfinished=True, error=repr(exc),
+                    failure_actor=getattr(exc, 'actor', None), failure_seconds=getattr(exc, 'seconds', None),
+                    decision_seconds=[[], []])
+
+
 def train(dest):
     design = json.loads((dest / 'design.json').read_text()); source = source_commit()
     if (dest / 'training.json').exists(): raise ValueError('Never repeat/overwrite an official training run')
@@ -255,9 +264,9 @@ def evaluate(dest, reuse_decisions=None, reuse_evaluation=None):
                             spec = from_dict(case['spec'])
                             cfg = Config(rounds=40, seat=seat, soul='INTEGRITY', response_kind='sweep')
                             key = case['group'], seed, seat, agent.name
-                            cached = cache.get((case['group'], seed, seat)) if row == 0 else None
+                            cached = cache.pop((case['group'], seed, seat), None) if row == 0 else None
                             if key in cached_records:
-                                result = dict(cached_records[key])
+                                result = dict(cached_records.pop(key))
                                 result['decision_seconds'] = result.pop('decision_usage', [[], []])
                                 if row == 0 and cached is not None:
                                     result['decision_seconds'] = [[r['seconds'] for r in cached.rows if r['observation']['player'] == a] for a in (0, 1)]
@@ -332,7 +341,8 @@ def evaluate(dest, reuse_decisions=None, reuse_evaluation=None):
 
 def replacements(dest):
     source = source_commit(); design = json.loads((dest / 'design.json').read_text())
-    if (dest / 'replacements.json').exists(): raise ValueError('Replacement evidence cannot be overwritten')
+    if (dest / 'replacements.json').exists() or (dest / 'replacement-records.jsonl.gz').exists():
+        raise ValueError('Replacement evidence cannot be overwritten')
     net, _ = Network.load(dest / 'policy.npz'); fingerprint = net.fingerprint
     mapped, _ = catalog(); all_scores = {}; diagnostic = {}; ruling = []
     with gzip.open(dest / 'replacement-records.jsonl.gz', 'wt', encoding='utf-8') as sink:
@@ -341,22 +351,24 @@ def replacements(dest):
             for seed in design['replacement_seeds']:
                 paired = []
                 for seat in (0, 1):
-                    result = run_game(mapped[name], seed, Config(rounds=40, seat=seat), 'wide',
+                    result = guarded_game(mapped[name], seed, Config(rounds=40, seat=seat), 'wide',
                         (LearnedAgent(net, search_nodes=design['search_nodes']), FixedAgent(bridge.COLS[0])),
                         silence_mode=design['silence_mode'], decision_seconds=design['decision_seconds'])
-                    if result['unfinished']: raise ValueError('Unfinished replacement stays unresolved')
                     r = {k: v for k, v in result.items() if k not in ('trace', 'snapshots', 'decision_seconds')}
                     r.update(card=name, seat=seat); sink.write(json.dumps(r, separators=(',', ':')) + '\n')
-                    rows.append(r); paired.append(float(result['won']))
-                scores.append(float(np.mean(paired)))
+                    rows.append(r); paired.append(None if result['unfinished'] else float(result['won']))
+                scores.append((float(np.mean([0 if x is None else x for x in paired])),
+                               float(np.mean([1 if x is None else x for x in paired]))))
             all_scores[name] = scores
-            diagnostic[name] = dict(win=interval(scores), games=len(rows), never_received=sum(r['candidate_drawn'] == 0 for r in rows),
-                received_unplayed=sum(r['candidate_drawn'] > 0 and not r['candidate_played'] for r in rows),
-                played=sum(r['candidate_played'] > 0 for r in rows), burned=sum(r['candidate_burned'] for r in rows),
-                wait_turns=sum(r['candidate_wait'] for r in rows), unfunded_turns=sum(r['candidate_unfunded_turns'] for r in rows),
-                slot_blocked_turns=sum(r['candidate_slot_blocked_turns'] for r in rows),
-                first_punished_games=sum(r['first_punished'] > 0 for r in rows))
-            print(json.dumps(dict(replacement=name, win=float(np.mean(scores)))), flush=True)
+            diagnostic[name] = dict(win=bounded_interval(*np.asarray(scores).T), games=len(rows),
+                unfinished=sum(r['unfinished'] for r in rows), diagnostic_unknown=sum('candidate_drawn' not in r for r in rows),
+                never_received=sum(r.get('candidate_drawn') == 0 for r in rows),
+                received_unplayed=sum(r.get('candidate_drawn', 0) > 0 and not r.get('candidate_played', 0) for r in rows),
+                played=sum(r.get('candidate_played', 0) > 0 for r in rows), burned=sum(r.get('candidate_burned', 0) for r in rows),
+                wait_turns=sum(r.get('candidate_wait', 0) for r in rows), unfunded_turns=sum(r.get('candidate_unfunded_turns', 0) for r in rows),
+                slot_blocked_turns=sum(r.get('candidate_slot_blocked_turns', 0) for r in rows),
+                first_punished_games=sum(r.get('first_punished', 0) > 0 for r in rows))
+            print(json.dumps(dict(replacement=name, win=diagnostic[name]['win'])), flush=True)
     # A deliberately unresolved ruling gets two explicit worlds, using one
     # frozen policy. No world is advertised as a current-server fact.
     grow = Spec('synthetic_growth', 3, 2, 4, effects=(Effect('end', 'buff', 'self', 1, 1),))
@@ -364,16 +376,18 @@ def replacements(dest):
     for mode in ('retain', 'reset'):
         scores = []
         for seed in design['replacement_seeds'][:16]:
-            r = run_game(silence_spec, seed + 10000, Config(rounds=40), 'wide',
+            r = guarded_game(silence_spec, seed + 10000, Config(rounds=40), 'wide',
                 (LearnedAgent(net, search_nodes=design['search_nodes']), LearnedAgent(net, search_nodes=design['search_nodes'])),
                 opponent_candidate=grow, silence_mode=mode, decision_seconds=design['decision_seconds'])
             scores.append(None if r['unfinished'] else float(r['won']))
         ruling.append(dict(silence_mode=mode, scores=scores, seed_start=design['replacement_seeds'][0] + 10000,
-                           win=interval([x for x in scores if x is not None]), unfinished=scores.count(None)))
+                           win=bounded_interval([0 if x is None else x for x in scores], [1 if x is None else x for x in scores]),
+                           unfinished=scores.count(None)))
     if fingerprint != net.fingerprint: raise ValueError('Policy changed across candidate comparisons')
     baseline = np.asarray(all_scores['Rock Pet'])
     dump(dest / 'replacements.json', dict(source_commit=source, frozen_policy=fingerprint, baseline='Rock Pet',
-        cards=[dict(card=name, diagnostics=diagnostic[name], carrying_win_difference=interval(np.asarray(scores) - baseline))
+        cards=[dict(card=name, diagnostics=diagnostic[name], carrying_win_difference=bounded_interval(
+                    np.asarray(scores)[:, 0] - baseline[:, 1], np.asarray(scores)[:, 1] - baseline[:, 0]))
                for name, scores in all_scores.items()], silence_sensitivity=ruling,
         estimand='Three predeclared entity slots replaced before shuffle; all shared seeds retained, including no draw/no play. Same frozen policy, no per-card retraining or diagnosis penalties added.',
         scope='Conditional aggregate-role host; primitive interactions only, no tribal synergies or real environment weights.'))
@@ -381,7 +395,8 @@ def replacements(dest):
 
 def ablate(dest):
     source = source_commit(); design = json.loads((dest / 'design.json').read_text())
-    if (dest / 'value-search-ablation.json').exists(): raise ValueError('Preserve existing ablation')
+    if (dest / 'value-search-ablation.json').exists() or (dest / 'value-search-ablation-records.jsonl.gz').exists():
+        raise ValueError('Preserve existing ablation')
     net, _ = Network.load(dest / 'policy.npz'); base = {}
     with gzip.open(dest / 'evaluation-records.jsonl.gz', 'rt') as f:
         for r in map(json.loads, f):
@@ -393,18 +408,23 @@ def ablate(dest):
             for seed in design['evaluation_seeds'][:design['value_search_ablation_seeds']]:
                 seat_difference = []; seat_wins = []
                 for seat in (0, 1):
-                    r = run_game(from_dict(case['spec']), seed, Config(rounds=40, seat=seat), case['structure'],
+                    r = guarded_game(from_dict(case['spec']), seed, Config(rounds=40, seat=seat), case['structure'],
                         (LearnedAgent(net, search_nodes=design['search_nodes'], value_nodes=design['value_search_ablation_nodes']),
                          FixedAgent(OPPONENTS[case['opponent']])), silence_mode=design['silence_mode'],
                         decision_seconds=design['decision_seconds'])
-                    if r['unfinished']: raise ValueError('Unresolved ablation')
-                    maximum = max(maximum, max(r['decision_seconds'][0]))
-                    row = dict(group=case['group'], seed=seed, seat=seat, won=r['won'], lost=r['lost'],
-                               max_seconds=max(r['decision_seconds'][0]), baseline_won=base[case['group'], seed, seat]['won'])
-                    sink.write(json.dumps(row) + '\n'); seat_wins.append(float(r['won']))
-                    seat_difference.append(float(r['won']) - float(row['baseline_won']))
-                differences.append(float(np.mean(seat_difference))); wins.append(float(np.mean(seat_wins)))
-            output.append(dict(group=case['group'], win=interval(wins), gain_over_policy_plus_lethal=interval(differences),
+                    times = r['decision_seconds'][0]
+                    maximum = max(maximum, max(times, default=0.))
+                    baseline_row = base[case['group'], seed, seat]
+                    row = dict(group=case['group'], seed=seed, seat=seat, won=r['won'], lost=r['lost'], unfinished=r['unfinished'],
+                               max_seconds=max(times, default=None), baseline_won=baseline_row['won'], error=r.get('error'))
+                    sink.write(json.dumps(row) + '\n')
+                    alt_low = 0 if r['unfinished'] else float(r['won']); alt_high = 1 if r['unfinished'] else float(r['won'])
+                    base_low = 0 if baseline_row['unfinished'] else float(baseline_row['won'])
+                    base_high = 1 if baseline_row['unfinished'] else float(baseline_row['won'])
+                    seat_wins.append((alt_low, alt_high)); seat_difference.append((alt_low - base_high, alt_high - base_low))
+                differences.append(np.mean(seat_difference, axis=0)); wins.append(np.mean(seat_wins, axis=0))
+            output.append(dict(group=case['group'], win=bounded_interval(*np.asarray(wins).T),
+                               gain_over_policy_plus_lethal=bounded_interval(*np.asarray(differences).T),
                                max_decision_seconds=maximum))
             print(json.dumps(output[-1]), flush=True)
     dump(dest / 'value-search-ablation.json', dict(source_commit=source, frozen_policy=net.fingerprint,
