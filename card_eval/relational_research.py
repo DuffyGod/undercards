@@ -228,6 +228,64 @@ def value(folder):
     print(json.dumps(json.loads((folder / 'value.json').read_text())), flush=True)
 
 
+def load_value_data(folder, name):
+    episodes = []
+    for path in sorted(folder.glob(f'value-{name}-*.jsonl.gz')):
+        pending = {}
+        with gzip.open(path, 'rt', encoding='utf-8') as stream:
+            for line in stream:
+                row = json.loads(line); key = row['episode']
+                if row['record_type'] == 'decision':
+                    if row['observation']['player'] == 0:
+                        pending.setdefault(key, []).append(state_features(row['observation']))
+                else:
+                    r = row['result']; episodes.append(dict(seed=key, states=pending.pop(key, []),
+                        terminal=not r['unfinished'], won=r['won']))
+        if pending: raise ValueError('Value input has unclosed episodes')
+    if not episodes: raise ValueError('Missing value trajectories')
+    return episodes
+
+
+def phase_metrics(net, episodes, constant):
+    output = {}
+    for phase in ('opening', 'early_turns_1_5', 'middle_turns_6_12', 'late_turns_13_plus'):
+        subset = []
+        for e in episodes:
+            states = e['states'][:1] if phase == 'opening' else [s for s in e['states'] if
+                (s[5] * 30 <= 5 if phase == 'early_turns_1_5' else
+                 5 < s[5] * 30 <= 12 if phase == 'middle_turns_6_12' else s[5] * 30 > 12)]
+            if states: subset.append(dict(e, states=states))
+        output[phase] = dict(episodes_with_predictions=len(subset), episodes_without_phase=len(episodes) - len(subset),
+                             metrics=value_metrics(net, subset, constant) if subset else None)
+    return output
+
+
+def value_diagnostics(folder):
+    """Secondary diagnostics fixed before final; no actor/critic retuning."""
+    if (folder / 'value-baselines.json').exists(): raise ValueError('Preserve secondary diagnostics')
+    net = Network.load(folder / 'primary-value.npz')[0]; train = load_value_data(folder, 'train')
+    constant = json.loads((folder / 'value.json').read_text())['train_prior']
+    # Intercept, HP, board ATK/HP and remaining deck differences only.
+    def reduced(s): return np.array([1., s[1] - s[2], s[26] - s[39], s[27] - s[40], s[8] - s[9]])
+    xs = []; ys = []; weights = []
+    for e in train:
+        if not e['terminal']: continue
+        xs.extend(map(reduced, e['states'])); ys.extend([int(e['won'])] * len(e['states']))
+        weights.extend([1 / len(e['states'])] * len(e['states']))
+    baseline = RelationalNetwork(net.actor.copy()); fit = baseline.fit_value(xs, ys, weights, l2=.01)
+    w = baseline.critic.copy(); baseline.critic = np.zeros(74); baseline.critic[0] = w[0]
+    for value, (pos, neg) in zip(w[1:], ((1, 2), (26, 39), (27, 40), (8, 9))):
+        baseline.critic[pos] = value; baseline.critic[neg] = -value
+    baseline.save(folder / 'value-hp-board.npz', dict(source_commit=commit(), validation=dict(qualified=False),
+        purpose='Frozen secondary value baseline; actor identical; five coefficients only.'))
+    dev = load_value_data(folder, 'dev')
+    dump(folder / 'value-baselines.json', dict(source_commit=commit(), fit=fit, primary_fingerprint=net.fingerprint,
+        baseline_fingerprint=baseline.fingerprint, actor_identical=net.actor_fingerprint == baseline.actor_fingerprint,
+        status='Secondary diagnostics declared after development, before final; no reselection/retuning.',
+        development=dict(primary=value_metrics(net, dev, constant), hp_board=value_metrics(baseline, dev, constant)),
+        phases=phase_metrics(net, dev, constant)))
+
+
 class ReservePolicy:
     """Unseen opponent deliberately waits to afford a visible expensive body."""
     name = 'unseen_public_reserve'
@@ -290,9 +348,11 @@ def final(folder):
             print(json.dumps(dict(group=group, wins={c['policy']: c['win']['completion_range'] for c in comparisons})), flush=True)
     prior = json.loads((folder / 'value.json').read_text())['train_prior']
     val = value_data(folder, net, 'final', d['value_final_seeds'])
+    baseline = Network.load(folder / 'value-hp-board.npz')[0]
     qualified = not failures and all(c['primary_gain']['low'] > 0 for g in groups for c in g['policies'] if c['policy'] in ('race', 'board', 'guard'))
     result = dict(status='complete', source_commit=commit(), groups=groups, failures=failures,
         qualified=qualified, primary_fingerprint=net.fingerprint, value_final=value_metrics(net, val, prior),
+        value_hp_board_final=value_metrics(baseline, val, prior), value_phases_final=phase_metrics(net, val, prior),
         elapsed_seconds=time.monotonic() - elapsed, no_final_selection=True, real_server_certified=False,
         acceptance=d['acceptance'], limitation=d['limitation'])
     dump(folder / 'final.json', result)
@@ -301,6 +361,6 @@ def final(folder):
 
 
 if __name__ == '__main__':
-    p = argparse.ArgumentParser(); p.add_argument('mode', choices=['prepare', 'fit', 'development', 'value', 'final'])
+    p = argparse.ArgumentParser(); p.add_argument('mode', choices=['prepare', 'fit', 'development', 'value', 'value_diagnostics', 'final'])
     p.add_argument('--output', type=Path, required=True); args = p.parse_args()
     globals()[args.mode](args.output)
