@@ -1,0 +1,19 @@
+{
+  "development_recovered": true,
+  "development_slots": 240,
+  "development_unresolved": 0,
+  "previous_pids": [
+    6255,
+    7313
+  ],
+  "previous_pids_observed_state": "zombie",
+  "os_lock_acquired_before_modification": true,
+  "previous_push": "not executed: automatic approval review usage limit",
+  "approval_error_was_not_unsafe_determination": true,
+  "retry": "normal git push after service retry time; no approval bypass",
+  "source_tests": {
+    "passed": 42,
+    "elapsed_seconds": 3.612
+  },
+  "final_started_before_this_snapshot": false
+}

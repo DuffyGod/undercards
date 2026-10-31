@@ -1,0 +1,27 @@
+{
+  "type": "old_constructed_witness_not_random_holdout",
+  "used_for_selection": false,
+  "predictions": {
+    "entity": {
+      "p": [
+        0.9147147276023105,
+        0.9147421418552091
+      ],
+      "p_A_minus_B": -2.7414252898538827e-05
+    },
+    "aggregate": {
+      "p": [
+        0.9039075568144079,
+        0.9039075568144079
+      ],
+      "p_A_minus_B": 0.0
+    },
+    "linear": {
+      "p": [
+        0.46736724868075347,
+        0.46736724868075347
+      ],
+      "p_A_minus_B": 0.0
+    }
+  }
+}

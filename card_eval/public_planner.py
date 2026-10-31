@@ -12,8 +12,8 @@ VERSION='public-own-turn-proof-first-2'
 class PublicPlanner(FrozenPlanner):
     name='shared_policy_public_proof_first'
 
-    def __init__(self,*args,**kwargs):
-        super().__init__(*args,**kwargs)
+    def __init__(self,network,mode='proof',margin=.1,nodes=48,depth=3,width=4,seconds=.12):
+        super().__init__(network,mode,margin,nodes,depth,width,seconds)
         self.config=dict(self.config,version=VERSION)
         self.fingerprint=hashlib.sha256((self.network.fingerprint+json.dumps(self.config,sort_keys=True)).encode()).hexdigest()
 

@@ -34,6 +34,7 @@ def main(argv=None):
         selection.add_argument('--model', help='选择随包训练模型；用 models 查看名称和验证状态')
         command.add_argument('--planner',choices=['proof','value'],help='实验性公开同回合搜索：确杀证明或学习价值')
         command.add_argument('--planner-margin',type=float,default=.1,help='价值搜索偏离基线的概率差门槛，默认.1')
+        command.add_argument('--planner-seconds',type=float,default=.12,help='搜索内部秒数界限，默认.12，须小于共同决策上限')
     args = parser.parse_args(argv)
     try:
         if args.command == 'models':
@@ -70,7 +71,7 @@ def main(argv=None):
             request['allow_unqualified_policy'] = True
             request.setdefault('policies', ['learned'] if args.model else ['learned', 'race', 'board', 'guard'])
         if args.planner:
-            request['planner']=dict(mode=args.planner,margin=args.planner_margin)
+            request['planner']=dict(mode=args.planner,margin=args.planner_margin,seconds=args.planner_seconds)
             request.setdefault('policies',['learned'])
         checkpoint = args.checkpoint
         if args.model:

@@ -71,7 +71,7 @@ def validate(request):
             raise InputError([_issue('planner','configuration','Use a planner object with mode/margin/nodes/depth/width/seconds')])
         if not ('learned' in policies or any(o['policy']=='learned' for o in opps)):
             raise InputError([_issue('planner','learned_required','Public planning needs a learned policy')])
-        config=dict(mode='proof',margin=.1,nodes=48,depth=3,width=4,seconds=.18);config.update(planner)
+        config=dict(mode='proof',margin=.1,nodes=48,depth=3,width=4,seconds=.12);config.update(planner)
         if (config['mode'] not in ('proof','value') or any(type(config[k]) is not int or not 1<=config[k]<=128 for k in ('nodes','depth','width'))
             or any(type(config[k]) not in (int,float) or not np.isfinite(config[k]) for k in ('margin','seconds'))
             or not 0<=config['margin']<=1 or not 0<config['seconds']<min(.25,float(budget))):

@@ -16,7 +16,7 @@ def build(output):
     selected=[]
     for name in tracked:
         if not name:continue
-        include=(name.startswith(('card_eval/','tests/','examples/','artifacts/card_eval/v5/','artifacts/card_eval/v6/','artifacts/card_eval/v7/','artifacts/card_eval/v8/')) or
+        include=(name.startswith(('card_eval/','tests/','examples/','artifacts/card_eval/v5/','artifacts/card_eval/v6/','artifacts/card_eval/v7/','artifacts/card_eval/v8/','artifacts/card_eval/v9/')) or
                  name in ('pyproject.toml','README.md','AGENTS.md','CURRENT_CHECKPOINT.md','RESEARCH_PRINCIPLES.md','RESEARCH_AUTOMATION.md',
                           'artifacts/card_eval/v4/primary-value.npz','artifacts/card_eval/v4/validation.json'))
         if include:selected.append(name)
@@ -24,13 +24,13 @@ def build(output):
     if not wheel.is_file():raise ValueError('Build and verify wheel first')
     prefix=f'undercards-card-evaluator-{__version__}'
     manifest=dict(version=__version__,source_commit=revision,source_branch='research/local-method-lab-20261018',
-                  completeness='Runnable application, named trained models, source and necessary V5/V6/V7/V8 inputs/evidence. Supported game rules and policy quality remain limited.',files={})
+                  completeness='Runnable application, named trained models, source and necessary V5/V6/V7/V8/V9 inputs/evidence. Supported game rules and policy quality remain limited.',files={})
     def add(archive,name,data):
         archive.writestr(prefix+'/'+name,data);manifest['files'][name]=hashlib.sha256(data).hexdigest()
     output.parent.mkdir(parents=True,exist_ok=True)
     with zipfile.ZipFile(output,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as archive:
         add(archive,wheel.name,wheel.read_bytes())
-        add(archive,'START_HERE.md',(ROOT/'artifacts/card_eval/v8/START_HERE.md').read_bytes())
+        add(archive,'START_HERE.md',(ROOT/'artifacts/card_eval/v9/START_HERE.md').read_bytes())
         for example in ('reference-request.json','learned-request.json','planner-request.json'):
             add(archive,'examples/'+example,(ROOT/'card_eval/examples'/example).read_bytes())
         for name in selected:add(archive,'source/'+name,(ROOT/name).read_bytes())
