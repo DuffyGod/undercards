@@ -50,6 +50,9 @@ class Network(learner.Network):
     def load(cls, path):
         with np.load(path, allow_pickle=False) as data:
             meta = json.loads(str(data['metadata']))
+            if meta.get('model_kind') == 'ordered_action_value':
+                from .action_value import ActionValueNetwork
+                return ActionValueNetwork.load(path)
             if meta.get('model_kind') == 'entity_continuation':
                 from .entity_value import EntityValueNetwork
                 return EntityValueNetwork.load(path)
