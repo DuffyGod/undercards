@@ -1,0 +1,2737 @@
+{
+  "source_commit": "a80a3a1b4133defcff1c19152a8c7bc22c9d7077",
+  "selected": "ppo-096.npz",
+  "candidates": [
+    {
+      "checkpoint": "warmup.npz",
+      "development_score": 0.14583333333333334,
+      "records": [
+        {
+          "profile": "pressure",
+          "seed": 1111000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111000,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111001,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111002,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111008,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111011,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111013,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "ppo-016.npz",
+      "development_score": 0.14583333333333334,
+      "records": [
+        {
+          "profile": "pressure",
+          "seed": 1111000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111000,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111001,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111002,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111008,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111011,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111013,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "ppo-032.npz",
+      "development_score": 0.14583333333333334,
+      "records": [
+        {
+          "profile": "pressure",
+          "seed": 1111000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111000,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111001,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111002,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111008,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111011,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111013,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "ppo-048.npz",
+      "development_score": 0.14583333333333334,
+      "records": [
+        {
+          "profile": "pressure",
+          "seed": 1111000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111009,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111000,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111001,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111002,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111008,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111011,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "ppo-064.npz",
+      "development_score": 0.14583333333333334,
+      "records": [
+        {
+          "profile": "pressure",
+          "seed": 1111000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111000,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111001,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111002,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111008,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111011,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111013,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "ppo-080.npz",
+      "development_score": 0.14583333333333334,
+      "records": [
+        {
+          "profile": "pressure",
+          "seed": 1111000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111009,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111000,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111001,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111002,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111008,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111011,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "ppo-096.npz",
+      "development_score": 0.1875,
+      "records": [
+        {
+          "profile": "pressure",
+          "seed": 1111000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111009,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "pressure",
+          "seed": 1111015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111000,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111001,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111002,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111008,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111010,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111011,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111012,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111013,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "defense",
+          "seed": 1111015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111000,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111001,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111002,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111003,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111004,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111005,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111006,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111007,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111008,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111009,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111010,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111011,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111012,
+          "seat": 0,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111013,
+          "seat": 1,
+          "won": true,
+          "lost": false,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111014,
+          "seat": 0,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        },
+        {
+          "profile": "refill",
+          "seed": 1111015,
+          "seat": 1,
+          "won": false,
+          "lost": true,
+          "unfinished": false
+        }
+      ]
+    }
+  ],
+  "selection": "Development only, ties retain earlier checkpoint. Test outcome has not been read."
+}

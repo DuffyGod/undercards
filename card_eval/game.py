@@ -17,7 +17,11 @@ class NativeGame(environment.LearningGame):
         self.native_decks = tuple(tuple(d) for d in decks); self.souls = tuple(souls)
         self.replacement_slots = frozenset(replacement_slots)
         candidate = self.native_decks[0][replacement_slots[0]]
-        super().__init__('wide', seed, Config(rounds=40, seat=seats, soul=souls[0]), candidate,
+        # With no deck-generation/return mechanics, natural draws exhaust25
+        # cards and fatigue31 kills before start-healing (hero ceiling30).
+        # Sixty own turns therefore covers supported healing stalls; this is
+        # a simulator completion bound, not a claimed server turn limit.
+        super().__init__('wide', seed, Config(rounds=60, seat=seats, soul=souls[0]), candidate,
                          agents, silence_mode=silence_mode, recorder=recorder, decision_seconds=decision_seconds)
         self.structure = 'explicit_25_card_decks'
         # Retain the exact initial entity permutations and opening draws.

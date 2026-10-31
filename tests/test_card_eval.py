@@ -100,5 +100,26 @@ class ProductChecks(unittest.TestCase):
         net.p['Wa'][index] = original
         self.assertAlmostEqual(grad['Wa'][index], (plus - minus) / (2 * eps), places=7)
 
+    def test_healing_stall_finishes_by_fatigue_without_a_guessed_deadline_winner(self):
+        class Staller:
+            name = 'only_play_start_healers'
+            def choose(self, obs, actions):
+                healers = {h['uid'] for h in obs['hand'] if any(e['trigger'] == 'start' and e['op'] == 'heal' for e in h['effects'])}
+                action = next((a for a in actions if a[0] == 'play' and a[1] in healers), actions[0])
+                return dict(action=action, action_index=actions.index(action), behavior_probability=1., value=0.,
+                            policy=self.name, search_override=False, seconds=0.)
+        cards = opponents()['defense']
+        game = NativeGame((cards, cards), 950050, (Staller(), Staller()), souls=('KINDNESS', 'KINDNESS'))
+        # A declared legal opening with all3 healers in hand isolates the long
+        # stall. A random full hand can otherwise burn late-drawn healers.
+        for actor, player in enumerate(game.players):
+            all_cards = player.hand + player.deck
+            player.hand = [h for h in all_cards if any(e.trigger == 'start' and e.op == 'heal' for e in game.spec(actor, h).effects)]
+            held = {h.uid for h in player.hand}
+            player.deck = [h for h in all_cards if h.uid not in held]
+        game.candidate_drawn = 0
+        result = game.run()
+        self.assertFalse(result['unfinished']); self.assertGreater(result['round'], 40); self.assertLessEqual(result['round'], 60)
+
 
 if __name__ == '__main__': unittest.main()
