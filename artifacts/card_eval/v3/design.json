@@ -1,0 +1,1693 @@
+{
+  "schema": 2,
+  "seed": 2026103102,
+  "source_commit": "1d4cee9e436a7732739909a1d31042b0fb872a88",
+  "pool": [
+    {
+      "name": "train_0_0",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "keywords": [],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_0_1",
+      "cost": 4,
+      "attack": 6,
+      "health": 2,
+      "keywords": [],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_0_2",
+      "cost": 0,
+      "attack": 0,
+      "health": 4,
+      "keywords": [],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_0_3",
+      "cost": 5,
+      "attack": 7,
+      "health": 4,
+      "keywords": [],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_0_4",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "keywords": [],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_0_5",
+      "cost": 1,
+      "attack": 0,
+      "health": 5,
+      "keywords": [],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_0_6",
+      "cost": 3,
+      "attack": 1,
+      "health": 4,
+      "keywords": [],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_0_7",
+      "cost": 3,
+      "attack": 7,
+      "health": 3,
+      "keywords": [],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_1_0",
+      "cost": 2,
+      "attack": 5,
+      "health": 4,
+      "keywords": [
+        [
+          "haste",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_1_1",
+      "cost": 1,
+      "attack": 0,
+      "health": 7,
+      "keywords": [
+        [
+          "haste",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_1_2",
+      "cost": 6,
+      "attack": 6,
+      "health": 8,
+      "keywords": [
+        [
+          "haste",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_1_3",
+      "cost": 4,
+      "attack": 5,
+      "health": 8,
+      "keywords": [
+        [
+          "haste",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_1_4",
+      "cost": 5,
+      "attack": 6,
+      "health": 6,
+      "keywords": [
+        [
+          "haste",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_1_5",
+      "cost": 3,
+      "attack": 6,
+      "health": 6,
+      "keywords": [
+        [
+          "haste",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_1_6",
+      "cost": 1,
+      "attack": 4,
+      "health": 3,
+      "keywords": [
+        [
+          "haste",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_1_7",
+      "cost": 3,
+      "attack": 6,
+      "health": 2,
+      "keywords": [
+        [
+          "haste",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_2_0",
+      "cost": 4,
+      "attack": 6,
+      "health": 2,
+      "keywords": [
+        [
+          "charge",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_2_1",
+      "cost": 1,
+      "attack": 3,
+      "health": 4,
+      "keywords": [
+        [
+          "charge",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_2_2",
+      "cost": 2,
+      "attack": 1,
+      "health": 9,
+      "keywords": [
+        [
+          "charge",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_2_3",
+      "cost": 2,
+      "attack": 1,
+      "health": 3,
+      "keywords": [
+        [
+          "charge",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_2_4",
+      "cost": 3,
+      "attack": 3,
+      "health": 2,
+      "keywords": [
+        [
+          "charge",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_2_5",
+      "cost": 2,
+      "attack": 0,
+      "health": 4,
+      "keywords": [
+        [
+          "charge",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_2_6",
+      "cost": 5,
+      "attack": 5,
+      "health": 7,
+      "keywords": [
+        [
+          "charge",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_2_7",
+      "cost": 2,
+      "attack": 3,
+      "health": 2,
+      "keywords": [
+        [
+          "charge",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_3_0",
+      "cost": 2,
+      "attack": 3,
+      "health": 4,
+      "keywords": [
+        [
+          "taunt",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_3_1",
+      "cost": 4,
+      "attack": 7,
+      "health": 9,
+      "keywords": [
+        [
+          "taunt",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_3_2",
+      "cost": 3,
+      "attack": 0,
+      "health": 7,
+      "keywords": [
+        [
+          "taunt",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_3_3",
+      "cost": 1,
+      "attack": 2,
+      "health": 1,
+      "keywords": [
+        [
+          "taunt",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_3_4",
+      "cost": 1,
+      "attack": 0,
+      "health": 1,
+      "keywords": [
+        [
+          "taunt",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_3_5",
+      "cost": 2,
+      "attack": 1,
+      "health": 1,
+      "keywords": [
+        [
+          "taunt",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_3_6",
+      "cost": 1,
+      "attack": 1,
+      "health": 5,
+      "keywords": [
+        [
+          "taunt",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_3_7",
+      "cost": 4,
+      "attack": 5,
+      "health": 4,
+      "keywords": [
+        [
+          "taunt",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_4_0",
+      "cost": 2,
+      "attack": 5,
+      "health": 5,
+      "keywords": [
+        [
+          "armor",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_4_1",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "keywords": [
+        [
+          "armor",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_4_2",
+      "cost": 3,
+      "attack": 5,
+      "health": 6,
+      "keywords": [
+        [
+          "armor",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_4_3",
+      "cost": 6,
+      "attack": 7,
+      "health": 8,
+      "keywords": [
+        [
+          "armor",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_4_4",
+      "cost": 0,
+      "attack": 0,
+      "health": 1,
+      "keywords": [
+        [
+          "armor",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_4_5",
+      "cost": 4,
+      "attack": 4,
+      "health": 9,
+      "keywords": [
+        [
+          "armor",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_4_6",
+      "cost": 1,
+      "attack": 4,
+      "health": 2,
+      "keywords": [
+        [
+          "armor",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_4_7",
+      "cost": 5,
+      "attack": 3,
+      "health": 9,
+      "keywords": [
+        [
+          "armor",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_5_0",
+      "cost": 3,
+      "attack": 4,
+      "health": 2,
+      "keywords": [
+        [
+          "dodge",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_5_1",
+      "cost": 4,
+      "attack": 4,
+      "health": 7,
+      "keywords": [
+        [
+          "dodge",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_5_2",
+      "cost": 3,
+      "attack": 7,
+      "health": 4,
+      "keywords": [
+        [
+          "dodge",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_5_3",
+      "cost": 3,
+      "attack": 4,
+      "health": 4,
+      "keywords": [
+        [
+          "dodge",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_5_4",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "keywords": [
+        [
+          "dodge",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_5_5",
+      "cost": 5,
+      "attack": 5,
+      "health": 8,
+      "keywords": [
+        [
+          "dodge",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_5_6",
+      "cost": 2,
+      "attack": 4,
+      "health": 2,
+      "keywords": [
+        [
+          "dodge",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_5_7",
+      "cost": 3,
+      "attack": 6,
+      "health": 6,
+      "keywords": [
+        [
+          "dodge",
+          1
+        ]
+      ],
+      "effects": [],
+      "card_id": null
+    },
+    {
+      "name": "train_6_0",
+      "cost": 4,
+      "attack": 5,
+      "health": 7,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "draw",
+          "scope": "owner",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_6_1",
+      "cost": 3,
+      "attack": 0,
+      "health": 4,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "draw",
+          "scope": "owner",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_6_2",
+      "cost": 3,
+      "attack": 1,
+      "health": 4,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "draw",
+          "scope": "owner",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_6_3",
+      "cost": 3,
+      "attack": 3,
+      "health": 2,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "draw",
+          "scope": "owner",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_6_4",
+      "cost": 3,
+      "attack": 5,
+      "health": 1,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "draw",
+          "scope": "owner",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_6_5",
+      "cost": 4,
+      "attack": 5,
+      "health": 4,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "draw",
+          "scope": "owner",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_6_6",
+      "cost": 1,
+      "attack": 1,
+      "health": 3,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "draw",
+          "scope": "owner",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_6_7",
+      "cost": 3,
+      "attack": 0,
+      "health": 9,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "draw",
+          "scope": "owner",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_7_0",
+      "cost": 3,
+      "attack": 3,
+      "health": 1,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "end",
+          "op": "draw",
+          "scope": "owner",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_7_1",
+      "cost": 5,
+      "attack": 6,
+      "health": 9,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "end",
+          "op": "draw",
+          "scope": "owner",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_7_2",
+      "cost": 5,
+      "attack": 4,
+      "health": 5,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "end",
+          "op": "draw",
+          "scope": "owner",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_7_3",
+      "cost": 4,
+      "attack": 3,
+      "health": 9,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "end",
+          "op": "draw",
+          "scope": "owner",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_7_4",
+      "cost": 6,
+      "attack": 3,
+      "health": 9,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "end",
+          "op": "draw",
+          "scope": "owner",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_7_5",
+      "cost": 4,
+      "attack": 4,
+      "health": 6,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "end",
+          "op": "draw",
+          "scope": "owner",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_7_6",
+      "cost": 7,
+      "attack": 7,
+      "health": 7,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "end",
+          "op": "draw",
+          "scope": "owner",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_7_7",
+      "cost": 4,
+      "attack": 3,
+      "health": 5,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "end",
+          "op": "draw",
+          "scope": "owner",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_8_0",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "start",
+          "op": "buff",
+          "scope": "self",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_8_1",
+      "cost": 6,
+      "attack": 6,
+      "health": 9,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "start",
+          "op": "buff",
+          "scope": "self",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_8_2",
+      "cost": 3,
+      "attack": 2,
+      "health": 5,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "start",
+          "op": "buff",
+          "scope": "self",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_8_3",
+      "cost": 3,
+      "attack": 3,
+      "health": 4,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "start",
+          "op": "buff",
+          "scope": "self",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_8_4",
+      "cost": 6,
+      "attack": 4,
+      "health": 8,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "start",
+          "op": "buff",
+          "scope": "self",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_8_5",
+      "cost": 3,
+      "attack": 4,
+      "health": 2,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "start",
+          "op": "buff",
+          "scope": "self",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_8_6",
+      "cost": 4,
+      "attack": 4,
+      "health": 4,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "start",
+          "op": "buff",
+          "scope": "self",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_8_7",
+      "cost": 2,
+      "attack": 0,
+      "health": 1,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "start",
+          "op": "buff",
+          "scope": "self",
+          "amount": 1,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_9_0",
+      "cost": 3,
+      "attack": 2,
+      "health": 3,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "end",
+          "op": "buff",
+          "scope": "self",
+          "amount": 1,
+          "health": 1
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_9_1",
+      "cost": 4,
+      "attack": 3,
+      "health": 9,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "end",
+          "op": "buff",
+          "scope": "self",
+          "amount": 1,
+          "health": 1
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_9_2",
+      "cost": 4,
+      "attack": 2,
+      "health": 8,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "end",
+          "op": "buff",
+          "scope": "self",
+          "amount": 1,
+          "health": 1
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_9_3",
+      "cost": 5,
+      "attack": 4,
+      "health": 6,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "end",
+          "op": "buff",
+          "scope": "self",
+          "amount": 1,
+          "health": 1
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_9_4",
+      "cost": 5,
+      "attack": 5,
+      "health": 6,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "end",
+          "op": "buff",
+          "scope": "self",
+          "amount": 1,
+          "health": 1
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_9_5",
+      "cost": 4,
+      "attack": 5,
+      "health": 6,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "end",
+          "op": "buff",
+          "scope": "self",
+          "amount": 1,
+          "health": 1
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_9_6",
+      "cost": 4,
+      "attack": 5,
+      "health": 3,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "end",
+          "op": "buff",
+          "scope": "self",
+          "amount": 1,
+          "health": 1
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_9_7",
+      "cost": 3,
+      "attack": 0,
+      "health": 5,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "end",
+          "op": "buff",
+          "scope": "self",
+          "amount": 1,
+          "health": 1
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_10_0",
+      "cost": 2,
+      "attack": 0,
+      "health": 1,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "silence",
+          "scope": "enemy",
+          "amount": 0,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_10_1",
+      "cost": 0,
+      "attack": 0,
+      "health": 1,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "silence",
+          "scope": "enemy",
+          "amount": 0,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_10_2",
+      "cost": 5,
+      "attack": 2,
+      "health": 7,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "silence",
+          "scope": "enemy",
+          "amount": 0,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_10_3",
+      "cost": 4,
+      "attack": 0,
+      "health": 9,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "silence",
+          "scope": "enemy",
+          "amount": 0,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_10_4",
+      "cost": 5,
+      "attack": 3,
+      "health": 5,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "silence",
+          "scope": "enemy",
+          "amount": 0,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_10_5",
+      "cost": 2,
+      "attack": 5,
+      "health": 1,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "silence",
+          "scope": "enemy",
+          "amount": 0,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_10_6",
+      "cost": 2,
+      "attack": 4,
+      "health": 3,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "silence",
+          "scope": "enemy",
+          "amount": 0,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_10_7",
+      "cost": 6,
+      "attack": 7,
+      "health": 6,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "silence",
+          "scope": "enemy",
+          "amount": 0,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_11_0",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "damage",
+          "scope": "all_enemy",
+          "amount": 2,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_11_1",
+      "cost": 2,
+      "attack": 1,
+      "health": 3,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "damage",
+          "scope": "all_enemy",
+          "amount": 2,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_11_2",
+      "cost": 3,
+      "attack": 1,
+      "health": 6,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "damage",
+          "scope": "all_enemy",
+          "amount": 2,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_11_3",
+      "cost": 3,
+      "attack": 1,
+      "health": 5,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "damage",
+          "scope": "all_enemy",
+          "amount": 2,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_11_4",
+      "cost": 4,
+      "attack": 7,
+      "health": 2,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "damage",
+          "scope": "all_enemy",
+          "amount": 2,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_11_5",
+      "cost": 2,
+      "attack": 0,
+      "health": 5,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "damage",
+          "scope": "all_enemy",
+          "amount": 2,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_11_6",
+      "cost": 4,
+      "attack": 6,
+      "health": 4,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "damage",
+          "scope": "all_enemy",
+          "amount": 2,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_11_7",
+      "cost": 4,
+      "attack": 6,
+      "health": 6,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "damage",
+          "scope": "all_enemy",
+          "amount": 2,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_12_0",
+      "cost": 3,
+      "attack": 5,
+      "health": 4,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "heal",
+          "scope": "owner",
+          "amount": 4,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_12_1",
+      "cost": 3,
+      "attack": 1,
+      "health": 1,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "heal",
+          "scope": "owner",
+          "amount": 4,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_12_2",
+      "cost": 5,
+      "attack": 5,
+      "health": 5,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "heal",
+          "scope": "owner",
+          "amount": 4,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_12_3",
+      "cost": 4,
+      "attack": 0,
+      "health": 9,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "heal",
+          "scope": "owner",
+          "amount": 4,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_12_4",
+      "cost": 4,
+      "attack": 5,
+      "health": 2,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "heal",
+          "scope": "owner",
+          "amount": 4,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_12_5",
+      "cost": 5,
+      "attack": 6,
+      "health": 7,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "heal",
+          "scope": "owner",
+          "amount": 4,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_12_6",
+      "cost": 3,
+      "attack": 2,
+      "health": 7,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "heal",
+          "scope": "owner",
+          "amount": 4,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    },
+    {
+      "name": "train_12_7",
+      "cost": 4,
+      "attack": 1,
+      "health": 7,
+      "keywords": [],
+      "effects": [
+        {
+          "trigger": "play",
+          "op": "heal",
+          "scope": "owner",
+          "amount": 4,
+          "health": 0
+        }
+      ],
+      "card_id": null
+    }
+  ],
+  "warmup_games": 0,
+  "dagger_rounds": 0,
+  "dagger_games": 96,
+  "ppo_updates": 96,
+  "rollouts": 16,
+  "training_seed_start": 1020000,
+  "development_seeds": [
+    1111000,
+    1111001,
+    1111002,
+    1111003,
+    1111004,
+    1111005,
+    1111006,
+    1111007,
+    1111008,
+    1111009,
+    1111010,
+    1111011,
+    1111012,
+    1111013,
+    1111014,
+    1111015
+  ],
+  "test_seeds": [
+    1210000,
+    1210001,
+    1210002,
+    1210003,
+    1210004,
+    1210005,
+    1210006,
+    1210007,
+    1210008,
+    1210009,
+    1210010,
+    1210011,
+    1210012,
+    1210013,
+    1210014,
+    1210015,
+    1210016,
+    1210017,
+    1210018,
+    1210019,
+    1210020,
+    1210021,
+    1210022,
+    1210023,
+    1210024,
+    1210025,
+    1210026,
+    1210027,
+    1210028,
+    1210029,
+    1210030,
+    1210031,
+    1210032,
+    1210033,
+    1210034,
+    1210035,
+    1210036,
+    1210037,
+    1210038,
+    1210039,
+    1210040,
+    1210041,
+    1210042,
+    1210043,
+    1210044,
+    1210045,
+    1210046,
+    1210047,
+    1210048,
+    1210049,
+    1210050,
+    1210051,
+    1210052,
+    1210053,
+    1210054,
+    1210055,
+    1210056,
+    1210057,
+    1210058,
+    1210059,
+    1210060,
+    1210061,
+    1210062,
+    1210063
+  ],
+  "replay_capacity": 8192,
+  "teacher": "semantic_race",
+  "checkpoint_every": 16,
+  "selection": "Choose among predeclared checkpoints using development mean win only. Test never selects or retrains.",
+  "objective": "Only model HP-terminal +/-1. No labels for deadline/budget failures.",
+  "scope": "Two explicit25-card semantic decks, no role-host substitution. Supported rule grammar only.",
+  "decision_seconds": 0.25,
+  "new_api_calls": 0,
+  "previous_experiments_rerun": 0,
+  "offline_source": "artifacts/card_eval/v2",
+  "offline_sample_capacity": 12288,
+  "explanation": "Reuse recorded observations; consistently label all imitation actions with one causal race teacher. Separate play/attack semantic channels. No previous game is re-simulated."
+}
