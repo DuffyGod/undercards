@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "source_commit": "179040c376f441f683efb94a2008c14212624c2d",
+  "checkpoint_source_commit": "961c2aa7ded23423c548a2639c390fb668e817af",
+  "frozen_policy": "4ea85080db1a286a119d801133a06752528b27d5a16b8ac0898135bf7f0c5e70",
+  "input_sha256": "54fd9f18b9681dda818724b920d280983f8b8675a5029c2587bd2b4c9751e0d7",
+  "rule_assumption": "retain",
+  "completed_conditions": 32,
+  "scope": "Three entity slots in declared abstract role host; no full actual-deck certification."
+}

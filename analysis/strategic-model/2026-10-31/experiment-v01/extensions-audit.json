@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "replacement_rows": 1024,
+  "no_received_counterfactual_rows_unchanged": 136,
+  "valid_ablation_rows": 320,
+  "valid_ablation_unresolved": 1,
+  "frozen_design_unchanged": true,
+  "frozen_policy": "4ea85080db1a286a119d801133a06752528b27d5a16b8ac0898135bf7f0c5e70",
+  "new_simulations": 0,
+  "repeated_value_inference": 0,
+  "scope": "Saved-grid and complete-denominator checks. The primary generalization gate remains failed."
+}

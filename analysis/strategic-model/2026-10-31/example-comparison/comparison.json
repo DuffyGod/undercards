@@ -1,0 +1,113 @@
+{
+  "frozen_policy": "4ea85080db1a286a119d801133a06752528b27d5a16b8ac0898135bf7f0c5e70",
+  "reference": {
+    "name": "Rock Pet",
+    "cost": 2,
+    "attack": 3,
+    "health": 3,
+    "keywords": [],
+    "effects": [],
+    "card_id": 602
+  },
+  "comparisons": [
+    {
+      "candidate": {
+        "name": "Rock Pet",
+        "cost": 2,
+        "attack": 3,
+        "health": 3,
+        "keywords": [],
+        "effects": [],
+        "card_id": 602
+      },
+      "win": {
+        "mean": 0.25,
+        "low": 0.0625,
+        "high": 0.4375,
+        "n": 8,
+        "completion_mean_range": [
+          0.25,
+          0.25
+        ],
+        "unresolved_seed_clusters": 0
+      },
+      "difference": {
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "n": 8,
+        "completion_mean_range": [
+          0.0,
+          0.0
+        ],
+        "unresolved_seed_clusters": 0
+      },
+      "opportunities": {
+        "games": 16,
+        "unfinished": 0,
+        "unknown_opportunity": 0,
+        "not_received": 3,
+        "received_unplayed": 1,
+        "played": 12
+      }
+    },
+    {
+      "candidate": {
+        "name": "synthetic_4G_3_6_haste_end_draw",
+        "cost": 4,
+        "attack": 3,
+        "health": 6,
+        "keywords": [
+          [
+            "haste",
+            1
+          ]
+        ],
+        "effects": [
+          {
+            "trigger": "end",
+            "op": "draw",
+            "scope": "owner",
+            "amount": 1,
+            "health": 0
+          }
+        ],
+        "card_id": null
+      },
+      "win": {
+        "mean": 0.5625,
+        "low": 0.3125,
+        "high": 0.8125,
+        "n": 8,
+        "completion_mean_range": [
+          0.5625,
+          0.5625
+        ],
+        "unresolved_seed_clusters": 0
+      },
+      "difference": {
+        "mean": 0.3125,
+        "low": 0.0625,
+        "high": 0.5625,
+        "n": 8,
+        "completion_mean_range": [
+          0.3125,
+          0.3125
+        ],
+        "unresolved_seed_clusters": 0
+      },
+      "opportunities": {
+        "games": 16,
+        "unfinished": 0,
+        "unknown_opportunity": 0,
+        "not_received": 3,
+        "received_unplayed": 1,
+        "played": 12
+      }
+    }
+  ],
+  "independent_seed_clusters": 8,
+  "equal_weight_seat_pairing": true,
+  "meaning": "All seeds retained; unknown outcomes use completion bounds, no hand-conditioned filtering or extra diagnosis deductions.",
+  "checkpoint_generalization_certified": false
+}

@@ -1,0 +1,24 @@
+{
+  "tests_run": 25,
+  "test_status": "passed",
+  "test_source_commit": "179040c",
+  "saved_primary_audit": "passed",
+  "saved_extension_audit": "passed",
+  "generalization_gate_passed": false,
+  "example_comparison_status": "complete",
+  "old_experiments_rerun": 0,
+  "new_api_calls": 0,
+  "source_sha256": {
+    "study.py": "6c0b5b16363875f3d89d05a679f1a541078832a712231311de5508f44c195d49",
+    "compare.py": "578768549c2d9760de0485827afc1c22ba73ae48aad5f549822645fe4f3b82f0",
+    "environment.py": "dc71aac5b787b349e6dee8f6b6d50ad8360e74935d0a6ec7c7777f04b3afec26",
+    "mechanisms.py": "f06ed5f40c9680eeb5ba72217975faadb4084032712504fe79203d0d75d6e9a0",
+    "learner.py": "129c3889bf485b67002c400da3a0b8959e3978d80b4d4c59041b095f5c391eb6",
+    "test_learning.py": "e440e44b1f50e0747c315428806580f6fd90cc5f874447a8cbb38f9598c85c4f",
+    "records.py": "feb865475658bb7e67a68e141b2751226c07561c8bc630a0ce6c63466f9be84a",
+    "features.py": "097e56c51618257ead925f7a850590344148fccdb0fc81c48708dbbadf9d0d86",
+    "agents.py": "48b1a14e30a65a88abd3c9f48e3654644e33fb911f9f3da61048a704f6865e67",
+    "audit.py": "c0beb0dfa1fb37c526045f6c0a936fcfaf77a1987a5365d27e4eac6839622474"
+  },
+  "meaning": "25 targeted checks, saved-data validation and executable semantic-input example. No server-rule or generalization success claim."
+}

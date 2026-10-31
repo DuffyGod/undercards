@@ -2,6 +2,7 @@
 from collections import defaultdict
 from pathlib import Path
 import argparse, gzip, json, subprocess
+import hashlib
 import numpy as np
 from study import from_dict, interval, OPPONENTS, source_commit, dump
 from learner import Network
@@ -14,6 +15,8 @@ def audit(dest):
     training = json.loads((dest / 'training.json').read_text())
     evaluation = json.loads((dest / 'evaluation.json').read_text())
     net, metadata = Network.load(dest / 'policy.npz')
+    if metadata['design_sha256'] != hashlib.sha256((dest / 'design.json').read_bytes()).hexdigest():
+        raise ValueError('Frozen design changed after training')
     if training['status'] != 'complete' or evaluation['status'] != 'complete':
         raise ValueError('Incomplete study')
     if net.fingerprint != evaluation['frozen_policy'] or net.fingerprint != training['final_fingerprint']:
@@ -89,6 +92,60 @@ def audit(dest):
     print(json.dumps({k: v for k, v in result.items() if k != 'value'}))
 
 
+def audit_extensions(dest):
+    """Validate new saved outputs without repeating value inference or games."""
+    design = json.loads((dest / 'design.json').read_text())
+    primary = json.loads((dest / 'audit.json').read_text())
+    net, meta = Network.load(dest / 'policy.npz')
+    if net.fingerprint != primary['frozen_policy']: raise ValueError('Checkpoint changed')
+    if meta['design_sha256'] != hashlib.sha256((dest / 'design.json').read_bytes()).hexdigest():
+        raise ValueError('Frozen design changed')
+    replacement = json.loads((dest / 'replacements.json').read_text())
+    if replacement['frozen_policy'] != net.fingerprint: raise ValueError('Per-card policy mismatch')
+    index = {}
+    with gzip.open(dest / 'replacement-records.jsonl.gz', 'rt') as f:
+        for row in map(json.loads, f):
+            key = row['card'], row['seed'], row['seat']
+            if key in index: raise ValueError('Duplicate replacement')
+            if row['card'] not in design['replacement_cards'] or row['seed'] not in design['replacement_seeds']:
+                raise ValueError('Unplanned replacement')
+            index[key] = row
+    if len(index) != len(design['replacement_cards']) * len(design['replacement_seeds']) * 2:
+        raise ValueError('Incomplete replacement grid')
+    unchanged_no_draw = 0
+    for (card, seed, seat), row in index.items():
+        base = index['Rock Pet', seed, seat]
+        if not row['unfinished'] and row['candidate_drawn'] == 0:
+            if base['candidate_drawn'] != 0 or row['won'] != base['won']:
+                raise ValueError('An unseen candidate changed the shared policy outcome')
+            unchanged_no_draw += 1
+    for card in replacement['cards']:
+        d = card['diagnostics']
+        if d['never_received'] + d['received_unplayed'] + d['played'] + d['diagnostic_unknown'] != d['games']:
+            raise ValueError('Opportunity denominators do not partition games')
+    with gzip.open(dest / 'evaluation-records.jsonl.gz', 'rt') as f:
+        base = {(r['group'], r['seed'], r['seat']): r for r in map(json.loads, f) if r['policy'] == 'shared_policy_value'}
+    ablation = json.loads((dest / 'value-search-ablation.json').read_text())
+    if ablation['frozen_policy'] != net.fingerprint: raise ValueError('Ablation changed network')
+    keys = set(); unfinished = 0
+    with gzip.open(dest / 'value-search-ablation-records.jsonl.gz', 'rt') as f:
+        for row in map(json.loads, f):
+            key = row['group'], row['seed'], row['seat']
+            if key in keys: raise ValueError('Duplicate ablation')
+            keys.add(key); unfinished += row['unfinished']
+            if row['seed'] not in design['evaluation_seeds'][:design['value_search_ablation_seeds']]:
+                raise ValueError('Unplanned ablation seed')
+            if row['baseline_won'] != base[key]['won']: raise ValueError('Ablation baseline changed')
+            if row['unfinished'] and row['won'] is not None: raise ValueError('Ablation failure assigned a winner')
+    if len(keys) != 5 * design['value_search_ablation_seeds'] * 2: raise ValueError('Incomplete ablation')
+    result = dict(status='passed', replacement_rows=len(index), no_received_counterfactual_rows_unchanged=unchanged_no_draw,
+        valid_ablation_rows=len(keys), valid_ablation_unresolved=unfinished, frozen_design_unchanged=True,
+        frozen_policy=net.fingerprint, new_simulations=0, repeated_value_inference=0,
+        scope='Saved-grid and complete-denominator checks. The primary generalization gate remains failed.')
+    dump(dest / 'extensions-audit.json', result); print(json.dumps(result))
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__); parser.add_argument('--output', required=True, type=Path)
-    audit(parser.parse_args().output)
+    parser.add_argument('--extensions-only', action='store_true'); args = parser.parse_args()
+    (audit_extensions if args.extensions_only else audit)(args.output)
