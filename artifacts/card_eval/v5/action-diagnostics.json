@@ -1,0 +1,20 @@
+{
+  "counts": {
+    "decisions": 2830,
+    "changes": 367
+  },
+  "changes": {
+    "trade -> play": 74,
+    "play -> face": 1,
+    "play -> play": 106,
+    "face -> play": 84,
+    "face -> face": 32,
+    "face -> trade": 8,
+    "trade -> face": 11,
+    "play -> end": 19,
+    "play -> trade": 15,
+    "trade -> trade": 9,
+    "trade -> end": 8
+  },
+  "scope": "V5 value-final observations only; frozen V4 alternative recomputed from public observations, no replay. Disagreement is not proof of causal win improvement."
+}

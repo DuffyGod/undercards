@@ -1,0 +1,15 @@
+{
+  "status": "unqualified_policy",
+  "scores": null,
+  "comparisons": [],
+  "policy_validation": {
+    "qualified": false
+  },
+  "issues": [
+    {
+      "path": "policies",
+      "code": "unqualified_policy",
+      "message": "The learned policy failed qualification. Use reference policies or explicitly enable experimental-model diagnostics."
+    }
+  ]
+}

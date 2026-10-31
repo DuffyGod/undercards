@@ -1,0 +1,47 @@
+{
+  "status": "not_qualified",
+  "product_version": "0.2.2",
+  "primary": "primary-value.npz",
+  "selected_margin": 0.05,
+  "default_model_replaced": false,
+  "main_change": "Paired terminal action differences provide local independent gains beyond V4, not a universal upgrade.",
+  "most_defensible_gain": "refill vs V4 +7.03 percentage points; seven-context Bonferroni sensitivity interval [0.78,15.63].",
+  "value_evidence": "Own-policy Brier .15385 vs same-data five-parameter .16543; paired gain [.00245,.02062], opening still inconclusive.",
+  "unresolved": "One training branch; entire fork excluded, explicit completion bounds saved. Original optimizer iterations/status lost in summary serialization and remain null; checkpoint preserved, no refit.",
+  "next_questions": [
+    "Compare new-policy continuation action targets with current frozen V4/race mixture on new train/dev.",
+    "Separately test retaining legal observed mechanism history and own known deck information.",
+    "Prioritize delayed sweep responses and role changes; do not assert old V4 failure was fixed."
+  ],
+  "retired_final_ranges": [
+    [
+      1210000,
+      1210063
+    ],
+    [
+      1310000,
+      1310047
+    ],
+    [
+      1330000,
+      1330095
+    ],
+    [
+      1610000,
+      1610063
+    ],
+    [
+      1630000,
+      1630095
+    ]
+  ],
+  "no_final_reselection": true,
+  "limits": [
+    "20 complete real cards plus supported semantic combinations only",
+    "No recurrent belief; public history summary discards information",
+    "One training seed; paired deck-seed intervals do not cover training variance",
+    "Mixture action target is not new actor V or optimal Q",
+    "No server-rule or real-meta certification"
+  ],
+  "concurrency": "V5 continued across the next hourly trigger under an OS flock. Next run checks AGENTS and waits if held."
+}

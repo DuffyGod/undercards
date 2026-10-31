@@ -1,0 +1,757 @@
+{
+  "selection": "All paired slots where V5 loses and V4 wins; no replay or model reselection.",
+  "cases": [
+    {
+      "group": "pressure",
+      "seed": 1610006,
+      "seat": 0,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 8,
+          "a_hp": 0,
+          "b_hp": 10,
+          "a_cash": 4,
+          "a_played": 9
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 8,
+          "a_hp": 1,
+          "b_hp": 0,
+          "a_cash": 12,
+          "a_played": 7
+        }
+      }
+    },
+    {
+      "group": "pressure",
+      "seed": 1610021,
+      "seat": 1,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 9,
+          "a_hp": 0,
+          "b_hp": 12,
+          "a_cash": 11,
+          "a_played": 9
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 9,
+          "a_hp": 4,
+          "b_hp": -1,
+          "a_cash": 21,
+          "a_played": 9
+        }
+      }
+    },
+    {
+      "group": "defense",
+      "seed": 1610004,
+      "seat": 0,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 10,
+          "a_hp": -2,
+          "b_hp": 10,
+          "a_cash": 15,
+          "a_played": 13
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 9,
+          "a_hp": 10,
+          "b_hp": 0,
+          "a_cash": 24,
+          "a_played": 8
+        }
+      }
+    },
+    {
+      "group": "defense",
+      "seed": 1610006,
+      "seat": 1,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 10,
+          "a_hp": 0,
+          "b_hp": 9,
+          "a_cash": 11,
+          "a_played": 11
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 10,
+          "a_hp": 12,
+          "b_hp": 0,
+          "a_cash": 27,
+          "a_played": 9
+        }
+      }
+    },
+    {
+      "group": "defense",
+      "seed": 1610008,
+      "seat": 0,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 11,
+          "a_hp": -2,
+          "b_hp": 1,
+          "a_cash": 29,
+          "a_played": 13
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 11,
+          "a_hp": 25,
+          "b_hp": 0,
+          "a_cash": 30,
+          "a_played": 12
+        }
+      }
+    },
+    {
+      "group": "defense",
+      "seed": 1610013,
+      "seat": 0,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 9,
+          "a_hp": -2,
+          "b_hp": 6,
+          "a_cash": 23,
+          "a_played": 8
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 8,
+          "a_hp": 15,
+          "b_hp": -1,
+          "a_cash": 17,
+          "a_played": 7
+        }
+      }
+    },
+    {
+      "group": "defense",
+      "seed": 1610028,
+      "seat": 0,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 9,
+          "a_hp": -3,
+          "b_hp": 2,
+          "a_cash": 20,
+          "a_played": 10
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 9,
+          "a_hp": 9,
+          "b_hp": 0,
+          "a_cash": 24,
+          "a_played": 9
+        }
+      }
+    },
+    {
+      "group": "defense",
+      "seed": 1610032,
+      "seat": 0,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 13,
+          "a_hp": -2,
+          "b_hp": 14,
+          "a_cash": 34,
+          "a_played": 20
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 8,
+          "a_hp": 22,
+          "b_hp": -3,
+          "a_cash": 10,
+          "a_played": 9
+        }
+      }
+    },
+    {
+      "group": "refill",
+      "seed": 1610060,
+      "seat": 0,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 13,
+          "a_hp": -4,
+          "b_hp": 4,
+          "a_cash": 29,
+          "a_played": 18
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 8,
+          "a_hp": 28,
+          "b_hp": -3,
+          "a_cash": 15,
+          "a_played": 8
+        }
+      }
+    },
+    {
+      "group": "new_parameters",
+      "seed": 1610006,
+      "seat": 0,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 8,
+          "a_hp": 0,
+          "b_hp": 10,
+          "a_cash": 4,
+          "a_played": 9
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 8,
+          "a_hp": 1,
+          "b_hp": 0,
+          "a_cash": 12,
+          "a_played": 7
+        }
+      }
+    },
+    {
+      "group": "new_parameters",
+      "seed": 1610015,
+      "seat": 0,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 6,
+          "a_hp": 0,
+          "b_hp": 12,
+          "a_cash": 1,
+          "a_played": 6
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 11,
+          "a_hp": 9,
+          "b_hp": -1,
+          "a_cash": 33,
+          "a_played": 12
+        }
+      }
+    },
+    {
+      "group": "new_parameters",
+      "seed": 1610028,
+      "seat": 1,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 7,
+          "a_hp": -2,
+          "b_hp": 3,
+          "a_cash": 1,
+          "a_played": 6
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 8,
+          "a_hp": 6,
+          "b_hp": -1,
+          "a_cash": 10,
+          "a_played": 10
+        }
+      }
+    },
+    {
+      "group": "new_parameters",
+      "seed": 1610030,
+      "seat": 1,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 7,
+          "a_hp": -1,
+          "b_hp": 21,
+          "a_cash": 1,
+          "a_played": 8
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 11,
+          "a_hp": 2,
+          "b_hp": -1,
+          "a_cash": 39,
+          "a_played": 12
+        }
+      }
+    },
+    {
+      "group": "new_parameters",
+      "seed": 1610032,
+      "seat": 1,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 7,
+          "a_hp": -1,
+          "b_hp": 3,
+          "a_cash": 1,
+          "a_played": 7
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 10,
+          "a_hp": 11,
+          "b_hp": -5,
+          "a_cash": 25,
+          "a_played": 11
+        }
+      }
+    },
+    {
+      "group": "new_parameters",
+      "seed": 1610040,
+      "seat": 1,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 7,
+          "a_hp": 0,
+          "b_hp": 3,
+          "a_cash": 1,
+          "a_played": 7
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 9,
+          "a_hp": 12,
+          "b_hp": -3,
+          "a_cash": 18,
+          "a_played": 11
+        }
+      }
+    },
+    {
+      "group": "new_parameters",
+      "seed": 1610041,
+      "seat": 1,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 7,
+          "a_hp": -3,
+          "b_hp": 10,
+          "a_cash": 3,
+          "a_played": 7
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 9,
+          "a_hp": 4,
+          "b_hp": -1,
+          "a_cash": 18,
+          "a_played": 10
+        }
+      }
+    },
+    {
+      "group": "new_parameters",
+      "seed": 1610060,
+      "seat": 1,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 7,
+          "a_hp": 0,
+          "b_hp": 3,
+          "a_cash": 1,
+          "a_played": 8
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 9,
+          "a_hp": 6,
+          "b_hp": -5,
+          "a_cash": 12,
+          "a_played": 12
+        }
+      }
+    },
+    {
+      "group": "new_composition",
+      "seed": 1610006,
+      "seat": 0,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 8,
+          "a_hp": 0,
+          "b_hp": 10,
+          "a_cash": 4,
+          "a_played": 9
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 8,
+          "a_hp": 1,
+          "b_hp": 0,
+          "a_cash": 12,
+          "a_played": 7
+        }
+      }
+    },
+    {
+      "group": "new_composition",
+      "seed": 1610038,
+      "seat": 0,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 7,
+          "a_hp": -2,
+          "b_hp": 10,
+          "a_cash": 8,
+          "a_played": 7
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 8,
+          "a_hp": 14,
+          "b_hp": -3,
+          "a_cash": 6,
+          "a_played": 10
+        }
+      }
+    },
+    {
+      "group": "new_composition",
+      "seed": 1610052,
+      "seat": 1,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 9,
+          "a_hp": 0,
+          "b_hp": 5,
+          "a_cash": 13,
+          "a_played": 8
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 9,
+          "a_hp": 7,
+          "b_hp": -2,
+          "a_cash": 18,
+          "a_played": 10
+        }
+      }
+    },
+    {
+      "group": "new_composition",
+      "seed": 1610061,
+      "seat": 0,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 8,
+          "a_hp": 0,
+          "b_hp": 12,
+          "a_cash": 16,
+          "a_played": 7
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 9,
+          "a_hp": 6,
+          "b_hp": 0,
+          "a_cash": 19,
+          "a_played": 8
+        }
+      }
+    },
+    {
+      "group": "new_structure",
+      "seed": 1610025,
+      "seat": 1,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 9,
+          "a_hp": -1,
+          "b_hp": 9,
+          "a_cash": 13,
+          "a_played": 9
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 11,
+          "a_hp": 4,
+          "b_hp": -2,
+          "a_cash": 31,
+          "a_played": 12
+        }
+      }
+    },
+    {
+      "group": "delayed_sweep_opponent",
+      "seed": 1610000,
+      "seat": 0,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 19,
+          "a_hp": -2,
+          "b_hp": 29,
+          "a_cash": 87,
+          "a_played": 25
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 16,
+          "a_hp": 20,
+          "b_hp": 0,
+          "a_cash": 54,
+          "a_played": 25
+        }
+      }
+    },
+    {
+      "group": "delayed_sweep_opponent",
+      "seed": 1610004,
+      "seat": 0,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 15,
+          "a_hp": -2,
+          "b_hp": 24,
+          "a_cash": 45,
+          "a_played": 25
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 12,
+          "a_hp": 7,
+          "b_hp": 0,
+          "a_cash": 32,
+          "a_played": 15
+        }
+      }
+    },
+    {
+      "group": "delayed_sweep_opponent",
+      "seed": 1610009,
+      "seat": 0,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 20,
+          "a_hp": -2,
+          "b_hp": 10,
+          "a_cash": 101,
+          "a_played": 25
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 9,
+          "a_hp": 30,
+          "b_hp": 0,
+          "a_cash": 10,
+          "a_played": 12
+        }
+      }
+    },
+    {
+      "group": "delayed_sweep_opponent",
+      "seed": 1610016,
+      "seat": 0,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 11,
+          "a_hp": 0,
+          "b_hp": 17,
+          "a_cash": 19,
+          "a_played": 19
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 18,
+          "a_hp": 14,
+          "b_hp": -4,
+          "a_cash": 82,
+          "a_played": 23
+        }
+      }
+    },
+    {
+      "group": "delayed_sweep_opponent",
+      "seed": 1610025,
+      "seat": 1,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 13,
+          "a_hp": -1,
+          "b_hp": 18,
+          "a_cash": 29,
+          "a_played": 22
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 12,
+          "a_hp": 6,
+          "b_hp": 0,
+          "a_cash": 35,
+          "a_played": 18
+        }
+      }
+    },
+    {
+      "group": "delayed_sweep_opponent",
+      "seed": 1610042,
+      "seat": 0,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 18,
+          "a_hp": -2,
+          "b_hp": 28,
+          "a_cash": 77,
+          "a_played": 25
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 15,
+          "a_hp": 17,
+          "b_hp": 0,
+          "a_cash": 51,
+          "a_played": 23
+        }
+      }
+    },
+    {
+      "group": "delayed_sweep_opponent",
+      "seed": 1610050,
+      "seat": 1,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 14,
+          "a_hp": -4,
+          "b_hp": 17,
+          "a_cash": 30,
+          "a_played": 24
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 12,
+          "a_hp": 12,
+          "b_hp": 0,
+          "a_cash": 29,
+          "a_played": 18
+        }
+      }
+    },
+    {
+      "group": "delayed_sweep_opponent",
+      "seed": 1610062,
+      "seat": 0,
+      "results": {
+        "primary": {
+          "won": false,
+          "lost": true,
+          "round": 20,
+          "a_hp": -5,
+          "b_hp": 15,
+          "a_cash": 100,
+          "a_played": 25
+        },
+        "previous_v4": {
+          "won": true,
+          "lost": false,
+          "round": 17,
+          "a_hp": 13,
+          "b_hp": -2,
+          "a_cash": 66,
+          "a_played": 25
+        }
+      }
+    }
+  ],
+  "full_results": "final-games.jsonl.gz; final-plan.json holds exact inputs.",
+  "meaning": "Policy outcome counterexamples, not step-level causal explanation."
+}

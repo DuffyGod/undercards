@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "version": "0.2.2",
+  "wheel_sha256": "4df1a950c7719ea254804eeebaef6be3c31e7170100156f9e029c57391d0c695",
+  "actual_module": "/workspace/undercards/work/v5-installed/card_eval/__init__.py",
+  "installed_outside_source": true,
+  "new_action_value_backend": true,
+  "default_gate": true,
+  "shared_frozen_checkpoint": true,
+  "per_card_retraining": false,
+  "replacement_games": 144,
+  "checks": [
+    {
+      "arguments": [
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "0.2.2\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "evaluate",
+        "--input",
+        "/workspace/undercards/artifacts/card_eval/v5/installation/input.json",
+        "--output",
+        "/workspace/undercards/artifacts/card_eval/v5/installation/blocked",
+        "--checkpoint",
+        "/workspace/undercards/artifacts/card_eval/v5/primary-value.npz"
+      ],
+      "returncode": 2,
+      "stdout": "报告：/workspace/undercards/artifacts/card_eval/v5/installation/blocked/report.md\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "evaluate",
+        "--input",
+        "/workspace/undercards/artifacts/card_eval/v5/installation/input.json",
+        "--output",
+        "/workspace/undercards/artifacts/card_eval/v5/installation/experimental",
+        "--checkpoint",
+        "/workspace/undercards/artifacts/card_eval/v5/primary-value.npz",
+        "--experimental-model"
+      ],
+      "returncode": 0,
+      "stdout": "Bench：学习模型未达标，仅作实验诊断\nFishing Rod：学习模型未达标，仅作实验诊断\n报告：/workspace/undercards/artifacts/card_eval/v5/installation/experimental/report.md\n",
+      "stderr": "{\"opponent\": \"pressure\", \"policy\": \"learned\", \"card\": \"Rock Pet\", \"completed_games\": 16}\n{\"opponent\": \"pressure\", \"policy\": \"learned\", \"card\": \"Bench\", \"completed_games\": 32}\n{\"opponent\": \"pressure\", \"policy\": \"learned\", \"card\": \"Fishing Rod\", \"completed_games\": 48}\n{\"opponent\": \"defense\", \"policy\": \"learned\", \"card\": \"Rock Pet\", \"completed_games\": 64}\n{\"opponent\": \"defense\", \"policy\": \"learned\", \"card\": \"Bench\", \"completed_games\": 80}\n{\"opponent\": \"defense\", \"policy\": \"learned\", \"card\": \"Fishing Rod\", \"completed_games\": 96}\n{\"opponent\": \"refill\", \"policy\": \"learned\", \"card\": \"Rock Pet\", \"completed_games\": 112}\n{\"opponent\": \"refill\", \"policy\": \"learned\", \"card\": \"Bench\", \"completed_games\": 128}\n{\"opponent\": \"refill\", \"policy\": \"learned\", \"card\": \"Fishing Rod\", \"completed_games\": 144}\n"
+    }
+  ],
+  "meaning": "Package/whole-deck replacement contract only; no claim of general card quality."
+}

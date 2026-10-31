@@ -1,0 +1,92 @@
+{
+  "status": "post-test uncertainty sensitivity only",
+  "selection_used": false,
+  "primary_gate_unchanged": true,
+  "interpretation": "Bonferroni across seven V5-versus-V4 context claims. Additional interval sensitivity, not predeclared selection or a new pass criterion.",
+  "comparisons": {
+    "pressure": {
+      "mean": 0.046875,
+      "completion_range": [
+        0.046875,
+        0.046875
+      ],
+      "low": -0.0234375,
+      "high": 0.1171875,
+      "alpha": 0.0071428571428571435,
+      "independent_seed_clusters": 64,
+      "unresolved_seed_clusters": 0
+    },
+    "defense": {
+      "mean": 0.015625,
+      "completion_range": [
+        0.015625,
+        0.015625
+      ],
+      "low": -0.06364397321428569,
+      "high": 0.1015625,
+      "alpha": 0.0071428571428571435,
+      "independent_seed_clusters": 64,
+      "unresolved_seed_clusters": 0
+    },
+    "refill": {
+      "mean": 0.0703125,
+      "completion_range": [
+        0.0703125,
+        0.0703125
+      ],
+      "low": 0.0078125,
+      "high": 0.15625,
+      "alpha": 0.0071428571428571435,
+      "independent_seed_clusters": 64,
+      "unresolved_seed_clusters": 0
+    },
+    "new_parameters": {
+      "mean": 0.109375,
+      "completion_range": [
+        0.109375,
+        0.109375
+      ],
+      "low": -0.015625,
+      "high": 0.234375,
+      "alpha": 0.0071428571428571435,
+      "independent_seed_clusters": 64,
+      "unresolved_seed_clusters": 0
+    },
+    "new_composition": {
+      "mean": 0.0234375,
+      "completion_range": [
+        0.0234375,
+        0.0234375
+      ],
+      "low": -0.0390625,
+      "high": 0.0859375,
+      "alpha": 0.0071428571428571435,
+      "independent_seed_clusters": 64,
+      "unresolved_seed_clusters": 0
+    },
+    "new_structure": {
+      "mean": 0.0078125,
+      "completion_range": [
+        0.0078125,
+        0.0078125
+      ],
+      "low": -0.0234375,
+      "high": 0.046875,
+      "alpha": 0.0071428571428571435,
+      "independent_seed_clusters": 64,
+      "unresolved_seed_clusters": 0
+    },
+    "delayed_sweep_opponent": {
+      "mean": -0.015625,
+      "completion_range": [
+        -0.015625,
+        -0.015625
+      ],
+      "low": -0.0859375,
+      "high": 0.0546875,
+      "alpha": 0.0071428571428571435,
+      "independent_seed_clusters": 64,
+      "unresolved_seed_clusters": 0
+    }
+  }
+}

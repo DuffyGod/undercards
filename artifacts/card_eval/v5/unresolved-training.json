@@ -1,0 +1,224 @@
+[
+  {
+    "file": "artifacts/card_eval/v5/train-forks-0288.jsonl.gz",
+    "seed": 1040304,
+    "decision": 53,
+    "sampled_actions": [
+      0,
+      3,
+      5,
+      10,
+      11,
+      12
+    ],
+    "branches": [
+      {
+        "action_index": 0,
+        "continuation": "baseline",
+        "won": true,
+        "lost": false,
+        "unfinished": false,
+        "error": null,
+        "a_hp": 9,
+        "b_hp": -3,
+        "round": 10,
+        "win_completion_range": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "action_index": 0,
+        "continuation": "race",
+        "won": true,
+        "lost": false,
+        "unfinished": false,
+        "error": null,
+        "a_hp": 10,
+        "b_hp": -2,
+        "round": 10,
+        "win_completion_range": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "action_index": 3,
+        "continuation": "baseline",
+        "won": true,
+        "lost": false,
+        "unfinished": false,
+        "error": null,
+        "a_hp": 27,
+        "b_hp": 0,
+        "round": 10,
+        "win_completion_range": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "action_index": 3,
+        "continuation": "race",
+        "won": true,
+        "lost": false,
+        "unfinished": false,
+        "error": null,
+        "a_hp": 14,
+        "b_hp": -3,
+        "round": 10,
+        "win_completion_range": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "action_index": 5,
+        "continuation": "baseline",
+        "won": true,
+        "lost": false,
+        "unfinished": false,
+        "error": null,
+        "a_hp": 27,
+        "b_hp": -2,
+        "round": 9,
+        "win_completion_range": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "action_index": 5,
+        "continuation": "race",
+        "won": true,
+        "lost": false,
+        "unfinished": false,
+        "error": null,
+        "a_hp": 23,
+        "b_hp": -2,
+        "round": 9,
+        "win_completion_range": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "action_index": 10,
+        "continuation": "baseline",
+        "won": true,
+        "lost": false,
+        "unfinished": false,
+        "error": null,
+        "a_hp": 27,
+        "b_hp": -2,
+        "round": 9,
+        "win_completion_range": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "action_index": 10,
+        "continuation": "race",
+        "won": true,
+        "lost": false,
+        "unfinished": false,
+        "error": null,
+        "a_hp": 23,
+        "b_hp": -2,
+        "round": 9,
+        "win_completion_range": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "action_index": 11,
+        "continuation": "baseline",
+        "won": true,
+        "lost": false,
+        "unfinished": false,
+        "error": null,
+        "a_hp": 25,
+        "b_hp": -2,
+        "round": 9,
+        "win_completion_range": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "action_index": 11,
+        "continuation": "race",
+        "won": true,
+        "lost": false,
+        "unfinished": false,
+        "error": null,
+        "a_hp": 23,
+        "b_hp": -2,
+        "round": 9,
+        "win_completion_range": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "action_index": 12,
+        "continuation": "baseline",
+        "won": true,
+        "lost": false,
+        "unfinished": false,
+        "error": null,
+        "a_hp": 27,
+        "b_hp": -2,
+        "round": 9,
+        "win_completion_range": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "action_index": 12,
+        "continuation": "race",
+        "won": null,
+        "lost": null,
+        "unfinished": true,
+        "error": "Decision exceeded the common wall-time budget: actor=0, policy=offline_counterfactual_branch, seconds=0.361219",
+        "a_hp": null,
+        "b_hp": null,
+        "round": null,
+        "win_completion_range": [
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "handling": "Entire fork excluded from fit, no outcome imputed.",
+    "action_completion_ranges": {
+      "0": [
+        1.0,
+        1.0
+      ],
+      "3": [
+        1.0,
+        1.0
+      ],
+      "5": [
+        1.0,
+        1.0
+      ],
+      "10": [
+        1.0,
+        1.0
+      ],
+      "11": [
+        1.0,
+        1.0
+      ],
+      "12": [
+        0.5,
+        1.0
+      ]
+    }
+  }
+]

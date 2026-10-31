@@ -1,0 +1,444 @@
+{
+  "status": "complete",
+  "program_version": "0.2.2",
+  "reference": {
+    "name": "Rock Pet",
+    "cost": 2,
+    "attack": 3,
+    "health": 3,
+    "keywords": [],
+    "effects": [],
+    "card_id": 602
+  },
+  "comparisons": [
+    {
+      "card": "Bench",
+      "semantics": {
+        "name": "Bench",
+        "cost": 5,
+        "attack": 5,
+        "health": 5,
+        "keywords": [],
+        "effects": [
+          {
+            "trigger": "play",
+            "op": "draw",
+            "scope": "owner",
+            "amount": 1,
+            "health": 0
+          }
+        ],
+        "card_id": 243
+      },
+      "recommendation": "experimental_only",
+      "positive_conditions": [],
+      "negative_conditions": [],
+      "conditions": [
+        {
+          "opponent": "pressure",
+          "policy": "learned",
+          "win": {
+            "mean": 1.0,
+            "completion_range": [
+              1.0,
+              1.0
+            ],
+            "low": 1.0,
+            "high": 1.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "reference_win": {
+            "mean": 0.9375,
+            "completion_range": [
+              0.9375,
+              0.9375
+            ],
+            "low": 0.8125,
+            "high": 1.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "difference": {
+            "mean": 0.0625,
+            "completion_range": [
+              0.0625,
+              0.0625
+            ],
+            "low": 0.0,
+            "high": 0.1875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "familywise_difference": {
+            "mean": 0.0625,
+            "completion_range": [
+              0.0625,
+              0.0625
+            ],
+            "low": 0.0,
+            "high": 0.25,
+            "alpha": 0.008333333333333333,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "opportunities": {
+            "played": 5,
+            "candidate_wait": 6,
+            "candidate_burned": 0,
+            "candidate_unfunded_turns": 0,
+            "candidate_slot_blocked_turns": 2,
+            "not_received": 11
+          }
+        },
+        {
+          "opponent": "defense",
+          "policy": "learned",
+          "win": {
+            "mean": 0.3125,
+            "completion_range": [
+              0.3125,
+              0.3125
+            ],
+            "low": 0.0625,
+            "high": 0.5625,
+            "alpha": 0.05,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "reference_win": {
+            "mean": 0.125,
+            "completion_range": [
+              0.125,
+              0.125
+            ],
+            "low": 0.0,
+            "high": 0.3125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "difference": {
+            "mean": 0.1875,
+            "completion_range": [
+              0.1875,
+              0.1875
+            ],
+            "low": -0.125,
+            "high": 0.5,
+            "alpha": 0.05,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "familywise_difference": {
+            "mean": 0.1875,
+            "completion_range": [
+              0.1875,
+              0.1875
+            ],
+            "low": -0.1875,
+            "high": 0.5625,
+            "alpha": 0.008333333333333333,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "opportunities": {
+            "played": 9,
+            "candidate_wait": 9,
+            "candidate_burned": 0,
+            "candidate_unfunded_turns": 0,
+            "candidate_slot_blocked_turns": 0,
+            "not_received": 7
+          }
+        },
+        {
+          "opponent": "refill",
+          "policy": "learned",
+          "win": {
+            "mean": 0.0625,
+            "completion_range": [
+              0.0625,
+              0.0625
+            ],
+            "low": 0.0,
+            "high": 0.1875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "reference_win": {
+            "mean": 0.0,
+            "completion_range": [
+              0.0,
+              0.0
+            ],
+            "low": 0.0,
+            "high": 0.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "difference": {
+            "mean": 0.0625,
+            "completion_range": [
+              0.0625,
+              0.0625
+            ],
+            "low": 0.0,
+            "high": 0.1875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "familywise_difference": {
+            "mean": 0.0625,
+            "completion_range": [
+              0.0625,
+              0.0625
+            ],
+            "low": 0.0,
+            "high": 0.25,
+            "alpha": 0.008333333333333333,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "opportunities": {
+            "played": 9,
+            "candidate_wait": 9,
+            "candidate_burned": 0,
+            "candidate_unfunded_turns": 0,
+            "candidate_slot_blocked_turns": 0,
+            "not_received": 7
+          }
+        }
+      ]
+    },
+    {
+      "card": "Fishing Rod",
+      "semantics": {
+        "name": "Fishing Rod",
+        "cost": 3,
+        "attack": 3,
+        "health": 4,
+        "keywords": [],
+        "effects": [
+          {
+            "trigger": "end",
+            "op": "draw",
+            "scope": "owner",
+            "amount": 1,
+            "health": 0
+          }
+        ],
+        "card_id": 225
+      },
+      "recommendation": "experimental_only",
+      "positive_conditions": [],
+      "negative_conditions": [],
+      "conditions": [
+        {
+          "opponent": "pressure",
+          "policy": "learned",
+          "win": {
+            "mean": 0.9375,
+            "completion_range": [
+              0.9375,
+              0.9375
+            ],
+            "low": 0.8125,
+            "high": 1.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "reference_win": {
+            "mean": 0.9375,
+            "completion_range": [
+              0.9375,
+              0.9375
+            ],
+            "low": 0.8125,
+            "high": 1.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "difference": {
+            "mean": 0.0,
+            "completion_range": [
+              0.0,
+              0.0
+            ],
+            "low": 0.0,
+            "high": 0.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "familywise_difference": {
+            "mean": 0.0,
+            "completion_range": [
+              0.0,
+              0.0
+            ],
+            "low": 0.0,
+            "high": 0.0,
+            "alpha": 0.008333333333333333,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "opportunities": {
+            "played": 4,
+            "candidate_wait": 10,
+            "candidate_burned": 0,
+            "candidate_unfunded_turns": 0,
+            "candidate_slot_blocked_turns": 5,
+            "received_unplayed": 1,
+            "not_received": 11
+          }
+        },
+        {
+          "opponent": "defense",
+          "policy": "learned",
+          "win": {
+            "mean": 0.1875,
+            "completion_range": [
+              0.1875,
+              0.1875
+            ],
+            "low": 0.0625,
+            "high": 0.375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "reference_win": {
+            "mean": 0.125,
+            "completion_range": [
+              0.125,
+              0.125
+            ],
+            "low": 0.0,
+            "high": 0.3125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "difference": {
+            "mean": 0.0625,
+            "completion_range": [
+              0.0625,
+              0.0625
+            ],
+            "low": -0.125,
+            "high": 0.25,
+            "alpha": 0.05,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "familywise_difference": {
+            "mean": 0.0625,
+            "completion_range": [
+              0.0625,
+              0.0625
+            ],
+            "low": -0.1875,
+            "high": 0.3125,
+            "alpha": 0.008333333333333333,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "opportunities": {
+            "played": 9,
+            "candidate_wait": 14,
+            "candidate_burned": 0,
+            "candidate_unfunded_turns": 0,
+            "candidate_slot_blocked_turns": 0,
+            "not_received": 7
+          }
+        },
+        {
+          "opponent": "refill",
+          "policy": "learned",
+          "win": {
+            "mean": 0.0625,
+            "completion_range": [
+              0.0625,
+              0.0625
+            ],
+            "low": 0.0,
+            "high": 0.1875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "reference_win": {
+            "mean": 0.0,
+            "completion_range": [
+              0.0,
+              0.0
+            ],
+            "low": 0.0,
+            "high": 0.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "difference": {
+            "mean": 0.0625,
+            "completion_range": [
+              0.0625,
+              0.0625
+            ],
+            "low": 0.0,
+            "high": 0.1875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "familywise_difference": {
+            "mean": 0.0625,
+            "completion_range": [
+              0.0625,
+              0.0625
+            ],
+            "low": 0.0,
+            "high": 0.25,
+            "alpha": 0.008333333333333333,
+            "independent_seed_clusters": 8,
+            "unresolved_seed_clusters": 0
+          },
+          "opportunities": {
+            "played": 9,
+            "candidate_wait": 10,
+            "candidate_burned": 0,
+            "candidate_unfunded_turns": 0,
+            "candidate_slot_blocked_turns": 0,
+            "not_received": 7
+          }
+        }
+      ]
+    }
+  ],
+  "unsupported": [],
+  "policy_validation": {
+    "qualified": false
+  },
+  "frozen_policy": "be81cfcbc5c294c9844781a199bf147a3b6e840bd82cea0cd3d4db8a90718457",
+  "games": 144,
+  "evidence_level": "experimental_model",
+  "unresolved": 0,
+  "samples": 8,
+  "synthetic_descriptors": [],
+  "scope": "Conditional replacement in supplied25-card decks and declared opponents. No real-meta weights or universal Gold score.",
+  "uncertainty": "95% paired seed intervals; cross-condition recommendation uses Bonferroni-adjusted tails. Unknown outcomes remain0/1 completion bounds.",
+  "assumptions": [
+    "Initial3 cards and first-turn natural draw",
+    "No artifacts/mulligan/tribal/death chains",
+    "Automatic callback order is a declared model rule",
+    "Silence modified-stat cleanup: retain"
+  ]
+}
