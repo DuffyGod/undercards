@@ -1,0 +1,54 @@
+[
+  {
+    "stage": "value_train",
+    "seed": 2700034,
+    "result": {
+      "won": null,
+      "lost": null,
+      "unfinished": true,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=shared_semantic_model, seconds=0.320891",
+      "decision_seconds": [
+        [],
+        []
+      ]
+    },
+    "source": "artifacts/card_eval/v10/value-train-0000.jsonl.gz",
+    "treatment": "Excluded entire trajectory from both critic fits; no terminal label imputed or replayed"
+  },
+  {
+    "stage": "policy_final",
+    "group": "defense",
+    "seed": 2870011,
+    "seat": 0,
+    "policy": "v9_planner",
+    "error": "Decision exceeded the common wall-time budget: actor=0, policy=shared_policy_public_proof_first, seconds=0.284638",
+    "treatment": "Retained0/1 completion bounds; no rerun"
+  },
+  {
+    "stage": "policy_final",
+    "group": "new_composition",
+    "seed": 2870030,
+    "seat": 0,
+    "policy": "v9_planner",
+    "error": "Decision exceeded the common wall-time budget: actor=0, policy=shared_policy_public_proof_first, seconds=0.285036",
+    "treatment": "Retained0/1 completion bounds; no rerun"
+  },
+  {
+    "stage": "policy_final",
+    "group": "known_delayed_sweep",
+    "seed": 2870007,
+    "seat": 0,
+    "policy": "v9_planner",
+    "error": "Decision exceeded the common wall-time budget: actor=0, policy=shared_policy_public_proof_first, seconds=0.254366",
+    "treatment": "Retained0/1 completion bounds; no rerun"
+  },
+  {
+    "stage": "policy_final",
+    "group": "heldout_value_planner",
+    "seed": 2870020,
+    "seat": 1,
+    "policy": "v9_planner",
+    "error": "Decision exceeded the common wall-time budget: actor=1, policy=shared_policy_public_proof_first, seconds=0.353158",
+    "treatment": "Retained0/1 completion bounds; no rerun"
+  }
+]

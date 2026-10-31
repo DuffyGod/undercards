@@ -66,7 +66,9 @@ def bundle_verify(bundle,output):
             z.extractall(root)
         source=root/prefix/'source';env=os.environ.copy();env['PYTHONPATH']=str(source)
         (source/'work').mkdir(exist_ok=True)
-        audit=command([sys.executable,'-m','card_eval.action_audit','--folder','artifacts/card_eval/v10'],source,env)
+        latest='v10' if (source/'artifacts/card_eval/v10/final.json').is_file() else 'v9'
+        module='card_eval.action_audit' if latest=='v10' else 'card_eval.entity_audit'
+        audit=command([sys.executable,'-m',module,'--folder','artifacts/card_eval/'+latest],source,env)
         data=json.loads(audit.stdout);dump(output/'source-audit.json',data)
         if data['status']!='passed' or not data['source_commit'].startswith('archive:'):raise ValueError('Source archive audit depended on Git checkout')
         wheel=next((root/prefix).glob('*.whl'))

@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "source_commit": "a417cddfd267ecf9081e48a8bc8a5d7c1835e2ad",
+  "actor_fingerprint": "bc7f48d3945e4b6561111c2ed291fe4ef1798da9ae6ef507f1d8fa30d8ceea14",
+  "openings": 96,
+  "actor_decisions": 2833,
+  "different_from_v5": 0,
+  "differences": [],
+  "inputs": {
+    "artifacts/card_eval/v10/value-final-0000.jsonl.gz": "4eecdc7fec1e6c8499898115127828057a0ce3ca8d666305c5785283bf00f057",
+    "artifacts/card_eval/v10/value-final-0064.jsonl.gz": "13ccb3552baea1f8e024a04beb672ae28860b5bad2a3a882da7a21db67552470"
+  },
+  "final_used_for_selection": false,
+  "parameters_changed": false,
+  "scope": "Read-only choices on96 already executed independent value-final roll-ins; not new games, counterfactual value labels, or global policy equivalence"
+}

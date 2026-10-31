@@ -8,6 +8,7 @@ from .network import Network
 from .memory_research import read_rows
 from .relational_research import load_value_data, value_metrics, paired_value_gain
 from .statistics import interval
+from .policies import LearnedPolicy
 from .training import commit, dump
 
 
@@ -76,9 +77,33 @@ def audit(folder):
         value_final_openings=len(episodes),value_final_unknown=sum(not e['terminal'] for e in episodes),no_final_selection=True)
 
 
+def behavior_audit(folder):
+    d=json.loads((folder/'design.json').read_text());net=Network.load(folder/'primary-value.npz')[0]
+    baseline=LearnedPolicy(Network.load(d['baseline'])[0]);counts=Counter();seeds=set();differences=[];hashes={}
+    for path in sorted(folder.glob('value-final-*.jsonl.gz')):
+        hashes[str(path)]=hashlib.sha256(path.read_bytes()).hexdigest()
+        for row in read_rows(path):
+            if row['record_type']=='outcome':
+                if row['metadata']['actor_fingerprint']!=net.actor_fingerprint:raise ValueError('Different executed actor')
+                seeds.add(row['episode']);continue
+            obs=row['observation']
+            if obs['player']!=0:continue
+            actions=list(map(tuple,row['legal_actions']));actual=tuple(row['selection']['action'])
+            if actual not in actions:raise ValueError('Illegal saved action')
+            alternative=baseline.choose(obs,actions)['action'];counts['actor_decisions']+=1
+            if actual!=alternative:
+                counts['different_from_v5']+=1
+                differences.append(dict(seed=row['episode'],decision=row['decision'],turn=obs['turn'],actual=actual,v5=alternative))
+    if sorted(seeds)!=d['value_final_seeds']:raise ValueError('Behavior final denominator mismatch')
+    return dict(status='passed',source_commit=commit(),actor_fingerprint=net.actor_fingerprint,openings=len(seeds),
+        actor_decisions=counts['actor_decisions'],different_from_v5=counts['different_from_v5'],differences=differences,
+        inputs=hashes,final_used_for_selection=False,parameters_changed=False,
+        scope='Read-only choices on96 already executed independent value-final roll-ins; not new games, counterfactual value labels, or global policy equivalence')
+
+
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--folder',required=True,type=Path);p.add_argument('--output',type=Path);a=p.parse_args()
-    result=audit(a.folder)
+    p=argparse.ArgumentParser();p.add_argument('--folder',required=True,type=Path);p.add_argument('--output',type=Path);p.add_argument('--behavior-only',action='store_true');a=p.parse_args()
+    result=behavior_audit(a.folder) if a.behavior_only else audit(a.folder)
     if a.output:
         if a.output.exists():raise ValueError('Preserve audit receipt')
         dump(a.output,result)

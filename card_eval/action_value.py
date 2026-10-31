@@ -59,6 +59,7 @@ def encode(obs, actions):
 
 class ActionValueNetwork(RelationalNetwork):
     feature_version = VERSION
+    max_effects = MAX_EFFECTS
 
     def __init__(self, base=None, objective='centered', seed=2026103110, hidden=32, margin=.1):
         if objective not in ('centered', 'pointwise'):

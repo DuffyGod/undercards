@@ -1,0 +1,21 @@
+{
+  "status": "unqualified_policy",
+  "scores": null,
+  "comparisons": [],
+  "policy_validation": {
+    "qualified": false,
+    "status": "not_qualified",
+    "frozen_policy": "22188fe16750530f786d23760c5856347e4e889348df1b9a529ad5438d2950f4",
+    "default_model_replaced": false,
+    "source": "final.json"
+  },
+  "base_model": "22188fe16750530f786d23760c5856347e4e889348df1b9a529ad5438d2950f4",
+  "planner": null,
+  "issues": [
+    {
+      "path": "policies",
+      "code": "unqualified_policy",
+      "message": "The learned policy failed qualification. Use reference policies or explicitly enable experimental-model diagnostics."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Undercards 通用 Value 建模
 
-当前入口为[card_eval0.4.0](card_eval/README.md)，完整ZIP位于`artifacts/card_eval/dist/undercards-card-evaluator-0.4.0.zip`，见[安装指引](artifacts/card_eval/v9/START_HERE.md)和[V9报告](artifacts/card_eval/v9/REPORT.md)。含wheel、五个命名模型、公开搜索、源码和必要输入/完整证据。V9保留实体/机制绑定，复用匹配V5的完整轨迹；3,584槽位32预算未决，部分条件优于V5，但未证明实体优于等容量聚合，对延迟群伤/更强对手无改善。目标仍未完成；默认参考策略未升级，模型/搜索均实验。发行proof-first-3修复重复攻击搜索，独立安装检查通过，不能将V9的proof-first-2成绩重标给新版。未知效果拒绝评分，规则仍仅20实卡及支持语法。每小时任务及上传要求继续有效，前轮持锁时不并发修改。
+当前入口为[card_eval0.4.1](card_eval/README.md)，完整ZIP位于`artifacts/card_eval/dist/undercards-card-evaluator-0.4.1.zip`，见[安装指引](artifacts/card_eval/v10/START_HERE.md)和[V10报告](artifacts/card_eval/v10/REPORT.md)。包含六个命名模型、wheel、源码与必要输入/完整证据。本轮有序行动差网络未验证策略改善：2560槽位4未决，主臂512终局与V5逐一相同；独立96牌序2833决策也0次偏离V5。自身V的Brier .161784优于5参数.183085，未胜过旧V5 .159056。目标仍未完成，默认不升级；新action-v10仅供实验。49源码检查、仓库外安装严格预算8/8终局及完整包审计分别核对软件交付，不能替代策略通过。源/目标效果顺序最多8项，超长/未知显式空评分，不填零；规则仍20完整实卡与支持语法。V9和0.4.0原件保留，每小时任务和上传要求继续有效，前轮持锁时不并发修改。
 
 2026-10-31起，按用户要求以[共享策略与价值学习](analysis/strategic-model/2026-10-31/README.md)为主线：规则保证合法性、机制组合表达、模型学习行动与终局价值、有限搜索辅助战术，并通过新参数/结构/对手留出和相同模型的替换实验验证。实际结果以该目录报告为准，旧启发式和固定策略实验保留作对照。
 

@@ -1,0 +1,9 @@
+Processing ./.
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: undercards-card-eval
+  Building wheel for undercards-card-eval (pyproject.toml): started
+  Building wheel for undercards-card-eval (pyproject.toml): finished with status 'done'
+  Created wheel for undercards-card-eval: filename=undercards_card_eval-0.4.1-py3-none-any.whl size=1317317 sha256=d6bdf0eb9eaf4e8e1387a28b29abd52817861f8ac75382c8d1b02199e16a5311
+  Stored in directory: /tmp/pip-ephem-wheel-cache-0b6exgzj/wheels/81/cb/fb/7cd3380d148368c5e4ab01d92fa2c2e22df4b102a9c962638d
+Successfully built undercards-card-eval

@@ -1,0 +1,110 @@
+{
+  "source_commit": "a417cddfd267ecf9081e48a8bc8a5d7c1835e2ad",
+  "scope": "Training/epoch-selection diagnostics only; not new independent evaluation or general-policy qualification",
+  "datasets": {
+    "train": {
+      "forks": 1024,
+      "centered_changed": 0,
+      "centered_chosen_measured": 1024,
+      "pointwise_changed": 94,
+      "pointwise_chosen_measured": 1002,
+      "origins": {
+        "reused": 768,
+        "fresh": 256
+      },
+      "openings": 512,
+      "gains": {
+        "centered": {
+          "mean": 0.0,
+          "completion_range": [
+            0.0,
+            0.0
+          ],
+          "low": 0.0,
+          "high": 0.0,
+          "alpha": 0.05,
+          "independent_seed_clusters": 512,
+          "unresolved_seed_clusters": 0
+        },
+        "pointwise": {
+          "mean": null,
+          "completion_range": [
+            -0.0107421875,
+            0.0107421875
+          ],
+          "low": -0.0205078125,
+          "high": 0.0205078125,
+          "alpha": 0.05,
+          "independent_seed_clusters": 512,
+          "unresolved_seed_clusters": 22
+        },
+        "sampled_hindsight": {
+          "mean": 0.0634765625,
+          "completion_range": [
+            0.0634765625,
+            0.0634765625
+          ],
+          "low": 0.048828125,
+          "high": 0.0791015625,
+          "alpha": 0.05,
+          "independent_seed_clusters": 512,
+          "unresolved_seed_clusters": 0
+        }
+      }
+    },
+    "diagnostic": {
+      "forks": 256,
+      "centered_changed": 0,
+      "centered_chosen_measured": 256,
+      "pointwise_changed": 25,
+      "pointwise_chosen_measured": 250,
+      "origins": {
+        "reused": 192,
+        "fresh": 64
+      },
+      "openings": 128,
+      "gains": {
+        "centered": {
+          "mean": 0.0,
+          "completion_range": [
+            0.0,
+            0.0
+          ],
+          "low": 0.0,
+          "high": 0.0,
+          "alpha": 0.05,
+          "independent_seed_clusters": 128,
+          "unresolved_seed_clusters": 0
+        },
+        "pointwise": {
+          "mean": null,
+          "completion_range": [
+            -0.015625,
+            0.0078125
+          ],
+          "low": -0.03515625,
+          "high": 0.0234375,
+          "alpha": 0.05,
+          "independent_seed_clusters": 128,
+          "unresolved_seed_clusters": 6
+        },
+        "sampled_hindsight": {
+          "mean": 0.1015625,
+          "completion_range": [
+            0.1015625,
+            0.1015625
+          ],
+          "low": 0.0625,
+          "high": 0.14453125,
+          "alpha": 0.05,
+          "independent_seed_clusters": 128,
+          "unresolved_seed_clusters": 0
+        }
+      }
+    }
+  },
+  "input_alias_examples": [],
+  "limits": "Sampled realized hindsight is not an optimal policy bound. Unmeasured choices retain0/1 completion bounds. Aliases are specified-continuation outcomes in one coupled world, not Bayes-value irreducibility or natural-frequency estimates.",
+  "parameters_changed": false,
+  "final_used": false
+}

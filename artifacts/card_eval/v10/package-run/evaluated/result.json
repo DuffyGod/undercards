@@ -1,0 +1,126 @@
+{
+  "status": "complete",
+  "program_version": "0.4.1",
+  "reference": {
+    "name": "Rock Pet",
+    "cost": 2,
+    "attack": 3,
+    "health": 3,
+    "keywords": [],
+    "effects": [],
+    "card_id": 602
+  },
+  "comparisons": [
+    {
+      "card": "Bench",
+      "semantics": {
+        "name": "Bench",
+        "cost": 5,
+        "attack": 5,
+        "health": 5,
+        "keywords": [],
+        "effects": [
+          {
+            "trigger": "play",
+            "op": "draw",
+            "scope": "owner",
+            "amount": 1,
+            "health": 0
+          }
+        ],
+        "card_id": 243
+      },
+      "recommendation": "experimental_only",
+      "positive_conditions": [],
+      "negative_conditions": [],
+      "conditions": [
+        {
+          "opponent": "pressure",
+          "policy": "learned",
+          "win": {
+            "mean": 0.5,
+            "completion_range": [
+              0.5,
+              0.5
+            ],
+            "low": 0.0,
+            "high": 1.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 2,
+            "unresolved_seed_clusters": 0
+          },
+          "reference_win": {
+            "mean": 0.25,
+            "completion_range": [
+              0.25,
+              0.25
+            ],
+            "low": 0.0,
+            "high": 0.5,
+            "alpha": 0.05,
+            "independent_seed_clusters": 2,
+            "unresolved_seed_clusters": 0
+          },
+          "difference": {
+            "mean": 0.25,
+            "completion_range": [
+              0.25,
+              0.25
+            ],
+            "low": 0.0,
+            "high": 0.5,
+            "alpha": 0.05,
+            "independent_seed_clusters": 2,
+            "unresolved_seed_clusters": 0
+          },
+          "familywise_difference": {
+            "mean": 0.25,
+            "completion_range": [
+              0.25,
+              0.25
+            ],
+            "low": 0.0,
+            "high": 0.5,
+            "alpha": 0.05,
+            "independent_seed_clusters": 2,
+            "unresolved_seed_clusters": 0
+          },
+          "opportunities": {
+            "played": 2,
+            "candidate_wait": 4,
+            "candidate_burned": 0,
+            "candidate_unfunded_turns": 2,
+            "candidate_slot_blocked_turns": 0,
+            "not_received": 2
+          }
+        }
+      ]
+    }
+  ],
+  "unsupported": [],
+  "policy_validation": {
+    "qualified": false,
+    "status": "not_qualified",
+    "frozen_policy": "22188fe16750530f786d23760c5856347e4e889348df1b9a529ad5438d2950f4",
+    "default_model_replaced": false,
+    "source": "final.json"
+  },
+  "frozen_policy": "22188fe16750530f786d23760c5856347e4e889348df1b9a529ad5438d2950f4",
+  "base_model": "22188fe16750530f786d23760c5856347e4e889348df1b9a529ad5438d2950f4",
+  "planner": null,
+  "decision_budget_seconds": 0.25,
+  "games": 8,
+  "model_name": "action-v10",
+  "evidence_level": "experimental_model",
+  "unresolved": 0,
+  "samples": 2,
+  "synthetic_descriptors": [],
+  "scope": "Conditional replacement in supplied25-card decks and declared opponents. No real-meta weights or universal Gold score.",
+  "uncertainty": "95% paired seed intervals; cross-condition recommendation uses Bonferroni-adjusted tails. Unknown outcomes remain0/1 completion bounds.",
+  "assumptions": [
+    "Initial3 cards and first-turn natural draw",
+    "No artifacts/mulligan/tribal/death chains",
+    "Automatic callback order is a declared model rule",
+    "Silence modified-stat cleanup: retain"
+  ]
+}

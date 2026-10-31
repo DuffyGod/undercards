@@ -148,6 +148,16 @@ def evaluate(request, output=None, checkpoint=None, progress=None):
             base_model=base_model_fp,planner=planner_config,
             issues=[_issue('policies', 'unqualified_policy', 'The learned policy failed qualification. Use reference policies or explicitly enable experimental-model diagnostics.')])
         save('result.json', result); return result
+    if net and hasattr(net, 'max_effects'):
+        sources = [('deck', plan['own'])] + [(f'opponents[{i}].deck', o['cards']) for i, o in enumerate(plan['opponents'])]
+        sources += [('candidates', [c['spec'] for c in plan['candidates']])]
+        issues = [_issue(f'{path}[{i}]', 'model_effect_capacity',
+                         f'This model supports at most {net.max_effects} ordered effects; {spec.name} has {len(spec.effects)}. No effects were truncated.')
+                  for path, specs in sources for i, spec in enumerate(specs) if len(spec.effects) > net.max_effects]
+        if issues:
+            result = dict(status='unsupported_policy_input', scores=None, comparisons=[], issues=issues,
+                          base_model=base_model_fp, policy_validation=validation)
+            save('result.json', result); return result
     receipt = dict(status='running', program_version=__version__, frozen_policy=model_fp,base_model=base_model_fp,planner=planner_config,decision_budget_seconds=plan['decision_seconds'],
         model_name=metadata.get('model_name', Path(checkpoint or DEFAULT_MODEL).stem) if net else None,
         policy_validation=validation,

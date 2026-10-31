@@ -7,6 +7,9 @@ from card_eval.network import Network
 from card_eval.game import NativeGame
 from card_eval.profiles import base_deck
 from card_eval.policies import ReferencePolicy
+from card_eval.api import default_request, evaluate
+from card_eval.catalog import Spec, Effect
+from unittest.mock import patch
 
 
 class ActionValueChecks(unittest.TestCase):
@@ -61,6 +64,15 @@ class ActionValueChecks(unittest.TestCase):
             path=Path(directory)/'checkpoint.npz';net.save(path,dict(validation=dict(qualified=False)))
             loaded,_=Network.load(path);self.assertEqual(net.fingerprint,loaded.fingerprint)
             np.testing.assert_array_equal(p,loaded.forward(*loaded.encode(obs,actions))[0])
+
+    def test_api_rejects_capacity_before_any_game_with_empty_score(self):
+        net=ActionValueNetwork(Network.load('card_eval/models/paired-v5.npz')[0])
+        long=Spec('nine_known_effects',3,1,2,effects=(Effect('play','heal','owner',1),)*9)
+        req=default_request([long],samples=2);req.update(policies=['learned'],allow_unqualified_policy=True)
+        with patch('card_eval.api.Network.load',return_value=(net,dict(validation=dict(qualified=False)))), patch('card_eval.api.NativeGame') as game:
+            result=evaluate(req);game.assert_not_called()
+        self.assertEqual(result['status'],'unsupported_policy_input');self.assertIsNone(result['scores'])
+        self.assertEqual(result['issues'][0]['code'],'model_effect_capacity')
 
 
 if __name__=='__main__':unittest.main()

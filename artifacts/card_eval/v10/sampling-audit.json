@@ -1,0 +1,50 @@
+{
+  "fresh": {
+    "train": [
+      {
+        "opponent": "board",
+        "seat": 1,
+        "openings": 32
+      },
+      {
+        "opponent": "delayed",
+        "seat": 1,
+        "openings": 32
+      },
+      {
+        "opponent": "guard",
+        "seat": 0,
+        "openings": 32
+      },
+      {
+        "opponent": "race",
+        "seat": 0,
+        "openings": 32
+      }
+    ],
+    "diagnostic": [
+      {
+        "opponent": "board",
+        "seat": 1,
+        "openings": 8
+      },
+      {
+        "opponent": "delayed",
+        "seat": 1,
+        "openings": 8
+      },
+      {
+        "opponent": "guard",
+        "seat": 0,
+        "openings": 8
+      },
+      {
+        "opponent": "race",
+        "seat": 0,
+        "openings": 8
+      }
+    ]
+  },
+  "limitation": "Fresh fork collection balances marginal opponents and seats but does not cross them: race/guard seat0, board/delayed seat1. Arms share this limitation. No data replaced after final.",
+  "final_used_for_selection": false
+}

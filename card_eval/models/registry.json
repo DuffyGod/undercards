@@ -59,6 +59,18 @@
       "source": "artifacts/card_eval/v9/entity-value.npz",
       "feature_version": "semantic-entity-continuation-1",
       "scope": "Declared simulator rules and evaluated distributions only; no global card rating."
+    },
+    {
+      "name": "action-v10",
+      "file": "action-v10.npz",
+      "description": "有序机制行动差网络与冻结后自身策略终局价值；实验模型，不据最终重选",
+      "qualified": false,
+      "status": "not_qualified",
+      "fingerprint": "22188fe16750530f786d23760c5856347e4e889348df1b9a529ad5438d2950f4",
+      "sha256": "ca7a8dda5d661cd67f1afae85adbcd2c94842ed23dd73a4c6d5db11f4c571c0a",
+      "source": "artifacts/card_eval/v10/primary-value.npz",
+      "feature_version": "ordered-paired-action-value-1",
+      "scope": "Declared simulator rules and evaluated distributions only; no global card rating."
     }
   ],
   "default_policy_mode": "declared references",
