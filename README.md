@@ -1,5 +1,7 @@
 # Undercards 通用 Value 建模
 
+2026-10-31起，按用户要求以[共享策略与价值学习](analysis/strategic-model/2026-10-31/README.md)为主线：规则保证合法性、机制组合表达、模型学习行动与终局价值、有限搜索辅助战术，并通过新参数/结构/对手留出和相同模型的替换实验验证。实际结果以该目录报告为准，旧启发式和固定策略实验保留作对照。
+
 研究首先遵循[整体研究原则](RESEARCH_PRINCIPLES.md)。主Agent自主形成对随机、部分可观测、双方策略相互作用的整体认识，再选择能检验关键未知的方法；不以逐卡端点、模拟器支持名单或用户举例决定长期范围。历史理论已有正确框架，执行曾偏向累计局部评分，本次纠正与证据标准已记录并由根目录[AGENTS.md](AGENTS.md)接续。
 
 现有工具包括[逐卡多维账本](analysis/card-assessment/2026-10-20/README.md)、[随机联合开局](analysis/card-comparison/2026-10-20/joint-opening/README.md)及有限信息研究。755卡目录、78个条件档案与旧DeepSeek材料是辅助证据，不是完整实战强度榜或整体目标进度。暂停搜索推荐完整卡组；方法、结构与候选选择均可按研究证据调整。当前工作状态见[CURRENT_CHECKPOINT.md](CURRENT_CHECKPOINT.md)。
