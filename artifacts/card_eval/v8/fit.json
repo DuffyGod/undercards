@@ -1,0 +1,128 @@
+{
+  "source_commit": "8a24c5053201bd0acd3b731d778fe49b3f7ad804",
+  "training": {
+    "forks": 768,
+    "end_boundary": 768,
+    "unknown_draw": 176,
+    "states": 3821,
+    "roots": 768,
+    "after": 3053,
+    "openings": 384
+  },
+  "development": {
+    "forks": 192,
+    "end_boundary": 192,
+    "unknown_draw": 35,
+    "states": 984,
+    "roots": 192,
+    "after": 792,
+    "openings": 96
+  },
+  "arms": {
+    "entity": {
+      "curve": [
+        {
+          "epoch": 8,
+          "train": {
+            "brier": 0.12812151609810823,
+            "nll": 0.4039852175530026
+          },
+          "development": {
+            "brier": 0.13163097505477972,
+            "nll": 0.4115605077669221
+          }
+        },
+        {
+          "epoch": 16,
+          "train": {
+            "brier": 0.10751005463033642,
+            "nll": 0.34066364507549785
+          },
+          "development": {
+            "brier": 0.11477157639936818,
+            "nll": 0.35812919959929745
+          }
+        },
+        {
+          "epoch": 32,
+          "train": {
+            "brier": 0.09711357281397846,
+            "nll": 0.3085618304371794
+          },
+          "development": {
+            "brier": 0.11065592701897259,
+            "nll": 0.34051854769441847
+          }
+        },
+        {
+          "epoch": 64,
+          "train": {
+            "brier": 0.09261433871488257,
+            "nll": 0.2922539204669398
+          },
+          "development": {
+            "brier": 0.10325450688218756,
+            "nll": 0.3211061172197067
+          }
+        }
+      ],
+      "selected_epoch": 64,
+      "parameters": 9329,
+      "fingerprint": "e587c3e4ce4c63d0f801953c9c6709b1f3c845bb21af76e681e165d8fcf2aa24",
+      "actor_fingerprint": "df34056e80bdbc20811c1e62e3969259862463b76d4cdca5a2d1794a48a7f8a8"
+    },
+    "aggregate": {
+      "curve": [
+        {
+          "epoch": 8,
+          "train": {
+            "brier": 0.11238724874155895,
+            "nll": 0.3569232211643303
+          },
+          "development": {
+            "brier": 0.11860255600602153,
+            "nll": 0.3698448626494818
+          }
+        },
+        {
+          "epoch": 16,
+          "train": {
+            "brier": 0.10229453596810363,
+            "nll": 0.32214519686432747
+          },
+          "development": {
+            "brier": 0.10867473420040812,
+            "nll": 0.3374134099963207
+          }
+        },
+        {
+          "epoch": 32,
+          "train": {
+            "brier": 0.10214890969469496,
+            "nll": 0.3183077860304079
+          },
+          "development": {
+            "brier": 0.10840401229633703,
+            "nll": 0.3330856644705604
+          }
+        },
+        {
+          "epoch": 64,
+          "train": {
+            "brier": 0.09819281872379873,
+            "nll": 0.3102563385254504
+          },
+          "development": {
+            "brier": 0.10794531138825947,
+            "nll": 0.3336542271233588
+          }
+        }
+      ],
+      "selected_epoch": 32,
+      "parameters": 9349,
+      "fingerprint": "6d7d62598b6ce92fb5c87a4e7a9e26644d97fec3ad10dd1a5a9d9ec7844fc929",
+      "actor_fingerprint": "df34056e80bdbc20811c1e62e3969259862463b76d4cdca5a2d1794a48a7f8a8"
+    }
+  },
+  "no_final_selection": true
+}

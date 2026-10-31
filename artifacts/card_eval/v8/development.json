@@ -1,0 +1,29 @@
+{
+  "source_commit": "8a24c5053201bd0acd3b731d778fe49b3f7ad804",
+  "results": [
+    {
+      "margin": 0.05,
+      "lower": 0.6625,
+      "unfinished": 1,
+      "slots": 80
+    },
+    {
+      "margin": 0.1,
+      "lower": 0.6625,
+      "unfinished": 4,
+      "slots": 80
+    },
+    {
+      "margin": 0.2,
+      "lower": 0.6875,
+      "unfinished": 2,
+      "slots": 80
+    }
+  ],
+  "selected_margin": 0.2,
+  "frozen_policies": {
+    "entity": "77ef94335dd92463a7cd318cffe59ac59b3785b1cc6d52e6eb2eb62e4ebb3445",
+    "aggregate": "832f56f795600e00b4813722ebf8cbb8a97b52fe46ab4046b7e9b37fc4cd2bd5",
+    "linear": "0b1695995236665dd0eeea597c8587d5550b78efafef59ffde563f29a6f9b95f"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "training_states": 3821,
+  "turn_range": [
+    1,
+    12
+  ],
+  "states_after_turn12": 0,
+  "empty_own_deck_states": 0,
+  "existing_witness": {
+    "type": "existing_constructed_witness_not_random_holdout",
+    "outcomes": [
+      1,
+      0
+    ],
+    "predictions": {
+      "entity": {
+        "fingerprint": "e587c3e4ce4c63d0f801953c9c6709b1f3c845bb21af76e681e165d8fcf2aa24",
+        "probabilities": [
+          0.8419419476169374,
+          0.8416737862001875
+        ],
+        "p_A_minus_B": 0.00026816141674990135
+      },
+      "aggregate": {
+        "fingerprint": "6d7d62598b6ce92fb5c87a4e7a9e26644d97fec3ad10dd1a5a9d9ec7844fc929",
+        "probabilities": [
+          0.8158974095075905,
+          0.8158974095075905
+        ],
+        "p_A_minus_B": 0.0
+      },
+      "linear": {
+        "fingerprint": "279b176854ac3731503520d63cae628addd08668f57d65df050f51ef605d3505",
+        "probabilities": [
+          0.46736724868075347,
+          0.46736724868075347
+        ],
+        "p_A_minus_B": 0.0
+      }
+    },
+    "used_for_selection": false
+  },
+  "final_run_started": false,
+  "decision": "Preserve V8; use existing matching-V5 full train/dev trajectories for a newly frozenV9 comparison. No old final labels or final reselection."
+}

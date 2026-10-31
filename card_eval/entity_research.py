@@ -60,13 +60,36 @@ def prepare(folder):
         retired_final_starts=[1210000,1310000,1330000,1610000,1630000,1810000,1830000,2030000,2050000]))
 
 
-def dataset(source):
+def prepare_extended(folder):
+    prepare(folder);p=folder/'design.json';d=json.loads(p.read_text());files=sorted(BASE.parent.glob('value-train-*.jsonl.gz'))+sorted(BASE.parent.glob('value-dev-*.jsonl.gz'))
+    d.update(stage='V9_coverage_revision',include_on_policy=True,rng_seed=2026103109,
+        development_seeds=list(range(2170000,2170008)),final_seeds=list(range(2350000,2350032)),diagnostic_seeds=list(range(2330000,2330096)),
+        coverage_reason='V8 actual training had no turns>12 and no empty own deck; preserve V8 before-final attempt and reuse matching frozen-V5 full train/dev episodes. No old final imported.',
+        train='Equal original-opening weights over384 paired-fork openings and384 complete on-policyV5 training openings. Same actor/targets for both arms; no new old-game replay.')
+    d['source_files'].update({str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in files});dump(p,d)
+
+
+def on_policy(stage):
+    expected_actor=Network.load(BASE)[0].actor_fingerprint
+    for path in sorted(BASE.parent.glob(f'value-{stage}-*.jsonl.gz')):
+        observations=[]
+        for row in read_rows(path):
+            if row['record_type']=='decision':
+                if row['observation']['player']==0:observations.append(row['observation'])
+            elif row['record_type']=='outcome':
+                meta=row['metadata'];result=row['result']
+                if meta['actor_fingerprint']!=expected_actor:raise ValueError('Full-trajectory continuation actor mismatch')
+                yield dict(seed=meta['seed'],observations=observations,unfinished=result['unfinished'],won=result['won']);observations=[]
+        if observations:raise ValueError('Unfinished serialized full-trajectory episode; never synthesize label')
+
+
+def dataset(source,rollins=None):
     records=[];counts=Counter()
     for row in source:
         counts['forks']+=1;obs=row['observation'];actions=list(map(tuple,row['legal_actions']))
         labels={b['action_index']:b for b in row['branches'] if b['continuation'] in ('current','baseline')}
         base=labels.get(row['baseline_action'])
-        if base is not None and not base['unfinished']:records.append((row['seed'],0,entity_state(obs),int(base['won'])))
+        if base is not None and not base['unfinished']:records.append((row['seed'],0,entity_state(obs).astype(np.float32),int(base['won'])))
         else:counts['unknown_root']+=1
         for index,b in labels.items():
             if b['unfinished']:counts['unknown_label']+=1;continue
@@ -79,11 +102,16 @@ def dataset(source):
                 counts['exact_terminal']+=1
                 if terminal!=bool(b['won']):raise ValueError('Terminal replay disagrees with public rules')
                 continue
-            records.append((row['seed'],1,entity_state(child.observation()),int(b['won'])))
+            records.append((row['seed'],1,entity_state(child.observation()).astype(np.float32),int(b['won'])))
+    for episode in rollins or ():
+        counts['full_episodes']+=1
+        if episode['unfinished']:counts['unknown_full_episode']+=1;continue
+        records.extend((episode['seed'],2,entity_state(obs).astype(np.float32),int(episode['won'])) for obs in episode['observations'])
     seeds=np.array([r[0] for r in records]);sizes=Counter(seeds)
     output=dict(seeds=seeds,kinds=np.array([r[1] for r in records]),states=np.asarray([r[2] for r in records],dtype=np.float32),
         labels=np.array([r[3] for r in records]),weights=np.array([1/sizes[s] for s in seeds]))
     counts.update(states=len(records),roots=int(np.sum(output['kinds']==0)),after=int(np.sum(output['kinds']==1)),openings=len(sizes))
+    if rollins is not None:counts.update(full_states=int(np.sum(output['kinds']==2)),past_turn12=int(np.sum(output['states'][:,5]*30>12.01)),empty_own_deck=int(np.sum(output['states'][:,8]==0)))
     return output,dict(counts)
 
 
@@ -92,7 +120,9 @@ def inputs(net,data):return data['states'] if isinstance(net,EntityValueNetwork)
 
 def probabilities(net,data):
     x=inputs(net,data)
-    if isinstance(net,EntityValueNetwork):z=net.batch_forward(x)[0];return 1/(1+np.exp(-np.clip(z,-40,40)))
+    if isinstance(net,EntityValueNetwork):
+        z=np.concatenate([net.batch_forward(x[i:i+256])[0] for i in range(0,len(x),256)])
+        return 1/(1+np.exp(-np.clip(z,-40,40)))
     return np.array([(net.predict_value(s)+1)/2 for s in x])
 
 
@@ -106,7 +136,8 @@ def fit(folder):
     d=json.loads((folder/'design.json').read_text())
     for path,digest in d['source_files'].items():
         if hashlib.sha256(Path(path).read_bytes()).hexdigest()!=digest:raise ValueError('Source changed')
-    train,counts=dataset(rows(SOURCE,'train'));dev,dc=dataset(rows(SOURCE,'diagnostic'))
+    train,counts=dataset(rows(SOURCE,'train'),on_policy('train') if d.get('include_on_policy') else None)
+    dev,dc=dataset(rows(SOURCE,'diagnostic'),on_policy('dev') if d.get('include_on_policy') else None)
     np.savez_compressed(folder/'value-train.npz',**train);np.savez_compressed(folder/'value-development.npz',**dev)
     report={};base=Network.load(BASE)[0]
     for arm in ('entity','aggregate'):
@@ -206,5 +237,5 @@ def final_value(folder):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('mode',choices=['prepare','fit','development','final','final-value']);p.add_argument('--output',required=True,type=Path);args=p.parse_args()
-    {'prepare':prepare,'fit':fit,'development':development,'final':final,'final-value':final_value}[args.mode](args.output)
+    p=argparse.ArgumentParser();p.add_argument('mode',choices=['prepare','prepare-extended','fit','development','final','final-value']);p.add_argument('--output',required=True,type=Path);args=p.parse_args()
+    {'prepare':prepare,'prepare-extended':prepare_extended,'fit':fit,'development':development,'final':final,'final-value':final_value}[args.mode](args.output)

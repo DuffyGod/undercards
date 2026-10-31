@@ -1,0 +1,20 @@
+[
+  {
+    "margin": 0.05,
+    "lower": 0.6625,
+    "unfinished": 1,
+    "slots": 80
+  },
+  {
+    "margin": 0.1,
+    "lower": 0.6625,
+    "unfinished": 4,
+    "slots": 80
+  },
+  {
+    "margin": 0.2,
+    "lower": 0.6875,
+    "unfinished": 2,
+    "slots": 80
+  }
+]
