@@ -1,0 +1,7 @@
+{
+  "failures": [
+    {"stage":"initial adapter checks","error":"bridge.Player is not exported","resolution":"Import the actual retained model.Player/Card; all five targeted checks pass after correction.","training_or_final_started":false},
+    {"stage":"prepare","error":"Used deck() for a one-card lookup; it correctly requires exactly 25 cards","resolution":"Use resolve() for semantic source replacements; prepare then succeeded.","training_or_final_started":false}
+  ],
+  "unresolved": ["Search only explores current owner's deterministic turn","No chance model or sufficient belief","Value labels concern base V5 continuation, not the planner policy","No external server certification"]
+}
