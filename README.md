@@ -1,12 +1,14 @@
 # Undercards 通用 Value 建模
 
+当前可安装入口为[card_eval程序0.2](card_eval/README.md)，[wheel与本轮结果](artifacts/card_eval/REPORT.md)可直接取得。它接受双方完整25张牌表、指定替换和对手，输出条件差、区间及拒绝评分原因。新学习模型未通过验证，正常入口阻止其作为推荐器；通用可靠评估目标仍未完成。已实际启用[每小时调研、试验和汇报](RESEARCH_AUTOMATION.md)，每轮成果仍提交并上传研究分支。
+
 2026-10-31起，按用户要求以[共享策略与价值学习](analysis/strategic-model/2026-10-31/README.md)为主线：规则保证合法性、机制组合表达、模型学习行动与终局价值、有限搜索辅助战术，并通过新参数/结构/对手留出和相同模型的替换实验验证。实际结果以该目录报告为准，旧启发式和固定策略实验保留作对照。
 
 研究首先遵循[整体研究原则](RESEARCH_PRINCIPLES.md)。主Agent自主形成对随机、部分可观测、双方策略相互作用的整体认识，再选择能检验关键未知的方法；不以逐卡端点、模拟器支持名单或用户举例决定长期范围。历史理论已有正确框架，执行曾偏向累计局部评分，本次纠正与证据标准已记录并由根目录[AGENTS.md](AGENTS.md)接续。
 
 现有工具包括[逐卡多维账本](analysis/card-assessment/2026-10-20/README.md)、[随机联合开局](analysis/card-comparison/2026-10-20/joint-opening/README.md)及有限信息研究。755卡目录、78个条件档案与旧DeepSeek材料是辅助证据，不是完整实战强度榜或整体目标进度。暂停搜索推荐完整卡组；方法、结构与候选选择均可按研究证据调整。当前工作状态见[CURRENT_CHECKPOINT.md](CURRENT_CHECKPOINT.md)。
 
-此前研究：[真实白板身体、协调攻击与条件补位](analysis/strategic-model/2026-10-30/REPORT.md)。从随机起手至模型内终局比较五张真实无能力怪物的三槽替换，加入协调攻击、存钱等待、同规则消融与新牌序验证。小体背景中Aaron可比继续加入Rock Pet更有效，已有厚体时这种建议会改变；Candy Dish的厚血也不是普遍优势。结论严格限声明角色背景与对手池，尚非真实费用核心或全池排名。[只读程序与数据](analysis/strategic-model/2026-10-30/README.md)保留上手/不出场分母、参数反事实及失败。用户要求每2小时续作，当前调度接口不可用、尚未启用，见[执行意图与状态](RESEARCH_AUTOMATION.md)。
+此前研究：[真实白板身体、协调攻击与条件补位](analysis/strategic-model/2026-10-30/REPORT.md)。从随机起手至模型内终局比较五张真实无能力怪物的三槽替换，加入协调攻击、存钱等待、同规则消融与新牌序验证。小体背景中Aaron可比继续加入Rock Pet更有效，已有厚体时这种建议会改变；Candy Dish的厚血也不是普遍优势。结论严格限声明角色背景与对手池，尚非真实费用核心或全池排名。[只读程序与数据](analysis/strategic-model/2026-10-30/README.md)保留上手/不出场分母、参数反事实及失败。当时调度接口不可用；2026-10-31已按用户新要求实际启用每小时任务，见[状态](RESEARCH_AUTOMATION.md)。
 
 上一批[随机资源、相互提防与模型内终局](analysis/strategic-model/2026-10-20/REPORT.md)连接到牌/资金、付费惩罚与恢复，随后依据反例修订评价目标。结果表明提前击杀、截止存活和最终获胜不可互换；当前不按单一生命差默认推荐通用强度。[原程序/数据](analysis/strategic-model/2026-10-20/README.md)继续保留，未重跑。
 

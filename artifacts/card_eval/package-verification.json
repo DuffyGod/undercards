@@ -1,0 +1,71 @@
+{
+  "status": "passed",
+  "wheel": "undercards_card_eval-0.2.0-py3-none-any.whl",
+  "installed_outside_repository": true,
+  "source_tree_required": false,
+  "bundled_model_load": true,
+  "unqualified_model_gate": true,
+  "unsupported_card_has_no_score": true,
+  "normal_example_games": 16,
+  "unit_tests": 14,
+  "checks": [
+    {
+      "arguments": [
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "0.2.0\n"
+    },
+    {
+      "arguments": [
+        "inspect",
+        "Bench"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"supported\",\n  \"card\": {\n    \"name\": \"Bench\",\n    \"cost\": 5,\n    \"attack\": 5,\n    \"health\": 5,\n    \"keywords\": [],\n    \"effects\": [\n      {\n        \"trigger\": \"play\",\n        \"op\": \"draw\",\n        \"scope\": \"owner\",\n        \"amount\": 1,\n        \"health\": 0\n      }\n    ],\n    \"card_id\": 243\n  }\n}\n"
+    },
+    {
+      "arguments": [
+        "inspect",
+        "Glyde"
+      ],
+      "returncode": 2,
+      "stdout": "{\n  \"status\": \"unsupported\",\n  \"card\": \"Glyde\",\n  \"score\": null,\n  \"reason\": \"Unconsumed card text: Magic: Gain ATK +1/HP +1 for each card in your hand.\"\n}\n"
+    },
+    {
+      "arguments": [
+        "evaluate",
+        "--input",
+        "/workspace/undercards/work/card-eval-build/standalone-request.json",
+        "--output",
+        "/workspace/undercards/artifacts/card_eval/installed-example"
+      ],
+      "returncode": 0,
+      "stdout": "Bench：证据不足，暂不排序\n报告：/workspace/undercards/artifacts/card_eval/installed-example/report.md\n"
+    },
+    {
+      "arguments": [
+        "evaluate",
+        "--input",
+        "/workspace/undercards/work/card-eval-build/model-request.json",
+        "--output",
+        "/workspace/undercards/artifacts/card_eval/installed-blocked-model"
+      ],
+      "returncode": 2,
+      "stdout": "报告：/workspace/undercards/artifacts/card_eval/installed-blocked-model/report.md\n"
+    },
+    {
+      "arguments": [
+        "evaluate",
+        "--input",
+        "/workspace/undercards/work/card-eval-build/model-request.json",
+        "--output",
+        "/workspace/undercards/artifacts/card_eval/installed-experimental-model",
+        "--experimental-model"
+      ],
+      "returncode": 0,
+      "stdout": "Bench：学习模型未达标，仅作实验诊断\n报告：/workspace/undercards/artifacts/card_eval/installed-experimental-model/report.md\n"
+    }
+  ],
+  "meaning": "Installation, complete-deck I/O and quality controls only; learned policy qualification remains failed."
+}

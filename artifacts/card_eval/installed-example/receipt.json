@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "program_version": "0.2.0",
+  "frozen_policy": null,
+  "policy_validation": {
+    "status": "reference_policy_comparison"
+  },
+  "completed_games": 16,
+  "rejected_games": 0,
+  "requested_samples": 2,
+  "seed_start": 1410000,
+  "information": "Opponent hand/order/private deck composition are not policy observations",
+  "rules": {
+    "silence": "retain",
+    "current_server_certified": false
+  },
+  "elapsed_seconds": 0.3274803360000078
+}
