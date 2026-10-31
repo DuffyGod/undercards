@@ -31,7 +31,7 @@ def build(output):
     with zipfile.ZipFile(output,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as archive:
         add(archive,wheel.name,wheel.read_bytes())
         add(archive,'START_HERE.md',(ROOT/'artifacts/card_eval/v7/START_HERE.md').read_bytes())
-        for example in ('reference-request.json','learned-request.json'):
+        for example in ('reference-request.json','learned-request.json','planner-request.json'):
             add(archive,'examples/'+example,(ROOT/'card_eval/examples'/example).read_bytes())
         for name in selected:add(archive,'source/'+name,(ROOT/name).read_bytes())
         add(archive,'source/SOURCE_REVISION.json',json.dumps(dict(source_commit=revision,source_mode='frozen delivery archive',version=__version__),indent=2).encode())

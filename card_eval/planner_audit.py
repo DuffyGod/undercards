@@ -5,6 +5,9 @@ from .network import Network
 from .planner_research import rows,samples,BASE,SOURCE
 from .memory_research import read_rows
 from .public_planner import PublicPlanner
+from .relations import state_features
+from .knowledge import vector
+import numpy as np
 from .training import commit
 
 
@@ -39,9 +42,12 @@ def audit(folder):
     if len(unknown)!=len(final['failures']):raise ValueError('Unknown completion accounting mismatch')
     value=json.loads((folder/'final-value.json').read_text());_,counts=samples(rows(folder,'diagnostic',reused=False))
     if counts!=value['counts']:raise ValueError('Final value input mismatch')
+    witness=json.loads((folder/'value-alias-witness.json').read_text());a,b=witness['observations']
+    if not np.array_equal(state_features(a),state_features(b)) or not np.array_equal(vector(a),vector(b)) or witness['outcomes']!=[1,0]:
+        raise ValueError('Structural counterexample mismatch')
     return dict(status='passed',source_commit=commit(),training_counts=fit['counts'],final_slots=len(seen),
         unresolved_slots=len(unknown),value_counts=counts,actor_unchanged=True,final_selection=False,
-        replayed_games=0,refitted_models=0,scope='Internal evidence consistency; no server-rule or general-policy certification.')
+        replayed_games=0,refitted_models=0,representation_alias_checked=True,scope='Internal evidence consistency; no server-rule or general-policy certification.')
 
 
 if __name__=='__main__':

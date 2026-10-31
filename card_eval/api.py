@@ -130,18 +130,25 @@ def evaluate(request, output=None, checkpoint=None, progress=None):
         cert = json.loads(certificate.read_text(encoding='utf-8'))
         if cert.get('frozen_policy') == model_fp: validation = cert
     base_model_fp=model_fp
+    planner_config=None
     if plan['planner']:
         from .public_planner import PublicPlanner
-        probe=PublicPlanner(net,**plan['planner']);model_fp=probe.fingerprint
+        try:probe=PublicPlanner(net,**plan['planner'])
+        except ValueError as exc:
+            result=dict(status='unsupported_policy_configuration',scores=None,comparisons=[],
+                issues=[_issue('planner','unsupported_model',str(exc))])
+            save('result.json',result);return result
+        planner_config=probe.config;model_fp=probe.fingerprint
         # A checkpoint's actor certificate cannot certify a changed planner.
         # All released public-planner configurations remain experimental.
         validation=dict(qualified=False,status='not_qualified',frozen_policy=model_fp,
             base_model=base_model_fp,reason='Public planner requires separate qualification; checkpoint-only certificate does not apply.')
     if needs_model and not validation.get('qualified', False) and not plan['allow_unqualified_policy']:
         result = dict(status='unqualified_policy', scores=None, comparisons=[], policy_validation=validation,
+            base_model=base_model_fp,planner=planner_config,
             issues=[_issue('policies', 'unqualified_policy', 'The learned policy failed qualification. Use reference policies or explicitly enable experimental-model diagnostics.')])
         save('result.json', result); return result
-    receipt = dict(status='running', program_version=__version__, frozen_policy=model_fp,base_model=base_model_fp,planner=plan['planner'],
+    receipt = dict(status='running', program_version=__version__, frozen_policy=model_fp,base_model=base_model_fp,planner=planner_config,
         model_name=metadata.get('model_name', Path(checkpoint or DEFAULT_MODEL).stem) if net else None,
         policy_validation=validation,
         completed_games=0, rejected_games=0, requested_samples=plan['samples'], seed_start=plan['seed_start'],
@@ -217,7 +224,7 @@ def evaluate(request, output=None, checkpoint=None, progress=None):
                            {c['spec'].name for c in plan['candidates'] if c['spec'].card_id is None})
         result = dict(status='complete' if comparisons else 'unsupported_input', program_version=__version__,
             reference=asdict(plan['reference']), comparisons=comparisons, unsupported=plan['blocked'],
-            policy_validation=receipt['policy_validation'], frozen_policy=model_fp,base_model=base_model_fp,planner=plan['planner'],games=receipt['completed_games'],
+            policy_validation=receipt['policy_validation'], frozen_policy=model_fp,base_model=base_model_fp,planner=planner_config,games=receipt['completed_games'],
             model_name=receipt['model_name'],
             evidence_level='experimental_model' if needs_model and not validation.get('qualified', False) else 'declared_policy_comparison',
             unresolved=receipt['rejected_games'], samples=plan['samples'], synthetic_descriptors=synthetic,

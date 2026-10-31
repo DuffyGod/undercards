@@ -31,6 +31,10 @@ def build(include_v6=False,include_v7=False):
     request=default_request(['Bench','Fishing Rod'],samples=8);request['seed_start']=1911000
     dump(examples/'reference-request.json',dict(request,policies=['race','board','guard']))
     dump(examples/'learned-request.json',dict(request,policies=['learned']))
+    if include_v7:
+        development=json.loads((ROOT/'artifacts/card_eval/v7/development.json').read_text())
+        dump(examples/'planner-request.json',dict(request,policies=['learned'],
+            planner=dict(mode='value',margin=development['selected_margin'])))
     return entries
 
 

@@ -21,6 +21,8 @@ card-eval inspect Glyde
 
 普通参考比较可使用examples/reference-request.json且去掉实验选项。编辑25张牌表、替换位置、候选、SOUL和对手；未知输入返回结构化原因与空评分。Glyde拒绝的非零退出码不是零分。
 
+examples/planner-request.json 使用本轮开发选定门槛，可直接传给evaluate，仍须显式选择afterstate-v7与实验模式。命令行示范的.1并非本轮最终主臂配置。
+
 输出包括report.md、result.json、input.json、receipt.json和逐局games.jsonl.gz。保留未上手、等待、满格、受罚和未决完成界，不合成为全池Gold或现实环境胜率。
 
 ## 源码和复核
