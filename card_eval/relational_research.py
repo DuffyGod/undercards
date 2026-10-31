@@ -185,7 +185,7 @@ def value_data(folder, net, name, seeds):
 def value_metrics(net, episodes, constant):
     scored = []; calibration = []; completion = []; gain_completion = []
     for e in episodes:
-        probs = [net.forward(s, np.zeros((1, len(net.actor))))[1] / 2 + .5 for s in e['states']]
+        probs = [net.predict_value(s) / 2 + .5 for s in e['states']]
         if not probs: raise ValueError('Episode without recorded actor predictions cannot be silently scored')
         if not e['terminal']:
             possible = [float(np.mean([(p - y) ** 2 for p in probs])) for y in (0, 1)]
@@ -263,7 +263,7 @@ def phase_metrics(net, episodes, constant):
 def paired_value_gain(net, baseline, episodes):
     bounds = []
     for e in episodes:
-        predictions = [[model.forward(s, np.zeros((1, len(model.actor))))[1] / 2 + .5
+        predictions = [[model.predict_value(s) / 2 + .5
                         for s in e['states']] for model in (net, baseline)]
         outcomes = [int(e['won'])] if e['terminal'] else [0, 1]
         gains = [float(np.mean((np.asarray(predictions[1]) - y) ** 2 - (np.asarray(predictions[0]) - y) ** 2)) for y in outcomes]

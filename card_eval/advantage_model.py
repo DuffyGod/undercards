@@ -54,7 +54,7 @@ class AdvantageNetwork(RelationalNetwork):
         best = int(scores.argmax()); chosen = best if scores[best] - scores[base] > self.margin else base
         # Deterministic action distribution; no PPO/importance-sampling claim.
         prob = np.zeros(len(actions)); prob[chosen] = 1.
-        value = float(2 / (1 + np.exp(-np.clip(state @ self.critic, -40, 40))) - 1)
+        value = self.predict_value(state)
         return prob, value, dict(base=base, chosen=chosen, predicted_gain=float(scores[chosen] - scores[base]))
 
     def fit_advantage(self, groups, l2=.01, iterations=160):

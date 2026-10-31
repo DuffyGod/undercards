@@ -15,7 +15,7 @@ from .game import NativeGame, DecisionBudgetExceeded
 from .policies import ReferencePolicy, LearnedPolicy, lethal
 from .profiles import training_pool, base_deck, opponents
 from .training import dump, commit, decode
-from .relational_research import small_result, ValueRecorder, value_metrics, phase_metrics
+from .relational_research import small_result, ValueRecorder, value_metrics, phase_metrics, paired_value_gain
 from .statistics import interval
 
 BASELINE = Path('artifacts/card_eval/v4/primary-value.npz')
@@ -272,15 +272,24 @@ def value(folder):
     prior = float(np.mean([int(e['won']) for e in train if e['terminal']]))
     net.save(folder / 'primary-value.npz', dict(source_commit=commit(), validation=dict(qualified=False),
         target='Own frozen greedy gated actor under equal race/board/guard and structured-deck training distribution.', value_unfitted=False))
+    simple = AdvantageNetwork(net.actor.copy(), advantage=net.advantage.copy(), margin=net.margin)
+    states = np.asarray(xs)
+    reduced = np.c_[np.ones(len(states)),states[:,1]-states[:,2],states[:,26]-states[:,39],states[:,27]-states[:,40],states[:,8]-states[:,9]]
+    simple_report = simple.fit_value(reduced,ys,weights,l2=.01); coefficients=simple.critic.copy(); simple.critic=np.zeros(74); simple.critic[0]=coefficients[0]
+    for coefficient,(pos,neg) in zip(coefficients[1:],((1,2),(26,39),(27,40),(8,9))):
+        simple.critic[pos]=coefficient; simple.critic[neg]=-coefficient
+    simple.save(folder/'value-hp-board.npz',dict(source_commit=commit(),validation=dict(qualified=False),purpose='Fixed five-parameter value baseline for the same frozen actor.'))
     dev = value_data(folder, net, 'dev', d['value_dev_seeds'])
     dump(folder / 'value.json', dict(source_commit=commit(), fit=report, train_prior=prior, actor_unchanged=True, actor_fingerprint=before,
-        train_episodes=len(train), train_decisions=len(xs), train_unresolved=sum(not e['terminal'] for e in train), development=value_metrics(net, dev, prior)))
+        train_episodes=len(train), train_decisions=len(xs), train_unresolved=sum(not e['terminal'] for e in train), development=value_metrics(net, dev, prior),
+        simple_fit=simple_report, simple_development=value_metrics(simple,dev,prior), primary_gain_vs_simple=paired_value_gain(net,simple,dev)))
 
 
 def final(folder):
     if (folder / 'final.json').exists() or (folder / 'final-games.jsonl.gz').exists(): raise ValueError('Final is used once')
     d = json.loads((folder / 'design.json').read_text()); net = Network.load(folder / 'primary-value.npz')[0]
     previous = Network.load(BASELINE)[0]; v3 = Network.load('card_eval/models/shared-policy.npz')[0]
+    simple = Network.load(folder/'value-hp-board.npz')[0]
     inputs = cases(True); dump(folder / 'final-plan.json', dict(source_commit=commit(), primary_fingerprint=net.fingerprint,
         actor_fingerprint=net.actor_fingerprint, selected_margin=net.margin, seeds=d['final_seeds'], cases=[dict(group=n,
         decks=[[asdict(s) for s in deck] for deck in (a, b)], souls=s, opponent=p) for n, a, b, s, p in inputs]))
@@ -314,6 +323,7 @@ def final(folder):
     qualified = not failures and all(c['primary_gain']['low'] > 0 for g in groups_out for c in g['policies'] if c['policy'] in ('previous_v4','race','board','guard'))
     result = dict(status='complete', source_commit=commit(), qualified=qualified, groups=groups_out, failures=failures,
         primary_fingerprint=net.fingerprint, value_final=value_metrics(net,val,prior), value_phases_final=phase_metrics(net,val,prior),
+        value_simple_final=value_metrics(simple,val,prior), value_gain_vs_simple=paired_value_gain(net,simple,val),
         no_final_selection=True, elapsed_seconds=time.monotonic()-elapsed, acceptance=d['acceptance'], real_server_certified=False)
     dump(folder / 'final.json', result); dump(folder / 'validation.json',dict(qualified=qualified,status='qualified' if qualified else 'not_qualified',
         frozen_policy=net.fingerprint,default_model_replaced=False,source='final.json'))

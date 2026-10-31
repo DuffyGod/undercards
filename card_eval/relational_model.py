@@ -29,8 +29,11 @@ class RelationalNetwork:
 
     def forward(self, state, actions):
         z = actions @ self.actor; p = np.exp(z - z.max()); p /= p.sum()
-        value = float(2 / (1 + np.exp(-np.clip(state @ self.critic, -40, 40))) - 1)
+        value = self.predict_value(state)
         return p, value, None
+
+    def predict_value(self, state):
+        return float(2 / (1 + np.exp(-np.clip(state @ self.critic, -40, 40))) - 1)
 
     def fit_actor(self, features, labels, l2=1e-5, iterations=180):
         from scipy.optimize import minimize
