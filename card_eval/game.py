@@ -1,6 +1,7 @@
 """Twenty-five explicit semantic cards on BOTH sides; no aggregate host roles."""
 from dataclasses import replace, asdict
 from .legacy import environment, bridge
+from .knowledge import Knowledge
 
 Config = environment.Config
 Unit = environment.Unit
@@ -17,6 +18,7 @@ class NativeGame(environment.LearningGame):
         self.native_decks = tuple(tuple(d) for d in decks); self.souls = tuple(souls)
         self.replacement_slots = frozenset(replacement_slots)
         candidate = self.native_decks[0][replacement_slots[0]]
+        self.knowledge = Knowledge(self.native_decks)
         # With no deck-generation/return mechanics, natural draws exhaust25
         # cards and fatigue31 kills before start-healing (hero ceiling30).
         # Sixty own turns therefore covers supported healing stalls; this is
@@ -37,6 +39,13 @@ class NativeGame(environment.LearningGame):
     def spec(self, actor, card):
         return self.native_decks[actor][card.uid]
 
+    def event(self, actor, action, **kwargs):
+        super().event(actor, action, **kwargs)
+        if action == 'play':
+            # Resolve only the card that has actually become public. Neither
+            # fields() nor any policy consults an opponent's other descriptors.
+            self.knowledge.observe_play(actor, self.native_decks[actor][kwargs['card']['uid']])
+
     def view(self, actor):
         a, b = self.players[actor], self.players[1 - actor]
         # ABI field expresses a public possibility only. Never count actual
@@ -50,6 +59,7 @@ class NativeGame(environment.LearningGame):
         obs = super().observation(actor)
         obs['config']['soul'] = self.souls[actor]
         obs['own_soul'] = self.souls[actor]; obs['enemy_soul'] = self.souls[1 - actor]
+        obs.update(self.knowledge.fields(actor))
         return obs
 
     def act_turn(self, actor):

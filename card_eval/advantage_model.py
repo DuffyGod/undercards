@@ -67,15 +67,15 @@ class AdvantageNetwork(RelationalNetwork):
             xs.extend(matrix - matrix.mean(axis=0)); ys.extend(outcomes - outcomes.mean())
             weights.extend([1 / len(outcomes)] * len(outcomes))
         x = np.asarray(xs); y = np.asarray(ys); w = np.asarray(weights); w /= w.sum()
-        if x.shape[1:] != (HEAD_DIM,): raise ValueError('Action head feature mismatch')
+        if x.shape[1:] != self.advantage.shape: raise ValueError('Action head feature mismatch')
         def objective(beta):
             residual = x @ beta - y
             return float(.5 * w @ (residual ** 2) + .5 * l2 * (beta @ beta)), x.T @ (w * residual) + l2 * beta
-        result = minimize(objective, np.zeros(HEAD_DIM), jac=True, method='L-BFGS-B',
+        result = minimize(objective, np.zeros_like(self.advantage), jac=True, method='L-BFGS-B',
                           options=dict(maxiter=iterations, ftol=1e-10, gtol=1e-7))
         self.advantage = result.x
         return dict(loss=float(result.fun), iterations=int(result.nit), converged=bool(result.success), message=str(result.message),
-                    paired_groups=len(groups), action_labels=len(y), head_parameters=HEAD_DIM)
+                    paired_groups=len(groups), action_labels=len(y), head_parameters=len(self.advantage))
 
     def save(self, path, metadata):
         path = Path(path)

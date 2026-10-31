@@ -92,7 +92,7 @@ class PrefixController:
         index = self.index; self.index += 1
         if index <= self.fork:
             expected = self.rows[index]
-            if obs != expected['observation'] or list(map(tuple, expected['legal_actions'])) != actions:
+            if json.dumps(obs,sort_keys=True) != json.dumps(expected['observation'],sort_keys=True) or list(map(tuple, expected['legal_actions'])) != actions:
                 raise ValueError('Counterfactual common prefix/observation mismatch')
             action = self.action if index == self.fork else tuple(expected['selection']['action'])
             if index == self.fork: self.checked = True
