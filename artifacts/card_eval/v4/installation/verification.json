@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "version": "0.2.1",
+  "wheel": "../../dist/undercards_card_eval-0.2.1-py3-none-any.whl",
+  "wheel_sha256": "4384ea2c1bab4d065a301586cfe9adf0b21ef21e7fd358fd9f2545af4e102197",
+  "installed_outside_source": true,
+  "actual_module": "/workspace/undercards/work/v4-final-installed/card_eval/__init__.py",
+  "new_backend_loaded": true,
+  "default_gate_preserved": true,
+  "experimental_games": 8,
+  "checks": [
+    {
+      "arguments": [
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "0.2.1\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "evaluate",
+        "--input",
+        "/workspace/undercards/artifacts/card_eval/v4/installation/input.json",
+        "--output",
+        "/workspace/undercards/artifacts/card_eval/v4/installation/blocked",
+        "--checkpoint",
+        "/workspace/undercards/artifacts/card_eval/v4/primary-value.npz"
+      ],
+      "returncode": 2,
+      "stdout": "报告：/workspace/undercards/artifacts/card_eval/v4/installation/blocked/report.md\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "evaluate",
+        "--input",
+        "/workspace/undercards/artifacts/card_eval/v4/installation/input.json",
+        "--output",
+        "/workspace/undercards/artifacts/card_eval/v4/installation/experimental",
+        "--checkpoint",
+        "/workspace/undercards/artifacts/card_eval/v4/primary-value.npz",
+        "--experimental-model"
+      ],
+      "returncode": 0,
+      "stdout": "Fishing Rod：学习模型未达标，仅作实验诊断\n报告：/workspace/undercards/artifacts/card_eval/v4/installation/experimental/report.md\n",
+      "stderr": "{\"opponent\": \"pressure\", \"policy\": \"learned\", \"card\": \"Rock Pet\", \"completed_games\": 4}\n{\"opponent\": \"pressure\", \"policy\": \"learned\", \"card\": \"Fishing Rod\", \"completed_games\": 8}\n"
+    }
+  ],
+  "meaning": "Installation/backend contract only, not policy qualification."
+}

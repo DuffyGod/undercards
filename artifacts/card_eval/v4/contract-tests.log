@@ -1,0 +1,25 @@
+test_action_type_channels_and_new_gradient_are_consistent (test_card_eval.ProductChecks.test_action_type_channels_and_new_gradient_are_consistent) ... ok
+test_actual_twenty_five_specs_retained_at_shuffled_entity_positions (test_card_eval.ProductChecks.test_actual_twenty_five_specs_retained_at_shuffled_entity_positions) ... ok
+test_bundled_verified_sources_are_byte_identical (test_card_eval.ProductChecks.test_bundled_verified_sources_are_byte_identical) ... ok
+test_complete_denom_and_identical_semantic_negative_control (test_card_eval.ProductChecks.test_complete_denom_and_identical_semantic_negative_control) ... ok
+test_complete_native_match_uses_conserved_cards_and_money (test_card_eval.ProductChecks.test_complete_native_match_uses_conserved_cards_and_money) ... ok
+test_default_benchmarks_respect_copy_limits_for_each_copy_option (test_card_eval.ProductChecks.test_default_benchmarks_respect_copy_limits_for_each_copy_option) ... ok
+test_healing_stall_finishes_by_fatigue_without_a_guessed_deadline_winner (test_card_eval.ProductChecks.test_healing_stall_finishes_by_fatigue_without_a_guessed_deadline_winner) ... ok
+test_hidden_enemy_identity_and_deck_order_do_not_enter_observation (test_card_eval.ProductChecks.test_hidden_enemy_identity_and_deck_order_do_not_enter_observation) ... ok
+test_mixed_souls_observed_and_executed_per_owner (test_card_eval.ProductChecks.test_mixed_souls_observed_and_executed_per_owner) ... ok
+test_model_sees_card_semantics_not_names_or_ids (test_card_eval.ProductChecks.test_model_sees_card_semantics_not_names_or_ids) ... ok
+test_native_policy_model_chooses_legal_action (test_card_eval.ProductChecks.test_native_policy_model_chooses_legal_action) ... ok
+test_real_copy_limits_and_unsupported_text_fail_preflight (test_card_eval.ProductChecks.test_real_copy_limits_and_unsupported_text_fail_preflight) ... ok
+test_unknown_candidate_has_no_numeric_score_and_needs_no_model (test_card_eval.ProductChecks.test_unknown_candidate_has_no_numeric_score_and_needs_no_model) ... ok
+test_unqualified_model_is_blocked_before_games_unless_explicitly_experimental (test_card_eval.ProductChecks.test_unqualified_model_is_blocked_before_games_unless_explicitly_experimental) ... ok
+test_action_permutation_only_permutes_probabilities (test_relations.RelationalChecks.test_action_permutation_only_permutes_probabilities) ... ok
+test_actor_training_learns_ranking_and_critic_cannot_change_actor (test_relations.RelationalChecks.test_actor_training_learns_ranking_and_critic_cannot_change_actor) ... ok
+test_backend_roundtrip_and_product_gate (test_relations.RelationalChecks.test_backend_roundtrip_and_product_gate) ... ok
+test_names_ids_and_consistently_renamed_uids_cannot_change_features (test_relations.RelationalChecks.test_names_ids_and_consistently_renamed_uids_cannot_change_features) ... ok
+test_own_target_uid_overlap_with_enemy_is_irrelevant (test_relations.RelationalChecks.test_own_target_uid_overlap_with_enemy_is_irrelevant) ... ok
+test_unfinished_value_episode_has_no_training_or_validation_label (test_relations.RelationalChecks.test_unfinished_value_episode_has_no_training_or_validation_label) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 1.033s
+
+OK
