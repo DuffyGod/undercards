@@ -1,0 +1,54 @@
+{
+  "status": "not_qualified",
+  "product_version": "0.3.0",
+  "primary": "primary-value.npz",
+  "default_experimental_model": "paired-v5",
+  "default_policy_mode": "declared references",
+  "complete_bundle": "artifacts/card_eval/dist/undercards-card-evaluator-0.3.0.zip",
+  "changed": "Owner known-deck multiset and actual public mechanism memory are now supplied without hidden opponent information. Models and examples are packaged.",
+  "judgment": "No verified V6 action or value gain. Pure greedy action differences fail on development. Knowledge alone with this linear head and reused roll-ins was insufficient.",
+  "next_questions": [
+    "Compare current-policy roll-ins with reused V4/race roll-ins.",
+    "Include resource-preserving/adaptive opponents in training and inspect whether action labels distinguish multi-step plans.",
+    "Keep legal known/seen observation but do not assume larger vectors solve partial observability."
+  ],
+  "retired_final_ranges": [
+    [
+      1210000,
+      1210063
+    ],
+    [
+      1310000,
+      1310047
+    ],
+    [
+      1330000,
+      1330095
+    ],
+    [
+      1610000,
+      1610063
+    ],
+    [
+      1630000,
+      1630095
+    ],
+    [
+      1810000,
+      1810063
+    ],
+    [
+      1830000,
+      1830095
+    ]
+  ],
+  "no_final_reselection": true,
+  "limits": [
+    "20 complete real cards plus supported grammar",
+    "Known/seen bag is not belief state",
+    "One training seed",
+    "Current-V5 continuation is not new greedy actor value",
+    "No server certification"
+  ],
+  "concurrency": "One V6 run continued across hourly trigger under OS flock; release only after remote verification."
+}

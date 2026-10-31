@@ -1,6 +1,6 @@
 # Undercards 通用 Value 建模
 
-当前可安装入口为[card_eval程序0.2.2](card_eval/README.md)，[新 wheel 与 V5 结果](artifacts/card_eval/v5/REPORT.md)可直接取得。它接受双方完整25张牌表、指定替换和对手，输出条件差、区间及拒绝评分原因。最新配对续局行动差/自身策略价值模型有局部独立改进，整体泛化门槛仍未通过，正常入口阻止其作为推荐器；通用可靠评估目标尚未完成。已实际启用[每小时调研、试验和汇报](RESEARCH_AUTOMATION.md)，每轮成果提交并上传研究分支，执行中持锁避免重叠修改。
+当前入口为[card_eval 0.3.0](card_eval/README.md)，完整交付ZIP位于`artifacts/card_eval/dist/undercards-card-evaluator-0.3.0.zip`，[运行指引](artifacts/card_eval/v6/START_HERE.md)和[V6结果](artifacts/card_eval/v6/REPORT.md)提供安装、命名模型、示例、源码与必要输入/结果。程序接受双方完整25张牌表，包含己方已知牌组和公开机制记忆；未知卡面明确拒绝。V6没有验证出策略/价值提升，仍未通过整体泛化门槛；普通比较是声明策略，训练模型仅作显式实验，通用目标尚未完成。已启用[每小时持续研究](RESEARCH_AUTOMATION.md)，每轮提交上传并核验，持锁避免重叠修改。
 
 2026-10-31起，按用户要求以[共享策略与价值学习](analysis/strategic-model/2026-10-31/README.md)为主线：规则保证合法性、机制组合表达、模型学习行动与终局价值、有限搜索辅助战术，并通过新参数/结构/对手留出和相同模型的替换实验验证。实际结果以该目录报告为准，旧启发式和固定策略实验保留作对照。
 

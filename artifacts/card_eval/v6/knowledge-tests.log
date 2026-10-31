@@ -1,0 +1,10 @@
+test_missing_knowledge_is_not_silently_zero_and_roundtrip_preserves_policy (test_knowledge.KnowledgeChecks.test_missing_knowledge_is_not_silently_zero_and_roundtrip_preserves_policy) ... ok
+test_old_serialized_public_prefix_reconstructs_live_knowledge (test_knowledge.KnowledgeChecks.test_old_serialized_public_prefix_reconstructs_live_knowledge) ... ok
+test_owner_knows_multiset_but_not_order (test_knowledge.KnowledgeChecks.test_owner_knows_multiset_but_not_order) ... ok
+test_public_play_survives_history_truncation_and_board_removal (test_knowledge.KnowledgeChecks.test_public_play_survives_history_truncation_and_board_removal) ... ok
+test_unplayed_opponent_identity_never_enters_owner_observation (test_knowledge.KnowledgeChecks.test_unplayed_opponent_identity_never_enters_owner_observation) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.601s
+
+OK

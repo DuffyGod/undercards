@@ -1,0 +1,6 @@
+{"arm": "plain_mixed", "margin": 0.05, "mean_win_lower": 0.575}
+{"arm": "known_mixed", "margin": 0.05, "mean_win_lower": 0.5875}
+{"arm": "plain_current", "margin": 0.05, "mean_win_lower": 0.575}
+{"arm": "known_current", "margin": 0.05, "mean_win_lower": 0.55}
+{"arm": "known_current", "margin": 0.0, "mean_win_lower": 0.2375}
+{"arm": "known_current", "margin": 0.1, "mean_win_lower": 0.575}

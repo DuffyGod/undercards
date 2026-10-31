@@ -1,0 +1,12 @@
+{"source_commit": "c288cefff7f4f368a2bbc315f3af80540a8ec875", "stage": "train", "episodes": 32, "forks": 64, "new_branches": 352, "unresolved": 0, "prefix_matches": 352, "elapsed_seconds": 18.020148257000983}
+{"source_commit": "c288cefff7f4f368a2bbc315f3af80540a8ec875", "stage": "train", "episodes": 64, "forks": 128, "new_branches": 693, "unresolved": 0, "prefix_matches": 693, "elapsed_seconds": 34.78392496699962}
+{"source_commit": "c288cefff7f4f368a2bbc315f3af80540a8ec875", "stage": "train", "episodes": 96, "forks": 192, "new_branches": 1024, "unresolved": 0, "prefix_matches": 1024, "elapsed_seconds": 52.12641485700078}
+{"source_commit": "c288cefff7f4f368a2bbc315f3af80540a8ec875", "stage": "train", "episodes": 128, "forks": 256, "new_branches": 1355, "unresolved": 0, "prefix_matches": 1355, "elapsed_seconds": 69.34843984300096}
+{"source_commit": "c288cefff7f4f368a2bbc315f3af80540a8ec875", "stage": "train", "episodes": 160, "forks": 320, "new_branches": 1681, "unresolved": 0, "prefix_matches": 1681, "elapsed_seconds": 85.37240636600109}
+{"source_commit": "c288cefff7f4f368a2bbc315f3af80540a8ec875", "stage": "train", "episodes": 192, "forks": 384, "new_branches": 2033, "unresolved": 0, "prefix_matches": 2033, "elapsed_seconds": 103.66542205599762}
+{"source_commit": "c288cefff7f4f368a2bbc315f3af80540a8ec875", "stage": "train", "episodes": 224, "forks": 448, "new_branches": 2380, "unresolved": 0, "prefix_matches": 2380, "elapsed_seconds": 120.6009823059976}
+{"source_commit": "c288cefff7f4f368a2bbc315f3af80540a8ec875", "stage": "train", "episodes": 256, "forks": 512, "new_branches": 2726, "unresolved": 0, "prefix_matches": 2726, "elapsed_seconds": 139.31665531899853}
+{"source_commit": "c288cefff7f4f368a2bbc315f3af80540a8ec875", "stage": "train", "episodes": 288, "forks": 576, "new_branches": 3069, "unresolved": 0, "prefix_matches": 3069, "elapsed_seconds": 156.81586082899958}
+{"source_commit": "c288cefff7f4f368a2bbc315f3af80540a8ec875", "stage": "train", "episodes": 320, "forks": 640, "new_branches": 3404, "unresolved": 0, "prefix_matches": 3404, "elapsed_seconds": 174.15693874099816}
+{"source_commit": "c288cefff7f4f368a2bbc315f3af80540a8ec875", "stage": "train", "episodes": 352, "forks": 704, "new_branches": 3733, "unresolved": 0, "prefix_matches": 3733, "elapsed_seconds": 190.10920217400053}
+{"source_commit": "c288cefff7f4f368a2bbc315f3af80540a8ec875", "stage": "train", "episodes": 384, "forks": 768, "new_branches": 4073, "unresolved": 0, "prefix_matches": 4073, "elapsed_seconds": 205.85979034699994}

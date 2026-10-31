@@ -1,0 +1,5 @@
+{
+  "setup": "Initial prepare refused the folder already containing METHOD.md; no experiment data existed. Fixed before freezing design to allow METHOD.md only.",
+  "sources": "AAMAS2022 PDF mirror timed out; interpretation limited to author arXiv abstract. ICML2026 proceedings read successfully.",
+  "research_failures": "No verified V6 policy/value gain; original V5 unresolved branch and missing optimizer status preserved, not retried or fabricated."
+}
