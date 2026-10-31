@@ -260,6 +260,17 @@ def phase_metrics(net, episodes, constant):
     return output
 
 
+def paired_value_gain(net, baseline, episodes):
+    bounds = []
+    for e in episodes:
+        predictions = [[model.forward(s, np.zeros((1, len(model.actor))))[1] / 2 + .5
+                        for s in e['states']] for model in (net, baseline)]
+        outcomes = [int(e['won'])] if e['terminal'] else [0, 1]
+        gains = [float(np.mean((np.asarray(predictions[1]) - y) ** 2 - (np.asarray(predictions[0]) - y) ** 2)) for y in outcomes]
+        bounds.append((min(gains), max(gains)))
+    return interval(*np.asarray(bounds).T)
+
+
 def value_diagnostics(folder):
     """Secondary diagnostics fixed before final; no actor/critic retuning."""
     if (folder / 'value-baselines.json').exists(): raise ValueError('Preserve secondary diagnostics')
@@ -282,7 +293,8 @@ def value_diagnostics(folder):
     dump(folder / 'value-baselines.json', dict(source_commit=commit(), fit=fit, primary_fingerprint=net.fingerprint,
         baseline_fingerprint=baseline.fingerprint, actor_identical=net.actor_fingerprint == baseline.actor_fingerprint,
         status='Secondary diagnostics declared after development, before final; no reselection/retuning.',
-        development=dict(primary=value_metrics(net, dev, constant), hp_board=value_metrics(baseline, dev, constant)),
+        development=dict(primary=value_metrics(net, dev, constant), hp_board=value_metrics(baseline, dev, constant),
+                         primary_gain_vs_hp_board=paired_value_gain(net, baseline, dev)),
         phases=phase_metrics(net, dev, constant)))
 
 
@@ -301,7 +313,8 @@ class ReservePolicy:
 def final(folder):
     if (folder / 'final.json').exists() or (folder / 'final-games.jsonl.gz').exists(): raise ValueError('Final is single use')
     d = json.loads((folder / 'design.json').read_text()); net = Network.load(folder / 'primary-value.npz')[0]
-    old = Network.load('card_eval/models/shared-policy.npz')[0]; own = base_deck(); others = opponents()
+    old = Network.load('card_eval/models/shared-policy.npz')[0]; baseline = Network.load(folder / 'value-hp-board.npz')[0]
+    own = base_deck(); others = opponents()
     param = Spec('unseen_parameter', 5, 8, 3, (('armor', 1),), ())
     composed = Spec('unseen_taunt_end_draw', 5, 2, 7, (('taunt', 1),), (Effect('end', 'draw', 'owner', 1),))
     pool = {semantic_key(s) for s in training_pool()}
@@ -317,7 +330,8 @@ def final(folder):
              ('unseen_reserve_opponent', own, others['defense'], ('INTEGRITY', 'KINDNESS'), 'reserve')]
     # Persist complete final inputs and exact checkpoint fingerprints before reading outcomes.
     plan = dict(source_commit=commit(), primary_fingerprint=net.fingerprint, actor_fingerprint=net.actor_fingerprint,
-        previous_fingerprint=old.fingerprint, cases=[dict(name=c[0], decks=[[asdict(s) for s in deck] for deck in c[1:3]],
+        previous_fingerprint=old.fingerprint, value_baseline_fingerprint=baseline.fingerprint,
+        cases=[dict(name=c[0], decks=[[asdict(s) for s in deck] for deck in c[1:3]],
         souls=c[3], opponent=c[4]) for c in cases], seeds=d['final_seeds'], value_seeds=d['value_final_seeds'],
         selection='All choices fixed before outcomes; final seeds are retired after this run.')
     dump(folder / 'final-plan.json', plan)
@@ -348,11 +362,11 @@ def final(folder):
             print(json.dumps(dict(group=group, wins={c['policy']: c['win']['completion_range'] for c in comparisons})), flush=True)
     prior = json.loads((folder / 'value.json').read_text())['train_prior']
     val = value_data(folder, net, 'final', d['value_final_seeds'])
-    baseline = Network.load(folder / 'value-hp-board.npz')[0]
     qualified = not failures and all(c['primary_gain']['low'] > 0 for g in groups for c in g['policies'] if c['policy'] in ('race', 'board', 'guard'))
     result = dict(status='complete', source_commit=commit(), groups=groups, failures=failures,
         qualified=qualified, primary_fingerprint=net.fingerprint, value_final=value_metrics(net, val, prior),
         value_hp_board_final=value_metrics(baseline, val, prior), value_phases_final=phase_metrics(net, val, prior),
+        value_gain_vs_hp_board=paired_value_gain(net, baseline, val),
         elapsed_seconds=time.monotonic() - elapsed, no_final_selection=True, real_server_certified=False,
         acceptance=d['acceptance'], limitation=d['limitation'])
     dump(folder / 'final.json', result)
