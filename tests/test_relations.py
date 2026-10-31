@@ -35,6 +35,19 @@ class RelationalChecks(unittest.TestCase):
         p, v, _ = net.forward(s, a); pr, vr, _ = net.forward(sr, ar)
         np.testing.assert_allclose(p, pr[::-1]); self.assertEqual(v, vr)
 
+    def test_own_target_uid_overlap_with_enemy_is_irrelevant(self):
+        obs, _ = self.observation()
+        spec = dict(name='unit', card_id=None, cost=1, attack=1, health=1, keywords=[], effects=[])
+        def unit(uid):
+            return dict(uid=uid, spec=spec, a=1, h=1, max_h=1, ready=True, fresh=False,
+                        silenced=False, taunt=False, armor=False, dodge=0)
+        obs['own'] = [unit(1)]; obs['enemy'] = [unit(2), unit(1)]
+        obs['hand'] = [dict(spec, uid=3, effects=[dict(trigger='play', op='silence', scope='monster', amount=0, health=0)])]
+        actions = [('end', -1, -1, -1), ('play', 3, obs['player'], 1)]
+        s, a = encode(obs, actions); obs['enemy'][1]['uid'] = 999
+        sr, ar = encode(obs, actions)
+        np.testing.assert_array_equal(s, sr); np.testing.assert_array_equal(a, ar)
+
     def test_actor_training_learns_ranking_and_critic_cannot_change_actor(self):
         net = RelationalNetwork(); af = [np.array([[0., 1.], [1., 0.]]), np.array([[2., 0.], [0., 2.]])]
         net.fit_actor(af, [1, 0], iterations=50)

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "source_commit": "fa4cb3ba9042a8d5c8f5f3aa993f1594bcf78df1",
+  "source_commit": "fd6445fa2c5014bdf12b4c4831f4b3fc774f54fc",
   "rng_seed": 2026103104,
   "fit_files": [
     "artifacts/card_eval/v2/decisions-warmup-0000.jsonl.gz",

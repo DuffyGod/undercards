@@ -83,7 +83,7 @@ def encode(obs, actions):
                     bool(removed) and removed >= incoming, removed >= 2, removed >= 5,
                     silence, bool(silence and side == actor), power / 5,
                     (obs['cash'] - h['cost']) / 20, (4 - len(obs['own'])) / 4,
-                    obs['hand'].index(h) / 7, (list(enemy).index(target) / 4 if target in enemy else 0),
+                    obs['hand'].index(h) / 7, (list(enemy).index(target) / 4 if side != actor and target in enemy else 0),
                     sum(e['amount'] for e in es if e['op'] == 'draw' and e['trigger'] != 'play') / 3,
                     sum(e['amount'] for e in es if e['op'] == 'buff') / 3,
                     bool(not h['health'] and heal > 30 - obs['hp']), bool(not h['health'] and not es)]
