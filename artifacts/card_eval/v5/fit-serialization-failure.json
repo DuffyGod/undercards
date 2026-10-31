@@ -1,0 +1,7 @@
+{
+  "status": "model_saved_report_failed",
+  "source_commit": "143aff6",
+  "error": "TypeError: Object of type int64 is not JSON serializable",
+  "cause": "Summing NumPy boolean contrast flags produced numpy.int64.",
+  "recovery": "Keep existing checkpoint byte-identical; recover objective/gradient and counts from saved weights and inputs. Optimizer iterations/convergence not retained and remain unknown. No resampling or refit."
+}

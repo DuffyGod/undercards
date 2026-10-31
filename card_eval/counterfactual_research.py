@@ -176,8 +176,8 @@ def fit(folder):
     d = json.loads((folder / 'design.json').read_text()); baseline = Network.load(d['baseline'])[0]
     data = groups(folder, 'train'); net = AdvantageNetwork(baseline.actor.copy())
     report = net.fit_advantage([(x, y) for x, y, _ in data], d['l2'], d['optimizer_iterations'])
-    contrast = sum(np.ptp(y) > 0 for _, y, _ in data)
-    net.save(folder / 'action-head.npz', dict(source_commit=commit(), validation=dict(qualified=False), target=d['action_target'], value_unfitted=True))
+    contrast = int(sum(np.ptp(y) > 0 for _, y, _ in data))
+    net.save(folder / 'action-head.npz', dict(source_commit=commit(), validation=dict(qualified=False), target=d['action_target'], value_unfitted=True, fit=report))
     dump(folder / 'fit.json', dict(source_commit=commit(), fit=report, contrast_groups=contrast, flat_groups=len(data) - contrast,
         source_forks=json.loads((folder / 'train-collection.json').read_text())['forks'], frozen_baseline=baseline.fingerprint))
 
@@ -235,15 +235,22 @@ def development(folder):
 
 def diagnostic(folder):
     if (folder / 'diagnostic.json').exists(): raise ValueError('Preserve diagnostic')
-    net = Network.load(folder / 'selected-actor.npz')[0]; data = groups(folder, 'diagnostic'); errors = []; advantages = {}; agreements = []; changed = 0
+    net = Network.load(folder / 'selected-actor.npz')[0]; data = groups(folder, 'diagnostic'); errors = []; zero_errors = []
+    advantages = {}; oracle = {}; agreements = []; baseline_agreements = []; changed = 0
     for x, y, row in data:
         pred = x @ net.advantage; errors.append(float(np.mean(((pred - pred.mean()) - (y - y.mean())) ** 2)))
+        zero_errors.append(float(np.mean((y-y.mean())**2)))
         base = row['sampled_action_indices'].index(row['baseline_action']); best = int(pred.argmax())
         selected = best if pred[best] - pred[base] > net.margin else base
         advantages.setdefault(row['seed'], []).append(float(y[selected] - y[base])); changed += selected != base
-        if np.ptp(y) > 0: agreements.append(y[selected] == y.max())
+        oracle.setdefault(row['seed'], []).append(float(y.max()-y[base]))
+        if np.ptp(y) > 0:
+            agreements.append(y[selected] == y.max()); baseline_agreements.append(y[base] == y.max())
     dump(folder / 'diagnostic.json', dict(source_commit=commit(), groups=len(data), centered_mse=float(np.mean(errors)),
-        changed=changed, contrast_groups=len(agreements), sampled_best_accuracy=float(np.mean(agreements)) if agreements else None,
+        zero_centered_mse=float(np.mean(zero_errors)), changed=changed, contrast_groups=len(agreements),
+        sampled_best_accuracy=float(np.mean(agreements)) if agreements else None,
+        baseline_sampled_best_accuracy=float(np.mean(baseline_agreements)) if baseline_agreements else None,
+        sampled_terminal_oracle_gain=interval([np.mean(v) for v in oracle.values()]),
         paired_continuation_gain=interval([np.mean(v) for v in advantages.values()]), limitation='Sampled actions only; forks clustered by seed. This is a continuation-target diagnostic, not closed-loop win or policy qualification.'))
 
 
