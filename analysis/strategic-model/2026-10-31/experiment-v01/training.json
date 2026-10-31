@@ -1,0 +1,448 @@
+{
+  "status": "complete",
+  "source_commit": "961c2aa7ded23423c548a2639c390fb668e817af",
+  "games": 480,
+  "terminal_games": 480,
+  "truncated_games": 0,
+  "decision_records": 27607,
+  "optimizer_steps": 831,
+  "seed_start": 610000,
+  "warmup_samples": 6548,
+  "progress": [
+    {
+      "update": 0,
+      "games": 104,
+      "samples": 328,
+      "sample_win": 0.5,
+      "loss": 0.4272367220089985,
+      "value_loss": 0.2444386935866718,
+      "seconds": 10.1
+    },
+    {
+      "update": 1,
+      "games": 112,
+      "samples": 359,
+      "sample_win": 0.125,
+      "loss": 0.2570576348103118,
+      "value_loss": 0.141505412210071,
+      "seconds": 10.8
+    },
+    {
+      "update": 2,
+      "games": 120,
+      "samples": 401,
+      "sample_win": 0.375,
+      "loss": 0.006986292527887623,
+      "value_loss": 0.23922862750264137,
+      "seconds": 11.9
+    },
+    {
+      "update": 3,
+      "games": 128,
+      "samples": 316,
+      "sample_win": 0.5,
+      "loss": 0.22668259488466608,
+      "value_loss": 0.17308006860831776,
+      "seconds": 12.8
+    },
+    {
+      "update": 4,
+      "games": 136,
+      "samples": 265,
+      "sample_win": 0.5,
+      "loss": 0.17473633393652366,
+      "value_loss": 0.09776794564371158,
+      "seconds": 13.4
+    },
+    {
+      "update": 5,
+      "games": 144,
+      "samples": 319,
+      "sample_win": 0.375,
+      "loss": 0.01384137596254462,
+      "value_loss": 0.18006832984804602,
+      "seconds": 14.2
+    },
+    {
+      "update": 6,
+      "games": 152,
+      "samples": 288,
+      "sample_win": 0.125,
+      "loss": 0.5686706517902542,
+      "value_loss": 0.21642318647590303,
+      "seconds": 15.0
+    },
+    {
+      "update": 7,
+      "games": 160,
+      "samples": 307,
+      "sample_win": 0.5,
+      "loss": -0.2031928451227923,
+      "value_loss": 0.176112277956824,
+      "seconds": 15.7
+    },
+    {
+      "update": 8,
+      "games": 168,
+      "samples": 281,
+      "sample_win": 0.375,
+      "loss": 0.2701419900195475,
+      "value_loss": 0.138622918439332,
+      "seconds": 16.4
+    },
+    {
+      "update": 9,
+      "games": 176,
+      "samples": 330,
+      "sample_win": 0.375,
+      "loss": 0.03852406649095521,
+      "value_loss": 0.1586250653772034,
+      "seconds": 17.2
+    },
+    {
+      "update": 10,
+      "games": 184,
+      "samples": 412,
+      "sample_win": 0.25,
+      "loss": 0.34124129489537575,
+      "value_loss": 0.20483241208041833,
+      "seconds": 18.2
+    },
+    {
+      "update": 11,
+      "games": 192,
+      "samples": 390,
+      "sample_win": 0.75,
+      "loss": -0.1032502691160285,
+      "value_loss": 0.20655360869792405,
+      "seconds": 19.1
+    },
+    {
+      "update": 12,
+      "games": 200,
+      "samples": 447,
+      "sample_win": 0.375,
+      "loss": 0.1726313727504414,
+      "value_loss": 0.1652496220996942,
+      "seconds": 20.2
+    },
+    {
+      "update": 13,
+      "games": 208,
+      "samples": 321,
+      "sample_win": 0.375,
+      "loss": 0.38951180453247813,
+      "value_loss": 0.17511432669711424,
+      "seconds": 21.2
+    },
+    {
+      "update": 14,
+      "games": 216,
+      "samples": 308,
+      "sample_win": 0.5,
+      "loss": 0.17187138179880806,
+      "value_loss": 0.1776197560542986,
+      "seconds": 22.0
+    },
+    {
+      "update": 15,
+      "games": 224,
+      "samples": 302,
+      "sample_win": 0.5,
+      "loss": 0.13049671194764137,
+      "value_loss": 0.2129911324135295,
+      "seconds": 22.8
+    },
+    {
+      "update": 16,
+      "games": 232,
+      "samples": 247,
+      "sample_win": 0.5,
+      "loss": -0.14608396727416234,
+      "value_loss": 0.09370293664054002,
+      "seconds": 23.4
+    },
+    {
+      "update": 17,
+      "games": 240,
+      "samples": 357,
+      "sample_win": 0.375,
+      "loss": 0.06897642235927863,
+      "value_loss": 0.18560939795814668,
+      "seconds": 24.1
+    },
+    {
+      "update": 18,
+      "games": 248,
+      "samples": 303,
+      "sample_win": 0.625,
+      "loss": 0.042678423738112176,
+      "value_loss": 0.12916210086340513,
+      "seconds": 24.9
+    },
+    {
+      "update": 19,
+      "games": 256,
+      "samples": 354,
+      "sample_win": 0.625,
+      "loss": 0.10324051568369981,
+      "value_loss": 0.2149801017229692,
+      "seconds": 26.0
+    },
+    {
+      "update": 20,
+      "games": 264,
+      "samples": 375,
+      "sample_win": 0.5,
+      "loss": 0.48946095550873525,
+      "value_loss": 0.21518077803527733,
+      "seconds": 27.3
+    },
+    {
+      "update": 21,
+      "games": 272,
+      "samples": 336,
+      "sample_win": 0.75,
+      "loss": -0.01904611142159608,
+      "value_loss": 0.20443423540391603,
+      "seconds": 28.1
+    },
+    {
+      "update": 22,
+      "games": 280,
+      "samples": 314,
+      "sample_win": 0.125,
+      "loss": 0.30861522240855166,
+      "value_loss": 0.18716327674603403,
+      "seconds": 28.9
+    },
+    {
+      "update": 23,
+      "games": 288,
+      "samples": 369,
+      "sample_win": 0.375,
+      "loss": 0.22999801480987014,
+      "value_loss": 0.1562474916137425,
+      "seconds": 30.0
+    },
+    {
+      "update": 24,
+      "games": 296,
+      "samples": 287,
+      "sample_win": 0.5,
+      "loss": 0.05204997227433431,
+      "value_loss": 0.11939328754406009,
+      "seconds": 30.7
+    },
+    {
+      "update": 25,
+      "games": 304,
+      "samples": 343,
+      "sample_win": 0.25,
+      "loss": 0.005203725883270157,
+      "value_loss": 0.11603239820304534,
+      "seconds": 31.5
+    },
+    {
+      "update": 26,
+      "games": 312,
+      "samples": 301,
+      "sample_win": 0.375,
+      "loss": 0.6215215606116602,
+      "value_loss": 0.25797299913985966,
+      "seconds": 32.3
+    },
+    {
+      "update": 27,
+      "games": 320,
+      "samples": 366,
+      "sample_win": 0.5,
+      "loss": 0.103909459135082,
+      "value_loss": 0.230941646634326,
+      "seconds": 33.3
+    },
+    {
+      "update": 28,
+      "games": 328,
+      "samples": 312,
+      "sample_win": 0.375,
+      "loss": -0.06868193998371194,
+      "value_loss": 0.16363063629061683,
+      "seconds": 34.2
+    },
+    {
+      "update": 29,
+      "games": 336,
+      "samples": 266,
+      "sample_win": 0.5,
+      "loss": 0.048478609996601654,
+      "value_loss": 0.06250146947100457,
+      "seconds": 34.8
+    },
+    {
+      "update": 30,
+      "games": 344,
+      "samples": 361,
+      "sample_win": 0.25,
+      "loss": 0.3866305247951037,
+      "value_loss": 0.164796004553365,
+      "seconds": 35.7
+    },
+    {
+      "update": 31,
+      "games": 352,
+      "samples": 302,
+      "sample_win": 0.75,
+      "loss": 0.022504333033799825,
+      "value_loss": 0.14116024156874593,
+      "seconds": 36.4
+    },
+    {
+      "update": 32,
+      "games": 360,
+      "samples": 283,
+      "sample_win": 0.5,
+      "loss": 0.1403346848314253,
+      "value_loss": 0.18823811884226774,
+      "seconds": 37.2
+    },
+    {
+      "update": 33,
+      "games": 368,
+      "samples": 274,
+      "sample_win": 0.5,
+      "loss": 0.07167340743347066,
+      "value_loss": 0.13957929524003793,
+      "seconds": 37.8
+    },
+    {
+      "update": 34,
+      "games": 376,
+      "samples": 341,
+      "sample_win": 0.375,
+      "loss": 0.10311439605193444,
+      "value_loss": 0.20957786998387407,
+      "seconds": 38.8
+    },
+    {
+      "update": 35,
+      "games": 384,
+      "samples": 291,
+      "sample_win": 0.125,
+      "loss": 0.2540002346112292,
+      "value_loss": 0.07910903387034399,
+      "seconds": 39.6
+    },
+    {
+      "update": 36,
+      "games": 392,
+      "samples": 297,
+      "sample_win": 0.375,
+      "loss": 0.12692309207483612,
+      "value_loss": 0.14536246682118895,
+      "seconds": 40.4
+    },
+    {
+      "update": 37,
+      "games": 400,
+      "samples": 323,
+      "sample_win": 0.75,
+      "loss": 0.135598427129623,
+      "value_loss": 0.1440995665957233,
+      "seconds": 41.4
+    },
+    {
+      "update": 38,
+      "games": 408,
+      "samples": 259,
+      "sample_win": 0.5,
+      "loss": 0.1584711765813317,
+      "value_loss": 0.10385530643238314,
+      "seconds": 42.2
+    },
+    {
+      "update": 39,
+      "games": 416,
+      "samples": 287,
+      "sample_win": 0.5,
+      "loss": 0.13675152170082538,
+      "value_loss": 0.17585565395207875,
+      "seconds": 43.0
+    },
+    {
+      "update": 40,
+      "games": 424,
+      "samples": 321,
+      "sample_win": 0.625,
+      "loss": -0.0090928871723961,
+      "value_loss": 0.25998000911460056,
+      "seconds": 43.8
+    },
+    {
+      "update": 41,
+      "games": 432,
+      "samples": 352,
+      "sample_win": 0.125,
+      "loss": 0.2736494363648681,
+      "value_loss": 0.16104830120640132,
+      "seconds": 44.8
+    },
+    {
+      "update": 42,
+      "games": 440,
+      "samples": 306,
+      "sample_win": 0.375,
+      "loss": -0.022869545644052643,
+      "value_loss": 0.13158970712817727,
+      "seconds": 45.6
+    },
+    {
+      "update": 43,
+      "games": 448,
+      "samples": 294,
+      "sample_win": 0.75,
+      "loss": -0.07094620273052069,
+      "value_loss": 0.10632246100966176,
+      "seconds": 46.4
+    },
+    {
+      "update": 44,
+      "games": 456,
+      "samples": 239,
+      "sample_win": 0.375,
+      "loss": 0.2708305102823925,
+      "value_loss": 0.13106398662670343,
+      "seconds": 46.9
+    },
+    {
+      "update": 45,
+      "games": 464,
+      "samples": 251,
+      "sample_win": 0.5,
+      "loss": 0.006898763721971466,
+      "value_loss": 0.09903547643616326,
+      "seconds": 47.7
+    },
+    {
+      "update": 46,
+      "games": 472,
+      "samples": 270,
+      "sample_win": 0.5,
+      "loss": 0.1511609990894484,
+      "value_loss": 0.26470990362518254,
+      "seconds": 48.4
+    },
+    {
+      "update": 47,
+      "games": 480,
+      "samples": 304,
+      "sample_win": 0.375,
+      "loss": 0.2690230909351196,
+      "value_loss": 0.19707512395452492,
+      "seconds": 49.4
+    }
+  ],
+  "elapsed_seconds": 49.36267282500012,
+  "final_fingerprint": "4ea85080db1a286a119d801133a06752528b27d5a16b8ac0898135bf7f0c5e70",
+  "training_seed_end": 610479
+}
