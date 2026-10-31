@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "audit_source_commit": "bf6aca9e0168f5537e737a64d83bf35fd813701a",
+  "final_source_commit": "7127d6377de0f8e71a57003324d99c8ce3c035d9",
+  "raw_final_slots": 3360,
+  "unique_slots": 3360,
+  "unresolved_slots": 0,
+  "heldout_specs_absent_from_training_pool": true,
+  "seed_ranges_disjoint": true,
+  "prior_final_seeds_retired": true,
+  "actor_identical_before_after_value": true,
+  "frozen_fingerprints_match": true,
+  "input_digests_match": true,
+  "complete_denom_reconstructed": true,
+  "value_metrics_reconstructed": true,
+  "value_episodes": {
+    "train": 384,
+    "dev": 96,
+    "final": 96
+  },
+  "maximum_decision_seconds": 0.19887785599894414,
+  "qualified": false,
+  "meaning": "Evidence integrity and contracts, not proof of strategy quality or server rules."
+}
