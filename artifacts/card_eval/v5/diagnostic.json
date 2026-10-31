@@ -1,0 +1,35 @@
+{
+  "source_commit": "f3127b3666eeee8c3bd6f106a579eed2d3cd73e9",
+  "groups": 192,
+  "centered_mse": 0.023943163628064253,
+  "zero_centered_mse": 0.024939236111111113,
+  "changed": 27,
+  "contrast_groups": 58,
+  "sampled_best_accuracy": 0.6896551724137931,
+  "baseline_sampled_best_accuracy": 0.6896551724137931,
+  "sampled_terminal_oracle_gain": {
+    "mean": 0.0625,
+    "completion_range": [
+      0.0625,
+      0.0625
+    ],
+    "low": 0.036458333333333336,
+    "high": 0.09114583333333333,
+    "alpha": 0.05,
+    "independent_seed_clusters": 96,
+    "unresolved_seed_clusters": 0
+  },
+  "paired_continuation_gain": {
+    "mean": 0.0026041666666666665,
+    "completion_range": [
+      0.0026041666666666665,
+      0.0026041666666666665
+    ],
+    "low": 0.0,
+    "high": 0.0078125,
+    "alpha": 0.05,
+    "independent_seed_clusters": 96,
+    "unresolved_seed_clusters": 0
+  },
+  "limitation": "Sampled actions only; forks clustered by seed. This is a continuation-target diagnostic, not closed-loop win or policy qualification."
+}

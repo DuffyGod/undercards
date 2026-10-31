@@ -20,3 +20,5 @@ JSON请求包含`deck`（25个名称、ID或语义描述）、`slots`（要替�
 规则与质量必须分开看：规则引擎只保证声明模型内合法性，学习策略另有验证状态。当前仍缺完整神器、换牌、种族和死亡/生成链；沉默对修改属性的清理采用显式假设，不能声称已认证当前服务器。未知信息与不确定结论会保留，不强行输出一张全池榜。
 
 0.2.1 支持载入关系式共享行动模型及独立的策略价值头。用 `--checkpoint path/to/primary-value.npz --policies learned --experimental-model` 显式运行新模型；源码及冻结试验见 `card_eval/relational_research.py` 和 `artifacts/card_eval/v4/`。模型文件在仓库随结果交付，默认模型未替换。推理仍只依赖 NumPy；复现实验的优化阶段需 `pip install '.[research]'`。价值头估计声明对手混合下该冻结策略的终局胜率，尚不直接改进行动，也不充当卡牌评分。
+
+0.2.2 增加配对终局续局学习的行动差后端，入口同样使用 `--checkpoint artifacts/card_eval/v5/primary-value.npz --policies learned --experimental-model`。行动头按预测后续差决定是否偏离冻结基线；其混合续局目标与新策略自身的价值头分别训练，不能把其中一个叫作另一个的价值。源码、输入、失败和独立验收在 `artifacts/card_eval/v5/`；默认模型是否可升级以实际验收结果为准，不由安装成功或开发分数决定。
