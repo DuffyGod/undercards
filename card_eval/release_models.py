@@ -25,7 +25,7 @@ def build(include_v6=False):
         entries.append(dict(name=name,file=target.name,description=description,qualified=bool(validation['qualified']),
             status=validation['status'],fingerprint=net.fingerprint,sha256=hashlib.sha256(target.read_bytes()).hexdigest(),
             source=str(source.relative_to(ROOT)),feature_version=meta['feature_version'],scope='Declared simulator rules and evaluated distributions only; no global card rating.'))
-    dump(folder/'registry.json',dict(models=entries,default_policy_mode='declared references',quality_gate='Unqualified models require explicit experimental mode.'))
+    dump(folder/'registry.json',dict(models=entries,default_policy_mode='declared references',default_experimental_model='paired-v5',quality_gate='Unqualified models require explicit experimental mode.'))
     examples=ROOT/'card_eval/examples';examples.mkdir(exist_ok=True)
     request=default_request(['Bench','Fishing Rod'],samples=8);request['seed_start']=1911000
     dump(examples/'reference-request.json',dict(request,policies=['race','board','guard']))

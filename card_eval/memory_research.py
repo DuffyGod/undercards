@@ -172,6 +172,25 @@ def development(folder):
     dump(folder/'selection.json',dict(source_commit=commit(),primary=d['primary'],selected_margin=net.margin,candidates=output,actor_fingerprint=net.actor_fingerprint,selection=d['selection']))
 
 
+def diagnostic(folder):
+    if (folder/'diagnostic.json').exists():raise ValueError('Preserve diagnostic')
+    selection=json.loads((folder/'selection.json').read_text());output={}
+    for arm in ARMS:
+        net=Network.load(folder/('selected-actor.npz' if arm==selection['primary'] else arm+'.npz'))[0]
+        values=data(folder,'diagnostic',arm);errors=[];zero=[];bounds={};missing=0;changed=0
+        for x,y,row in values:
+            prediction=x@net.advantage;errors.append(float(np.mean(((prediction-prediction.mean())-(y-y.mean()))**2)));zero.append(float(np.mean((y-y.mean())**2)))
+            actions=list(map(tuple,row['legal_actions']));chosen=LearnedPolicy(net).choose(row['observation'],actions)['action_index'];base=row['baseline_action'];changed+=chosen!=base
+            current={b['action_index']:float(b['won']) for b in row['branches'] if b['continuation']=='current'}
+            if chosen in current:lo=hi=current[chosen]-current[base]
+            else:lo,hi=-current[base],1-current[base];missing+=1
+            bounds.setdefault(row['seed'],[]).append((lo,hi))
+        clustered=[np.mean(v,axis=0) for v in bounds.values()]
+        output[arm]=dict(groups=len(values),centered_mse=float(np.mean(errors)),zero_mse=float(np.mean(zero)),changed=changed,unmeasured_choices=missing,
+            common_v5_continuation_gain=interval(*np.asarray(clustered).T),scope='Actual all-legal choice; unmeasured actions retain 0/1 return bounds. Cluster by old source opening; no new independent openings.')
+    dump(folder/'diagnostic.json',dict(source_commit=commit(),arms=output,selection_used=False))
+
+
 class MemoryValueRecorder(ValueRecorder):
     def record(self,obs,actions,selected):
         super().record(obs,actions,selected)
@@ -239,6 +258,6 @@ def final(folder):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('mode',choices=['prepare','collect','fit','development','value','final']);p.add_argument('--output',type=Path,required=True);p.add_argument('--stage',choices=['train','diagnostic']);args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('mode',choices=['prepare','collect','fit','development','diagnostic','value','final']);p.add_argument('--output',type=Path,required=True);p.add_argument('--stage',choices=['train','diagnostic']);args=p.parse_args()
     if args.mode=='collect':collect(args.output,args.stage)
     else:globals()[args.mode](args.output)

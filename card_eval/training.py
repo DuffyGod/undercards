@@ -19,7 +19,7 @@ def dump(path, data):
 
 def commit():
     try: return subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True,stderr=subprocess.DEVNULL).strip()
-    except subprocess.CalledProcessError:
+    except (subprocess.CalledProcessError,FileNotFoundError):
         manifest=ROOT/'SOURCE_REVISION.json'
         if not manifest.exists(): raise ValueError('Research needs a Git checkout or the delivered source-revision manifest')
         return 'archive:'+json.loads(manifest.read_text())['source_commit']

@@ -12,7 +12,7 @@ from .policies import LearnedPolicy, ReferencePolicy
 from .profiles import opponents
 from .statistics import interval
 
-DEFAULT_MODEL = Path(__file__).resolve().parent / 'models/shared-policy.npz'
+DEFAULT_MODEL = Path(__file__).resolve().parent / 'models/paired-v5.npz'
 
 
 def _issue(path, code, message): return dict(path=path, code=code, message=message)

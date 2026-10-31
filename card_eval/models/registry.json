@@ -26,5 +26,6 @@
     }
   ],
   "default_policy_mode": "declared references",
+  "default_experimental_model": "paired-v5",
   "quality_gate": "Unqualified models require explicit experimental mode."
 }

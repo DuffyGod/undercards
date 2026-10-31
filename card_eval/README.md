@@ -1,5 +1,19 @@
 # 可直接使用的卡牌评估入口
 
+0.3.0 完整运行包已包含模型、规则快照、验证状态和示例。正常比较仍采用声明参考策略；实验默认载入随包 `paired-v5`，可按名称选择 `memory-v6`，无需研究目录或手动下载检查点。随包模型是否合格由各自记录决定，安装成功不改变质量门槛。
+
+```sh
+python -m pip install undercards_card_eval-0.3.0-py3-none-any.whl
+card-eval models
+card-eval assess Bench "Fishing Rod" --model paired-v5 --experimental-model --samples 8 --output results/first-run
+card-eval example --learned --output my-decks.json
+card-eval evaluate --input my-decks.json --model memory-v6 --experimental-model --output results/my-decks
+```
+
+生成的请求含完整25张己方牌表、替换位置、候选与对手，可自行编辑。遇到未实现的完整卡面会明确拒绝评分。`--checkpoint` 仍可加载自定义检查点，与 `--model` 二选一；Python API 可用 `card_eval.model_registry.checkpoint(name)` 取得随包模型路径。
+
+新观察会保留己方已知牌组的无序语义，以及双方实际公开出牌的机制摘要。它不读取敌方未打出牌或牌序，不等于完整信念状态。旧模型仍能使用新观察；`memory-v6` 缺失必要知识字段时会拒绝，不能把缺失历史当成零。
+
 Python3.11+。在仓库根目录运行`python -m pip install -e .`，或安装发行wheel。已打包规则原语、卡面快照和共享模型，安装后不需要研究目录。
 
 ```sh

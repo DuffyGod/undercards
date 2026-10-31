@@ -1,0 +1,57 @@
+{
+  "source_commit": "103a2905d38bc7d2862d7491ea470cea938b8291",
+  "arms": {
+    "plain_mixed": {
+      "fit": {
+        "loss": 0.009768705750681032,
+        "iterations": 51,
+        "converged": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "paired_groups": 767,
+        "action_labels": 3991,
+        "head_parameters": 8405
+      },
+      "contrast_groups": 229,
+      "fingerprint": "70eda79804703234deac78701889f0d17f1d18d6e74d67e042816079ef6e065b"
+    },
+    "known_mixed": {
+      "fit": {
+        "loss": 0.009726498361866237,
+        "iterations": 60,
+        "converged": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "paired_groups": 767,
+        "action_labels": 3991,
+        "head_parameters": 8405
+      },
+      "contrast_groups": 229,
+      "fingerprint": "256d323335125a2c07a0b964ceacdb1da20429d326c7e4bee3f52b7b77ff84d8"
+    },
+    "plain_current": {
+      "fit": {
+        "loss": 0.019388177765093263,
+        "iterations": 54,
+        "converged": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "paired_groups": 767,
+        "action_labels": 3991,
+        "head_parameters": 8405
+      },
+      "contrast_groups": 164,
+      "fingerprint": "14e953201313743b919fb84a97452027a11d271dddd572bb33c8cb09ecfcbde5"
+    },
+    "known_current": {
+      "fit": {
+        "loss": 0.019314504157748172,
+        "iterations": 59,
+        "converged": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "paired_groups": 767,
+        "action_labels": 3991,
+        "head_parameters": 8405
+      },
+      "contrast_groups": 164,
+      "fingerprint": "adca4ae91d76c2c7adae4d4916b608538f8a1e28fa50e9d78f08c71b489802f1"
+    }
+  }
+}
