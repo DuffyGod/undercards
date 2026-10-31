@@ -10,6 +10,7 @@ from features import encode, STATE_DIM, ACTION_DIM
 from learner import Network
 from records import Recorder, load_episodes
 from study import catalog, training_specs, interval, bounded_interval, guarded_game
+from compare import normalize
 
 WORK = Path(__file__).resolve().parents[3] / 'work' / 'ml-route'
 WORK.mkdir(parents=True, exist_ok=True)
@@ -214,6 +215,13 @@ class LearningChecks(unittest.TestCase):
             predicted = public_attack(g.observation(0), action)
             g.apply(0, action)
             self.assertEqual(predicted, g.observation(0))
+
+    def test_comparison_accepts_new_compositions_and_rejects_unimplemented_text(self):
+        fixture = dict(reference='Rock Pet', candidates=[dict(name='new arbitrary semantic body', cost=4, attack=3, health=6,
+            keywords=[['haste', 1]], effects=[dict(trigger='end', op='draw', scope='owner', amount=1, health=0)])], seeds=[1, 2])
+        reference, candidates, *_ = normalize(fixture)
+        self.assertEqual(candidates[0].effects, (Effect('end', 'draw', 'owner', 1),))
+        with self.assertRaises(ValueError): normalize(fixture | dict(reference='Glyde'))
 
 
 if __name__ == '__main__': unittest.main(verbosity=2)
