@@ -1,0 +1,86 @@
+{
+  "source_commit": "4841f15a9e21dd2af4c099c9e4faf6a05ac416af",
+  "arms": {
+    "plain_mixed": {
+      "groups": 192,
+      "centered_mse": 0.023600644490019612,
+      "zero_mse": 0.024576808153817086,
+      "changed": 1,
+      "unmeasured_choices": 0,
+      "common_v5_continuation_gain": {
+        "mean": 0.0,
+        "completion_range": [
+          0.0,
+          0.0
+        ],
+        "low": 0.0,
+        "high": 0.0,
+        "alpha": 0.05,
+        "independent_seed_clusters": 96,
+        "unresolved_seed_clusters": 0
+      },
+      "scope": "Actual all-legal choice; unmeasured actions retain 0/1 return bounds. Cluster by old source opening; no new independent openings."
+    },
+    "known_mixed": {
+      "groups": 192,
+      "centered_mse": 0.023624936527562812,
+      "zero_mse": 0.024576808153817086,
+      "changed": 2,
+      "unmeasured_choices": 0,
+      "common_v5_continuation_gain": {
+        "mean": 0.0,
+        "completion_range": [
+          0.0,
+          0.0
+        ],
+        "low": 0.0,
+        "high": 0.0,
+        "alpha": 0.05,
+        "independent_seed_clusters": 96,
+        "unresolved_seed_clusters": 0
+      },
+      "scope": "Actual all-legal choice; unmeasured actions retain 0/1 return bounds. Cluster by old source opening; no new independent openings."
+    },
+    "plain_current": {
+      "groups": 192,
+      "centered_mse": 0.04203003445288913,
+      "zero_mse": 0.042196859646636435,
+      "changed": 17,
+      "unmeasured_choices": 2,
+      "common_v5_continuation_gain": {
+        "mean": null,
+        "completion_range": [
+          0.0,
+          0.010416666666666666
+        ],
+        "low": 0.0,
+        "high": 0.026041666666666668,
+        "alpha": 0.05,
+        "independent_seed_clusters": 96,
+        "unresolved_seed_clusters": 2
+      },
+      "scope": "Actual all-legal choice; unmeasured actions retain 0/1 return bounds. Cluster by old source opening; no new independent openings."
+    },
+    "known_current": {
+      "groups": 192,
+      "centered_mse": 0.04200810969513865,
+      "zero_mse": 0.042196859646636435,
+      "changed": 1,
+      "unmeasured_choices": 0,
+      "common_v5_continuation_gain": {
+        "mean": 0.0,
+        "completion_range": [
+          0.0,
+          0.0
+        ],
+        "low": 0.0,
+        "high": 0.0,
+        "alpha": 0.05,
+        "independent_seed_clusters": 96,
+        "unresolved_seed_clusters": 0
+      },
+      "scope": "Actual all-legal choice; unmeasured actions retain 0/1 return bounds. Cluster by old source opening; no new independent openings."
+    }
+  },
+  "selection_used": false
+}
