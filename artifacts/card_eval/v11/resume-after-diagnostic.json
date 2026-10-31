@@ -1,0 +1,71 @@
+{
+  "diagnostic_finished_in_original_process": true,
+  "old_lock_pid": 10904,
+  "old_lock_state": "zombie/OS lock free",
+  "resampled_old_results": false,
+  "files": {
+    "artifacts/card_eval/v11/diagnostic-collection.log": "1cd87aa6753e1adacba9773f9b70e04a9d2094934873bf2dfe0d2cf1b18ab65e",
+    "artifacts/card_eval/v11/diagnostic-progress.json": "0c203bdc1b9955c3b51a1d2c9ff917ef3ebcd7b5bef49ffa919f70e7f7146887",
+    "artifacts/card_eval/v11/diagnostic-targets.jsonl.gz": "e0719e6cdf3774112b0e77e34f56fdd887debb2fbfa0fe155c94639f97b96d96",
+    "artifacts/card_eval/v11/diagnostic-collection.json": "b9d072a8eee7c0e811629c4d868d35577af98461ae9478e36811fdb14e8e391e",
+    "artifacts/card_eval/v11/diagnostic-fresh-rollins.jsonl.gz": "a99a7d771ddaa82e6249dd133bf467f11410507fd15d76a9bae9c917fdeea182"
+  },
+  "unknown_continuations": [
+    {
+      "seed": 2680007,
+      "decision": 18,
+      "action_index": 0,
+      "suffix": 5,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=offline_counterfactual_branch, seconds=0.439275",
+      "sampler_recorded": true
+    },
+    {
+      "seed": 2680007,
+      "decision": 18,
+      "action_index": 3,
+      "suffix": 5,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=offline_counterfactual_branch, seconds=1.044682",
+      "sampler_recorded": true
+    },
+    {
+      "seed": 2680007,
+      "decision": 18,
+      "action_index": 10,
+      "suffix": 5,
+      "error": "Decision exceeded the common wall-time budget: actor=1, policy=offline_counterfactual_branch, seconds=0.416051",
+      "sampler_recorded": false
+    },
+    {
+      "seed": 2680007,
+      "decision": 18,
+      "action_index": 0,
+      "suffix": 6,
+      "error": "Decision exceeded the common wall-time budget: actor=1, policy=offline_counterfactual_branch, seconds=0.525781",
+      "sampler_recorded": false
+    },
+    {
+      "seed": 2680007,
+      "decision": 18,
+      "action_index": 2,
+      "suffix": 6,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=offline_counterfactual_branch, seconds=0.292721",
+      "sampler_recorded": true
+    },
+    {
+      "seed": 2680007,
+      "decision": 18,
+      "action_index": 3,
+      "suffix": 6,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=offline_counterfactual_branch, seconds=0.325845",
+      "sampler_recorded": false
+    },
+    {
+      "seed": 2680007,
+      "decision": 18,
+      "action_index": 9,
+      "suffix": 6,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=offline_counterfactual_branch, seconds=0.378983",
+      "sampler_recorded": true
+    }
+  ]
+}
