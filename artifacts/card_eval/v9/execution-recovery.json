@@ -15,5 +15,8 @@
     "passed": 42,
     "elapsed_seconds": 3.612
   },
-  "final_started_before_this_snapshot": false
+  "final_started_before_this_snapshot": false,
+  "approval_service_recovered": true,
+  "normal_git_push_succeeded": true,
+  "verified_remote_source": "f7e8063ffefb6a2cb7e75f8e72528ebfdd028b7b"
 }
