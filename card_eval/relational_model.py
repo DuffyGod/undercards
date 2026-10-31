@@ -49,7 +49,12 @@ class RelationalNetwork:
 
     def fit_value(self, states, outcomes, weights, l2=.01, iterations=160):
         from scipy.optimize import minimize
-        x = np.asarray(states); y = np.asarray(outcomes); weights = np.asarray(weights); weights /= weights.sum()
+        x = np.asarray(states, dtype=float); y = np.asarray(outcomes, dtype=float); weights = np.asarray(weights, dtype=float)
+        if not len(y) or x.ndim != 2 or len(x) != len(y) or weights.shape != y.shape:
+            raise ValueError('Aligned nonempty policy-specific value targets required')
+        if not np.isfinite(x).all() or not np.isfinite(weights).all() or not np.isin(y, (0, 1)).all() or np.any(weights <= 0):
+            raise ValueError('Only finite states, positive episode weights and terminal binary outcomes are value targets')
+        weights = weights / weights.sum()
         actor_before = self.actor_fingerprint
         def objective(w):
             z = x @ w; p = 1 / (1 + np.exp(-np.clip(z, -40, 40)))

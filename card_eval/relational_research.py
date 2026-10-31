@@ -111,14 +111,18 @@ def development(folder):
     if (folder / 'development.json').exists(): raise ValueError('Preserve development evidence')
     d = json.loads((folder / 'design.json').read_text()); nets = {a: Network.load(folder / (a + '.npz'))[0] for a in ARMS}
     nets['previous_v3'] = Network.load('card_eval/models/shared-policy.npz')[0]
-    counts = {a: dict(total=0, correct=0, multi=0, multi_correct=0, attack=0, attack_correct=0) for a in nets}
+    counts = {a: dict(total=0, correct=0, raw_correct=0, search_overrides=0,
+                     multi=0, multi_correct=0, multi_raw_correct=0, attack=0, attack_correct=0) for a in nets}
     for row in read_decisions(d['fidelity_files']):
         obs = row['observation']; actions = list(map(tuple, row['legal_actions']))
         teachers = {style: ReferencePolicy(style).choose(obs, actions)['action_index'] for style in ('race', 'guard')}
         for name, net in nets.items():
-            y = teachers['guard' if name.endswith('guard') else 'race']; got = LearnedPolicy(net).choose(obs, actions)['action_index']
-            c = counts[name]; c['total'] += 1; c['correct'] += got == y
-            if len(actions) > 1: c['multi'] += 1; c['multi_correct'] += got == y
+            y = teachers['guard' if name.endswith('guard') else 'race']
+            raw = int(net.forward(*net.encode(obs, actions))[0].argmax()); decision = LearnedPolicy(net).choose(obs, actions)
+            got = decision['action_index']; c = counts[name]; c['total'] += 1; c['correct'] += got == y
+            c['raw_correct'] += raw == y; c['search_overrides'] += decision['search_override']
+            if len(actions) > 1:
+                c['multi'] += 1; c['multi_correct'] += got == y; c['multi_raw_correct'] += raw == y
             if actions[y][0] == 'attack': c['attack'] += 1; c['attack_correct'] += got == y
     results = []
     with gzip.open(folder / 'development-games.jsonl.gz', 'wt', encoding='utf-8') as stream:
@@ -130,7 +134,8 @@ def development(folder):
                              ('INTEGRITY', 'KINDNESS' if group == 'defense' else 'INTEGRITY'))
                     row = dict(group=group, seed=seed, policy=name, result=small_result(r)); stream.write(json.dumps(row) + '\n')
                     values.append(0 if r['unfinished'] else int(r['won']))
-            c = counts[name]; c.update(accuracy=c['correct'] / c['total'], multi_accuracy=c['multi_correct'] / c['multi'],
+            c = counts[name]; c.update(accuracy=c['correct'] / c['total'], raw_accuracy=c['raw_correct'] / c['total'],
+                                      multi_accuracy=c['multi_correct'] / c['multi'], multi_raw_accuracy=c['multi_raw_correct'] / c['multi'],
                                       attack_accuracy=c['attack_correct'] / c['attack'])
             results.append(dict(policy=name, fidelity=c, development_win_lower=float(np.mean(values))))
             print(json.dumps(results[-1]), flush=True)
@@ -178,12 +183,19 @@ def value_data(folder, net, name, seeds):
 
 
 def value_metrics(net, episodes, constant):
-    scored = []; calibration = []
+    scored = []; calibration = []; completion = []; gain_completion = []
     for e in episodes:
-        if not e['terminal']: continue
         probs = [net.forward(s, np.zeros((1, len(net.actor))))[1] / 2 + .5 for s in e['states']]
+        if not probs: raise ValueError('Episode without recorded actor predictions cannot be silently scored')
+        if not e['terminal']:
+            possible = [float(np.mean([(p - y) ** 2 for p in probs])) for y in (0, 1)]
+            completion.append((min(possible), max(possible)))
+            gains = [(constant - y) ** 2 - possible[y] for y in (0, 1)]
+            gain_completion.append((min(gains), max(gains)))
+            continue
         y = int(e['won']); brier = float(np.mean([(p - y) ** 2 for p in probs]))
         scored.append((brier, (constant - y) ** 2)); calibration.extend((p, y, 1 / len(probs)) for p in probs)
+        completion.append((brier, brier)); gain = (constant - y) ** 2 - brier; gain_completion.append((gain, gain))
     a = np.asarray(scored); bins = []
     for lo in (0, .2, .4, .6, .8):
         rows = [(p, y, w) for p, y, w in calibration if lo <= p < lo + .2 or lo == .8 and p == 1]
@@ -192,7 +204,9 @@ def value_metrics(net, episodes, constant):
             bins.append(dict(range=[lo, lo + .2], episode_weight=float(w.sum()), prediction=float(np.average(p, weights=w)),
                              outcome=float(np.average(y, weights=w))))
     return dict(terminal_episodes=len(scored), unresolved_episodes=sum(not e['terminal'] for e in episodes),
-        brier=interval(a[:, 0]), constant_brier=interval(a[:, 1]), brier_gain=interval(a[:, 1] - a[:, 0]), calibration=bins)
+        brier=interval(a[:, 0]) if len(a) else None, constant_brier=interval(a[:, 1]) if len(a) else None,
+        brier_gain=interval(a[:, 1] - a[:, 0]) if len(a) else None, calibration=bins,
+        all_episode_brier=interval(*np.asarray(completion).T), all_episode_gain=interval(*np.asarray(gain_completion).T))
 
 
 def value(folder):

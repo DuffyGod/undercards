@@ -73,6 +73,8 @@ class RelationalChecks(unittest.TestCase):
         metrics = value_metrics(net, episodes, .5)
         self.assertEqual(metrics['terminal_episodes'], 1); self.assertEqual(metrics['unresolved_episodes'], 1)
         self.assertEqual(metrics['brier']['mean'], .25)
+        self.assertEqual(metrics['all_episode_brier']['mean'], .25)
+        with self.assertRaises(ValueError): net.fit_value([np.zeros(74)], [None], [1.])
 
 
 if __name__ == '__main__': unittest.main()

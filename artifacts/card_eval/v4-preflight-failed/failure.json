@@ -2,6 +2,6 @@
   "status": "aborted_before_game_evaluation",
   "source_commit": "fd6445f",
   "reason": "Own-target play target-position feature checked enemy UID membership without checking side. Independent per-side UID renaming could change features.",
-  "retained": "Design, sample keys, two partial actor checkpoints and console; no development/final outcomes observed.",
+  "retained": "Design, sample keys, three partial actor checkpoints and console; no development/final outcomes observed.",
   "action": "Fix side-aware join and rerun same predeclared hyperparameters. No win-driven selection."
 }
