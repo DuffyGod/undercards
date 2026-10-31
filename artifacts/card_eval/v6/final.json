@@ -1,0 +1,2154 @@
+{
+  "status": "complete",
+  "source_commit": "b53afce4b2d50e93a816a94b12710c668330e63f",
+  "qualified": false,
+  "groups": [
+    {
+      "group": "pressure",
+      "policies": [
+        {
+          "policy": "primary",
+          "win": {
+            "mean": 0.890625,
+            "completion_range": [
+              0.890625,
+              0.890625
+            ],
+            "low": 0.8203125,
+            "high": 0.953125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.0,
+            "completion_range": [
+              0.0,
+              0.0
+            ],
+            "low": 0.0,
+            "high": 0.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "v5",
+          "win": {
+            "mean": 0.890625,
+            "completion_range": [
+              0.890625,
+              0.890625
+            ],
+            "low": 0.8203125,
+            "high": 0.953125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.0,
+            "completion_range": [
+              0.0,
+              0.0
+            ],
+            "low": 0.0,
+            "high": 0.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "race",
+          "win": {
+            "mean": 0.484375,
+            "completion_range": [
+              0.484375,
+              0.484375
+            ],
+            "low": 0.3984375,
+            "high": 0.578125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.40625,
+            "completion_range": [
+              0.40625,
+              0.40625
+            ],
+            "low": 0.296875,
+            "high": 0.5080078124999972,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "board",
+          "win": {
+            "mean": 0.4609375,
+            "completion_range": [
+              0.4609375,
+              0.4609375
+            ],
+            "low": 0.3671875,
+            "high": 0.5546875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.4296875,
+            "completion_range": [
+              0.4296875,
+              0.4296875
+            ],
+            "low": 0.328125,
+            "high": 0.53125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "guard",
+          "win": {
+            "mean": 0.796875,
+            "completion_range": [
+              0.796875,
+              0.796875
+            ],
+            "low": 0.7109375,
+            "high": 0.875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.09375,
+            "completion_range": [
+              0.09375,
+              0.09375
+            ],
+            "low": 0.0390625,
+            "high": 0.15625,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        }
+      ],
+      "timings": {
+        "primary": {
+          "decisions": 4588,
+          "p95": 0.0031591331489835227,
+          "maximum": 0.016271924003376625
+        },
+        "v5": {
+          "decisions": 4587,
+          "p95": 0.0025432837992411745,
+          "maximum": 0.02715035600340343
+        },
+        "race": {
+          "decisions": 3265,
+          "p95": 0.00014072039775783103,
+          "maximum": 0.023105841002688976
+        },
+        "board": {
+          "decisions": 3658,
+          "p95": 0.00010579859936115068,
+          "maximum": 0.017560223997861613
+        },
+        "guard": {
+          "decisions": 4576,
+          "p95": 0.0007963559983181767,
+          "maximum": 0.021783986001537414
+        }
+      }
+    },
+    {
+      "group": "defense",
+      "policies": [
+        {
+          "policy": "primary",
+          "win": {
+            "mean": 0.4296875,
+            "completion_range": [
+              0.4296875,
+              0.4296875
+            ],
+            "low": 0.3359375,
+            "high": 0.5234375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.0,
+            "completion_range": [
+              0.0,
+              0.0
+            ],
+            "low": 0.0,
+            "high": 0.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "v5",
+          "win": {
+            "mean": 0.421875,
+            "completion_range": [
+              0.421875,
+              0.421875
+            ],
+            "low": 0.328125,
+            "high": 0.515625,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.0078125,
+            "completion_range": [
+              0.0078125,
+              0.0078125
+            ],
+            "low": -0.015625,
+            "high": 0.03125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "race",
+          "win": {
+            "mean": 0.09375,
+            "completion_range": [
+              0.09375,
+              0.09375
+            ],
+            "low": 0.0390625,
+            "high": 0.15625,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.3359375,
+            "completion_range": [
+              0.3359375,
+              0.3359375
+            ],
+            "low": 0.2421875,
+            "high": 0.4296875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "board",
+          "win": {
+            "mean": 0.046875,
+            "completion_range": [
+              0.046875,
+              0.046875
+            ],
+            "low": 0.0078125,
+            "high": 0.09375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.3828125,
+            "completion_range": [
+              0.3828125,
+              0.3828125
+            ],
+            "low": 0.2890625,
+            "high": 0.4765625,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "guard",
+          "win": {
+            "mean": 0.2890625,
+            "completion_range": [
+              0.2890625,
+              0.2890625
+            ],
+            "low": 0.1953125,
+            "high": 0.3828125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.140625,
+            "completion_range": [
+              0.140625,
+              0.140625
+            ],
+            "low": 0.0625,
+            "high": 0.21875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        }
+      ],
+      "timings": {
+        "primary": {
+          "decisions": 4615,
+          "p95": 0.0022338928989484035,
+          "maximum": 0.024217236001277342
+        },
+        "v5": {
+          "decisions": 4595,
+          "p95": 0.0014286397003161258,
+          "maximum": 0.017698332001600647
+        },
+        "race": {
+          "decisions": 3657,
+          "p95": 2.269660108140669e-05,
+          "maximum": 0.014736424000147963
+        },
+        "board": {
+          "decisions": 3826,
+          "p95": 2.353349918848835e-05,
+          "maximum": 0.012160020000010263
+        },
+        "guard": {
+          "decisions": 4577,
+          "p95": 4.2303801456000617e-05,
+          "maximum": 0.012071150998963276
+        }
+      }
+    },
+    {
+      "group": "refill",
+      "policies": [
+        {
+          "policy": "primary",
+          "win": {
+            "mean": 0.7265625,
+            "completion_range": [
+              0.7265625,
+              0.7265625
+            ],
+            "low": 0.640625,
+            "high": 0.8046875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.0,
+            "completion_range": [
+              0.0,
+              0.0
+            ],
+            "low": 0.0,
+            "high": 0.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "v5",
+          "win": {
+            "mean": 0.734375,
+            "completion_range": [
+              0.734375,
+              0.734375
+            ],
+            "low": 0.6484375,
+            "high": 0.8125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": -0.0078125,
+            "completion_range": [
+              -0.0078125,
+              -0.0078125
+            ],
+            "low": -0.0234375,
+            "high": 0.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "race",
+          "win": {
+            "mean": 0.6484375,
+            "completion_range": [
+              0.6484375,
+              0.6484375
+            ],
+            "low": 0.546875,
+            "high": 0.75,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.078125,
+            "completion_range": [
+              0.078125,
+              0.078125
+            ],
+            "low": -0.0390625,
+            "high": 0.1953125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "board",
+          "win": {
+            "mean": 0.5546875,
+            "completion_range": [
+              0.5546875,
+              0.5546875
+            ],
+            "low": 0.453125,
+            "high": 0.65625,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.171875,
+            "completion_range": [
+              0.171875,
+              0.171875
+            ],
+            "low": 0.0625,
+            "high": 0.2890625,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "guard",
+          "win": {
+            "mean": 0.734375,
+            "completion_range": [
+              0.734375,
+              0.734375
+            ],
+            "low": 0.6484375,
+            "high": 0.8203125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": -0.0078125,
+            "completion_range": [
+              -0.0078125,
+              -0.0078125
+            ],
+            "low": -0.0625,
+            "high": 0.046875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        }
+      ],
+      "timings": {
+        "primary": {
+          "decisions": 4538,
+          "p95": 0.003342921500916404,
+          "maximum": 0.022214808999706293
+        },
+        "v5": {
+          "decisions": 4511,
+          "p95": 0.0025463339989073575,
+          "maximum": 0.02273437699841452
+        },
+        "race": {
+          "decisions": 3326,
+          "p95": 0.0002411780005786568,
+          "maximum": 0.029115138000634033
+        },
+        "board": {
+          "decisions": 3836,
+          "p95": 7.97022512415424e-05,
+          "maximum": 0.016352458998881048
+        },
+        "guard": {
+          "decisions": 4514,
+          "p95": 0.001057670301270235,
+          "maximum": 0.023642934000235982
+        }
+      }
+    },
+    {
+      "group": "new_parameters",
+      "policies": [
+        {
+          "policy": "primary",
+          "win": {
+            "mean": 0.9921875,
+            "completion_range": [
+              0.9921875,
+              0.9921875
+            ],
+            "low": 0.9765625,
+            "high": 1.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.0,
+            "completion_range": [
+              0.0,
+              0.0
+            ],
+            "low": 0.0,
+            "high": 0.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "v5",
+          "win": {
+            "mean": 0.9921875,
+            "completion_range": [
+              0.9921875,
+              0.9921875
+            ],
+            "low": 0.9765625,
+            "high": 1.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.0,
+            "completion_range": [
+              0.0,
+              0.0
+            ],
+            "low": 0.0,
+            "high": 0.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "race",
+          "win": {
+            "mean": 0.7578125,
+            "completion_range": [
+              0.7578125,
+              0.7578125
+            ],
+            "low": 0.6640625,
+            "high": 0.8515625,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.234375,
+            "completion_range": [
+              0.234375,
+              0.234375
+            ],
+            "low": 0.140625,
+            "high": 0.328125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "board",
+          "win": {
+            "mean": 0.796875,
+            "completion_range": [
+              0.796875,
+              0.796875
+            ],
+            "low": 0.7109375,
+            "high": 0.8828125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.1953125,
+            "completion_range": [
+              0.1953125,
+              0.1953125
+            ],
+            "low": 0.1171875,
+            "high": 0.28125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "guard",
+          "win": {
+            "mean": 0.96875,
+            "completion_range": [
+              0.96875,
+              0.96875
+            ],
+            "low": 0.9296875,
+            "high": 1.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.0234375,
+            "completion_range": [
+              0.0234375,
+              0.0234375
+            ],
+            "low": 0.0,
+            "high": 0.0625,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        }
+      ],
+      "timings": {
+        "primary": {
+          "decisions": 3807,
+          "p95": 0.0036679479984741185,
+          "maximum": 0.015041628998005763
+        },
+        "v5": {
+          "decisions": 3795,
+          "p95": 0.003204659499533586,
+          "maximum": 0.027187096999114146
+        },
+        "race": {
+          "decisions": 3193,
+          "p95": 0.001412089198856847,
+          "maximum": 0.018953828999656253
+        },
+        "board": {
+          "decisions": 3593,
+          "p95": 0.0009591561974957579,
+          "maximum": 0.01577580099910847
+        },
+        "guard": {
+          "decisions": 3825,
+          "p95": 0.0023925432004034378,
+          "maximum": 0.018758510999759892
+        }
+      }
+    },
+    {
+      "group": "new_composition",
+      "policies": [
+        {
+          "policy": "primary",
+          "win": {
+            "mean": 0.96875,
+            "completion_range": [
+              0.96875,
+              0.96875
+            ],
+            "low": 0.9375,
+            "high": 0.9921875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.0,
+            "completion_range": [
+              0.0,
+              0.0
+            ],
+            "low": 0.0,
+            "high": 0.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "v5",
+          "win": {
+            "mean": 0.9609375,
+            "completion_range": [
+              0.9609375,
+              0.9609375
+            ],
+            "low": 0.921875,
+            "high": 0.9921875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.0078125,
+            "completion_range": [
+              0.0078125,
+              0.0078125
+            ],
+            "low": 0.0,
+            "high": 0.0234375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "race",
+          "win": {
+            "mean": 0.3671875,
+            "completion_range": [
+              0.3671875,
+              0.3671875
+            ],
+            "low": 0.2734375,
+            "high": 0.4609375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.6015625,
+            "completion_range": [
+              0.6015625,
+              0.6015625
+            ],
+            "low": 0.5,
+            "high": 0.703125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "board",
+          "win": {
+            "mean": 0.3515625,
+            "completion_range": [
+              0.3515625,
+              0.3515625
+            ],
+            "low": 0.2578125,
+            "high": 0.4453125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.6171875,
+            "completion_range": [
+              0.6171875,
+              0.6171875
+            ],
+            "low": 0.5234375,
+            "high": 0.7109375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "guard",
+          "win": {
+            "mean": 0.96875,
+            "completion_range": [
+              0.96875,
+              0.96875
+            ],
+            "low": 0.9296875,
+            "high": 1.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.0,
+            "completion_range": [
+              0.0,
+              0.0
+            ],
+            "low": -0.0390625,
+            "high": 0.046875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        }
+      ],
+      "timings": {
+        "primary": {
+          "decisions": 4542,
+          "p95": 0.003308386651588079,
+          "maximum": 0.17783660700297332
+        },
+        "v5": {
+          "decisions": 4541,
+          "p95": 0.002430938999168575,
+          "maximum": 0.04970372499883524
+        },
+        "race": {
+          "decisions": 3121,
+          "p95": 0.00010080699939862825,
+          "maximum": 0.023172466997493757
+        },
+        "board": {
+          "decisions": 3689,
+          "p95": 8.525780067429873e-05,
+          "maximum": 0.01659763800125802
+        },
+        "guard": {
+          "decisions": 4540,
+          "p95": 0.0014775399002246565,
+          "maximum": 0.040927161997387884
+        }
+      }
+    },
+    {
+      "group": "new_structure",
+      "policies": [
+        {
+          "policy": "primary",
+          "win": {
+            "mean": 0.5546875,
+            "completion_range": [
+              0.5546875,
+              0.5546875
+            ],
+            "low": 0.453125,
+            "high": 0.65625,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.0,
+            "completion_range": [
+              0.0,
+              0.0
+            ],
+            "low": 0.0,
+            "high": 0.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "v5",
+          "win": {
+            "mean": 0.5625,
+            "completion_range": [
+              0.5625,
+              0.5625
+            ],
+            "low": 0.4609375,
+            "high": 0.6640625,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": -0.0078125,
+            "completion_range": [
+              -0.0078125,
+              -0.0078125
+            ],
+            "low": -0.0234375,
+            "high": 0.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "race",
+          "win": {
+            "mean": 0.7578125,
+            "completion_range": [
+              0.7578125,
+              0.7578125
+            ],
+            "low": 0.671875,
+            "high": 0.84375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": -0.203125,
+            "completion_range": [
+              -0.203125,
+              -0.203125
+            ],
+            "low": -0.3203125,
+            "high": -0.09375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "board",
+          "win": {
+            "mean": 0.65625,
+            "completion_range": [
+              0.65625,
+              0.65625
+            ],
+            "low": 0.5625,
+            "high": 0.75,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": -0.1015625,
+            "completion_range": [
+              -0.1015625,
+              -0.1015625
+            ],
+            "low": -0.234375,
+            "high": 0.03125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "guard",
+          "win": {
+            "mean": 0.4453125,
+            "completion_range": [
+              0.4453125,
+              0.4453125
+            ],
+            "low": 0.34375,
+            "high": 0.5546875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.109375,
+            "completion_range": [
+              0.109375,
+              0.109375
+            ],
+            "low": 0.0,
+            "high": 0.2109375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        }
+      ],
+      "timings": {
+        "primary": {
+          "decisions": 4832,
+          "p95": 0.00316345679839287,
+          "maximum": 0.07431972400081577
+        },
+        "v5": {
+          "decisions": 4831,
+          "p95": 0.0021725690003222553,
+          "maximum": 0.0821805650011811
+        },
+        "race": {
+          "decisions": 3470,
+          "p95": 0.0011001872006090592,
+          "maximum": 0.02699169100014842
+        },
+        "board": {
+          "decisions": 4247,
+          "p95": 0.00010104020038852464,
+          "maximum": 0.03378808699926594
+        },
+        "guard": {
+          "decisions": 4783,
+          "p95": 8.15964984212768e-05,
+          "maximum": 0.1411919249985658
+        }
+      }
+    },
+    {
+      "group": "known_delayed_sweep",
+      "policies": [
+        {
+          "policy": "primary",
+          "win": {
+            "mean": 0.453125,
+            "completion_range": [
+              0.453125,
+              0.453125
+            ],
+            "low": 0.359375,
+            "high": 0.5546875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.0,
+            "completion_range": [
+              0.0,
+              0.0
+            ],
+            "low": 0.0,
+            "high": 0.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "v5",
+          "win": {
+            "mean": 0.4609375,
+            "completion_range": [
+              0.4609375,
+              0.4609375
+            ],
+            "low": 0.359375,
+            "high": 0.5625,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": -0.0078125,
+            "completion_range": [
+              -0.0078125,
+              -0.0078125
+            ],
+            "low": -0.0234375,
+            "high": 0.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "race",
+          "win": {
+            "mean": 0.2890625,
+            "completion_range": [
+              0.2890625,
+              0.2890625
+            ],
+            "low": 0.1953125,
+            "high": 0.3828125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.1640625,
+            "completion_range": [
+              0.1640625,
+              0.1640625
+            ],
+            "low": 0.03125,
+            "high": 0.2890625,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "board",
+          "win": {
+            "mean": 0.09375,
+            "completion_range": [
+              0.09375,
+              0.09375
+            ],
+            "low": 0.046875,
+            "high": 0.1484375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.359375,
+            "completion_range": [
+              0.359375,
+              0.359375
+            ],
+            "low": 0.2578125,
+            "high": 0.46875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "guard",
+          "win": {
+            "mean": 0.3046875,
+            "completion_range": [
+              0.3046875,
+              0.3046875
+            ],
+            "low": 0.21875,
+            "high": 0.3984375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.1484375,
+            "completion_range": [
+              0.1484375,
+              0.1484375
+            ],
+            "low": 0.0625,
+            "high": 0.234375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        }
+      ],
+      "timings": {
+        "primary": {
+          "decisions": 7066,
+          "p95": 0.002240882500700536,
+          "maximum": 0.15975347499988857
+        },
+        "v5": {
+          "decisions": 7048,
+          "p95": 0.0015276219992301772,
+          "maximum": 0.08812843299892847
+        },
+        "race": {
+          "decisions": 4238,
+          "p95": 4.461574972083282e-05,
+          "maximum": 0.01908344500043313
+        },
+        "board": {
+          "decisions": 5206,
+          "p95": 2.491750001354376e-05,
+          "maximum": 0.015131047999602742
+        },
+        "guard": {
+          "decisions": 7441,
+          "p95": 3.716100036399439e-05,
+          "maximum": 0.04480334999971092
+        }
+      }
+    },
+    {
+      "group": "unseen_switching",
+      "policies": [
+        {
+          "policy": "primary",
+          "win": {
+            "mean": 0.7734375,
+            "completion_range": [
+              0.7734375,
+              0.7734375
+            ],
+            "low": 0.703125,
+            "high": 0.84375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.0,
+            "completion_range": [
+              0.0,
+              0.0
+            ],
+            "low": 0.0,
+            "high": 0.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "v5",
+          "win": {
+            "mean": 0.7734375,
+            "completion_range": [
+              0.7734375,
+              0.7734375
+            ],
+            "low": 0.703125,
+            "high": 0.84375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.0,
+            "completion_range": [
+              0.0,
+              0.0
+            ],
+            "low": 0.0,
+            "high": 0.0,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "race",
+          "win": {
+            "mean": 0.546875,
+            "completion_range": [
+              0.546875,
+              0.546875
+            ],
+            "low": 0.4609375,
+            "high": 0.640625,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.2265625,
+            "completion_range": [
+              0.2265625,
+              0.2265625
+            ],
+            "low": 0.1171875,
+            "high": 0.328125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "board",
+          "win": {
+            "mean": 0.5859375,
+            "completion_range": [
+              0.5859375,
+              0.5859375
+            ],
+            "low": 0.49980468750000007,
+            "high": 0.671875,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.1875,
+            "completion_range": [
+              0.1875,
+              0.1875
+            ],
+            "low": 0.0859375,
+            "high": 0.28144531249999716,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        },
+        {
+          "policy": "guard",
+          "win": {
+            "mean": 0.7109375,
+            "completion_range": [
+              0.7109375,
+              0.7109375
+            ],
+            "low": 0.625,
+            "high": 0.7890625,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          },
+          "primary_gain": {
+            "mean": 0.0625,
+            "completion_range": [
+              0.0625,
+              0.0625
+            ],
+            "low": -0.015625,
+            "high": 0.140625,
+            "alpha": 0.05,
+            "independent_seed_clusters": 64,
+            "unresolved_seed_clusters": 0
+          }
+        }
+      ],
+      "timings": {
+        "primary": {
+          "decisions": 4911,
+          "p95": 0.0026199504991382128,
+          "maximum": 0.02218418200209271
+        },
+        "v5": {
+          "decisions": 4899,
+          "p95": 0.0019143267996696452,
+          "maximum": 0.020512743001745548
+        },
+        "race": {
+          "decisions": 3672,
+          "p95": 0.00015298595080821527,
+          "maximum": 0.02312290999907418
+        },
+        "board": {
+          "decisions": 4680,
+          "p95": 0.00010981230207107739,
+          "maximum": 0.017296988000452984
+        },
+        "guard": {
+          "decisions": 4988,
+          "p95": 0.000267470900507754,
+          "maximum": 0.02412858299794607
+        }
+      }
+    }
+  ],
+  "failures": [],
+  "primary_fingerprint": "da035df831babb84af83d51f8b63cb329d2d9e2282bd2800ae84203e2769d228",
+  "value_final": {
+    "terminal_episodes": 96,
+    "unresolved_episodes": 0,
+    "brier": {
+      "mean": 0.16095680702537288,
+      "completion_range": [
+        0.16095680702537288,
+        0.16095680702537288
+      ],
+      "low": 0.13869791711349067,
+      "high": 0.18360682851429852,
+      "alpha": 0.05,
+      "independent_seed_clusters": 96,
+      "unresolved_seed_clusters": 0
+    },
+    "constant_brier": {
+      "mean": 0.2353515625,
+      "completion_range": [
+        0.2353515625,
+        0.2353515625
+      ],
+      "low": 0.2177734375,
+      "high": 0.2529296875,
+      "alpha": 0.05,
+      "independent_seed_clusters": 96,
+      "unresolved_seed_clusters": 0
+    },
+    "brier_gain": {
+      "mean": 0.07439475547462711,
+      "completion_range": [
+        0.07439475547462711,
+        0.07439475547462711
+      ],
+      "low": 0.056317920986688925,
+      "high": 0.09238314273965417,
+      "alpha": 0.05,
+      "independent_seed_clusters": 96,
+      "unresolved_seed_clusters": 0
+    },
+    "calibration": [
+      {
+        "range": [
+          0,
+          0.2
+        ],
+        "episode_weight": 5.26718020235464,
+        "prediction": 0.1242895661433921,
+        "outcome": 0.02701433076242428
+      },
+      {
+        "range": [
+          0.2,
+          0.4
+        ],
+        "episode_weight": 9.829953596489005,
+        "prediction": 0.31113414599690253,
+        "outcome": 0.166398589656435
+      },
+      {
+        "range": [
+          0.4,
+          0.6000000000000001
+        ],
+        "episode_weight": 24.81635358158339,
+        "prediction": 0.5171224231045363,
+        "outcome": 0.4852415313303674
+      },
+      {
+        "range": [
+          0.6,
+          0.8
+        ],
+        "episode_weight": 35.856019367348566,
+        "prediction": 0.6981614307500135,
+        "outcome": 0.7388508540363393
+      },
+      {
+        "range": [
+          0.8,
+          1.0
+        ],
+        "episode_weight": 20.2304932522244,
+        "prediction": 0.8798747557691738,
+        "outcome": 0.9731766816386056
+      }
+    ],
+    "all_episode_brier": {
+      "mean": 0.16095680702537288,
+      "completion_range": [
+        0.16095680702537288,
+        0.16095680702537288
+      ],
+      "low": 0.13869791711349067,
+      "high": 0.18360682851429852,
+      "alpha": 0.05,
+      "independent_seed_clusters": 96,
+      "unresolved_seed_clusters": 0
+    },
+    "all_episode_gain": {
+      "mean": 0.07439475547462711,
+      "completion_range": [
+        0.07439475547462711,
+        0.07439475547462711
+      ],
+      "low": 0.056317920986688925,
+      "high": 0.09238314273965417,
+      "alpha": 0.05,
+      "independent_seed_clusters": 96,
+      "unresolved_seed_clusters": 0
+    }
+  },
+  "value_phases": {
+    "opening": {
+      "episodes_with_predictions": 96,
+      "episodes_without_phase": 0,
+      "metrics": {
+        "terminal_episodes": 96,
+        "unresolved_episodes": 0,
+        "brier": {
+          "mean": 0.23250188717076292,
+          "completion_range": [
+            0.23250188717076292,
+            0.23250188717076292
+          ],
+          "low": 0.21259488421445735,
+          "high": 0.2532125145459035,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "constant_brier": {
+          "mean": 0.2353515625,
+          "completion_range": [
+            0.2353515625,
+            0.2353515625
+          ],
+          "low": 0.2177734375,
+          "high": 0.2529296875,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "brier_gain": {
+          "mean": 0.0028496753292370845,
+          "completion_range": [
+            0.0028496753292370845,
+            0.0028496753292370845
+          ],
+          "low": -0.014386770580290937,
+          "high": 0.02026354163580655,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "calibration": [
+          {
+            "range": [
+              0.2,
+              0.4
+            ],
+            "episode_weight": 2.0,
+            "prediction": 0.36199664584746183,
+            "outcome": 0.5
+          },
+          {
+            "range": [
+              0.4,
+              0.6000000000000001
+            ],
+            "episode_weight": 54.0,
+            "prediction": 0.5183935698749438,
+            "outcome": 0.5925925925925926
+          },
+          {
+            "range": [
+              0.6,
+              0.8
+            ],
+            "episode_weight": 40.0,
+            "prediction": 0.6430975166739072,
+            "outcome": 0.675
+          }
+        ],
+        "all_episode_brier": {
+          "mean": 0.23250188717076292,
+          "completion_range": [
+            0.23250188717076292,
+            0.23250188717076292
+          ],
+          "low": 0.21259488421445735,
+          "high": 0.2532125145459035,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "all_episode_gain": {
+          "mean": 0.0028496753292370845,
+          "completion_range": [
+            0.0028496753292370845,
+            0.0028496753292370845
+          ],
+          "low": -0.014386770580290937,
+          "high": 0.02026354163580655,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        }
+      }
+    },
+    "early_turns_1_5": {
+      "episodes_with_predictions": 96,
+      "episodes_without_phase": 0,
+      "metrics": {
+        "terminal_episodes": 96,
+        "unresolved_episodes": 0,
+        "brier": {
+          "mean": 0.19839047863730744,
+          "completion_range": [
+            0.19839047863730744,
+            0.19839047863730744
+          ],
+          "low": 0.17077706422215344,
+          "high": 0.22686067472862048,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "constant_brier": {
+          "mean": 0.2353515625,
+          "completion_range": [
+            0.2353515625,
+            0.2353515625
+          ],
+          "low": 0.2177734375,
+          "high": 0.2529296875,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "brier_gain": {
+          "mean": 0.03696108386269256,
+          "completion_range": [
+            0.03696108386269256,
+            0.03696108386269256
+          ],
+          "low": 0.012766361750548271,
+          "high": 0.05962587385325719,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "calibration": [
+          {
+            "range": [
+              0,
+              0.2
+            ],
+            "episode_weight": 2.329587079587079,
+            "prediction": 0.1185350918309303,
+            "outcome": 0.10456348497301937
+          },
+          {
+            "range": [
+              0.2,
+              0.4
+            ],
+            "episode_weight": 8.416793577939089,
+            "prediction": 0.31900199637587207,
+            "outcome": 0.2728123749832168
+          },
+          {
+            "range": [
+              0.4,
+              0.6000000000000001
+            ],
+            "episode_weight": 32.5405052034309,
+            "prediction": 0.5145945887998691,
+            "outcome": 0.5361796578154936
+          },
+          {
+            "range": [
+              0.6,
+              0.8
+            ],
+            "episode_weight": 39.10058409512743,
+            "prediction": 0.6894077529846474,
+            "outcome": 0.7026119980905727
+          },
+          {
+            "range": [
+              0.8,
+              1.0
+            ],
+            "episode_weight": 13.612530043915491,
+            "prediction": 0.8650068587346063,
+            "outcome": 0.9212180474539737
+          }
+        ],
+        "all_episode_brier": {
+          "mean": 0.19839047863730744,
+          "completion_range": [
+            0.19839047863730744,
+            0.19839047863730744
+          ],
+          "low": 0.17077706422215344,
+          "high": 0.22686067472862048,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "all_episode_gain": {
+          "mean": 0.03696108386269256,
+          "completion_range": [
+            0.03696108386269256,
+            0.03696108386269256
+          ],
+          "low": 0.012766361750548271,
+          "high": 0.05962587385325719,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        }
+      }
+    },
+    "middle_turns_6_12": {
+      "episodes_with_predictions": 85,
+      "episodes_without_phase": 11,
+      "metrics": {
+        "terminal_episodes": 85,
+        "unresolved_episodes": 0,
+        "brier": {
+          "mean": 0.12082083749533006,
+          "completion_range": [
+            0.12082083749533006,
+            0.12082083749533006
+          ],
+          "low": 0.09554322424560653,
+          "high": 0.14670020104556689,
+          "alpha": 0.05,
+          "independent_seed_clusters": 85,
+          "unresolved_seed_clusters": 0
+        },
+        "constant_brier": {
+          "mean": 0.23562729779411765,
+          "completion_range": [
+            0.23562729779411765,
+            0.23562729779411765
+          ],
+          "low": 0.21577435661764705,
+          "high": 0.25548023897058825,
+          "alpha": 0.05,
+          "independent_seed_clusters": 85,
+          "unresolved_seed_clusters": 0
+        },
+        "brier_gain": {
+          "mean": 0.11480646029878756,
+          "completion_range": [
+            0.11480646029878756,
+            0.11480646029878756
+          ],
+          "low": 0.09224963840035288,
+          "high": 0.13604713341954514,
+          "alpha": 0.05,
+          "independent_seed_clusters": 85,
+          "unresolved_seed_clusters": 0
+        },
+        "calibration": [
+          {
+            "range": [
+              0,
+              0.2
+            ],
+            "episode_weight": 8.4363064299438,
+            "prediction": 0.12224683092562495,
+            "outcome": 0.011289074908428816
+          },
+          {
+            "range": [
+              0.2,
+              0.4
+            ],
+            "episode_weight": 9.325262310494923,
+            "prediction": 0.30598858261775636,
+            "outcome": 0.1266875785429998
+          },
+          {
+            "range": [
+              0.4,
+              0.6000000000000001
+            ],
+            "episode_weight": 13.445752754503111,
+            "prediction": 0.5143725656123503,
+            "outcome": 0.3609794760780316
+          },
+          {
+            "range": [
+              0.6,
+              0.8
+            ],
+            "episode_weight": 25.3254710253719,
+            "prediction": 0.7060684164430788,
+            "outcome": 0.7359637983168711
+          },
+          {
+            "range": [
+              0.8,
+              1.0
+            ],
+            "episode_weight": 28.467207479686255,
+            "prediction": 0.9002259386874093,
+            "outcome": 0.9917058562460124
+          }
+        ],
+        "all_episode_brier": {
+          "mean": 0.12082083749533006,
+          "completion_range": [
+            0.12082083749533006,
+            0.12082083749533006
+          ],
+          "low": 0.09554322424560653,
+          "high": 0.14670020104556689,
+          "alpha": 0.05,
+          "independent_seed_clusters": 85,
+          "unresolved_seed_clusters": 0
+        },
+        "all_episode_gain": {
+          "mean": 0.11480646029878756,
+          "completion_range": [
+            0.11480646029878756,
+            0.11480646029878756
+          ],
+          "low": 0.09224963840035288,
+          "high": 0.13604713341954514,
+          "alpha": 0.05,
+          "independent_seed_clusters": 85,
+          "unresolved_seed_clusters": 0
+        }
+      }
+    },
+    "late_turns_13_plus": {
+      "episodes_with_predictions": 12,
+      "episodes_without_phase": 84,
+      "metrics": {
+        "terminal_episodes": 12,
+        "unresolved_episodes": 0,
+        "brier": {
+          "mean": 0.0811857790928399,
+          "completion_range": [
+            0.0811857790928399,
+            0.0811857790928399
+          ],
+          "low": 0.04210115724682936,
+          "high": 0.12548560910835826,
+          "alpha": 0.05,
+          "independent_seed_clusters": 12,
+          "unresolved_seed_clusters": 0
+        },
+        "constant_brier": {
+          "mean": 0.2431640625,
+          "completion_range": [
+            0.2431640625,
+            0.2431640625
+          ],
+          "low": 0.1962890625,
+          "high": 0.2900390625,
+          "alpha": 0.05,
+          "independent_seed_clusters": 12,
+          "unresolved_seed_clusters": 0
+        },
+        "brier_gain": {
+          "mean": 0.16197828340716008,
+          "completion_range": [
+            0.16197828340716008,
+            0.16197828340716008
+          ],
+          "low": 0.08750810579788444,
+          "high": 0.230327496782051,
+          "alpha": 0.05,
+          "independent_seed_clusters": 12,
+          "unresolved_seed_clusters": 0
+        },
+        "calibration": [
+          {
+            "range": [
+              0,
+              0.2
+            ],
+            "episode_weight": 2.07719298245614,
+            "prediction": 0.14976723258490965,
+            "outcome": 0.0
+          },
+          {
+            "range": [
+              0.2,
+              0.4
+            ],
+            "episode_weight": 2.5263157894736845,
+            "prediction": 0.2715484438284284,
+            "outcome": 0.06597222222222221
+          },
+          {
+            "range": [
+              0.4,
+              0.6000000000000001
+            ],
+            "episode_weight": 2.163157894736842,
+            "prediction": 0.509360681791134,
+            "outcome": 0.7396593673965939
+          },
+          {
+            "range": [
+              0.6,
+              0.8
+            ],
+            "episode_weight": 2.033333333333333,
+            "prediction": 0.6888594037330177,
+            "outcome": 1.0
+          },
+          {
+            "range": [
+              0.8,
+              1.0
+            ],
+            "episode_weight": 3.1999999999999997,
+            "prediction": 0.9326463178317131,
+            "outcome": 1.0
+          }
+        ],
+        "all_episode_brier": {
+          "mean": 0.0811857790928399,
+          "completion_range": [
+            0.0811857790928399,
+            0.0811857790928399
+          ],
+          "low": 0.04210115724682936,
+          "high": 0.12548560910835826,
+          "alpha": 0.05,
+          "independent_seed_clusters": 12,
+          "unresolved_seed_clusters": 0
+        },
+        "all_episode_gain": {
+          "mean": 0.16197828340716008,
+          "completion_range": [
+            0.16197828340716008,
+            0.16197828340716008
+          ],
+          "low": 0.08750810579788444,
+          "high": 0.230327496782051,
+          "alpha": 0.05,
+          "independent_seed_clusters": 12,
+          "unresolved_seed_clusters": 0
+        }
+      }
+    }
+  },
+  "value_baselines": {
+    "old74": {
+      "metrics": {
+        "terminal_episodes": 96,
+        "unresolved_episodes": 0,
+        "brier": {
+          "mean": 0.16064878297188678,
+          "completion_range": [
+            0.16064878297188678,
+            0.16064878297188678
+          ],
+          "low": 0.13913252058228515,
+          "high": 0.18199288172174571,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "constant_brier": {
+          "mean": 0.2353515625,
+          "completion_range": [
+            0.2353515625,
+            0.2353515625
+          ],
+          "low": 0.2177734375,
+          "high": 0.2529296875,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "brier_gain": {
+          "mean": 0.07470277952811323,
+          "completion_range": [
+            0.07470277952811323,
+            0.07470277952811323
+          ],
+          "low": 0.0577566274318113,
+          "high": 0.09185171661764031,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "calibration": [
+          {
+            "range": [
+              0,
+              0.2
+            ],
+            "episode_weight": 5.408946608950986,
+            "prediction": 0.1204932471335359,
+            "outcome": 0.015431067228841407
+          },
+          {
+            "range": [
+              0.2,
+              0.4
+            ],
+            "episode_weight": 8.989386441442452,
+            "prediction": 0.31129811148237,
+            "outcome": 0.1676909697865137
+          },
+          {
+            "range": [
+              0.4,
+              0.6000000000000001
+            ],
+            "episode_weight": 25.726915171040343,
+            "prediction": 0.518146051536904,
+            "outcome": 0.4891917880802085
+          },
+          {
+            "range": [
+              0.6,
+              0.8
+            ],
+            "episode_weight": 36.17190965242146,
+            "prediction": 0.6967285817061222,
+            "outcome": 0.7375608005931668
+          },
+          {
+            "range": [
+              0.8,
+              1.0
+            ],
+            "episode_weight": 19.702842126144752,
+            "prediction": 0.8785809030392436,
+            "outcome": 0.9716728607976794
+          }
+        ],
+        "all_episode_brier": {
+          "mean": 0.16064878297188678,
+          "completion_range": [
+            0.16064878297188678,
+            0.16064878297188678
+          ],
+          "low": 0.13913252058228515,
+          "high": 0.18199288172174571,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "all_episode_gain": {
+          "mean": 0.07470277952811323,
+          "completion_range": [
+            0.07470277952811323,
+            0.07470277952811323
+          ],
+          "low": 0.0577566274318113,
+          "high": 0.09185171661764031,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        }
+      },
+      "gain": {
+        "mean": -0.00030802405348612574,
+        "completion_range": [
+          -0.00030802405348612574,
+          -0.00030802405348612574
+        ],
+        "low": -0.005167593539953673,
+        "high": 0.004315058699152031,
+        "alpha": 0.05,
+        "independent_seed_clusters": 96,
+        "unresolved_seed_clusters": 0
+      }
+    },
+    "five": {
+      "metrics": {
+        "terminal_episodes": 96,
+        "unresolved_episodes": 0,
+        "brier": {
+          "mean": 0.16562770228345025,
+          "completion_range": [
+            0.16562770228345025,
+            0.16562770228345025
+          ],
+          "low": 0.14534841814408558,
+          "high": 0.18558986779636777,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "constant_brier": {
+          "mean": 0.2353515625,
+          "completion_range": [
+            0.2353515625,
+            0.2353515625
+          ],
+          "low": 0.2177734375,
+          "high": 0.2529296875,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "brier_gain": {
+          "mean": 0.06972386021654976,
+          "completion_range": [
+            0.06972386021654976,
+            0.06972386021654976
+          ],
+          "low": 0.053830157888545026,
+          "high": 0.08531987273444815,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "calibration": [
+          {
+            "range": [
+              0,
+              0.2
+            ],
+            "episode_weight": 3.0659932370948058,
+            "prediction": 0.1528143603537981,
+            "outcome": 0.01763019350469057
+          },
+          {
+            "range": [
+              0.2,
+              0.4
+            ],
+            "episode_weight": 10.420006581608847,
+            "prediction": 0.3134792907766537,
+            "outcome": 0.17383991278904976
+          },
+          {
+            "range": [
+              0.4,
+              0.6000000000000001
+            ],
+            "episode_weight": 30.511796915768358,
+            "prediction": 0.5205678463901774,
+            "outcome": 0.48874905728115703
+          },
+          {
+            "range": [
+              0.6,
+              0.8
+            ],
+            "episode_weight": 32.525405664586614,
+            "prediction": 0.6906848551973397,
+            "outcome": 0.7477403418927451
+          },
+          {
+            "range": [
+              0.8,
+              1.0
+            ],
+            "episode_weight": 19.476797600941378,
+            "prediction": 0.8793241738029819,
+            "outcome": 0.9704553781084655
+          }
+        ],
+        "all_episode_brier": {
+          "mean": 0.16562770228345025,
+          "completion_range": [
+            0.16562770228345025,
+            0.16562770228345025
+          ],
+          "low": 0.14534841814408558,
+          "high": 0.18558986779636777,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        },
+        "all_episode_gain": {
+          "mean": 0.06972386021654976,
+          "completion_range": [
+            0.06972386021654976,
+            0.06972386021654976
+          ],
+          "low": 0.053830157888545026,
+          "high": 0.08531987273444815,
+          "alpha": 0.05,
+          "independent_seed_clusters": 96,
+          "unresolved_seed_clusters": 0
+        }
+      },
+      "gain": {
+        "mean": 0.004670895258077336,
+        "completion_range": [
+          0.004670895258077336,
+          0.004670895258077336
+        ],
+        "low": -0.005595062365637194,
+        "high": 0.015169109593900753,
+        "alpha": 0.05,
+        "independent_seed_clusters": 96,
+        "unresolved_seed_clusters": 0
+      }
+    }
+  },
+  "no_final_selection": true,
+  "elapsed_seconds": 235.29740209599913
+}

@@ -23,6 +23,18 @@
       "source": "artifacts/card_eval/v5/primary-value.npz",
       "feature_version": "paired-continuation-1",
       "scope": "Declared simulator rules and evaluated distributions only; no global card rating."
+    },
+    {
+      "name": "memory-v6",
+      "file": "memory-v6.npz",
+      "description": "己方已知牌组与公开机制记忆；当前基线续局目标",
+      "qualified": false,
+      "status": "not_qualified",
+      "fingerprint": "da035df831babb84af83d51f8b63cb329d2d9e2282bd2800ae84203e2769d228",
+      "sha256": "3fd815bfa3154f95338fb6a354f6700e39ae48fd6e8c19b4039623912c6da75e",
+      "source": "artifacts/card_eval/v6/primary-value.npz",
+      "feature_version": "known-seen-action-improvement-1",
+      "scope": "Declared simulator rules and evaluated distributions only; no global card rating."
     }
   ],
   "default_policy_mode": "declared references",
