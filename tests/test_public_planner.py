@@ -2,6 +2,7 @@ from copy import deepcopy
 from dataclasses import replace
 from pathlib import Path
 import unittest
+from unittest.mock import patch
 import numpy as np
 from card_eval.catalog import Spec, Effect
 from card_eval.game import NativeGame
@@ -114,8 +115,8 @@ class PublicPlanningChecks(unittest.TestCase):
             critic=np.zeros(74);fingerprint='test_critic_with_large_prediction_error'
             def encode(self,obs,actions):return relational_encode(obs,actions)
             def forward(self,state,actions):
-                p=np.zeros(len(actions));p[1]=1.;return p,-1.,None
-            def predict_value(self,state):return 1.
+                p=np.zeros(len(actions));p[1]=1.;return p,self.predict_value(state),None
+            def predict_value(self,state):return -1. if state[18]>=.64 else 1.
         game=self.game();game.players[0].hand=[];game.players[1].hp=12
         plain=Spec('plain',0,4,2);taunt=Spec('taunt',0,1,1,(('taunt',1),),())
         game.players[0].units=[environment.Unit(j,'custom',a,2,2,ready=True,spec=plain) for j,a in ((1,4),(2,4),(3,4),(0,1))]
@@ -123,6 +124,8 @@ class PublicPlanningChecks(unittest.TestCase):
         obs=game.observation(0);actions=game.legal_actions(0)
         from card_eval.policies import lethal
         self.assertEqual(len(lethal(obs)[0]),4)
+        critic=OptimisticCritic();s,af=critic.encode(obs,actions)
+        self.assertEqual(critic.forward(s,af)[1],critic.predict_value(s))
         old=FrozenPlanner(OptimisticCritic(),'value',depth=1,margin=.3).choose(obs,actions)
         self.assertEqual(old['planner_reason'],'base_continuation_value');self.assertNotEqual(old['action'][1],0)
         fixed=PublicPlanner(OptimisticCritic(),'value',depth=1,margin=.3);first=fixed.choose(obs,actions)
@@ -131,6 +134,21 @@ class PublicPlanningChecks(unittest.TestCase):
         while game.players[1].hp>0:
             row=fixed.choose(game.observation(0),game.legal_actions(0));self.assertEqual(row['planner_reason'],'base_attack_proof');game.apply(0,row['action'])
         self.assertLessEqual(game.players[1].hp,0)
+
+    def test_negative_attack_search_is_reused_and_budget_restored(self):
+        from card_eval.legacy import environment
+        from card_eval.policies import lethal as actual_lethal
+        game=self.game();game.players[0].hand=[];game.players[1].hp=3
+        own=Spec('own',0,2,3);wall=Spec('wall',0,0,20,(('taunt',1),),())
+        game.players[0].units=[environment.Unit(j,'custom',2,3,3,ready=True,spec=own) for j in range(4)]
+        game.players[1].units=[environment.Unit(0,'custom',0,20,20,spec=wall,taunt=True)]
+        obs=game.observation(0);actions=game.legal_actions(0);planner=PublicPlanner(self.model(),'value',nodes=4)
+        with patch('card_eval.public_planner.lethal',wraps=actual_lethal) as outer,patch('card_eval.policies.lethal',wraps=actual_lethal) as inner:
+            result=planner.choose(obs,actions)
+        self.assertEqual(outer.call_count,1);self.assertEqual(inner.call_count,0)
+        self.assertTrue(result['base_attack_search_reused']);self.assertEqual(planner.config['seconds'],.12)
+        self.assertEqual(result['planner']['seconds'],.12);self.assertIn(result['action'],actions)
+        self.assertIsNone(planner.base.attack_observation)
 
 
 if __name__=='__main__':unittest.main()

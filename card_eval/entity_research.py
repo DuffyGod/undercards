@@ -7,7 +7,7 @@ import argparse,gzip,hashlib,json,random,time
 import numpy as np
 from .entity_value import EntityValueNetwork,entity_state,GLOBAL
 from .network import Network
-from .public_planner import PublicPlanner,PublicGame,UnknownDraw
+from ._proof_first_v2 import PublicPlanner,PublicGame,UnknownDraw
 from .policies import LearnedPolicy,ReferencePolicy
 from .catalog import Spec,Effect,resolve,semantic_key,deck
 from .profiles import base_deck,opponents,training_pool

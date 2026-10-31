@@ -1,0 +1,7 @@
+{
+  "qualified": false,
+  "status": "not_qualified",
+  "frozen_policy": "442235f6bf31a891fae9d694410b612ff78847dac3a3aefc844d3b473a1628bf",
+  "reason": "Checkpoint retains V5 actor; planner is separately qualified.",
+  "source": "final.json"
+}

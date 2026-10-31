@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "source_commit": "8735caa2f50e3da9f0a9903cf30d9393b26ef27e",
+  "training_counts": {
+    "forks": 768,
+    "end_boundary": 768,
+    "unknown_draw": 176,
+    "full_episodes": 384,
+    "states": 15034,
+    "roots": 768,
+    "after": 3053,
+    "openings": 768,
+    "full_states": 11213,
+    "past_turn12": 343,
+    "empty_own_deck": 76
+  },
+  "final_slots": 3584,
+  "unresolved_slots": 32,
+  "value_counts": {
+    "forks": 192,
+    "end_boundary": 191,
+    "unknown_draw": 35,
+    "unknown_label": 1,
+    "states": 909,
+    "roots": 192,
+    "after": 717,
+    "openings": 96
+  },
+  "actor_unchanged": true,
+  "final_selection": false,
+  "replayed_games": 0,
+  "refitted_models": 0,
+  "scope": "Internal consistency only; not server-rule certification or a general-quality guarantee."
+}

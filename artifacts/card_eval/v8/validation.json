@@ -1,0 +1,7 @@
+{
+  "qualified": false,
+  "status": "development_only",
+  "frozen_policy": "e587c3e4ce4c63d0f801953c9c6709b1f3c845bb21af76e681e165d8fcf2aa24",
+  "source": "REPORT.md",
+  "reason": "V8 preserved at development stage; no223/225 final executed."
+}

@@ -1,8 +1,9 @@
 """Read-only V8 input/model/final-accounting checks; no replay or training."""
 from pathlib import Path
+from dataclasses import asdict
 import argparse,hashlib,json
 import numpy as np
-from .entity_research import SOURCE,BASE,rows,dataset,models,agent,on_policy
+from .entity_research import SOURCE,BASE,rows,dataset,models,agent,on_policy,cases
 from .network import Network
 from .training import commit
 from .memory_research import read_rows
@@ -26,6 +27,8 @@ def audit(folder):
     margin=max(dev['results'],key=lambda r:(r['lower'],r['margin']))['margin']
     if margin!=dev['selected_margin']:raise ValueError('Margin selection mismatch')
     plan=json.loads((folder/'final-plan.json').read_text())
+    expected_cases=[dict(group=g,decks=[[asdict(s) for s in ds] for ds in (a,b)],souls=ss,opponent=p) for g,a,b,ss,p in cases(True)]
+    if plan['cases']!=json.loads(json.dumps(expected_cases)):raise ValueError('Stored final input decks differ from frozen case definitions')
     for name in ('entity','aggregate','linear'):
         if agent(name,ms,d,margin).fingerprint!=plan['frozen_policies'][name]:raise ValueError('Final policy mismatch')
     expected={(g,s,seat,p) for g in d['final_cases'] for s in d['final_seeds'] for seat in (0,1) for p in d['final_policies']};seen=set();unknown=0
@@ -38,7 +41,8 @@ def audit(folder):
     if seen!=expected or unknown!=len(final['failures']):raise ValueError('Final denominator/unknown accounting mismatch')
     fresh,fc=dataset(rows(folder,'diagnostic',reused=False))
     if fc!=json.loads((folder/'final-value.json').read_text())['counts']:raise ValueError('Final value denominator mismatch')
-    split=[set(train['seeds']),set(d['development_seeds']),set(d['final_seeds']),set(d['diagnostic_seeds'])]
+    with np.load(folder/'value-development.npz',allow_pickle=False) as data:epoch_dev=set(data['seeds'])
+    split=[set(train['seeds']),epoch_dev,set(d['development_seeds']),set(d['final_seeds']),set(d['diagnostic_seeds'])]
     for i,s in enumerate(split):
         if any(s&t for t in split[i+1:]):raise ValueError('Seed splits overlap')
     return dict(status='passed',source_commit=commit(),training_counts=counts,final_slots=len(seen),unresolved_slots=unknown,

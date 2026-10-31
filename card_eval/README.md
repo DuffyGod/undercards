@@ -1,43 +1,28 @@
-# 可直接使用的卡牌评估入口
+# 可直接使用的卡牌替换评估程序
 
-**0.4.0尚未发布：执行器断连，完整模型登记、wheel、ZIP和源码外安装尚未完成。** 下方0.4命令是待验收示例，afterstate-v7还不能按随包名称选择；已拟合检查点在artifacts/card_eval/v7/afterstate-value.npz。当前完整发行仍为0.3.0，随包paired-v5/memory-v6，模型均未通过通用验收。恢复与原版搜索风险见artifacts/card_eval/v7/REPORT.md；不要把开发源码当作已发布完整包。
+0.4.0包含命名训练模型、规则快照、公开搜索、完整25张牌表输入和示例。普通比较默认采用声明参考策略；实验默认仍paired-v5，另可选择memory-v6、afterstate-v7、entity-v9或保留的legacy-v3。**通用可靠评价尚未完成，模型均保留未达标状态；未知完整效果拒绝评分。**
 
 ```sh
 python -m pip install undercards_card_eval-0.4.0-py3-none-any.whl
 card-eval models
-card-eval assess Bench "Fishing Rod" --model paired-v5 --experimental-model --samples 8 --output results/first-run
+card-eval assess Bench "Fishing Rod" --samples 8 --output results/reference
+card-eval assess Bench --model entity-v9 --planner value --planner-margin 0.2 --planner-seconds 0.12 --experimental-model --samples 8 --output results/experimental
 card-eval example --learned --output my-decks.json
-card-eval evaluate --input my-decks.json --model memory-v6 --experimental-model --output results/my-decks
-card-eval assess Bench --model afterstate-v7 --planner value --planner-margin .1 --experimental-model --samples 8 --output results/public-search
-```
-
-生成的请求含完整25张己方牌表、替换位置、候选与对手，可自行编辑。遇到未实现的完整卡面会明确拒绝评分。`--checkpoint` 仍可加载自定义检查点，与 `--model` 二选一；Python API 可用 `card_eval.model_registry.checkpoint(name)` 取得随包模型路径。
-
-`--planner proof` 只接受公开规则证明的同回合斩杀；`--planner value` 也允许动作后价值超过基线门槛时改动行动。JSON可用 `"planner":{"mode":"value","margin":0.1}`，默认48节点、深度3、宽度4、.18秒搜索界限；记录完整配置、搜索政策指纹与基线模型指纹。未知抽牌停止展开，非终局回合边界不估成同回合状态。`afterstate-v7` 的actor与V5相同，差别仅在critic；不加搜索不会产生更强行动器。价值属于冻结V5续局，不能称为新搜索策略的价值。示例门槛是输入示范；冻结主臂门槛见V7的development.json。
-
-所有公开搜索配置目前都需显式实验模式，不能继承检查点本身的质量证明。搜索没有展开对手私手、随机牌序或下一回合，实测耗时与失败见 `artifacts/card_eval/v7/REPORT.md`；默认参考比较与模型未提升为可靠全池评分。
-
-新观察会保留己方已知牌组的无序语义，以及双方实际公开出牌的机制摘要。它不读取敌方未打出牌或牌序，不等于完整信念状态。旧模型仍能使用新观察；`memory-v6` 缺失必要知识字段时会拒绝，不能把缺失历史当成零。
-
-Python3.11+。在仓库根目录运行`python -m pip install -e .`，或安装发行wheel。已打包规则原语、卡面快照和共享模型，安装后不需要研究目录。
-
-```sh
-card-eval inspect Bench
-card-eval assess Bench "Fishing Rod" --reference "Rock Pet" --samples 64 --output results/my-cards
 card-eval check --input my-decks.json
-card-eval evaluate --input my-decks.json --output results/my-decks
+card-eval evaluate --input my-decks.json --model entity-v9 --planner value --planner-margin 0.2 --experimental-model --output results/my-decks
+card-eval inspect Glyde
 ```
 
-`assess`构造共同、合法张数的25张基准牌表和三类显式对手，**不是推荐卡组或现实环境分布**。`evaluate`读取用户自己的完整牌表。每个候选共用策略、实体排列和座次，不逐卡重训。默认检查三种语义参考策略，展示方向是否随对手或打法变化。学习模型未通过独立验证，正常入口拒绝把它当可靠评分器；加`--experimental-model`可查看共享模型诊断，结果不会作为方向推荐。
+Python3.11+，推理依赖NumPy。源码安装用pip install -e .，研究优化可用pip install '.[research]'。安装包包含规则原语、卡面快照、模型与示例，普通评估不需要研究目录。完整ZIP还提供源码、必要输入和证据，指引见artifacts/card_eval/v9/START_HERE.md。
 
-JSON请求包含`deck`（25个名称、ID或语义描述）、`slots`（要替换的实体位置）、`candidates`、`soul`、`opponents`（各含name/deck/soul/policy）、`samples`和`seed_start`。输入示例由`examples/card-eval-request.json`提供。双方SOUL目前支持INTEGRITY/KINDNESS。
+JSON包含deck（25名称/ID/语义描述）、slots（替换实体位置）、candidates、soul、opponents（完整牌表/SOUL/策略）、samples、seed_start等。可使用完整包examples/planner-request.json运行本轮配置；也可编辑生成请求。未知卡/非法张数/未实现规则有结构化原因与空评分，不填零。双方SOUL当前支持INTEGRITY/KINDNESS。
 
-输出目录有`report.md`、`result.json`、`input.json`、`receipt.json`、`games.jsonl.gz`。结果按对手和策略分别给终局差、配对区间、未上手/未出场与等待诊断；超时和未决保留完成界。不会把某张卡的未实现效果当零、只筛选成功出场样本，或平均成未经声明的全局Gold价格。
+entity-v9按共享语义学习实体和机制绑定的终局价值，没有每卡ID参数；actor保留V5，不加planner时不会产生更强行动器。afterstate-v7同样只改变critic。--planner proof只接受公开规则证明，value还按学习价值选择值得执行的后继；已经证明的斩杀优先。JSON可用"planner":{"mode":"value","margin":0.2,"seconds":0.12}，默认48节点、深度3、宽度4、内部.12秒。--checkpoint仍支持自定义模型，与--model二选一。
 
-卡名/ID通过整段文本编译；受支持机制也可以直接用语义描述组合。`catalog --output coverage.json`列出完整支持与拒绝原因。任意新卡能进入输入检查，不代表任意卡面已经完整实现；不支持的卡返回结构化原因与空评分。
+搜索只展开己方当前回合的确定公开动作；未知抽牌停止，非终局end不伪装成仍可行动的状态。值目标是基线V5继续行动的胜率，不是搜索策略自身V或最优Q。没有充分信念、对手回合搜索或最优反制保证。搜索不能继承基础检查点的验证状态，所有公开搜索仍需显式实验模式。
 
-规则与质量必须分开看：规则引擎只保证声明模型内合法性，学习策略另有验证状态。当前仍缺完整神器、换牌、种族和死亡/生成链；沉默对修改属性的清理采用显式假设，不能声称已认证当前服务器。未知信息与不确定结论会保留，不强行输出一张全池榜。
+result.json、report.md、input.json、receipt.json及games.jsonl.gz按声明对手/策略给替换差、配对区间和未上手/未出场诊断。frozen_policy标记含搜索配置的策略，base_model标记模型；失败保留完成界。所有候选共用模型、实体牌序和座次，不逐卡重训；不平均为未知现实环境总分或Gold价格。--model较新、训练上涨或安装成功都不提升质量状态。
 
-0.2.1 支持载入关系式共享行动模型及独立的策略价值头。用 `--checkpoint path/to/primary-value.npz --policies learned --experimental-model` 显式运行新模型；源码及冻结试验见 `card_eval/relational_research.py` 和 `artifacts/card_eval/v4/`。模型文件在仓库随结果交付，默认模型未替换。推理仍只依赖 NumPy；复现实验的优化阶段需 `pip install '.[research]'`。价值头估计声明对手混合下该冻结策略的终局胜率，尚不直接改进行动，也不充当卡牌评分。
+规则覆盖与策略质量独立：完整文本仍仅20张实卡及支持语法；完整神器、换牌、种族、死亡/生成链、服务器事件队列和沉默清理尚未认证。模型编码也不是完整机制/历史表示。V7原版和所有失败保留，V8未执行最终，V9完整结果见artifacts/card_eval/v9/REPORT.md；233/235及旧已读最终段不能用于重选模型。
 
-0.2.2 增加配对终局续局学习的行动差后端，入口同样使用 `--checkpoint artifacts/card_eval/v5/primary-value.npz --policies learned --experimental-model`。行动头按预测后续差决定是否偏离冻结基线；其混合续局目标与新策略自身的价值头分别训练，不能把其中一个叫作另一个的价值。源码、输入、失败和独立验收在 `artifacts/card_eval/v5/`；默认模型是否可升级以实际验收结果为准，不由安装成功或开发分数决定。
+发行实现采用proof-first-3：同一观察的攻击搜索只计算一次，并将其耗时计入内部搜索预算。V9正式数据对应逐字保留的proof-first-2；不能把V9局部成绩重标为新版验收。新版只作软件/预算检查，策略仍实验。JSON的decision_seconds可明确指定整次决策预算；更宽预算的安装检查不计作同计算预算的策略验证。

@@ -38,7 +38,7 @@ def render():
     for n in d['final_policies']:
         ts=[g['timings'][n] for g in final['groups']];lines.append(f"| {n} | {max(x['p95'] or 0 for x in ts):.6f} | {max(x['maximum'] or 0 for x in ts):.6f} | {fail[n]} |")
     maximum=max((float(m.group(1)) for r in final['failures'] if (m:=re.search(r'seconds=([0-9.]+)',r['error']))),default=0)
-    lines += ['',f"被拒绝决策不在上表成功记录内，错误文本最大秒数{maximum:.6f}。旧run包装对失败局没有完整逐步计时，缺失保留，不伪造。未知胜负按0/1完成界，未填半胜或训练标签。",'',
+    lines += ['',f"被拒绝决策不在上表成功记录内，错误文本最大秒数{maximum:.6f}。表中未决是整局槽位，可能来自任一方，actor保留在error字段。旧run包装对失败局没有完整逐步计时，缺失保留，不伪造。未知胜负按0/1完成界，未填半胜或训练标签。",'',
         '## 独立价值最终','',
         f"2330000段96新世界，配对续局的可评分原局面{val['counts']['roots']}、动作后{val['counts']['after']}；未知原因见final-value.json。目标始终是V5续局，不是搜索新策略V。没有用这批数据选择epoch或门槛。",'',
         '| 局面 | 实体Brier | 聚合Brier | 线性Brier | 实体对聚合误差降低95%区间 | 对线性 |','|---|---:|---:|---:|---:|---:|']
@@ -56,6 +56,25 @@ def render():
         '## 可运行交付与限制','',
         '程序0.4.0包含proof/value公开搜索、实体价值推理、命名训练模型、完整输入预检、共享策略的实体替换和机器/人读结果。entity-v9检查点本身保留V5 actor，只有显式加planner才改变行动；默认参考策略和未达标门槛没有升级。所有公开搜索仍需实验模式。wheel、完整源码/证据ZIP及源码外安装/清单实测收据随Git保存，运行入口见START_HERE.md。','',
         '规则仍仅20张完整实卡及支持语法。未知完整效果拒绝评分，未知抽牌分支停止，服务器事件、沉默裁定、神器、换牌、种族、死亡生成链仍有限制。没有充分信念、策略迭代下的自一致新V或针对主臂训练的最优反制。单一训练初始化的区间不覆盖训练方差，不能将产物称为可靠全池评估已经完成。','']
+    if (F/'action-diagnostic.json').exists():
+        a=read('action-diagnostic.json');lines += ['## 补充首次行动诊断（不参与选择）','',
+            '复用新价值数据的已测干预，比较主臂、同模型proof-only和V5的首次行动，再统一接V5。未测/未决选择保留0/1界，相同有效干预差严格为0；不是把未知胜负当零。它不等于整个搜索策略价值，证明路径可能需要V5没有跟随的承诺。', '',
+            f"fork={a['counts']['forks']}，主臂已测选择={a['counts']['entity_measured']}；相对proof-only差完成界{point(a['entity_minus_control']['proof'])}百分点，95%区间{ci(a['entity_minus_control']['proof'])}；相对V5完成界{point(a['entity_minus_control']['v5'])}，区间{ci(a['entity_minus_control']['v5'])}。缺失不能从完整子集外推，原始选择和耗时见action-choices.jsonl.gz。",'']
+    if (F/'effect-order-witness.json').exists():
+        lines += ['## 新确认的表示完成界：效果顺序','',
+            'effect-order-witness.json保留已执行的另一个构造边界：己方HP1/空牌库、敌方HP3；先3点打脸再抽1的法术先击杀并跳过抽牌，反序则先疲劳死亡、伤害不执行。原规则引擎实际得到赢/输，但当前实体张量按触发/op/scope累加，两个输入仍完全相同，全部critic给相同预测。', '',
+            '因此联合机制绑定仍不是完整机制序列表示。规则按实际列表顺序执行，未把其效果当零；丢失发生在近似值编码。该检查不声称自然起手可达频率，不计随机样本、不训练或重选模型，原最终不改。后续需要保留效果序列并验证行动/后续价值，不能声称仅用Deep Sets已解决组合机制。','']
+    positive=[g['group'] for g in final['groups'] if next(c for c in g['policies'] if c['policy']=='v5')['primary_gain']['low']>0]
+    family=[g['group'] for g in final['groups'] if next(c for c in g['policies'] if c['policy']=='v5')['family_gain']['low']>0]
+    capacity=[g['group'] for g in final['groups'] if next(c for c in g['policies'] if c['policy']=='aggregate')['primary_gain']['low']>0]
+    summary=['## 本轮结论','',f'整体未通过。相对V5的逐条件正向证据为{positive}，八背景敏感性后仍严格正向为{family}；实体对等容量聚合的严格正向条件为{capacity}。延迟群伤与更强搜索对手没有改善。动作后Brier虽优于旧线性，但与容量控制差的区间包含零。首次行动诊断也未证明额外收益。不能把新增实体输入、更多轨迹或低训练损失直接算作通用进步。','']
+    position=lines.index('## 资料与实际方法');lines[position:position]=summary
+    if (F/'implementation-correction.json').exists():
+        impl=read('implementation-correction.json');strict=impl['strict_installed'];portable=impl['portable_installed']
+        lines += ['## 发行实现与V9研究分开','',
+            'V9正式研究及上表均为proof-first-2，源码逐字保留在_proof_first_v2.py，研究/审计明确使用它。首次wheel预检在严格.25秒的8槽位有2超时，原wheel与收据保留在preflight/和package-run/，不改成成功。', '',
+            f"发行实现proof-first-3只缓存同一观察的公开攻击搜索，消除重复计算，并将已耗时计入内部.12秒；值模型/actor权重不变，但方法指纹不同。43源码检查通过，严格.25秒安装检查{strict['comparison_slots']}槽位/{strict['unresolved_slots']}未决，1秒可移植性检查{portable['comparison_slots']}槽位/{portable['unresolved_slots']}未决。", '',
+            '两个安装检查重用相同2种子/两座位/参照候选的8槽位，是工程契约复核，不计作新的独立泛化样本。较宽预算不用于同计算预算的策略比较，V3没有继承V9成绩或资格。五个模型、质量门槛、未知卡空评分、策略指纹均从仓库外实际核对。源码外ZIP与清单复核另存bundle-verification.json。','']
     (F/'REPORT.md').write_text('\n'.join(lines),encoding='utf-8')
 
 

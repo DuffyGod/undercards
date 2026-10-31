@@ -5,5 +5,9 @@
   "qualification": false,
   "original_v1_preserved": true,
   "original_fixture_failure": "Initial 1,4,4,4 ordering exceeded old32-node proof budget; corrected board ordering and asserted proof exists before testing protection. No training/final selection used.",
-  "four_step_proof_regression": "Original V1 with optimistic test critic chooses a4 attack to clear taunt and drops exact win; V2 chooses a1 then3*a4 and actually kills hero."
+  "four_step_proof_regression": "Original V1 with optimistic test critic chooses a4 attack to clear taunt and drops exact win; V2 chooses a1 then3*a4 and actually kills hero.",
+  "consistent_critic_regression_verified": true,
+  "current_source_checks": 42,
+  "current_source_checks_seconds": 4.943,
+  "test_double_correction": "Earlier forward/predict_value mismatch corrected to a consistent ready-attack-dependent value function; original V1 still drops the proven4-step win, V2 executes it. No policy/model/final data changed."
 }

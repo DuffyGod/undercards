@@ -83,9 +83,9 @@ class LearnedPolicy:
         self.network = network; self.rng = np.random.default_rng(seed)
         self.stochastic = stochastic; self.search_nodes = search_nodes; self.name = 'shared_semantic_model'
 
-    def choose(self, obs, actions):
+    def choose(self, obs, actions, attack_search=None):
         start = time.perf_counter(); prob, value, _ = self.network.forward(*self.network.encode(obs, actions))
-        plan, nodes = lethal(obs, self.search_nodes)
+        plan, nodes = lethal(obs, self.search_nodes) if attack_search is None else attack_search
         if plan: i = actions.index(plan[0]); bp = 1.
         elif self.stochastic: i = int(self.rng.choice(len(actions), p=prob)); bp = float(prob[i])
         else: i = int(prob.argmax()); bp = 1.

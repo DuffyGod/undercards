@@ -8,7 +8,7 @@ from pathlib import Path
 import argparse,gzip,json,time
 import numpy as np
 from .entity_research import models,agent,rows
-from .public_planner import PublicPlanner
+from ._proof_first_v2 import PublicPlanner
 from .statistics import interval
 from .training import dump,commit
 

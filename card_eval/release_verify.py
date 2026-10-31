@@ -10,7 +10,7 @@ def command(args,cwd,env,expected=0):
     return r
 
 
-def wheel_verify(wheel,output,expected_policy):
+def wheel_verify(wheel,output,expected_policy,decision_seconds=.25):
     wheel=Path(wheel).resolve();output=Path(output).resolve()
     if output.exists():raise ValueError('Preserve verification output')
     output.mkdir(parents=True)
@@ -26,7 +26,7 @@ def wheel_verify(wheel,output,expected_policy):
         if names!={'legacy-v3','paired-v5','memory-v6','afterstate-v7','entity-v9'}:raise ValueError('Incomplete named-model release')
         request_file=output/'request.json'
         command(cli+['example','--learned','--output',str(request_file)],cwd,env)
-        request=json.loads(request_file.read_text());request.update(candidates=['Bench'],samples=2,seed_start=2491000,
+        request=json.loads(request_file.read_text());request.update(candidates=['Bench'],samples=2,seed_start=2491000,decision_seconds=decision_seconds,
             opponents=request['opponents'][:1],policies=['learned'],planner=dict(mode='value',margin=.2,nodes=48,depth=3,width=4,seconds=.12))
         dump(request_file,request)
         command(cli+['evaluate','--input',str(request_file),'--model','entity-v9','--output',str(output/'blocked')],cwd,env,expected=2)
@@ -43,7 +43,7 @@ def wheel_verify(wheel,output,expected_policy):
         receipt=dict(status='passed',scope='Installed application contract, not strategy qualification',
             wheel=str(wheel),wheel_sha256=hashlib.sha256(wheel.read_bytes()).hexdigest(),module_origin=origin,
             model_names=sorted(names),frozen_policy=result['frozen_policy'],base_model=result['base_model'],
-            planner=result['planner'],comparison_slots=result['games'],unresolved_slots=result['unresolved'],
+            planner=result['planner'],decision_budget_seconds=decision_seconds,portable_contract_only=decision_seconds!=.25,comparison_slots=result['games'],unresolved_slots=result['unresolved'],
             quality_gate=True,unknown_effect_not_zero=True,outside_checkout=True,policy_qualified=False)
         dump(output/'verification.json',receipt);return receipt
 

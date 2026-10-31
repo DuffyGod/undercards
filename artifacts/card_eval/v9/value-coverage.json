@@ -1,0 +1,21 @@
+{
+  "unknown_continuations": [
+    {
+      "seed": 2330051,
+      "decision": 13,
+      "action": [
+        "end",
+        -1,
+        -1,
+        -1
+      ],
+      "is_baseline": false,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=offline_counterfactual_branch, seconds=0.383122"
+    }
+  ],
+  "scorable_roots": 192,
+  "scorable_successors": 717,
+  "scored_targets_are_complete": true,
+  "unknown_not_imputed": true,
+  "unknown_scope_verified": "Only a nonbaseline End boundary; all scored root and deterministic-successor targets are complete."
+}

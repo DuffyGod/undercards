@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "scope": "Installed application contract, not strategy qualification",
+  "wheel": "/workspace/undercards/artifacts/card_eval/dist/undercards_card_eval-0.4.0-py3-none-any.whl",
+  "wheel_sha256": "49be5af3a23a835c3539683989f6c4a8330599b2c1ae8be810cd377560a47ff9",
+  "module_origin": "/tmp/undercards-v040-duepsgr4/installed/card_eval/__init__.py",
+  "model_names": [
+    "afterstate-v7",
+    "entity-v9",
+    "legacy-v3",
+    "memory-v6",
+    "paired-v5"
+  ],
+  "frozen_policy": "746304d1b4f3a521de458a281917fcaf0a2161832e545b4f99931c07c9a8b169",
+  "base_model": "442235f6bf31a891fae9d694410b612ff78847dac3a3aefc844d3b473a1628bf",
+  "planner": {
+    "version": "public-own-turn-proof-first-3",
+    "mode": "value",
+    "margin": 0.2,
+    "nodes": 48,
+    "depth": 3,
+    "width": 4,
+    "seconds": 0.12
+  },
+  "decision_budget_seconds": 0.25,
+  "portable_contract_only": false,
+  "comparison_slots": 8,
+  "unresolved_slots": 0,
+  "quality_gate": true,
+  "unknown_effect_not_zero": true,
+  "outside_checkout": true,
+  "policy_qualified": false
+}

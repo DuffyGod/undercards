@@ -1,0 +1,44 @@
+{
+  "source_commit": "8735caa2f50e3da9f0a9903cf30d9393b26ef27e",
+  "counts": {
+    "forks": 192,
+    "entity_measured": 187,
+    "entity_decision_budget_unknown": 0,
+    "proof_measured": 191,
+    "proof_decision_budget_unknown": 1,
+    "v5_measured": 192,
+    "v5_decision_budget_unknown": 0,
+    "entity_differs_proof": 7,
+    "entity_differs_v5": 6
+  },
+  "entity_minus_control": {
+    "proof": {
+      "mean": null,
+      "completion_range": [
+        -0.010416666666666666,
+        0.020833333333333332
+      ],
+      "low": -0.03125,
+      "high": 0.041666666666666664,
+      "alpha": 0.05,
+      "independent_seed_clusters": 96,
+      "unresolved_seed_clusters": 5
+    },
+    "v5": {
+      "mean": null,
+      "completion_range": [
+        -0.010416666666666666,
+        0.015625
+      ],
+      "low": -0.03125,
+      "high": 0.036458333333333336,
+      "alpha": 0.05,
+      "independent_seed_clusters": 96,
+      "unresolved_seed_clusters": 4
+    }
+  },
+  "no_selection": true,
+  "target": "One first-action intervention followed by frozenV5, on fresh public prefixes. Not full-search policy value, Q* or card strength.",
+  "unknown": "Unmeasured/unfinished choices0..1, unknown budget choices0..1. Same valid action has exactly zero causal contrast even if outcome unmeasured; not an imputed win.",
+  "limits": "At most6 sampled actions per fork, one hidden-world draw; two forks share an opening. Proof commitments may need a different continuation than V5."
+}

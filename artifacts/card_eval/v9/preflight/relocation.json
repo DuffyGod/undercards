@@ -1,0 +1,6 @@
+{
+  "old_receipt_paths_are_historical": true,
+  "archived_wheel": "artifacts/card_eval/v9/preflight/undercards_card_eval-0.4.0-py3-none-any.whl",
+  "sha256": "baa5a8b9a001f72b3713a7297e17a07831018563a493ac608d2c33baa295873e",
+  "original_contract": "8slots under0.25s,2budget unknown; retained, not reclassified"
+}

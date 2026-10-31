@@ -1,0 +1,362 @@
+{
+  "source_commit": "8735caa2f50e3da9f0a9903cf30d9393b26ef27e",
+  "counts": {
+    "baseline_episodes": 48,
+    "other_actor_episodes_excluded": 48
+  },
+  "profiles": {
+    "all": {
+      "states": 1416,
+      "opening_clusters": 48,
+      "brier": {
+        "entity": {
+          "mean": 0.09435536056112546,
+          "completion_range": [
+            0.09435536056112546,
+            0.09435536056112546
+          ],
+          "low": 0.06526721563982905,
+          "high": 0.12806218265443126,
+          "alpha": 0.05,
+          "independent_seed_clusters": 48,
+          "unresolved_seed_clusters": 0
+        },
+        "aggregate": {
+          "mean": 0.09998198618994088,
+          "completion_range": [
+            0.09998198618994088,
+            0.09998198618994088
+          ],
+          "low": 0.07022769734364587,
+          "high": 0.13442206853859642,
+          "alpha": 0.05,
+          "independent_seed_clusters": 48,
+          "unresolved_seed_clusters": 0
+        },
+        "linear": {
+          "mean": 0.12582596968601747,
+          "completion_range": [
+            0.12582596968601747,
+            0.12582596968601747
+          ],
+          "low": 0.10338577091969764,
+          "high": 0.1501075168099788,
+          "alpha": 0.05,
+          "independent_seed_clusters": 48,
+          "unresolved_seed_clusters": 0
+        }
+      },
+      "entity_error_reduction": {
+        "aggregate": {
+          "mean": 0.005626625628815406,
+          "completion_range": [
+            0.005626625628815406,
+            0.005626625628815406
+          ],
+          "low": -0.00011689945559546956,
+          "high": 0.01173542436126482,
+          "alpha": 0.05,
+          "independent_seed_clusters": 48,
+          "unresolved_seed_clusters": 0
+        },
+        "linear": {
+          "mean": 0.03147060912489203,
+          "completion_range": [
+            0.03147060912489203,
+            0.03147060912489203
+          ],
+          "low": 0.010744995552681316,
+          "high": 0.052146710335463343,
+          "alpha": 0.05,
+          "independent_seed_clusters": 48,
+          "unresolved_seed_clusters": 0
+        }
+      }
+    },
+    "turns1_5": {
+      "states": 736,
+      "opening_clusters": 48,
+      "brier": {
+        "entity": {
+          "mean": 0.1375509349431149,
+          "completion_range": [
+            0.1375509349431149,
+            0.1375509349431149
+          ],
+          "low": 0.09653425413751068,
+          "high": 0.18391137843088765,
+          "alpha": 0.05,
+          "independent_seed_clusters": 48,
+          "unresolved_seed_clusters": 0
+        },
+        "aggregate": {
+          "mean": 0.14834734987151516,
+          "completion_range": [
+            0.14834734987151516,
+            0.14834734987151516
+          ],
+          "low": 0.10539876539795698,
+          "high": 0.19717593455675983,
+          "alpha": 0.05,
+          "independent_seed_clusters": 48,
+          "unresolved_seed_clusters": 0
+        },
+        "linear": {
+          "mean": 0.15943734249886207,
+          "completion_range": [
+            0.15943734249886207,
+            0.15943734249886207
+          ],
+          "low": 0.12761465347785594,
+          "high": 0.1950514149082961,
+          "alpha": 0.05,
+          "independent_seed_clusters": 48,
+          "unresolved_seed_clusters": 0
+        }
+      },
+      "entity_error_reduction": {
+        "aggregate": {
+          "mean": 0.010796414928400248,
+          "completion_range": [
+            0.010796414928400248,
+            0.010796414928400248
+          ],
+          "low": 0.0023814235237497243,
+          "high": 0.02081184978057837,
+          "alpha": 0.05,
+          "independent_seed_clusters": 48,
+          "unresolved_seed_clusters": 0
+        },
+        "linear": {
+          "mean": 0.02188640755574717,
+          "completion_range": [
+            0.02188640755574717,
+            0.02188640755574717
+          ],
+          "low": -0.007494844989161023,
+          "high": 0.052089353836084255,
+          "alpha": 0.05,
+          "independent_seed_clusters": 48,
+          "unresolved_seed_clusters": 0
+        }
+      }
+    },
+    "turns6_12": {
+      "states": 639,
+      "opening_clusters": 44,
+      "brier": {
+        "entity": {
+          "mean": 0.0524065541418841,
+          "completion_range": [
+            0.0524065541418841,
+            0.0524065541418841
+          ],
+          "low": 0.020524762377757824,
+          "high": 0.09212679258841484,
+          "alpha": 0.05,
+          "independent_seed_clusters": 44,
+          "unresolved_seed_clusters": 0
+        },
+        "aggregate": {
+          "mean": 0.05268095082016219,
+          "completion_range": [
+            0.05268095082016219,
+            0.05268095082016219
+          ],
+          "low": 0.0205742305588764,
+          "high": 0.09188077948924761,
+          "alpha": 0.05,
+          "independent_seed_clusters": 44,
+          "unresolved_seed_clusters": 0
+        },
+        "linear": {
+          "mean": 0.07941403574607003,
+          "completion_range": [
+            0.07941403574607003,
+            0.07941403574607003
+          ],
+          "low": 0.05609278955160087,
+          "high": 0.10583975541727866,
+          "alpha": 0.05,
+          "independent_seed_clusters": 44,
+          "unresolved_seed_clusters": 0
+        }
+      },
+      "entity_error_reduction": {
+        "aggregate": {
+          "mean": 0.0002743966782780923,
+          "completion_range": [
+            0.0002743966782780923,
+            0.0002743966782780923
+          ],
+          "low": -0.00503888064162706,
+          "high": 0.004788989345709957,
+          "alpha": 0.05,
+          "independent_seed_clusters": 44,
+          "unresolved_seed_clusters": 0
+        },
+        "linear": {
+          "mean": 0.027007481604185937,
+          "completion_range": [
+            0.027007481604185937,
+            0.027007481604185937
+          ],
+          "low": 0.006837717911752478,
+          "high": 0.04505348005422702,
+          "alpha": 0.05,
+          "independent_seed_clusters": 44,
+          "unresolved_seed_clusters": 0
+        }
+      }
+    },
+    "past12": {
+      "states": 41,
+      "opening_clusters": 4,
+      "brier": {
+        "entity": {
+          "mean": 0.16822542036751229,
+          "completion_range": [
+            0.16822542036751229,
+            0.16822542036751229
+          ],
+          "low": null,
+          "high": null,
+          "alpha": 0.05,
+          "independent_seed_clusters": 4,
+          "unresolved_seed_clusters": 0,
+          "inference": "Too few opening clusters for phase CI; descriptive mean only"
+        },
+        "aggregate": {
+          "mean": 0.12608406967674435,
+          "completion_range": [
+            0.12608406967674435,
+            0.12608406967674435
+          ],
+          "low": null,
+          "high": null,
+          "alpha": 0.05,
+          "independent_seed_clusters": 4,
+          "unresolved_seed_clusters": 0,
+          "inference": "Too few opening clusters for phase CI; descriptive mean only"
+        },
+        "linear": {
+          "mean": 0.1762836380087311,
+          "completion_range": [
+            0.1762836380087311,
+            0.1762836380087311
+          ],
+          "low": null,
+          "high": null,
+          "alpha": 0.05,
+          "independent_seed_clusters": 4,
+          "unresolved_seed_clusters": 0,
+          "inference": "Too few opening clusters for phase CI; descriptive mean only"
+        }
+      },
+      "entity_error_reduction": {
+        "aggregate": {
+          "mean": -0.04214135069076795,
+          "completion_range": [
+            -0.04214135069076795,
+            -0.04214135069076795
+          ],
+          "low": null,
+          "high": null,
+          "alpha": 0.05,
+          "independent_seed_clusters": 4,
+          "unresolved_seed_clusters": 0,
+          "inference": "Too few opening clusters for phase CI; descriptive mean only"
+        },
+        "linear": {
+          "mean": 0.008058217641218793,
+          "completion_range": [
+            0.008058217641218793,
+            0.008058217641218793
+          ],
+          "low": null,
+          "high": null,
+          "alpha": 0.05,
+          "independent_seed_clusters": 4,
+          "unresolved_seed_clusters": 0,
+          "inference": "Too few opening clusters for phase CI; descriptive mean only"
+        }
+      }
+    },
+    "empty_own_deck": {
+      "states": 14,
+      "opening_clusters": 2,
+      "brier": {
+        "entity": {
+          "mean": 0.08400286051833562,
+          "completion_range": [
+            0.08400286051833562,
+            0.08400286051833562
+          ],
+          "low": null,
+          "high": null,
+          "alpha": 0.05,
+          "independent_seed_clusters": 2,
+          "unresolved_seed_clusters": 0,
+          "inference": "Too few opening clusters for phase CI; descriptive mean only"
+        },
+        "aggregate": {
+          "mean": 0.04458800362888467,
+          "completion_range": [
+            0.04458800362888467,
+            0.04458800362888467
+          ],
+          "low": null,
+          "high": null,
+          "alpha": 0.05,
+          "independent_seed_clusters": 2,
+          "unresolved_seed_clusters": 0,
+          "inference": "Too few opening clusters for phase CI; descriptive mean only"
+        },
+        "linear": {
+          "mean": 0.04128109666955154,
+          "completion_range": [
+            0.04128109666955154,
+            0.04128109666955154
+          ],
+          "low": null,
+          "high": null,
+          "alpha": 0.05,
+          "independent_seed_clusters": 2,
+          "unresolved_seed_clusters": 0,
+          "inference": "Too few opening clusters for phase CI; descriptive mean only"
+        }
+      },
+      "entity_error_reduction": {
+        "aggregate": {
+          "mean": -0.039414856889450955,
+          "completion_range": [
+            -0.039414856889450955,
+            -0.039414856889450955
+          ],
+          "low": null,
+          "high": null,
+          "alpha": 0.05,
+          "independent_seed_clusters": 2,
+          "unresolved_seed_clusters": 0,
+          "inference": "Too few opening clusters for phase CI; descriptive mean only"
+        },
+        "linear": {
+          "mean": -0.04272176384878408,
+          "completion_range": [
+            -0.04272176384878408,
+            -0.04272176384878408
+          ],
+          "low": null,
+          "high": null,
+          "alpha": 0.05,
+          "independent_seed_clusters": 2,
+          "unresolved_seed_clusters": 0,
+          "inference": "Too few opening clusters for phase CI; descriptive mean only"
+        }
+      }
+    }
+  },
+  "target": "FrozenV5 continuation only; full natural trajectories from baseline-behavior half of fresh value worlds.",
+  "no_selection": true,
+  "limits": "Per-phase opening clusters can be few. Phases are correlated, not independent experiments. No unobserved tail filled with zero."
+}
