@@ -1,0 +1,67 @@
+{
+  "arms": {
+    "centered": {
+      "records": [
+        {
+          "margin": 0.0,
+          "lower": 0.4166666666666667,
+          "unfinished": 0,
+          "slots": 60
+        },
+        {
+          "margin": 0.05,
+          "lower": 0.5333333333333333,
+          "unfinished": 0,
+          "slots": 60
+        },
+        {
+          "margin": 0.1,
+          "lower": 0.55,
+          "unfinished": 0,
+          "slots": 60
+        },
+        {
+          "margin": 0.2,
+          "lower": 0.55,
+          "unfinished": 0,
+          "slots": 60
+        }
+      ],
+      "selected_margin": 0.2,
+      "actor_fingerprint": "bc7f48d3945e4b6561111c2ed291fe4ef1798da9ae6ef507f1d8fa30d8ceea14"
+    },
+    "pointwise": {
+      "records": [
+        {
+          "margin": 0.0,
+          "lower": 0.3333333333333333,
+          "unfinished": 0,
+          "slots": 60
+        },
+        {
+          "margin": 0.05,
+          "lower": 0.4166666666666667,
+          "unfinished": 0,
+          "slots": 60
+        },
+        {
+          "margin": 0.1,
+          "lower": 0.55,
+          "unfinished": 0,
+          "slots": 60
+        },
+        {
+          "margin": 0.2,
+          "lower": 0.5333333333333333,
+          "unfinished": 0,
+          "slots": 60
+        }
+      ],
+      "selected_margin": 0.1,
+      "actor_fingerprint": "5aa98958486b3aa8891f11a592aaae7953e7b6bad3ef7bc569dd81b1224c7ed5"
+    }
+  },
+  "source_commit": "426d18e00ed620b11c1a0874f729fa08fe5b6889",
+  "primary": "centered",
+  "no_final_selection": true
+}

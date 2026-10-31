@@ -1,0 +1,8 @@
+{"arm": "centered", "margin": 0.0, "lower": 0.4166666666666667, "unfinished": 0, "slots": 60}
+{"arm": "centered", "margin": 0.05, "lower": 0.5333333333333333, "unfinished": 0, "slots": 60}
+{"arm": "centered", "margin": 0.1, "lower": 0.55, "unfinished": 0, "slots": 60}
+{"arm": "centered", "margin": 0.2, "lower": 0.55, "unfinished": 0, "slots": 60}
+{"arm": "pointwise", "margin": 0.0, "lower": 0.3333333333333333, "unfinished": 0, "slots": 60}
+{"arm": "pointwise", "margin": 0.05, "lower": 0.4166666666666667, "unfinished": 0, "slots": 60}
+{"arm": "pointwise", "margin": 0.1, "lower": 0.55, "unfinished": 0, "slots": 60}
+{"arm": "pointwise", "margin": 0.2, "lower": 0.5333333333333333, "unfinished": 0, "slots": 60}

@@ -8,7 +8,7 @@ from .training import dump
 ROOT=Path(__file__).resolve().parents[1]
 
 
-def build(include_v6=False,include_v7=False,include_v8=False,include_v9=False):
+def build(include_v6=False,include_v7=False,include_v8=False,include_v9=False,include_v10=False):
     folder=ROOT/'card_eval/models';entries=[]
     for name,source,certificate,description in [
         ('legacy-v3',ROOT/'card_eval/models/shared-policy.npz',ROOT/'card_eval/models/validation.json','旧显式牌组MLP，保留作复核'),
@@ -16,7 +16,8 @@ def build(include_v6=False,include_v7=False,include_v8=False,include_v9=False):
         [('memory-v6',ROOT/'artifacts/card_eval/v6/primary-value.npz',ROOT/'artifacts/card_eval/v6/validation.json','己方已知牌组与公开机制记忆；当前基线续局目标')] if include_v6 else [])+(
         [('afterstate-v7',ROOT/'artifacts/card_eval/v7/afterstate-value.npz',ROOT/'artifacts/card_eval/v7/validation.json','冻结V5行动器，动作后局面终局价值；公开搜索须单独实验验证')] if include_v7 else [])+(
         [('entity-v8',ROOT/'artifacts/card_eval/v8/entity-value.npz',ROOT/'artifacts/card_eval/v8/validation.json','冻结V5行动器，学习实体/机制绑定的终局价值；公开搜索独立实验')] if include_v8 else [])+(
-        [('entity-v9',ROOT/'artifacts/card_eval/v9/entity-value.npz',ROOT/'artifacts/card_eval/v9/validation.json','冻结V5行动器，实体/机制绑定与完整当前策略轨迹的终局价值；公开搜索独立实验')] if include_v9 else []):
+        [('entity-v9',ROOT/'artifacts/card_eval/v9/entity-value.npz',ROOT/'artifacts/card_eval/v9/validation.json','冻结V5行动器，实体/机制绑定与完整当前策略轨迹的终局价值；公开搜索独立实验')] if include_v9 else [])+(
+        [('action-v10',ROOT/'artifacts/card_eval/v10/primary-value.npz',ROOT/'artifacts/card_eval/v10/validation.json','有序机制行动差网络与冻结后自身策略终局价值；实验模型，不据最终重选')] if include_v10 else []):
         net,meta=Network.load(source);validation=json.loads(certificate.read_text())
         if validation.get('frozen_policy')!=net.fingerprint:raise ValueError('Certificate does not match frozen model: '+name)
         target=source if name=='legacy-v3' else folder/(name+'.npz')
@@ -39,9 +40,11 @@ def build(include_v6=False,include_v7=False,include_v8=False,include_v9=False):
         design=json.loads((ROOT/'artifacts/card_eval'/latest/'design.json').read_text())
         dump(examples/'planner-request.json',dict(request,policies=['learned'],
             planner=dict(design['planner'],mode='value',margin=development['selected_margin'])))
+    if include_v10:
+        dump(examples/'action-request.json',dict(request,policies=['learned']))
     return entries
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--include-v6',action='store_true');p.add_argument('--include-v7',action='store_true');p.add_argument('--include-v8',action='store_true');p.add_argument('--include-v9',action='store_true');args=p.parse_args()
-    print(json.dumps(build(args.include_v6,args.include_v7,args.include_v8,args.include_v9),ensure_ascii=False))
+    p=argparse.ArgumentParser();p.add_argument('--include-v6',action='store_true');p.add_argument('--include-v7',action='store_true');p.add_argument('--include-v8',action='store_true');p.add_argument('--include-v9',action='store_true');p.add_argument('--include-v10',action='store_true');args=p.parse_args()
+    print(json.dumps(build(args.include_v6,args.include_v7,args.include_v8,args.include_v9,args.include_v10),ensure_ascii=False))

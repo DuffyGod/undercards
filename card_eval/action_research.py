@@ -278,7 +278,21 @@ def final(folder):
     dump(folder/'value-final.json',dict(source_commit=commit(),actor_fingerprint=nets['centered'].actor_fingerprint,
         primary=value_metrics(nets['centered'],val,prior),simple=value_metrics(simple,val,prior),stale_v5=value_metrics(nets['v5'],val,prior),
         gain_vs_simple=paired_value_gain(nets['centered'],simple,val),gain_vs_stale_v5=paired_value_gain(nets['centered'],nets['v5'],val),
-        phases=phase_metrics(nets['centered'],val,prior),no_final_selection=True))
+        phases=suppress_sparse(phase_metrics(nets['centered'],val,prior)),no_final_selection=True))
+
+
+def suppress_sparse(value):
+    """Preserve descriptive bounds but suppress inferential CI below8 clusters.
+
+    This follows the V9 reporting convention, before V10 final is executed.
+    """
+    if isinstance(value,dict):
+        result={k:suppress_sparse(v) for k,v in value.items()}
+        if 'independent_seed_clusters' in result and result['independent_seed_clusters']<8:
+            result.update(low=None,high=None,inference='suppressed: fewer than8 seed clusters')
+        return result
+    if isinstance(value,list):return [suppress_sparse(v) for v in value]
+    return value
 
 
 if __name__=='__main__':

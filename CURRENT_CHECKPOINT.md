@@ -1,6 +1,6 @@
 # 2026-10-31：共享机器学习主线与续作说明
 
-**V10本轮执行中（尚无新结论）：** 已持OS研究锁，在V9之后用相同有序行动输入/容量比较中心化行动差目标与绝对胜负目标，复用V6的当前V5续局并新增V5自身roll-in；主actor冻结后另学自身V。预定设计见[方法](artifacts/card_eval/v10/METHOD.md)和design.json。287/289段是新最终，未读前不宣称通过；V9及旧最终继续退休。0.4.0仍为最新完整发行。
+**V10已冻结，等待新最终：** 已持OS研究锁，相同有序行动输入/17825参数比较中心化行动差与绝对胜负目标；复用V6当前V5续局并加入新128个V5roll-in。两臂epoch64，主门槛.2/控制.1，开发同为55%；主actor自身价值训练192尝试/1预算未决，191终局5669状态，actor不变。设计见[方法](artifacts/card_eval/v10/METHOD.md)、[冻结收据](artifacts/card_eval/v10/BEFORE_FINAL.md)。接续只运行287/289新最终，不重选或调参。0.4.1打包工具准备中，0.4.0仍是已完成发行；V9及旧最终继续退休。
 
 **最新V9/0.4.0（接续优先）：** 完整运行包入口见[START_HERE](artifacts/card_eval/v9/START_HERE.md)，研究结果见[REPORT](artifacts/card_eval/v9/REPORT.md)。wheel、五模型、请求示例、源码与必要输入/结果均随交付保存，完整ZIP路径`artifacts/card_eval/dist/undercards-card-evaluator-0.4.0.zip`。通用可靠评估目标仍未完成；正常默认参考策略、实验默认V5均未升级。
 

@@ -10,7 +10,7 @@ def command(args,cwd,env,expected=0):
     return r
 
 
-def wheel_verify(wheel,output,expected_policy,decision_seconds=.25):
+def wheel_verify(wheel,output,expected_policy,decision_seconds=.25,model='entity-v9'):
     wheel=Path(wheel).resolve();output=Path(output).resolve()
     if output.exists():raise ValueError('Preserve verification output')
     output.mkdir(parents=True)
@@ -23,16 +23,18 @@ def wheel_verify(wheel,output,expected_policy,decision_seconds=.25):
         if not Path(origin).is_relative_to(target):raise ValueError('Imported checkout instead of installed wheel')
         cli=[sys.executable,'-m','card_eval']
         catalog=json.loads(command(cli+['models'],cwd,env).stdout);names={m['name'] for m in catalog['models']}
-        if names!={'legacy-v3','paired-v5','memory-v6','afterstate-v7','entity-v9'}:raise ValueError('Incomplete named-model release')
+        from .model_registry import catalog as source_catalog
+        if names!={m['name'] for m in source_catalog()}:raise ValueError('Incomplete named-model release')
         request_file=output/'request.json'
         command(cli+['example','--learned','--output',str(request_file)],cwd,env)
         request=json.loads(request_file.read_text());request.update(candidates=['Bench'],samples=2,seed_start=2491000,decision_seconds=decision_seconds,
             opponents=request['opponents'][:1],policies=['learned'],planner=dict(mode='value',margin=.2,nodes=48,depth=3,width=4,seconds=.12))
+        if model=='action-v10':request.pop('planner')
         dump(request_file,request)
-        command(cli+['evaluate','--input',str(request_file),'--model','entity-v9','--output',str(output/'blocked')],cwd,env,expected=2)
+        command(cli+['evaluate','--input',str(request_file),'--model',model,'--output',str(output/'blocked')],cwd,env,expected=2)
         blocked=json.loads((output/'blocked/result.json').read_text())
         if blocked['status']!='unqualified_policy' or blocked['scores'] is not None:raise ValueError('Qualification gate failed')
-        r=command(cli+['evaluate','--input',str(request_file),'--model','entity-v9','--experimental-model','--output',str(output/'evaluated')],cwd,env)
+        r=command(cli+['evaluate','--input',str(request_file),'--model',model,'--experimental-model','--output',str(output/'evaluated')],cwd,env)
         (output/'evaluation.log').write_text(r.stdout+r.stderr)
         result=json.loads((output/'evaluated/result.json').read_text())
         if result['status']!='complete' or result['games']!=8 or result['frozen_policy']!=expected_policy:raise ValueError('Installed policy/configuration mismatch')
@@ -42,7 +44,7 @@ def wheel_verify(wheel,output,expected_policy,decision_seconds=.25):
         dump(output/'unknown-card.json',unknown)
         receipt=dict(status='passed',scope='Installed application contract, not strategy qualification',
             wheel=str(wheel),wheel_sha256=hashlib.sha256(wheel.read_bytes()).hexdigest(),module_origin=origin,
-            model_names=sorted(names),frozen_policy=result['frozen_policy'],base_model=result['base_model'],
+            model_names=sorted(names),model=model,frozen_policy=result['frozen_policy'],base_model=result['base_model'],
             planner=result['planner'],decision_budget_seconds=decision_seconds,portable_contract_only=decision_seconds!=.25,comparison_slots=result['games'],unresolved_slots=result['unresolved'],
             quality_gate=True,unknown_effect_not_zero=True,outside_checkout=True,policy_qualified=False)
         dump(output/'verification.json',receipt);return receipt
@@ -64,7 +66,7 @@ def bundle_verify(bundle,output):
             z.extractall(root)
         source=root/prefix/'source';env=os.environ.copy();env['PYTHONPATH']=str(source)
         (source/'work').mkdir(exist_ok=True)
-        audit=command([sys.executable,'-m','card_eval.entity_audit','--folder','artifacts/card_eval/v9'],source,env)
+        audit=command([sys.executable,'-m','card_eval.action_audit','--folder','artifacts/card_eval/v10'],source,env)
         data=json.loads(audit.stdout);dump(output/'source-audit.json',data)
         if data['status']!='passed' or not data['source_commit'].startswith('archive:'):raise ValueError('Source archive audit depended on Git checkout')
         wheel=next((root/prefix).glob('*.whl'))
@@ -73,7 +75,8 @@ def bundle_verify(bundle,output):
             command([sys.executable,'-m','pip','install','--no-deps','--no-index','--no-cache-dir','--target',str(target),str(wheel)],root,os.environ.copy())
             env=os.environ.copy();env['PYTHONPATH']=str(target)
             names=json.loads(command([sys.executable,'-m','card_eval','models'],root,env).stdout)
-            if len(names['models'])!=5:raise ValueError('ZIP wheel missing models')
+            registry=json.loads((source/'card_eval/models/registry.json').read_text())
+            if {m['name'] for m in names['models']}!={m['name'] for m in registry['models']}:raise ValueError('ZIP wheel missing models')
         receipt=dict(status='passed',bundle=str(bundle),sha256=hashlib.sha256(bundle.read_bytes()).hexdigest(),
             source_commit=manifest['source_commit'],manifest_files=len(manifest['files']),zip_bytes=bundle.stat().st_size,
             source_audit='passed without Git, game replay or refitting',installed_zip_wheel=True,
@@ -82,7 +85,7 @@ def bundle_verify(bundle,output):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('mode',choices=['wheel','bundle']);p.add_argument('--input',required=True,type=Path);p.add_argument('--output',required=True,type=Path);p.add_argument('--expected-policy');args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('mode',choices=['wheel','bundle']);p.add_argument('--input',required=True,type=Path);p.add_argument('--output',required=True,type=Path);p.add_argument('--expected-policy');p.add_argument('--model',default='entity-v9');args=p.parse_args()
     if args.mode=='wheel' and not args.expected_policy:raise ValueError('Expected frozen policy required for wheel check')
-    result=wheel_verify(args.input,args.output,args.expected_policy) if args.mode=='wheel' else bundle_verify(args.input,args.output)
+    result=wheel_verify(args.input,args.output,args.expected_policy,model=args.model) if args.mode=='wheel' else bundle_verify(args.input,args.output)
     print(json.dumps(result,ensure_ascii=False,indent=2))
