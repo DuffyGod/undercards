@@ -8,6 +8,7 @@ from .action_value import encode
 from .continuation_gate import MODES
 from .continuation_research import (BASE, PROPOSER, design, read_lines, attribution,
                                     dataset, prediction_metrics, stopping_roots, source_episodes)
+from .suffix_research import cases
 from .network import Network
 from .policies import LearnedPolicy
 from .statistics import interval
@@ -48,7 +49,13 @@ def audit(folder):
                     assert cell['prefix_checked']
                     assert cell['reused'] == (cell['action'] == 1 and cell['continuation'] == 1)
                     if cell['reused']:
-                        assert cell['result'] == result
+                        # NativeGame.run attaches SOUL metadata after calling
+                        # recorder.finish. Compare every recorded outcome field,
+                        # then verify that sole post-finish annotation separately.
+                        assert all(cell['result'].get(k) == v for k, v in result.items())
+                        assert set(cell['result']) - set(result) <= {'souls'}
+                        if 'souls' in cell['result']:
+                            assert cell['result']['souls'] == list(meta['souls'])
                     if cell['result']['unfinished']:
                         assert cell['result']['won'] is None
                         failures.append(dict(stage=stage, file=str(path), seed=r['seed'], root=r['root'], decision=r['decision'],
@@ -103,9 +110,13 @@ def audit(folder):
             checked['development_actor_decisions'] += 1
         games = list(read_lines(folder / 'development-games.jsonl.gz'))
         assert len(games) == len(outcomes) == 600
+        souls_by_group = {g: list(souls) for g, _, _, souls, _ in cases()}
         for r in games:
             key = (r['policy'], r['group'], r['seed'], r['seat'])
-            assert outcomes[key] == r['result']
+            assert all(r['result'].get(k) == v for k, v in outcomes[key].items())
+            assert set(r['result']) - set(outcomes[key]) <= {'souls'}
+            if 'souls' in r['result']:
+                assert r['result']['souls'] == souls_by_group[r['group']]
         perseed = {}
         for name in (*MODES, 'v5', 'v11'):
             lows = []; highs = []

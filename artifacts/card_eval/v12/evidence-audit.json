@@ -1,0 +1,99 @@
+{
+  "source_commit": "d598726e7152368887502c1dc9ef1d01dfe72488",
+  "status": "passed",
+  "checked": {
+    "cells": 2064,
+    "roots": 516,
+    "openings": 280,
+    "fit_candidate_metrics": 4
+  },
+  "stages": {
+    "source": {
+      "coverage": {
+        "('race', 0)": 36,
+        "('race', 1)": 36,
+        "('guard', 0)": 12,
+        "('guard', 1)": 12,
+        "('board', 0)": 12,
+        "('board', 1)": 12
+      },
+      "counts": {
+        "openings": 120,
+        "unfinished_rollins": 0,
+        "roots": 230,
+        "new_branches": 690,
+        "reused_cells": 230,
+        "unknown_cells": 1,
+        "no_effect": 180,
+        "own_only_helpful": 6,
+        "own_only_harmful": 24,
+        "base_only_helpful": 10,
+        "both_helpful": 1,
+        "base_only_harmful": 6,
+        "both_harmful": 2,
+        "incomplete_roots": 1
+      }
+    },
+    "train": {
+      "coverage": {
+        "('race', 0)": 16,
+        "('board', 0)": 16,
+        "('guard', 0)": 16,
+        "('delayed', 0)": 16,
+        "('race', 1)": 16,
+        "('board', 1)": 16,
+        "('guard', 1)": 16,
+        "('delayed', 1)": 16
+      },
+      "counts": {
+        "openings": 128,
+        "unfinished_rollins": 1,
+        "roots": 226,
+        "new_branches": 678,
+        "reused_cells": 226,
+        "unknown_cells": 1,
+        "both_helpful": 1,
+        "incomplete_roots": 1,
+        "no_effect": 196,
+        "base_only_harmful": 9,
+        "both_harmful": 2,
+        "own_only_helpful": 9,
+        "own_only_harmful": 2,
+        "base_only_helpful": 5,
+        "target_reversal": 1
+      }
+    },
+    "diagnostic": {
+      "coverage": {
+        "('race', 0)": 4,
+        "('board', 0)": 4,
+        "('guard', 0)": 4,
+        "('delayed', 0)": 4,
+        "('race', 1)": 4,
+        "('board', 1)": 4,
+        "('guard', 1)": 4,
+        "('delayed', 1)": 4
+      },
+      "counts": {
+        "openings": 32,
+        "unfinished_rollins": 1,
+        "roots": 60,
+        "new_branches": 180,
+        "reused_cells": 60,
+        "unknown_cells": 2,
+        "no_effect": 47,
+        "own_only_helpful": 3,
+        "both_helpful": 1,
+        "base_only_harmful": 4,
+        "base_only_helpful": 2,
+        "incomplete_roots": 2,
+        "own_only_harmful": 1
+      }
+    }
+  },
+  "selected_epoch": 16,
+  "selected_actor": "1888ee3366aff3bfa67fff6038c8a71e9186bb229a30249512cbbf14567ed063",
+  "no_game_replays": true,
+  "no_label_repairs": true,
+  "limitations": "Audit checks consistency, not simulator validity, posterior beliefs or policy qualification."
+}

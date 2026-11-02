@@ -1,0 +1,9 @@
+{
+  "initial_audit_status": "failed_assertion_before_development",
+  "assertion": "reused full result equals recorder outcome",
+  "cause": "NativeGame.run attaches souls after recorder.finish; all 283 complete fresh roots differed only by that annotation, not by game outcomes.",
+  "fix": "Compare every recorded field exactly, allow only the post-finish souls key, and check souls against expanded frozen input. Apply the same explicit comparison to development records.",
+  "raw_data_changed": false,
+  "models_retrained": false,
+  "games_replayed": 0
+}

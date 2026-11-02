@@ -1,0 +1,51 @@
+{
+  "unknown_cells_and_slots": [
+    {
+      "stage": "source",
+      "file": "artifacts/card_eval/v12/source/episode-0104.jsonl.gz",
+      "seed": 3130004,
+      "root": "late",
+      "decision": 34,
+      "action": 0,
+      "continuation": 0,
+      "reused": false,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=offline_counterfactual_branch, seconds=0.312059"
+    },
+    {
+      "stage": "train",
+      "file": "artifacts/card_eval/v12/train/episode-0001.jsonl.gz",
+      "seed": 3610001,
+      "root": "first",
+      "decision": 16,
+      "action": 1,
+      "continuation": 1,
+      "reused": true,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=shared_semantic_model, seconds=0.252988"
+    },
+    {
+      "stage": "diagnostic",
+      "file": "artifacts/card_eval/v12/diagnostic/episode-0018.jsonl.gz",
+      "seed": 3620018,
+      "root": "first",
+      "decision": 0,
+      "action": 1,
+      "continuation": 1,
+      "reused": true,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=shared_semantic_model, seconds=0.353492"
+    },
+    {
+      "stage": "diagnostic",
+      "file": "artifacts/card_eval/v12/diagnostic/episode-0018.jsonl.gz",
+      "seed": 3620018,
+      "root": "late",
+      "decision": 26,
+      "action": 1,
+      "continuation": 1,
+      "reused": true,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=shared_semantic_model, seconds=0.353492"
+    }
+  ],
+  "unknowns_not_retried": true,
+  "lock_recovery": "Original V12 holder pid1147 became a zombie during environment reconnection. Verified OS lock free and reacquired as pid2583/session16666; no second research round started.",
+  "method_limitations": "Restricted V5/V11 proposals, finite history, realized single-world contrasts; not conditional expected Q*, belief learning, PSRO or safe policy improvement. Mixed deployed continuation differs from both target continuations. Rule scope unchanged."
+}
