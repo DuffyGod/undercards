@@ -147,7 +147,8 @@ def audit(folder):
         lo,hi=perseed['updated']
         for name,(a,b) in perseed.items():
             assert dev['metrics'][name]['win']==interval(a,b) and dev['metrics'][name]['primary_gain']==interval(lo-b,hi-a)
-            assert dev['metrics'][name]['behavior']==dict(behavior[name])
+            for key in ('decisions','changed','raw_changed','unknown'):
+                assert dev['metrics'][name]['behavior'][key]==behavior[name][key]
         activation=behavior['updated']['changed']/max(1,behavior['updated']['decisions'])
         gate=bool(lo.mean()>max(perseed['v5'][1].mean(),perseed['v12'][1].mean()) and dev['metrics']['v5']['primary_gain']['low']>=-.05 and activation>=.01 and not behavior['updated']['unknown'])
         assert activation==dev['activation'] and gate==dev['proceed_to_final']
@@ -157,6 +158,52 @@ def audit(folder):
         checks['development_slots']=600
         checks['primary_decisions_compared_with_frozen']=control_decisions
         checks['primary_semantic_changes_vs_frozen']=control_changes
+    if (folder/'posthoc-prior-fit.json').exists():
+        plan=json.loads((folder/'posthoc-prior-plan.json').read_text());fit=json.loads((folder/'posthoc-prior-fit.json').read_text())
+        control,meta=Network.load(folder/'prior-only-selected.npz')
+        assert plan['declared_after_initial_development'] and fit['primary_status_unchanged']
+        assert fit['warm_start_actor']==Network.load(folder/'phase0-selected.npz')[0].actor_fingerprint
+        assert fit['optimizer_steps']==192 and fit['training_roots']==90 and fit['epochs']==64
+        assert meta['terminal_cost_weight']==0 and meta['not_eligible_for_reselection'] and meta['value_unfitted']
+        assert not json.loads((folder/'development.json').read_text())['proceed_to_final']
+        assert not set(plan['fresh_seeds'])&set(d['development_seeds'])
+        checks['posthoc_prior_optimizer_steps']=fit['optimizer_steps']
+    if (folder/'posthoc-prior-development.json').exists():
+        report=json.loads((folder/'posthoc-prior-development.json').read_text());games=list(read_rows(folder/'posthoc-prior-games.jsonl.gz'))
+        assert len(games)==320 and report['finals_still_unread'] and report['no_reselection']
+        models={n:Network.load(folder/f'{n}-selected.npz')[0] for n in ('updated','frozen')};models.update(prior_only=control,v5=base)
+        outcomes={};behavior=defaultdict(Counter)
+        for row in read_rows(folder/'posthoc-prior-decisions.jsonl.gz'):
+            m=row['metadata'];name=m['policy'];key=(name,m['group'],m['seed'],m['seat'])
+            if row['record_type']=='outcome':
+                assert key not in outcomes;outcomes[key]=row['result'];behavior[name]['unknown']+=row['result']['unfinished'];continue
+            actions=list(map(tuple,row['legal_actions']));s=row['selection'];o=row['observation']
+            assert tuple(s['action'])==actions[s['action_index']]
+            if o['player']!=0:continue
+            assert s['policy']==models[name].fingerprint;behavior[name]['decisions']+=1
+            a=s['action_index'];b=row['baseline']['action_index']
+            if a!=b:
+                behavior[name]['raw_changed']+=1;x=encode(o,actions)[1][0];behavior[name]['changed']+=not np.array_equal(x[a],x[b])
+        souls={g:list(ss) for g,_,_,ss,_ in cases()};assert len(outcomes)==320
+        expected={(n,g,seed,seat) for n in models for g,_,_,_,_ in cases() for seed in plan['fresh_seeds'] for seat in (0,1)}
+        assert set(outcomes)==expected
+        for r in games:
+            key=(r['policy'],r['group'],r['seed'],r['seat']);recorded=outcomes[key]
+            assert all(r['result'].get(k)==v for k,v in recorded.items()) and set(r['result'])-set(recorded)<={'souls'}
+            if 'souls' in r['result']:assert r['result']['souls']==souls[r['group']]
+            if r['result']['unfinished']:failures.append(dict(stage='posthoc_prior_development',metadata={k:v for k,v in r.items() if k!='result'},error=r['result'].get('error')))
+        scores={}
+        for name in models:
+            clusters=[[r['result'] for r in games if r['policy']==name and r['seed']==seed] for seed in plan['fresh_seeds']]
+            assert all(len(rs)==10 for rs in clusters)
+            scores[name]=(np.array([np.mean([0 if r['unfinished'] else int(r['won']) for r in rs]) for rs in clusters]),
+                          np.array([np.mean([1 if r['unfinished'] else int(r['won']) for r in rs]) for rs in clusters]))
+        lo,hi=scores['updated']
+        for name,(a,b) in scores.items():
+            assert report['metrics'][name]['win']==interval(a,b) and report['metrics'][name]['updated_gain']==interval(lo-b,hi-a)
+            for key in ('decisions','changed','raw_changed','unknown'):assert report['metrics'][name]['behavior'][key]==behavior[name][key]
+        assert json.loads((folder/'final-status.json').read_text())['final_seeds_unread']
+        checks['posthoc_fresh_development_slots']=320
     dump(folder/'evidence-audit.json',dict(source_commit=commit(),status='passed',checks=dict(checks),no_replays=True,no_label_repairs=True,
         limitation='Record consistency, not simulator validity, predictive sufficiency, POMDP convergence or policy qualification.'))
     dump(folder/'failures.json',dict(unknown_cells_and_slots=failures,unknowns_not_retried=True,limits=d['limits']))

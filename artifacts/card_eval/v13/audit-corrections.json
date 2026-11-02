@@ -1,0 +1,9 @@
+{
+  "first_full_development_audit": "failed at behavior-dictionary equality",
+  "cause": "The recomputed V5 Counter omitted absent zero-valued changed/raw_changed keys; the saved recorder explicitly stored those keys as0.",
+  "fix": "Compare the four declared counter fields numerically, retaining all saved outcomes and actions.",
+  "raw_data_changed": false,
+  "models_retrained": false,
+  "games_replayed": 0,
+  "scope": "Audit representation correction, not a changed development result or gate."
+}

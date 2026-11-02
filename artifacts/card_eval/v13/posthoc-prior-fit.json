@@ -1,0 +1,12 @@
+{
+  "source_commit": "3ec89b985b15c373855ebc9577c386a2bea96c79",
+  "warm_start_actor": "870bd1ade3d2109c3e6bd95505b5cb5b13bbc71d3ed1785e9b3eac85895acde4",
+  "actor_fingerprint": "88f0ecdd30da133ba2bd68d9e8eb1e11998339a6b52be407db8b3d3f4d413da0",
+  "optimizer_steps": 192,
+  "epochs": 64,
+  "parameters": 4457,
+  "training_roots": 90,
+  "terminal_cost_weight": 0.0,
+  "unknown_labels_imputed": false,
+  "primary_status_unchanged": true
+}
