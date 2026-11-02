@@ -1,0 +1,61 @@
+{
+  "counts": {
+    "openings": 120,
+    "unfinished_rollins": 0,
+    "roots": 230,
+    "new_branches": 690,
+    "reused_cells": 230,
+    "unknown_cells": 1,
+    "no_effect": 180,
+    "own_only_helpful": 6,
+    "own_only_harmful": 24,
+    "base_only_helpful": 10,
+    "both_helpful": 1,
+    "base_only_harmful": 6,
+    "both_harmful": 2,
+    "incomplete_roots": 1
+  },
+  "absent_or_duplicate_roots": {
+    "first": 0,
+    "late": 10
+  },
+  "base_continuation_gain": {
+    "mean": null,
+    "completion_range": [
+      0.012987329434697855,
+      0.017373294346978558
+    ],
+    "low": -0.01337719298245614,
+    "high": 0.048099415204678364,
+    "alpha": 0.05,
+    "independent_seed_clusters": 12,
+    "unresolved_seed_clusters": 1
+  },
+  "own_continuation_gain": {
+    "mean": -0.08435672514619884,
+    "completion_range": [
+      -0.08435672514619884,
+      -0.08435672514619884
+    ],
+    "low": -0.14941825048732943,
+    "high": -0.02290326510721249,
+    "alpha": 0.05,
+    "independent_seed_clusters": 12,
+    "unresolved_seed_clusters": 0
+  },
+  "interaction": {
+    "mean": null,
+    "completion_range": [
+      -0.10173001949317738,
+      -0.09734405458089668
+    ],
+    "low": -0.1677899610136452,
+    "high": -0.03442434210526324,
+    "alpha": 0.05,
+    "independent_seed_clusters": 12,
+    "unresolved_seed_clusters": 1
+  },
+  "inference": "Original-seed clusters, equal observed-root weight within each seed. Root-conditional realized counterfactuals; not full-game policy effect or posterior expected Q. Missing-root openings excluded only from root-conditional estimand; counts retained.",
+  "source_commit": "82cbdcdff9617b61a6259fdea970cf0aad87410b",
+  "elapsed_seconds": 77.65625660800288
+}
