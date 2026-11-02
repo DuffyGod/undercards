@@ -1,0 +1,170 @@
+{
+  "source_commit": "c254f88ac47a3a0d865f14f60ceaaad3515bb03a",
+  "primary": "updated",
+  "metrics": {
+    "updated": {
+      "win": {
+        "mean": 0.5333333333333333,
+        "completion_range": [
+          0.5333333333333333,
+          0.5333333333333333
+        ],
+        "low": 0.44999999999999996,
+        "high": 0.6083333333333333,
+        "alpha": 0.05,
+        "independent_seed_clusters": 12,
+        "unresolved_seed_clusters": 0
+      },
+      "primary_gain": {
+        "mean": 0.0,
+        "completion_range": [
+          0.0,
+          0.0
+        ],
+        "low": 0.0,
+        "high": 0.0,
+        "alpha": 0.05,
+        "independent_seed_clusters": 12,
+        "unresolved_seed_clusters": 0
+      },
+      "behavior": {
+        "decisions": 3935,
+        "changed": 1207,
+        "raw_changed": 1221,
+        "unknown": 0
+      }
+    },
+    "frozen": {
+      "win": {
+        "mean": 0.39166666666666666,
+        "completion_range": [
+          0.39166666666666666,
+          0.39166666666666666
+        ],
+        "low": 0.3333333333333333,
+        "high": 0.4583333333333333,
+        "alpha": 0.05,
+        "independent_seed_clusters": 12,
+        "unresolved_seed_clusters": 0
+      },
+      "primary_gain": {
+        "mean": 0.14166666666666664,
+        "completion_range": [
+          0.14166666666666664,
+          0.14166666666666664
+        ],
+        "low": 0.04166666666666668,
+        "high": 0.2333333333333333,
+        "alpha": 0.05,
+        "independent_seed_clusters": 12,
+        "unresolved_seed_clusters": 0
+      },
+      "behavior": {
+        "decisions": 5050,
+        "changed": 1419,
+        "raw_changed": 1426,
+        "unknown": 0
+      }
+    },
+    "phase0": {
+      "win": {
+        "mean": 0.09166666666666669,
+        "completion_range": [
+          0.09166666666666669,
+          0.09166666666666669
+        ],
+        "low": 0.025000000000000005,
+        "high": 0.1666666666666667,
+        "alpha": 0.05,
+        "independent_seed_clusters": 12,
+        "unresolved_seed_clusters": 0
+      },
+      "primary_gain": {
+        "mean": 0.44166666666666665,
+        "completion_range": [
+          0.44166666666666665,
+          0.44166666666666665
+        ],
+        "low": 0.3333333333333333,
+        "high": 0.5416666666666666,
+        "alpha": 0.05,
+        "independent_seed_clusters": 12,
+        "unresolved_seed_clusters": 0
+      },
+      "behavior": {
+        "decisions": 3999,
+        "changed": 1740,
+        "raw_changed": 1748,
+        "unknown": 0
+      }
+    },
+    "v12": {
+      "win": {
+        "mean": 0.5083333333333334,
+        "completion_range": [
+          0.5083333333333334,
+          0.5083333333333334
+        ],
+        "low": 0.425,
+        "high": 0.5916666666666667,
+        "alpha": 0.05,
+        "independent_seed_clusters": 12,
+        "unresolved_seed_clusters": 0
+      },
+      "primary_gain": {
+        "mean": 0.024999999999999994,
+        "completion_range": [
+          0.024999999999999994,
+          0.024999999999999994
+        ],
+        "low": -0.033333333333333326,
+        "high": 0.08333333333333331,
+        "alpha": 0.05,
+        "independent_seed_clusters": 12,
+        "unresolved_seed_clusters": 0
+      },
+      "behavior": {
+        "decisions": 5034,
+        "changed": 476,
+        "raw_changed": 476,
+        "unknown": 0
+      }
+    },
+    "v5": {
+      "win": {
+        "mean": 0.5416666666666667,
+        "completion_range": [
+          0.5416666666666667,
+          0.5416666666666667
+        ],
+        "low": 0.4750000000000001,
+        "high": 0.6083333333333333,
+        "alpha": 0.05,
+        "independent_seed_clusters": 12,
+        "unresolved_seed_clusters": 0
+      },
+      "primary_gain": {
+        "mean": -0.008333333333333345,
+        "completion_range": [
+          -0.008333333333333345,
+          -0.008333333333333345
+        ],
+        "low": -0.10833333333333332,
+        "high": 0.07499999999999998,
+        "alpha": 0.05,
+        "independent_seed_clusters": 12,
+        "unresolved_seed_clusters": 0
+      },
+      "behavior": {
+        "decisions": 4900,
+        "changed": 0,
+        "raw_changed": 0,
+        "unknown": 0
+      }
+    }
+  },
+  "activation": 0.3067344345616264,
+  "proceed_to_final": false,
+  "gate": "Updated point score strictly exceeds both V5 and V12 over5 contexts, paired95% lower gain vsV5>=-.05, at least1% semantic activation vsV5, no primary unknown; otherwise no large final/own critic. Never select frozen control.",
+  "no_reselection": true
+}
