@@ -86,9 +86,37 @@ def audit(folder):
         common=dataset(folder,1,'diagnostic','updated')
         for name,file in (('updated','updated-selected.npz'),('frozen','frozen-selected.npz'),('phase0','phase0-selected.npz')):
             assert fit['arms']['common_current_target_diagnostic'][name]==target_metrics(Network.load(folder/file)[0],common)
+        signal={}
+        for stage in ('train','diagnostic'):
+            counter=Counter()
+            for path in sorted((folder/f'p1-{stage}').glob('episode-*.jsonl.gz')):
+                for root in read_rows(path):
+                    if root['record_type']!='root':continue
+                    labels={target:{c['action_index']:int(c['result']['won']) for c in root['cells']
+                        if c['target']==target and not c['result']['unfinished']} for target in ('updated','frozen')}
+                    both=sorted(set(labels['updated'])&set(labels['frozen']));changed=False
+                    for j,i in enumerate(both):
+                        for k in both[j+1:]:
+                            a=labels['updated'][i]-labels['updated'][k];b=labels['frozen'][i]-labels['frozen'][k]
+                            counter['known_action_pairs']+=1;counter['changed_contrasts']+=a!=b;changed|=a!=b
+                    counter['roots']+=1;counter['roots_with_changed_contrasts']+=changed
+            signal[stage]=dict(counter)
+        a=dataset(folder,1,'train','updated');b=dataset(folder,1,'train','frozen');mask=np.isfinite(a['y'])&np.isfinite(b['y'])
+        ya=np.where(mask,a['y'],np.nan);yb=np.where(mask,b['y'],np.nan)
+        weights={g:w for g,w in a['weights'].items() if np.any(mask[a['groups']==g])};total=sum(weights.values())
+        weights={g:w/total for g,w in weights.items()};warm=Network.load(folder/'phase0-selected.npz')[0]
+        ga=warm.loss_grad(a['x'],ya,a['groups'],a['anchors'],weights,d['l2'])[1]
+        gb=warm.loss_grad(b['x'],yb,b['groups'],b['anchors'],weights,d['l2'])[1]
+        updated=Network.load(folder/'updated-selected.npz')[0];frozen=Network.load(folder/'frozen-selected.npz')[0]
+        signal.update(common_known_mask_gradient_difference_l2=float(np.sqrt(sum(np.sum((ga[k]-gb[k])**2) for k in ga))),
+            missing_label_mask_disagreements=int(np.sum(np.isfinite(a['y'])!=np.isfinite(b['y']))),
+            fitted_parameter_distance_l2=float(np.sqrt(sum(np.sum((updated.p[k]-frozen.p[k])**2) for k in updated.p))),
+            interpretation='Terminal-label shifts alone do not activate the regret loss. Counts here test actual within-root contrast changes and gradients under an identical known-label mask; no policy qualification or model selection.')
+        dump(folder/'target-activation-audit.json',dict(source_commit=commit(),**signal))
     if (folder/'development.json').exists():
         dev=json.loads((folder/'development.json').read_text());games=list(read_rows(folder/'development-games.jsonl.gz'));outcomes={};behavior=defaultdict(Counter)
         models={n:Network.load(folder/f'{n}-selected.npz')[0] for n in ('updated','frozen','phase0')};models.update(v12=initial,v5=base)
+        control_changes=control_decisions=0
         for row in read_rows(folder/'development-decisions.jsonl.gz'):
             meta=row['metadata'];name=meta['policy'];key=(name,meta['group'],meta['seed'],meta['seat'])
             if row['record_type']=='outcome':
@@ -99,6 +127,9 @@ def audit(folder):
             assert s['policy']==models[name].fingerprint
             b=row['baseline']['action_index'];a=s['action_index'];assert tuple(row['baseline']['action'])==actions[b]
             behavior[name]['decisions']+=1
+            if name=='updated':
+                alternative=LearnedPolicy(models['frozen']).choose(obs,actions)['action_index'];control_decisions+=1
+                x=encode(obs,actions)[1][0];control_changes+=not np.array_equal(x[s['action_index']],x[alternative])
             if a!=b:
                 behavior[name]['raw_changed']+=1;x=encode(obs,actions)[1][0];behavior[name]['changed']+=not np.array_equal(x[a],x[b])
         souls={g:list(ss) for g,_,_,ss,_ in cases()};assert len(games)==len(outcomes)==600
@@ -124,6 +155,8 @@ def audit(folder):
             status=json.loads((folder/'final-status.json').read_text());assert status['status']=='not_executed' and status['final_seeds_unread'] and status['value_final_unread']
             assert not list(folder.glob('final-games*')) and not list(folder.glob('value-*'))
         checks['development_slots']=600
+        checks['primary_decisions_compared_with_frozen']=control_decisions
+        checks['primary_semantic_changes_vs_frozen']=control_changes
     dump(folder/'evidence-audit.json',dict(source_commit=commit(),status='passed',checks=dict(checks),no_replays=True,no_label_repairs=True,
         limitation='Record consistency, not simulator validity, predictive sufficiency, POMDP convergence or policy qualification.'))
     dump(folder/'failures.json',dict(unknown_cells_and_slots=failures,unknowns_not_retried=True,limits=d['limits']))

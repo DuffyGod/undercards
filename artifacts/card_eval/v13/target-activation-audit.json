@@ -1,0 +1,19 @@
+{
+  "source_commit": "bcaf709e6eab76afc17bea7300b4297dbd6ea4c5",
+  "train": {
+    "known_action_pairs": 1200,
+    "changed_contrasts": 216,
+    "roots": 90,
+    "roots_with_changed_contrasts": 33
+  },
+  "diagnostic": {
+    "known_action_pairs": 238,
+    "changed_contrasts": 66,
+    "roots": 19,
+    "roots_with_changed_contrasts": 8
+  },
+  "common_known_mask_gradient_difference_l2": 0.07479398435845083,
+  "missing_label_mask_disagreements": 4,
+  "fitted_parameter_distance_l2": 2.4550588013739407,
+  "interpretation": "Terminal-label shifts alone do not activate the regret loss. Counts here test actual within-root contrast changes and gradients under an identical known-label mask; no policy qualification or model selection."
+}

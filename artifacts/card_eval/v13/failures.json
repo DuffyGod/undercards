@@ -1,5 +1,50 @@
 {
-  "unknown_cells_and_slots": [],
+  "unknown_cells_and_slots": [
+    {
+      "phase": 1,
+      "stage": "train",
+      "file": "artifacts/card_eval/v13/p1-train/episode-0027.jsonl.gz",
+      "seed": 4110027,
+      "decision": 8,
+      "action_index": 4,
+      "target": "frozen",
+      "reused": false,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=offline_counterfactual_branch, seconds=0.612952"
+    },
+    {
+      "phase": 1,
+      "stage": "train",
+      "file": "artifacts/card_eval/v13/p1-train/episode-0037.jsonl.gz",
+      "seed": 4110037,
+      "decision": 49,
+      "action_index": 0,
+      "target": "frozen",
+      "reused": false,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=offline_counterfactual_branch, seconds=0.319371"
+    },
+    {
+      "phase": 1,
+      "stage": "train",
+      "file": "artifacts/card_eval/v13/p1-train/episode-0038.jsonl.gz",
+      "seed": 4110038,
+      "decision": 20,
+      "action_index": 5,
+      "target": "updated",
+      "reused": false,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=offline_counterfactual_branch, seconds=0.322739"
+    },
+    {
+      "phase": 1,
+      "stage": "train",
+      "file": "artifacts/card_eval/v13/p1-train/episode-0038.jsonl.gz",
+      "seed": 4110038,
+      "decision": 20,
+      "action_index": 3,
+      "target": "frozen",
+      "reused": false,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=offline_counterfactual_branch, seconds=0.262195"
+    }
+  ],
   "unknowns_not_retried": true,
   "limits": "Two finite approximate policy-improvement rounds, not a LOLS theorem or converged POMDP solution. Public555 representation is still lossy; hidden worlds only generate offline terminal costs. Single training seed, fixed opponent mixture, no full beliefs/adaptive best response."
 }
