@@ -36,7 +36,8 @@ class RegretNetwork(ActionValueNetwork):
         z=self.action_scores(state,actions);chosen=int(z.argmax());prob=np.zeros(len(z));prob[chosen]=1.
         return prob,self.predict_value(state),dict(chosen=chosen,target=self.target_description,scores_are_calibrated_q=False)
 
-    def loss_grad(self,x,y,groups,anchors,group_weights,l2=.0001):
+    def loss_grad(self,x,y,groups,anchors,group_weights,l2=.0001,cost_weight=1.):
+        if not np.isfinite(cost_weight) or cost_weight<0:raise ValueError('Nonnegative terminal cost weight required')
         y=np.asarray(y,float);groups=np.asarray(groups,int)
         if len(y)!=len(x) or np.any((y[np.isfinite(y)]<0)|(y[np.isfinite(y)]>1)):
             raise ValueError('Complete probabilities or masked unknowns required')
@@ -47,6 +48,8 @@ class RegretNetwork(ActionValueNetwork):
             zz=z[ix];ex=np.exp(zz-zz.max());p=ex/ex.sum();anchor=np.where(ix==anchors[group])[0][0]
             loss+=weight*self.baseline_weight*(np.log(ex.sum())+zz.max()-z[anchors[group]])
             grad=p.copy();grad[anchor]-=1;dz[ix]+=weight*self.baseline_weight*grad
+            if cost_weight==0:continue  # Ablation disables terminal loss; no unknown label is filled.
+            weight*=cost_weight
             if self.objective=='centered':
                 residual=q[known]-y[known];residual-=residual.mean()
                 loss+=weight*2*np.mean(residual**2)

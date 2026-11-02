@@ -11,6 +11,15 @@ import io
 
 
 class PolicyIterationChecks(unittest.TestCase):
+    def test_prior_only_loss_ignores_terminal_cost_values_without_filling_unknowns(self):
+        rng=np.random.default_rng(22);x=rng.normal(0,.1,(4,555));net=RegretNetwork(hidden=3)
+        groups=np.zeros(4,int);a=np.array([0.,1.,np.nan,0.]);b=np.array([1.,0.,np.nan,1.])
+        args=(groups,{0:0},{0:1.})
+        la,ga=net.loss_grad(x,a,*args,cost_weight=0);lb,gb=net.loss_grad(x,b,*args,cost_weight=0)
+        self.assertEqual(la,lb)
+        for k in ga:np.testing.assert_array_equal(ga[k],gb[k])
+        self.assertNotAlmostEqual(net.loss_grad(x,a,*args)[0],net.loss_grad(x,b,*args)[0],places=8)
+
     def test_paired_targets_unknown_and_unsampled_actions_stay_missing(self):
         root=dict(record_type='root',seed=1,observation={},legal_actions=[['end',-1,-1,-1],['play',1,-1,-1],['play',2,-1,-1]],anchor=0,
             cells=[dict(target=t,action_index=i,result=dict(unfinished=(t=='updated' and i==1),won=None if t=='updated' and i==1 else i==0))

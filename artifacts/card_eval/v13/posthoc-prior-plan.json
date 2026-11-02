@@ -1,0 +1,27 @@
+{
+  "source_commit": "0e3058434b2acc4e2226bade6b984a65872187dc",
+  "declared_after_initial_development": true,
+  "question": "Does updating terminal continuation cost help beyond the same-budget V5-prior-only distillation?",
+  "primary_status_unchanged": "development_rejected;433/435 stay unread regardless of this diagnostic",
+  "training": "Same phase1 public inputs/root weights/anchors, same phase0 warm start, seed/batches/64epochs/L2/lr. Set only terminal cost loss weight to0. Do not fill unknown outcomes with0.",
+  "fresh_seeds": [
+    4160000,
+    4160001,
+    4160002,
+    4160003,
+    4160004,
+    4160005,
+    4160006,
+    4160007
+  ],
+  "policies": [
+    "updated",
+    "frozen",
+    "prior_only",
+    "v5"
+  ],
+  "slots": 320,
+  "decision_seconds": 0.25,
+  "selection": "No model or threshold selection; fixed64epoch, no primary replacement.",
+  "inference": "Eight paired seed clusters across five known contexts; posthoc hypothesis, fresh development worlds. Not final qualification/equivalence/whole-environment evidence."
+}
