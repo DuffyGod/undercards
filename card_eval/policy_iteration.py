@@ -205,7 +205,7 @@ def target_metrics(net,ds):
         changes+=not np.array_equal(ds['x'][choice],ds['x'][anchor])
         a=ds['y'][choice]; b=ds['y'][anchor]
         alo,ahi=(0.,1.) if not np.isfinite(a) else (a,a); blo,bhi=(0.,1.) if not np.isfinite(b) else (b,b)
-        byseed[ds['seeds'][group]].append((alo-bhi,ahi-blo))
+        byseed[ds['seeds'][group]].append((0.,0.) if choice==anchor else (alo-bhi,ahi-blo))
     w=np.array(list(ds['weights'].values())); w/=w.sum(); bounds=np.array([np.mean(v,axis=0) for v in byseed.values()])
     return dict(sampled_action_regret=float(w@np.array(regrets)),roots=len(regrets),full_choices_measured=int(measured),
         full_semantic_changes=int(changes),full_choice_vs_v5_anchor=interval(*bounds.T),excluded_roots=ds['excluded_roots'],
@@ -239,7 +239,8 @@ def fit(folder,phase):
                 net.save(folder/f'phase{phase}-{target}-epoch-{epoch:03}.npz',dict(source_commit=commit(),validation=dict(qualified=False),value_unfitted=True,epoch=epoch))
         name='phase0-selected.npz' if phase==0 else f'{target}-selected.npz'
         net.save(folder/name,dict(source_commit=commit(),validation=dict(qualified=False),value_unfitted=True,epoch=d['epochs'],selection=d['selection']))
-        report[target]=dict(warm_start_actor=warm,actor_fingerprint=net.actor_fingerprint,parameters=net.parameters,curve=curve)
+        report[target]=dict(warm_start_actor=warm,actor_fingerprint=net.actor_fingerprint,parameters=net.parameters,
+            optimizer_steps=step,training_roots=ng,epochs=d['epochs'],curve=curve)
     if phase==1:
         common=dataset(folder,1,'diagnostic','updated')
         report['common_current_target_diagnostic']={name:target_metrics(Network.load(folder/file)[0],common)

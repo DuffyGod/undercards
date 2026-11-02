@@ -1,0 +1,133 @@
+"""Read-only V13 audit of coupled targets, stopping roots and development."""
+from collections import Counter,defaultdict
+from pathlib import Path
+import argparse,json
+import numpy as np
+from .policy_iteration import (BASE,INITIAL,design,read_rows,donor_episodes,root_turns,stopping_indices,
+                               collection_summary,dataset,target_metrics)
+from .network import Network
+from .policies import LearnedPolicy
+from .regret_model import RegretNetwork
+from .suffix_research import cases
+from .action_value import encode
+from .statistics import interval
+from .training import dump,commit
+
+
+def audit(folder):
+    d=design(folder);base=Network.load(BASE)[0];initial=Network.load(INITIAL)[0];checks=Counter();failures=[]
+    for phase in (0,1):
+        if not (folder/f'phase{phase}-fit.json').exists():continue
+        current=initial if phase==0 else Network.load(folder/'phase0-selected.npz')[0]
+        targets={'initial':initial} if phase==0 else {'updated':current,'frozen':initial}
+        for stage in ('train','diagnostic'):
+            donors={m['seed']:(m,rows,r) for m,rows,r in donor_episodes(stage,d['donor_'+stage+'_seeds'])} if phase==0 else {}
+            seeds=[]
+            for path in sorted((folder/f'p{phase}-{stage}').glob('episode-*.jsonl.gz')):
+                records=list(read_rows(path));meta=records[0];seeds.append(meta['seed'])
+                assert meta['actor_fingerprint']==current.actor_fingerprint
+                if phase==0:
+                    old,rows,result=donors[meta['seed']]
+                    assert old['decks']==meta['decks'] and old['souls']==meta['souls']
+                else:
+                    rows=[r for r in records if r['record_type']=='decision']
+                    result=next(r['result'] for r in records if r['record_type']=='outcome')
+                roots=[r for r in records if r['record_type']=='root']
+                assert [r['decision'] for r in roots]==stopping_indices(rows,root_turns(meta['seed'],d['rng_seed']))
+                selection=next(r for r in records if r['record_type']=='root_selection')
+                assert selection['forks']==[r['decision'] for r in roots] and selection['rollin_unknown']==result['unfinished']
+                for r in roots:
+                    obs=r['observation'];actions=list(map(tuple,r['legal_actions']));source=rows[r['decision']]
+                    assert source['observation']==obs and list(map(tuple,source['legal_actions']))==actions
+                    assert r['rollin_choice']==source['selection']['action_index']==LearnedPolicy(current).choose(obs,actions)['action_index']
+                    assert r['anchor']==LearnedPolicy(base).choose(obs,actions)['action_index']
+                    assert {0,r['anchor'],r['rollin_choice']}<=set(r['sampled_actions'])
+                    assert len(r['sampled_actions'])<=6 and len(set(r['sampled_actions']))==len(r['sampled_actions'])
+                    assert {(c['target'],c['action_index']) for c in r['cells']}=={(t,i) for t in targets for i in r['sampled_actions']}
+                    for c in r['cells']:
+                        assert c['continuation_actor']==targets[c['target']].actor_fingerprint
+                        assert c['reused']==(targets[c['target']].actor_fingerprint==current.actor_fingerprint and c['action_index']==r['rollin_choice'])
+                        assert c['prefix_checked'] or c['result']['unfinished']
+                        if c['reused']:
+                            assert all(c['result'].get(k)==v for k,v in result.items())
+                            assert set(c['result'])-set(result)<={'souls'}
+                        if c['result']['unfinished']:
+                            assert c['result']['won'] is None
+                            failures.append(dict(phase=phase,stage=stage,file=str(path),seed=meta['seed'],decision=r['decision'],
+                                action_index=c['action_index'],target=c['target'],reused=c['reused'],error=c['result'].get('error')))
+                        checks['cells']+=1
+                    checks['roots']+=1
+                checks['openings']+=1
+            assert seeds==d[('donor_' if phase==0 else '')+stage+'_seeds']
+            summary=collection_summary(folder/f'p{phase}-{stage}');saved=json.loads((folder/f'p{phase}-{stage}-collection.json').read_text())
+            assert all(saved[k]==v for k,v in summary.items())
+        fit=json.loads((folder/f'phase{phase}-fit.json').read_text())
+        assert fit['selection']==d['selection']
+        for target in targets:
+            arm=fit['arms'][target]
+            assert arm['epochs']==64 and arm['optimizer_steps']==64*int(np.ceil(arm['training_roots']/d['batch']))
+            if phase==1:assert arm['warm_start_actor']==Network.load(folder/'phase0-selected.npz')[0].actor_fingerprint
+            train=dataset(folder,phase,'train',target);diagnostic=dataset(folder,phase,'diagnostic',target)
+            for point in arm['curve']:
+                net,meta=Network.load(folder/f"phase{phase}-{target}-epoch-{point['epoch']:03}.npz")
+                assert meta['value_unfitted'] and not meta['validation']['qualified']
+                assert point['train']==target_metrics(net,train) and point['diagnostic']==target_metrics(net,diagnostic)
+            file='phase0-selected.npz' if phase==0 else f'{target}-selected.npz'
+            selected=Network.load(folder/file)[0];last=Network.load(folder/f'phase{phase}-{target}-epoch-064.npz')[0]
+            assert selected.fingerprint==last.fingerprint==net.fingerprint
+            assert selected.actor_fingerprint==arm['actor_fingerprint']
+            checks['fixed_checkpoints']+=len(arm['curve'])
+    if (folder/'phase1-fit.json').exists():
+        fit=json.loads((folder/'phase1-fit.json').read_text());a=fit['arms']['updated'];b=fit['arms']['frozen']
+        assert (a['warm_start_actor'],a['parameters'],a['optimizer_steps'],a['training_roots'])==(b['warm_start_actor'],b['parameters'],b['optimizer_steps'],b['training_roots'])
+        for stage in ('train','diagnostic'):
+            a=dataset(folder,1,stage,'updated');b=dataset(folder,1,stage,'frozen')
+            assert np.array_equal(a['x'],b['x']) and np.array_equal(a['groups'],b['groups']) and a['anchors']==b['anchors'] and a['weights']==b['weights']
+        common=dataset(folder,1,'diagnostic','updated')
+        for name,file in (('updated','updated-selected.npz'),('frozen','frozen-selected.npz'),('phase0','phase0-selected.npz')):
+            assert fit['arms']['common_current_target_diagnostic'][name]==target_metrics(Network.load(folder/file)[0],common)
+    if (folder/'development.json').exists():
+        dev=json.loads((folder/'development.json').read_text());games=list(read_rows(folder/'development-games.jsonl.gz'));outcomes={};behavior=defaultdict(Counter)
+        models={n:Network.load(folder/f'{n}-selected.npz')[0] for n in ('updated','frozen','phase0')};models.update(v12=initial,v5=base)
+        for row in read_rows(folder/'development-decisions.jsonl.gz'):
+            meta=row['metadata'];name=meta['policy'];key=(name,meta['group'],meta['seed'],meta['seat'])
+            if row['record_type']=='outcome':
+                assert key not in outcomes;outcomes[key]=row['result'];behavior[name]['unknown']+=row['result']['unfinished'];continue
+            actions=list(map(tuple,row['legal_actions']));s=row['selection'];obs=row['observation']
+            assert tuple(s['action'])==actions[s['action_index']]
+            if obs['player']!=0:continue
+            assert s['policy']==models[name].fingerprint
+            b=row['baseline']['action_index'];a=s['action_index'];assert tuple(row['baseline']['action'])==actions[b]
+            behavior[name]['decisions']+=1
+            if a!=b:
+                behavior[name]['raw_changed']+=1;x=encode(obs,actions)[1][0];behavior[name]['changed']+=not np.array_equal(x[a],x[b])
+        souls={g:list(ss) for g,_,_,ss,_ in cases()};assert len(games)==len(outcomes)==600
+        perseed={}
+        for r in games:
+            result=r['result'];recorded=outcomes[r['policy'],r['group'],r['seed'],r['seat']]
+            assert all(result.get(k)==v for k,v in recorded.items()) and set(result)-set(recorded)<={'souls'}
+            if 'souls' in result:assert result['souls']==souls[r['group']]
+            if result['unfinished']:failures.append(dict(stage='development',metadata={k:v for k,v in r.items() if k!='result'},error=result.get('error')))
+        for name in models:
+            clusters=[[r['result'] for r in games if r['policy']==name and r['seed']==seed] for seed in d['development_seeds']]
+            assert all(len(rs)==10 for rs in clusters)
+            perseed[name]=(np.array([np.mean([0 if r['unfinished'] else int(r['won']) for r in rs]) for rs in clusters]),
+                           np.array([np.mean([1 if r['unfinished'] else int(r['won']) for r in rs]) for rs in clusters]))
+        lo,hi=perseed['updated']
+        for name,(a,b) in perseed.items():
+            assert dev['metrics'][name]['win']==interval(a,b) and dev['metrics'][name]['primary_gain']==interval(lo-b,hi-a)
+            assert dev['metrics'][name]['behavior']==dict(behavior[name])
+        activation=behavior['updated']['changed']/max(1,behavior['updated']['decisions'])
+        gate=bool(lo.mean()>max(perseed['v5'][1].mean(),perseed['v12'][1].mean()) and dev['metrics']['v5']['primary_gain']['low']>=-.05 and activation>=.01 and not behavior['updated']['unknown'])
+        assert activation==dev['activation'] and gate==dev['proceed_to_final']
+        if not gate:
+            status=json.loads((folder/'final-status.json').read_text());assert status['status']=='not_executed' and status['final_seeds_unread'] and status['value_final_unread']
+            assert not list(folder.glob('final-games*')) and not list(folder.glob('value-*'))
+        checks['development_slots']=600
+    dump(folder/'evidence-audit.json',dict(source_commit=commit(),status='passed',checks=dict(checks),no_replays=True,no_label_repairs=True,
+        limitation='Record consistency, not simulator validity, predictive sufficiency, POMDP convergence or policy qualification.'))
+    dump(folder/'failures.json',dict(unknown_cells_and_slots=failures,unknowns_not_retried=True,limits=d['limits']))
+
+
+if __name__=='__main__':
+    p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);audit(p.parse_args().output)

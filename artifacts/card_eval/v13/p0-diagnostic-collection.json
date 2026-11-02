@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "openings": 16,
+    "rollin_unknown": 0,
+    "absent_roots": 9,
+    "roots": 23,
+    "cells": 131,
+    "new_branches": 108,
+    "reused_cells": 23,
+    "unknown_cells": 0
+  },
+  "opponent_seat_coverage": {
+    "('race', 0)": 3,
+    "('board', 1)": 3,
+    "('guard', 0)": 3,
+    "('race', 1)": 3,
+    "('board', 0)": 2,
+    "('guard', 1)": 2
+  },
+  "paired_known_action_targets": 0,
+  "changed_targets": 0,
+  "inference": "Changed labels are paired realized worlds; new branches and reused terminal cells are not independent openings.",
+  "source_commit": "4d95abdd480b22777c10b945033ae491b4c5413a",
+  "elapsed_seconds": 10.71241810000356
+}
