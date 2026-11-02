@@ -1,0 +1,13 @@
+{
+  "source_commit": "a5ee58dfc3d0fcec0d55c39e4836c3547d14d7ad",
+  "status": "passed",
+  "checks": {
+    "cells": 616,
+    "roots": 112,
+    "openings": 80,
+    "fixed_checkpoints": 3
+  },
+  "no_replays": true,
+  "no_label_repairs": true,
+  "limitation": "Record consistency, not simulator validity, predictive sufficiency, POMDP convergence or policy qualification."
+}

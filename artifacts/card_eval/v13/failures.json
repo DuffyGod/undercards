@@ -1,0 +1,5 @@
+{
+  "unknown_cells_and_slots": [],
+  "unknowns_not_retried": true,
+  "limits": "Two finite approximate policy-improvement rounds, not a LOLS theorem or converged POMDP solution. Public555 representation is still lossy; hidden worlds only generate offline terminal costs. Single training seed, fixed opponent mixture, no full beliefs/adaptive best response."
+}
