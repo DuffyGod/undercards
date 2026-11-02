@@ -1,0 +1,111 @@
+{
+  "source_commit": "0a9d65f7f5d2686564a6ba1beedb6621947b45d6",
+  "selected_epoch": 16,
+  "curve": [
+    {
+      "epoch": 16,
+      "train": {
+        "mse": 0.05645229047801734,
+        "head_mse": [
+          0.06682052372734956,
+          0.046084057228685096
+        ],
+        "zero_predictor_mse": 0.07677165354330709,
+        "positive_both": 67,
+        "roots": 225,
+        "excluded_unknown_roots": 1
+      },
+      "diagnostic": {
+        "mse": 0.10523603221411246,
+        "head_mse": [
+          0.1268074399965465,
+          0.0836646244316784
+        ],
+        "zero_predictor_mse": 0.0967741935483871,
+        "positive_both": 15,
+        "roots": 58,
+        "excluded_unknown_roots": 2
+      }
+    },
+    {
+      "epoch": 32,
+      "train": {
+        "mse": 0.0516968730120736,
+        "head_mse": [
+          0.05900049455369215,
+          0.04439325147045507
+        ],
+        "zero_predictor_mse": 0.07677165354330709,
+        "positive_both": 72,
+        "roots": 225,
+        "excluded_unknown_roots": 1
+      },
+      "diagnostic": {
+        "mse": 0.1088270958540739,
+        "head_mse": [
+          0.12422560648346023,
+          0.09342858522468755
+        ],
+        "zero_predictor_mse": 0.0967741935483871,
+        "positive_both": 15,
+        "roots": 58,
+        "excluded_unknown_roots": 2
+      }
+    },
+    {
+      "epoch": 64,
+      "train": {
+        "mse": 0.041288019852209194,
+        "head_mse": [
+          0.05028175318777727,
+          0.03229428651664112
+        ],
+        "zero_predictor_mse": 0.07677165354330709,
+        "positive_both": 77,
+        "roots": 225,
+        "excluded_unknown_roots": 1
+      },
+      "diagnostic": {
+        "mse": 0.10858379504487845,
+        "head_mse": [
+          0.13254026356019113,
+          0.08462732652956576
+        ],
+        "zero_predictor_mse": 0.0967741935483871,
+        "positive_both": 17,
+        "roots": 58,
+        "excluded_unknown_roots": 2
+      }
+    },
+    {
+      "epoch": 96,
+      "train": {
+        "mse": 0.03382526118036387,
+        "head_mse": [
+          0.04107800436423972,
+          0.026572517996487993
+        ],
+        "zero_predictor_mse": 0.07677165354330709,
+        "positive_both": 64,
+        "roots": 225,
+        "excluded_unknown_roots": 1
+      },
+      "diagnostic": {
+        "mse": 0.1194135254996295,
+        "head_mse": [
+          0.15457814418337484,
+          0.08424890681588411
+        ],
+        "zero_predictor_mse": 0.0967741935483871,
+        "positive_both": 11,
+        "roots": 58,
+        "excluded_unknown_roots": 2
+      }
+    }
+  ],
+  "parameters": 4464,
+  "train_openings": 127,
+  "diagnostic_openings": 31,
+  "selection": "Minimum two-head diagnostic opening-weighted squared contrast error; ties earliest epoch. One fixed training seed; all gate modes share selected weights, primary robust fixed.",
+  "all_modes_share_weights": true
+}
