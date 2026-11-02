@@ -1,0 +1,55 @@
+{
+  "source_revision": "4c7c168b0083999ac11998109777d174843d29f8",
+  "scope": "V13 source/independentNPZ/data/failures, not a new full release",
+  "policy_qualified": false,
+  "source_tests": {
+    "count": 62,
+    "status": "passed",
+    "log": "final-source-tests.log",
+    "sha256": "eea3a00a95d6ba587628741d829f789a907aadbddf9e11cfebf702d5a6615c3d"
+  },
+  "evidence_audit": "passed",
+  "interface": "standalone source andNPZ:8/8 terminal at.25seconds;quality gate,unknown empty score,unfittedV refusal passed",
+  "models": {
+    "updated-selected.npz": {
+      "actor": "4a034c227a10c859176bfdc2a388dfb64e033a71f99c3f884d80ab69b9bbe1fb",
+      "full": "77f0cf78d9ffd918a23a6c4abe44cf39b7ef6ce14995b0f19b6b527c3fc73471",
+      "sha256": "0370b71f0a77eaaccf2ea2b46325ab251c8038f260ee70513f942cc3168d565e"
+    },
+    "frozen-selected.npz": {
+      "actor": "eaebf150b63be943b57940330a2be07d6b85199f34cb2a7ef59d25433f8d689a",
+      "full": "fca31e6e9f08336555246e663a94e41de1fd99016b899c120a6b9508df840030",
+      "sha256": "cf12088d3b6cfb48d6dabb4efadad65e41866b80a893a32d9210e8dc85ff076e"
+    },
+    "phase0-selected.npz": {
+      "actor": "870bd1ade3d2109c3e6bd95505b5cb5b13bbc71d3ed1785e9b3eac85895acde4",
+      "full": "6656d78f7618024ab326a7cee4eca5d150f7c09eccae9fb73b3a924d46fc9b35",
+      "sha256": "f5caeb652c2acd82bf9d7d9bb11e3fe704e425d7609da005c416546c9f2f0d5e"
+    },
+    "prior-only-selected.npz": {
+      "actor": "88f0ecdd30da133ba2bd68d9e8eb1e11998339a6b52be407db8b3d3f4d413da0",
+      "full": "10f033782863249f919e4718b334f1d42bad22ff80c495f891ca9cdc717ced7c",
+      "sha256": "49274b01c0ef844783b1d16c5ccc389812dc077744b1addfcfceda6fe20b357f"
+    }
+  },
+  "main_development": "updated53.33%,V554.17%,fixed gate rejected",
+  "posthoc": "fresh development updated40%,frozen45%,prior48.75%; no stable benefit or reselection",
+  "own_value_fitted": false,
+  "finals_unread": [
+    "4330000..4330031",
+    "4350000..4350095"
+  ],
+  "retired_previous_finals_383_385_not_training_inputs": true,
+  "primary_unchanged": true,
+  "default_model_replaced": false,
+  "latest_full_release": "0.4.1",
+  "unknown_training_cells": 4,
+  "next_question": "Preserve complete public entity/effect order and useful history for action-conditional prediction; compare against prior-only,simple baselines andV5 before final.",
+  "source_hashes": {
+    "card_eval/regret_model.py": "6e629c816b40f8467f278d4de0619f1897e1134438241abae40a1e59d64d7015",
+    "card_eval/policy_iteration.py": "852841d1ae490f57d759d15e59493a5a25d7832fc4b7b55c7a979bba547816e7",
+    "card_eval/policy_iteration_audit.py": "2742869ce55662c63b44840de0daa214eec1d1042ec2988b48e2d6f3b8fa0cf2",
+    "card_eval/policy_prior_control.py": "4ca426a3cea6efdf5345ce4637cc8f03579dd0d1e18fef340b269d566cc6e9b5",
+    "card_eval/policy_alias_probe.py": "4e9f1b38c57151ab2ae2732f8b9bb2d598b263414ef58b9f2cb49c2f664dd680"
+  }
+}
