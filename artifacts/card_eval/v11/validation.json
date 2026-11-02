@@ -1,0 +1,11 @@
+{
+  "qualified": false,
+  "status": "development_rejected",
+  "frozen_policy": "8fbbd0076f758cf43e57fe0e1faa2ce8efa1a89d13d2c6c6a672c114b602617d",
+  "actor_fingerprint": "c1a318e3e910a48376e50442dd7e66c470f8d9da6e88c0ce183e4959a3a39a37",
+  "source": "development.json",
+  "default_model_replaced": false,
+  "final_not_executed": true,
+  "value_not_refitted": true,
+  "reason": "Predeclared development performance gate failed:40% versus V5 50%, despite28.67% semantic activation."
+}

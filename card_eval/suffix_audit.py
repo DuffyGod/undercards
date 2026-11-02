@@ -10,6 +10,7 @@ from .network import Network
 from .policies import LearnedPolicy
 from .statistics import interval
 from .training import dump,commit
+from itertools import product
 
 
 def audit(folder):
@@ -116,7 +117,58 @@ def noise(folder):
         scope='Suffix5..8 were not used for fitting/epoch selection. Same diagnostic roots, not new independent worlds or a global final. Q target still holds opponent latent state fixed; unknown choices/outcomes retain0/1 bounds.')
 
 
+def development(folder):
+    d=json.loads((folder/'design.json').read_text());saved=json.loads((folder/'development.json').read_text())
+    names=list(d['arms'])+['v5'];groups=['pressure','defense','refill','role_pressure','role_defense']
+    expected=set(product(groups,d['development_seeds'],(0,1),names));games={}
+    for row in read_rows(folder/'development-games.jsonl.gz'):
+        key=tuple(row[k] for k in ('group','seed','seat','policy'))
+        if key in games:raise ValueError('Duplicate development slot')
+        games[key]=row['result']
+    if set(games)!=expected:raise ValueError('Missing/unexpected development slot')
+    fps={a:Network.load(folder/f'{a}-selected.npz')[0].fingerprint for a in d['arms']};fps['v5']=Network.load(d['baseline'])[0].fingerprint
+    counts=defaultdict(Counter);outcomes=set()
+    for row in read_rows(folder/'development-decisions.jsonl.gz'):
+        meta=row['metadata'];key=tuple(meta[k] for k in ('group','seed','seat','policy'));name=meta['policy']
+        if key not in expected:raise ValueError('Unexpected decision trajectory')
+        if row['record_type']=='outcome':
+            if key in outcomes:raise ValueError('Duplicate outcome')
+            outcomes.add(key)
+            for field in ('won','unfinished'):
+                if row['result'][field]!=games[key][field]:raise ValueError('Trajectory/game outcome mismatch')
+            counts[name]['unknown']+=row['result']['unfinished'];continue
+        obs=row['observation'];selected=row['selection'];actions=list(map(tuple,row['legal_actions']));action=tuple(selected['action'])
+        if action not in actions or actions[selected['action_index']]!=action:raise ValueError('Illegal saved action')
+        if obs['player']==0:
+            if selected['policy']!=fps[name]:raise ValueError('Different executed checkpoint')
+            alt=row['baseline'];alternative=tuple(alt['action']);counts[name]['decisions']+=1
+            if alt['policy']!=fps['v5'] or alternative not in actions:raise ValueError('Different/illegal causal baseline')
+            different=action!=alternative;counts[name]['raw_changed']+=different
+            if different:
+                x=encode(obs,actions)[1][0]
+                counts[name]['changed']+=not np.array_equal(x[selected['action_index']],x[alt['action_index']])
+    if outcomes!=expected:raise ValueError('Missing trajectory outcome')
+    perseed={}
+    for name in names:
+        lo=[];hi=[]
+        for seed in d['development_seeds']:
+            rs=[r for (g,s,seat,n),r in games.items() if s==seed and n==name]
+            lo.append(np.mean([0 if r['unfinished'] else int(r['won']) for r in rs]));hi.append(np.mean([1 if r['unfinished'] else int(r['won']) for r in rs]))
+        perseed[name]=np.asarray(lo),np.asarray(hi)
+    a,b=perseed['regret_mean'];metrics={}
+    for name,(lo,hi) in perseed.items():
+        metrics[name]=dict(win=interval(lo,hi),primary_gain=interval(a-hi,b-lo),behavior={k:counts[name][k] for k in ('decisions','changed','raw_changed','unknown')})
+    if metrics!=saved['metrics']:raise ValueError('Development metric/semantic activation mismatch')
+    activation=counts['regret_mean']['changed']/counts['regret_mean']['decisions'];gain=metrics['v5']['primary_gain']
+    checks=dict(completion_score=a.mean()>=perseed['v5'][1].mean(),paired_lower=gain['low']>=-.1,semantic_activation=activation>=.01,no_primary_unknown=not counts['regret_mean']['unknown'])
+    proceed=all(checks.values())
+    if proceed!=saved['proceed_to_final'] or activation!=saved['activation']:raise ValueError('Gate mismatch')
+    if not proceed and ((folder/'final-games.jsonl.gz').exists() or (folder/'primary-value.npz').exists() or list(folder.glob('value-train-*.jsonl.gz'))):raise ValueError('Rejected policy advanced beyond gate')
+    return dict(status='passed',source_commit=commit(),slots=len(games),semantic_activation=activation,gate_checks={k:bool(v) for k,v in checks.items()},
+        proceed_to_final=proceed,primary_gain_vs_v5=gain,scope='All raw development decisions, legality, checkpoint identity, semantic changes, paired metrics and fixed gate; no game replay/refit/reselection')
+
+
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('mode',choices=['audit','noise']);p.add_argument('--folder',required=True,type=Path);p.add_argument('--output',required=True,type=Path);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('mode',choices=['audit','noise','development']);p.add_argument('--folder',required=True,type=Path);p.add_argument('--output',required=True,type=Path);a=p.parse_args()
     if a.output.exists():raise ValueError('Preserve receipt')
     result=globals()[a.mode](a.folder);dump(a.output,result);print(json.dumps(result,indent=2))

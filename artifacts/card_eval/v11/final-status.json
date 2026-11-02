@@ -1,0 +1,7 @@
+{
+  "status": "not_executed",
+  "reason": "Predeclared development gate failed; do not spend a large final on an inactive/degraded policy",
+  "final_seeds_unread": true,
+  "value_final_unread": true,
+  "qualified": false
+}

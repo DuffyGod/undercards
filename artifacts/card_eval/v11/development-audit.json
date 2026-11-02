@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "source_commit": "7c53c828da21f8fb192b67baa6abf0fd67916ad4",
+  "slots": 600,
+  "semantic_activation": 0.28670872308026973,
+  "gate_checks": {
+    "completion_score": false,
+    "paired_lower": false,
+    "semantic_activation": true,
+    "no_primary_unknown": true
+  },
+  "proceed_to_final": false,
+  "primary_gain_vs_v5": {
+    "mean": -0.09999999999999999,
+    "completion_range": [
+      -0.09999999999999999,
+      -0.09999999999999999
+    ],
+    "low": -0.18333333333333332,
+    "high": -0.016666666666666666,
+    "alpha": 0.05,
+    "independent_seed_clusters": 12,
+    "unresolved_seed_clusters": 0
+  },
+  "scope": "All raw development decisions, legality, checkpoint identity, semantic changes, paired metrics and fixed gate; no game replay/refit/reselection"
+}

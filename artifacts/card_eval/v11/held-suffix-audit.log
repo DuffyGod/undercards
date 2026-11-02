@@ -1,0 +1,591 @@
+{
+  "source_commit": "7c53c828da21f8fb192b67baa6abf0fd67916ad4",
+  "cohorts": {
+    "all": {
+      "roots": 87,
+      "roots_with_sign_flip": 9,
+      "complete_noise_roots": 86,
+      "unknown_noise_roots": 1,
+      "noise_seed_clusters": 48,
+      "metrics": {
+        "advantage_mse_single": {
+          "mean": 0.08715277777777779,
+          "completion_range": [
+            0.08715277777777779,
+            0.08715277777777779
+          ],
+          "low": 0.046049262152777784,
+          "high": 0.13537543402777777,
+          "alpha": 0.05,
+          "independent_seed_clusters": 48,
+          "unresolved_seed_clusters": 0
+        },
+        "advantage_mse_mean": {
+          "mean": 0.034342447916666664,
+          "completion_range": [
+            0.034342447916666664,
+            0.034342447916666664
+          ],
+          "low": 0.016709798177083332,
+          "high": 0.06156711154513889,
+          "alpha": 0.05,
+          "independent_seed_clusters": 48,
+          "unresolved_seed_clusters": 0
+        },
+        "paired_advantage_variance": {
+          "mean": 0.07683221726190476,
+          "completion_range": [
+            0.07683221726190476,
+            0.07683221726190476
+          ],
+          "low": 0.04825668092757938,
+          "high": 0.10980918278769841,
+          "alpha": 0.05,
+          "independent_seed_clusters": 48,
+          "unresolved_seed_clusters": 0
+        },
+        "unpaired_variance_reference": {
+          "mean": 0.09694630456349207,
+          "completion_range": [
+            0.09694630456349207,
+            0.09694630456349207
+          ],
+          "low": 0.05999263702876984,
+          "high": 0.14002201140873013,
+          "alpha": 0.05,
+          "independent_seed_clusters": 48,
+          "unresolved_seed_clusters": 0
+        },
+        "absolute_action_variance": {
+          "mean": 0.052489459325396816,
+          "completion_range": [
+            0.052489459325396816,
+            0.052489459325396816
+          ],
+          "low": 0.0348082527281746,
+          "high": 0.07191576760912698,
+          "alpha": 0.05,
+          "independent_seed_clusters": 48,
+          "unresolved_seed_clusters": 0
+        },
+        "held_regret_single": {
+          "mean": 0.06510416666666667,
+          "completion_range": [
+            0.06510416666666667,
+            0.06510416666666667
+          ],
+          "low": 0.028645833333333332,
+          "high": 0.109375,
+          "alpha": 0.05,
+          "independent_seed_clusters": 48,
+          "unresolved_seed_clusters": 0
+        },
+        "held_regret_mean": {
+          "mean": 0.041666666666666664,
+          "completion_range": [
+            0.041666666666666664,
+            0.041666666666666664
+          ],
+          "low": 0.0078125,
+          "high": 0.08333333333333333,
+          "alpha": 0.05,
+          "independent_seed_clusters": 48,
+          "unresolved_seed_clusters": 0
+        },
+        "mean_target_error_reduction": {
+          "mean": 0.052810329861111116,
+          "completion_range": [
+            0.052810329861111116,
+            0.052810329861111116
+          ],
+          "low": 0.023046332465277774,
+          "high": 0.08906331380208332,
+          "alpha": 0.05,
+          "independent_seed_clusters": 48,
+          "unresolved_seed_clusters": 0
+        },
+        "mean_target_held_regret_reduction": {
+          "mean": 0.0234375,
+          "completion_range": [
+            0.0234375,
+            0.0234375
+          ],
+          "low": 0.0,
+          "high": 0.052083333333333336,
+          "alpha": 0.05,
+          "independent_seed_clusters": 48,
+          "unresolved_seed_clusters": 0
+        }
+      },
+      "choices": {
+        "regret_mean": {
+          "roots": 87,
+          "raw_changed": 36,
+          "semantic_changed": 36,
+          "measured": 80,
+          "unknown_held": 7,
+          "held_suffix_gain": {
+            "mean": null,
+            "completion_range": [
+              -0.046875,
+              0.052083333333333336
+            ],
+            "low": -0.11458333333333333,
+            "high": 0.09895833333333333,
+            "alpha": 0.05,
+            "independent_seed_clusters": 48,
+            "unresolved_seed_clusters": 8
+          }
+        },
+        "regret_single": {
+          "roots": 87,
+          "raw_changed": 35,
+          "semantic_changed": 35,
+          "measured": 81,
+          "unknown_held": 6,
+          "held_suffix_gain": {
+            "mean": null,
+            "completion_range": [
+              -0.044270833333333336,
+              0.033854166666666664
+            ],
+            "low": -0.10416666666666667,
+            "high": 0.0703125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 48,
+            "unresolved_seed_clusters": 7
+          }
+        },
+        "centered_mean": {
+          "roots": 87,
+          "raw_changed": 33,
+          "semantic_changed": 33,
+          "measured": 79,
+          "unknown_held": 9,
+          "held_suffix_gain": {
+            "mean": null,
+            "completion_range": [
+              -0.057291666666666664,
+              0.036458333333333336
+            ],
+            "low": -0.1171875,
+            "high": 0.07552083333333333,
+            "alpha": 0.05,
+            "independent_seed_clusters": 48,
+            "unresolved_seed_clusters": 8
+          }
+        },
+        "centered_single": {
+          "roots": 87,
+          "raw_changed": 35,
+          "semantic_changed": 35,
+          "measured": 78,
+          "unknown_held": 10,
+          "held_suffix_gain": {
+            "mean": null,
+            "completion_range": [
+              -0.06770833333333333,
+              0.036458333333333336
+            ],
+            "low": -0.1328125,
+            "high": 0.07552083333333333,
+            "alpha": 0.05,
+            "independent_seed_clusters": 48,
+            "unresolved_seed_clusters": 9
+          }
+        }
+      }
+    },
+    "reused_retrospective": {
+      "roots": 64,
+      "roots_with_sign_flip": 5,
+      "complete_noise_roots": 63,
+      "unknown_noise_roots": 1,
+      "noise_seed_clusters": 32,
+      "metrics": {
+        "advantage_mse_single": {
+          "mean": 0.08844401041666668,
+          "completion_range": [
+            0.08844401041666668,
+            0.08844401041666668
+          ],
+          "low": 0.04169759114583333,
+          "high": 0.14583374023437498,
+          "alpha": 0.05,
+          "independent_seed_clusters": 32,
+          "unresolved_seed_clusters": 0
+        },
+        "advantage_mse_mean": {
+          "mean": 0.024365234375000003,
+          "completion_range": [
+            0.024365234375000003,
+            0.024365234375000003
+          ],
+          "low": 0.014355468750000001,
+          "high": 0.03588948567708332,
+          "alpha": 0.05,
+          "independent_seed_clusters": 32,
+          "unresolved_seed_clusters": 0
+        },
+        "paired_advantage_variance": {
+          "mean": 0.06496930803571428,
+          "completion_range": [
+            0.06496930803571428,
+            0.06496930803571428
+          ],
+          "low": 0.03477469308035714,
+          "high": 0.1030516415550595,
+          "alpha": 0.05,
+          "independent_seed_clusters": 32,
+          "unresolved_seed_clusters": 0
+        },
+        "unpaired_variance_reference": {
+          "mean": 0.08063151041666666,
+          "completion_range": [
+            0.08063151041666666,
+            0.08063151041666666
+          ],
+          "low": 0.04370710100446428,
+          "high": 0.1253080822172618,
+          "alpha": 0.05,
+          "independent_seed_clusters": 32,
+          "unresolved_seed_clusters": 0
+        },
+        "absolute_action_variance": {
+          "mean": 0.04547526041666666,
+          "completion_range": [
+            0.04547526041666666,
+            0.04547526041666666
+          ],
+          "low": 0.02729062034970238,
+          "high": 0.0674350120907738,
+          "alpha": 0.05,
+          "independent_seed_clusters": 32,
+          "unresolved_seed_clusters": 0
+        },
+        "held_regret_single": {
+          "mean": 0.07421875,
+          "completion_range": [
+            0.07421875,
+            0.07421875
+          ],
+          "low": 0.02734375,
+          "high": 0.1328125,
+          "alpha": 0.05,
+          "independent_seed_clusters": 32,
+          "unresolved_seed_clusters": 0
+        },
+        "held_regret_mean": {
+          "mean": 0.03515625,
+          "completion_range": [
+            0.03515625,
+            0.03515625
+          ],
+          "low": 0.0078125,
+          "high": 0.07421875,
+          "alpha": 0.05,
+          "independent_seed_clusters": 32,
+          "unresolved_seed_clusters": 0
+        },
+        "mean_target_error_reduction": {
+          "mean": 0.06407877604166666,
+          "completion_range": [
+            0.06407877604166666,
+            0.06407877604166666
+          ],
+          "low": 0.023388671875,
+          "high": 0.11628377278645821,
+          "alpha": 0.05,
+          "independent_seed_clusters": 32,
+          "unresolved_seed_clusters": 0
+        },
+        "mean_target_held_regret_reduction": {
+          "mean": 0.0390625,
+          "completion_range": [
+            0.0390625,
+            0.0390625
+          ],
+          "low": 0.0078125,
+          "high": 0.08203125,
+          "alpha": 0.05,
+          "independent_seed_clusters": 32,
+          "unresolved_seed_clusters": 0
+        }
+      },
+      "choices": {
+        "regret_mean": {
+          "roots": 64,
+          "raw_changed": 29,
+          "semantic_changed": 29,
+          "measured": 61,
+          "unknown_held": 3,
+          "held_suffix_gain": {
+            "mean": null,
+            "completion_range": [
+              0.015625,
+              0.0703125
+            ],
+            "low": 0.0,
+            "high": 0.125,
+            "alpha": 0.05,
+            "independent_seed_clusters": 32,
+            "unresolved_seed_clusters": 4
+          }
+        },
+        "regret_single": {
+          "roots": 64,
+          "raw_changed": 28,
+          "semantic_changed": 28,
+          "measured": 62,
+          "unknown_held": 2,
+          "held_suffix_gain": {
+            "mean": null,
+            "completion_range": [
+              0.00390625,
+              0.04296875
+            ],
+            "low": -0.0390625,
+            "high": 0.0859375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 32,
+            "unresolved_seed_clusters": 3
+          }
+        },
+        "centered_mean": {
+          "roots": 64,
+          "raw_changed": 28,
+          "semantic_changed": 28,
+          "measured": 60,
+          "unknown_held": 5,
+          "held_suffix_gain": {
+            "mean": null,
+            "completion_range": [
+              -0.015625,
+              0.046875
+            ],
+            "low": -0.0703125,
+            "high": 0.09765625,
+            "alpha": 0.05,
+            "independent_seed_clusters": 32,
+            "unresolved_seed_clusters": 4
+          }
+        },
+        "centered_single": {
+          "roots": 64,
+          "raw_changed": 29,
+          "semantic_changed": 29,
+          "measured": 58,
+          "unknown_held": 7,
+          "held_suffix_gain": {
+            "mean": null,
+            "completion_range": [
+              -0.046875,
+              0.046875
+            ],
+            "low": -0.11328125,
+            "high": 0.09765625,
+            "alpha": 0.05,
+            "independent_seed_clusters": 32,
+            "unresolved_seed_clusters": 6
+          }
+        }
+      }
+    },
+    "fresh_online_stopping_time": {
+      "roots": 23,
+      "roots_with_sign_flip": 4,
+      "complete_noise_roots": 23,
+      "noise_seed_clusters": 16,
+      "metrics": {
+        "advantage_mse_single": {
+          "mean": 0.0845703125,
+          "completion_range": [
+            0.0845703125,
+            0.0845703125
+          ],
+          "low": 0.01875,
+          "high": 0.18477050781249993,
+          "alpha": 0.05,
+          "independent_seed_clusters": 16,
+          "unresolved_seed_clusters": 0
+        },
+        "advantage_mse_mean": {
+          "mean": 0.054296875,
+          "completion_range": [
+            0.054296875,
+            0.054296875
+          ],
+          "low": 0.010146484375000002,
+          "high": 0.129296875,
+          "alpha": 0.05,
+          "independent_seed_clusters": 16,
+          "unresolved_seed_clusters": 0
+        },
+        "paired_advantage_variance": {
+          "mean": 0.1005580357142857,
+          "completion_range": [
+            0.1005580357142857,
+            0.1005580357142857
+          ],
+          "low": 0.04642857142857143,
+          "high": 0.16149832589285712,
+          "alpha": 0.05,
+          "independent_seed_clusters": 16,
+          "unresolved_seed_clusters": 0
+        },
+        "unpaired_variance_reference": {
+          "mean": 0.12957589285714283,
+          "completion_range": [
+            0.12957589285714283,
+            0.12957589285714283
+          ],
+          "low": 0.05178292410714285,
+          "high": 0.21774553571428568,
+          "alpha": 0.05,
+          "independent_seed_clusters": 16,
+          "unresolved_seed_clusters": 0
+        },
+        "absolute_action_variance": {
+          "mean": 0.06651785714285714,
+          "completion_range": [
+            0.06651785714285714,
+            0.06651785714285714
+          ],
+          "low": 0.03035435267857143,
+          "high": 0.10781529017857139,
+          "alpha": 0.05,
+          "independent_seed_clusters": 16,
+          "unresolved_seed_clusters": 0
+        },
+        "held_regret_single": {
+          "mean": 0.046875,
+          "completion_range": [
+            0.046875,
+            0.046875
+          ],
+          "low": 0.0,
+          "high": 0.1171875,
+          "alpha": 0.05,
+          "independent_seed_clusters": 16,
+          "unresolved_seed_clusters": 0
+        },
+        "held_regret_mean": {
+          "mean": 0.0546875,
+          "completion_range": [
+            0.0546875,
+            0.0546875
+          ],
+          "low": 0.0,
+          "high": 0.15625,
+          "alpha": 0.05,
+          "independent_seed_clusters": 16,
+          "unresolved_seed_clusters": 0
+        },
+        "mean_target_error_reduction": {
+          "mean": 0.030273437499999997,
+          "completion_range": [
+            0.030273437499999997,
+            0.030273437499999997
+          ],
+          "low": 0.00019531250000000017,
+          "high": 0.0669921875,
+          "alpha": 0.05,
+          "independent_seed_clusters": 16,
+          "unresolved_seed_clusters": 0
+        },
+        "mean_target_held_regret_reduction": {
+          "mean": -0.0078125,
+          "completion_range": [
+            -0.0078125,
+            -0.0078125
+          ],
+          "low": -0.046875,
+          "high": 0.0234375,
+          "alpha": 0.05,
+          "independent_seed_clusters": 16,
+          "unresolved_seed_clusters": 0
+        }
+      },
+      "choices": {
+        "regret_mean": {
+          "roots": 23,
+          "raw_changed": 7,
+          "semantic_changed": 7,
+          "measured": 19,
+          "unknown_held": 4,
+          "held_suffix_gain": {
+            "mean": null,
+            "completion_range": [
+              -0.171875,
+              0.015625
+            ],
+            "low": -0.34375,
+            "high": 0.09375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 16,
+            "unresolved_seed_clusters": 4
+          }
+        },
+        "regret_single": {
+          "roots": 23,
+          "raw_changed": 7,
+          "semantic_changed": 7,
+          "measured": 19,
+          "unknown_held": 4,
+          "held_suffix_gain": {
+            "mean": null,
+            "completion_range": [
+              -0.140625,
+              0.015625
+            ],
+            "low": -0.296875,
+            "high": 0.09375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 16,
+            "unresolved_seed_clusters": 4
+          }
+        },
+        "centered_mean": {
+          "roots": 23,
+          "raw_changed": 5,
+          "semantic_changed": 5,
+          "measured": 19,
+          "unknown_held": 4,
+          "held_suffix_gain": {
+            "mean": null,
+            "completion_range": [
+              -0.140625,
+              0.015625
+            ],
+            "low": -0.296875,
+            "high": 0.09375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 16,
+            "unresolved_seed_clusters": 4
+          }
+        },
+        "centered_single": {
+          "roots": 23,
+          "raw_changed": 6,
+          "semantic_changed": 6,
+          "measured": 20,
+          "unknown_held": 3,
+          "held_suffix_gain": {
+            "mean": null,
+            "completion_range": [
+              -0.109375,
+              0.015625
+            ],
+            "low": -0.25,
+            "high": 0.09375,
+            "alpha": 0.05,
+            "independent_seed_clusters": 16,
+            "unresolved_seed_clusters": 3
+          }
+        }
+      }
+    }
+  },
+  "parameters_changed": false,
+  "scope": "Suffix5..8 were not used for fitting/epoch selection. Same diagnostic roots, not new independent worlds or a global final. Q target still holds opponent latent state fixed; unknown choices/outcomes retain0/1 bounds."
+}
