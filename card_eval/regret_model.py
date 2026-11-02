@@ -17,10 +17,11 @@ VERSION='suffix-regret-policy-1'
 class RegretNetwork(ActionValueNetwork):
     feature_version=VERSION
 
-    def __init__(self,base=None,objective='regret',seed=2026103111,hidden=32,baseline_weight=.05):
+    def __init__(self,base=None,objective='regret',seed=2026103111,hidden=32,baseline_weight=.05,
+                 target_description='V5 continuation after an own-future-order intervention'):
         if objective not in ('regret','centered'):raise ValueError('Unknown policy objective')
         super().__init__(base,'centered',seed,hidden,margin=0.)
-        self.objective=objective;self.baseline_weight=float(baseline_weight)
+        self.objective=objective;self.baseline_weight=float(baseline_weight);self.target_description=str(target_description)
 
     @property
     def actor_fingerprint(self):
@@ -33,7 +34,7 @@ class RegretNetwork(ActionValueNetwork):
 
     def forward(self,state,actions):
         z=self.action_scores(state,actions);chosen=int(z.argmax());prob=np.zeros(len(z));prob[chosen]=1.
-        return prob,self.predict_value(state),dict(chosen=chosen,target='V5 continuation after an own-future-order intervention',scores_are_calibrated_q=False)
+        return prob,self.predict_value(state),dict(chosen=chosen,target=self.target_description,scores_are_calibrated_q=False)
 
     def loss_grad(self,x,y,groups,anchors,group_weights,l2=.0001):
         y=np.asarray(y,float);groups=np.asarray(groups,int)
@@ -71,7 +72,7 @@ class RegretNetwork(ActionValueNetwork):
         if path.exists() or path.suffix!='.npz':raise ValueError('Preserve policy checkpoint')
         np.savez_compressed(path,**self.p,critic=self.critic,base_actor=self.base.actor,base_critic=self.base.critic,base_advantage=self.base.advantage,
             metadata=json.dumps(dict(metadata,model_kind='suffix_regret',feature_version=VERSION,objective=self.objective,
-                hidden=self.hidden,baseline_weight=self.baseline_weight,base_margin=self.base.margin,
+                hidden=self.hidden,baseline_weight=self.baseline_weight,base_margin=self.base.margin,target_description=self.target_description,
                 actor_fingerprint=self.actor_fingerprint,fingerprint=self.fingerprint,parameters=self.parameters)))
 
     @classmethod
@@ -80,7 +81,8 @@ class RegretNetwork(ActionValueNetwork):
             meta=json.loads(str(data['metadata']))
             if meta['feature_version']!=VERSION:raise ValueError('Incompatible policy schema')
             base=AdvantageNetwork(data['base_actor'].copy(),data['base_critic'].copy(),data['base_advantage'].copy(),meta['base_margin'])
-            net=cls(base,meta['objective'],hidden=meta['hidden'],baseline_weight=meta['baseline_weight'])
+            net=cls(base,meta['objective'],hidden=meta['hidden'],baseline_weight=meta['baseline_weight'],
+                target_description=meta.get('target_description','V5 continuation after an own-future-order intervention'))
             for name in net.p:
                 if data[name].shape!=net.p[name].shape:raise ValueError('Policy parameter shape mismatch')
                 net.p[name]=data[name].copy()
