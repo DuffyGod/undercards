@@ -1,0 +1,274 @@
+{
+  "source_commit": "00cc8ef0389b1112e48efe029d5c8d81a1531238",
+  "primary": "regret_mean",
+  "arms": {
+    "regret_mean": {
+      "selected_epoch": 96,
+      "curve": [
+        {
+          "epoch": 16,
+          "train": {
+            "sampled_regret": 0.048828125,
+            "full_choice_changes": 145,
+            "full_choices_measured": 296,
+            "forks": 341
+          },
+          "diagnostic": {
+            "sampled_regret": 0.06510416666666667,
+            "full_choice_changes": 43,
+            "full_choices_measured": 80,
+            "forks": 87
+          }
+        },
+        {
+          "epoch": 32,
+          "train": {
+            "sampled_regret": 0.046875,
+            "full_choice_changes": 123,
+            "full_choices_measured": 303,
+            "forks": 341
+          },
+          "diagnostic": {
+            "sampled_regret": 0.059895833333333336,
+            "full_choice_changes": 37,
+            "full_choices_measured": 80,
+            "forks": 87
+          }
+        },
+        {
+          "epoch": 64,
+          "train": {
+            "sampled_regret": 0.043619791666666664,
+            "full_choice_changes": 113,
+            "full_choices_measured": 307,
+            "forks": 341
+          },
+          "diagnostic": {
+            "sampled_regret": 0.05989583333333333,
+            "full_choice_changes": 38,
+            "full_choices_measured": 79,
+            "forks": 87
+          }
+        },
+        {
+          "epoch": 96,
+          "train": {
+            "sampled_regret": 0.04427083333333333,
+            "full_choice_changes": 97,
+            "full_choices_measured": 317,
+            "forks": 341
+          },
+          "diagnostic": {
+            "sampled_regret": 0.0546875,
+            "full_choice_changes": 36,
+            "full_choices_measured": 80,
+            "forks": 87
+          }
+        }
+      ],
+      "actor_fingerprint": "c1a318e3e910a48376e50442dd7e66c470f8d9da6e88c0ce183e4959a3a39a37",
+      "parameters": 17825
+    },
+    "regret_single": {
+      "selected_epoch": 96,
+      "curve": [
+        {
+          "epoch": 16,
+          "train": {
+            "sampled_regret": 0.057291666666666664,
+            "full_choice_changes": 152,
+            "full_choices_measured": 295,
+            "forks": 341
+          },
+          "diagnostic": {
+            "sampled_regret": 0.06770833333333333,
+            "full_choice_changes": 43,
+            "full_choices_measured": 78,
+            "forks": 87
+          }
+        },
+        {
+          "epoch": 32,
+          "train": {
+            "sampled_regret": 0.052083333333333336,
+            "full_choice_changes": 134,
+            "full_choices_measured": 305,
+            "forks": 341
+          },
+          "diagnostic": {
+            "sampled_regret": 0.06249999999999999,
+            "full_choice_changes": 38,
+            "full_choices_measured": 81,
+            "forks": 87
+          }
+        },
+        {
+          "epoch": 64,
+          "train": {
+            "sampled_regret": 0.048828125,
+            "full_choice_changes": 126,
+            "full_choices_measured": 305,
+            "forks": 341
+          },
+          "diagnostic": {
+            "sampled_regret": 0.06249999999999999,
+            "full_choice_changes": 37,
+            "full_choices_measured": 80,
+            "forks": 87
+          }
+        },
+        {
+          "epoch": 96,
+          "train": {
+            "sampled_regret": 0.042317708333333336,
+            "full_choice_changes": 109,
+            "full_choices_measured": 306,
+            "forks": 341
+          },
+          "diagnostic": {
+            "sampled_regret": 0.05989583333333333,
+            "full_choice_changes": 35,
+            "full_choices_measured": 81,
+            "forks": 87
+          }
+        }
+      ],
+      "actor_fingerprint": "c2593c0b23188b0a74595feff978efbb3605281eb470a3546744a915e67982f6",
+      "parameters": 17825
+    },
+    "centered_mean": {
+      "selected_epoch": 96,
+      "curve": [
+        {
+          "epoch": 16,
+          "train": {
+            "sampled_regret": 0.050130208333333336,
+            "full_choice_changes": 123,
+            "full_choices_measured": 304,
+            "forks": 341
+          },
+          "diagnostic": {
+            "sampled_regret": 0.07552083333333334,
+            "full_choice_changes": 39,
+            "full_choices_measured": 75,
+            "forks": 87
+          }
+        },
+        {
+          "epoch": 32,
+          "train": {
+            "sampled_regret": 0.05078125,
+            "full_choice_changes": 108,
+            "full_choices_measured": 312,
+            "forks": 341
+          },
+          "diagnostic": {
+            "sampled_regret": 0.06770833333333333,
+            "full_choice_changes": 34,
+            "full_choices_measured": 79,
+            "forks": 87
+          }
+        },
+        {
+          "epoch": 64,
+          "train": {
+            "sampled_regret": 0.048177083333333336,
+            "full_choice_changes": 89,
+            "full_choices_measured": 319,
+            "forks": 341
+          },
+          "diagnostic": {
+            "sampled_regret": 0.06770833333333333,
+            "full_choice_changes": 32,
+            "full_choices_measured": 79,
+            "forks": 87
+          }
+        },
+        {
+          "epoch": 96,
+          "train": {
+            "sampled_regret": 0.048177083333333336,
+            "full_choice_changes": 81,
+            "full_choices_measured": 318,
+            "forks": 341
+          },
+          "diagnostic": {
+            "sampled_regret": 0.05989583333333333,
+            "full_choice_changes": 33,
+            "full_choices_measured": 79,
+            "forks": 87
+          }
+        }
+      ],
+      "actor_fingerprint": "53f293fe3b666a34fa5c401a84ed73e421296968a559b23ffcfdb9bf85f34cbf",
+      "parameters": 17825
+    },
+    "centered_single": {
+      "selected_epoch": 96,
+      "curve": [
+        {
+          "epoch": 16,
+          "train": {
+            "sampled_regret": 0.051432291666666664,
+            "full_choice_changes": 129,
+            "full_choices_measured": 307,
+            "forks": 341
+          },
+          "diagnostic": {
+            "sampled_regret": 0.0625,
+            "full_choice_changes": 41,
+            "full_choices_measured": 77,
+            "forks": 87
+          }
+        },
+        {
+          "epoch": 32,
+          "train": {
+            "sampled_regret": 0.05078125,
+            "full_choice_changes": 113,
+            "full_choices_measured": 308,
+            "forks": 341
+          },
+          "diagnostic": {
+            "sampled_regret": 0.0625,
+            "full_choice_changes": 36,
+            "full_choices_measured": 78,
+            "forks": 87
+          }
+        },
+        {
+          "epoch": 64,
+          "train": {
+            "sampled_regret": 0.04817708333333333,
+            "full_choice_changes": 102,
+            "full_choices_measured": 315,
+            "forks": 341
+          },
+          "diagnostic": {
+            "sampled_regret": 0.06770833333333333,
+            "full_choice_changes": 31,
+            "full_choices_measured": 79,
+            "forks": 87
+          }
+        },
+        {
+          "epoch": 96,
+          "train": {
+            "sampled_regret": 0.048828125,
+            "full_choice_changes": 89,
+            "full_choices_measured": 318,
+            "forks": 341
+          },
+          "diagnostic": {
+            "sampled_regret": 0.0546875,
+            "full_choice_changes": 35,
+            "full_choices_measured": 78,
+            "forks": 87
+          }
+        }
+      ],
+      "actor_fingerprint": "f00b64719a8ae82213ed6d898ff8f18810df1856143ebef40cd77270c58c4e04",
+      "parameters": 17825
+    }
+  }
+}

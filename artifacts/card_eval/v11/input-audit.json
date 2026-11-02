@@ -1,0 +1,115 @@
+{
+  "status": "passed",
+  "source_commit": "00cc8ef0389b1112e48efe029d5c8d81a1531238",
+  "stages": {
+    "train": {
+      "reused_retrospective": 256,
+      "slots": 7148,
+      "unknown": 0,
+      "reused_identical": 0,
+      "fresh_online_stopping_time": 85,
+      "roots": 341,
+      "original_openings": 192,
+      "fitted_groups": 341,
+      "fresh_joint": [
+        {
+          "opponent": "board",
+          "seat": 0,
+          "inputs": 8
+        },
+        {
+          "opponent": "board",
+          "seat": 1,
+          "inputs": 8
+        },
+        {
+          "opponent": "delayed",
+          "seat": 0,
+          "inputs": 8
+        },
+        {
+          "opponent": "delayed",
+          "seat": 1,
+          "inputs": 8
+        },
+        {
+          "opponent": "guard",
+          "seat": 0,
+          "inputs": 8
+        },
+        {
+          "opponent": "guard",
+          "seat": 1,
+          "inputs": 8
+        },
+        {
+          "opponent": "race",
+          "seat": 0,
+          "inputs": 8
+        },
+        {
+          "opponent": "race",
+          "seat": 1,
+          "inputs": 8
+        }
+      ]
+    },
+    "diagnostic": {
+      "reused_retrospective": 64,
+      "slots": 3520,
+      "unknown": 7,
+      "reused_identical": 0,
+      "fresh_online_stopping_time": 23,
+      "roots": 87,
+      "original_openings": 48,
+      "fitted_groups": 87,
+      "fresh_joint": [
+        {
+          "opponent": "board",
+          "seat": 0,
+          "inputs": 2
+        },
+        {
+          "opponent": "board",
+          "seat": 1,
+          "inputs": 2
+        },
+        {
+          "opponent": "delayed",
+          "seat": 0,
+          "inputs": 2
+        },
+        {
+          "opponent": "delayed",
+          "seat": 1,
+          "inputs": 2
+        },
+        {
+          "opponent": "guard",
+          "seat": 0,
+          "inputs": 2
+        },
+        {
+          "opponent": "guard",
+          "seat": 1,
+          "inputs": 2
+        },
+        {
+          "opponent": "race",
+          "seat": 0,
+          "inputs": 2
+        },
+        {
+          "opponent": "race",
+          "seat": 1,
+          "inputs": 2
+        }
+      ]
+    }
+  },
+  "input_hashes": {
+    "artifacts/card_eval/v11/train-targets.jsonl.gz": "fd17fa771f6de8b804e4d3fe19e0e0e78f53c213b98f7674e392bd0434481e0c",
+    "artifacts/card_eval/v11/diagnostic-targets.jsonl.gz": "e0719e6cdf3774112b0e77e34f56fdd887debb2fbfa0fe155c94639f97b96d96"
+  },
+  "scope": "All continuation keys, masks, exact encoded inputs, pairing, information constraints and opening weights; no game replay or refit"
+}

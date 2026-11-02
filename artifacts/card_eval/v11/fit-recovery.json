@@ -1,0 +1,32 @@
+{
+  "status": "recovered_complete",
+  "fit_replayed": false,
+  "models": {
+    "regret_mean": {
+      "actor_fingerprint": "c1a318e3e910a48376e50442dd7e66c470f8d9da6e88c0ce183e4959a3a39a37",
+      "model_fingerprint": "8fbbd0076f758cf43e57fe0e1faa2ce8efa1a89d13d2c6c6a672c114b602617d",
+      "sha256": "48df7537746aeebb6595ce72c0db0f2f339c3d45bb4bb11e74fb5470bb493aaa",
+      "selected_epoch": 96
+    },
+    "regret_single": {
+      "actor_fingerprint": "c2593c0b23188b0a74595feff978efbb3605281eb470a3546744a915e67982f6",
+      "model_fingerprint": "ee2c6921278f49307a9ca9c02b59ca257a7ddde2885306f280e7bec59a7c78ce",
+      "sha256": "8fe4c63f22d08244fdcfcf6a13542b9abedf29bcfd2656ed34630dbfe8cc6298",
+      "selected_epoch": 96
+    },
+    "centered_mean": {
+      "actor_fingerprint": "53f293fe3b666a34fa5c401a84ed73e421296968a559b23ffcfdb9bf85f34cbf",
+      "model_fingerprint": "3ef2ed1807d455f97922264096d4e263c489f13bf70f111e69040f88f3779476",
+      "sha256": "61be8e6f988ce2de23b21d4ddfd76d8e9d0a30f6d92eaed1628de8738944e13e",
+      "selected_epoch": 96
+    },
+    "centered_single": {
+      "actor_fingerprint": "f00b64719a8ae82213ed6d898ff8f18810df1856143ebef40cd77270c58c4e04",
+      "model_fingerprint": "7c58ef59900d18167bc0d4f4054227a08fc39544c33c616ce1da37189908d207",
+      "sha256": "4eeb115bbe33916f9b145b7d87e57636355e8c6e3b72e3680e0bb6787f1ae78e",
+      "selected_epoch": 96
+    }
+  },
+  "development_not_started": true,
+  "final_not_started": true
+}
