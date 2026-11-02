@@ -1,4 +1,4 @@
-"""Verify a V11 checkpoint with a standalone source copy outside the checkout.
+"""Verify an experimental checkpoint with standalone source outside checkout.
 
 This is an application contract, not a new release or policy-quality trial.
 The rejected prototype remains experimental and has no own-policy value fit.
@@ -10,12 +10,12 @@ from .network import Network
 from .training import dump,commit
 
 
-def verify(folder,output):
+def verify(folder,output,checkpoint_name='regret_mean-selected.npz',seed_start=3491000):
     folder=Path(folder).resolve();output=Path(output).resolve()
     if output.exists():raise ValueError('Preserve interface verification')
-    output.mkdir(parents=True);checkpoint=folder/'regret_mean-selected.npz';net,meta=Network.load(checkpoint)
+    output.mkdir(parents=True);checkpoint=folder/checkpoint_name;net,meta=Network.load(checkpoint)
     if meta.get('value_unfitted') is not True:raise ValueError('This contract tests an explicitly unfitted value checkpoint')
-    with tempfile.TemporaryDirectory(prefix='undercards-v11-source-') as temporary:
+    with tempfile.TemporaryDirectory(prefix='undercards-prototype-source-') as temporary:
         root=Path(temporary);app=root/'app';app.mkdir();outside=root/'outside';outside.mkdir()
         shutil.copytree(Path(__file__).resolve().parent,app/'card_eval',ignore=shutil.ignore_patterns('__pycache__','*.pyc'))
         model=root/'prototype.npz';shutil.copy2(checkpoint,model);shutil.copy2(folder/'validation.json',root/'validation.json')
@@ -26,7 +26,7 @@ def verify(folder,output):
             return r
         origin=subprocess.run([sys.executable,'-c','import card_eval;print(card_eval.__file__)'],cwd=outside,env=env,text=True,capture_output=True,check=True).stdout.strip()
         if not Path(origin).is_relative_to(app):raise ValueError('Imported checkout instead of standalone source')
-        request=default_request(['Bench'],samples=2);request.update(seed_start=3491000,opponents=request['opponents'][:1],policies=['learned'],decision_seconds=.25)
+        request=default_request(['Bench'],samples=2);request.update(seed_start=seed_start,opponents=request['opponents'][:1],policies=['learned'],decision_seconds=.25)
         input_path=output/'request.json';dump(input_path,request)
         common=['evaluate','--input',str(input_path),'--checkpoint',str(model)]
         command(common+['--output',str(output/'blocked')],expected=2)
@@ -51,5 +51,6 @@ def verify(folder,output):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--folder',type=Path,required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args()
-    print(json.dumps(verify(a.folder,a.output),indent=2))
+    p=argparse.ArgumentParser();p.add_argument('--folder',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
+    p.add_argument('--checkpoint-name',default='regret_mean-selected.npz');p.add_argument('--seed-start',type=int,default=3491000);a=p.parse_args()
+    print(json.dumps(verify(a.folder,a.output,a.checkpoint_name,a.seed_start),indent=2))

@@ -1,11 +1,13 @@
 {
-  "source_commit": "d598726e7152368887502c1dc9ef1d01dfe72488",
+  "source_commit": "4b932d1c949f53e90daa14aa5654e50cd87d9a6e",
   "status": "passed",
   "checked": {
     "cells": 2064,
     "roots": 516,
     "openings": 280,
-    "fit_candidate_metrics": 4
+    "fit_candidate_metrics": 4,
+    "development_actor_decisions": 23316,
+    "development_slots": 600
   },
   "stages": {
     "source": {

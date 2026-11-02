@@ -17,11 +17,13 @@ import time
 import numpy as np
 from .action_value import encode
 from .continuation_gate import ContinuationGate, MODES
-from .counterfactual_research import PrefixController, PrefixAgent, sample_inputs, run
+from .counterfactual_research import PrefixController, PrefixAgent, sample_inputs, run, value_data
 from .memory_research import opponent
 from .network import Network
 from .policies import LearnedPolicy
-from .relational_research import small_result
+from .relational_research import small_result, value_metrics, paired_value_gain, phase_metrics
+from .relational_model import RelationalNetwork
+from .action_research import suppress_sparse
 from .statistics import interval
 from .suffix_research import cases, BehaviorRecorder
 from .training import dump, commit, decode
@@ -339,9 +341,102 @@ def development(folder):
              own_value_fitted=False))
 
 
+def require_gate(folder):
+    if not json.loads((folder / 'development.json').read_text())['proceed_to_final']:
+        raise ValueError('Development gate failed; final must remain unread')
+
+
+def value(folder):
+    require_gate(folder)
+    if (folder / 'value.json').exists() or list(folder.glob('value-*.jsonl.gz')):
+        raise ValueError('Preserve own-policy value evidence')
+    d = design(folder); net = Network.load(folder / 'robust-selected.npz')[0]
+    train = value_data(folder, net, 'train', d['value_train_seeds']); x = []; y = []; w = []
+    for e in train:
+        if not e['terminal']:
+            continue
+        x.extend(e['states']); y.extend([int(e['won'])] * len(e['states'])); w.extend([1 / len(e['states'])] * len(e['states']))
+    before = net.actor_fingerprint; fitted = net.fit_value(x, y, w, l2=.01, iterations=160)
+    assert net.actor_fingerprint == before
+    prior = float(np.mean([int(e['won']) for e in train if e['terminal']]))
+    net.save(folder / 'primary-value.npz', dict(source_commit=commit(), validation=dict(qualified=False),
+        value_unfitted=False, critic_actor_fingerprint=before,
+        target='Natural full-game continuation of frozen robust router; sampled semantic decks and race/board/guard mixture'))
+    simple = RelationalNetwork(); states = np.asarray(x)
+    reduced = np.c_[np.ones(len(states)), states[:, 1] - states[:, 2], states[:, 26] - states[:, 39],
+                    states[:, 27] - states[:, 40], states[:, 8] - states[:, 9]]
+    simple_fit = simple.fit_value(reduced, y, w, l2=.01, iterations=160)
+    beta = simple.critic.copy(); simple.critic = np.zeros(74); simple.critic[0] = beta[0]
+    for c, (pos, neg) in zip(beta[1:], ((1, 2), (26, 39), (27, 40), (8, 9))):
+        simple.critic[pos] = c; simple.critic[neg] = -c
+    simple.save(folder / 'value-simple.npz', dict(validation=dict(qualified=False), critic_actor_fingerprint=before))
+    dev = value_data(folder, net, 'dev', d['value_dev_seeds'])
+    dump(folder / 'value.json', dict(source_commit=commit(), fit=fitted, simple_fit=simple_fit,
+        actor_unchanged=True, actor_fingerprint=before, train_prior=prior, train_openings=len(train), train_states=len(x),
+        unknown_train=sum(not e['terminal'] for e in train), development=value_metrics(net, dev, prior),
+        simple_development=value_metrics(simple, dev, prior), gain_vs_simple=paired_value_gain(net, simple, dev),
+        no_critic_selection=True))
+
+
+def final(folder):
+    require_gate(folder)
+    if (folder / 'final-games.jsonl.gz').exists() or list(folder.glob('value-final-*.jsonl.gz')):
+        raise ValueError('Final runs once; preserve partial output')
+    d = design(folder); primary, meta = Network.load(folder / 'primary-value.npz')
+    assert primary.actor_fingerprint == Network.load(folder / 'robust-selected.npz')[0].actor_fingerprint
+    assert meta['value_unfitted'] is False and meta['critic_actor_fingerprint'] == primary.actor_fingerprint
+    models = dict(robust=primary, v5=Network.load(BASE)[0], v11=Network.load(PROPOSER)[0])
+    inputs = cases(True)
+    dump(folder / 'final-plan.json', dict(source_commit=commit(), primary_actor=primary.actor_fingerprint,
+        models={n: m.fingerprint for n, m in models.items()}, seeds=d['final_seeds'],
+        cases=[dict(group=g, decks=[[asdict(s) for s in ds] for ds in (a, b)], souls=souls, opponent=style)
+               for g, a, b, souls, style in inputs], no_final_selection=True, acceptance=d['acceptance']))
+    groups = []; failures = []; started = time.monotonic()
+    with gzip.open(folder / 'final-games.jsonl.gz', 'wt') as sink:
+        for group, a, b, souls, style in inputs:
+            scores = {n: [] for n in models}; timings = defaultdict(list)
+            for seed in d['final_seeds']:
+                seats = {n: [] for n in models}
+                for seat in (0, 1):
+                    for name, model in models.items():
+                        enemy = LearnedPolicy(models['v5']) if style == 'learned' else opponent(style)
+                        r = run((a, b), seed, (LearnedPolicy(model), enemy), seat, souls)
+                        sink.write(json.dumps(dict(group=group, seed=seed, seat=seat, policy=name, result=small_result(r))) + '\n')
+                        seats[name].append(None if r['unfinished'] else int(r['won']))
+                        timings[name].extend(r['decision_seconds'][0])
+                        if r['unfinished']:
+                            failures.append(dict(group=group, seed=seed, seat=seat, policy=name, error=r.get('error')))
+                for name in models:
+                    scores[name].append((np.mean([0 if v is None else v for v in seats[name]]),
+                                         np.mean([1 if v is None else v for v in seats[name]])))
+            lo, hi = np.asarray(scores['robust']).T; comparisons = []
+            for name, values in scores.items():
+                a0, b0 = np.asarray(values).T
+                comparisons.append(dict(policy=name, win=interval(a0, b0), primary_gain=interval(lo - b0, hi - a0),
+                    family_gain=interval(lo - b0, hi - a0, alpha=.05 / (2 * len(inputs)))))
+            groups.append(dict(group=group, policies=comparisons, timings={n: dict(decisions=len(t),
+                p95=float(np.quantile(t, .95)) if t else None, maximum=max(t) if t else None) for n, t in timings.items()}))
+            dump(folder / 'final-progress.json', dict(groups=groups, failures=failures))
+            print(json.dumps(dict(group=group, wins={c['policy']: c['win']['completion_range'] for c in comparisons})), flush=True)
+    # This reports all frozen cases; no post-result model/mode choice.
+    qualified = (not any(f['policy'] == 'robust' for f in failures) and
+                 all(c['primary_gain']['low'] > 0 for g in groups for c in g['policies'] if c['policy'] != 'robust'))
+    val = value_data(folder, primary, 'final', d['value_final_seeds'])
+    prior = json.loads((folder / 'value.json').read_text())['train_prior']; simple = Network.load(folder / 'value-simple.npz')[0]
+    dump(folder / 'final.json', dict(source_commit=commit(), qualified=qualified, groups=groups, failures=failures,
+        no_final_reselection=True, elapsed_seconds=time.monotonic() - started,
+        value_final=value_metrics(primary, val, prior), value_simple=value_metrics(simple, val, prior),
+        value_previous_v5=value_metrics(models['v5'], val, prior), value_gain_vs_simple=paired_value_gain(primary, simple, val),
+        value_gain_vs_v5=paired_value_gain(primary, models['v5'], val), phases=suppress_sparse(phase_metrics(primary, val, prior))))
+    dump(folder / 'validation.json', dict(qualified=qualified, status='qualified' if qualified else 'not_qualified',
+        frozen_policy=primary.fingerprint, default_model_replaced=False, source='final.json'))
+    dump(folder / 'final-status.json', dict(status='complete', qualified=qualified, final_seeds_unread=False,
+        value_final_unread=False, own_value_fitted=True, no_reselection=True))
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('mode', choices=['prepare', 'collect', 'fit', 'development'])
+    parser.add_argument('mode', choices=['prepare', 'collect', 'fit', 'development', 'value', 'final'])
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--stage', choices=['source', 'train', 'diagnostic'])
     args = parser.parse_args()

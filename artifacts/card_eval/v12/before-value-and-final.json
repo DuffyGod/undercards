@@ -1,0 +1,32 @@
+{
+  "source_commit": "4b932d1c949f53e90daa14aa5654e50cd87d9a6e",
+  "frozen_actor": "1888ee3366aff3bfa67fff6038c8a71e9186bb229a30249512cbbf14567ed063",
+  "selected_checkpoint_sha256": "caf43de1acdca2b5312c525a3a8f9670ae65d366b9742eacb34ad7820a2212a1",
+  "development_gate_passed": true,
+  "primary": "robust",
+  "critic_plan": {
+    "features": 74,
+    "loss": "episode-weighted binary logistic terminal outcome",
+    "l2": 0.01,
+    "iterations": 160,
+    "train": 192,
+    "diagnostic": 48,
+    "final": 96,
+    "hyperparameter_selection": false,
+    "baselines": [
+      "same-data5parameter",
+      "oldV5"
+    ]
+  },
+  "final_policy_seeds": "3830000..3830031",
+  "final_value_seeds": "3850000..3850095",
+  "final_cases": "Frozen suffix_research.cases(True), expanded into final-plan before games",
+  "final_policies": [
+    "robust",
+    "v5",
+    "v11"
+  ],
+  "pointwise_acceptance": "positive paired95% lower againstV5 andV11 in every context, no primary unknown; familywise intervals also reported",
+  "no_final_tuning_or_reselection": true,
+  "default_model_replaced": false
+}
