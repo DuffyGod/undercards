@@ -1,0 +1,62 @@
+{
+  "counts": {
+    "openings": 128,
+    "unfinished_rollins": 1,
+    "roots": 226,
+    "new_branches": 678,
+    "reused_cells": 226,
+    "unknown_cells": 1,
+    "both_helpful": 1,
+    "incomplete_roots": 1,
+    "no_effect": 196,
+    "base_only_harmful": 9,
+    "both_harmful": 2,
+    "own_only_helpful": 9,
+    "own_only_harmful": 2,
+    "base_only_helpful": 5,
+    "target_reversal": 1
+  },
+  "absent_or_duplicate_roots": {
+    "first": 0,
+    "late": 30
+  },
+  "base_continuation_gain": {
+    "mean": -0.01953125,
+    "completion_range": [
+      -0.01953125,
+      -0.01953125
+    ],
+    "low": -0.05859375,
+    "high": 0.01953125,
+    "alpha": 0.05,
+    "independent_seed_clusters": 128,
+    "unresolved_seed_clusters": 0
+  },
+  "own_continuation_gain": {
+    "mean": null,
+    "completion_range": [
+      0.0078125,
+      0.015625
+    ],
+    "low": -0.03515625,
+    "high": 0.0546875,
+    "alpha": 0.05,
+    "independent_seed_clusters": 128,
+    "unresolved_seed_clusters": 1
+  },
+  "interaction": {
+    "mean": null,
+    "completion_range": [
+      0.02734375,
+      0.03515625
+    ],
+    "low": -0.01953125,
+    "high": 0.078125,
+    "alpha": 0.05,
+    "independent_seed_clusters": 128,
+    "unresolved_seed_clusters": 1
+  },
+  "inference": "Original-seed clusters, equal observed-root weight within each seed. Root-conditional realized counterfactuals; not full-game policy effect or posterior expected Q. Missing-root openings excluded only from root-conditional estimand; counts retained.",
+  "source_commit": "ca149f80e0d38ad1164d3170d206684a9250627c",
+  "elapsed_seconds": 88.26995037400047
+}
