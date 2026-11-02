@@ -1,0 +1,34 @@
+{
+  "status": "complete",
+  "program_version": "0.4.1",
+  "frozen_policy": "a1da03301deb8e67d6066832cbc48b7a172585c70c031edc081f480dae2cce1b",
+  "base_model": "75119c76be234cbdca8e42a9bbe773fab10bd103d9ea1b74bccb8c9110c91c74",
+  "planner": {
+    "version": "public-own-turn-proof-first-3",
+    "mode": "value",
+    "margin": 0.1,
+    "nodes": 48,
+    "depth": 3,
+    "width": 4,
+    "seconds": 0.12
+  },
+  "decision_budget_seconds": 0.25,
+  "model_name": "fitted",
+  "policy_validation": {
+    "qualified": false,
+    "status": "not_qualified",
+    "frozen_policy": "a1da03301deb8e67d6066832cbc48b7a172585c70c031edc081f480dae2cce1b",
+    "base_model": "75119c76be234cbdca8e42a9bbe773fab10bd103d9ea1b74bccb8c9110c91c74",
+    "reason": "Public planner requires separate qualification; checkpoint-only certificate does not apply."
+  },
+  "completed_games": 8,
+  "rejected_games": 3,
+  "requested_samples": 2,
+  "seed_start": 3891100,
+  "information": "Own initial deck multiset and actually public plays are available. Opponent unseen hand/composition/order are not observations.",
+  "rules": {
+    "silence": "retain",
+    "current_server_certified": false
+  },
+  "elapsed_seconds": 11.677260903001297
+}

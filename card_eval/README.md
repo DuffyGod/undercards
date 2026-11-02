@@ -1,5 +1,7 @@
 # 可直接使用的卡牌替换评估程序
 
+最新为[V12双续局路由器及自身价值研究交付](../artifacts/card_eval/v12/START_HERE.md)。预留最终1536槽位全终局，八背景平均64.45%对V5 66.60%、V11 55.27%，qualified=false；自身V留出误差也弱于旧V5，默认模型不升级。直接actor接口8/8终局，可选value搜索预算检查3/8超时、未通过。源码、独立NPZ、原始记录/未知及审计均保留；不是新版完整发行。
+
 当前分支另含[开发被拒绝的V11研究扩展](../artifacts/card_eval/v11/START_HERE.md)，需源码安装并显式--checkpoint/--experimental-model，不属于已发布0.4.1 wheel。未拟合当前actor自身V的检查点会在value搜索前返回空评分与原因；不能把继承的旧critic当成新策略价值。V11没有升级默认模型或发布新完整发行。
 
 0.4.1包含命名训练模型、规则快照、公开搜索、完整25张牌表输入和示例。普通比较默认采用声明参考策略；实验默认仍paired-v5，另可选择action-v10、memory-v6、afterstate-v7、entity-v9或保留的legacy-v3。**通用可靠评价尚未完成；未知完整效果拒绝评分。**

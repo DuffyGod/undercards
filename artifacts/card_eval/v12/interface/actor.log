@@ -1,0 +1,4 @@
+Bench：学习模型未达标，仅作实验诊断
+报告：/workspace/undercards/artifacts/card_eval/v12/interface/actor/report.md
+{"opponent": "pressure", "policy": "learned", "card": "Rock Pet", "completed_games": 4}
+{"opponent": "pressure", "policy": "learned", "card": "Bench", "completed_games": 8}

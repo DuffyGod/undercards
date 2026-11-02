@@ -1,0 +1,72 @@
+{
+  "status": "failed_fitted_value_contract",
+  "source_commit": "7484cb833c0de34ff5c4bf4b275a2a6b60eca91d",
+  "reconstructed_from_saved_outputs": true,
+  "no_game_replays": true,
+  "initial_exception": "ValueError: Fitted value planner standalone contract failed",
+  "isolation": "Runner imported a temporary standalone source copy, asserted its module origin outside checkout, then executed independent NPZ. Exact temporary pathname was not retained when failure raised.",
+  "actor_contract": {
+    "slots": 8,
+    "unresolved": 0,
+    "strict_budget_passed": true,
+    "frozen_policy": "260e24b6e847a57ce14c69b8d2fc1da00c7a63366054df9bc2fd5499c83e49af"
+  },
+  "fitted_value_contract": {
+    "slots": 8,
+    "unresolved": 3,
+    "strict_budget_passed": false,
+    "base_model": "75119c76be234cbdca8e42a9bbe773fab10bd103d9ea1b74bccb8c9110c91c74",
+    "planner_fingerprint": "a1da03301deb8e67d6066832cbc48b7a172585c70c031edc081f480dae2cce1b",
+    "failures": [
+      {
+        "won": null,
+        "lost": null,
+        "unfinished": true,
+        "error": "Decision exceeded the common wall-time budget: actor=0, policy=shared_policy_public_proof_first, seconds=0.454562",
+        "failure_seconds": 0.454562459999579,
+        "opponent": "pressure",
+        "policy": "learned",
+        "card": "Rock Pet",
+        "seed": 3891100,
+        "seat": 0,
+        "reference": true
+      },
+      {
+        "won": null,
+        "lost": null,
+        "unfinished": true,
+        "error": "Decision exceeded the common wall-time budget: actor=0, policy=shared_policy_public_proof_first, seconds=0.318712",
+        "failure_seconds": 0.3187122570016072,
+        "opponent": "pressure",
+        "policy": "learned",
+        "card": "Bench",
+        "seed": 3891100,
+        "seat": 1,
+        "reference": false
+      },
+      {
+        "won": null,
+        "lost": null,
+        "unfinished": true,
+        "error": "Decision exceeded the common wall-time budget: actor=0, policy=shared_policy_public_proof_first, seconds=0.265591",
+        "failure_seconds": 0.2655910390021745,
+        "opponent": "pressure",
+        "policy": "learned",
+        "card": "Bench",
+        "seed": 3891101,
+        "seat": 0,
+        "reference": false
+      }
+    ]
+  },
+  "checkpoint_sha256": {
+    "robust-selected.npz": "caf43de1acdca2b5312c525a3a8f9670ae65d366b9742eacb34ad7820a2212a1",
+    "primary-value.npz": "bdcba1c4c076d5e1533c2c21d30c0fcdd9de2ba502458092f004eb90e000cc91"
+  },
+  "decision_seconds": 0.25,
+  "quality_gate": true,
+  "unfitted_value_rejected": true,
+  "unknown_not_zero": true,
+  "default_model_replaced": false,
+  "limitation": "Actor interface passed; optional value planning failed strict wall budget. No wider-budget retry or policy-quality claim."
+}

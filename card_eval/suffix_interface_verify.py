@@ -53,13 +53,14 @@ def verify(folder,output,checkpoint_name='regret_mean-selected.npz',seed_start=3
             dump(fitted_request,dict(request,seed_start=seed_start+100,planner=dict(mode='value')))
             command(['evaluate','--input',str(fitted_request),'--checkpoint',str(standalone_fitted),'--experimental-model','--output',str(output/'fitted-value')])
             scored=json.loads((output/'fitted-value/result.json').read_text())
-            if (scored['status']!='complete' or scored['games']!=8 or scored['unresolved'] or scored['base_model']!=fitted.fingerprint
-                or scored['planner']['mode']!='value' or scored['comparisons'][0]['recommendation']!='experimental_only'):
-                raise ValueError('Fitted value planner standalone contract failed')
+            fitted_ok=(scored['status']=='complete' and scored['games']==8 and not scored['unresolved'] and scored['base_model']==fitted.fingerprint
+                and scored['planner']['mode']=='value' and scored['comparisons'][0]['recommendation']=='experimental_only')
             fitted_result=dict(checkpoint_sha256=hashlib.sha256(fitted_path.read_bytes()).hexdigest(),
-                base_model=fitted.fingerprint,planner_fingerprint=scored['frozen_policy'],slots=8,unresolved=0,
+                base_model=fitted.fingerprint,planner_fingerprint=scored['frozen_policy'],slots=scored['games'],unresolved=scored['unresolved'],
+                strict_budget_passed=bool(fitted_ok),
                 actor_unchanged=True,scope='Engineering smoke check only; searched-policy quality and value are not qualified')
-        result=dict(status='passed',source_commit=commit(),source_mode='Standalone copy of current branch source, not a new wheel/release',
+        passed=fitted_result is None or fitted_result['strict_budget_passed']
+        result=dict(status='passed' if passed else 'failed_fitted_value_contract',source_commit=commit(),source_mode='Standalone copy of current branch source, not a new wheel/release',
             module_origin=origin,checkpoint_sha256=hashlib.sha256(checkpoint.read_bytes()).hexdigest(),frozen_policy=net.fingerprint,
             slots=actor['games'],unresolved=actor['unresolved'],decision_seconds=.25,quality_gate=True,unfitted_value_rejected=True,
             unknown_not_zero=True,fitted_value_contract=fitted_result,default_model_replaced=False,scope='Source/interface contract only; engineering slots are not independent policy-quality evidence')
@@ -70,4 +71,6 @@ if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--folder',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
     p.add_argument('--checkpoint-name',default='regret_mean-selected.npz');p.add_argument('--seed-start',type=int,default=3491000)
     p.add_argument('--fitted-checkpoint-name');a=p.parse_args()
-    print(json.dumps(verify(a.folder,a.output,a.checkpoint_name,a.seed_start,a.fitted_checkpoint_name),indent=2))
+    result=verify(a.folder,a.output,a.checkpoint_name,a.seed_start,a.fitted_checkpoint_name)
+    print(json.dumps(result,indent=2))
+    if result['status']!='passed':raise SystemExit(2)

@@ -43,6 +43,63 @@
       "continuation": 1,
       "reused": true,
       "error": "Decision exceeded the common wall-time budget: actor=0, policy=shared_semantic_model, seconds=0.353492"
+    },
+    {
+      "stage": "value_train",
+      "seed": 3640137,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=shared_semantic_model, seconds=0.389069"
+    },
+    {
+      "stage": "value_train",
+      "seed": 3640142,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=shared_semantic_model, seconds=0.380843"
+    },
+    {
+      "stage": "value_train",
+      "seed": 3640144,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=shared_semantic_model, seconds=0.279405"
+    },
+    {
+      "stage": "engineering_value_search",
+      "won": null,
+      "lost": null,
+      "unfinished": true,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=shared_policy_public_proof_first, seconds=0.454562",
+      "failure_seconds": 0.454562459999579,
+      "opponent": "pressure",
+      "policy": "learned",
+      "card": "Rock Pet",
+      "seed": 3891100,
+      "seat": 0,
+      "reference": true
+    },
+    {
+      "stage": "engineering_value_search",
+      "won": null,
+      "lost": null,
+      "unfinished": true,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=shared_policy_public_proof_first, seconds=0.318712",
+      "failure_seconds": 0.3187122570016072,
+      "opponent": "pressure",
+      "policy": "learned",
+      "card": "Bench",
+      "seed": 3891100,
+      "seat": 1,
+      "reference": false
+    },
+    {
+      "stage": "engineering_value_search",
+      "won": null,
+      "lost": null,
+      "unfinished": true,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=shared_policy_public_proof_first, seconds=0.265591",
+      "failure_seconds": 0.2655910390021745,
+      "opponent": "pressure",
+      "policy": "learned",
+      "card": "Bench",
+      "seed": 3891101,
+      "seat": 0,
+      "reference": false
     }
   ],
   "unknowns_not_retried": true,

@@ -1,5 +1,5 @@
 {
-  "source_commit": "4b932d1c949f53e90daa14aa5654e50cd87d9a6e",
+  "source_commit": "7484cb833c0de34ff5c4bf4b275a2a6b60eca91d",
   "status": "passed",
   "checked": {
     "cells": 2064,
@@ -7,7 +7,14 @@
     "openings": 280,
     "fit_candidate_metrics": 4,
     "development_actor_decisions": 23316,
-    "development_slots": 600
+    "development_slots": 600,
+    "value_train_openings": 192,
+    "value_dev_openings": 48,
+    "final_policy_slots": 1536,
+    "value_final_openings": 96,
+    "engineering_actor_slots": 8,
+    "engineering_value_search_slots": 8,
+    "engineering_value_search_unknown": 3
   },
   "stages": {
     "source": {
@@ -95,6 +102,7 @@
   },
   "selected_epoch": 16,
   "selected_actor": "1888ee3366aff3bfa67fff6038c8a71e9186bb229a30249512cbbf14567ed063",
+  "interface_status": "failed_fitted_value_contract",
   "no_game_replays": true,
   "no_label_repairs": true,
   "limitations": "Audit checks consistency, not simulator validity, posterior beliefs or policy qualification."

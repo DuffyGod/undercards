@@ -226,8 +226,21 @@ def audit(folder):
         assert final['phases'] == suppress_sparse(phase_metrics(primary, episodes, prior))
         failures.extend(dict(stage='value_final', seed=e['seed'], error=e['error']) for e in episodes if not e['terminal'])
         checked.update(final_policy_slots=len(raw), value_final_openings=len(episodes))
+    interface_path = folder / 'interface/verification.json'
+    interface_status = None
+    if interface_path.exists():
+        interface = json.loads(interface_path.read_text()); interface_status = interface['status']
+        assert interface['actor_contract']['slots'] == 8 and interface['actor_contract']['unresolved'] == 0
+        assert interface['actor_contract']['frozen_policy'] == reference.fingerprint
+        assert interface['fitted_value_contract']['base_model'] == primary.fingerprint
+        for r in interface['fitted_value_contract']['failures']:
+            assert r['unfinished'] and r['won'] is None
+            failures.append(dict(stage='engineering_value_search', **r))
+        checked.update(engineering_actor_slots=8, engineering_value_search_slots=8,
+                       engineering_value_search_unknown=interface['fitted_value_contract']['unresolved'])
     dump(folder / 'evidence-audit.json', dict(source_commit=commit(), status='passed', checked=dict(checked), stages=stages,
          selected_epoch=chosen, selected_actor=reference.actor_fingerprint,
+         interface_status=interface_status,
          no_game_replays=True, no_label_repairs=True, limitations='Audit checks consistency, not simulator validity, posterior beliefs or policy qualification.'))
     dump(folder / 'failures.json', dict(unknown_cells_and_slots=failures, unknowns_not_retried=True,
         lock_recovery='Original V12 holder pid1147 became a zombie during environment reconnection. Verified OS lock free and reacquired as pid2583/session16666; no second research round started.',

@@ -1,0 +1,66 @@
+{
+  "source_commit": "7484cb833c0de34ff5c4bf4b275a2a6b60eca91d",
+  "estimand": "Equal mean of eight fixed final contexts, clustered by the32 shared seeds; descriptive only, not acceptance/reselection",
+  "wins": {
+    "robust": {
+      "mean": 0.64453125,
+      "completion_range": [
+        0.64453125,
+        0.64453125
+      ],
+      "low": 0.583984375,
+      "high": 0.697265625,
+      "alpha": 0.05,
+      "independent_seed_clusters": 32,
+      "unresolved_seed_clusters": 0
+    },
+    "v5": {
+      "mean": 0.666015625,
+      "completion_range": [
+        0.666015625,
+        0.666015625
+      ],
+      "low": 0.619140625,
+      "high": 0.7109863281249993,
+      "alpha": 0.05,
+      "independent_seed_clusters": 32,
+      "unresolved_seed_clusters": 0
+    },
+    "v11": {
+      "mean": 0.552734375,
+      "completion_range": [
+        0.552734375,
+        0.552734375
+      ],
+      "low": 0.4921875,
+      "high": 0.609375,
+      "alpha": 0.05,
+      "independent_seed_clusters": 32,
+      "unresolved_seed_clusters": 0
+    }
+  },
+  "gain_vs_v5": {
+    "mean": -0.021484375,
+    "completion_range": [
+      -0.021484375,
+      -0.021484375
+    ],
+    "low": -0.052734375,
+    "high": 0.0078125,
+    "alpha": 0.05,
+    "independent_seed_clusters": 32,
+    "unresolved_seed_clusters": 0
+  },
+  "gain_vs_v11": {
+    "mean": 0.091796875,
+    "completion_range": [
+      0.091796875,
+      0.091796875
+    ],
+    "low": 0.046875,
+    "high": 0.138671875,
+    "alpha": 0.05,
+    "independent_seed_clusters": 32,
+    "unresolved_seed_clusters": 0
+  }
+}
