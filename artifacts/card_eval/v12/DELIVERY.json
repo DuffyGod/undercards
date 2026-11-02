@@ -1,0 +1,53 @@
+{
+  "source_revision": "7b466cff5a3fcde772f54cc9c00f257267f02212",
+  "scope": "V12 source and self-contained checkpoints; no new full release, no default model upgrade",
+  "policy_qualified": false,
+  "source_tests": {
+    "count": 58,
+    "status": "passed",
+    "log": "final-source-tests.log",
+    "sha256": "28bbbfc2413414883987ebcb384d5d43962cdb07be323161583a74cccce9411a"
+  },
+  "evidence_audit": "passed",
+  "model_fingerprints": {
+    "robust-selected.npz": {
+      "actor": "1888ee3366aff3bfa67fff6038c8a71e9186bb229a30249512cbbf14567ed063",
+      "full": "260e24b6e847a57ce14c69b8d2fc1da00c7a63366054df9bc2fd5499c83e49af",
+      "sha256": "caf43de1acdca2b5312c525a3a8f9670ae65d366b9742eacb34ad7820a2212a1"
+    },
+    "base_target-selected.npz": {
+      "actor": "8b81ffd1197aa1f9869a717c12c2dccaa5791f66a8338f73a5fea18999bebc2a",
+      "full": "cf12d4191888f449538e45f7cf843cbbe40c6bff0339cf391c511f05085cc5d7",
+      "sha256": "168560529537f39f8be2f6f5254c3718da2858c490fe6444953b8b7de3604d3d"
+    },
+    "own_target-selected.npz": {
+      "actor": "3efbc4009e5b7c61fd770e0094c70bd40a7a584bd1273ffe43cef9a646f26e7b",
+      "full": "3b76c4d88b62d2334a60e1406c382b6939afeb5f09e4fbeb03f72bfa94228e07",
+      "sha256": "f5124c979ec568ce3b979b3c80a7fcccad20806477bf985db2a0d6f412da42dc"
+    },
+    "primary-value.npz": {
+      "actor": "1888ee3366aff3bfa67fff6038c8a71e9186bb229a30249512cbbf14567ed063",
+      "full": "75119c76be234cbdca8e42a9bbe773fab10bd103d9ea1b74bccb8c9110c91c74",
+      "sha256": "bdcba1c4c076d5e1533c2c21d30c0fcdd9de2ba502458092f004eb90e000cc91"
+    }
+  },
+  "interface": {
+    "actor": "passed:8/8 terminal at.25seconds",
+    "fitted_value_search": "failed:3/8 budget unknown; not retried"
+  },
+  "default_model_replaced": false,
+  "latest_full_release": "0.4.1",
+  "retired_final_seeds": [
+    "3830000..3830031",
+    "3850000..3850095"
+  ],
+  "v11_final_333_335_never_executed": true,
+  "next_question": "On router-induced states, distinguish public-history/response representation from sparse terminal contrast targets; compare ownV with simple andV5 baselines; repair search budget independently.",
+  "source_hashes": {
+    "card_eval/network.py": "51457972b1b160004f6c4dba5abf11c9e65eeb8f18585e9c0ff0949b9abd9ed6",
+    "card_eval/continuation_gate.py": "46ff8f0caa889d50f64c5efdb03cff297b5a7f98c663cdad9db44be62f5c469f",
+    "card_eval/continuation_research.py": "f4492e7da768f3931353f6250f8c50d739d3fed924f2e787cadbd8db636f547a",
+    "card_eval/continuation_audit.py": "eeba507cb4a177ca906c5055c6b61adc63bab06c82870c5738f12c5b81448aeb",
+    "card_eval/suffix_interface_verify.py": "4f498d194f1a6d2c5172a8f77bd0ab6ed1fc3ae04db7b73d339bfb0563fcaf64"
+  }
+}
