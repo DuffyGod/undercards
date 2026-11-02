@@ -1,11 +1,18 @@
 {
-  "source_commit": "bcaf709e6eab76afc17bea7300b4297dbd6ea4c5",
+  "source_commit": "a44f0362f39fdc89b3dcc67d77b755a62643b3d3",
   "status": "passed",
   "checks": {
     "cells": 1838,
     "roots": 221,
     "openings": 160,
-    "fixed_checkpoints": 9
+    "fixed_checkpoints": 9,
+    "development_slots": 600,
+    "primary_decisions_compared_with_frozen": 3935,
+    "primary_semantic_changes_vs_frozen": 1297,
+    "posthoc_prior_optimizer_steps": 192,
+    "posthoc_fresh_development_slots": 320,
+    "constructed_current_input_alias_verified": 1,
+    "engineering_actor_slots": 8
   },
   "no_replays": true,
   "no_label_repairs": true,

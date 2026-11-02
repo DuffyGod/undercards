@@ -1,0 +1,12 @@
+{
+  "status": "unsupported_policy_configuration",
+  "scores": null,
+  "comparisons": [],
+  "issues": [
+    {
+      "path": "planner",
+      "code": "unfitted_value",
+      "message": "This checkpoint has no fitted value for its frozen actor. Use the actor directly or proof-only search."
+    }
+  ]
+}

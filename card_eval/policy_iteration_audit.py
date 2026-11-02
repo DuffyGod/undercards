@@ -204,6 +204,19 @@ def audit(folder):
             for key in ('decisions','changed','raw_changed','unknown'):assert report['metrics'][name]['behavior'][key]==behavior[name][key]
         assert json.loads((folder/'final-status.json').read_text())['final_seeds_unread']
         checks['posthoc_fresh_development_slots']=320
+    if (folder/'off-action-order-probe.json').exists():
+        probe=json.loads((folder/'off-action-order-probe.json').read_text());a,b=probe['observations'];actions=list(map(tuple,probe['legal_actions']))
+        assert np.array_equal(encode(a,actions)[1][0],encode(b,actions)[1][0])
+        assert probe['outcomes_end_or_heal_then_end']==[[True,True],[False,True]] and not probe['fitting_or_selection_use']
+        assert np.var(probe['heal_vs_end_terminal_contrasts'])==probe['identical_pair_contrast_minimum_equal_weight_mse']==.25
+        assert probe['independent_random_openings']==0 and not probe['distinct_optimal_actions_required']
+        checks['constructed_current_input_alias_verified']=1
+    if (folder/'interface/verification.json').exists():
+        interface=json.loads((folder/'interface/verification.json').read_text())
+        assert interface['status']=='passed' and interface['slots']==8 and interface['unresolved']==0
+        assert interface['frozen_policy']==Network.load(folder/'updated-selected.npz')[0].fingerprint
+        assert interface['quality_gate'] and interface['unfitted_value_rejected'] and interface['unknown_not_zero']
+        checks['engineering_actor_slots']=8
     dump(folder/'evidence-audit.json',dict(source_commit=commit(),status='passed',checks=dict(checks),no_replays=True,no_label_repairs=True,
         limitation='Record consistency, not simulator validity, predictive sufficiency, POMDP convergence or policy qualification.'))
     dump(folder/'failures.json',dict(unknown_cells_and_slots=failures,unknowns_not_retried=True,limits=d['limits']))

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "source_commit": "699467c4a34dd174e8fe29dd8c385de776f380e7",
+  "source_mode": "Standalone copy of current branch source, not a new wheel/release",
+  "module_origin": "/tmp/undercards-prototype-source-bpr1xn4k/app/card_eval/__init__.py",
+  "checkpoint_sha256": "0370b71f0a77eaaccf2ea2b46325ab251c8038f260ee70513f942cc3168d565e",
+  "frozen_policy": "77f0cf78d9ffd918a23a6c4abe44cf39b7ef6ce14995b0f19b6b527c3fc73471",
+  "slots": 8,
+  "unresolved": 0,
+  "decision_seconds": 0.25,
+  "quality_gate": true,
+  "unfitted_value_rejected": true,
+  "unknown_not_zero": true,
+  "fitted_value_contract": null,
+  "default_model_replaced": false,
+  "scope": "Source/interface contract only; engineering slots are not independent policy-quality evidence"
+}

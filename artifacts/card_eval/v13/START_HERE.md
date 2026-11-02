@@ -29,6 +29,8 @@ target-activation-audit.json区分“终局整体平移”和“行动差改变�
 
 433/435最终是否执行以final-status.json为准；开发不通过则保持未读，不挑更好控制臂补跑。当前规则仍20张完整实卡及支持语法，不是完整卡池、服务器裁定、完整信念或对手最佳反制。
 
+原600开发失败后，另行声明prior-only事后诊断，并用416段8新开发牌序运行320槽位；全部终局但没有复现原主臂相对frozen的优势，也未证明胜过仅先验控制。prior-only检查点明确不可用于改选主臂；posthoc-prior-plan/fit/development原件单独保存，433/435保持未读。
+
 仓库外源码副本+独立NPZ的软件检查见interface/verification.json，不是新发行包或策略质量样本。以下复现命令要求新输出目录：
 
 ```sh

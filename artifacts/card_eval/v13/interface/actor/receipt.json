@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "program_version": "0.4.1",
+  "frozen_policy": "77f0cf78d9ffd918a23a6c4abe44cf39b7ef6ce14995b0f19b6b527c3fc73471",
+  "base_model": "77f0cf78d9ffd918a23a6c4abe44cf39b7ef6ce14995b0f19b6b527c3fc73471",
+  "planner": null,
+  "decision_budget_seconds": 0.25,
+  "model_name": "prototype",
+  "policy_validation": {
+    "qualified": false,
+    "status": "development_rejected",
+    "frozen_policy": "77f0cf78d9ffd918a23a6c4abe44cf39b7ef6ce14995b0f19b6b527c3fc73471",
+    "default_model_replaced": false
+  },
+  "completed_games": 8,
+  "rejected_games": 0,
+  "requested_samples": 2,
+  "seed_start": 4391000,
+  "information": "Own initial deck multiset and actually public plays are available. Opponent unseen hand/composition/order are not observations.",
+  "rules": {
+    "silence": "retain",
+    "current_server_certified": false
+  },
+  "elapsed_seconds": 1.4228161819992238
+}
