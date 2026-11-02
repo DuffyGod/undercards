@@ -1120,7 +1120,7 @@
   ],
   "identical_pair_contrast_minimum_equal_weight_mse": 0.25,
   "distinct_optimal_actions_required": false,
-  "implication": "Current action matrix drops ordered effects on non-source/non-target units. A recurrent encoder of only those same matrices cannot recover the missing visible fact. This proves action-value representation insufficiency, not unavoidable policy error: healing wins in both states.",
+  "implication": "Current action matrix drops ordered effects on non-source/non-target units. This proves current-input action-value insufficiency, not unavoidable policy error: healing wins in both states. Earlier observations may reveal the order; recurrent recovery from a full sequence has not been tested.",
   "fitting_or_selection_use": false,
   "unknown_effects_imputed": false,
   "source_commit": "aafac9b8d1977b17ec59837626ed388a9b10e98c"

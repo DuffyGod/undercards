@@ -1,0 +1,8 @@
+{
+  "initial_statement": "A recurrent encoder of only those same matrices cannot recover the missing visible fact.",
+  "correction": "Only the current decision matrices are proved identical. Earlier visible hand/play observations may differ, so full recurrent-history recovery remains untested.",
+  "original_observations_and_outcomes_changed": false,
+  "game_replays": 0,
+  "fitting_or_selection_changed": false,
+  "previous_statement_preserved_in_git": true
+}

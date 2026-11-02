@@ -37,7 +37,7 @@ def construct():
         outcomes_end_or_heal_then_end=outcomes,heal_vs_end_terminal_contrasts=[0,1],
         identical_pair_contrast_minimum_equal_weight_mse=.25,
         distinct_optimal_actions_required=False,
-        implication='Current action matrix drops ordered effects on non-source/non-target units. A recurrent encoder of only those same matrices cannot recover the missing visible fact. This proves action-value representation insufficiency, not unavoidable policy error: healing wins in both states.',
+        implication='Current action matrix drops ordered effects on non-source/non-target units. This proves current-input action-value insufficiency, not unavoidable policy error: healing wins in both states. Earlier observations may reveal the order; recurrent recovery from a full sequence has not been tested.',
         fitting_or_selection_use=False,unknown_effects_imputed=False)
 
 
