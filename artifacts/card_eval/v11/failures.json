@@ -1,0 +1,78 @@
+{
+  "unknown_continuations": [
+    {
+      "stage": "diagnostic",
+      "seed": 2680007,
+      "decision": 18,
+      "action_index": 0,
+      "suffix": 5,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=offline_counterfactual_branch, seconds=0.439275",
+      "won": null,
+      "handling": "Retained unknown; never rerun or imputed as zero"
+    },
+    {
+      "stage": "diagnostic",
+      "seed": 2680007,
+      "decision": 18,
+      "action_index": 3,
+      "suffix": 5,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=offline_counterfactual_branch, seconds=1.044682",
+      "won": null,
+      "handling": "Retained unknown; never rerun or imputed as zero"
+    },
+    {
+      "stage": "diagnostic",
+      "seed": 2680007,
+      "decision": 18,
+      "action_index": 10,
+      "suffix": 5,
+      "error": "Decision exceeded the common wall-time budget: actor=1, policy=offline_counterfactual_branch, seconds=0.416051",
+      "won": null,
+      "handling": "Retained unknown; never rerun or imputed as zero"
+    },
+    {
+      "stage": "diagnostic",
+      "seed": 2680007,
+      "decision": 18,
+      "action_index": 0,
+      "suffix": 6,
+      "error": "Decision exceeded the common wall-time budget: actor=1, policy=offline_counterfactual_branch, seconds=0.525781",
+      "won": null,
+      "handling": "Retained unknown; never rerun or imputed as zero"
+    },
+    {
+      "stage": "diagnostic",
+      "seed": 2680007,
+      "decision": 18,
+      "action_index": 2,
+      "suffix": 6,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=offline_counterfactual_branch, seconds=0.292721",
+      "won": null,
+      "handling": "Retained unknown; never rerun or imputed as zero"
+    },
+    {
+      "stage": "diagnostic",
+      "seed": 2680007,
+      "decision": 18,
+      "action_index": 3,
+      "suffix": 6,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=offline_counterfactual_branch, seconds=0.325845",
+      "won": null,
+      "handling": "Retained unknown; never rerun or imputed as zero"
+    },
+    {
+      "stage": "diagnostic",
+      "seed": 2680007,
+      "decision": 18,
+      "action_index": 9,
+      "suffix": 6,
+      "error": "Decision exceeded the common wall-time budget: actor=0, policy=offline_counterfactual_branch, seconds=0.378983",
+      "won": null,
+      "handling": "Retained unknown; never rerun or imputed as zero"
+    }
+  ],
+  "development_rejected": true,
+  "final_not_executed": true,
+  "value_not_refitted": true,
+  "reason": "Primary40% versus V5 50% failed predeclared score and paired lower-bound gate; semantic activation passed."
+}
