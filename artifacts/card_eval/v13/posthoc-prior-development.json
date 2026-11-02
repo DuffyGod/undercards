@@ -1,0 +1,137 @@
+{
+  "source_commit": "699467c4a34dd174e8fe29dd8c385de776f380e7",
+  "declared_after_initial_development": true,
+  "metrics": {
+    "updated": {
+      "win": {
+        "mean": 0.4,
+        "completion_range": [
+          0.4,
+          0.4
+        ],
+        "low": 0.3125,
+        "high": 0.475,
+        "alpha": 0.05,
+        "independent_seed_clusters": 8,
+        "unresolved_seed_clusters": 0
+      },
+      "updated_gain": {
+        "mean": 0.0,
+        "completion_range": [
+          0.0,
+          0.0
+        ],
+        "low": 0.0,
+        "high": 0.0,
+        "alpha": 0.05,
+        "independent_seed_clusters": 8,
+        "unresolved_seed_clusters": 0
+      },
+      "behavior": {
+        "decisions": 2568,
+        "changed": 798,
+        "raw_changed": 801,
+        "unknown": 0
+      }
+    },
+    "frozen": {
+      "win": {
+        "mean": 0.45,
+        "completion_range": [
+          0.45,
+          0.45
+        ],
+        "low": 0.38749999999999996,
+        "high": 0.5249999999999999,
+        "alpha": 0.05,
+        "independent_seed_clusters": 8,
+        "unresolved_seed_clusters": 0
+      },
+      "updated_gain": {
+        "mean": -0.049999999999999996,
+        "completion_range": [
+          -0.049999999999999996,
+          -0.049999999999999996
+        ],
+        "low": -0.175,
+        "high": 0.0625,
+        "alpha": 0.05,
+        "independent_seed_clusters": 8,
+        "unresolved_seed_clusters": 0
+      },
+      "behavior": {
+        "decisions": 2962,
+        "changed": 840,
+        "raw_changed": 845,
+        "unknown": 0
+      }
+    },
+    "prior_only": {
+      "win": {
+        "mean": 0.48750000000000004,
+        "completion_range": [
+          0.48750000000000004,
+          0.48750000000000004
+        ],
+        "low": 0.4,
+        "high": 0.5874999999999999,
+        "alpha": 0.05,
+        "independent_seed_clusters": 8,
+        "unresolved_seed_clusters": 0
+      },
+      "updated_gain": {
+        "mean": -0.0875,
+        "completion_range": [
+          -0.0875,
+          -0.0875
+        ],
+        "low": -0.21281249999999988,
+        "high": 0.012499999999999997,
+        "alpha": 0.05,
+        "independent_seed_clusters": 8,
+        "unresolved_seed_clusters": 0
+      },
+      "behavior": {
+        "decisions": 3025,
+        "changed": 638,
+        "raw_changed": 646,
+        "unknown": 0
+      }
+    },
+    "v5": {
+      "win": {
+        "mean": 0.475,
+        "completion_range": [
+          0.475,
+          0.475
+        ],
+        "low": 0.3125,
+        "high": 0.6375,
+        "alpha": 0.05,
+        "independent_seed_clusters": 8,
+        "unresolved_seed_clusters": 0
+      },
+      "updated_gain": {
+        "mean": -0.075,
+        "completion_range": [
+          -0.075,
+          -0.075
+        ],
+        "low": -0.25,
+        "high": 0.10000000000000002,
+        "alpha": 0.05,
+        "independent_seed_clusters": 8,
+        "unresolved_seed_clusters": 0
+      },
+      "behavior": {
+        "decisions": 2926,
+        "changed": 0,
+        "raw_changed": 0,
+        "unknown": 0
+      }
+    }
+  },
+  "primary_status_unchanged": "development_rejected",
+  "finals_still_unread": true,
+  "no_reselection": true
+}
