@@ -10,7 +10,7 @@ from .network import Network
 from .training import dump,commit
 
 
-def verify(folder,output,checkpoint_name='regret_mean-selected.npz',seed_start=3491000):
+def verify(folder,output,checkpoint_name='regret_mean-selected.npz',seed_start=3491000,fitted_checkpoint_name=None):
     folder=Path(folder).resolve();output=Path(output).resolve()
     if output.exists():raise ValueError('Preserve interface verification')
     output.mkdir(parents=True);checkpoint=folder/checkpoint_name;net,meta=Network.load(checkpoint)
@@ -43,14 +43,31 @@ def verify(folder,output,checkpoint_name='regret_mean-selected.npz',seed_start=3
         unknown=json.loads(command(['inspect','Glyde'],expected=2).stdout)
         if unknown['status']!='unsupported' or unknown['score'] is not None:raise ValueError('Unknown mechanism scored as zero')
         dump(output/'unknown.json',unknown)
+        fitted_result=None
+        if fitted_checkpoint_name:
+            fitted_path=folder/fitted_checkpoint_name;fitted,fitted_meta=Network.load(fitted_path)
+            if fitted.actor_fingerprint!=net.actor_fingerprint or fitted_meta.get('value_unfitted') is not False:
+                raise ValueError('Fitted checkpoint must preserve the tested actor and identify its own value')
+            standalone_fitted=root/'fitted.npz';shutil.copy2(fitted_path,standalone_fitted)
+            fitted_request=output/'fitted-value-request.json'
+            dump(fitted_request,dict(request,seed_start=seed_start+100,planner=dict(mode='value')))
+            command(['evaluate','--input',str(fitted_request),'--checkpoint',str(standalone_fitted),'--experimental-model','--output',str(output/'fitted-value')])
+            scored=json.loads((output/'fitted-value/result.json').read_text())
+            if (scored['status']!='complete' or scored['games']!=8 or scored['unresolved'] or scored['base_model']!=fitted.fingerprint
+                or scored['planner']['mode']!='value' or scored['comparisons'][0]['recommendation']!='experimental_only'):
+                raise ValueError('Fitted value planner standalone contract failed')
+            fitted_result=dict(checkpoint_sha256=hashlib.sha256(fitted_path.read_bytes()).hexdigest(),
+                base_model=fitted.fingerprint,planner_fingerprint=scored['frozen_policy'],slots=8,unresolved=0,
+                actor_unchanged=True,scope='Engineering smoke check only; searched-policy quality and value are not qualified')
         result=dict(status='passed',source_commit=commit(),source_mode='Standalone copy of current branch source, not a new wheel/release',
             module_origin=origin,checkpoint_sha256=hashlib.sha256(checkpoint.read_bytes()).hexdigest(),frozen_policy=net.fingerprint,
             slots=actor['games'],unresolved=actor['unresolved'],decision_seconds=.25,quality_gate=True,unfitted_value_rejected=True,
-            unknown_not_zero=True,default_model_replaced=False,scope='Source/interface contract only; eight engineering slots are not independent policy-quality evidence')
+            unknown_not_zero=True,fitted_value_contract=fitted_result,default_model_replaced=False,scope='Source/interface contract only; engineering slots are not independent policy-quality evidence')
         dump(output/'verification.json',result);return result
 
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--folder',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
-    p.add_argument('--checkpoint-name',default='regret_mean-selected.npz');p.add_argument('--seed-start',type=int,default=3491000);a=p.parse_args()
-    print(json.dumps(verify(a.folder,a.output,a.checkpoint_name,a.seed_start),indent=2))
+    p.add_argument('--checkpoint-name',default='regret_mean-selected.npz');p.add_argument('--seed-start',type=int,default=3491000)
+    p.add_argument('--fitted-checkpoint-name');a=p.parse_args()
+    print(json.dumps(verify(a.folder,a.output,a.checkpoint_name,a.seed_start,a.fitted_checkpoint_name),indent=2))
